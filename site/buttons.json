@@ -45,5 +45,50 @@
     "intent": "about",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "call-main",
+    "label": "(800) 666-3040",
+    "url": "tel:+18006663040",
+    "style": "secondary",
+    "intent": "call-dealer",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "read-more",
+    "label": "Read more",
+    "url": "/about",
+    "style": "link",
+    "intent": "about",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "see-available",
+    "label": "See what’s available now",
+    "url": "/store/inventory",
+    "style": "secondary",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "explore-brands",
+    "label": "Explore our brands",
+    "url": "/#brands",
+    "style": "secondary",
+    "intent": "explore-brands",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "contact-us",
+    "label": "Contact us",
+    "url": "/contact",
+    "style": "primary",
+    "intent": "contact",
+    "newTab": false,
+    "active": true
   }
 ]
