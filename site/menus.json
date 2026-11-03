@@ -259,6 +259,48 @@
       ]
     },
     {
+      "id": "nav-header",
+      "name": "Header links",
+      "items": [
+        {
+          "id": "hn-trucks",
+          "label": "Trucks",
+          "type": "inventory",
+          "ref": "inventory"
+        },
+        {
+          "id": "hn-trailers",
+          "label": "Trailers",
+          "type": "inventory",
+          "ref": "inventory"
+        },
+        {
+          "id": "hn-parts",
+          "label": "Parts",
+          "type": "inventory",
+          "ref": "parts"
+        },
+        {
+          "id": "hn-service",
+          "label": "Service",
+          "type": "url",
+          "url": "/service"
+        },
+        {
+          "id": "hn-about",
+          "label": "About",
+          "type": "url",
+          "url": "/about"
+        },
+        {
+          "id": "hn-locations",
+          "label": "Locations",
+          "type": "url",
+          "url": "/#locations"
+        }
+      ]
+    },
+    {
       "id": "nav-legal",
       "name": "Home legal links",
       "items": [
