@@ -1,0 +1,205 @@
+{
+  "version": 2,
+  "id": "keep-moving",
+  "name": "Numbered offerings list",
+  "css": ".bz-section[data-bz-node=\"km\"]{background:var(--paper);padding-block:clamp(56px,6vw,92px)}\n[data-bz-node=\"km\"] .bz-block{padding-block:0 var(--space-3)}\n[data-bz-node=\"km\"] .bz-btns{margin:0}\n[data-bz-node=\"km-intro\"] .bz-text{max-width:35rem}\n[data-bz-node=\"km-head\"]{margin-bottom:var(--space-6)}\n[data-bz-node=\"km-list\"]{border-top:1px solid #cdcdc8}\n[data-bz-node^=\"km-entry\"]{border-bottom:1px solid #cdcdc8;transition:background-color .2s ease}\n[data-bz-node^=\"km-entry\"]:hover{background:rgba(255,255,255,.45)}\n[data-bz-node^=\"km-item\"]{padding:26px 0;align-items:start}\n[data-bz-node^=\"km-num-t\"] p{font:700 1.0625rem/1.4 var(--font-heading);color:#55554f;margin:0}\n[data-bz-node^=\"km-title\"] h3{font:700 1.25rem/1.2 var(--font-heading);text-transform:uppercase;margin:0 0 10px}\n[data-bz-node^=\"km-text\"] .bz-text{max-width:46rem}\n[data-bz-node^=\"km-text\"] p{font-size:.9375rem;line-height:1.7;color:#3b3b37;margin:0}\n[data-bz-node^=\"km-link\"]{align-self:center}\n[data-bz-node^=\"km-cta\"] .bz-btns{justify-content:flex-end}\n[data-bz-node^=\"km-cta\"] .bz-btn{font:700 .75rem/1 var(--font-body);letter-spacing:.12em}\n@media (max-width:640px){\n  [data-bz-node^=\"km-item\"]{padding:22px 0;gap:6px}\n  [data-bz-node^=\"km-cta\"] .bz-btns{justify-content:flex-start}\n}\n",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": "Our inventory"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Everything to keep you moving."
+    },
+    {
+      "key": "intro",
+      "type": "textarea",
+      "label": "Intro"
+    },
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Offerings",
+      "fields": [
+        {
+          "key": "num",
+          "type": "text",
+          "label": "Number"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "body",
+          "type": "textarea",
+          "label": "Description"
+        },
+        {
+          "key": "ctaLabel",
+          "type": "text",
+          "label": "Link label"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Link to"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "km",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "km-head",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "km-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "km-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "{{eyebrow}}"
+                  }
+                },
+                {
+                  "id": "km-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "{{intro}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "km-list",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "km-entry",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "repeat": "items"
+              },
+              "children": [
+                {
+                  "id": "km-item",
+                  "type": "row",
+                  "props": {
+                    "gap": 4,
+                    "align": "start",
+                    "stackOn": "mobile"
+                  },
+                  "children": [
+                    {
+                      "id": "km-num",
+                      "type": "column",
+                      "props": {
+                        "span": 1
+                      },
+                      "children": [
+                        {
+                          "id": "km-num-t",
+                          "type": "text",
+                          "props": {
+                            "text": "{{num}}",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "km-body",
+                      "type": "column",
+                      "props": {
+                        "span": 8
+                      },
+                      "children": [
+                        {
+                          "id": "km-title",
+                          "type": "heading",
+                          "props": {
+                            "text": "{{title}}",
+                            "headingLevel": 3,
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "km-text",
+                          "type": "text",
+                          "props": {
+                            "text": "{{body}}",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "km-link",
+                      "type": "column",
+                      "props": {
+                        "span": 3
+                      },
+                      "children": [
+                        {
+                          "id": "km-cta",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "label": "{{ctaLabel}}",
+                                "url": "{{url}}",
+                                "style": "link"
+                              }
+                            ],
+                            "align": "left"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

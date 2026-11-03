@@ -1,0 +1,458 @@
+{
+  "version": 2,
+  "id": "find-location",
+  "name": "Find a location",
+  "css": "/* Find a location: state toggles, brand chips and a card rail. Everything is in\n   flow without JS; the script only filters cards. */\n.bz-section[data-bz-node=\"fl\"]{padding-block:clamp(56px,6vw,88px);background:#fff}\n[data-bz-node=\"fl\"] .bz-block{padding-block:0 var(--space-3)}\n[data-bz-node=\"fl\"] .bz-btns{margin:0}\n[data-bz-node=\"fl-intro\"] .bz-text{max-width:35rem}\n\n[data-bz-node=\"fl-states\"]{display:flex;flex-direction:column;gap:18px;align-items:flex-start}\n[data-bz-node^=\"fl-state-\"]:not([data-bz-node^=\"fl-state-icon\"]):not([data-bz-node^=\"fl-state-btn\"]){display:flex;align-items:center;gap:16px;flex:none}\n[data-bz-node^=\"fl-state-icon\"]{width:64px;flex:none;padding:0}\n[data-bz-node^=\"fl-state-icon\"] .bz-figure{margin:0}\n[data-bz-node^=\"fl-state-icon\"] img{width:100%;height:auto;max-height:64px;object-fit:contain}\n[data-bz-node^=\"fl-state-btn\"] .bz-btn{font:700 clamp(1.5rem,2.3vw,2rem)/1 var(--font-heading);text-transform:uppercase;letter-spacing:0;color:#a3a3a0;padding-bottom:8px;border-bottom:4px solid transparent;transition:color .18s ease,border-color .18s ease}\n[data-bz-node^=\"fl-state-btn\"] .bz-btn::after{display:none}\n[data-bz-node^=\"fl-state-btn\"] .bz-btn:hover{color:var(--ink)}\n[data-bz-node^=\"fl-state-btn\"] .bz-btn.is-active{color:var(--ink);border-bottom-color:var(--ink)}\n\n[data-bz-node=\"fl-chips\"]{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:var(--space-6)}\n[data-bz-node=\"fl-chips\"]>.bz-col{flex:0 0 auto;width:auto}\n[data-bz-node=\"fl-chip-label\"]{margin-right:10px}\n[data-bz-node=\"fl-chip-label-t\"] p{font:700 .6875rem/1 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin:0}\n[data-bz-node=\"fl-chips\"] .bz-btn{min-height:46px;padding:0 15px;font-size:.6875rem;letter-spacing:.08em;background:#fff;color:var(--ink);border:1px solid #cfcfcb;border-radius:0}\n[data-bz-node=\"fl-chips\"] .bz-btn:hover{border-color:var(--ink)}\n[data-bz-node=\"fl-chips\"] .bz-btn.is-active{background:var(--ink);color:#fff;border-color:var(--ink)}\n\n[data-bz-node=\"fl-ctrls\"]{display:flex;justify-content:flex-end;gap:8px;margin:var(--space-5) 0 var(--space-3)}\n[data-bz-node=\"fl-ctrls\"]>.bz-col{flex:0 0 auto;width:auto}\n[data-bz-node=\"fl-prev\"] .bz-btn,[data-bz-node=\"fl-next\"] .bz-btn{width:46px;height:46px;min-height:46px;padding:0;font-size:0;background:#fff;color:var(--ink);border:1px solid #cfcfcb;border-radius:4px}\n[data-bz-node=\"fl-prev\"] .bz-btn::before,[data-bz-node=\"fl-next\"] .bz-btn::before{content:\"\";width:18px;height:18px;background:currentColor;-webkit-mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 12H5M11 6l-6 6 6 6'/%3E%3C/svg%3E\") center/contain no-repeat;mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 12H5M11 6l-6 6 6 6'/%3E%3C/svg%3E\") center/contain no-repeat}\n[data-bz-node=\"fl-next\"] .bz-btn::before{-webkit-mask-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12h15M13 6l6 6-6 6'/%3E%3C/svg%3E\");mask-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12h15M13 6l6 6-6 6'/%3E%3C/svg%3E\")}\n[data-bz-node=\"fl-prev\"] .bz-btn:hover,[data-bz-node=\"fl-next\"] .bz-btn:hover{background:var(--ink);color:#fff;border-color:var(--ink)}\n\n[data-bz-node=\"fl-rail\"]{--bz-slide:312px;--bz-slide-gap:17px;padding-bottom:0}\n[data-bz-node=\"fl-rail\"]>[data-bz-part=\"slide\"]{display:flex;flex-direction:column;border:1px solid #dcdcd8;background:#fff;padding:24px 24px 22px;min-height:262px;transition:border-color .18s ease,box-shadow .18s ease}\n[data-bz-node=\"fl-rail\"]>[data-bz-part=\"slide\"]:hover{border-color:var(--ink);box-shadow:0 10px 26px rgba(0,0,0,.08)}\n[data-bz-node=\"fl-rail\"] .bz-block{padding-block:0}\n[data-bz-node^=\"fl-name\"] h3{font:700 1.25rem/1.1 var(--font-heading);text-transform:uppercase;margin:0 0 14px}\n[data-bz-node^=\"fl-phone\"] .bz-btn{font:700 .8125rem/1.2 var(--font-body);letter-spacing:.02em;text-transform:none;gap:9px}\n[data-bz-node^=\"fl-phone\"] .bz-btn::after{display:none}\n[data-bz-node^=\"fl-phone\"] .bz-btn::before{content:\"\";width:15px;height:15px;background:currentColor;-webkit-mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z'/%3E%3C/svg%3E\") center/contain no-repeat;mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z'/%3E%3C/svg%3E\") center/contain no-repeat}\n[data-bz-node^=\"fl-phone\"] .bz-btn:hover{text-decoration:underline}\n[data-bz-node^=\"fl-addr1\"]{padding-top:18px!important}\n[data-bz-node^=\"fl-addr1\"] p,[data-bz-node^=\"fl-addr2\"] p{font-size:.8125rem;line-height:1.65;color:#55554f;margin:0}\n[data-bz-node^=\"fl-links\"]{margin-top:auto;padding-top:var(--space-5)!important}\n[data-bz-node^=\"fl-links\"] .bz-btns{gap:22px}\n[data-bz-node^=\"fl-links\"] .bz-btn{font:700 .75rem/1 var(--font-body);letter-spacing:.02em;text-transform:none;gap:8px}\n[data-bz-node^=\"fl-links\"] .bz-btn::after{display:none}\n[data-bz-node^=\"fl-links\"] .bz-btn::before{content:\"\";width:15px;height:15px;background:currentColor;-webkit-mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2.8l9.2 9.2-9.2 9.2L2.8 12z'/%3E%3Cpath d='M8.5 12.5h6.2M13 10l2.2 2.5L13 15'/%3E%3C/svg%3E\") center/contain no-repeat;mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2.8l9.2 9.2-9.2 9.2L2.8 12z'/%3E%3Cpath d='M8.5 12.5h6.2M13 10l2.2 2.5L13 15'/%3E%3C/svg%3E\") center/contain no-repeat}\n[data-bz-node^=\"fl-links\"] .bz-btn+.bz-btn::before{-webkit-mask-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='5' width='18' height='14' rx='1.5'/%3E%3Cpath d='M3.5 6.5L12 13l8.5-6.5'/%3E%3C/svg%3E\");mask-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='5' width='18' height='14' rx='1.5'/%3E%3Cpath d='M3.5 6.5L12 13l8.5-6.5'/%3E%3C/svg%3E\")}\n[data-bz-node^=\"fl-links\"] .bz-btn:hover{text-decoration:underline}\n[data-bz-node^=\"fl-facets\"]{display:none}\n\n@media (max-width:640px){\n  [data-bz-node=\"fl-rail\"]{--bz-slide:272px}\n  [data-bz-node=\"fl-states\"]{margin-top:var(--space-4)}\n}\n",
+  "js": "/* Find a location: brand chips and the Florida / Carolina toggles filter the\n   location cards. The renderer has no way to put facet attributes on layout\n   nodes, so the filter reads each card's brand keys and state from a hidden\n   \"brands | state\" line and works the visibility itself. Without JS every card\n   is shown. */\n(function () {\n  var STATES = {\n    florida: /^(fl|florida)$/,\n    carolina: /^(sc|nc|south carolina|north carolina|carolina)$/\n  };\n  document.querySelectorAll('[data-bz-section=\"find-location\"]').forEach(function (root) {\n    var cards = [].slice.call(root.querySelectorAll('[data-bz-node=\"fl-rail\"] > [data-bz-part=\"slide\"]'));\n    var chips = [].slice.call(root.querySelectorAll('[data-bz-node=\"fl-chips\"] a'));\n    var states = [].slice.call(root.querySelectorAll('[data-bz-node^=\"fl-state-btn\"] a'));\n    if (!cards.length) return;\n\n    function keyOf(a) { return (a.getAttribute('href') || '').replace(/^#/, '').toLowerCase(); }\n    function facts(card) {\n      var n = card.querySelector('[data-bz-node^=\"fl-facets\"]');\n      var parts = (n ? n.textContent : '').split('|');\n      return {\n        brands: (parts[0] || '').toLowerCase().split(/[\\s,]+/).filter(Boolean),\n        state: (parts[1] || '').trim().toLowerCase()\n      };\n    }\n    var data = cards.map(facts);\n    var brand = 'all', state = '';\n\n    function matches(i) {\n      var okBrand = brand === 'all' || data[i].brands.indexOf(brand) > -1;\n      var okState = !state || (STATES[state] ? STATES[state].test(data[i].state) : true);\n      return okBrand && okState;\n    }\n    function paint(list, active) {\n      list.forEach(function (a) {\n        var on = keyOf(a) === active;\n        a.classList.toggle('is-active', on);\n        a.setAttribute('aria-pressed', String(on));\n      });\n    }\n    function apply() {\n      var shown = 0;\n      cards.forEach(function (c, i) { var ok = matches(i); c.hidden = !ok; if (ok) shown++; });\n      paint(chips, brand);\n      paint(states, state);\n      var track = cards[0].parentNode;\n      if (track) track.scrollLeft = 0;\n      return shown;\n    }\n\n    chips.forEach(function (a) {\n      a.addEventListener('click', function (e) { e.preventDefault(); brand = keyOf(a) || 'all'; apply(); });\n    });\n    states.forEach(function (a) {\n      a.addEventListener('click', function (e) {\n        e.preventDefault();\n        var k = keyOf(a);\n        state = state === k ? '' : k;\n        apply();\n      });\n    });\n\n    // Open on the first state, as the design does — unless that would leave the\n    // list empty (the dealer's states may be stored under another name).\n    if (states[0]) {\n      state = keyOf(states[0]);\n      if (!apply()) { state = ''; apply(); }\n    } else {\n      apply();\n    }\n  });\n})();\n",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": "Find a location"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Find a location"
+    },
+    {
+      "key": "intro",
+      "type": "textarea",
+      "label": "Intro"
+    },
+    {
+      "key": "brandLabel",
+      "type": "text",
+      "label": "Brand filter label",
+      "default": "Brand"
+    },
+    {
+      "key": "states",
+      "type": "list",
+      "label": "State toggles",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Label"
+        },
+        {
+          "key": "key",
+          "type": "text",
+          "label": "Key"
+        },
+        {
+          "key": "icon",
+          "type": "image",
+          "label": "Outline icon"
+        }
+      ]
+    },
+    {
+      "key": "brandOptions",
+      "type": "list",
+      "label": "Brand chips",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Label"
+        },
+        {
+          "key": "value",
+          "type": "text",
+          "label": "Value"
+        }
+      ]
+    },
+    {
+      "key": "locations",
+      "type": "list",
+      "label": "Locations",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "streetAddress",
+          "type": "text",
+          "label": "Street address"
+        },
+        {
+          "key": "city",
+          "type": "text",
+          "label": "City"
+        },
+        {
+          "key": "region",
+          "type": "text",
+          "label": "State"
+        },
+        {
+          "key": "postalCode",
+          "type": "text",
+          "label": "Postal code"
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "Phone"
+        },
+        {
+          "key": "phoneUrl",
+          "type": "url",
+          "label": "Phone link"
+        },
+        {
+          "key": "mapUrl",
+          "type": "url",
+          "label": "Directions link"
+        },
+        {
+          "key": "email",
+          "type": "text",
+          "label": "Email"
+        },
+        {
+          "key": "brandKeys",
+          "type": "text",
+          "label": "Brand keys"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "fl",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "locations",
+        "behaviour": "carousel",
+        "behaviourOptions": "{\"perMove\":1,\"label\":\"Locations\"}"
+      },
+      "children": [
+        {
+          "id": "fl-head",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "align": "start",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "fl-copy",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "fl-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "{{eyebrow}}"
+                  }
+                },
+                {
+                  "id": "fl-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "{{intro}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "fl-states-col",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "fl-states",
+                  "type": "row",
+                  "props": {
+                    "gap": 2,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "fl-state",
+                      "type": "column",
+                      "props": {
+                        "span": 12,
+                        "repeat": "states"
+                      },
+                      "children": [
+                        {
+                          "id": "fl-state-icon",
+                          "type": "image",
+                          "props": {
+                            "image": "{{icon}}",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "fl-state-btn",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "label": "{{label}}",
+                                "url": "#{{key}}",
+                                "style": "link"
+                              }
+                            ],
+                            "align": "left"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fl-chips",
+          "type": "row",
+          "props": {
+            "gap": 2,
+            "align": "center",
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "fl-chip-label",
+              "type": "column",
+              "props": {
+                "span": 1
+              },
+              "children": [
+                {
+                  "id": "fl-chip-label-t",
+                  "type": "text",
+                  "props": {
+                    "text": "{{brandLabel}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "fl-chip-all",
+              "type": "column",
+              "props": {
+                "span": 1
+              },
+              "children": [
+                {
+                  "id": "fl-chip-all-btn",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "All",
+                        "url": "#all",
+                        "style": "secondary"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "fl-chip-col",
+              "type": "column",
+              "props": {
+                "span": 2,
+                "repeat": "brandOptions"
+              },
+              "children": [
+                {
+                  "id": "fl-chip",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{label}}",
+                        "url": "#{{value}}",
+                        "style": "secondary"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fl-ctrls",
+          "type": "row",
+          "props": {
+            "gap": 2,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "fl-prev-col",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "fl-prev",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Previous",
+                        "url": "#prev",
+                        "style": "secondary"
+                      }
+                    ],
+                    "align": "left",
+                    "part": "prev"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "fl-next-col",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "fl-next",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Next",
+                        "url": "#next",
+                        "style": "secondary"
+                      }
+                    ],
+                    "align": "left",
+                    "part": "next"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fl-rail",
+          "type": "row",
+          "props": {
+            "gap": 4,
+            "part": "track",
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "fl-card",
+              "type": "column",
+              "props": {
+                "span": 3,
+                "part": "slide",
+                "repeat": "locations"
+              },
+              "children": [
+                {
+                  "id": "fl-name",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{name}}",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "fl-phone",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{phone}}",
+                        "url": "{{phoneUrl}}",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "fl-addr1",
+                  "type": "text",
+                  "props": {
+                    "text": "{{streetAddress}},",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fl-addr2",
+                  "type": "text",
+                  "props": {
+                    "text": "{{city}}, {{region}} {{postalCode}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fl-links",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Directions",
+                        "url": "{{mapUrl}}",
+                        "style": "link"
+                      },
+                      {
+                        "label": "Contact",
+                        "url": "mailto:{{email}}",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "fl-facets",
+                  "type": "text",
+                  "props": {
+                    "text": "{{brandKeys}} | {{region}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
