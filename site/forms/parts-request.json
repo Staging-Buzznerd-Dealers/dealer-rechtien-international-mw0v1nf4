@@ -1,0 +1,164 @@
+{
+  "id": "parts-request",
+  "name": "Parts request",
+  "status": "live",
+  "system": false,
+  "pdpContext": false,
+  "surfaces": [
+    "page"
+  ],
+  "intent": "parts-enquiry",
+  "submitLabel": "Submit parts request",
+  "successMessage": "Thank you — your parts request has been received. One of our parts specialists will contact you using your preferred contact method.",
+  "consent": {
+    "enabled": true,
+    "required": true,
+    "text": "I agree to be contacted about this parts request by phone, text or email."
+  },
+  "fields": [
+    {
+      "id": "pr-first",
+      "type": "first_name",
+      "label": "First name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "pr-last",
+      "type": "last_name",
+      "label": "Last name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "pr-email",
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "pr-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "pr-contact",
+      "type": "radio",
+      "label": "Preferred contact method",
+      "required": true,
+      "options": [
+        {
+          "value": "phone",
+          "label": "Phone"
+        },
+        {
+          "value": "email",
+          "label": "Email"
+        },
+        {
+          "value": "text",
+          "label": "Text message"
+        }
+      ]
+    },
+    {
+      "id": "pr-year",
+      "name": "vehicleYear",
+      "type": "number",
+      "label": "Truck year",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "pr-make",
+      "name": "vehicleMake",
+      "type": "single_line",
+      "label": "Make",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "pr-model",
+      "name": "vehicleModel",
+      "type": "single_line",
+      "label": "Model",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "pr-trim",
+      "type": "single_line",
+      "label": "Trim",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "pr-trans",
+      "type": "single_line",
+      "label": "Transmission",
+      "required": false
+    },
+    {
+      "id": "pr-part",
+      "type": "single_line",
+      "label": "Part name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "pr-partno",
+      "type": "single_line",
+      "label": "Part number",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "pr-desc",
+      "type": "paragraph",
+      "label": "Part description",
+      "required": false
+    },
+    {
+      "id": "pr-install",
+      "type": "radio",
+      "label": "Installation required?",
+      "required": true,
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "value": "no",
+          "label": "No"
+        }
+      ]
+    },
+    {
+      "id": "pr-more",
+      "type": "paragraph",
+      "label": "Additional parts request",
+      "required": false
+    },
+    {
+      "id": "pr-message",
+      "type": "paragraph",
+      "label": "Message",
+      "required": false
+    }
+  ],
+  "notifications": [
+    {
+      "id": "pr-default",
+      "name": "Default",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "parts-manager",
+      "scopeMode": "dynamic"
+    }
+  ]
+}

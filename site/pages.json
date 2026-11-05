@@ -55,5 +55,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "parts",
+    "title": "International Truck Parts: OEM & Aftermarket",
+    "description": "Shop genuine OEM and aftermarket semi truck parts and accessories for heavy duty trucks. Order online; parts delivery in South Carolina and South Florida.",
+    "path": "/parts",
+    "out": "parts/index.html",
+    "dir": "parts",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]
