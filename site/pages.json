@@ -73,5 +73,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "about",
+    "title": "About Rechtien & Carolina International Trucks",
+    "description": "Rechtien International and Carolina International Trucks: one commercial truck dealer network with 11 locations in South Florida and South Carolina.",
+    "path": "/about",
+    "out": "about/index.html",
+    "dir": "about",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]
