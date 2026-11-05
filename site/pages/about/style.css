@@ -7,12 +7,8 @@
    feature band, grey band with a dark card, dark mission band, card grid,
    grey image/text row, bordered location cards, dark closing CTA.
    ========================================================================== */
-@font-face{font-family:"Archivo Expanded";src:url(/fonts/archivo-expanded-latin.woff2) format("woff2");font-weight:700 900;font-style:normal;font-display:swap}
-@font-face{font-family:"Figtree";src:url(/fonts/figtree-latin.woff2) format("woff2");font-weight:400 700;font-style:normal;font-display:swap}
 
 :root{
-  --font-heading:"Archivo Expanded","Archivo",system-ui,sans-serif;
-  --font-body:"Figtree",system-ui,sans-serif;
   --accent:#ff6b3d; --accent-dark:#e0522a;
   --ink:#151515; --ink-dark:#0c0c0c;
   --muted:#6b6a66; --line:#d8d8d4; --card:#ffffff; --paper:#e6e6e4;
@@ -125,8 +121,8 @@ main .bz-section--bg-ink .bz-text p{color:rgba(255,255,255,.9)}
 /* ---- Mission: centred, dark, uppercase -------------------------------------------------------- */
 .bz-section[data-bz-node="mission"]{background:#2b2a27}
 [data-bz-node="mission"] .bz-container{max-width:880px}
-[data-bz-node="mission-h"] h2{font:700 .6875rem/1.4 var(--font-body);letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.8);margin-bottom:var(--space-4)}
-[data-bz-node="mission-t"] p{font:700 clamp(.8125rem,1.2vw,1rem)/1.9 var(--font-heading)!important;text-transform:uppercase;letter-spacing:.04em;color:#fff!important;margin:0 0 var(--space-4)!important}
+[data-bz-node="mission-h"] h2{font:700 .6875rem/1.4 var(--font-heading);letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.8);margin-bottom:var(--space-4)}
+[data-bz-node="mission-t"] p{font:700 clamp(.8125rem,1.2vw,1rem)/1.9 var(--font-body)!important;text-transform:uppercase;letter-spacing:.04em;color:#fff!important;margin:0 0 var(--space-4)!important}
 [data-bz-node="mission-n"] p{font-size:.75rem!important;color:rgba(255,255,255,.7)!important;margin:0!important}
 
 /* ---- Products & services: 3 x 4 bordered cards --------------------------------------------------- */
