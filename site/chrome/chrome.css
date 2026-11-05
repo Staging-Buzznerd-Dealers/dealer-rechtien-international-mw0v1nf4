@@ -31,3 +31,15 @@
   .nav-toggle{display:flex}
   .mobilenav:not([hidden]){display:flex}
 }
+
+/* ---- Typography: INTL Headline for headings, INTL Text for everything else ------------
+   The families come from site/tokens.json (--font-heading / --font-body); the font files
+   are registered there once, so every page and the storefront share one set of @font-face
+   rules. This block loads after renderer/blocks.css on every surface and only sets the
+   FAMILY: sizes, weights, spacing and case stay as designed. It moves the platform's
+   buttons, chips, badges, nav links and labels (which blocks.css sets in the heading
+   family) to the text family, completes the heading elements reset.css leaves out, and
+   makes native form controls use the text family instead of the browser default. */
+h5,h6{font-family:var(--font-heading)}
+button,input,select,textarea,optgroup{font-family:var(--font-body)}
+.bz-btn,.bz-chip,.bz-badge,.bz-navitem>a,.bz-label,.bz-eyebrow,.bz-herosearch__l{font-family:var(--font-body)}

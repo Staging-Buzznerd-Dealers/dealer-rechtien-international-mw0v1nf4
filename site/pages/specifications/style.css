@@ -5,12 +5,8 @@
    the shared header/footer chrome (site/templates/home.json) renders the same
    here; nothing in this file reaches another page.
    ========================================================================== */
-@font-face{font-family:"Archivo Expanded";src:url(/fonts/archivo-expanded-latin.woff2) format("woff2");font-weight:700 900;font-style:normal;font-display:swap}
-@font-face{font-family:"Figtree";src:url(/fonts/figtree-latin.woff2) format("woff2");font-weight:400 700;font-style:normal;font-display:swap}
 
 :root{
-  --font-heading:"Archivo Expanded","Archivo",system-ui,sans-serif;
-  --font-body:"Figtree",system-ui,sans-serif;
   --accent:#ff6b3d; --accent-dark:#e0522a;
   --ink:#151515; --ink-dark:#0c0c0c;
   --muted:#6b6a66; --line:#d8d8d4; --card:#ffffff; --paper:#e6e6e4;
@@ -91,7 +87,7 @@ body{background:#fff;color:var(--ink);font-weight:400;letter-spacing:0;-webkit-f
 [data-bz-node="s13"] a.bz-card:hover{border-color:rgba(255,255,255,.6);background:rgba(255,255,255,.04)}
 [data-bz-node="s13"] .bz-card .bz-photo,[data-bz-node="s13"] .bz-card img{display:none}
 [data-bz-node="s13"] .bz-card__body{flex:1;flex-direction:row;justify-content:space-between;align-items:center;gap:16px;padding:0 24px;min-height:62px}
-[data-bz-node="s13"] .bz-card__t{font:700 .75rem/1.3 var(--font-body);color:#fff}
+[data-bz-node="s13"] .bz-card__t{font:700 .75rem/1.3 var(--font-heading);color:#fff}
 [data-bz-node="s13"] .bz-card__m{font:700 .625rem/1 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.7);flex:none}
 [data-bz-node="s13"] .bz-card__m::after{content:" \2192"}
 

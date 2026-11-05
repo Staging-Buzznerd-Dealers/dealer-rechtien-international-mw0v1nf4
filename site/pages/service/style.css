@@ -6,12 +6,8 @@
    (site/templates/home.json) renders the same. The offerings grid and the
    hours-by-location band are components with their own CSS (site/sections/).
    ========================================================================== */
-@font-face{font-family:"Archivo Expanded";src:url(/fonts/archivo-expanded-latin.woff2) format("woff2");font-weight:700 900;font-style:normal;font-display:swap}
-@font-face{font-family:"Figtree";src:url(/fonts/figtree-latin.woff2) format("woff2");font-weight:400 700;font-style:normal;font-display:swap}
 
 :root{
-  --font-heading:"Archivo Expanded","Archivo",system-ui,sans-serif;
-  --font-body:"Figtree",system-ui,sans-serif;
   --accent:#ff6b3d; --accent-dark:#e0522a;
   --ink:#151515; --ink-dark:#0c0c0c;
   --muted:#6b6a66; --line:#d8d8d4; --card:#ffffff; --paper:#e6e6e4;
