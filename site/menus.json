@@ -272,19 +272,199 @@
           "id": "hn-trucks",
           "label": "Trucks",
           "type": "inventory",
-          "ref": "inventory"
+          "ref": "inventory",
+          "children": [
+            {
+              "id": "hn-trk-shop",
+              "label": "Shop Trucks",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "hn-trk-all",
+                  "label": "All Truck Inventory",
+                  "type": "inventory",
+                  "ref": "inventory"
+                },
+                {
+                  "id": "hn-trk-new",
+                  "label": "New Trucks",
+                  "type": "inventory",
+                  "ref": "inventory?condition=new"
+                },
+                {
+                  "id": "hn-trk-used",
+                  "label": "Used Trucks",
+                  "type": "inventory",
+                  "ref": "inventory?condition=used"
+                },
+                {
+                  "id": "hn-trk-lease",
+                  "label": "Lease & Rental",
+                  "type": "url",
+                  "url": "/lease-rental"
+                }
+              ]
+            },
+            {
+              "id": "hn-trk-brands",
+              "label": "Shop Brands",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "hn-trk-intl",
+                  "label": "International",
+                  "type": "url",
+                  "url": "/#brands"
+                },
+                {
+                  "id": "hn-trk-hino",
+                  "label": "Hino Trucks",
+                  "type": "url",
+                  "url": "/#brands"
+                },
+                {
+                  "id": "hn-trk-icbus",
+                  "label": "IC Bus",
+                  "type": "url",
+                  "url": "/#brands"
+                },
+                {
+                  "id": "hn-trk-kalmar",
+                  "label": "Kalmar Ottawa",
+                  "type": "url",
+                  "url": "/#brands"
+                }
+              ]
+            },
+            {
+              "id": "hn-trk-build",
+              "label": "Build & Finance",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "hn-trk-s13",
+                  "label": "S13 Integrated Powertrain",
+                  "type": "page",
+                  "ref": "specifications"
+                },
+                {
+                  "id": "hn-trk-brochures",
+                  "label": "Specs & Brochures",
+                  "type": "url",
+                  "url": "/specifications#brochures"
+                },
+                {
+                  "id": "hn-trk-finance",
+                  "label": "Financing & Credit",
+                  "type": "url",
+                  "url": "#"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "hn-trailers",
           "label": "Trailers",
           "type": "inventory",
-          "ref": "inventory"
+          "ref": "inventory",
+          "children": [
+            {
+              "id": "hn-trl-shop",
+              "label": "Shop Trailers",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "hn-trl-all",
+                  "label": "All Trailer Inventory",
+                  "type": "inventory",
+                  "ref": "inventory"
+                },
+                {
+                  "id": "hn-trl-new",
+                  "label": "New Trailers",
+                  "type": "inventory",
+                  "ref": "inventory"
+                },
+                {
+                  "id": "hn-trl-used",
+                  "label": "Used Trailers",
+                  "type": "inventory",
+                  "ref": "inventory"
+                }
+              ]
+            },
+            {
+              "id": "hn-trl-brands",
+              "label": "Shop Brands",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "hn-trl-dorsey",
+                  "label": "Dorsey Trailers",
+                  "type": "url",
+                  "url": "/#brands"
+                },
+                {
+                  "id": "hn-trl-east",
+                  "label": "East",
+                  "type": "url",
+                  "url": "/#brands"
+                },
+                {
+                  "id": "hn-trl-navigator",
+                  "label": "Navigator Forklifts",
+                  "type": "url",
+                  "url": "/#brands"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "hn-parts",
           "label": "Parts",
           "type": "inventory",
-          "ref": "parts"
+          "ref": "parts",
+          "children": [
+            {
+              "id": "hn-prt-shop",
+              "label": "Shop Parts",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "hn-prt-dept",
+                  "label": "Parts Department",
+                  "type": "page",
+                  "ref": "parts"
+                },
+                {
+                  "id": "hn-prt-order",
+                  "label": "Order Parts Online",
+                  "type": "inventory",
+                  "ref": "parts"
+                },
+                {
+                  "id": "hn-prt-request",
+                  "label": "Request a Part",
+                  "type": "url",
+                  "url": "/parts#parts-request"
+                },
+                {
+                  "id": "hn-prt-delivery",
+                  "label": "Parts Delivery",
+                  "type": "url",
+                  "url": "/parts#delivery"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "hn-service",
@@ -293,42 +473,104 @@
           "ref": "service",
           "children": [
             {
-              "id": "hn-svc-overview",
-              "label": "Service department",
-              "type": "page",
-              "ref": "service"
+              "id": "hn-svc-col",
+              "label": "Service",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "hn-svc-overview",
+                  "label": "Service Department",
+                  "type": "page",
+                  "ref": "service"
+                },
+                {
+                  "id": "hn-svc-appointment",
+                  "label": "Schedule an Appointment",
+                  "type": "url",
+                  "url": "/service#appointment"
+                },
+                {
+                  "id": "hn-svc-mobile",
+                  "label": "Mobile Service",
+                  "type": "url",
+                  "url": "/service#mobile-service"
+                },
+                {
+                  "id": "hn-svc-warranty",
+                  "label": "Warranty Repairs",
+                  "type": "url",
+                  "url": "/service#warranty"
+                }
+              ]
             },
             {
-              "id": "hn-svc-appointment",
-              "label": "Schedule an appointment",
-              "type": "url",
-              "url": "/service#appointment"
-            },
-            {
-              "id": "hn-svc-mobile",
-              "label": "Mobile service",
-              "type": "url",
-              "url": "/service#mobile-service"
-            },
-            {
-              "id": "hn-svc-warranty",
-              "label": "Warranty repairs",
-              "type": "url",
-              "url": "/service#warranty"
-            },
-            {
-              "id": "hn-svc-bodyshop",
-              "label": "Body shop",
-              "type": "url",
-              "url": "#"
+              "id": "hn-svc-more",
+              "label": "More",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "hn-svc-bodyshop",
+                  "label": "Body Shop",
+                  "type": "url",
+                  "url": "#"
+                }
+              ]
             }
           ]
         },
         {
           "id": "hn-about",
           "label": "About",
-          "type": "url",
-          "url": "/about"
+          "type": "page",
+          "ref": "about",
+          "children": [
+            {
+              "id": "hn-abt-col",
+              "label": "Company",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "hn-abt-us",
+                  "label": "About Us",
+                  "type": "page",
+                  "ref": "about"
+                },
+                {
+                  "id": "hn-abt-team",
+                  "label": "Meet the Team",
+                  "type": "url",
+                  "url": "/about#team"
+                },
+                {
+                  "id": "hn-abt-careers",
+                  "label": "Careers",
+                  "type": "url",
+                  "url": "/careers"
+                },
+                {
+                  "id": "hn-abt-reviews",
+                  "label": "Reviews",
+                  "type": "url",
+                  "url": "/reviews"
+                },
+                {
+                  "id": "hn-abt-news",
+                  "label": "News & Press",
+                  "type": "url",
+                  "url": "/blog"
+                },
+                {
+                  "id": "hn-abt-contact",
+                  "label": "Contact",
+                  "type": "url",
+                  "url": "/contact"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "hn-locations",
@@ -337,10 +579,52 @@
           "url": "/#locations",
           "children": [
             {
-              "id": "hn-loc-greenville",
-              "label": "Greenville, SC",
-              "type": "location",
-              "ref": "greenville"
+              "id": "hn-loc-sc",
+              "label": "South Carolina",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "hn-loc-greenville",
+                  "label": "Greenville, SC",
+                  "type": "location",
+                  "ref": "greenville"
+                },
+                {
+                  "id": "hn-loc-columbia",
+                  "label": "Columbia, SC",
+                  "type": "location",
+                  "ref": "columbia-2"
+                }
+              ]
+            },
+            {
+              "id": "hn-loc-fl",
+              "label": "South Florida",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "hn-loc-miami",
+                  "label": "Miami, FL",
+                  "type": "location",
+                  "ref": "maimi"
+                }
+              ]
+            },
+            {
+              "id": "hn-loc-all-col",
+              "label": "Find a Location",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "hn-loc-all",
+                  "label": "All Locations",
+                  "type": "url",
+                  "url": "/#locations"
+                }
+              ]
             }
           ]
         }
