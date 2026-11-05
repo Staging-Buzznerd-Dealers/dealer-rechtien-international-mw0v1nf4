@@ -109,5 +109,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "financing",
+    "title": "Commercial Semi-Truck Financing & Leasing",
+    "description": "Commercial semi-truck financing and leasing through International Financial at Rechtien and Carolina International Trucks in South Florida and South Carolina.",
+    "path": "/financing",
+    "out": "financing/index.html",
+    "dir": "financing",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]
