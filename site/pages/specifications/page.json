@@ -207,7 +207,21 @@
               "props": {
                 "span": 5
               },
-              "children": []
+              "children": [
+                {
+                  "id": "s13-video",
+                  "type": "video",
+                  "props": {
+                    "video": {
+                      "src": "https://vendure.ai4dealerships.com/assets/source/f4/2026_s13_ambient_v2.mp4",
+                      "poster": "https://vendure.ai4dealerships.com/assets/source/c2/s13-1.jpg",
+                      "title": "International S13 Integrated Powertrain video"
+                    },
+                    "controls": true,
+                    "width": "full"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -315,7 +329,10 @@
                   "label": "MV Snowplow",
                   "url": ""
                 }
-              ]
+              ],
+              "inventoryUrl": "/store/inventory",
+              "videoSrc": "/videos/specifications-banner-placeholder.mp4",
+              "videoPoster": "/images/specifications-banner-poster.jpg"
             },
             {
               "title": "International eMV Series",
@@ -333,7 +350,10 @@
                   "label": "eMV Body Integration",
                   "url": ""
                 }
-              ]
+              ],
+              "inventoryUrl": "/store/inventory",
+              "videoSrc": "/videos/specifications-banner-placeholder.mp4",
+              "videoPoster": "/images/specifications-banner-poster.jpg"
             },
             {
               "title": "International HV Series",
@@ -355,7 +375,10 @@
                   "label": "HV615 specifications",
                   "url": ""
                 }
-              ]
+              ],
+              "inventoryUrl": "/store/inventory",
+              "videoSrc": "/videos/specifications-banner-placeholder.mp4",
+              "videoPoster": "/images/specifications-banner-poster.jpg"
             },
             {
               "title": "International LT Series",
@@ -373,7 +396,10 @@
                   "label": "LT Series Sleeper",
                   "url": ""
                 }
-              ]
+              ],
+              "inventoryUrl": "/store/inventory",
+              "videoSrc": "/videos/specifications-banner-placeholder.mp4",
+              "videoPoster": "/images/specifications-banner-poster.jpg"
             },
             {
               "title": "International RH Series",
@@ -391,7 +417,10 @@
                   "label": "RH Series Sleeper",
                   "url": ""
                 }
-              ]
+              ],
+              "inventoryUrl": "/store/inventory",
+              "videoSrc": "/videos/specifications-banner-placeholder.mp4",
+              "videoPoster": "/images/specifications-banner-poster.jpg"
             },
             {
               "title": "International HX Series",
@@ -409,7 +438,10 @@
                   "label": "HX620 specifications",
                   "url": ""
                 }
-              ]
+              ],
+              "inventoryUrl": "/store/inventory",
+              "videoSrc": "/videos/specifications-banner-placeholder.mp4",
+              "videoPoster": "/images/specifications-banner-poster.jpg"
             },
             {
               "title": "International CV Series",
@@ -419,7 +451,10 @@
                   "label": "CV Series brochure",
                   "url": ""
                 }
-              ]
+              ],
+              "inventoryUrl": "/store/inventory",
+              "videoSrc": "/videos/specifications-banner-placeholder.mp4",
+              "videoPoster": "/images/specifications-banner-poster.jpg"
             },
             {
               "title": "LoneStar",
@@ -437,7 +472,10 @@
                   "label": "LoneStar Sleeper",
                   "url": ""
                 }
-              ]
+              ],
+              "inventoryUrl": "/store/inventory",
+              "videoSrc": "/videos/specifications-banner-placeholder.mp4",
+              "videoPoster": "/images/specifications-banner-poster.jpg"
             }
           ]
         }
