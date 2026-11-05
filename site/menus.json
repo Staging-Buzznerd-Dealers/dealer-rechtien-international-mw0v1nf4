@@ -191,13 +191,19 @@
               "id": "ns-appointment",
               "label": "Service Appointment",
               "type": "url",
-              "url": "/service"
+              "url": "/service#appointment"
             },
             {
               "id": "ns-mobile",
               "label": "Mobile Service",
               "type": "url",
-              "url": "/service"
+              "url": "/service#mobile-service"
+            },
+            {
+              "id": "ns-bodyshop",
+              "label": "Body Shop",
+              "type": "url",
+              "url": "#"
             },
             {
               "id": "ns-lease",
@@ -284,7 +290,39 @@
           "id": "hn-service",
           "label": "Service",
           "type": "page",
-          "ref": "service"
+          "ref": "service",
+          "children": [
+            {
+              "id": "hn-svc-overview",
+              "label": "Service department",
+              "type": "page",
+              "ref": "service"
+            },
+            {
+              "id": "hn-svc-appointment",
+              "label": "Schedule an appointment",
+              "type": "url",
+              "url": "/service#appointment"
+            },
+            {
+              "id": "hn-svc-mobile",
+              "label": "Mobile service",
+              "type": "url",
+              "url": "/service#mobile-service"
+            },
+            {
+              "id": "hn-svc-warranty",
+              "label": "Warranty repairs",
+              "type": "url",
+              "url": "/service#warranty"
+            },
+            {
+              "id": "hn-svc-bodyshop",
+              "label": "Body shop",
+              "type": "url",
+              "url": "#"
+            }
+          ]
         },
         {
           "id": "hn-about",
