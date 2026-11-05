@@ -21,7 +21,9 @@
               "title": "Specifications banner video (placeholder)"
             },
             "controls": false,
-            "width": "full"
+            "width": "full",
+            "autoplay": true,
+            "loop": true
           }
         },
         {
