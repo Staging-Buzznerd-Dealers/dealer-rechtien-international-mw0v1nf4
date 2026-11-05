@@ -1,0 +1,165 @@
+{
+  "version": 2,
+  "id": "service-offerings",
+  "name": "Service offerings grid",
+  "description": "A grid of service cards — eyebrow, title, description and an optional link. Add, remove or reorder services in the list.",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": "What we service"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Service that keeps your business moving."
+    },
+    {
+      "key": "intro",
+      "type": "textarea",
+      "label": "Intro"
+    },
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Services",
+      "fields": [
+        {
+          "key": "eyebrow",
+          "type": "text",
+          "label": "Eyebrow"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "body",
+          "type": "textarea",
+          "label": "Description"
+        },
+        {
+          "key": "ctaLabel",
+          "type": "text",
+          "label": "Link label"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Link to"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "so",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "services"
+      },
+      "children": [
+        {
+          "id": "so-head",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "so-head-col",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "so-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "{{eyebrow}}"
+                  }
+                },
+                {
+                  "id": "so-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "{{intro}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "so-grid",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "so-card",
+              "type": "column",
+              "props": {
+                "span": 4,
+                "repeat": "items"
+              },
+              "children": [
+                {
+                  "id": "so-eyebrow",
+                  "type": "text",
+                  "props": {
+                    "text": "{{eyebrow}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "so-title",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "so-body",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "so-link",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"{{url}}\">{{ctaLabel}}</a>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": ".bz-section[data-bz-node=\"so\"]{padding-block:clamp(56px,6vw,96px)}\n[data-bz-node=\"so\"] .bz-block{padding-block:0}\n[data-bz-node=\"so-intro\"] p{font-size:.9375rem;line-height:1.75;max-width:40rem;margin:0}\n[data-bz-node=\"so-intro\"] p:empty{display:none}\n[data-bz-node=\"so-grid\"]{margin-top:var(--space-6);border-top:1px solid var(--line);border-left:1px solid var(--line)}\n[data-bz-node=\"so-grid\"]>.bz-col{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:clamp(22px,2.4vw,32px);display:flex;flex-direction:column;gap:var(--space-3);transition:background-color .18s ease}\n[data-bz-node=\"so-grid\"]>.bz-col:hover{background:var(--paper)}\n[data-bz-node^=\"so-eyebrow\"] p{font:700 .625rem/1.4 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin:0}\n[data-bz-node^=\"so-eyebrow\"] p:empty{display:none}\n[data-bz-node^=\"so-title\"] h3{font:700 .9375rem/1.3 var(--font-heading);text-transform:uppercase;margin:0}\n[data-bz-node^=\"so-body\"] p{font-size:.8125rem;line-height:1.75;color:#4a4945;margin:0}\n[data-bz-node^=\"so-link\"]{margin-top:auto}\n[data-bz-node^=\"so-link\"] p{margin:0}\n[data-bz-node^=\"so-link\"] a{font:700 .6875rem/1 var(--font-body);letter-spacing:.12em;text-transform:uppercase;color:var(--ink);text-decoration:none}\n[data-bz-node^=\"so-link\"] a::after{content:\" \\2192\"}\n[data-bz-node^=\"so-link\"] a:hover{text-decoration:underline}\n[data-bz-node^=\"so-link\"] a[href=\"\"],[data-bz-node^=\"so-link\"] a:empty{display:none}\n@media (max-width:1100px){[data-bz-node=\"so-grid\"]>.bz-col{grid-column:span 6}}\n@media (max-width:640px){[data-bz-node=\"so-grid\"]>.bz-col{grid-column:1/-1}}\n"
+}

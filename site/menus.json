@@ -184,8 +184,8 @@
             {
               "id": "ns-service",
               "label": "Service",
-              "type": "url",
-              "url": "/service"
+              "type": "page",
+              "ref": "service"
             },
             {
               "id": "ns-appointment",
@@ -283,8 +283,8 @@
         {
           "id": "hn-service",
           "label": "Service",
-          "type": "url",
-          "url": "/service"
+          "type": "page",
+          "ref": "service"
         },
         {
           "id": "hn-about",

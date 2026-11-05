@@ -171,5 +171,43 @@
     "intent": "parts-enquiry",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "schedule-service",
+    "label": "Schedule your service appointment",
+    "url": null,
+    "formId": "request-info",
+    "style": "primary",
+    "intent": "book-service",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "service-brochure",
+    "label": "Service brochure",
+    "url": "#",
+    "style": "link",
+    "intent": "download-brochure",
+    "newTab": true,
+    "active": true
+  },
+  {
+    "id": "credit-application",
+    "label": "Credit application",
+    "url": null,
+    "formId": "financing",
+    "style": "link",
+    "intent": "apply-credit",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "parts-department",
+    "label": "Visit our parts department",
+    "url": "/parts",
+    "style": "secondary",
+    "intent": "browse-parts",
+    "newTab": false,
+    "active": true
   }
 ]
