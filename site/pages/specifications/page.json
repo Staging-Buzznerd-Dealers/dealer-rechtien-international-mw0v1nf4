@@ -138,19 +138,18 @@
       },
       "children": [
         {
-          "id": "s13-row",
+          "id": "s13-head",
           "type": "row",
           "props": {
-            "gap": 7,
-            "align": "center",
-            "stackOn": "tablet"
+            "gap": 0,
+            "stackOn": "never"
           },
           "children": [
             {
-              "id": "s13-copy",
+              "id": "s13-head-col",
               "type": "column",
               "props": {
-                "span": 7
+                "span": 12
               },
               "children": [
                 {
@@ -171,7 +170,27 @@
                     "align": "left",
                     "width": "full"
                   }
-                },
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s13-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "align": "center",
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "s13-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
                 {
                   "id": "s13-label",
                   "type": "text",
@@ -183,21 +202,105 @@
                 },
                 {
                   "id": "s13-docs",
-                  "type": "categoryGrid",
+                  "type": "row",
                   "props": {
-                    "items": [
-                      {
-                        "label": "S13 spec sheet — LT and RH Series",
-                        "meta": "PDF",
-                        "url": ""
+                    "gap": 2,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "s13-doc-1",
+                      "type": "column",
+                      "props": {
+                        "span": 12
                       },
-                      {
-                        "label": "S13 spec sheet — HX Series",
-                        "meta": "PDF",
-                        "url": ""
-                      }
-                    ]
-                  }
+                      "children": [
+                        {
+                          "id": "s13-dname-1",
+                          "type": "heading",
+                          "props": {
+                            "text": "S13 spec sheet — LT and RH Series",
+                            "headingLevel": 4,
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "s13-dmeta-1",
+                          "type": "text",
+                          "props": {
+                            "text": "International S13 Integrated Powertrain",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "s13-dact-1",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "label": "View PDF",
+                                "url": "",
+                                "style": "primary"
+                              },
+                              {
+                                "label": "Download PDF",
+                                "url": "",
+                                "style": "secondary"
+                              }
+                            ],
+                            "align": "left"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "s13-doc-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "s13-dname-2",
+                          "type": "heading",
+                          "props": {
+                            "text": "S13 spec sheet — HX Series",
+                            "headingLevel": 4,
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "s13-dmeta-2",
+                          "type": "text",
+                          "props": {
+                            "text": "International S13 Integrated Powertrain",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "s13-dact-2",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "label": "View PDF",
+                                "url": "",
+                                "style": "primary"
+                              },
+                              {
+                                "label": "Download PDF",
+                                "url": "",
+                                "style": "secondary"
+                              }
+                            ],
+                            "align": "left"
+                          }
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -205,7 +308,7 @@
               "id": "s13-media",
               "type": "column",
               "props": {
-                "span": 5
+                "span": 7
               },
               "children": [
                 {
