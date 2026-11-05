@@ -616,6 +616,93 @@
       ]
     },
     {
+      "id": "appt",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "paper",
+        "anchor": "appointment"
+      },
+      "children": [
+        {
+          "id": "appt-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "appt-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "appt-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Schedule your service appointment.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Book online"
+                  }
+                },
+                {
+                  "id": "appt-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Tell us about your truck and what it needs. Choose your region and preferred location, and a service advisor will contact you to confirm the date and time.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "appt-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Broken down on the road or at a job site? Choose mobile service and our technicians can come to you.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "appt-btns",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-body-shop"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "appt-form-col",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "appt-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "service-appointment"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "parts",
       "type": "section",
       "props": {
@@ -925,6 +1012,9 @@
                       {
                         "ctaId": "contact-us",
                         "style": "secondary"
+                      },
+                      {
+                        "ctaId": "contact-body-shop"
                       }
                     ],
                     "align": "center"

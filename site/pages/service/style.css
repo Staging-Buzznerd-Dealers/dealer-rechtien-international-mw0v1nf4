@@ -165,3 +165,14 @@ body{background:#fff;color:var(--ink);font-weight:400;letter-spacing:0;-webkit-f
 [data-bz-node="res-grid"] h2,[data-bz-node="res-grid"] .bz-service__t{color:var(--ink)}
 [data-bz-node="res-grid"] .bz-lede{color:#4a4945}
 [data-bz-node="res-grid"] .bz-btn--link{color:var(--ink)}
+
+/* ---- Service appointment form -------------------------------------------------------------------- */
+.bz-section[data-bz-node="appt"]{padding-block:clamp(56px,6vw,96px)}
+[data-bz-node="appt"] .bz-block{padding-block:0 var(--space-3)}
+[data-bz-node^="appt-t"] p{font-size:.9375rem;line-height:1.75;max-width:30rem}
+[data-bz-node="appt-form-col"]{background:#fff;padding:clamp(24px,3vw,40px)}
+[data-bz-node="appt-form"] .bz-form{max-width:none;border:0;padding:0;background:transparent}
+[data-bz-node="appt-form"] [aria-labelledby="sa-service-l"]{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 20px}
+[data-bz-node="appt-form"] button[type="submit"]{background:var(--ink);color:#fff;border-color:var(--ink);min-height:48px;padding:0 28px}
+[data-bz-node="appt-form"] button[type="submit"]:hover{background:#fff;color:var(--ink)}
+@media (max-width:640px){[data-bz-node="appt-form"] [aria-labelledby="sa-service-l"]{grid-template-columns:1fr}}

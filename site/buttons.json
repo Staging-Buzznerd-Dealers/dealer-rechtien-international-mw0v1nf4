@@ -185,7 +185,7 @@
     "id": "schedule-service",
     "label": "Schedule your service appointment",
     "url": null,
-    "formId": "request-info",
+    "formId": "service-appointment",
     "style": "primary",
     "intent": "book-service",
     "newTab": false,
@@ -216,6 +216,15 @@
     "url": "/parts",
     "style": "secondary",
     "intent": "browse-parts",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "contact-body-shop",
+    "label": "Contact body shop",
+    "url": "#",
+    "style": "secondary",
+    "intent": "contact-body-shop",
     "newTab": false,
     "active": true
   }

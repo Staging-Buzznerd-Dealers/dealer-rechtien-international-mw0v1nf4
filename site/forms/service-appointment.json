@@ -1,0 +1,298 @@
+{
+  "id": "service-appointment",
+  "name": "Service appointment",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "book-service",
+  "submitLabel": "Request appointment",
+  "successMessage": "Thanks — the service team will contact you to confirm your appointment.",
+  "consent": {
+    "enabled": true,
+    "required": true,
+    "text": "I agree to be contacted about this service appointment by phone, text or email."
+  },
+  "fields": [
+    {
+      "id": "sa-first",
+      "type": "first_name",
+      "label": "First name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "sa-last",
+      "type": "last_name",
+      "label": "Last name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "sa-company",
+      "type": "single_line",
+      "label": "Company",
+      "required": false
+    },
+    {
+      "id": "sa-email",
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "sa-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "sa-region",
+      "type": "dropdown",
+      "label": "Which region?",
+      "required": true,
+      "width": "half",
+      "options": [
+        {
+          "value": "south-carolina",
+          "label": "South Carolina — Carolina International Trucks"
+        },
+        {
+          "value": "south-florida",
+          "label": "South Florida — Rechtien International Trucks"
+        }
+      ]
+    },
+    {
+      "id": "sa-location",
+      "type": "single_line",
+      "label": "Preferred location (city)",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "sa-where",
+      "type": "radio",
+      "label": "Where should we do the work?",
+      "required": true,
+      "options": [
+        {
+          "value": "shop",
+          "label": "I'll bring the truck to your service center"
+        },
+        {
+          "value": "mobile",
+          "label": "Send mobile service to my location"
+        }
+      ]
+    },
+    {
+      "id": "sa-address",
+      "type": "single_line",
+      "label": "Where is the truck? (address or job site)",
+      "required": true,
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "sa-where",
+            "operator": "is",
+            "value": "mobile"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sa-year",
+      "type": "number",
+      "label": "Year",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "sa-make",
+      "type": "single_line",
+      "label": "Make",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "sa-model",
+      "type": "single_line",
+      "label": "Model",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "sa-unit",
+      "type": "single_line",
+      "label": "VIN or unit number",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "sa-mileage",
+      "type": "number",
+      "label": "Mileage",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "sa-units",
+      "type": "dropdown",
+      "label": "How many vehicles?",
+      "required": false,
+      "width": "half",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2-5",
+          "label": "2–5"
+        },
+        {
+          "value": "6+",
+          "label": "6 or more (fleet)"
+        }
+      ]
+    },
+    {
+      "id": "sa-service",
+      "type": "checkboxes",
+      "label": "What does it need?",
+      "required": true,
+      "options": [
+        {
+          "value": "preventive-maintenance",
+          "label": "Preventive maintenance / PM"
+        },
+        {
+          "value": "diagnostics",
+          "label": "Diagnostics / check engine light"
+        },
+        {
+          "value": "engine-transmission",
+          "label": "Engine or transmission"
+        },
+        {
+          "value": "brakes-tires-alignment",
+          "label": "Brakes, tires or alignment"
+        },
+        {
+          "value": "dot-inspection",
+          "label": "DOT inspection"
+        },
+        {
+          "value": "ac-hvac",
+          "label": "A/C or HVAC"
+        },
+        {
+          "value": "aftertreatment",
+          "label": "DPF / DOC or aftertreatment"
+        },
+        {
+          "value": "warranty",
+          "label": "Warranty repair"
+        },
+        {
+          "value": "body-shop",
+          "label": "Body shop"
+        },
+        {
+          "value": "other",
+          "label": "Something else"
+        }
+      ]
+    },
+    {
+      "id": "sa-date",
+      "type": "date",
+      "label": "Preferred date",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "sa-time",
+      "type": "dropdown",
+      "label": "Preferred drop-off time",
+      "required": false,
+      "width": "half",
+      "options": [
+        {
+          "value": "early",
+          "label": "Early morning"
+        },
+        {
+          "value": "morning",
+          "label": "Morning"
+        },
+        {
+          "value": "afternoon",
+          "label": "Afternoon"
+        }
+      ]
+    },
+    {
+      "id": "sa-details",
+      "type": "paragraph",
+      "label": "Describe the problem or the work you need",
+      "required": false
+    },
+    {
+      "id": "sa-page",
+      "type": "single_line",
+      "label": "Page",
+      "valueSource": "pageUrl",
+      "hidden": true,
+      "required": false
+    },
+    {
+      "id": "sa-utm",
+      "type": "single_line",
+      "label": "Campaign source",
+      "valueSource": "utmSource",
+      "hidden": true,
+      "required": false
+    }
+  ],
+  "notifications": [
+    {
+      "id": "sa-service-advisor",
+      "name": "Service advisors (routing to be finalised)",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "service-advisor",
+      "scopeMode": "dynamic"
+    }
+  ],
+  "confirmations": [
+    {
+      "id": "sa-confirm-mobile",
+      "name": "Mobile service request",
+      "type": "message",
+      "logic": "AND",
+      "rules": [
+        {
+          "fieldId": "sa-where",
+          "operator": "is",
+          "value": "mobile"
+        }
+      ],
+      "message": "Thanks — we've got your mobile service request. A service advisor will call you to confirm timing and where to meet the truck."
+    },
+    {
+      "id": "sa-confirm-default",
+      "name": "Default",
+      "type": "message",
+      "logic": "AND",
+      "rules": [],
+      "message": "Thanks — your appointment request is in. A service advisor will contact you to confirm the date and time."
+    }
+  ]
+}
