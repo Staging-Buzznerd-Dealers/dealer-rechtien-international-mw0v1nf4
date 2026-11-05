@@ -361,6 +361,36 @@
           "ref": "parts"
         }
       ]
+    },
+    {
+      "id": "parts-links",
+      "name": "Parts page quick links",
+      "items": [
+        {
+          "id": "pl-order",
+          "label": "Order parts online",
+          "type": "inventory",
+          "ref": "parts"
+        },
+        {
+          "id": "pl-request",
+          "label": "Request parts",
+          "type": "url",
+          "url": "#parts-request"
+        },
+        {
+          "id": "pl-delivery",
+          "label": "Parts delivery",
+          "type": "url",
+          "url": "#delivery"
+        },
+        {
+          "id": "pl-contact",
+          "label": "Contact a parts counter",
+          "type": "url",
+          "url": "#contact-parts"
+        }
+      ]
     }
   ]
 }

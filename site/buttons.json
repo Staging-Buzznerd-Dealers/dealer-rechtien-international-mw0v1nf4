@@ -173,6 +173,15 @@
     "active": true
   },
   {
+    "id": "find-parts-location",
+    "label": "Find a location",
+    "url": "#contact-parts",
+    "style": "secondary",
+    "intent": "find-location",
+    "newTab": false,
+    "active": true
+  },
+  {
     "id": "schedule-service",
     "label": "Schedule your service appointment",
     "url": null,
