@@ -21,6 +21,10 @@
     },
     {
       "type": "page",
+      "ref": "service"
+    },
+    {
+      "type": "page",
       "ref": "about"
     }
   ],

@@ -1,0 +1,178 @@
+/* ==========================================================================
+   Service — combined Carolina International Trucks + Rechtien International
+   Trucks service page, in the Sun State layout. Loaded on this page only
+   (site/pages/service/style.css). Base type, token and button rules match the
+   homepage/specifications/parts system so the shared chrome
+   (site/templates/home.json) renders the same. The offerings grid and the
+   hours-by-location band are components with their own CSS (site/sections/).
+   ========================================================================== */
+@font-face{font-family:"Archivo Expanded";src:url(/fonts/archivo-expanded-latin.woff2) format("woff2");font-weight:700 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Figtree";src:url(/fonts/figtree-latin.woff2) format("woff2");font-weight:400 700;font-style:normal;font-display:swap}
+
+:root{
+  --font-heading:"Archivo Expanded","Archivo",system-ui,sans-serif;
+  --font-body:"Figtree",system-ui,sans-serif;
+  --accent:#ff6b3d; --accent-dark:#e0522a;
+  --ink:#151515; --ink-dark:#0c0c0c;
+  --muted:#6b6a66; --line:#d8d8d4; --card:#ffffff; --paper:#e6e6e4;
+  --night:#2b2a27;
+  --text-h1:clamp(1.75rem,3.05vw,2.875rem);
+  --text-h2:clamp(1.5rem,2.45vw,2.25rem);
+  --text-h3:1.375rem;
+  --text-body:1rem; --text-small:.875rem; --text-eyebrow:.6875rem;
+  --weight-heading:800; --leading-heading:1.1;
+  --container:1266px;
+  --radius-nav:4px; --radius-input:2px; --radius-card:0; --radius-chip:4px;
+}
+body{background:#fff;color:var(--ink);font-weight:400;letter-spacing:0;-webkit-font-smoothing:antialiased}
+
+/* ---- Type ---------------------------------------------------------------- */
+.bz-block h1,.bz-block h2,.bz-block h3{text-transform:uppercase;letter-spacing:0;font-weight:700}
+.bz-block h1{font-size:var(--text-h1);line-height:1.04}
+.bz-block h2{font-size:clamp(1.375rem,2vw,1.8125rem);line-height:1.08;margin-bottom:var(--space-5)}
+.bz-block p{font-size:.9375rem;line-height:1.75}
+.bz-block .bz-eyebrow,.bz-eyebrow{font:700 var(--text-eyebrow)/1.4 var(--font-body);letter-spacing:.22em;color:var(--muted);margin-bottom:var(--space-2)}
+.bz-block--heading{padding-block:0 var(--space-2)}
+
+/* ---- Buttons ------------------------------------------------------------- */
+.bz-btns{margin-block:var(--space-5) 0}
+.bz-btn{font:700 .75rem/1 var(--font-body);letter-spacing:.12em;text-transform:uppercase;min-height:46px;padding:0 22px;border-radius:4px;border:1px solid var(--ink);transition:background-color .18s ease,color .18s ease,border-color .18s ease,transform .18s ease}
+.bz-btn--primary{background:#fff;color:var(--ink);border-color:#fff}
+.bz-btn--primary:hover{background:transparent;color:#fff}
+.bz-btn--secondary{background:#fff;color:var(--ink);border-color:var(--ink)}
+.bz-btn--secondary:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.bz-btn--link{background:none;border:0;border-radius:0;min-height:0;padding:0;color:var(--ink);text-decoration:none;gap:10px}
+.bz-btn--link::after{content:"";width:15px;height:15px;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12h15M13 6l6 6-6 6'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12h15M13 6l6 6-6 6'/%3E%3C/svg%3E") center/contain no-repeat;transition:transform .18s ease}
+.bz-btn--link:hover::after{transform:translateX(4px)}
+
+
+/* ---- Hero: photo fills the band, copy sits over it ------------------------- */
+.bz-section[data-bz-node="hero"]{position:relative;min-height:clamp(440px,39vw,560px);display:flex;flex-direction:column;justify-content:center;padding:112px 0 72px;color:#fff;isolation:isolate;background:var(--night);overflow:hidden}
+.bz-section[data-bz-node="hero"]::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(21,21,21,.6) 0%,rgba(21,21,21,.4) 45%,rgba(21,21,21,.7) 100%)}
+[data-bz-node="hero-bg"]{position:absolute;inset:0;z-index:0;padding:0;margin:0}
+[data-bz-node="hero-bg"] .bz-container,[data-bz-node="hero-bg"] .bz-figure,[data-bz-node="hero-bg"] img{width:100%;max-width:none;height:100%;margin:0;padding:0;border-radius:0;object-fit:cover}
+[data-bz-node="hero"]>.bz-container{max-width:none;padding-inline:0}
+[data-bz-node="hero-row"]{position:relative;z-index:2;max-width:920px;margin-inline:auto;padding-inline:var(--space-4);width:100%;box-sizing:border-box}
+[data-bz-node="hero"] .bz-block{padding-block:0}
+[data-bz-node="hero-crumbs"] p{font:700 .625rem/1.4 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:#fff;margin:0 0 var(--space-3)}
+[data-bz-node="hero-crumbs"] a{color:#fff;border-bottom:1px solid transparent}
+[data-bz-node="hero-crumbs"] a:hover{border-bottom-color:currentColor}
+[data-bz-node="hero-h"] h1{color:#fff;margin:0 auto var(--space-4);max-width:16em;text-wrap:balance;text-shadow:0 2px 24px rgba(0,0,0,.35)}
+[data-bz-node="hero-lede"] p{color:#fff;max-width:36rem;margin:0 auto;font-size:.9375rem;line-height:1.7;text-shadow:0 1px 14px rgba(0,0,0,.4)}
+[data-bz-node="hero-cta"] .bz-btns{justify-content:center;margin-top:var(--space-5)}
+
+/* ---- Intro + stat boxes ------------------------------------------------------- */
+.bz-section[data-bz-node="intro"]{padding-block:clamp(48px,5vw,72px)}
+[data-bz-node="intro"] .bz-block{padding-block:0}
+[data-bz-node="intro-col"]{max-width:880px}
+[data-bz-node^="intro-t"] p{font-size:.9375rem;line-height:1.85;margin:0 0 var(--space-4)}
+[data-bz-node="stats-row"]{margin-top:var(--space-5)}
+[data-bz-node="stats"] .bz-grid{gap:12px}
+[data-bz-node="stats"] .bz-feature{background:#242322;color:#fff;border:0;border-radius:0;padding:24px 26px}
+[data-bz-node="stats"] .bz-feature__t{font:800 clamp(2rem,3.4vw,2.75rem)/1 var(--font-heading);color:#fff;margin:0 0 10px}
+[data-bz-node="stats"] .bz-feature__d{font:700 .625rem/1.5 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.75);margin:0}
+
+/* ---- Warranty (dark) ----------------------------------------------------------------- */
+.bz-section[data-bz-node="warranty"]{background:#242322;color:#fff;padding-block:clamp(56px,6vw,88px)}
+[data-bz-node="warranty"] .bz-block{padding-block:0}
+[data-bz-node="warranty"] .bz-eyebrow{color:rgba(255,255,255,.7)}
+[data-bz-node="warranty-h"] h2{color:#fff}
+[data-bz-node="warranty-t"] p{color:rgba(255,255,255,.86);font-size:.9375rem;line-height:1.8}
+[data-bz-node="warranty-list"] .bz-grid{gap:12px}
+[data-bz-node="warranty-list"] .bz-feature{background:transparent;border:1px solid rgba(255,255,255,.16);border-radius:0;padding:22px 24px}
+[data-bz-node="warranty-list"] .bz-feature__t{font:700 .8125rem/1.3 var(--font-heading);text-transform:uppercase;color:#fff;margin:0 0 8px}
+[data-bz-node="warranty-list"] .bz-feature__d{font-size:.8125rem;line-height:1.7;color:rgba(255,255,255,.82);margin:0}
+
+/* ---- Split bands: mobile service (light) and parts (dark) ------------------------------- */
+.bz-section[data-bz-node="mobile"],.bz-section[data-bz-node="parts"]{padding-block:clamp(56px,6vw,96px)}
+.bz-section[data-bz-node="parts"]{background:#242322;color:#fff}
+[data-bz-node="mobile"] .bz-block,[data-bz-node="parts"] .bz-block{padding-block:0 var(--space-3)}
+[data-bz-node="mobile-img"] img,[data-bz-node="parts-img"] img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:0;display:block}
+[data-bz-node="mobile-img"],[data-bz-node="parts-img"]{padding:0}
+[data-bz-node^="mobile-t"] p,[data-bz-node="parts-t"] p{font-size:.9375rem;line-height:1.8;margin:0}
+[data-bz-node="parts"] .bz-eyebrow{color:rgba(255,255,255,.7)}
+[data-bz-node="parts-h"] h2{color:#fff}
+[data-bz-node="parts-t"] p{color:rgba(255,255,255,.86)}
+[data-bz-node="parts-cta"] .bz-btns{align-items:center;gap:24px}
+[data-bz-node="parts-cta"] .bz-btn--secondary{background:#fff;color:var(--ink);border-color:#fff}
+[data-bz-node="parts-cta"] .bz-btn--secondary:hover{background:transparent;color:#fff}
+[data-bz-node="parts-cta"] .bz-btn--link{color:#fff}
+
+/* ---- Fleet benefits ---------------------------------------------------------------------- */
+.bz-section[data-bz-node="fleet"]{padding-block:clamp(56px,6vw,88px)}
+[data-bz-node="fleet"] .bz-block{padding-block:0}
+[data-bz-node="fleet-row"]{margin-top:var(--space-5)}
+[data-bz-node="fleet-list"] .bz-grid{gap:12px}
+[data-bz-node="fleet-list"] .bz-feature{background:#fff;border:0;border-radius:0;padding:24px 26px}
+[data-bz-node="fleet-list"] .bz-feature__t{font:700 .875rem/1.3 var(--font-heading);text-transform:uppercase;margin:0 0 8px}
+[data-bz-node="fleet-list"] .bz-feature__d{font-size:.8125rem;line-height:1.75;color:#4a4945;margin:0}
+
+/* ---- Resources (brochure, credit, appointment) --------------------------------------------- */
+.bz-section[data-bz-node="res"]{padding-block:clamp(56px,6vw,88px)}
+[data-bz-node="res-grid"]{background:transparent;padding-block:0}
+[data-bz-node="res-grid"] .bz-lede{max-width:40rem;margin-bottom:var(--space-5)}
+[data-bz-node="res-grid"] .bz-grid{gap:16px}
+[data-bz-node="res-grid"] .bz-service{background:#fff;border:1px solid var(--line);border-top:4px solid var(--ink);border-radius:0;padding:26px 24px;display:flex;flex-direction:column;gap:12px}
+[data-bz-node="res-grid"] .bz-service__t{font:700 1rem/1.25 var(--font-heading);text-transform:uppercase;margin:0}
+[data-bz-node="res-grid"] .bz-service__d{font-size:.8125rem;line-height:1.75;color:#4a4945;margin:0 0 auto}
+[data-bz-node="res-grid"] .bz-btns{margin:var(--space-3) 0 0}
+
+/* ---- Brands ------------------------------------------------------------------------------------ */
+.bz-section[data-bz-node="brands"]{padding-block:clamp(56px,6vw,88px);background:var(--paper)}
+[data-bz-node="brands"] .bz-block{padding-block:0}
+[data-bz-node="brands-logos"] .bz-logos{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:var(--space-5)}
+[data-bz-node="brands-logos"] .bz-logo{background:#fff;border:1px solid var(--line);min-height:96px;display:grid;place-items:center;padding:14px 12px;text-align:center}
+[data-bz-node="brands-logos"] .bz-logo img{max-height:56px;width:auto;max-width:100%;object-fit:contain}
+[data-bz-node="brands-logos"] .bz-logo__t{font:800 .8125rem/1.25 var(--font-heading);letter-spacing:.02em;text-transform:uppercase;color:#4a4945}
+
+/* ---- FAQ ------------------------------------------------------------------------------------------ */
+.bz-section[data-bz-node="faq"]{padding-block:clamp(56px,6vw,96px)}
+[data-bz-node="faq"] .bz-container{max-width:920px}
+[data-bz-node="faq"] .bz-block{padding-block:0}
+[data-bz-node="faq-list"]{margin-top:var(--space-5)}
+[data-bz-node="faq"] .bz-faqs{gap:0;border-top:1px solid var(--line)}
+[data-bz-node="faq"] .bz-faq{background:none;border:0;border-bottom:1px solid var(--line);border-radius:0;padding:0}
+[data-bz-node="faq"] .bz-faq summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font:700 .75rem/1.4 var(--font-heading);text-transform:uppercase;letter-spacing:.02em;cursor:pointer}
+[data-bz-node="faq"] .bz-faq summary::-webkit-details-marker{display:none}
+[data-bz-node="faq"] .bz-faq summary::after{content:"+";font:400 1.25rem/1 var(--font-body);flex:none}
+[data-bz-node="faq"] .bz-faq[open] summary::after{content:"\00d7"}
+[data-bz-node="faq"] .bz-faq__a{font-size:.8125rem;line-height:1.8;color:#4a4945;margin:0;padding:0 40px 24px 0;max-width:46rem}
+
+/* ---- Closing call to action ------------------------------------------------------------------------- */
+.bz-section[data-bz-node="cta"]{background:#242322;color:#fff;padding-block:clamp(56px,6vw,88px)}
+[data-bz-node="cta"] .bz-container{max-width:1000px}
+[data-bz-node="cta"] .bz-block{padding-block:0}
+[data-bz-node="cta-h"] .bz-eyebrow{color:#fff}
+[data-bz-node="cta-h"] h2{color:#fff;margin-bottom:var(--space-3);text-wrap:balance}
+[data-bz-node="cta-t"] p{color:rgba(255,255,255,.86);max-width:30rem;margin:0 auto}
+[data-bz-node="cta-btn"] .bz-btns{justify-content:center;margin-top:var(--space-5)}
+[data-bz-node="cta-btn"] .bz-btn--secondary{background:transparent;color:#fff;border-color:#fff}
+[data-bz-node="cta-btn"] .bz-btn--secondary:hover{background:#fff;color:var(--ink)}
+
+/* ---- Tablet & mobile ------------------------------------------------------------------------------------ */
+@media (max-width:1100px){
+  [data-bz-node="brands-logos"] .bz-logos{grid-template-columns:repeat(3,minmax(0,1fr))}
+  [data-bz-node="fleet-list"] .bz-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:640px){
+  .bz-section[data-bz-node="hero"]{min-height:520px;padding:96px 0 56px}
+  [data-bz-node="stats"] .bz-grid,[data-bz-node="warranty-list"] .bz-grid,[data-bz-node="fleet-list"] .bz-grid,[data-bz-node="res-grid"] .bz-grid{grid-template-columns:1fr}
+  [data-bz-node="brands-logos"] .bz-logos{grid-template-columns:repeat(2,minmax(0,1fr))}
+  [data-bz-node="faq"] .bz-faq summary{font-size:.6875rem}
+}
+
+/* serviceGrid draws for a dark band by default; this one sits on white. */
+[data-bz-node="res-grid"] h2,[data-bz-node="res-grid"] .bz-service__t{color:var(--ink)}
+[data-bz-node="res-grid"] .bz-lede{color:#4a4945}
+[data-bz-node="res-grid"] .bz-btn--link{color:var(--ink)}
+
+/* ---- Service appointment form -------------------------------------------------------------------- */
+.bz-section[data-bz-node="appt"]{padding-block:clamp(56px,6vw,96px)}
+[data-bz-node="appt"] .bz-block{padding-block:0 var(--space-3)}
+[data-bz-node^="appt-t"] p{font-size:.9375rem;line-height:1.75;max-width:30rem}
+[data-bz-node="appt-form-col"]{background:#fff;padding:clamp(24px,3vw,40px)}
+[data-bz-node="appt-form"] .bz-form{max-width:none;border:0;padding:0;background:transparent}
+[data-bz-node="appt-form"] [aria-labelledby="sa-service-l"]{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 20px}
+[data-bz-node="appt-form"] button[type="submit"]{background:var(--ink);color:#fff;border-color:var(--ink);min-height:48px;padding:0 28px}
+[data-bz-node="appt-form"] button[type="submit"]:hover{background:#fff;color:var(--ink)}
+@media (max-width:640px){[data-bz-node="appt-form"] [aria-labelledby="sa-service-l"]{grid-template-columns:1fr}}

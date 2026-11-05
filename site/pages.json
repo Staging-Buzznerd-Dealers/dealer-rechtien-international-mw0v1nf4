@@ -75,6 +75,24 @@
     }
   },
   {
+    "slug": "service",
+    "title": "Commercial Truck Service & Repair in Florida & South Carolina",
+    "description": "Truck service and repair for all makes at Carolina International Trucks (South Carolina) and Rechtien International Trucks (South Florida): preventive maintenance, diagnostics, warranty work, alignment, A/C and mobile service.",
+    "path": "/service",
+    "out": "service/index.html",
+    "dir": "service",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
     "slug": "about",
     "title": "About Rechtien & Carolina International Trucks",
     "description": "Rechtien International and Carolina International Trucks: one commercial truck dealer network with 11 locations in South Florida and South Carolina.",

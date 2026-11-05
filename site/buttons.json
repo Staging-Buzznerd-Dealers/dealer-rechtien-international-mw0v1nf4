@@ -182,20 +182,58 @@
     "active": true
   },
   {
+    "id": "schedule-service",
+    "label": "Schedule your service appointment",
+    "url": null,
+    "formId": "service-appointment",
+    "style": "primary",
+    "intent": "book-service",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "service-brochure",
+    "label": "Service brochure",
+    "url": "#",
+    "style": "link",
+    "intent": "download-brochure",
+    "newTab": true,
+    "active": true
+  },
+  {
+    "id": "credit-application",
+    "label": "Credit application",
+    "url": null,
+    "formId": "financing",
+    "style": "link",
+    "intent": "apply-credit",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "parts-department",
+    "label": "Visit our parts department",
+    "url": "/parts",
+    "style": "secondary",
+    "intent": "browse-parts",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "contact-body-shop",
+    "label": "Contact body shop",
+    "url": "#",
+    "style": "secondary",
+    "intent": "contact-body-shop",
+    "newTab": false,
+    "active": true
+  },
+  {
     "id": "explore-inventory",
     "label": "Explore our inventory",
     "url": "/store/inventory",
     "style": "primary",
     "intent": "browse-inventory",
-    "newTab": false,
-    "active": true
-  },
-  {
-    "id": "schedule-service",
-    "label": "Schedule service",
-    "url": "/service",
-    "style": "secondary",
-    "intent": "book-service",
     "newTab": false,
     "active": true
   }
