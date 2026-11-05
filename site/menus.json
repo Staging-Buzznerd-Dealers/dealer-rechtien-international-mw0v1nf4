@@ -309,36 +309,84 @@
           "url": "/#locations",
           "children": [
             {
+              "id": "hn-loc-fl",
+              "label": "Florida",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "hn-loc-miami",
+                  "label": "Miami",
+                  "type": "location",
+                  "ref": "maimi"
+                },
+                {
+                  "id": "hn-loc-ftlauderdale",
+                  "label": "Ft. Lauderdale",
+                  "type": "url",
+                  "url": "#"
+                },
+                {
+                  "id": "hn-loc-rivierabeach",
+                  "label": "Riviera Beach",
+                  "type": "url",
+                  "url": "#"
+                },
+                {
+                  "id": "hn-loc-ftpierce",
+                  "label": "Ft. Pierce",
+                  "type": "url",
+                  "url": "#"
+                },
+                {
+                  "id": "hn-loc-ftmyers",
+                  "label": "Ft. Myers",
+                  "type": "url",
+                  "url": "#"
+                }
+              ]
+            },
+            {
               "id": "hn-loc-sc",
               "label": "South Carolina",
               "type": "label",
               "ref": null,
               "children": [
                 {
+                  "id": "hn-loc-charleston",
+                  "label": "Charleston",
+                  "type": "url",
+                  "url": "#"
+                },
+                {
+                  "id": "hn-loc-columbia",
+                  "label": "Columbia",
+                  "type": "location",
+                  "ref": "columbia-2"
+                },
+                {
+                  "id": "hn-loc-conway",
+                  "label": "Conway",
+                  "type": "url",
+                  "url": "#"
+                },
+                {
+                  "id": "hn-loc-florence",
+                  "label": "Florence",
+                  "type": "url",
+                  "url": "#"
+                },
+                {
                   "id": "hn-loc-greenville",
-                  "label": "Greenville, SC",
+                  "label": "Greenville",
                   "type": "location",
                   "ref": "greenville"
                 },
                 {
-                  "id": "hn-loc-columbia",
-                  "label": "Columbia, SC",
-                  "type": "location",
-                  "ref": "columbia-2"
-                }
-              ]
-            },
-            {
-              "id": "hn-loc-fl",
-              "label": "South Florida",
-              "type": "label",
-              "ref": null,
-              "children": [
-                {
-                  "id": "hn-loc-miami",
-                  "label": "Miami, FL",
-                  "type": "location",
-                  "ref": "maimi"
+                  "id": "hn-loc-greer",
+                  "label": "Greer",
+                  "type": "url",
+                  "url": "#"
                 }
               ]
             },
