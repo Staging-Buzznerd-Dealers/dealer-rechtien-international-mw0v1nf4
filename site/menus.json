@@ -323,26 +323,26 @@
                 {
                   "id": "hn-loc-ftlauderdale",
                   "label": "Ft. Lauderdale",
-                  "type": "location",
-                  "ref": "fort-lauderdale"
+                  "type": "url",
+                  "url": "#"
                 },
                 {
                   "id": "hn-loc-rivierabeach",
                   "label": "Riviera Beach",
-                  "type": "location",
-                  "ref": "riviera-beach"
+                  "type": "url",
+                  "url": "#"
                 },
                 {
                   "id": "hn-loc-ftpierce",
                   "label": "Ft. Pierce",
-                  "type": "location",
-                  "ref": "fort-pierce"
+                  "type": "url",
+                  "url": "#"
                 },
                 {
                   "id": "hn-loc-ftmyers",
                   "label": "Ft. Myers",
-                  "type": "location",
-                  "ref": "fort-myers"
+                  "type": "url",
+                  "url": "#"
                 }
               ]
             },
@@ -355,8 +355,8 @@
                 {
                   "id": "hn-loc-charleston",
                   "label": "Charleston",
-                  "type": "location",
-                  "ref": "charleston"
+                  "type": "url",
+                  "url": "#"
                 },
                 {
                   "id": "hn-loc-columbia",
@@ -367,14 +367,14 @@
                 {
                   "id": "hn-loc-conway",
                   "label": "Conway",
-                  "type": "location",
-                  "ref": "conway"
+                  "type": "url",
+                  "url": "#"
                 },
                 {
                   "id": "hn-loc-florence",
                   "label": "Florence",
-                  "type": "location",
-                  "ref": "florence"
+                  "type": "url",
+                  "url": "#"
                 },
                 {
                   "id": "hn-loc-greenville",
@@ -385,8 +385,8 @@
                 {
                   "id": "hn-loc-greer",
                   "label": "Greer",
-                  "type": "location",
-                  "ref": "greer"
+                  "type": "url",
+                  "url": "#"
                 }
               ]
             },
