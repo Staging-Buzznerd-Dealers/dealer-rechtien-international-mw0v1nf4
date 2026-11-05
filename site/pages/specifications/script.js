@@ -18,3 +18,13 @@
     v.pause();
   }
 })();
+
+/* S13 band video: hide the orange play badge while it plays. */
+(function () {
+  var box = document.querySelector('[data-bz-node="s13-video"] .bz-video--file');
+  var v = box && box.querySelector('video');
+  if (!v) return;
+  function sync() { box.classList.toggle('is-playing', !v.paused && !v.ended); }
+  ['play', 'playing', 'pause', 'ended'].forEach(function (e) { v.addEventListener(e, sync); });
+  sync();
+})();

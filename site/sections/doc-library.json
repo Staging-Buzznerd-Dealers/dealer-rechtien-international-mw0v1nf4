@@ -2,8 +2,8 @@
   "version": 2,
   "id": "doc-library",
   "name": "Brochure library (by series)",
-  "css": "/* Brochure library: one heading, then a titled group of PDF cards per series.\n   Every group and card comes from the `groups` prop, so a new series or a new\n   document is a list row, not a copied subtree. */\n.bz-section[data-bz-node=\"lib\"]{background:#fff;padding-block:clamp(56px,7vw,96px)}\n[data-bz-node=\"lib\"] .bz-block{padding-block:0}\n[data-bz-node=\"lib-h\"] h2{margin-bottom:var(--space-5)}\n\n[data-bz-node^=\"lib-group\"]{margin-bottom:clamp(28px,3.4vw,44px)}\n[data-bz-node=\"lib-groups\"]>.bz-col:last-child{margin-bottom:0}\n[data-bz-node^=\"lib-ghead\"]{align-items:end;margin-bottom:var(--space-3)}\n[data-bz-node^=\"lib-gtitle\"] h3{font:700 clamp(1rem,1.5vw,1.25rem)/1.2 var(--font-heading);letter-spacing:0;margin:0;color:var(--ink)}\n[data-bz-node^=\"lib-gmeta\"] .bz-text p{margin:0;text-align:right;font:700 .625rem/1.4 var(--font-body);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}\n\n/* Cards: three across on desktop, two on tablet, one on a phone. */\n[data-bz-node^=\"lib-docs\"]{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}\n[data-bz-node^=\"lib-docs\"]>.bz-col{grid-column:auto}\n[data-bz-node^=\"lib-doc\"] .bz-block{padding:0}\n[data-bz-node^=\"lib-doc\"] .bz-btns{margin:0}\n[data-bz-node^=\"lib-doc\"] .bz-btn{display:flex;width:100%;justify-content:space-between;align-items:center;gap:16px;min-height:62px;padding:0 24px;background:#fff;border:1px solid var(--line);border-radius:0;color:var(--ink);font:700 .75rem/1.3 var(--font-body);letter-spacing:.02em;text-transform:none;transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease}\n[data-bz-node^=\"lib-doc\"] .bz-btn::after{content:\"PDF \\2192\";width:auto;height:auto;background:none;-webkit-mask:none;mask:none;flex:none;font:700 .625rem/1 var(--font-body);letter-spacing:.14em;color:var(--muted);transition:color .18s ease,transform .18s ease}\n[data-bz-node^=\"lib-doc\"] .bz-btn:hover{border-color:var(--ink);box-shadow:0 8px 22px rgba(0,0,0,.07);transform:translateY(-1px)}\n[data-bz-node^=\"lib-doc\"] .bz-btn:hover::after{color:var(--ink);transform:translateX(3px)}\n\n@media (max-width:1100px){[data-bz-node^=\"lib-docs\"]{grid-template-columns:repeat(2,minmax(0,1fr))}}\n@media (max-width:640px){\n  [data-bz-node^=\"lib-docs\"]{grid-template-columns:1fr}\n  [data-bz-node^=\"lib-ghead\"]{row-gap:6px}\n  [data-bz-node^=\"lib-gtitle\"],[data-bz-node^=\"lib-gmeta\"]{grid-column:1/-1}\n  [data-bz-node^=\"lib-gmeta\"] .bz-text p{text-align:left}\n}\n",
-  "js": "",
+  "css": "/* Brochure library: one heading, then a titled group of PDF cards per series.\n   Every group and card comes from the `groups` prop, so a new series or a new\n   document is a list row, not a copied subtree. */\n.bz-section[data-bz-node=\"lib\"]{background:#fff;padding-block:clamp(56px,7vw,96px)}\n[data-bz-node=\"lib\"] .bz-block{padding-block:0}\n[data-bz-node=\"lib-h\"] h2{margin-bottom:var(--space-5)}\n\n[data-bz-node^=\"lib-group\"]{margin-bottom:clamp(28px,3.4vw,44px)}\n[data-bz-node=\"lib-groups\"]>.bz-col:last-child{margin-bottom:0}\n[data-bz-node^=\"lib-ghead\"]{align-items:end;margin-bottom:var(--space-3)}\n[data-bz-node^=\"lib-gtitle\"] h3{font:700 clamp(1rem,1.5vw,1.25rem)/1.2 var(--font-heading);letter-spacing:0;margin:0;color:var(--ink)}\n[data-bz-node^=\"lib-gmeta\"] .bz-text p{margin:0;text-align:right;font:700 .625rem/1.4 var(--font-body);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}\n\n/* Cards: three across on desktop, two on tablet, one on a phone. */\n[data-bz-node^=\"lib-docs\"]{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}\n[data-bz-node^=\"lib-docs\"]>.bz-col{grid-column:auto}\n[data-bz-node^=\"lib-doc\"] .bz-block{padding:0}\n[data-bz-node^=\"lib-doc\"] .bz-btns{margin:0}\n[data-bz-node^=\"lib-doc\"] .bz-btn{display:flex;width:100%;justify-content:space-between;align-items:center;gap:16px;min-height:62px;padding:0 24px;background:#fff;border:1px solid var(--line);border-radius:0;color:var(--ink);font:700 .75rem/1.3 var(--font-body);letter-spacing:.02em;text-transform:none;transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease}\n[data-bz-node^=\"lib-doc\"] .bz-btn::after{content:\"PDF \\2192\";width:auto;height:auto;background:none;-webkit-mask:none;mask:none;flex:none;font:700 .625rem/1 var(--font-body);letter-spacing:.14em;color:var(--muted);transition:color .18s ease,transform .18s ease}\n[data-bz-node^=\"lib-doc\"] .bz-btn:hover{border-color:var(--ink);box-shadow:0 8px 22px rgba(0,0,0,.07);transform:translateY(-1px)}\n[data-bz-node^=\"lib-doc\"] .bz-btn:hover::after{color:var(--ink);transform:translateX(3px)}\n\n@media (max-width:1100px){[data-bz-node^=\"lib-docs\"]{grid-template-columns:repeat(2,minmax(0,1fr))}}\n@media (max-width:640px){\n  [data-bz-node^=\"lib-docs\"]{grid-template-columns:1fr}\n  [data-bz-node^=\"lib-ghead\"]{row-gap:6px}\n  [data-bz-node^=\"lib-gtitle\"],[data-bz-node^=\"lib-gmeta\"]{grid-column:1/-1}\n  [data-bz-node^=\"lib-gmeta\"] .bz-text p{text-align:left}\n}\n\n/* \"View inventory\" pill beside the series name */\n[data-bz-node^=\"lib-gtitle\"]{display:flex;align-items:center;flex-wrap:wrap;gap:8px 14px}\n[data-bz-node^=\"lib-gtitle\"] .bz-block,[data-bz-node^=\"lib-gtitle\"] .bz-container{width:auto;padding:0}\n[data-bz-node^=\"lib-ginv\"] .bz-btns{margin:0}\n[data-bz-node^=\"lib-ginv\"] .bz-btn{min-height:0;padding:7px 12px;background:var(--accent);border-color:var(--accent);color:var(--ink);border-radius:4px;font:700 .75rem/1 var(--font-body);letter-spacing:.02em;text-transform:uppercase;transition:background-color .18s ease,color .18s ease}\n[data-bz-node^=\"lib-ginv\"] .bz-btn:hover{background:var(--ink);border-color:var(--ink);color:#fff}\n\n/* One video per series, centred under its cards, with an orange play badge\n   until it starts (the badge is CSS; the script only tracks playing state). */\n[data-bz-node^=\"lib-vrow\"]{margin-top:clamp(20px,2.4vw,32px)}\n[data-bz-node^=\"lib-video\"]{max-width:440px;margin-inline:auto;padding:0}\n[data-bz-node^=\"lib-video\"] .bz-container,[data-bz-node^=\"lib-video\"] .bz-figure{padding:0;margin:0;max-width:none}\n[data-bz-node^=\"lib-video\"] .bz-video{border-radius:6px;background:#111}\n[data-bz-node^=\"lib-video\"] .bz-video::after{content:\"\";position:absolute;left:50%;top:50%;width:56px;height:56px;transform:translate(-50%,-50%);border-radius:50%;pointer-events:none;background:var(--accent) url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M9 6.5v11l9-5.5z'/%3E%3C/svg%3E\") 55% 50%/46% no-repeat;box-shadow:0 6px 20px rgba(0,0,0,.3);transition:opacity .2s ease,transform .2s ease}\n[data-bz-node^=\"lib-video\"] .bz-video.is-playing::after{opacity:0;transform:translate(-50%,-50%) scale(.8)}\n@media (max-width:640px){[data-bz-node^=\"lib-ginv\"] .bz-btn{font-size:.6875rem}}\n",
+  "js": "/* Brochure library: hides the orange play badge while a series video is\n   playing and brings it back on pause or end. The video itself is the platform\n   video block, so controls, keyboard and captions need nothing from here. */\n(function () {\n  document.querySelectorAll('[data-bz-section=\"doc-library\"] .bz-video--file').forEach(function (box) {\n    var v = box.querySelector('video');\n    if (!v) return;\n    function sync() { box.classList.toggle('is-playing', !v.paused && !v.ended); }\n    ['play', 'playing', 'pause', 'ended'].forEach(function (e) { v.addEventListener(e, sync); });\n    sync();\n  });\n})();\n",
   "props": [
     {
       "key": "eyebrow",
@@ -33,6 +33,11 @@
           "label": "Segment and document count"
         },
         {
+          "key": "inventoryUrl",
+          "type": "url",
+          "label": "View inventory links to"
+        },
+        {
           "key": "docs",
           "type": "list",
           "label": "Documents",
@@ -48,6 +53,16 @@
               "label": "PDF link"
             }
           ]
+        },
+        {
+          "key": "videoSrc",
+          "type": "url",
+          "label": "Video file or YouTube/Vimeo link"
+        },
+        {
+          "key": "videoPoster",
+          "type": "url",
+          "label": "Video poster image"
         }
       ]
     }
@@ -130,6 +145,20 @@
                             "headingLevel": 3,
                             "align": "left"
                           }
+                        },
+                        {
+                          "id": "lib-ginv",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "label": "View inventory",
+                                "url": "{{inventoryUrl}}",
+                                "style": "primary"
+                              }
+                            ],
+                            "align": "left"
+                          }
                         }
                       ]
                     },
@@ -181,6 +210,38 @@
                               }
                             ],
                             "align": "left"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "lib-vrow",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "lib-vcol",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "lib-video",
+                          "type": "video",
+                          "props": {
+                            "video": {
+                              "src": "{{videoSrc}}",
+                              "poster": "{{videoPoster}}",
+                              "title": "{{title}} video"
+                            },
+                            "controls": true,
+                            "width": "full"
                           }
                         }
                       ]
