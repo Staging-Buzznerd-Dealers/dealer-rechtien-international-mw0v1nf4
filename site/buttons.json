@@ -90,5 +90,41 @@
     "intent": "contact",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "browse-library",
+    "label": "Browse the library",
+    "url": "#brochures",
+    "style": "primary",
+    "intent": "browse-specifications",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "s13-powertrain",
+    "label": "S13 Integrated Powertrain",
+    "url": "#s13",
+    "style": "primary",
+    "intent": "browse-specifications",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "trailer-sales",
+    "label": "Contact trailer sales",
+    "url": "/contact",
+    "style": "link",
+    "intent": "contact",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "browse-trucks",
+    "label": "Browse trucks",
+    "url": "/store/inventory",
+    "style": "link",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
   }
 ]

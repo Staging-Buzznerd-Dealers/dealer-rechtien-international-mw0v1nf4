@@ -1,0 +1,716 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "banner",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center",
+        "anchor": "top"
+      },
+      "children": [
+        {
+          "id": "banner-video",
+          "type": "video",
+          "props": {
+            "video": {
+              "src": "/videos/specifications-banner-placeholder.mp4",
+              "poster": "/images/specifications-banner-poster.jpg",
+              "title": "Specifications banner video (placeholder)"
+            },
+            "controls": true,
+            "width": "full"
+          }
+        },
+        {
+          "id": "banner-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "banner-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "banner-crumbs",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Home</a> / S13 Integrated Powertrain & Brochures",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "banner-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "S13 Integrated Powertrain & Brochures",
+                    "headingLevel": 1,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "banner-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "International specification sheets by series, S13 powertrain documentation and competitive comparisons — every one a free PDF download.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "banner-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "browse-library"
+                      },
+                      {
+                        "ctaId": "s13-powertrain"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "intro-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "intro-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "intro-text",
+                  "type": "text",
+                  "props": {
+                    "text": "Every International series we sell, with the brochure and the spec sheets that go with it. Pull the numbers you need before you spec a unit, then call and we’ll build it to the application.\n\nAll files are free PDF downloads, no form required. For trailer specifications, our trailer sales team can send the sheet for the configuration you’re considering.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "ink",
+        "paddingY": 8,
+        "anchor": "s13"
+      },
+      "children": [
+        {
+          "id": "s13-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "s13-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "s13-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Engine, transmission and aftertreatment designed as one.",
+                    "eyebrow": "International S13 Integrated Powertrain",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "s13-text",
+                  "type": "text",
+                  "props": {
+                    "text": "A clean sheet of paper and decades of experience. That’s what the engineering team started with when they began work on the International® S13® Integrated Powertrain.\n\nThanks to this spirit of collaboration between partner companies, the team was able to shift what’s possible and rethink, redesign and reinvent what an integrated powertrain can be. The result is an engine, transmission and aftertreatment system designed to work as one that’s simple, easy to service and delivers stellar performance with superior operating economy.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "s13-label",
+                  "type": "text",
+                  "props": {
+                    "text": "LT · RH · HX",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "s13-docs",
+                  "type": "categoryGrid",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "S13 spec sheet — LT and RH Series",
+                        "meta": "PDF",
+                        "url": ""
+                      },
+                      {
+                        "label": "S13 spec sheet — HX Series",
+                        "meta": "PDF",
+                        "url": ""
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "s13-media",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "s13-cmp-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "s13-cmp",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "s13-cmp-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "See how International stacks up against the competition.",
+                    "eyebrow": "Competitive comparisons",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "s13-cmp-count",
+                  "type": "text",
+                  "props": {
+                    "text": "3 documents",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "s13-cmp-docs",
+                  "type": "categoryGrid",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "CV Series comparison",
+                        "meta": "PDF",
+                        "url": ""
+                      },
+                      {
+                        "label": "HX Series comparison",
+                        "meta": "PDF",
+                        "url": ""
+                      },
+                      {
+                        "label": "LT Series comparison",
+                        "meta": "PDF",
+                        "url": ""
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "library",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "doc-library",
+        "values": {
+          "eyebrow": "International specification sheets",
+          "heading": "Brochures by series.",
+          "groups": [
+            {
+              "title": "International MV Series",
+              "meta": "Medium duty · 7 documents",
+              "docs": [
+                {
+                  "label": "MV Series brochure",
+                  "url": ""
+                },
+                {
+                  "label": "MV Specifications",
+                  "url": ""
+                },
+                {
+                  "label": "MV Dry Van",
+                  "url": ""
+                },
+                {
+                  "label": "MV Utility",
+                  "url": ""
+                },
+                {
+                  "label": "MV Recovery",
+                  "url": ""
+                },
+                {
+                  "label": "MV Boom",
+                  "url": ""
+                },
+                {
+                  "label": "MV Snowplow",
+                  "url": ""
+                }
+              ]
+            },
+            {
+              "title": "International eMV Series",
+              "meta": "Electric medium duty · 3 documents",
+              "docs": [
+                {
+                  "label": "eMV Series brochure",
+                  "url": ""
+                },
+                {
+                  "label": "eMV Specifications",
+                  "url": ""
+                },
+                {
+                  "label": "eMV Body Integration",
+                  "url": ""
+                }
+              ]
+            },
+            {
+              "title": "International HV Series",
+              "meta": "Vocational · 4 documents",
+              "docs": [
+                {
+                  "label": "HV509 specifications",
+                  "url": ""
+                },
+                {
+                  "label": "HV515 specifications",
+                  "url": ""
+                },
+                {
+                  "label": "HV609 specifications",
+                  "url": ""
+                },
+                {
+                  "label": "HV615 specifications",
+                  "url": ""
+                }
+              ]
+            },
+            {
+              "title": "International LT Series",
+              "meta": "On highway · 3 documents",
+              "docs": [
+                {
+                  "label": "LT Series brochure",
+                  "url": ""
+                },
+                {
+                  "label": "LT Series Day Cab",
+                  "url": ""
+                },
+                {
+                  "label": "LT Series Sleeper",
+                  "url": ""
+                }
+              ]
+            },
+            {
+              "title": "International RH Series",
+              "meta": "On highway · 3 documents",
+              "docs": [
+                {
+                  "label": "RH Series brochure",
+                  "url": ""
+                },
+                {
+                  "label": "RH Series Day Cab",
+                  "url": ""
+                },
+                {
+                  "label": "RH Series Sleeper",
+                  "url": ""
+                }
+              ]
+            },
+            {
+              "title": "International HX Series",
+              "meta": "Severe service · 3 documents",
+              "docs": [
+                {
+                  "label": "HX Series brochure",
+                  "url": ""
+                },
+                {
+                  "label": "HX520 specifications",
+                  "url": ""
+                },
+                {
+                  "label": "HX620 specifications",
+                  "url": ""
+                }
+              ]
+            },
+            {
+              "title": "International CV Series",
+              "meta": "Class 4-6 · 1 document",
+              "docs": [
+                {
+                  "label": "CV Series brochure",
+                  "url": ""
+                }
+              ]
+            },
+            {
+              "title": "LoneStar",
+              "meta": "On highway · 3 documents",
+              "docs": [
+                {
+                  "label": "LoneStar Series brochure",
+                  "url": ""
+                },
+                {
+                  "label": "LoneStar Day Cab",
+                  "url": ""
+                },
+                {
+                  "label": "LoneStar Sleeper",
+                  "url": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "next",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "next-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "next-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "next-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Trailer specs and factory orders.",
+                    "eyebrow": "Next steps",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "next-row",
+          "type": "row",
+          "props": {
+            "gap": 4,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "next-trailer",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "background": "card"
+              },
+              "children": [
+                {
+                  "id": "next-trailer-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Trailer specifications",
+                    "eyebrow": "Trailers",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "next-trailer-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Specifications for the trailers we sell — dry van, reefer, flatbed and specialty configurations. Tell us the application and our trailer sales team will send the right sheet.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "next-trailer-b",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "trailer-sales"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "next-truck",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "background": "card"
+              },
+              "children": [
+                {
+                  "id": "next-truck-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Spec your truck",
+                    "eyebrow": "Next step",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "next-truck-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Browse the trucks available now, then talk to us about lead times, financing and the aftermarket work a unit needs before it goes to work.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "next-truck-b",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "browse-trucks"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "faq"
+      },
+      "children": [
+        {
+          "id": "faq-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "faq-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "eyebrow": "Brochure & powertrain FAQs",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "What is the International S13 Integrated Powertrain?",
+                          "a": "The S13 is an engine, transmission and aftertreatment system designed to work as one. It is simple, easy to service, and delivers stellar performance with superior operating economy. Spec sheets are available for the LT and RH Series and the HX Series."
+                        },
+                        {
+                          "q": "Which trucks can be ordered with the S13?",
+                          "a": "S13 spec sheets are available for the LT and RH Series and the HX Series. Call or contact us to confirm what is available for the unit you are considering."
+                        },
+                        {
+                          "q": "Which International series brochures are available?",
+                          "a": "Brochures and spec sheets are listed on this page for the MV, eMV, HV, LT, RH, HX and CV Series and for LoneStar."
+                        },
+                        {
+                          "q": "Are the brochures free to download?",
+                          "a": "Yes. All files are free PDF downloads, no form required."
+                        },
+                        {
+                          "q": "How does International compare to competitors?",
+                          "a": "Competitive comparison documents are available for the CV, HX and LT Series. They are listed above under “See how International stacks up against the competition.”"
+                        },
+                        {
+                          "q": "Where can I get trailer specifications?",
+                          "a": "Contact our trailer sales team with the application you have in mind and they can send the right specification sheet."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "ink",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Tell us the job, we’ll tell you the truck.",
+                    "eyebrow": "Need help choosing?",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "cta-text",
+                  "type": "text",
+                  "props": {
+                    "text": "Ready to get on the road? Contact us to explore our trucks and experience nothing less than the dedicated care you deserve.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btn",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "call-main"
+                      },
+                      {
+                        "ctaId": "contact-us"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

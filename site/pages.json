@@ -17,5 +17,23 @@
       "utilityNav": null
     },
     "pageType": "Home"
+  },
+  {
+    "slug": "specifications",
+    "title": "S13 Integrated Powertrain & Brochures",
+    "description": "International specification sheets by series, S13 integrated powertrain documentation and competitive comparisons — every one a free PDF download.",
+    "path": "/specifications",
+    "out": "specifications/index.html",
+    "dir": "specifications",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]
