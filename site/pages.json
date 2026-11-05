@@ -117,7 +117,7 @@
     "path": "/financing",
     "out": "financing/index.html",
     "dir": "financing",
-    "status": "draft",
+    "status": "published",
     "seo": {
       "ogImage": null,
       "noindex": false
