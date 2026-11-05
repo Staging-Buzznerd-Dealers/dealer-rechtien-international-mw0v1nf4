@@ -633,6 +633,54 @@
                   ]
                 }
               ]
+            },
+            {
+              "id": "20",
+              "name": "Greenville",
+              "subtitle": "",
+              "slug": "greenville",
+              "num": "03",
+              "href": "/locations/greenville",
+              "streetAddress": "1501 Whitehorse Rd",
+              "city": "Greenville",
+              "region": "SC",
+              "postalCode": "29605",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=1501%20Whitehorse%20Rd%2C%20Greenville%2C%20SC%2C%2029605",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "",
+              "hours": "",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": "Carolina",
+              "groupKey": "new-group-2",
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [],
+              "hoursRows": []
             }
           ]
         },
