@@ -516,8 +516,8 @@
         {
           "id": "hn-financing",
           "label": "Financing",
-          "type": "url",
-          "url": "#"
+          "type": "page",
+          "ref": "financing"
         },
         {
           "id": "hn-export",
