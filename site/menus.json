@@ -309,36 +309,84 @@
           "url": "/#locations",
           "children": [
             {
+              "id": "hn-loc-fl",
+              "label": "Florida",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "hn-loc-miami",
+                  "label": "Miami",
+                  "type": "location",
+                  "ref": "maimi"
+                },
+                {
+                  "id": "hn-loc-ftlauderdale",
+                  "label": "Ft. Lauderdale",
+                  "type": "location",
+                  "ref": "fort-lauderdale"
+                },
+                {
+                  "id": "hn-loc-rivierabeach",
+                  "label": "Riviera Beach",
+                  "type": "location",
+                  "ref": "riviera-beach"
+                },
+                {
+                  "id": "hn-loc-ftpierce",
+                  "label": "Ft. Pierce",
+                  "type": "location",
+                  "ref": "fort-pierce"
+                },
+                {
+                  "id": "hn-loc-ftmyers",
+                  "label": "Ft. Myers",
+                  "type": "location",
+                  "ref": "fort-myers"
+                }
+              ]
+            },
+            {
               "id": "hn-loc-sc",
               "label": "South Carolina",
               "type": "label",
               "ref": null,
               "children": [
                 {
+                  "id": "hn-loc-charleston",
+                  "label": "Charleston",
+                  "type": "location",
+                  "ref": "charleston"
+                },
+                {
+                  "id": "hn-loc-columbia",
+                  "label": "Columbia",
+                  "type": "location",
+                  "ref": "columbia-2"
+                },
+                {
+                  "id": "hn-loc-conway",
+                  "label": "Conway",
+                  "type": "location",
+                  "ref": "conway"
+                },
+                {
+                  "id": "hn-loc-florence",
+                  "label": "Florence",
+                  "type": "location",
+                  "ref": "florence"
+                },
+                {
                   "id": "hn-loc-greenville",
-                  "label": "Greenville, SC",
+                  "label": "Greenville",
                   "type": "location",
                   "ref": "greenville"
                 },
                 {
-                  "id": "hn-loc-columbia",
-                  "label": "Columbia, SC",
+                  "id": "hn-loc-greer",
+                  "label": "Greer",
                   "type": "location",
-                  "ref": "columbia-2"
-                }
-              ]
-            },
-            {
-              "id": "hn-loc-fl",
-              "label": "South Florida",
-              "type": "label",
-              "ref": null,
-              "children": [
-                {
-                  "id": "hn-loc-miami",
-                  "label": "Miami, FL",
-                  "type": "location",
-                  "ref": "maimi"
+                  "ref": "greer"
                 }
               ]
             },
