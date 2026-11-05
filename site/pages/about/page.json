@@ -1,0 +1,987 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center",
+        "anchor": "top"
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "hero-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-crumbs",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Home</a> / About us",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Moving your business forward.",
+                    "headingLevel": 1,
+                    "align": "center",
+                    "eyebrow": "About Rechtien International & Carolina International"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Rechtien International Trucks and Carolina International Trucks are one commercial truck dealership network, serving customers across South Florida and South Carolina from 11 locations.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "styles": {
+        "base": {
+          "backgroundImage": "/images/hero-truck.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
+          "background": "#151515"
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "intro-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "intro-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "intro-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Full-service commercial truck dealerships you can count on.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Welcome to Rechtien International & Carolina International"
+                  }
+                },
+                {
+                  "id": "intro-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "Rechtien International Trucks and Carolina International Trucks are full-service commercial truck dealerships. We sell, service and support new and pre-owned trucks — medium, heavy and severe service International® trucks and Hino trucks, plus IC Bus and Mitsubishi FUSO medium duty work trucks through Carolina International Trucks — with parts, service, maintenance and repair support behind every sale.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "We are more than authorized International® truck dealers. Rechtien's product lines also include Ottawa trucks, East, Pitts and Dorsey trailers and forklifts, and Carolina International Trucks Idealease provides trucks for lease and rental supported by mobile maintenance services.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-t3",
+                  "type": "text",
+                  "props": {
+                    "text": "When you are ready to invest in a new truck, trailer or forklift, our friendly and knowledgeable sales, financing, service and parts departments are prepared to make your experience outstanding — from helping you make your choice to ongoing maintenance and customization. We move our customers forward with innovative products backed by quality service.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "explore-inventory"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "intro-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "intro-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/white-international-truck.jpg",
+                      "alt": "White International commercial truck from our South Florida and South Carolina dealership network"
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "story",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "story-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "story-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "story-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Two trusted dealerships, one network.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Our story & company history"
+                  }
+                },
+                {
+                  "id": "story-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Rechtien International Trucks and Carolina International Trucks each built a long reputation in their own region. In 2022 they came together as one dealership network.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "story-cards-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "story-cards-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "story-cards",
+                  "type": "serviceGrid",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "1981 · Rechtien International Trucks",
+                        "desc": "Rechtien International Trucks was founded in 1981 and has more than 40 years of experience serving South Florida, with an established presence in Miami and the surrounding South Florida markets."
+                      },
+                      {
+                        "label": "1992 · Carolina International Trucks",
+                        "desc": "Carolina International Trucks was founded in 1992 by Dick Ryan. Built on the hard work of its employees and on customers who keep challenging it to find new transportation solutions, it grew into the largest commercial truck dealer in South Carolina, with six locations."
+                      },
+                      {
+                        "label": "May 2022 · The acquisition",
+                        "desc": "Rechtien International Trucks announced the acquisition of Carolina International Trucks in May 2022, bringing two International dealerships with long histories in their markets together."
+                      },
+                      {
+                        "label": "Today · 11 locations",
+                        "desc": "The acquisition expanded the dealership network to 11 locations across South Florida and South Carolina — five Rechtien International locations and six Carolina International locations."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "story-photo-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "story-photo-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "story-photo",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/carolina-dealership.jpg",
+                      "alt": "Carolina International Trucks dealership building with the Carolina International Trucks, International and Idealease signs"
+                    },
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "story-photo-cap",
+                  "type": "text",
+                  "props": {
+                    "text": "Carolina International Trucks dealership, South Carolina.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "owner",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "owner-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "owner-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "owner-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "A message from the owner.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Carolina International Trucks"
+                  }
+                },
+                {
+                  "id": "owner-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Today's transportation industry demands more than just providing tough, dependable, medium and heavy-duty trucks. It demands comprehensive service and a parts inventory that keeps downtime to a minimum and keeps you on the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "owner-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Since Carolina International Trucks' inception in 1992, our business philosophy has been one of complete service for all your business needs. You can expect a professional, knowledgeable staff that is capable of meeting your business needs. We are not only dedicated to exceeding customers' expectations — we are here to deliver transportation solutions for all your business needs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "glance",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "glance-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet",
+            "align": "start"
+          },
+          "children": [
+            {
+              "id": "glance-card",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "glance-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why choose us?",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "glance-t",
+                  "type": "text",
+                  "props": {
+                    "text": "11 dealership locations across South Florida and South Carolina.\n\nMore than four decades of Rechtien International experience, since 1981.\n\nCarolina International Trucks' history since 1992 as the largest commercial truck dealer in South Carolina.\n\nComprehensive truck sales and service for medium, heavy and severe service trucks.\n\nMultiple commercial vehicle brands: International®, Hino, IC Bus and Mitsubishi FUSO, plus Ottawa trucks and East, Pitts and Dorsey trailers.\n\nParts and maintenance support, including more than 130 service bays and mobile maintenance services at Carolina International Trucks.\n\nLeasing and rental options, including Idealease at Carolina International Trucks.\n\nExperienced dealership teams — Carolina International Trucks alone has more than 270 employees.\n\nCoverage across South Florida and South Carolina.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "glance-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "glance-copy-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "One dealership network for South Florida and South Carolina.",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "glance-copy-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "Rechtien International Trucks announced the acquisition of Carolina International Trucks in May 2022. Together the two International dealerships serve customers across South Florida and South Carolina through a network of 11 locations.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "glance-copy-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Carolina International Trucks has prided itself on being one of its region's premier dealers for more than 30 years, with a presence covering the entire state of South Carolina. Rechtien International Trucks brings more than 40 years of experience serving South Florida.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "glance-copy-t3",
+                  "type": "text",
+                  "props": {
+                    "text": "Both teams share the same approach: build long-term relationships by giving customers the best service available, keep downtime to a minimum, and deliver transportation solutions for all your business needs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "glance-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "find-parts-location",
+                        "style": "link"
+                      },
+                      {
+                        "ctaId": "contact-us",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mission",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "mission-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "mission-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "mission-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Our mission",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "mission-t",
+                  "type": "text",
+                  "props": {
+                    "text": "We are dedicated to leadership as a quality supplier of total transportation products and services, and to be the “Premier Dealer” in the Southeast. Our goals are to consistently dominate all phases of our business and develop new methods and ideas to constantly exceed our customers' needs and expectations. We will provide a safe and pleasant working environment, and train and develop our employees to be recognized as true professionals in the markets they serve — and we value the opportunity to build long-term relationships with our customers by giving them the best customer service available.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "mission-n",
+                  "type": "text",
+                  "props": {
+                    "text": "Mission carried forward from Carolina International Trucks, with Rechtien International Trucks' customer-service philosophy.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "products",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "products-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "products-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "products-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Commercial truck sales, parts, service, leasing and rentals.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Our products & services"
+                  }
+                },
+                {
+                  "id": "products-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Each card shows which dealership offers it, so you can see what is available in South Florida (Rechtien International) and South Carolina (Carolina International).",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "products-grid-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "products-grid-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "products-grid",
+                  "type": "categoryGrid",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "New Commercial Trucks",
+                        "meta": "New medium, heavy and severe service trucks at Rechtien International and Carolina International.",
+                        "url": "/store/inventory"
+                      },
+                      {
+                        "label": "Pre-Owned Trucks",
+                        "meta": "A large selection of pre-owned inventory at both dealerships.",
+                        "url": "/store/inventory?condition=used"
+                      },
+                      {
+                        "label": "International Trucks",
+                        "meta": "International® medium, heavy and severe service trucks at both dealerships."
+                      },
+                      {
+                        "label": "Hino Trucks",
+                        "meta": "Hino trucks at Rechtien International and Carolina International."
+                      },
+                      {
+                        "label": "Mitsubishi FUSO Trucks",
+                        "meta": "Medium duty commercial work trucks at Carolina International Trucks, South Carolina."
+                      },
+                      {
+                        "label": "IC Bus",
+                        "meta": "School and commercial buses sold, serviced and supported by Carolina International Trucks, South Carolina."
+                      },
+                      {
+                        "label": "Trailers",
+                        "meta": "East, Pitts and Dorsey trailers at Rechtien International Trucks, South Florida."
+                      },
+                      {
+                        "label": "Parts Department",
+                        "meta": "Genuine OEM and aftermarket parts with delivery in each dealership's own region.",
+                        "url": "/parts"
+                      },
+                      {
+                        "label": "Service & Maintenance",
+                        "meta": "Service departments at both dealerships — Carolina International has 130+ service bays and mobile maintenance services."
+                      },
+                      {
+                        "label": "Body Shop",
+                        "meta": "A state-of-the-art paint booth and body shop in Columbia, South Carolina (Carolina International Trucks)."
+                      },
+                      {
+                        "label": "Truck Leasing & Rentals",
+                        "meta": "Idealease leasing and rental through Carolina International Trucks, plus lease and rental options at Rechtien International."
+                      },
+                      {
+                        "label": "Fleet Solutions",
+                        "meta": "Total transportation products and services for your business, from sales and financing to ongoing maintenance."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "products-note",
+                  "type": "text",
+                  "props": {
+                    "text": "Rechtien International Trucks' product lines also include Ottawa trucks and forklifts alongside East, Pitts and Dorsey trailers.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "people",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "paddingY": 0,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "people-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "people-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "people-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/red-international-truck.jpg",
+                      "alt": "Red International commercial truck delivered with the support of our sales, service and parts teams"
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "people-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "people-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "People who keep you moving.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Our people & customer commitment"
+                  }
+                },
+                {
+                  "id": "people-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "Our reputation is built on the hard work of each employee and on customers who continually challenge us to find new transportation solutions. Carolina International Trucks has more than 270 employees, and every dealership is staffed by knowledgeable, professionally trained teams: sales and financing professionals, service teams, and dedicated parts specialists who help you find the right part the first time.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "people-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Our employees continually complete training modules, take classes and attend seminars so we can offer top-tier expertise and insight. We train and develop our people to be recognized as true professionals in the markets they serve.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "people-t3",
+                  "type": "text",
+                  "props": {
+                    "text": "We value the opportunity to create a long-term relationship with each customer, with comprehensive service and parts support that keeps downtime to a minimum and keeps you on the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "people-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "style": "link"
+                      },
+                      {
+                        "ctaId": "schedule-service",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "locations",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "parts-contacts",
+        "values": {
+          "eyebrow": "Our locations",
+          "heading": "11 truck dealer locations across South Florida and South Carolina.",
+          "groups": [
+            {
+              "company": "Rechtien International Trucks",
+              "region": "South Florida · 5 locations",
+              "intro": "Call us at 305-888-0111 or come by today. Rechtien International Trucks is conveniently located near Miami, Fort Lauderdale, Fort Myers, Riviera Beach and Fort Pierce.",
+              "lineLabel": "",
+              "line": "",
+              "lineUrl": "",
+              "locations": [
+                {
+                  "name": "Miami",
+                  "street": "7227 NW 74th Ave",
+                  "city": "Miami, FL 33166",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "305-888-0111",
+                  "phoneUrl": "tel:+13058880111",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=7227%20NW%2074th%20Ave%2C%20Miami%2C%20FL%2033166"
+                },
+                {
+                  "name": "Ft. Lauderdale",
+                  "street": "2565 St Rd 84",
+                  "city": "Ft. Lauderdale, FL 33312",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "954-957-8390",
+                  "phoneUrl": "tel:+19549578390",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2565%20St%20Rd%2084%2C%20Ft.%20Lauderdale%2C%20FL%2033312"
+                },
+                {
+                  "name": "Riviera Beach",
+                  "street": "3787 Interstate Park Rd W.",
+                  "city": "Riviera Beach, FL 33404",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "561-882-9050",
+                  "phoneUrl": "tel:+15618829050",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=3787%20Interstate%20Park%20Rd%20W.%2C%20Riviera%20Beach%2C%20FL%2033404"
+                },
+                {
+                  "name": "Ft. Pierce",
+                  "street": "1699 North US Highway 1",
+                  "city": "Fort Pierce, FL 34950",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "772-466-1842",
+                  "phoneUrl": "tel:+17724661842",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=1699%20North%20US%20Highway%201%2C%20Fort%20Pierce%2C%20FL%2034950"
+                },
+                {
+                  "name": "Ft. Myers",
+                  "street": "2761 Edison Avenue",
+                  "city": "Ft. Myers, FL 33916",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "239-334-1000",
+                  "phoneUrl": "tel:+12393341000",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2761%20Edison%20Avenue%2C%20Ft.%20Myers%2C%20FL%2033916"
+                }
+              ]
+            },
+            {
+              "company": "Carolina International Trucks",
+              "region": "South Carolina · 6 locations",
+              "intro": "Carolina International Trucks is conveniently located near Columbia, Charleston, Florence, Greenville, Greer and Conway, with a presence covering the entire state of South Carolina.",
+              "lineLabel": "",
+              "line": "",
+              "lineUrl": "",
+              "locations": [
+                {
+                  "name": "Charleston",
+                  "street": "2580 Oscar Johnson Dr",
+                  "city": "Charleston, SC 29405",
+                  "tollFree": "(800) 666-3040",
+                  "tollFreeUrl": "tel:+18006663040",
+                  "phone": "(843) 747-3040",
+                  "phoneUrl": "tel:+18437473040",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2580%20Oscar%20Johnson%20Dr%2C%20Charleston%2C%20SC%2029405"
+                },
+                {
+                  "name": "Columbia",
+                  "street": "1619 Bluff Road",
+                  "city": "Columbia, SC 29201",
+                  "tollFree": "(800) 868-4923",
+                  "tollFreeUrl": "tel:+18008684923",
+                  "phone": "(803) 799-4923",
+                  "phoneUrl": "tel:+18037994923",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=1619%20Bluff%20Road%2C%20Columbia%2C%20SC%2029201"
+                },
+                {
+                  "name": "Florence",
+                  "street": "350 E Campground Rd",
+                  "city": "Florence, SC 29506",
+                  "tollFree": "(800) 477-3894",
+                  "tollFreeUrl": "tel:+18004773894",
+                  "phone": "(843) 468-9560",
+                  "phoneUrl": "tel:+18434689560",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=350%20E%20Campground%20Rd%2C%20Florence%2C%20SC%2029506"
+                },
+                {
+                  "name": "Greer",
+                  "street": "2520 Hwy 14 S",
+                  "city": "Greer, SC 29650",
+                  "tollFree": "(800) 284-0050",
+                  "tollFreeUrl": "tel:+18002840050",
+                  "phone": "(864) 848-0050",
+                  "phoneUrl": "tel:+18648480050",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2520%20Hwy%2014%20S%2C%20Greer%2C%20SC%2029650"
+                },
+                {
+                  "name": "Greenville",
+                  "street": "1501 Whitehorse Road",
+                  "city": "Greenville, SC 29605",
+                  "tollFree": "(866) 520-0440",
+                  "tollFreeUrl": "tel:+18665200440",
+                  "phone": "(864) 335-0440",
+                  "phoneUrl": "tel:+18643350440",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=1501%20Whitehorse%20Road%2C%20Greenville%2C%20SC%2029605"
+                },
+                {
+                  "name": "Conway",
+                  "street": "299 East Cox Ferry Road",
+                  "city": "Conway, SC 29526",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "(843) 438-3130",
+                  "phoneUrl": "tel:+18434383130",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=299%20East%20Cox%20Ferry%20Road%2C%20Conway%2C%20SC%2029526"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ready to get on the road?",
+                    "headingLevel": 2,
+                    "align": "center",
+                    "eyebrow": "Rechtien International & Carolina International"
+                  }
+                },
+                {
+                  "id": "cta-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Explore our inventory, find the location nearest you, or talk to our team about parts, service, leasing and rentals.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btn-a",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "explore-inventory"
+                      },
+                      {
+                        "ctaId": "find-parts-location"
+                      },
+                      {
+                        "ctaId": "contact-us"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "cta-btn-b",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-service"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

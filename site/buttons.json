@@ -180,5 +180,23 @@
     "intent": "find-location",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "explore-inventory",
+    "label": "Explore our inventory",
+    "url": "/store/inventory",
+    "style": "primary",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "schedule-service",
+    "label": "Schedule service",
+    "url": "/service",
+    "style": "secondary",
+    "intent": "book-service",
+    "newTab": false,
+    "active": true
   }
 ]
