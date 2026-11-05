@@ -227,5 +227,14 @@
     "intent": "contact-body-shop",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "explore-inventory",
+    "label": "Explore our inventory",
+    "url": "/store/inventory",
+    "style": "primary",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
   }
 ]
