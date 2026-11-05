@@ -126,5 +126,23 @@
     "intent": "browse-inventory",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "get-directions",
+    "label": "Get directions",
+    "url": "https://www.google.com/maps",
+    "style": "primary",
+    "intent": "get-directions",
+    "newTab": true,
+    "active": true
+  },
+  {
+    "id": "shop-parts",
+    "label": "Shop parts online",
+    "url": "/store/parts",
+    "style": "secondary",
+    "intent": "browse-parts",
+    "newTab": false,
+    "active": true
   }
 ]

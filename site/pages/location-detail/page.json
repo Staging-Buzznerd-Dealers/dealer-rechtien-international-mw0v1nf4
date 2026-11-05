@@ -1,0 +1,355 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "head",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-header",
+        "values": {
+          "storeEyebrow": "Store information",
+          "contactsHeading": "Department contacts",
+          "gmCaption": "General manager",
+          "rooftop": {
+            "source": "locations",
+            "config": {
+              "locationSlug": "{{locationSlug}}"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "hours",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "hours"
+      },
+      "children": [
+        {
+          "id": "hours-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "hours-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hours-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "When each department is open.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Department hours"
+                  }
+                },
+                {
+                  "id": "hours-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "hours"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "team",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-team",
+        "values": {
+          "eyebrow": "Management contacts",
+          "heading": "Talk to the people who run this store.",
+          "intro": "Reach the sales, parts and service managers at this location directly.",
+          "team": {
+            "source": "staff",
+            "config": {
+              "locationSlug": "{{locationSlug}}"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "stock",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-inventory",
+        "values": {
+          "eyebrow": "In stock here",
+          "intro": "New and used units assigned to this store. Can’t find the right spec? Widen the search to every location.",
+          "rooftop": {
+            "source": "locations",
+            "config": {
+              "locationSlug": "{{locationSlug}}"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "svc",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-services",
+        "values": {
+          "eyebrow": "What’s on site",
+          "heading": "One address, every department.",
+          "rooftop": {
+            "source": "locations",
+            "config": {
+              "locationSlug": "{{locationSlug}}"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "contact",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "contact"
+      },
+      "children": [
+        {
+          "id": "contact-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "contact-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "contact-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Parts, service or a quote — ask this store.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Get in touch"
+                  }
+                },
+                {
+                  "id": "contact-text",
+                  "type": "text",
+                  "props": {
+                    "text": "Tell us what you need and the right department at this location will get back to you. Need a part today? Order online for pickup or delivery.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "contact-btns",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "book-service"
+                      },
+                      {
+                        "ctaId": "shop-parts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "contact-form-col",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "contact-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "request-info"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "others",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "find-location",
+        "values": {
+          "eyebrow": "Find a location",
+          "heading": "Other locations",
+          "brandLabel": "Brand",
+          "intro": "Nearby and across the network — every branch carries the same International lineup, parts and service support.",
+          "states": [
+            {
+              "label": "Florida",
+              "key": "florida",
+              "icon": {
+                "src": "/logos/state-florida.svg",
+                "alt": "",
+                "width": 64,
+                "height": 64
+              }
+            },
+            {
+              "label": "Carolina",
+              "key": "carolina",
+              "icon": {
+                "src": "/logos/state-carolina.svg",
+                "alt": "",
+                "width": 64,
+                "height": 64
+              }
+            }
+          ],
+          "brandOptions": {
+            "source": "location-brands"
+          },
+          "locations": {
+            "source": "locations",
+            "config": {
+              "excludeSlug": "{{locationSlug}}",
+              "pagePathPrefix": "/locations"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "faq"
+      },
+      "children": [
+        {
+          "id": "faq-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "faq-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "About this location"
+                  }
+                },
+                {
+                  "id": "faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "ink",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ready to get on the road?",
+                    "headingLevel": 2,
+                    "align": "center",
+                    "eyebrow": "Next steps"
+                  }
+                },
+                {
+                  "id": "cta-text",
+                  "type": "text",
+                  "props": {
+                    "text": "Talk to our team about the truck, trailer or service plan your business needs.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btn",
+                  "type": "buttons",
+                  "props": {
+                    "align": "center",
+                    "items": [
+                      {
+                        "ctaId": "contact-us"
+                      },
+                      {
+                        "ctaId": "see-available"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
