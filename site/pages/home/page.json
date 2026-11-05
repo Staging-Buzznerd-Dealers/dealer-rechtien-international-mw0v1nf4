@@ -186,15 +186,15 @@
               "regions": "florida"
             },
             {
-              "name": "Navigator Forklifts",
+              "name": "Hino Trucks",
               "image": {
-                "src": "/logos/navigator-forklifts.png",
+                "src": "/logos/hino-trucks.png",
                 "width": 200,
-                "height": 200,
-                "alt": "Navigator Forklifts"
+                "height": 160,
+                "alt": "Hino Trucks"
               },
               "url": "/#brands",
-              "regions": "florida"
+              "regions": "florida carolina"
             },
             {
               "name": "International",
@@ -208,23 +208,23 @@
               "regions": "florida carolina"
             },
             {
-              "name": "Hino Trucks",
-              "image": {
-                "src": "/logos/hino-trucks.png",
-                "width": 200,
-                "height": 160,
-                "alt": "Hino Trucks"
-              },
-              "url": "/#brands",
-              "regions": "florida"
-            },
-            {
               "name": "Idealease",
               "image": {
                 "src": "/logos/idealease.png",
                 "width": 200,
                 "height": 57,
                 "alt": "Idealease"
+              },
+              "url": "/#brands",
+              "regions": "florida carolina"
+            },
+            {
+              "name": "Navigator Forklifts",
+              "image": {
+                "src": "/logos/navigator-forklifts.png",
+                "width": 200,
+                "height": 200,
+                "alt": "Navigator Forklifts"
               },
               "url": "/#brands",
               "regions": "florida"
