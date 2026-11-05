@@ -16,11 +16,11 @@
           "type": "video",
           "props": {
             "video": {
-              "src": "/videos/specifications-banner-placeholder.mp4",
-              "poster": "/images/specifications-banner-poster.jpg",
+              "src": "https://vendure.ai4dealerships.com/assets/source/f4/2026_s13_ambient_v2.mp4",
+              "poster": "https://vendure.ai4dealerships.com/assets/source/c2/s13-1.jpg",
               "title": "Specifications banner video (placeholder)"
             },
-            "controls": true,
+            "controls": false,
             "width": "full",
             "autoplay": true,
             "loop": true
@@ -441,7 +441,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "next",
@@ -641,6 +642,9 @@
                           "a": "Contact our trailer sales team with the application you have in mind and they can send the right specification sheet."
                         }
                       ]
+                    },
+                    "snapshot": {
+                      "items": []
                     }
                   }
                 }
