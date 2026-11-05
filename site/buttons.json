@@ -236,5 +236,14 @@
     "intent": "browse-inventory",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "email-finance",
+    "label": "Email us for more info",
+    "url": "mailto:team@rechtien.com",
+    "style": "secondary",
+    "intent": "contact-finance",
+    "newTab": false,
+    "active": true
   }
 ]
