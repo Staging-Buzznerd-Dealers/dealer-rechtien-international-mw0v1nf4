@@ -296,7 +296,15 @@
           "id": "hn-locations",
           "label": "Locations",
           "type": "url",
-          "url": "/#locations"
+          "url": "/#locations",
+          "children": [
+            {
+              "id": "hn-loc-greenville",
+              "label": "Greenville, SC",
+              "type": "location",
+              "ref": "greenville"
+            }
+          ]
         }
       ]
     },

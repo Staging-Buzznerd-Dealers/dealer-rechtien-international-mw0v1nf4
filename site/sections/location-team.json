@@ -1,0 +1,156 @@
+{
+  "version": 2,
+  "id": "location-team",
+  "name": "Location management contacts",
+  "description": "The managers at one rooftop, from the team directory (Staff). Text-only cards — the general manager's photo above is the page's one portrait.",
+  "props": [
+    {
+      "key": "locationSlug",
+      "type": "text",
+      "label": "Location (filled in per page)"
+    },
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": "Management contacts"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Talk to the people who run this store."
+    },
+    {
+      "key": "intro",
+      "type": "textarea",
+      "label": "Intro"
+    },
+    {
+      "key": "team",
+      "type": "list",
+      "label": "Team",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "Phone"
+        },
+        {
+          "key": "phoneUrl",
+          "type": "url",
+          "label": "Phone link"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "lt",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 8,
+        "anchor": "team"
+      },
+      "children": [
+        {
+          "id": "lt-head",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "lt-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "lt-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "{{eyebrow}}"
+                  }
+                },
+                {
+                  "id": "lt-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "{{intro}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lt-cards",
+          "type": "row",
+          "props": {
+            "gap": 4,
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "lt-card",
+              "type": "column",
+              "props": {
+                "span": 3,
+                "repeat": "team"
+              },
+              "children": [
+                {
+                  "id": "lt-title",
+                  "type": "text",
+                  "props": {
+                    "text": "{{title}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lt-name",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{name}}",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "lt-phone",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"{{phoneUrl}}\">{{phone}}</a>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": ".bz-section[data-bz-node=\"lt\"]{padding-block:clamp(56px,6vw,88px)}\n[data-bz-node=\"lt\"] .bz-block{padding-block:0}\n[data-bz-node=\"lt-intro\"] p{max-width:40rem;margin:0}\n[data-bz-node=\"lt-intro\"] p:empty{display:none}\n[data-bz-node=\"lt-cards\"]{margin-top:var(--space-5);row-gap:var(--space-4)}\n[data-bz-node=\"lt-cards\"]>.bz-col{background:#fff;border:1px solid var(--line);padding:24px;display:flex;flex-direction:column;gap:6px}\n[data-bz-node^=\"lt-title\"] p{font:700 .625rem/1.4 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin:0}\n[data-bz-node^=\"lt-name\"] h3{font:700 1rem/1.25 var(--font-heading);margin:0}\n[data-bz-node^=\"lt-phone\"] p{margin:0}\n[data-bz-node^=\"lt-phone\"] a{font-weight:700;font-size:.875rem;color:var(--ink);text-decoration:none}\n[data-bz-node^=\"lt-phone\"] a:hover{text-decoration:underline}\n[data-bz-node^=\"lt-phone\"] a[href=\"\"]{display:none}\n"
+}

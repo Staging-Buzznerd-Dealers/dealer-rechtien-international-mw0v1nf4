@@ -1,0 +1,453 @@
+{
+  "version": 2,
+  "id": "location-header",
+  "name": "Location header & store details",
+  "description": "The top of a location page: banner with the rooftop name, address, call and directions; then store details and department contacts beside the general manager card (headshot, name, title, phone from the team directory) and the map.",
+  "props": [
+    {
+      "key": "locationSlug",
+      "type": "text",
+      "label": "Location (filled in per page)"
+    },
+    {
+      "key": "storeEyebrow",
+      "type": "text",
+      "label": "Store details eyebrow",
+      "default": "Store information"
+    },
+    {
+      "key": "contactsHeading",
+      "type": "text",
+      "label": "Department contacts heading",
+      "default": "Department contacts"
+    },
+    {
+      "key": "gmEyebrow",
+      "type": "text",
+      "label": "Manager card eyebrow",
+      "default": "General manager"
+    },
+    {
+      "key": "gmDepartment",
+      "type": "text",
+      "label": "Team directory department for the manager card",
+      "default": "general-manager"
+    },
+    {
+      "key": "gm",
+      "type": "list",
+      "label": "General manager",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "Phone"
+        },
+        {
+          "key": "phoneUrl",
+          "type": "url",
+          "label": "Phone link"
+        },
+        {
+          "key": "photo",
+          "type": "image",
+          "label": "Headshot"
+        }
+      ]
+    },
+    {
+      "key": "rooftop",
+      "type": "list",
+      "label": "Location",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "subtitle",
+          "type": "text",
+          "label": "Trading name"
+        },
+        {
+          "key": "streetAddress",
+          "type": "text",
+          "label": "Street address"
+        },
+        {
+          "key": "city",
+          "type": "text",
+          "label": "City"
+        },
+        {
+          "key": "region",
+          "type": "text",
+          "label": "State"
+        },
+        {
+          "key": "postalCode",
+          "type": "text",
+          "label": "Postal code"
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "Phone"
+        },
+        {
+          "key": "phoneUrl",
+          "type": "url",
+          "label": "Phone link"
+        },
+        {
+          "key": "email",
+          "type": "text",
+          "label": "Email"
+        },
+        {
+          "key": "mapUrl",
+          "type": "url",
+          "label": "Directions link"
+        },
+        {
+          "key": "banner",
+          "type": "image",
+          "label": "Page banner"
+        },
+        {
+          "key": "departmentRows",
+          "type": "list",
+          "label": "Departments",
+          "fields": [
+            {
+              "key": "name",
+              "type": "text",
+              "label": "Department"
+            },
+            {
+              "key": "phone",
+              "type": "text",
+              "label": "Phone"
+            },
+            {
+              "key": "phoneUrl",
+              "type": "url",
+              "label": "Phone link"
+            },
+            {
+              "key": "email",
+              "type": "text",
+              "label": "Email"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "lh",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "ink",
+        "paddingY": 0,
+        "align": "center",
+        "anchor": "top"
+      },
+      "children": [
+        {
+          "id": "lh-banner",
+          "type": "image",
+          "props": {
+            "image": "{{banner}}",
+            "width": "full",
+            "repeat": "rooftop"
+          }
+        },
+        {
+          "id": "lh-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "lh-col",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "repeat": "rooftop"
+              },
+              "children": [
+                {
+                  "id": "lh-crumbs",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Home</a> / <a href=\"/#locations\">Locations</a> / {{name}}, {{region}}",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lh-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Hours & location of {{subtitle}} {{name}}",
+                    "headingLevel": 1,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "lh-addr",
+                  "type": "text",
+                  "props": {
+                    "text": "{{streetAddress}}, {{city}}, {{region}} {{postalCode}}",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lh-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "center",
+                    "items": [
+                      {
+                        "ctaId": "call-us",
+                        "label": "Call {{phone}}",
+                        "url": "{{phoneUrl}}",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "get-directions",
+                        "url": "{{mapUrl}}",
+                        "style": "primary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ls",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "store"
+      },
+      "children": [
+        {
+          "id": "ls-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "ls-info",
+              "type": "column",
+              "props": {
+                "span": 7,
+                "repeat": "rooftop"
+              },
+              "children": [
+                {
+                  "id": "ls-name",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{name}}",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "{{storeEyebrow}}"
+                  }
+                },
+                {
+                  "id": "ls-sub",
+                  "type": "text",
+                  "props": {
+                    "text": "{{subtitle}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ls-addr",
+                  "type": "text",
+                  "props": {
+                    "text": "{{streetAddress}}<br>{{city}}, {{region}} {{postalCode}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ls-reach",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"{{phoneUrl}}\">{{phone}}</a><br><a href=\"mailto:{{email}}\">{{email}}</a>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ls-dir",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "get-directions",
+                        "url": "{{mapUrl}}",
+                        "style": "link"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "ls-dept-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{contactsHeading}}",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "ls-depts",
+                  "type": "row",
+                  "props": {
+                    "gap": 4,
+                    "stackOn": "mobile"
+                  },
+                  "children": [
+                    {
+                      "id": "ls-dept",
+                      "type": "column",
+                      "props": {
+                        "span": 6,
+                        "repeat": "departmentRows"
+                      },
+                      "children": [
+                        {
+                          "id": "ls-dept-t",
+                          "type": "text",
+                          "props": {
+                            "text": "<strong>{{name}}</strong><a href=\"{{phoneUrl}}\">{{phone}}</a><br><a href=\"mailto:{{email}}\">{{email}}</a>",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ls-side",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "ls-gm-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "ls-gm-card",
+                      "type": "column",
+                      "props": {
+                        "span": 12,
+                        "repeat": "gm"
+                      },
+                      "children": [
+                        {
+                          "id": "ls-gm-photo",
+                          "type": "image",
+                          "props": {
+                            "image": "{{photo}}",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "ls-gm-eyebrow",
+                          "type": "text",
+                          "props": {
+                            "text": "{{gmEyebrow}}",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "ls-gm-name",
+                          "type": "heading",
+                          "props": {
+                            "text": "{{name}}",
+                            "headingLevel": 3,
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "ls-gm-title",
+                          "type": "text",
+                          "props": {
+                            "text": "{{title}}",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "ls-gm-phone",
+                          "type": "text",
+                          "props": {
+                            "text": "<a href=\"{{phoneUrl}}\">{{phone}}</a>",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "ls-map",
+                  "type": "widget",
+                  "props": {
+                    "widget": "locations-map",
+                    "config": {
+                      "locationSlug": "{{locationSlug}}",
+                      "mapProvider": "google"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Location header. The banner image is the rooftop's own (Admin → Locations → Profile → Page banner); without one the band stays on ink. */\n.bz-section[data-bz-node=\"lh\"]{position:relative;min-height:clamp(380px,32vw,480px);display:flex;flex-direction:column;justify-content:center;padding:104px 0 64px;color:#fff;isolation:isolate;background:var(--night,#2b2a27);overflow:hidden}\n.bz-section[data-bz-node=\"lh\"]::before{content:\"\";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(21,21,21,.6) 0%,rgba(21,21,21,.45) 50%,rgba(21,21,21,.7) 100%)}\n[data-bz-node^=\"lh-banner\"]{position:absolute;inset:0;z-index:0;padding:0;margin:0}\n[data-bz-node^=\"lh-banner\"] .bz-container,[data-bz-node^=\"lh-banner\"] .bz-figure,[data-bz-node^=\"lh-banner\"] img{width:100%;max-width:none;height:100%;margin:0;padding:0;border-radius:0;object-fit:cover}\n[data-bz-node^=\"lh-banner\"] .bz-photo--empty,[data-bz-node^=\"lh-banner\"] .bz-placeholder{display:none}\n[data-bz-node=\"lh\"]>.bz-container{max-width:none;padding-inline:0}\n[data-bz-node=\"lh-row\"]{position:relative;z-index:2;max-width:920px;margin-inline:auto;padding-inline:var(--space-4);width:100%;box-sizing:border-box}\n[data-bz-node=\"lh\"] .bz-block{padding-block:0}\n[data-bz-node^=\"lh-crumbs\"] p{font:700 .625rem/1.4 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:#fff;margin:0 0 var(--space-3)}\n[data-bz-node^=\"lh-crumbs\"] a{color:#fff;border-bottom:1px solid transparent}\n[data-bz-node^=\"lh-crumbs\"] a:hover{border-bottom-color:currentColor}\n[data-bz-node^=\"lh-h\"] h1{color:#fff;margin:0 auto var(--space-4);max-width:18em;text-wrap:balance}\n[data-bz-node^=\"lh-addr\"] p{color:rgba(255,255,255,.88);margin:0 auto;font-size:.9375rem}\n[data-bz-node^=\"lh-cta\"] .bz-btns{justify-content:center;margin-top:var(--space-5)}\n\n/* Store details */\n[data-bz-node=\"ls\"] .bz-block{padding-block:0 var(--space-3)}\n[data-bz-node^=\"ls-name\"] h2{margin-bottom:var(--space-2)}\n[data-bz-node^=\"ls-sub\"] p{font:700 .75rem/1.4 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0}\n[data-bz-node^=\"ls-sub\"] p:empty{display:none}\n[data-bz-node^=\"ls-addr\"] p{font-size:.9375rem;line-height:1.7;margin:0}\n[data-bz-node=\"ls\"] .bz-text a{font-weight:700;color:var(--ink);text-decoration:none;font-size:.875rem;line-height:1.8}\n[data-bz-node=\"ls\"] .bz-text a[href^=\"mailto:\"]{font-weight:400;text-decoration:underline;text-underline-offset:3px}\n[data-bz-node=\"ls\"] a[href=\"tel:\"],[data-bz-node=\"ls\"] a[href=\"mailto:\"]{display:none}\n[data-bz-node^=\"ls-dir\"] .bz-btns{margin-top:var(--space-2)}\n[data-bz-node^=\"ls-dept-h\"]{margin-top:var(--space-6)}\n[data-bz-node^=\"ls-dept-h\"] h3{font-size:1rem;margin:0;padding-top:var(--space-5);border-top:1px solid var(--line)}\n[data-bz-node^=\"ls-dept-t\"] p{margin:0;padding:var(--space-4);background:var(--paper);height:100%}\n[data-bz-node^=\"ls-dept-t\"] strong{display:block;font:700 .75rem/1.4 var(--font-heading);text-transform:uppercase;letter-spacing:.04em;margin-bottom:var(--space-2)}\n[data-bz-node^=\"ls-depts\"]{row-gap:var(--space-4)}\n\n/* The general manager is the one photograph on the page (client direction), from the team directory. */\n[data-bz-node^=\"ls-gm-card\"]{background:var(--ink);color:#fff}\n[data-bz-node^=\"ls-gm-card\"] .bz-block{padding:0 24px}\n[data-bz-node^=\"ls-gm-photo\"]{padding:0!important;margin-bottom:20px}\n[data-bz-node^=\"ls-gm-photo\"] .bz-container,[data-bz-node^=\"ls-gm-photo\"] .bz-figure{max-width:none;padding:0;margin:0}\n[data-bz-node^=\"ls-gm-photo\"] img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top;display:block;border-radius:0}\n[data-bz-node^=\"ls-gm-eyebrow\"] p{font:700 .625rem/1.4 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin:0 0 6px}\n[data-bz-node^=\"ls-gm-name\"] h3{color:#fff;font:700 1.25rem/1.15 var(--font-heading);text-transform:uppercase;margin:0 0 4px}\n[data-bz-node^=\"ls-gm-title\"] p{color:rgba(255,255,255,.75);font-size:.8125rem;margin:0}\n[data-bz-node^=\"ls-gm-title\"] p:empty{display:none}\n[data-bz-node^=\"ls-gm-phone\"]{padding-bottom:24px!important}\n[data-bz-node^=\"ls-gm-phone\"] p{margin:10px 0 0}\n[data-bz-node=\"ls\"] [data-bz-node^=\"ls-gm-phone\"] a{color:#fff;font-weight:700;font-size:.875rem;text-decoration:none}\n[data-bz-node^=\"ls-gm-phone\"] a[href=\"\"],[data-bz-node^=\"ls-gm-phone\"] a[href=\"tel:\"]{display:none}\n[data-bz-node=\"ls-map\"]{margin-top:var(--space-5)}\n[data-bz-node=\"ls-map\"] .bz-map{aspect-ratio:4/3;min-height:0}\n[data-bz-node=\"ls-map\"] .bz-loclist,[data-bz-node=\"ls-map\"] .bz-widget__h{display:none}\n\n@media (max-width:640px){.bz-section[data-bz-node=\"lh\"]{min-height:440px;padding:88px 0 48px}}\n"
+}
