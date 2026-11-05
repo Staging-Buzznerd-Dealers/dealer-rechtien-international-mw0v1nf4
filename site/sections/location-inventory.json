@@ -4,16 +4,38 @@
   "name": "Location inventory",
   "description": "Live inventory assigned to one rooftop, with links that widen the search to every location.",
   "props": [
-    { "key": "locationSlug", "type": "text", "label": "Location (filled in per page)" },
-    { "key": "eyebrow", "type": "text", "label": "Eyebrow", "default": "In stock here" },
-    { "key": "intro", "type": "textarea", "label": "Intro", "default": "New and used units assigned to this store. Can't find the right spec? Widen the search to every location." },
+    {
+      "key": "locationSlug",
+      "type": "text",
+      "label": "Location (filled in per page)"
+    },
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": "In stock here"
+    },
+    {
+      "key": "intro",
+      "type": "textarea",
+      "label": "Intro",
+      "default": "New and used units assigned to this store. Can't find the right spec? Widen the search to every location."
+    },
     {
       "key": "rooftop",
       "type": "list",
       "label": "Location",
       "fields": [
-        { "key": "name", "type": "text", "label": "Name" },
-        { "key": "slug", "type": "text", "label": "Slug" }
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "slug",
+          "type": "text",
+          "label": "Slug"
+        }
       ]
     }
   ],
@@ -21,26 +43,56 @@
     {
       "id": "li",
       "type": "section",
-      "props": { "width": "boxed", "paddingY": 8, "anchor": "inventory" },
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "inventory"
+      },
       "children": [
         {
           "id": "li-head",
           "type": "row",
-          "props": { "gap": 6, "stackOn": "tablet" },
+          "props": {
+            "gap": 6,
+            "stackOn": "tablet"
+          },
           "children": [
             {
               "id": "li-copy",
               "type": "column",
-              "props": { "span": 7, "repeat": "rooftop" },
+              "props": {
+                "span": 7,
+                "repeat": "rooftop"
+              },
               "children": [
-                { "id": "li-h", "type": "heading", "props": { "text": "Trucks at {{name}}", "headingLevel": 2, "align": "left", "eyebrow": "{{eyebrow}}" } },
-                { "id": "li-intro", "type": "text", "props": { "text": "{{intro}}", "align": "left", "width": "full" } }
+                {
+                  "id": "li-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Trucks at {{name}}",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "{{eyebrow}}"
+                  }
+                },
+                {
+                  "id": "li-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "{{intro}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
               ]
             },
             {
               "id": "li-links",
               "type": "column",
-              "props": { "span": 5, "repeat": "rooftop" },
+              "props": {
+                "span": 5,
+                "repeat": "rooftop"
+              },
               "children": [
                 {
                   "id": "li-btns",
@@ -48,8 +100,18 @@
                   "props": {
                     "align": "left",
                     "items": [
-                      { "ctaId": "see-available", "label": "All {{name}} inventory", "url": "/store/inventory?location={{slug}}", "style": "secondary" },
-                      { "ctaId": "browse-trucks", "label": "Search every location", "url": "/store/inventory", "style": "link" }
+                      {
+                        "ctaId": "see-available",
+                        "label": "All {{name}} inventory",
+                        "url": "#",
+                        "style": "secondary"
+                      },
+                      {
+                        "ctaId": "browse-trucks",
+                        "label": "Search every location",
+                        "url": "#",
+                        "style": "link"
+                      }
                     ]
                   }
                 }
@@ -60,14 +122,27 @@
         {
           "id": "li-row",
           "type": "row",
-          "props": { "gap": 0 },
+          "props": {
+            "gap": 0
+          },
           "children": [
             {
               "id": "li-col",
               "type": "column",
-              "props": { "span": 12 },
+              "props": {
+                "span": 12
+              },
               "children": [
-                { "id": "li-stock", "type": "widget", "props": { "widget": "inventory-carousel", "config": { "locationSlug": "{{locationSlug}}" } } }
+                {
+                  "id": "li-stock",
+                  "type": "widget",
+                  "props": {
+                    "widget": "inventory-carousel",
+                    "config": {
+                      "locationSlug": "{{locationSlug}}"
+                    }
+                  }
+                }
               ]
             }
           ]

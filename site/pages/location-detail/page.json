@@ -9,7 +9,15 @@
         "values": {
           "storeEyebrow": "Store information",
           "contactsHeading": "Department contacts",
-          "gmCaption": "General manager",
+          "gmEyebrow": "General manager",
+          "gmDepartment": "general-manager",
+          "gm": {
+            "source": "staff",
+            "config": {
+              "locationSlug": "{{locationSlug}}",
+              "departmentCode": "{{gmDepartment}}"
+            }
+          },
           "rooftop": {
             "source": "locations",
             "config": {
@@ -116,6 +124,71 @@
           }
         }
       }
+    },
+    {
+      "id": "reviews",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "reviews"
+      },
+      "children": [
+        {
+          "id": "reviews-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "reviews-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "reviews-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "What our customers say.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Google reviews"
+                  }
+                },
+                {
+                  "id": "reviews-list",
+                  "type": "testimonials",
+                  "props": {
+                    "items": [
+                      {
+                        "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+                        "name": "Reviewer name",
+                        "role": "Google review",
+                        "rating": 5
+                      },
+                      {
+                        "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+                        "name": "Reviewer name",
+                        "role": "Google review",
+                        "rating": 5
+                      },
+                      {
+                        "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+                        "name": "Reviewer name",
+                        "role": "Google review",
+                        "rating": 5
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "contact",
