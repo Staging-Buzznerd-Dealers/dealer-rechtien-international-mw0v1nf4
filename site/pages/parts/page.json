@@ -1,0 +1,1626 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center",
+        "anchor": "top"
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "hero-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-crumbs",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Home</a> / Parts",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Genuine Truck Parts & Accessories",
+                    "headingLevel": 1,
+                    "align": "center",
+                    "eyebrow": "Parts Department"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Genuine OEM and quality aftermarket commercial truck parts from Carolina International Trucks in South Carolina and Rechtien International Trucks in South Florida. Order online, request a part, or visit a parts counter near you.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "order-parts"
+                      },
+                      {
+                        "ctaId": "request-parts"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "styles": {
+        "base": {
+          "backgroundImage": "/images/hero-truck.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
+          "background": "#151515"
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "intro-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet",
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "intro-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "intro-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Commercial truck parts experts",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Our parts department"
+                  }
+                },
+                {
+                  "id": "intro-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "Every commercial truck needs new components at some point in its lifespan, and the quality of the parts you install shapes how productive those years are. Carolina International Trucks and Rechtien International Trucks stock heavy duty truck parts and accessories manufactured with high-grade materials, so the longevity and integrity of your fleet are in good hands.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you are looking for International® truck parts, Hino parts, Freightliner® truck parts or something more generic, our trained parts specialists help you find the right semi truck part at the right price — from battery replacements to engine repairs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-t3",
+                  "type": "text",
+                  "props": {
+                    "text": "Our professionally trained and experienced staff help you identify the right commercial truck part the first time around. They keep their expertise current through training modules, classes and seminars.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "order-parts"
+                      },
+                      {
+                        "ctaId": "request-parts"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "intro-media",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "intro-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/red-international-truck.jpg",
+                      "alt": "Red International commercial truck serviced and supplied by our parts department"
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "intro-feat",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "intro-feat-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "intro-feat-list",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 3,
+                    "items": [
+                      {
+                        "label": "Genuine OEM parts",
+                        "desc": "Genuine OEM parts for the International® and Hino trucks we sell and service."
+                      },
+                      {
+                        "label": "Quality aftermarket parts",
+                        "desc": "A selection of less expensive, high-quality aftermarket options."
+                      },
+                      {
+                        "label": "Trucks, trailers and fleets",
+                        "desc": "Components to outfit your truck and trailer, from exterior components to interior cab design."
+                      },
+                      {
+                        "label": "Extensive parts inventory",
+                        "desc": "Shelves stocked with premium heavy truck parts and a wide selection across the brands we represent."
+                      },
+                      {
+                        "label": "Experienced parts specialists",
+                        "desc": "Trained staff who help you find the right part, the first time around."
+                      },
+                      {
+                        "label": "Parts delivery",
+                        "desc": "Delivery to your location in our South Carolina and South Florida service areas."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brands",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "brands-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "brands-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "brands-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Our parts suppliers & brands we represent",
+                    "headingLevel": 2,
+                    "align": "center",
+                    "eyebrow": "Brands we represent"
+                  }
+                },
+                {
+                  "id": "brands-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Our parts departments represent the manufacturers and suppliers below, so you can find OEM and quality aftermarket components for engines, brakes, electrical systems, transmissions, suspension, filtration and more.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "brands-logos",
+                  "type": "logoStrip",
+                  "props": {
+                    "logos": [
+                      {
+                        "name": "International",
+                        "image": {
+                          "src": "/logos/international.png",
+                          "alt": "International"
+                        }
+                      },
+                      {
+                        "name": "Hino Trucks",
+                        "image": {
+                          "src": "/logos/hino-trucks.png",
+                          "alt": "Hino Trucks"
+                        }
+                      },
+                      {
+                        "name": "Fleetrite"
+                      },
+                      {
+                        "name": "Cummins"
+                      },
+                      {
+                        "name": "Accuride"
+                      },
+                      {
+                        "name": "Allison Transmission"
+                      },
+                      {
+                        "name": "B/A Products Co."
+                      },
+                      {
+                        "name": "Bendix"
+                      },
+                      {
+                        "name": "Spicer"
+                      },
+                      {
+                        "name": "Denso"
+                      },
+                      {
+                        "name": "Dinex"
+                      },
+                      {
+                        "name": "Donovan"
+                      },
+                      {
+                        "name": "Dorman HD Solutions"
+                      },
+                      {
+                        "name": "East"
+                      },
+                      {
+                        "name": "Ecco"
+                      },
+                      {
+                        "name": "EnerSys"
+                      },
+                      {
+                        "name": "Exide Technologies"
+                      },
+                      {
+                        "name": "Federal-Mogul"
+                      },
+                      {
+                        "name": "Fleetguard"
+                      },
+                      {
+                        "name": "Kalmar Ottawa"
+                      },
+                      {
+                        "name": "Kem Krest"
+                      },
+                      {
+                        "name": "Leece-Neville Heavy Duty Systems"
+                      },
+                      {
+                        "name": "Mobile Climate Control"
+                      },
+                      {
+                        "name": "McNeilus"
+                      },
+                      {
+                        "name": "Meritor"
+                      },
+                      {
+                        "name": "Phillips"
+                      },
+                      {
+                        "name": "PAI"
+                      },
+                      {
+                        "name": "Minimizer"
+                      },
+                      {
+                        "name": "MGM Brakes"
+                      },
+                      {
+                        "name": "Seats"
+                      },
+                      {
+                        "name": "SKF"
+                      },
+                      {
+                        "name": "Spectra Premium"
+                      },
+                      {
+                        "name": "TransAxle"
+                      },
+                      {
+                        "name": "Truck-Lite"
+                      },
+                      {
+                        "name": "Diamond Advantage Diesel Parts"
+                      },
+                      {
+                        "name": "Wabco"
+                      },
+                      {
+                        "name": "Weitron"
+                      },
+                      {
+                        "name": "Delco Remy"
+                      },
+                      {
+                        "name": "Eaton"
+                      },
+                      {
+                        "name": "GoLight"
+                      },
+                      {
+                        "name": "MEI Corporation"
+                      },
+                      {
+                        "name": "Renewed"
+                      },
+                      {
+                        "name": "UpTime Parts"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oem",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "oem-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "oem-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "oem-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "OEM & aftermarket truck parts",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Choose the right part for the job"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "oem-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "oem-a",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "oem-a-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Genuine OEM truck parts",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "eyebrow": "Original equipment"
+                  }
+                },
+                {
+                  "id": "oem-a-t",
+                  "type": "text",
+                  "props": {
+                    "text": "We carry genuine OEM parts for the International® and Hino trucks we sell and service. Genuine OEM parts are made to the manufacturer's specification for your truck, which supports compatibility and reliable performance, and our parts specialists can help you confirm the right part number for your application.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "oem-a-n",
+                  "type": "text",
+                  "props": {
+                    "text": "Carolina International Trucks is International Diamond Edge Certified.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "oem-b",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "oem-b-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Quality aftermarket parts",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "eyebrow": "Value options"
+                  }
+                },
+                {
+                  "id": "oem-b-t",
+                  "type": "text",
+                  "props": {
+                    "text": "When a less expensive option makes sense, we offer a selection of high-quality aftermarket parts from the supplier brands listed above, including Fleetrite, Fleetguard, Dorman HD Solutions and more. Ask the parts team which option fits your truck, your budget and your downtime.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "oem-b-n",
+                  "type": "text",
+                  "props": {
+                    "text": "Warranty: Carolina International Trucks states that almost every product it sells comes with an unlimited-mile, one-year warranty. Warranty coverage varies by product and location, so ask the parts team about the specific part you need.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cats",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "cats-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "cats-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cats-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Truck parts & accessories by category",
+                    "headingLevel": 2,
+                    "align": "center",
+                    "eyebrow": "Parts categories"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cats-grid-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "cats-grid-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cats-grid",
+                  "type": "categoryGrid",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Engine components",
+                        "meta": "Parts for engine repairs, including charge air coolers and engine oil coolers.",
+                        "image": {
+                          "src": "/icons/parts/engine.svg",
+                          "alt": "Engine components icon"
+                        }
+                      },
+                      {
+                        "label": "Brakes & brake components",
+                        "meta": "Truck brakes, plus brake sensors, cables and hoses.",
+                        "image": {
+                          "src": "/icons/parts/brakes.svg",
+                          "alt": "Brakes & brake components icon"
+                        }
+                      },
+                      {
+                        "label": "Filters & filtration",
+                        "meta": "Air intake filters and filtration from brands including Fleetguard.",
+                        "image": {
+                          "src": "/icons/parts/filters.svg",
+                          "alt": "Filters & filtration icon"
+                        }
+                      },
+                      {
+                        "label": "Batteries & electrical",
+                        "meta": "Batteries, alternators and starters.",
+                        "image": {
+                          "src": "/icons/parts/battery.svg",
+                          "alt": "Batteries & electrical icon"
+                        }
+                      },
+                      {
+                        "label": "Radiators & cooling",
+                        "meta": "Radiators, condensers, charge air coolers and engine oil coolers.",
+                        "image": {
+                          "src": "/icons/parts/radiator.svg",
+                          "alt": "Radiators & cooling icon"
+                        }
+                      },
+                      {
+                        "label": "Suspension & shock absorbers",
+                        "meta": "Shock absorbers and wheel bearings for a steady, stable ride.",
+                        "image": {
+                          "src": "/icons/parts/suspension.svg",
+                          "alt": "Suspension & shock absorbers icon"
+                        }
+                      },
+                      {
+                        "label": "Truck lights",
+                        "meta": "Head and tail lights for commercial trucks.",
+                        "image": {
+                          "src": "/icons/parts/lights.svg",
+                          "alt": "Truck lights icon"
+                        }
+                      },
+                      {
+                        "label": "Mirrors & exterior accessories",
+                        "meta": "Exterior components and accessories, including mud flaps, door locks and hood latches.",
+                        "image": {
+                          "src": "/icons/parts/mirrors.svg",
+                          "alt": "Mirrors & exterior accessories icon"
+                        }
+                      },
+                      {
+                        "label": "Interior accessories & floor mats",
+                        "meta": "Floor mats, audio tech and window cranks for the cab.",
+                        "image": {
+                          "src": "/icons/parts/interior.svg",
+                          "alt": "Interior accessories & floor mats icon"
+                        }
+                      },
+                      {
+                        "label": "Wipers & HVAC",
+                        "meta": "Wiper blades and HVAC compressors.",
+                        "image": {
+                          "src": "/icons/parts/wipers.svg",
+                          "alt": "Wipers & HVAC icon"
+                        }
+                      },
+                      {
+                        "label": "Tires & wheel components",
+                        "meta": "Truck tires and wheel bearings.",
+                        "image": {
+                          "src": "/icons/parts/tires.svg",
+                          "alt": "Tires & wheel components icon"
+                        }
+                      },
+                      {
+                        "label": "Trailer parts & accessories",
+                        "meta": "Components to outfit your truck and trailer.",
+                        "image": {
+                          "src": "/icons/parts/trailer.svg",
+                          "alt": "Trailer parts & accessories icon"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "cats-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "explore-parts-catalog"
+                      },
+                      {
+                        "ctaId": "request-parts"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cats-common-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "cats-common-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cats-common-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common replacement truck parts",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "cats-common-t",
+                  "type": "text",
+                  "props": {
+                    "text": "It is essential to start and end your driving days with inspections of your truck's vital parts and systems. Pre-trip and post-trip Driver Vehicle Inspection Reports (DVIRs) help you track which parts need to be replaced, avoiding problems down the road. Here is a non-exhaustive list of common parts and accessories to inspect regularly that require replacement at varying intervals:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cats-common-list",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 3,
+                    "columns": 4,
+                    "items": [
+                      {
+                        "label": "Brake sensors, cables, and hoses"
+                      },
+                      {
+                        "label": "Radiators"
+                      },
+                      {
+                        "label": "Air intake filters"
+                      },
+                      {
+                        "label": "Shock absorbers"
+                      },
+                      {
+                        "label": "Condensers"
+                      },
+                      {
+                        "label": "Charge air coolers"
+                      },
+                      {
+                        "label": "Engine oil coolers"
+                      },
+                      {
+                        "label": "Door locks"
+                      },
+                      {
+                        "label": "Hood latches"
+                      },
+                      {
+                        "label": "Window cranks"
+                      },
+                      {
+                        "label": "HVAC compressors"
+                      },
+                      {
+                        "label": "Wiper blades"
+                      },
+                      {
+                        "label": "Alternators"
+                      },
+                      {
+                        "label": "Batteries"
+                      },
+                      {
+                        "label": "Starters"
+                      },
+                      {
+                        "label": "Wheel bearings"
+                      },
+                      {
+                        "label": "Diesel exhaust fluid"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inv",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "inv-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "inv-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "inv-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "An extensive parts inventory",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Parts inventory"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "inv-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "inv-a",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "inv-a-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Carolina International Trucks",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "eyebrow": "South Carolina"
+                  }
+                },
+                {
+                  "id": "inv-a-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Our facility carries over 200 different product lines to help outfit your truck and trailer with high-quality components so you can upgrade and customize performance. Carolina International Trucks describes this as the largest selection of commercial truck parts in South Carolina, with shelves stocked with premium heavy truck parts.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "inv-a-stats",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 3,
+                    "columns": 2,
+                    "items": [
+                      {
+                        "label": "200+",
+                        "desc": "different product lines"
+                      },
+                      {
+                        "label": "$6M+",
+                        "desc": "of parts inventory on hand"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "inv-a-n",
+                  "type": "text",
+                  "props": {
+                    "text": "Carolina International Trucks also runs quarterly parts promotions — ask your local parts counter what is available now.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "inv-b",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "inv-b-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Rechtien International Trucks",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "eyebrow": "South Florida"
+                  }
+                },
+                {
+                  "id": "inv-b-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Rechtien's trained parts specialists help you find the right semi truck part at the right price, with a wide selection across the brands we represent and multiple South Florida locations to serve you.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "inv-b-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Rechtien is also part of the International 360 program, which makes it easy to track the status of your commercial truck's maintenance and repair needs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deliv",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "deliv-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "deliv-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "deliv-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Parts delivery services",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Delivered to your location"
+                  }
+                },
+                {
+                  "id": "deliv-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Each dealership delivers within its own region. The two service areas below are separate — contact the parts department closest to you to ask about delivery.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "deliv-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "deliv-a",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "deliv-a-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "South Carolina — Carolina International Trucks",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "eyebrow": "Delivery area 1"
+                  }
+                },
+                {
+                  "id": "deliv-a-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Besides keeping our shelves stocked with premium heavy truck parts, we can have them delivered right to your doorstep. Our delivery fleet of over 20 vehicles can cover more than 80% of the state, and most areas are serviced twice a day.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "deliv-a-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Carolina International Trucks describes its truck parts delivery service as free. Call (800) 868-4923 and ask one of our friendly staff about delivery to your location.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "deliv-b",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "deliv-b-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "South Florida — Rechtien International Trucks",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "eyebrow": "Delivery area 2"
+                  }
+                },
+                {
+                  "id": "deliv-b-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Submit a parts order form online and we'll get to work on fulfilling your order. We also deliver parts to your direct location in the following counties:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "deliv-b-list",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 3,
+                    "columns": 2,
+                    "items": [
+                      {
+                        "label": "Miami-Dade"
+                      },
+                      {
+                        "label": "Broward"
+                      },
+                      {
+                        "label": "Palm Beach"
+                      },
+                      {
+                        "label": "Indian River"
+                      },
+                      {
+                        "label": "St. Lucie"
+                      },
+                      {
+                        "label": "Martin"
+                      },
+                      {
+                        "label": "Okeechobee"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "deliv-b-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Contact your nearest Rechtien location to ask about delivery details for your order.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "order-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "order-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "order-grid",
+                  "type": "serviceGrid",
+                  "props": {
+                    "heading": "Order truck parts online",
+                    "headingLevel": 2,
+                    "body": "Order online, send us a parts request, or stop by any of our locations — whichever fits your day. One of our friendly parts specialists can help you with availability and ordering.",
+                    "items": [
+                      {
+                        "label": "Order parts online",
+                        "desc": "Browse the online parts store and order the commercial truck parts you need.",
+                        "cta": {
+                          "ctaId": "order-parts"
+                        }
+                      },
+                      {
+                        "label": "Send a parts request",
+                        "desc": "Tell us the part, your truck's year, make and model, and the part number if you have it. A parts specialist will contact you.",
+                        "cta": {
+                          "ctaId": "request-parts",
+                          "style": "primary"
+                        }
+                      },
+                      {
+                        "label": "Explore the parts catalog",
+                        "desc": "Browse the parts catalog online, then ask the parts team to confirm availability and the right fit for your truck.",
+                        "cta": {
+                          "ctaId": "explore-parts-catalog"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "request",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "parts-request",
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "request-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "request-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "request-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Request parts",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Parts request form"
+                  }
+                },
+                {
+                  "id": "request-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Tell us what you need and one of our parts specialists will contact you with availability and pricing. The more detail you can give us — year, make, model, trim, transmission and part number — the faster we can match the right part.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "request-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Prefer to talk? Carolina International parts line: (800) 868-4923. Rechtien International locations are listed in the contact section below.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "request-form",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "request-widget",
+                  "type": "form",
+                  "props": {
+                    "formId": "parts-request"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "why",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "why-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "why-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "why-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why choose our parts department?",
+                    "headingLevel": 2,
+                    "align": "center",
+                    "eyebrow": "Built around less downtime"
+                  }
+                },
+                {
+                  "id": "why-list",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 4,
+                    "items": [
+                      {
+                        "label": "Experienced specialists",
+                        "desc": "Professionally trained, knowledgeable parts staff who keep learning through training and seminars."
+                      },
+                      {
+                        "label": "OEM and aftermarket selection",
+                        "desc": "Genuine OEM parts and quality aftermarket options from the brands we represent."
+                      },
+                      {
+                        "label": "Competitive parts options",
+                        "desc": "Less expensive, high-quality aftermarket choices alongside genuine OEM parts."
+                      },
+                      {
+                        "label": "Multiple locations",
+                        "desc": "Six locations in South Carolina and five in South Florida."
+                      },
+                      {
+                        "label": "Convenient online ordering",
+                        "desc": "Order online or send a parts request from this page."
+                      },
+                      {
+                        "label": "Parts delivery",
+                        "desc": "Delivery to your location within each dealership's service area."
+                      },
+                      {
+                        "label": "Trucks, trailers and fleets",
+                        "desc": "Parts and accessories for commercial trucks, trailers and fleets."
+                      },
+                      {
+                        "label": "Less downtime",
+                        "desc": "Right part, first time: our goal is to keep your truck productive."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "faq"
+      },
+      "children": [
+        {
+          "id": "faq-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "faq-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Truck parts questions",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Frequently asked questions"
+                  }
+                },
+                {
+                  "id": "faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "Do you sell OEM and aftermarket truck parts?",
+                          "a": "Yes. We carry genuine OEM parts as well as a selection of less expensive, high-quality aftermarket options."
+                        },
+                        {
+                          "q": "Do you deliver truck parts?",
+                          "a": "Carolina International Trucks delivers across South Carolina with a fleet of over 20 vehicles covering more than 80% of the state, and describes the service as free. Rechtien International Trucks delivers to Miami-Dade, Broward, Palm Beach, Indian River, St. Lucie, Martin and Okeechobee counties in South Florida."
+                        },
+                        {
+                          "q": "How do I request a part?",
+                          "a": "Fill out the parts request form on this page, or call the parts line at Carolina International Trucks on (800) 868-4923, or contact your nearest Rechtien International location. A parts specialist will contact you."
+                        },
+                        {
+                          "q": "Which truck brands do you supply parts for?",
+                          "a": "Our parts specialists can help you find parts for International® and Hino trucks, as well as Freightliner® and more generic applications, from the supplier brands we represent."
+                        },
+                        {
+                          "q": "Is there a warranty on parts?",
+                          "a": "Carolina International Trucks states that almost every product it sells comes with an unlimited-mile, one-year warranty. Warranty coverage varies by product and location, so ask the parts team about your specific part."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contacts",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "parts-contacts",
+        "values": {
+          "eyebrow": "Contact our parts departments",
+          "heading": "Find your parts department.",
+          "groups": [
+            {
+              "company": "Carolina International Trucks",
+              "region": "South Carolina parts departments",
+              "intro": "To inquire about the truck parts you need, call the parts line, then visit any of our six South Carolina locations. You can also fill out a parts request and one of our friendly staff will contact you.",
+              "lineLabel": "Parts line",
+              "line": "(800) 868-4923",
+              "lineUrl": "tel:+18008684923",
+              "locations": [
+                {
+                  "name": "Charleston",
+                  "street": "2580 Oscar Johnson Dr",
+                  "city": "Charleston, SC 29405",
+                  "tollFree": "(800) 666-3040",
+                  "tollFreeUrl": "tel:+18006663040",
+                  "phone": "(843) 747-3040",
+                  "phoneUrl": "tel:+18437473040"
+                },
+                {
+                  "name": "Columbia",
+                  "street": "1619 Bluff Road",
+                  "city": "Columbia, SC 29201",
+                  "tollFree": "(800) 868-4923",
+                  "tollFreeUrl": "tel:+18008684923",
+                  "phone": "(803) 799-4923",
+                  "phoneUrl": "tel:+18037994923"
+                },
+                {
+                  "name": "Florence",
+                  "street": "350 E Campground Rd",
+                  "city": "Florence, SC 29506",
+                  "tollFree": "(800) 477-3894",
+                  "tollFreeUrl": "tel:+18004773894",
+                  "phone": "(843) 468-9560",
+                  "phoneUrl": "tel:+18434689560"
+                },
+                {
+                  "name": "Greer",
+                  "street": "2520 Hwy 14 S",
+                  "city": "Greer, SC 29650",
+                  "tollFree": "(800) 284-0050",
+                  "tollFreeUrl": "tel:+18002840050",
+                  "phone": "(864) 848-0050",
+                  "phoneUrl": "tel:+18648480050"
+                },
+                {
+                  "name": "Greenville",
+                  "street": "1501 Whitehorse Road",
+                  "city": "Greenville, SC 29605",
+                  "tollFree": "(866) 520-0440",
+                  "tollFreeUrl": "tel:+18665200440",
+                  "phone": "(864) 335-0440",
+                  "phoneUrl": "tel:+18643350440"
+                },
+                {
+                  "name": "Conway",
+                  "street": "299 East Cox Ferry Road",
+                  "city": "Conway, SC 29526",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "(843) 438-3130",
+                  "phoneUrl": "tel:+18434383130"
+                }
+              ]
+            },
+            {
+              "company": "Rechtien International Trucks",
+              "region": "South Florida parts departments",
+              "intro": "Order your parts online or stop by any of our South Florida locations to get the commercial parts you need today.",
+              "lineLabel": "",
+              "line": "",
+              "lineUrl": "",
+              "locations": [
+                {
+                  "name": "Miami",
+                  "street": "7227 NW 74th Ave",
+                  "city": "Miami, FL 33166",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "305-888-0111",
+                  "phoneUrl": "tel:+13058880111"
+                },
+                {
+                  "name": "Ft. Lauderdale",
+                  "street": "2565 St Rd 84",
+                  "city": "Ft. Lauderdale, FL 33312",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "954-957-8390",
+                  "phoneUrl": "tel:+19549578390"
+                },
+                {
+                  "name": "Riviera Beach",
+                  "street": "3787 Interstate Park Rd W.",
+                  "city": "Riviera Beach, FL 33404",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "561-882-9050",
+                  "phoneUrl": "tel:+15618829050"
+                },
+                {
+                  "name": "Ft. Pierce",
+                  "street": "1699 North US Highway 1",
+                  "city": "Fort Pierce, FL 34950",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "772-466-1842",
+                  "phoneUrl": "tel:+17724661842"
+                },
+                {
+                  "name": "Ft. Myers",
+                  "street": "2761 Edison Avenue",
+                  "city": "Ft. Myers, FL 33916",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "239-334-1000",
+                  "phoneUrl": "tel:+12393341000"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Need a truck part? Talk to our parts team.",
+                    "headingLevel": 2,
+                    "align": "center",
+                    "eyebrow": "Ready when you are"
+                  }
+                },
+                {
+                  "id": "cta-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Contact the parts department closest to you or submit a parts request now. We'll help you find the right part and get your truck back to work.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btn",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "order-parts"
+                      },
+                      {
+                        "ctaId": "request-parts"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

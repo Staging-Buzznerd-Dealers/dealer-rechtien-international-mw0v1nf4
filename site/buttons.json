@@ -126,5 +126,32 @@
     "intent": "browse-inventory",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "order-parts",
+    "label": "Order Parts",
+    "url": "/store/parts",
+    "style": "primary",
+    "intent": "parts-enquiry",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "request-parts",
+    "label": "Request Parts",
+    "url": "#parts-request",
+    "style": "secondary",
+    "intent": "parts-enquiry",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "explore-parts-catalog",
+    "label": "Explore Parts Catalog",
+    "url": "/store/parts",
+    "style": "primary",
+    "intent": "parts-enquiry",
+    "newTab": false,
+    "active": true
   }
 ]
