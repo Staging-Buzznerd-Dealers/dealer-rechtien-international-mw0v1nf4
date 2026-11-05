@@ -20,7 +20,7 @@
               "poster": "https://vendure.ai4dealerships.com/assets/source/c2/s13-1.jpg",
               "title": "Specifications banner video (placeholder)"
             },
-            "controls": true,
+            "controls": false,
             "width": "full"
           }
         },
