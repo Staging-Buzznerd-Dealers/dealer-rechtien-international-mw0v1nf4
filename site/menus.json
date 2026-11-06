@@ -750,7 +750,7 @@
           "id": "item-11",
           "label": "About Us",
           "type": "url",
-          "url": "#",
+          "url": "/about",
           "ref": null,
           "children": [
             {
