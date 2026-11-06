@@ -64,8 +64,103 @@
             "alt": "QR code for David Milliken's page"
           },
           "qrCaption": "Scan to save David's page"
+        },
+        "snapshots": {
+          "iv-stock": {
+            "listings": [
+              {
+                "slug": "9-2027-hino-trucks-l-series-l6-extended-cab",
+                "href": "products/9-2027-hino-trucks-l-series-l6-extended-cab",
+                "title": "2027 Hino Trucks L Series L6 Extended Cab",
+                "price": "$0",
+                "facts": [
+                  {
+                    "label": "Model",
+                    "value": "L6 Extended Cab"
+                  },
+                  {
+                    "label": "Make",
+                    "value": "Hino Trucks"
+                  }
+                ],
+                "image": {
+                  "src": "preview/fb/10001__09__preview.jpg",
+                  "alt": "2027 Hino Trucks L Series L6 Extended Cab",
+                  "width": 600,
+                  "height": 400
+                }
+              },
+              {
+                "slug": "9-2027-hino-trucks-l-series-l7-day-cab",
+                "href": "products/9-2027-hino-trucks-l-series-l7-day-cab",
+                "title": "2027 Hino Trucks L Series L7 Day Cab",
+                "price": "$0",
+                "facts": [
+                  {
+                    "label": "Make",
+                    "value": "Hino Trucks"
+                  },
+                  {
+                    "label": "Model",
+                    "value": "L7 Day Cab"
+                  }
+                ],
+                "image": {
+                  "src": "preview/3d/10002__08__preview.jpg",
+                  "alt": "2027 Hino Trucks L Series L7 Day Cab",
+                  "width": 600,
+                  "height": 400
+                }
+              },
+              {
+                "slug": "9-2027-hino-trucks-l-series-l6-day-cab",
+                "href": "products/9-2027-hino-trucks-l-series-l6-day-cab",
+                "title": "2027 Hino Trucks L Series L6 Day Cab",
+                "price": "$0",
+                "facts": [
+                  {
+                    "label": "Make",
+                    "value": "Hino Trucks"
+                  },
+                  {
+                    "label": "Model",
+                    "value": " L6 Day Cab"
+                  }
+                ],
+                "image": {
+                  "src": "preview/12/10001__10__preview.jpg",
+                  "alt": "2027 Hino Trucks L Series L6 Day Cab",
+                  "width": 600,
+                  "height": 400
+                }
+              },
+              {
+                "slug": "9-2027-hino-trucks-l-series-l7-extended-cab",
+                "href": "products/9-2027-hino-trucks-l-series-l7-extended-cab",
+                "title": "2027 Hino Trucks L Series L7 Extended Cab",
+                "price": "$0",
+                "facts": [
+                  {
+                    "label": "Make",
+                    "value": "Hino Trucks"
+                  },
+                  {
+                    "label": "Model",
+                    "value": "L7 Extended Cab"
+                  }
+                ],
+                "image": {
+                  "src": "preview/96/10001__11__preview.jpg",
+                  "alt": "2027 Hino Trucks L Series L7 Extended Cab",
+                  "width": 600,
+                  "height": 400
+                }
+              }
+            ]
+          }
         }
-      }
+      },
+      "children": []
     }
   ]
 }
