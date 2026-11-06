@@ -26,8 +26,8 @@
             {
               "id": "about-team",
               "label": "Our team",
-              "type": "url",
-              "url": "/about#team"
+              "type": "page",
+              "ref": "team"
             },
             {
               "id": "about-history",
@@ -227,8 +227,8 @@
             {
               "id": "nc-team",
               "label": "Meet the Team",
-              "type": "url",
-              "url": "/about#team"
+              "type": "page",
+              "ref": "team"
             },
             {
               "id": "nc-careers",

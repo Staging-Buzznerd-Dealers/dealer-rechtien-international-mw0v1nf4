@@ -1,0 +1,333 @@
+{
+  "version": 2,
+  "id": "team-directory",
+  "name": "Team directory",
+  "description": "Meet the team: filter chips for Executive Staff and every location, a live count, and one section per team with headshot cards. Account executives carry a View inventory link; anyone with a profile page gets a View profile link.",
+  "props": [
+    {
+      "key": "tagline",
+      "type": "text",
+      "label": "Line beside the count",
+      "default": "Trucks, trailers, parts and service — one team across 11 locations."
+    },
+    {
+      "key": "groups",
+      "type": "list",
+      "label": "Teams (Executive Staff, then one per location)",
+      "fields": [
+        {
+          "key": "key",
+          "type": "text",
+          "label": "Key (lower case, used in the link, e.g. miami)"
+        },
+        {
+          "key": "chip",
+          "type": "text",
+          "label": "Filter chip label"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Section heading"
+        },
+        {
+          "key": "intro",
+          "type": "text",
+          "label": "Section intro"
+        },
+        {
+          "key": "members",
+          "type": "list",
+          "label": "People",
+          "fields": [
+            {
+              "key": "name",
+              "type": "text",
+              "label": "Name"
+            },
+            {
+              "key": "title",
+              "type": "text",
+              "label": "Title"
+            },
+            {
+              "key": "photo",
+              "type": "image",
+              "label": "Headshot (portrait 4:5)"
+            },
+            {
+              "key": "inventoryUrl",
+              "type": "url",
+              "label": "View inventory link (account executives)"
+            },
+            {
+              "key": "profileUrl",
+              "type": "url",
+              "label": "Profile page (/team/first-last), if they have one"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "td-bar",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 6,
+        "anchor": "team"
+      },
+      "children": [
+        {
+          "id": "td-chips",
+          "type": "row",
+          "props": {
+            "gap": 2,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "td-chip-all",
+              "type": "column",
+              "props": {
+                "span": 2
+              },
+              "children": [
+                {
+                  "id": "td-chip-all-btn",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "label": "All",
+                        "url": "#all",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "td-chip",
+              "type": "column",
+              "props": {
+                "span": 2,
+                "repeat": "groups"
+              },
+              "children": [
+                {
+                  "id": "td-chip-btn",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "label": "{{chip}}",
+                        "url": "#team-{{key}}",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "td-meta",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "stackOn": "mobile",
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "td-count-col",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "td-count",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Showing every team member</strong>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "td-tag-col",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "td-tag",
+                  "type": "text",
+                  "props": {
+                    "text": "{{tagline}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "td-group",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 6,
+        "anchor": "team-{{key}}",
+        "repeat": "groups"
+      },
+      "children": [
+        {
+          "id": "td-head",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "td-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "td-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "td-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "{{intro}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "td-cards",
+          "type": "row",
+          "props": {
+            "gap": 4,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "td-card",
+              "type": "column",
+              "props": {
+                "span": 3,
+                "repeat": "members"
+              },
+              "children": [
+                {
+                  "id": "td-photo",
+                  "type": "image",
+                  "props": {
+                    "image": "{{photo}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "td-who",
+                  "type": "row",
+                  "props": {
+                    "gap": 2,
+                    "stackOn": "never",
+                    "align": "start"
+                  },
+                  "children": [
+                    {
+                      "id": "td-who-txt",
+                      "type": "column",
+                      "props": {
+                        "span": 8
+                      },
+                      "children": [
+                        {
+                          "id": "td-name",
+                          "type": "heading",
+                          "props": {
+                            "text": "{{name}}",
+                            "headingLevel": 3,
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "td-role",
+                          "type": "text",
+                          "props": {
+                            "text": "{{title}}",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "td-who-act",
+                      "type": "column",
+                      "props": {
+                        "span": 4
+                      },
+                      "children": [
+                        {
+                          "id": "td-inv",
+                          "type": "text",
+                          "props": {
+                            "text": "<a href=\"{{inventoryUrl}}\">View inventory</a>",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "td-profile",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"{{profileUrl}}\">View profile</a>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Team directory: filter chips (Executive Staff + every location), a live count, and one\n   section per team. Without JS every team shows and each chip jumps to its section. */\n[data-bz-section=\"team-directory\"] .bz-block{padding-block:0}\n[data-bz-section=\"team-directory\"] .bz-btns{margin:0}\n[data-bz-section=\"team-directory\"] p:empty,[data-bz-section=\"team-directory\"] a[href=\"\"]{display:none}\n\n/* Chips: six to a row, so Executive Staff + Florida sit on one line and South Carolina on the next. */\n[data-bz-node=\"td-chips\"]{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:10px}\n[data-bz-node=\"td-chips\"]>.bz-col{grid-column:auto;min-width:0}\n[data-bz-node=\"td-chips\"] .bz-btn{width:100%;justify-content:center;min-height:40px;padding:0 10px;font-size:.625rem;letter-spacing:.1em;border:1px solid #cfcfcb;border-radius:0;background:#fff;color:var(--ink);white-space:nowrap}\n[data-bz-node=\"td-chips\"] .bz-btn:hover{border-color:var(--ink)}\n[data-bz-node=\"td-chips\"] .bz-btn[data-active],[data-bz-node=\"td-chips\"] .bz-btn.is-active{background:var(--ink);color:#fff;border-color:var(--ink)}\n[data-bz-node=\"td-chips\"] .bz-btn .td-n{margin-left:6px;opacity:.6}\n[data-bz-node=\"td-meta\"]{margin-top:var(--space-5);padding-top:var(--space-4);border-top:1px solid var(--line)}\n[data-bz-node=\"td-count\"] p{font:700 .6875rem/1.4 var(--font-body);letter-spacing:.16em;text-transform:uppercase;margin:0}\n[data-bz-node=\"td-tag\"] p{text-align:right;font-size:.875rem;color:#4a4945;margin:0}\n\n/* Team sections */\n.bz-section[data-bz-node^=\"td-group\"]{padding-block:clamp(36px,4vw,56px)}\n.bz-section[data-bz-node^=\"td-group\"][hidden]{display:none!important}\n[data-bz-node^=\"td-h\"] h2{margin-bottom:var(--space-2)}\n[data-bz-node^=\"td-intro\"] p{font-size:.875rem;color:#4a4945;margin:0 0 var(--space-5)}\n[data-bz-node^=\"td-cards\"]{row-gap:var(--space-6)}\n[data-bz-node^=\"td-photo\"] .bz-container,[data-bz-node^=\"td-photo\"] .bz-figure{max-width:none;padding:0;margin:0}\n[data-bz-node^=\"td-photo\"] img,[data-bz-node^=\"td-photo\"] .bz-photo--empty{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top;display:block;border-radius:0}\n/* No headshot yet: a neutral silhouette rather than the word \"Photo\". */\n[data-bz-node^=\"td-photo\"] .bz-photo--empty{color:transparent;font-size:0;background:radial-gradient(circle at 50% 38%,#cfcdc8 0 17%,transparent 17.5%),radial-gradient(ellipse at 50% 100%,#cfcdc8 0 38%,transparent 38.5%),#e4e2dd}\n.bz-row[data-bz-node^=\"td-who\"]{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-top:var(--space-3);padding-top:10px;border-top:2px solid var(--ink)}\n.bz-row[data-bz-node^=\"td-who\"]>.bz-col{grid-column:auto}\n[data-bz-node^=\"td-who-txt\"]{flex:1 1 auto;min-width:0}\n[data-bz-node^=\"td-who-act\"]{flex:0 0 auto}\n[data-bz-node^=\"td-name\"] h3{font:700 .8125rem/1.25 var(--font-heading);text-transform:uppercase;letter-spacing:.02em;margin:0 0 3px}\n[data-bz-section=\"team-directory\"] [data-bz-node^=\"td-role\"] .bz-text p{font-size:.75rem;line-height:1.4;color:#4a4945;text-transform:uppercase;letter-spacing:.04em;margin:0}\n[data-bz-node^=\"td-inv\"] p{margin:0}\n/* An empty link field renders as \"#\": no inventory or profile yet, so no link. */\n[data-bz-node^=\"td-inv\"] a[href=\"#\"],[data-bz-node^=\"td-profile\"] a[href=\"#\"]{display:none}\n[data-bz-node^=\"td-inv\"] a{display:inline-block;padding:4px 7px;border-radius:3px;background:var(--accent);color:#151515;font:800 .5625rem/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;white-space:nowrap}\n[data-bz-node^=\"td-inv\"] a:hover{background:var(--ink);color:#fff}\n[data-bz-node^=\"td-profile\"] p{margin:8px 0 0}\n[data-bz-node^=\"td-profile\"] a{font:700 .625rem/1 var(--font-body);letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}\n\n@media (max-width:1100px){\n  [data-bz-node=\"td-chips\"]{grid-template-columns:repeat(4,minmax(0,1fr))}\n  [data-bz-node^=\"td-cards\"]>.bz-col{grid-column:span 4}\n}\n@media (max-width:640px){\n  [data-bz-node=\"td-chips\"]{grid-template-columns:repeat(2,minmax(0,1fr))}\n  [data-bz-node^=\"td-cards\"]>.bz-col{grid-column:span 6}\n  [data-bz-node=\"td-tag\"] p{text-align:left}\n}\n",
+  "js": "/* Team directory filter. The platform `filter` behaviour matches on data- attributes that\n   only widgets can emit, so the chips are links to each team's section (#team-miami) and this\n   script turns them into filters: one team at a time, a live count, and a shareable address.\n   Without it every team shows and each chip jumps to its section. */\n(function () {\n  document.querySelectorAll('[data-bz-section=\"team-directory\"]').forEach(function (root) {\n    var groups = [].slice.call(root.querySelectorAll('.bz-section[data-bz-node^=\"td-group\"]'));\n    var chips = [].slice.call(root.querySelectorAll('[data-bz-node=\"td-chips\"] a'));\n    var count = root.querySelector('[data-bz-node=\"td-count\"] p');\n    if (!groups.length || !chips.length) return;\n    function keyOf(a) { return (a.getAttribute('href') || '').replace(/^#/, ''); }\n    function size(g) { return g.querySelectorAll('[data-bz-node^=\"td-cards\"] > .bz-col').length; }\n    var total = groups.reduce(function (n, g) { return n + size(g); }, 0);\n    chips.forEach(function (a) {\n      var k = keyOf(a), g = groups.filter(function (x) { return x.id === k; })[0];\n      var n = k === 'all' ? total : (g ? size(g) : 0);\n      var s = document.createElement('span'); s.className = 'td-n'; s.textContent = n; a.appendChild(s);\n      a.setAttribute('role', 'button');\n    });\n    function select(k, push) {\n      var shown = 0;\n      groups.forEach(function (g) { var on = k === 'all' || g.id === k; g.hidden = !on; if (on) shown += size(g); });\n      chips.forEach(function (a) { var on = keyOf(a) === k; a.classList.toggle('is-active', on); a.setAttribute('aria-pressed', String(on)); });\n      if (count) count.innerHTML = '<strong>Showing ' + shown + ' of ' + total + ' team members</strong>';\n      if (push && history.replaceState) history.replaceState(null, '', k === 'all' ? location.pathname : '#' + k);\n    }\n    chips.forEach(function (a) {\n      a.addEventListener('click', function (e) {\n        e.preventDefault();\n        var k = keyOf(a);\n        select(a.classList.contains('is-active') && k !== 'all' ? 'all' : k, true);\n      });\n    });\n    function fromHash() { var k = location.hash.replace(/^#/, ''); select(groups.some(function (g) { return g.id === k; }) ? k : 'all', false); }\n    window.addEventListener('hashchange', fromHash);\n    fromHash();\n  });\n})();\n"
+}
