@@ -9,31 +9,45 @@
           "id": "home",
           "label": "Home",
           "type": "page",
-          "ref": "home"
+          "ref": "home",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "inventory",
           "label": "Inventory",
           "type": "inventory",
-          "ref": "inventory"
+          "ref": "inventory",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "about",
           "label": "About",
           "type": "url",
+          "ref": null,
           "url": "/about",
+          "newTab": false,
           "children": [
             {
               "id": "about-team",
               "label": "Our team",
               "type": "url",
-              "url": "/about#team"
+              "ref": null,
+              "url": "/about#team",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "about-history",
               "label": "History",
               "type": "url",
-              "url": "/about#history"
+              "ref": null,
+              "url": "/about#history",
+              "newTab": false,
+              "children": []
             }
           ]
         },
@@ -41,7 +55,10 @@
           "id": "contact",
           "label": "Contact",
           "type": "url",
-          "url": "/contact"
+          "ref": null,
+          "url": "/contact",
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -53,19 +70,28 @@
           "id": "f-inventory",
           "label": "Inventory",
           "type": "inventory",
-          "ref": "inventory"
+          "ref": "inventory",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "f-about",
           "label": "About",
           "type": "url",
-          "url": "/about"
+          "ref": null,
+          "url": "/about",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "f-contact",
           "label": "Contact",
           "type": "url",
-          "url": "/contact"
+          "ref": null,
+          "url": "/contact",
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -77,13 +103,19 @@
           "id": "privacy",
           "label": "Privacy",
           "type": "url",
-          "url": "/privacy"
+          "ref": null,
+          "url": "/privacy",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "terms",
           "label": "Terms",
           "type": "url",
-          "url": "/terms"
+          "ref": null,
+          "url": "/terms",
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -95,54 +127,81 @@
           "id": "grp-brands",
           "label": "Brands",
           "type": "label",
+          "ref": null,
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "nb-international",
               "label": "International",
               "type": "url",
-              "url": "/#brands"
+              "ref": null,
+              "url": "/#brands",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "nb-hino",
               "label": "Hino Trucks",
               "type": "url",
-              "url": "/#brands"
+              "ref": null,
+              "url": "/#brands",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "nb-icbus",
               "label": "IC Bus",
               "type": "url",
-              "url": "/#brands"
+              "ref": null,
+              "url": "/#brands",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "nb-idealease",
               "label": "Idealease",
               "type": "url",
-              "url": "/#brands"
+              "ref": null,
+              "url": "/#brands",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "nb-kalmar",
               "label": "Kalmar Ottawa",
               "type": "url",
-              "url": "/#brands"
+              "ref": null,
+              "url": "/#brands",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "nb-east",
               "label": "East",
               "type": "url",
-              "url": "/#brands"
+              "ref": null,
+              "url": "/#brands",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "nb-dorsey",
               "label": "Dorsey Trailers",
               "type": "url",
-              "url": "/#brands"
+              "ref": null,
+              "url": "/#brands",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "nb-navigator",
               "label": "Navigator Forklifts",
               "type": "url",
-              "url": "/#brands"
+              "ref": null,
+              "url": "/#brands",
+              "newTab": false,
+              "children": []
             }
           ]
         },
@@ -150,66 +209,99 @@
           "id": "grp-shop",
           "label": "Shop",
           "type": "label",
+          "ref": null,
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "ns-new-trucks",
               "label": "New Trucks",
               "type": "inventory",
-              "ref": "inventory?condition=new"
+              "ref": "inventory?condition=new",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "ns-used-trucks",
               "label": "Used Trucks",
               "type": "inventory",
-              "ref": "inventory?condition=used"
+              "ref": "inventory?condition=used",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "ns-new-trailers",
               "label": "New Trailers",
               "type": "inventory",
-              "ref": "inventory"
+              "ref": "inventory",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "ns-used-trailers",
               "label": "Used Trailers",
               "type": "inventory",
-              "ref": "inventory"
+              "ref": "inventory",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "ns-parts",
               "label": "Parts",
               "type": "inventory",
-              "ref": "parts"
+              "ref": "parts",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "ns-service",
               "label": "Service",
               "type": "page",
-              "ref": "service"
+              "ref": "service",
+              "url": null,
+              "newTab": false,
+              "children": []
             },
             {
               "id": "ns-appointment",
               "label": "Service Appointment",
               "type": "url",
-              "url": "/service#appointment"
+              "ref": null,
+              "url": "/service#appointment",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "ns-mobile",
               "label": "Mobile Service",
               "type": "url",
-              "url": "/service#mobile-service"
+              "ref": null,
+              "url": "/service#mobile-service",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "ns-bodyshop",
               "label": "Body Shop",
               "type": "url",
-              "url": "#"
+              "ref": null,
+              "url": "#",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "ns-lease",
               "label": "Lease & Rental",
               "type": "url",
-              "url": "/lease-rental"
+              "ref": null,
+              "url": "/lease-rental",
+              "newTab": false,
+              "children": []
             }
           ]
         },
@@ -217,48 +309,72 @@
           "id": "grp-company",
           "label": "Company",
           "type": "label",
+          "ref": null,
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "nc-about",
               "label": "About Us",
               "type": "url",
-              "url": "/about"
+              "ref": null,
+              "url": "/about",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "nc-team",
               "label": "Meet the Team",
               "type": "url",
-              "url": "/about#team"
+              "ref": null,
+              "url": "/about#team",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "nc-careers",
               "label": "Careers",
               "type": "url",
-              "url": "/careers"
+              "ref": null,
+              "url": "/careers",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "nc-reviews",
               "label": "Reviews",
               "type": "url",
-              "url": "/reviews"
+              "ref": null,
+              "url": "/reviews",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "nc-locations",
               "label": "Locations",
               "type": "url",
-              "url": "/locations"
+              "ref": null,
+              "url": "/locations",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "nc-news",
               "label": "News & Press",
               "type": "url",
-              "url": "/blog"
+              "ref": null,
+              "url": "/blog",
+              "newTab": false,
+              "children": []
             },
             {
               "id": "nc-contact",
               "label": "Contact",
               "type": "url",
-              "url": "/contact"
+              "ref": null,
+              "url": "/contact",
+              "newTab": false,
+              "children": []
             }
           ]
         }
@@ -273,30 +389,43 @@
           "label": "Inventory",
           "type": "inventory",
           "ref": "inventory",
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "hn-inv-shop",
               "label": "Shop Inventory",
               "type": "label",
               "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "hn-inv-new",
                   "label": "New Inventory",
                   "type": "inventory",
-                  "ref": "inventory?condition=new"
+                  "ref": "inventory?condition=new",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "hn-inv-used",
                   "label": "Used Inventory",
                   "type": "inventory",
-                  "ref": "inventory?condition=used"
+                  "ref": "inventory?condition=used",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "hn-inv-all",
                   "label": "All Inventory",
                   "type": "inventory",
-                  "ref": "inventory"
+                  "ref": "inventory",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 }
               ]
             }
@@ -306,43 +435,62 @@
           "id": "hn-locations",
           "label": "Locations",
           "type": "url",
+          "ref": null,
           "url": "/#locations",
+          "newTab": false,
           "children": [
             {
               "id": "hn-loc-fl",
               "label": "Florida",
               "type": "label",
               "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "hn-loc-miami",
                   "label": "Miami",
                   "type": "location",
-                  "ref": "maimi"
+                  "ref": "maimi",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "hn-loc-ftlauderdale",
                   "label": "Ft. Lauderdale",
                   "type": "url",
-                  "url": "#"
+                  "ref": null,
+                  "url": "#",
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "hn-loc-rivierabeach",
                   "label": "Riviera Beach",
                   "type": "url",
-                  "url": "#"
+                  "ref": null,
+                  "url": "#",
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "hn-loc-ftpierce",
                   "label": "Ft. Pierce",
                   "type": "url",
-                  "url": "#"
+                  "ref": null,
+                  "url": "#",
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "hn-loc-ftmyers",
                   "label": "Ft. Myers",
                   "type": "url",
-                  "url": "#"
+                  "ref": null,
+                  "url": "#",
+                  "newTab": false,
+                  "children": []
                 }
               ]
             },
@@ -351,42 +499,62 @@
               "label": "South Carolina",
               "type": "label",
               "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "hn-loc-charleston",
                   "label": "Charleston",
                   "type": "url",
-                  "url": "#"
+                  "ref": null,
+                  "url": "#",
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "hn-loc-columbia",
                   "label": "Columbia",
                   "type": "location",
-                  "ref": "columbia-2"
+                  "ref": "columbia-2",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "hn-loc-conway",
                   "label": "Conway",
                   "type": "url",
-                  "url": "#"
+                  "ref": null,
+                  "url": "#",
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "hn-loc-florence",
                   "label": "Florence",
                   "type": "url",
-                  "url": "#"
+                  "ref": null,
+                  "url": "#",
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "hn-loc-greenville",
                   "label": "Greenville",
                   "type": "location",
-                  "ref": "greenville"
+                  "ref": "greenville",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "hn-loc-greer",
                   "label": "Greer",
                   "type": "url",
-                  "url": "#"
+                  "ref": null,
+                  "url": "#",
+                  "newTab": false,
+                  "children": []
                 }
               ]
             },
@@ -395,12 +563,17 @@
               "label": "Find a Location",
               "type": "label",
               "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "hn-loc-all",
                   "label": "All Locations",
                   "type": "url",
-                  "url": "/#locations"
+                  "ref": null,
+                  "url": "/#locations",
+                  "newTab": false,
+                  "children": []
                 }
               ]
             }
@@ -411,36 +584,52 @@
           "label": "Parts",
           "type": "page",
           "ref": "parts",
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "hn-prt-shop",
               "label": "Shop Parts",
               "type": "label",
               "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "hn-prt-dept",
                   "label": "Parts Department",
                   "type": "page",
-                  "ref": "parts"
+                  "ref": "parts",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "hn-prt-order",
                   "label": "Order Parts Online",
                   "type": "inventory",
-                  "ref": "parts"
+                  "ref": "parts",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "hn-prt-request",
                   "label": "Request a Part",
                   "type": "url",
-                  "url": "/parts#parts-request"
+                  "ref": null,
+                  "url": "/parts#parts-request",
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "hn-prt-delivery",
                   "label": "Parts Delivery",
                   "type": "url",
-                  "url": "/parts#delivery"
+                  "ref": null,
+                  "url": "/parts#delivery",
+                  "newTab": false,
+                  "children": []
                 }
               ]
             }
@@ -451,36 +640,52 @@
           "label": "Service",
           "type": "page",
           "ref": "service",
+          "url": null,
+          "newTab": false,
           "children": [
             {
               "id": "hn-svc-col",
               "label": "Service",
               "type": "label",
               "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "hn-svc-overview",
                   "label": "Service Department",
                   "type": "page",
-                  "ref": "service"
+                  "ref": "service",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "hn-svc-appointment",
                   "label": "Schedule an Appointment",
                   "type": "url",
-                  "url": "/service#appointment"
+                  "ref": null,
+                  "url": "/service#appointment",
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "hn-svc-mobile",
                   "label": "Mobile Service",
                   "type": "url",
-                  "url": "/service#mobile-service"
+                  "ref": null,
+                  "url": "/service#mobile-service",
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "hn-svc-warranty",
                   "label": "Warranty Repairs",
                   "type": "url",
-                  "url": "/service#warranty"
+                  "ref": null,
+                  "url": "/service#warranty",
+                  "newTab": false,
+                  "children": []
                 }
               ]
             },
@@ -489,12 +694,17 @@
               "label": "More",
               "type": "label",
               "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "hn-svc-bodyshop",
                   "label": "Body Shop",
                   "type": "url",
-                  "url": "#"
+                  "ref": null,
+                  "url": "#",
+                  "newTab": false,
+                  "children": []
                 }
               ]
             }
@@ -504,38 +714,70 @@
           "id": "hn-fleetrite",
           "label": "Fleetrite",
           "type": "url",
-          "url": "#"
+          "ref": null,
+          "url": "#",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "hn-ebay",
           "label": "Online Shop",
           "type": "url",
+          "ref": null,
           "url": "#",
-          "newTab": true
+          "newTab": true,
+          "children": []
         },
         {
           "id": "hn-financing",
           "label": "Financing",
           "type": "page",
-          "ref": "financing"
+          "ref": "financing",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "hn-export",
           "label": "Export Sales",
           "type": "url",
-          "url": "#"
+          "ref": null,
+          "url": "#",
+          "newTab": false,
+          "children": []
         },
         {
-          "id": "hn-careers",
-          "label": "Careers",
+          "id": "item-11",
+          "label": "About Us",
           "type": "url",
-          "url": "/careers"
-        },
-        {
-          "id": "hn-contact",
-          "label": "Contact Us",
-          "type": "url",
-          "url": "/contact"
+          "url": "#",
+          "ref": null,
+          "children": [
+            {
+              "id": "item-43",
+              "label": "Contact Us",
+              "type": "url",
+              "url": "/contact",
+              "ref": null,
+              "children": []
+            },
+            {
+              "id": "item-43",
+              "label": "Careers",
+              "type": "url",
+              "url": "/careers",
+              "ref": null,
+              "children": []
+            },
+            {
+              "id": "item-43",
+              "label": "Meet The Team",
+              "type": "url",
+              "url": "#",
+              "ref": null,
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -547,19 +789,28 @@
           "id": "nl-privacy",
           "label": "Privacy",
           "type": "url",
-          "url": "/privacy"
+          "ref": null,
+          "url": "/privacy",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "nl-terms",
           "label": "Terms & Conditions",
           "type": "url",
-          "url": "/terms"
+          "ref": null,
+          "url": "/terms",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "nl-policies",
           "label": "Policies",
           "type": "url",
-          "url": "/policies"
+          "ref": null,
+          "url": "/policies",
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -571,25 +822,37 @@
           "id": "hl-fl",
           "label": "International South Florida",
           "type": "url",
-          "url": "#locations"
+          "ref": null,
+          "url": "#locations",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "hl-sc",
           "label": "International South Carolina",
           "type": "url",
-          "url": "#locations"
+          "ref": null,
+          "url": "#locations",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "hl-used",
           "label": "Pre-Owned",
           "type": "inventory",
-          "ref": "inventory?condition=used"
+          "ref": "inventory?condition=used",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "hl-parts",
           "label": "Parts Store",
           "type": "inventory",
-          "ref": "parts"
+          "ref": "parts",
+          "url": null,
+          "newTab": false,
+          "children": []
         }
       ]
     },
@@ -601,25 +864,37 @@
           "id": "pl-order",
           "label": "Order parts online",
           "type": "inventory",
-          "ref": "parts"
+          "ref": "parts",
+          "url": null,
+          "newTab": false,
+          "children": []
         },
         {
           "id": "pl-request",
           "label": "Request parts",
           "type": "url",
-          "url": "#parts-request"
+          "ref": null,
+          "url": "#parts-request",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "pl-delivery",
           "label": "Parts delivery",
           "type": "url",
-          "url": "#delivery"
+          "ref": null,
+          "url": "#delivery",
+          "newTab": false,
+          "children": []
         },
         {
           "id": "pl-contact",
           "label": "Contact a parts counter",
           "type": "url",
-          "url": "#contact-parts"
+          "ref": null,
+          "url": "#contact-parts",
+          "newTab": false,
+          "children": []
         }
       ]
     }
