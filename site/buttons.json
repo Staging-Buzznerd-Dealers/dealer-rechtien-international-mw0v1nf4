@@ -245,5 +245,43 @@
     "intent": "contact-finance",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "lease-inquiry",
+    "label": "Lease inquiry",
+    "url": null,
+    "formId": "lease-inquiry",
+    "style": "primary",
+    "intent": "lease-inquiry",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "rental-reservation",
+    "label": "Rental reservation",
+    "url": null,
+    "formId": "rental-request",
+    "style": "secondary",
+    "intent": "rental-request",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "apply-for-credit",
+    "label": "Credit application",
+    "url": "/financing",
+    "style": "secondary",
+    "intent": "credit-application",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "mobile-service-link",
+    "label": "Mobile service",
+    "url": "/service#mobile-service",
+    "style": "primary",
+    "intent": "mobile-service",
+    "newTab": false,
+    "active": true
   }
 ]

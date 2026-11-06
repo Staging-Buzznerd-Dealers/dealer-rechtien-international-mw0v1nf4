@@ -1,0 +1,1390 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center",
+        "anchor": "top"
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "hero-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-crumbs",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Home</a> / Lease & Rental",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Semi truck leasing and rentals with Idealease.",
+                    "headingLevel": 1,
+                    "align": "center",
+                    "eyebrow": "Rechtien International & Carolina International"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Cost-effective alternatives to truck ownership, from the premier commercial truck lease and rental company in North America — available in South Florida and South Carolina.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "lease-inquiry"
+                      },
+                      {
+                        "ctaId": "rental-reservation"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "styles": {
+        "base": {
+          "backgroundImage": "/images/hero-truck.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
+          "background": "#151515"
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "intro-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "mobile",
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "intro-copy",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "intro-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Leasing is the transportation solution you cannot afford to ignore.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Lease & rental"
+                  }
+                },
+                {
+                  "id": "intro-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "Commercial truck ownership is getting more challenging and costly to manage every day. For most well-run businesses, leasing is a superior financial and operational alternative. Idealease offers a variety of comprehensive support services that allow you to manage your business more effectively and hassle-free than ever before.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Lease or purchase a semi-truck? You have those options, as well as the option to rent. If you do not want to buy outright, semi-truck and trailer rentals or semi-truck leasing may be more appropriate for your needs. As well as traditional semi-truck leasing to cover ownership for several years, we also offer semi-truck and trailer rentals for shorter periods.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-t3",
+                  "type": "text",
+                  "props": {
+                    "text": "At Carolina International Trucks, we deliver professional semi truck leasing solutions to businesses across South Carolina, with a portfolio of commercial trucks for rent that includes the latest International trucks and 18-wheelers. In South Florida, Rechtien International Trucks works with Idealease of South Florida to help you choose a truck lease or rental that more than meets your needs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "intro-logo",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "intro-logo-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/logos/idealease.png",
+                      "alt": "Idealease truck leasing and rental logo"
+                    },
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-logo-cap",
+                  "type": "text",
+                  "props": {
+                    "text": "Leasing and rentals through Idealease, in South Florida and South Carolina.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stats",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "stats-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "stats-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "stats-band",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "430+",
+                        "label": "Idealease truck rental locations in the U.S., Canada and Mexico"
+                      },
+                      {
+                        "value": "10,000+",
+                        "label": "Vehicles in the Idealease rental fleet"
+                      },
+                      {
+                        "value": "43,000+",
+                        "label": "Fueling locations that accept the Idealease Fleet Services Fuel Card"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "compare",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "compare-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "compare-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "compare-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Should you lease vs. purchase a semi-truck?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Buy, lease or rent"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "compare-grid-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "compare-grid-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "compare-grid",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 3,
+                    "items": [
+                      {
+                        "label": "Buy",
+                        "desc": "If you need a new truck for the long haul, and like the freedom that comes with ownership, buying a semi-truck may be your best option."
+                      },
+                      {
+                        "label": "Lease",
+                        "desc": "If you want to refresh your truck periodically, or want peace of mind when it comes to things like maintenance, you may want to opt for semi-truck leasing. Traditional leasing covers ownership for several years."
+                      },
+                      {
+                        "label": "Rent",
+                        "desc": "If you need a truck for a shorter period — to handle a short-term peak in your business, or as a replacement when your trucks are in the shop — rent by the day, week, month or longer."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "compare-cta-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "compare-cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "compare-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "explore-inventory",
+                        "style": "link"
+                      },
+                      {
+                        "ctaId": "apply-for-credit",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "options",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "options-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "options-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "options-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Idealease leasing, maintenance and fleet services.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "What Idealease offers"
+                  }
+                },
+                {
+                  "id": "options-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "Carolina Idealease offers a full range of truck leasing, rental and contract maintenance options. By offering flexible terms, schedules and agreements, we are sure to have a solution to fit your needs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "options-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Idealease of South Florida offers full-service semi truck leasing, dedicated maintenance and mobile service. With specialized technicians and over 50 service bays, leasing agreements can include full-service maintenance, licensing, fuel tax reporting and washing. We also offer high-speed diesel fueling at competitive prices, along with an electronic “card lock” system that allows 24-hour fueling and customer reporting.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "options-grid-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "options-grid-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "options-grid",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 4,
+                    "items": [
+                      {
+                        "label": "Full Service Lease",
+                        "desc": "Get the vehicle specs you need, predictable costs for all vehicle maintenance, Priority Service, and 24/7 Roadside Assistance."
+                      },
+                      {
+                        "label": "Full Service Equity Lease",
+                        "desc": "The perfect solution for companies that must own their commercial vehicles for tax purposes. Retain tax ownership and establish equity in your fleet while receiving all the benefits of a Full Service Lease."
+                      },
+                      {
+                        "label": "Ownership Transition",
+                        "desc": "Unlock the equity that is tied up in your truck fleet and put cash back into your business. Learn the true cost of truck ownership versus the advantages of a fleet buyout and a Full Service Lease."
+                      },
+                      {
+                        "label": "Dedicated Maintenance",
+                        "desc": "Customized dedicated truck maintenance, Priority Service, and a fixed monthly cost for scheduled preventive and unscheduled maintenance."
+                      },
+                      {
+                        "label": "National Accounts",
+                        "desc": "Idealease offers a comprehensive range of integrated fleet transportation solutions that allow large national and mid-sized regional fleets to improve service to their customers. All Idealease locations work together as one to support and maintain your fleet, so you can operate more efficiently and cost-effectively across all your locations."
+                      },
+                      {
+                        "label": "IdealNet",
+                        "desc": "24/7 Roadside Assistance is available at more than 430 Idealease locations. The service is provided in-house by trained Idealease staff members."
+                      },
+                      {
+                        "label": "Idealease Fleet Services",
+                        "desc": "Vehicle legalization and fuel tax reporting in the U.S. The no-fee Idealease Fleet Services Fuel Card eliminates much of the paperwork for tracking, trip reports and fuel tax receipts, and is accepted at more than 43,000 fueling locations in North America."
+                      },
+                      {
+                        "label": "Safety & Compliance",
+                        "desc": "Idealease, in partnership with the National Private Truck Council, is the leader in commercial motor vehicle safety and compliance training, including extensive coverage of current CSA regulations."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "options-note-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "options-note-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "options-note1",
+                  "type": "text",
+                  "props": {
+                    "text": "Proud to be a ONE IDEALEASE location: Carolina Idealease is a ONE IDEALEASE location. ONE IDEALEASE honors the Idealease locations that achieve the highest levels of performance in 12 key areas, including professional leadership, customer service, marketing, facilities, dedicated service bays, employee training, and customer safety and compliance education.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "options-note2",
+                  "type": "text",
+                  "props": {
+                    "text": "Carolina Idealease also offers OnCommand™ Connection, refrigeration service and IdealTrack. Visit <a href=\"https://www.idealease.com\" target=\"_blank\" rel=\"noopener\">idealease.com</a> for news, case studies, training and much more.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "why",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "why-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "why-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "why-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why choose us over semi truck rental companies?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Rechtien International Trucks · Idealease of South Florida"
+                  }
+                },
+                {
+                  "id": "why-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Do you need a capable commercial vehicle for your business, but you are not ready to commit to buying? We have solutions. You will enjoy a variety of benefits without the monthly cost of financing. Working with Idealease, we can help you choose a truck lease or rental that more than meets your needs. You will not find the following at all semi-truck rental companies:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "why-grid-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "why-grid-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "why-grid",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 3,
+                    "items": [
+                      {
+                        "label": "Dedicated maintenance"
+                      },
+                      {
+                        "label": "Motor vehicle report service"
+                      },
+                      {
+                        "label": "Mobile service"
+                      },
+                      {
+                        "label": "Telematics services"
+                      },
+                      {
+                        "label": "Periodic state and federal inspections"
+                      },
+                      {
+                        "label": "Idealsafe safety & compliance training and consultation"
+                      },
+                      {
+                        "label": "Idealnet 24/7 roadside assistance"
+                      },
+                      {
+                        "label": "Driver training to reduce driver turnover"
+                      },
+                      {
+                        "label": "Idealease fleet services"
+                      },
+                      {
+                        "label": "Replacement rental vehicles"
+                      },
+                      {
+                        "label": "Idealease fuel card with U.S. and Canada fuel tax reporting"
+                      },
+                      {
+                        "label": "Discounted rental vehicles"
+                      },
+                      {
+                        "label": "Vehicle licensing, permitting, legalization"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "mobile-service",
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "mobile-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet",
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "mobile-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "mobile-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Is downtime for vehicle service and repairs impacting your business?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Mobile service"
+                  }
+                },
+                {
+                  "id": "mobile-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "With Idealease Mobile Service, you can schedule service when your vehicles are not operating — during off hours or on weekends — at your location. Highly skilled technicians and well-equipped maintenance vehicles bring service and parts to you, and can perform up to 80% of all routine and preventive commercial truck maintenance at your location, including:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "mobile-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Improve vehicle uptime, reduce fuel costs and driver downtime for your fleet of five or more commercial trucks with cost-effective, convenient Mobile Service.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "mobile-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "mobile-service-link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "mobile-list",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "mobile-grid",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 3,
+                    "columns": 2,
+                    "items": [
+                      {
+                        "label": "Scheduled PMs"
+                      },
+                      {
+                        "label": "Mobile Quick Check"
+                      },
+                      {
+                        "label": "Minor repairs"
+                      },
+                      {
+                        "label": "DVIR write-ups (vehicle inspections)"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rentals",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "rentals-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "rentals-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "rentals-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Short- and long-term semi truck rentals from Idealease.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Rentals"
+                  }
+                },
+                {
+                  "id": "rentals-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "Idealease can help you handle a short-term peak in your business, or rent replacement vehicles when your trucks are in the shop. We provide truck rental programs to fit your needs for a day, week, month or longer. Our wide variety of industry-leading trucks and tractors are well maintained, reliable and clean. Late-model sleepers, day cabs, flat beds, box trucks, refrigerated vehicles and more are available for rent.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "rentals-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Idealease has over 430 truck rental locations in the U.S., Canada and Mexico, and more than 10,000 vehicles in the Idealease rental fleet.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "rentals-grid-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "rentals-grid-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "rentals-grid",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 3,
+                    "columns": 3,
+                    "items": [
+                      {
+                        "label": "Available at a moment's notice"
+                      },
+                      {
+                        "label": "Coordinated rental service at more than 430 Idealease locations"
+                      },
+                      {
+                        "label": "Discounted rates for full-service lease customers"
+                      },
+                      {
+                        "label": "Full menu of class 5, 6, 7 and 8 trucks"
+                      },
+                      {
+                        "label": "24-hour roadside assistance"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "rentals-cta-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "rentals-cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "rentals-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "rental-reservation"
+                      },
+                      {
+                        "ctaId": "lease-inquiry"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "split",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "paddingY": 0,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "split-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "split-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "split-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Find out more about Idealease support services, safety and compliance.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Idealease support"
+                  }
+                },
+                {
+                  "id": "split-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "For the Idealease location near you, contact us. To find out more about rentals, send a rental reservation request and we will get back to you shortly.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "split-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "For more information on Idealease, visit <a href=\"https://www.idealease.com\" target=\"_blank\" rel=\"noopener\">idealease.com</a>.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "split-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "style": "link"
+                      },
+                      {
+                        "ctaId": "find-parts-location",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "split-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "split-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/red-international-truck.jpg",
+                      "alt": "International truck available for lease or rental through Idealease"
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "requests",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "requests"
+      },
+      "children": [
+        {
+          "id": "requests-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "requests-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "requests-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Start a lease or rental request.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Learn more with Rechtien International & Carolina International"
+                  }
+                },
+                {
+                  "id": "requests-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Have questions about our semi truck and trailer rentals or semi-truck leasing? Send a request and our team will get back to you to help you find the truck you need for your route in South Florida or South Carolina. Need financing instead? See our <a href=\"/financing\">financing options</a>.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "requests-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "stackOn": "tablet",
+            "align": "stretch"
+          },
+          "children": [
+            {
+              "id": "requests-lease",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "requests-lease-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Lease inquiry",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "eyebrow": "Leasing"
+                  }
+                },
+                {
+                  "id": "requests-lease-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Tell us what you are looking for and your region — we will follow up on full-service, equity and ownership-transition leases and dedicated maintenance.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "requests-lease-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "lease-inquiry"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "requests-rent",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "requests-rent-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Rental reservation",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "eyebrow": "Rentals"
+                  }
+                },
+                {
+                  "id": "requests-rent-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Request the dates you need. Nothing is booked until the branch confirms availability and the rate.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "requests-rent-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "rental-request"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "locations",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "parts-contacts",
+        "values": {
+          "eyebrow": "Where to lease or rent",
+          "heading": "Lease and rental locations in South Florida and South Carolina.",
+          "groups": [
+            {
+              "company": "Rechtien International Trucks",
+              "region": "South Florida · 5 locations",
+              "intro": "To find out more or talk through our rental options, contact us or visit any of our 5 South Florida locations today.",
+              "lineLabel": "",
+              "line": "",
+              "lineUrl": "",
+              "locations": [
+                {
+                  "name": "Miami",
+                  "street": "7227 NW 74th Ave",
+                  "city": "Miami, FL 33166",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "305-888-0111",
+                  "phoneUrl": "tel:+13058880111",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=7227%20NW%2074th%20Ave%2C%20Miami%2C%20FL%2033166"
+                },
+                {
+                  "name": "Ft. Lauderdale",
+                  "street": "2565 St Rd 84",
+                  "city": "Ft. Lauderdale, FL 33312",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "954-957-8390",
+                  "phoneUrl": "tel:+19549578390",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2565%20St%20Rd%2084%2C%20Ft.%20Lauderdale%2C%20FL%2033312"
+                },
+                {
+                  "name": "Riviera Beach",
+                  "street": "3787 Interstate Park Rd W.",
+                  "city": "Riviera Beach, FL 33404",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "561-882-9050",
+                  "phoneUrl": "tel:+15618829050",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=3787%20Interstate%20Park%20Rd%20W.%2C%20Riviera%20Beach%2C%20FL%2033404"
+                },
+                {
+                  "name": "Ft. Pierce",
+                  "street": "1699 North US Highway 1",
+                  "city": "Fort Pierce, FL 34950",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "772-466-1842",
+                  "phoneUrl": "tel:+17724661842",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=1699%20North%20US%20Highway%201%2C%20Fort%20Pierce%2C%20FL%2034950"
+                },
+                {
+                  "name": "Ft. Myers",
+                  "street": "2761 Edison Avenue",
+                  "city": "Ft. Myers, FL 33916",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "239-334-1000",
+                  "phoneUrl": "tel:+12393341000",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2761%20Edison%20Avenue%2C%20Ft.%20Myers%2C%20FL%2033916"
+                }
+              ]
+            },
+            {
+              "company": "Carolina International Trucks",
+              "region": "South Carolina · 6 locations",
+              "intro": "Contact or visit Carolina International Trucks in SC for your commercial fleet leasing needs.",
+              "lineLabel": "",
+              "line": "",
+              "lineUrl": "",
+              "locations": [
+                {
+                  "name": "Charleston",
+                  "street": "2580 Oscar Johnson Dr",
+                  "city": "Charleston, SC 29405",
+                  "tollFree": "(800) 666-3040",
+                  "tollFreeUrl": "tel:+18006663040",
+                  "phone": "(843) 747-3040",
+                  "phoneUrl": "tel:+18437473040",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2580%20Oscar%20Johnson%20Dr%2C%20Charleston%2C%20SC%2029405"
+                },
+                {
+                  "name": "Columbia",
+                  "street": "1619 Bluff Road",
+                  "city": "Columbia, SC 29201",
+                  "tollFree": "(800) 868-4923",
+                  "tollFreeUrl": "tel:+18008684923",
+                  "phone": "(803) 799-4923",
+                  "phoneUrl": "tel:+18037994923",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=1619%20Bluff%20Road%2C%20Columbia%2C%20SC%2029201"
+                },
+                {
+                  "name": "Florence",
+                  "street": "350 E Campground Rd",
+                  "city": "Florence, SC 29506",
+                  "tollFree": "(800) 477-3894",
+                  "tollFreeUrl": "tel:+18004773894",
+                  "phone": "(843) 468-9560",
+                  "phoneUrl": "tel:+18434689560",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=350%20E%20Campground%20Rd%2C%20Florence%2C%20SC%2029506"
+                },
+                {
+                  "name": "Greer",
+                  "street": "2520 Hwy 14 S",
+                  "city": "Greer, SC 29650",
+                  "tollFree": "(800) 284-0050",
+                  "tollFreeUrl": "tel:+18002840050",
+                  "phone": "(864) 848-0050",
+                  "phoneUrl": "tel:+18648480050",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2520%20Hwy%2014%20S%2C%20Greer%2C%20SC%2029650"
+                },
+                {
+                  "name": "Greenville",
+                  "street": "1501 Whitehorse Road",
+                  "city": "Greenville, SC 29605",
+                  "tollFree": "(866) 520-0440",
+                  "tollFreeUrl": "tel:+18665200440",
+                  "phone": "(864) 335-0440",
+                  "phoneUrl": "tel:+18643350440",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=1501%20Whitehorse%20Road%2C%20Greenville%2C%20SC%2029605"
+                },
+                {
+                  "name": "Conway",
+                  "street": "299 East Cox Ferry Road",
+                  "city": "Conway, SC 29526",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "(843) 438-3130",
+                  "phoneUrl": "tel:+18434383130",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=299%20East%20Cox%20Ferry%20Road%2C%20Conway%2C%20SC%2029526"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "faq",
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "faq-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "faq-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Lease & rental FAQ"
+                  }
+                },
+                {
+                  "id": "faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "Should I lease, rent or buy a semi-truck?",
+                          "a": "If you need a new truck for the long haul and like the freedom that comes with ownership, buying may be your best option. If you need a truck for a shorter period, want to refresh your truck periodically, or want peace of mind when it comes to maintenance, you may want to lease. If you need a truck for a short-term peak in your business, or a replacement while yours is in the shop, you can rent by the day, week, month or longer."
+                        },
+                        {
+                          "q": "What can a leasing agreement include?",
+                          "a": "At Idealease of South Florida, leasing agreements can include full-service maintenance, licensing, fuel tax reporting and washing. A Carolina Idealease full service lease includes the vehicle specs you need, predictable costs for all vehicle maintenance, Priority Service, and 24/7 Roadside Assistance."
+                        },
+                        {
+                          "q": "What is a full service equity lease?",
+                          "a": "It is a solution for companies that must own their commercial vehicles for tax purposes. You retain tax ownership and establish equity in your fleet while receiving all the benefits of a Full Service Lease."
+                        },
+                        {
+                          "q": "How long can I rent a truck?",
+                          "a": "Idealease rental programs fit your needs for a day, week, month or longer."
+                        },
+                        {
+                          "q": "What kinds of trucks can I rent?",
+                          "a": "Late-model sleepers, day cabs, flat beds, box trucks, refrigerated vehicles and more are available for rent, including a full menu of class 5, 6, 7 and 8 trucks."
+                        },
+                        {
+                          "q": "Is roadside assistance included?",
+                          "a": "IdealNet provides 24/7 roadside assistance at more than 430 Idealease locations, delivered in-house by trained Idealease staff members."
+                        },
+                        {
+                          "q": "Can maintenance come to my location?",
+                          "a": "Yes. With Idealease Mobile Service, highly skilled technicians and well-equipped maintenance vehicles bring service and parts to your location during off-hours, and can perform up to 80% of all routine and preventive commercial truck maintenance at your location."
+                        },
+                        {
+                          "q": "Can I finance a truck instead?",
+                          "a": "Yes. See our financing page for options and a credit application."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ready to lease or rent?",
+                    "headingLevel": 2,
+                    "align": "center",
+                    "eyebrow": "Talk to our leasing team"
+                  }
+                },
+                {
+                  "id": "cta-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Explore our inventory, send a lease inquiry or rental reservation, or apply for credit. We will help you find the truck you need for your route.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btn",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "lease-inquiry"
+                      },
+                      {
+                        "ctaId": "rental-reservation",
+                        "style": "secondary"
+                      },
+                      {
+                        "ctaId": "apply-for-credit"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "cta-btn-b",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "call-main"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

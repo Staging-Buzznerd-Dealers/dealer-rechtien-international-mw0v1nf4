@@ -127,5 +127,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "lease-rental",
+    "title": "Semi Truck Leasing & Rentals | Idealease",
+    "description": "Semi truck leasing and rentals with Idealease at Rechtien International in South Florida and Carolina International in South Carolina.",
+    "path": "/lease-rental",
+    "out": "lease-rental/index.html",
+    "dir": "lease-rental",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]
