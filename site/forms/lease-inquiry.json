@@ -1,0 +1,126 @@
+{
+  "id": "lease-inquiry",
+  "name": "Lease inquiry",
+  "status": "live",
+  "system": false,
+  "pdpContext": false,
+  "surfaces": [
+    "page"
+  ],
+  "intent": "lease-inquiry",
+  "submitLabel": "Send lease inquiry",
+  "successMessage": "Thank you — your lease inquiry has been received. A member of our leasing team will contact you shortly.",
+  "consent": {
+    "enabled": true,
+    "required": true,
+    "text": "I agree to be contacted about this lease inquiry by phone, text or email."
+  },
+  "fields": [
+    {
+      "id": "li-first",
+      "type": "first_name",
+      "label": "First name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "li-last",
+      "type": "last_name",
+      "label": "Last name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "li-company",
+      "type": "single_line",
+      "label": "Company",
+      "required": false
+    },
+    {
+      "id": "li-email",
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "li-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "li-region",
+      "type": "radio",
+      "label": "Which region?",
+      "required": true,
+      "options": [
+        {
+          "value": "south-florida",
+          "label": "South Florida (Rechtien International)"
+        },
+        {
+          "value": "south-carolina",
+          "label": "South Carolina (Carolina International)"
+        }
+      ]
+    },
+    {
+      "id": "li-interest",
+      "type": "dropdown",
+      "label": "What are you interested in?",
+      "required": false,
+      "options": [
+        {
+          "value": "full-service-lease",
+          "label": "Full service lease"
+        },
+        {
+          "value": "full-service-equity-lease",
+          "label": "Full service equity lease"
+        },
+        {
+          "value": "ownership-transition",
+          "label": "Ownership transition"
+        },
+        {
+          "value": "dedicated-maintenance",
+          "label": "Dedicated maintenance"
+        },
+        {
+          "value": "national-accounts",
+          "label": "National accounts"
+        },
+        {
+          "value": "other",
+          "label": "Something else"
+        }
+      ]
+    },
+    {
+      "id": "li-qty",
+      "type": "number",
+      "label": "How many trucks?",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "li-message",
+      "type": "paragraph",
+      "label": "Anything else?",
+      "required": false
+    }
+  ],
+  "notifications": [
+    {
+      "id": "li-default",
+      "name": "Default",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "salesperson",
+      "scopeMode": "dynamic"
+    }
+  ]
+}

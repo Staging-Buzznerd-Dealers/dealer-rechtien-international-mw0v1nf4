@@ -1,107 +1,1195 @@
 {
-  "version": 1,
-  "blocks": [
+  "version": 2,
+  "nodes": [
     {
       "id": "hero",
-      "type": "hero",
+      "type": "section",
       "props": {
-        "headingLevel": 1,
-        "eyebrow": "Trucks · Parts · Service",
-        "headline": "Your trusted partner on the road.",
-        "subhead": "New and used trucks, expert service, and genuine parts — all from one dealer you can rely on.",
-        "showSearch": true,
-        "ctas": [{ "ctaId": "browse-inventory" }, { "ctaId": "request-quote", "style": "secondary" }]
-      }
-    },
-    {
-      "id": "quick",
-      "type": "iconGrid",
-      "props": {
-        "heading": "How can we help?",
-        "items": [
-          {
-            "label": "In-stock inventory",
-            "desc": "New and used trucks and trailers, priced and ready to move.",
-            "url": "/store"
+        "width": "wide",
+        "paddingY": 0,
+        "align": "center"
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "center",
+            "stackOn": "never"
           },
-          {
-            "label": "Parts counter",
-            "desc": "OEM and aftermarket parts, shipped or ready at the counter.",
-            "url": "/store"
-          },
-          {
-            "label": "Service & repair",
-            "desc": "Factory-trained technicians for inspections, warranty and repair.",
-            "url": "/contact"
-          },
-          {
-            "label": "Financing",
-            "desc": "Flexible terms for owner-operators, with fast pre-approval.",
-            "url": "/contact"
-          }
-        ]
-      }
-    },
-    {
-      "id": "featured",
-      "type": "widget",
-      "props": {
-        "widget": "inventory-carousel",
-        "config": { "heading": "Featured inventory", "limit": 4 }
-      }
-    },
-    {
-      "id": "band",
-      "type": "statBand",
-      "props": {
-        "heading": "Keeping your fleet on the road",
-        "body": "Every unit we sell is inspected in our own shop. When you buy from us you get a direct line to the people who worked on it.",
-        "ctas": [{ "ctaId": "about-us" }],
-        "stats": [
-          { "value": "39", "label": "Years in business" },
-          { "value": "12k+", "label": "Units delivered" },
-          { "value": "4", "label": "Sales & service centers" },
-          { "value": "48hr", "label": "Avg. parts turnaround" }
-        ]
-      }
-    },
-    {
-      "id": "locations",
-      "type": "widget",
-      "props": {
-        "widget": "locations-map",
-        "config": { "heading": "Find a location", "showMap": true }
-      }
-    },
-    {
-      "id": "contact-row",
-      "type": "row",
-      "props": {
-        "align": "start",
-        "columns": [
-          [
+          "children": [
             {
-              "id": "contact-copy",
-              "type": "heading",
-              "props": { "text": "Talk to someone who knows the equipment", "headingLevel": 2 }
+              "id": "hero-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Your trusted partner for trucks, trailers, and more.",
+                    "headingLevel": 1,
+                    "align": "center",
+                    "eyebrow": "11 Locations • Serving South Florida and South Carolina"
+                  }
+                },
+                {
+                  "id": "hero-search",
+                  "type": "widget",
+                  "props": {
+                    "widget": "inventory-search",
+                    "config": {
+                      "placeholder": "Search trucks, trailers and yard trucks…"
+                    },
+                    "snapshot": {
+                      "types": []
+                    }
+                  }
+                },
+                {
+                  "id": "hero-nav",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "hero-links",
+                    "layout": "horizontal",
+                    "depth": 1,
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "styles": {
+        "base": {
+          "backgroundImage": "/images/hero-truck.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
+          "background": "#151515"
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "section",
+      "props": {
+        "width": "bleed-right",
+        "background": "paper",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "intro-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "intro-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "intro-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Built to keep business moving",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "intro-text",
+                  "type": "text",
+                  "props": {
+                    "text": "At Carolina-Rechtien International, we’re more than just a dealership — we’re industry experts who understand the challenges of the road. Our culture is built on accountability, action, and a commitment to doing what’s right. From our parts and service teams to our finance specialists, every member of the Carolina-Rechtien family is dedicated to helping you succeed.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "read-more"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
             },
             {
-              "id": "contact-text",
-              "type": "text",
+              "id": "intro-media",
+              "type": "column",
               "props": {
-                "text": "Tell us what the job needs and we will spec it, price it and tell you honestly what is in stock.\n\nPrefer the phone? <a href=\"tel:+15551234567\">Call us</a> during business hours."
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "intro-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/white-international-truck.jpg",
+                      "alt": "White International truck parked on the lot",
+                      "width": 640,
+                      "height": 480
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "place-brands",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "region-brands",
+        "values": {
+          "heading": "Choose your region • Explore our brands",
+          "regions": [
+            {
+              "label": "Florida",
+              "key": "florida"
+            },
+            {
+              "label": "Carolina",
+              "key": "carolina"
+            }
+          ],
+          "brands": [
+            {
+              "name": "Dorsey Trailers",
+              "image": {
+                "src": "/logos/dorsey.png",
+                "width": 200,
+                "height": 200,
+                "alt": "Dorsey Trailers"
+              },
+              "url": "/#brands",
+              "regions": "florida"
+            },
+            {
+              "name": "Hino Trucks",
+              "image": {
+                "src": "/logos/hino-trucks.png",
+                "width": 200,
+                "height": 160,
+                "alt": "Hino Trucks"
+              },
+              "url": "/#brands",
+              "regions": "florida carolina"
+            },
+            {
+              "name": "International",
+              "image": {
+                "src": "/logos/international.png",
+                "width": 449,
+                "height": 393,
+                "alt": "International"
+              },
+              "url": "/store/inventory",
+              "regions": "florida carolina"
+            },
+            {
+              "name": "Idealease",
+              "image": {
+                "src": "/logos/idealease.png",
+                "width": 200,
+                "height": 57,
+                "alt": "Idealease"
+              },
+              "url": "/#brands",
+              "regions": "florida carolina"
+            },
+            {
+              "name": "Navigator Forklifts",
+              "image": {
+                "src": "/logos/navigator-forklifts.png",
+                "width": 200,
+                "height": 200,
+                "alt": "Navigator Forklifts"
+              },
+              "url": "/#brands",
+              "regions": "florida"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "place-locations",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "find-location",
+        "values": {
+          "eyebrow": "Find a location",
+          "heading": "Find a location",
+          "brandLabel": "Brand",
+          "intro": "Ready to find the right commercial trucks for your business? Visit us at one of our convenient locations across South Florida and South Carolina to find the perfect trucks and trailers for your needs.",
+          "states": [
+            {
+              "label": "Florida",
+              "key": "florida",
+              "icon": {
+                "src": "/logos/state-florida.svg",
+                "alt": "",
+                "width": 64,
+                "height": 64
+              }
+            },
+            {
+              "label": "Carolina",
+              "key": "carolina",
+              "icon": {
+                "src": "/logos/state-carolina.svg",
+                "alt": "",
+                "width": 64,
+                "height": 64
               }
             }
           ],
-          [
+          "brandOptions": {
+            "source": "location-brands"
+          },
+          "locations": {
+            "source": "locations",
+            "config": {
+              "pagePathPrefix": "/locations"
+            }
+          }
+        },
+        "data": {
+          "brandOptions": [],
+          "locations": [
             {
-              "id": "contact-form",
-              "type": "form",
-              "props": { "formId": "request-info" }
+              "id": "18",
+              "name": "Maimi",
+              "subtitle": "",
+              "slug": "maimi",
+              "num": "01",
+              "href": "/locations/maimi",
+              "streetAddress": "7227 NW 74th Ave",
+              "city": "Miami",
+              "region": ",FL",
+              "postalCode": "33166",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "305-888-0111",
+              "phoneUrl": "tel:3058880111",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=7227%20NW%2074th%20Ave%2C%20Miami%2C%20%2CFL%2C%2033166",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "Sales · Parts",
+              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": "Florida",
+              "groupKey": "new-group",
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [
+                {
+                  "name": "Sales",
+                  "key": "sales",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat"
+                },
+                {
+                  "name": "Parts",
+                  "key": "parts",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat"
+                }
+              ],
+              "hoursRows": [
+                {
+                  "department": "Sales",
+                  "key": "sales",
+                  "summary": "08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "08:00 AM - 06:00 PM",
+                      "opensAt": "08:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "08:00 AM - 06:00 PM",
+                      "opensAt": "08:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "08:00 AM - 06:00 PM",
+                      "opensAt": "08:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "08:00 AM - 06:00 PM",
+                      "opensAt": "08:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "08:00 AM - 06:00 PM",
+                      "opensAt": "08:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "08:00 AM - 12:00 PM",
+                      "opensAt": "08:00",
+                      "closesAt": "12:00",
+                      "closed": false
+                    }
+                  ]
+                },
+                {
+                  "department": "Parts",
+                  "key": "parts",
+                  "summary": "07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "08:00 AM - 12:00 PM",
+                      "opensAt": "08:00",
+                      "closesAt": "12:00",
+                      "closed": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "19",
+              "name": "Columbia",
+              "subtitle": "",
+              "slug": "columbia-2",
+              "num": "02",
+              "href": "/locations/columbia-2",
+              "streetAddress": "1619 Bluff Road",
+              "city": "Columbia,",
+              "region": "SC",
+              "postalCode": "29201",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "(803) 799-4923",
+              "phoneUrl": "tel:8037994923",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=1619%20Bluff%20Road%2C%20Columbia%2C%2C%20SC%2C%2029201",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "Parts · Service",
+              "hours": "Parts: 07:00 AM - 06:00 PM Mon–Fri\n\nService: 07:00 AM - 06:00 PM Mon–Fri",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": "Carolina",
+              "groupKey": "new-group-2",
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [
+                {
+                  "name": "Parts",
+                  "key": "parts",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 06:00 PM Mon–Fri"
+                },
+                {
+                  "name": "Service",
+                  "key": "service",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 06:00 PM Mon–Fri"
+                }
+              ],
+              "hoursRows": [
+                {
+                  "department": "Parts",
+                  "key": "parts",
+                  "summary": "07:00 AM - 06:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    }
+                  ]
+                },
+                {
+                  "department": "Service",
+                  "key": "service",
+                  "summary": "07:00 AM - 06:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "20",
+              "name": "Greenville",
+              "subtitle": "",
+              "slug": "greenville",
+              "num": "03",
+              "href": "/locations/greenville",
+              "streetAddress": "1501 Whitehorse Rd",
+              "city": "Greenville",
+              "region": "SC",
+              "postalCode": "29605",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=1501%20Whitehorse%20Rd%2C%20Greenville%2C%20SC%2C%2029605",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "Parts · Service",
+              "hours": "Parts: 07:00 AM - 05:00 PM Mon–Fri\n\nService: 07:00 AM - 05:00 PM Mon–Fri",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": "Carolina",
+              "groupKey": "new-group-2",
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [
+                {
+                  "name": "Parts",
+                  "key": "parts",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 05:00 PM Mon–Fri"
+                },
+                {
+                  "name": "Service",
+                  "key": "service",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 05:00 PM Mon–Fri"
+                }
+              ],
+              "hoursRows": [
+                {
+                  "department": "Parts",
+                  "key": "parts",
+                  "summary": "07:00 AM - 05:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    }
+                  ]
+                },
+                {
+                  "department": "Service",
+                  "key": "service",
+                  "summary": "07:00 AM - 05:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    }
+                  ]
+                }
+              ]
             }
           ]
-        ]
+        },
+        "snapshots": {}
       }
+    },
+    {
+      "id": "place-inventory",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "keep-moving",
+        "values": {
+          "eyebrow": "Our inventory",
+          "heading": "Everything to keep you moving.",
+          "intro": "We make finding the right equipment from reputable brands easier than ever at Carolina-Rechtien International. Whether you need a commercial truck, trailer, or school bus, we have the equipment you need to keep your business moving.",
+          "items": [
+            {
+              "num": "01",
+              "title": "Trucks",
+              "body": "Shop our wide selection of new and pre-owned International trucks built to handle any job, equipped with advanced telematics via OnCommand Connection for real-time fleet insights.",
+              "ctaLabel": "Browse trucks",
+              "url": "/store/inventory"
+            },
+            {
+              "num": "02",
+              "title": "Trailers",
+              "body": "Explore our diverse inventory of trailers, including flatbeds, dump trailers, and reefers, from trusted brands like Dorsey and East.",
+              "ctaLabel": "Browse trailers",
+              "url": "/store/inventory"
+            },
+            {
+              "num": "03",
+              "title": "IC Bus",
+              "body": "Built for safety and reliability, our IC Bus selection offers top-of-the-line school and commercial buses from industry-leading manufacturers.",
+              "ctaLabel": "Explore models",
+              "url": "/store/inventory"
+            },
+            {
+              "num": "04",
+              "title": "Yard Trucks & Forklifts",
+              "body": "Kalmar Ottawa yard trucks and Navigator forklifts deliver the reliability and power your business needs to run smoothly day after day.",
+              "ctaLabel": "Explore models",
+              "url": "/store/inventory"
+            },
+            {
+              "num": "05",
+              "title": "Service",
+              "body": "We offer full-service repairs for trucks and trailers at our certified service centers, plus mobile maintenance support so we come to you.",
+              "ctaLabel": "Schedule service",
+              "url": "/service"
+            },
+            {
+              "num": "06",
+              "title": "Parts",
+              "body": "Order genuine parts online or in-store at our parts departments across South Florida and South Carolina.",
+              "ctaLabel": "Order parts",
+              "url": "/store/parts"
+            },
+            {
+              "num": "07",
+              "title": "Financing",
+              "body": "Get financing options for your next truck or trailer purchase, with a team ready to walk you through it.",
+              "ctaLabel": "Learn more",
+              "url": "/financing"
+            },
+            {
+              "num": "08",
+              "title": "Lease & Rental Department",
+              "body": "Short- and long-term leasing and rental plans backed by Idealease. To reach our Lease & Rental team, please call [LEASE & RENTAL PHONE].",
+              "ctaLabel": "Learn more",
+              "url": "/lease-rental"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "splits",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "sp1",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "sp1-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "sp1-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "The same trailers, every time.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "New & used trailers"
+                  }
+                },
+                {
+                  "id": "sp1-text",
+                  "type": "text",
+                  "props": {
+                    "text": "At Carolina-Rechtien International, customer service is our priority. With quality products, quick service, and dedicated care, we provide everything you need for your business to succeed. Explore our diverse selection of new and used trailers to find the equipment you’re looking for.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "sp1-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "see-available"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "sp1-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "sp1-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/hero-truck.jpg",
+                      "alt": "Idealease International truck parked in front of a brick building",
+                      "width": 1200,
+                      "height": 969
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sp2",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "tablet",
+            "reverseStacked": true
+          },
+          "children": [
+            {
+              "id": "sp2-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "sp2-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/red-international-truck.jpg",
+                      "alt": "Red International truck on the lot",
+                      "width": 700,
+                      "height": 484
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "sp2-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "sp2-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Built by industry leaders.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "About our brands"
+                  }
+                },
+                {
+                  "id": "sp2-text",
+                  "type": "text",
+                  "props": {
+                    "text": "At Carolina-Rechtien International, we offer only the best quality for the best price — International trucks, IC Bus, Hino, and trailers from industry leaders like Dorsey and East. When you choose a truck or trailer through us, you’re investing in durability, reliability, and innovation.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "sp2-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "explore-brands"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "voices",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "voices-head",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "voices-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "voices-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "What our customers say.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Testimonials"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "voices-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "voices-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "voices-list",
+                  "type": "testimonials",
+                  "props": {
+                    "items": [
+                      {
+                        "quote": "“I have had most of my service department dealings with Renee. She always goes the extra mile to accommodate me. The demands of the business I work for are high at times, and she has always displayed a sense of urgency, and professionalism to resolve my issues. Great employee & asset to Carolina International. Please keep up the good work.”",
+                        "name": "Anonymous"
+                      },
+                      {
+                        "quote": "“Call them cause my check engine light came on. Got to shop it was a warm welcome from kim,Pam and Nathan. Best service I have ever had dealing with international. I give this shop 100 stars. Thanks from Lorenzo Vaughn”",
+                        "name": "festa Adam"
+                      },
+                      {
+                        "quote": "“My number 1 option for Hino parts”",
+                        "name": "Mark DeYoung"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "ink",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "center",
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ready to get on the road?",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "cta-text",
+                  "type": "text",
+                  "props": {
+                    "text": "Contact us to explore our trucks and experience nothing less than the dedicated care you deserve.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btn",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "contact-us"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "cta-phone",
+                  "type": "text",
+                  "props": {
+                    "text": "Call us today · <a href=\"tel:+18006663040\">(800) 666-3040</a>",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

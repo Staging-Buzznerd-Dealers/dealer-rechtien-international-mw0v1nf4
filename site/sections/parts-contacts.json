@@ -1,0 +1,317 @@
+{
+  "version": 2,
+  "id": "parts-contacts",
+  "name": "Parts department contacts (by company)",
+  "css": "/* Parts department contacts: one block per company, so each dealership's\n   addresses and phone numbers stay together and never mix. */\n.bz-section[data-bz-node=\"pc\"]{background:#fff;padding-block:clamp(56px,6vw,96px)}\n[data-bz-node=\"pc\"] .bz-block{padding-block:0}\n[data-bz-node=\"pc-h\"] h2{margin-bottom:var(--space-5)}\n[data-bz-node^=\"pc-group\"]{margin-bottom:clamp(32px,4vw,56px)}\n[data-bz-node=\"pc-groups\"]>.bz-col:last-child{margin-bottom:0}\n[data-bz-node^=\"pc-box\"]{border-left:4px solid var(--accent);padding-left:18px;margin-bottom:var(--space-5)}\n[data-bz-node^=\"pc-co-h\"] h3{font:700 clamp(1.125rem,1.7vw,1.5rem)/1.2 var(--font-heading);margin:0 0 4px;text-transform:uppercase}\n[data-bz-node^=\"pc-region\"] p{margin:0;font:700 .6875rem/1.4 var(--font-body)!important;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)!important}\n[data-bz-node^=\"pc-intro\"] p{font-size:.875rem;line-height:1.75;color:#4a4945;max-width:46rem;margin:8px 0 0}\n[data-bz-node^=\"pc-line\"] .bz-btns{margin:var(--space-3) 0 0}\n[data-bz-node^=\"pc-line\"] .bz-btn::before{content:\"Parts line\";margin-right:10px;opacity:.7;letter-spacing:.14em}\n[data-bz-node^=\"pc-locs\"]{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}\n[data-bz-node^=\"pc-locs\"]>.bz-col{grid-column:auto;background:var(--paper);padding:22px 24px;display:flex;flex-direction:column;gap:4px;border-top:3px solid var(--ink)}\n[data-bz-node^=\"pc-loc\"] .bz-block{padding:0}\n[data-bz-node^=\"pc-name\"] h4{font:700 .9375rem/1.2 var(--font-heading);text-transform:uppercase;margin:0 0 6px}\n[data-bz-node^=\"pc-street\"] p,[data-bz-node^=\"pc-city\"] p{margin:0;font-size:.8125rem;line-height:1.5;color:#4a4945}\n[data-bz-node^=\"pc-tf\"] .bz-btns,[data-bz-node^=\"pc-ph\"] .bz-btns{margin:6px 0 0}\n[data-bz-node^=\"pc-tf\"] .bz-btn,[data-bz-node^=\"pc-ph\"] .bz-btn{min-height:0;padding:0;font:700 .8125rem/1.4 var(--font-body);letter-spacing:.02em;text-transform:none;color:var(--ink)}\n[data-bz-node^=\"pc-tf\"] .bz-btn::before{content:\"Toll free  \";white-space:pre;font-size:.625rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}\n[data-bz-node^=\"pc-ph\"] .bz-btn::before{content:\"Phone  \";white-space:pre;font-size:.625rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}\n[data-bz-node^=\"pc-tf\"] .bz-btn::after,[data-bz-node^=\"pc-ph\"] .bz-btn::after{display:none}\n[data-bz-node^=\"pc-tf\"] .bz-btn:hover,[data-bz-node^=\"pc-ph\"] .bz-btn:hover{color:var(--accent-dark);background:none}\n@media (max-width:1100px){[data-bz-node^=\"pc-locs\"]{grid-template-columns:repeat(2,minmax(0,1fr))}}\n@media (max-width:640px){[data-bz-node^=\"pc-locs\"]{grid-template-columns:1fr}}\n\n[data-bz-node^=\"pc-loc\"] .bz-block{padding:0!important}\n[data-bz-node^=\"pc-loc\"] p{margin:0!important;line-height:1.5!important}\n[data-bz-node^=\"pc-box\"] .bz-block{padding:0 0 4px!important}\n\n/* Match the reference: white bordered location cards with a directions link */\n[data-bz-node^=\"pc-locs\"]>.bz-col{background:#fff;border:1px solid var(--line);border-top:1px solid var(--line)}\n[data-bz-node^=\"pc-name\"] h4{font:700 clamp(.9375rem,1.3vw,1.0625rem)/1.25 var(--font-heading)}\n[data-bz-node^=\"pc-dir\"] .bz-btns{margin:12px 0 0}\n[data-bz-node^=\"pc-dir\"] .bz-btn{min-height:0;padding:0;font:700 .6875rem/1.4 var(--font-body);letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}\n",
+  "js": "",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": "Contact our parts departments"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Find your parts department."
+    },
+    {
+      "key": "groups",
+      "type": "list",
+      "label": "Companies",
+      "fields": [
+        {
+          "key": "company",
+          "type": "text",
+          "label": "Company"
+        },
+        {
+          "key": "region",
+          "type": "text",
+          "label": "Region label"
+        },
+        {
+          "key": "intro",
+          "type": "textarea",
+          "label": "Intro"
+        },
+        {
+          "key": "lineLabel",
+          "type": "text",
+          "label": "(unused) parts line label"
+        },
+        {
+          "key": "line",
+          "type": "text",
+          "label": "Parts line number (optional)"
+        },
+        {
+          "key": "lineUrl",
+          "type": "url",
+          "label": "Parts line link (tel:)"
+        },
+        {
+          "key": "locations",
+          "type": "list",
+          "label": "Locations",
+          "fields": [
+            {
+              "key": "name",
+              "type": "text",
+              "label": "Location"
+            },
+            {
+              "key": "street",
+              "type": "text",
+              "label": "Street address"
+            },
+            {
+              "key": "city",
+              "type": "text",
+              "label": "City, state ZIP"
+            },
+            {
+              "key": "tollFree",
+              "type": "text",
+              "label": "Toll-free number (optional)"
+            },
+            {
+              "key": "tollFreeUrl",
+              "type": "url",
+              "label": "Toll-free link (tel:)"
+            },
+            {
+              "key": "phone",
+              "type": "text",
+              "label": "Phone number"
+            },
+            {
+              "key": "phoneUrl",
+              "type": "url",
+              "label": "Phone link (tel:)"
+            },
+            {
+              "key": "mapUrl",
+              "type": "url",
+              "label": "Directions link"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "pc",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "contact-parts"
+      },
+      "children": [
+        {
+          "id": "pc-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "pc-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "pc-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "eyebrow": "{{eyebrow}}",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pc-groups",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "pc-group",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "repeat": "groups"
+              },
+              "children": [
+                {
+                  "id": "pc-box",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "pc-in",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "pc-co-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "{{company}}",
+                            "headingLevel": 3,
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "pc-region",
+                          "type": "text",
+                          "props": {
+                            "text": "{{region}}",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "pc-intro",
+                          "type": "text",
+                          "props": {
+                            "text": "{{intro}}",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "pc-line",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "label": "{{line}}",
+                                "url": "{{lineUrl}}",
+                                "style": "link"
+                              }
+                            ],
+                            "align": "left"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "pc-locs",
+                  "type": "row",
+                  "props": {
+                    "gap": 4,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "pc-loc",
+                      "type": "column",
+                      "props": {
+                        "span": 4,
+                        "repeat": "locations"
+                      },
+                      "children": [
+                        {
+                          "id": "pc-name",
+                          "type": "heading",
+                          "props": {
+                            "text": "{{name}}",
+                            "headingLevel": 4,
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "pc-street",
+                          "type": "text",
+                          "props": {
+                            "text": "{{street}}",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "pc-city",
+                          "type": "text",
+                          "props": {
+                            "text": "{{city}}",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "pc-tf",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "label": "{{tollFree}}",
+                                "url": "{{tollFreeUrl}}",
+                                "style": "link"
+                              }
+                            ],
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "pc-ph",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "label": "{{phone}}",
+                                "url": "{{phoneUrl}}",
+                                "style": "link"
+                              }
+                            ],
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "pc-dir",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "ctaId": "get-directions",
+                                "label": "Directions",
+                                "url": "{{mapUrl}}",
+                                "style": "link"
+                              }
+                            ],
+                            "align": "left"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

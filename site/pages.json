@@ -1,8 +1,8 @@
 [
   {
     "slug": "home",
-    "title": "Home",
-    "description": "New and used trucks, service and parts from a dealer you can trust.",
+    "title": "Carolina-Rechtien International",
+    "description": "New and pre-owned International trucks, IC Bus, Hino and trailers from 11 locations serving South Florida and South Carolina. Parts, service, financing and lease & rental.",
     "path": "/",
     "out": "index.html",
     "dir": "home",
@@ -17,5 +17,188 @@
       "utilityNav": null
     },
     "pageType": "Home"
+  },
+  {
+    "slug": "specifications",
+    "title": "S13 Integrated Powertrain & Brochures",
+    "description": "International specification sheets by series, S13 integrated powertrain documentation and competitive comparisons — every one a free PDF download.",
+    "path": "/specifications",
+    "out": "specifications/index.html",
+    "dir": "specifications",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "location-detail",
+    "title": "{{name}}, {{region}} Truck Dealer — Hours & Location",
+    "description": "Hours, directions, department contacts and in-stock International trucks at our {{name}} location — {{streetAddress}}, {{city}}, {{region}} {{postalCode}}. Call {{phone}}.",
+    "path": "/locations/:slug",
+    "out": "locations/:slug/index.html",
+    "dir": "location-detail",
+    "group": "locations",
+    "forEach": "locations",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "parts",
+    "title": "International Truck Parts: OEM & Aftermarket",
+    "description": "Shop genuine OEM and aftermarket semi truck parts and accessories for heavy duty trucks. Order online; parts delivery in South Carolina and South Florida.",
+    "path": "/parts",
+    "out": "parts/index.html",
+    "dir": "parts",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "service",
+    "title": "Commercial Truck Service & Repair in Florida & South Carolina",
+    "description": "Truck service and repair for all makes at Carolina International Trucks (South Carolina) and Rechtien International Trucks (South Florida): preventive maintenance, diagnostics, warranty work, alignment, A/C and mobile service.",
+    "path": "/service",
+    "out": "service/index.html",
+    "dir": "service",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "about",
+    "title": "About Rechtien & Carolina International Trucks",
+    "description": "Rechtien International and Carolina International Trucks: one commercial truck dealer network with 11 locations in South Florida and South Carolina.",
+    "path": "/about",
+    "out": "about/index.html",
+    "dir": "about",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "financing",
+    "title": "Commercial Semi-Truck Financing & Leasing",
+    "description": "Commercial semi-truck financing and leasing through International Financial at Rechtien and Carolina International Trucks in South Florida and South Carolina.",
+    "path": "/financing",
+    "out": "financing/index.html",
+    "dir": "financing",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "lease-rental",
+    "title": "Semi Truck Leasing & Rentals | Idealease",
+    "description": "Semi truck leasing and rentals with Idealease at Rechtien International in South Florida and Carolina International in South Carolina.",
+    "path": "/lease-rental",
+    "out": "lease-rental/index.html",
+    "dir": "lease-rental",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "mobile-service",
+    "title": "Mobile Truck Service | Idealease Mobile Service",
+    "description": "Idealease Mobile Service brings truck maintenance to your location, at Rechtien International in South Florida and Carolina International in South Carolina.",
+    "path": "/mobile-service",
+    "out": "mobile-service/index.html",
+    "dir": "mobile-service",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "international-360",
+    "title": "International 360 (I360) Truck Fleet Management",
+    "description": "International 360 fleet management and repair communication at Rechtien International in South Florida and Carolina International in South Carolina.",
+    "path": "/international-360",
+    "out": "international-360/index.html",
+    "dir": "international-360",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "team-david-milliken",
+    "title": "David Milliken — General Manager, Greer & Greenville, SC",
+    "description": "Meet David Milliken, General Manager at Carolina International Trucks in Greer and Greenville, SC. Contact David, see his inventory and send a message.",
+    "path": "/team/david-milliken",
+    "out": "team/david-milliken/index.html",
+    "dir": "team-david-milliken",
+    "group": "team",
+    "status": "draft",
+    "seo": {
+      "ogImage": null,
+      "noindex": true
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

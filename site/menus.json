@@ -5,36 +5,622 @@
       "id": "main",
       "name": "Main menu",
       "items": [
-        { "id": "home", "label": "Home", "type": "page", "ref": "home" },
-        { "id": "inventory", "label": "Inventory", "type": "inventory", "ref": "inventory" },
+        {
+          "id": "home",
+          "label": "Home",
+          "type": "page",
+          "ref": "home"
+        },
+        {
+          "id": "inventory",
+          "label": "Inventory",
+          "type": "inventory",
+          "ref": "inventory"
+        },
         {
           "id": "about",
           "label": "About",
           "type": "url",
           "url": "/about",
           "children": [
-            { "id": "about-team", "label": "Our team", "type": "url", "url": "/about#team" },
-            { "id": "about-history", "label": "History", "type": "url", "url": "/about#history" }
+            {
+              "id": "about-team",
+              "label": "Our team",
+              "type": "url",
+              "url": "/about#team"
+            },
+            {
+              "id": "about-history",
+              "label": "History",
+              "type": "url",
+              "url": "/about#history"
+            }
           ]
         },
-        { "id": "contact", "label": "Contact", "type": "url", "url": "/contact" }
+        {
+          "id": "contact",
+          "label": "Contact",
+          "type": "url",
+          "url": "/contact"
+        }
       ]
     },
     {
       "id": "footer",
       "name": "Footer menu",
       "items": [
-        { "id": "f-inventory", "label": "Inventory", "type": "inventory", "ref": "inventory" },
-        { "id": "f-about", "label": "About", "type": "url", "url": "/about" },
-        { "id": "f-contact", "label": "Contact", "type": "url", "url": "/contact" }
+        {
+          "id": "f-inventory",
+          "label": "Inventory",
+          "type": "inventory",
+          "ref": "inventory"
+        },
+        {
+          "id": "f-about",
+          "label": "About",
+          "type": "url",
+          "url": "/about"
+        },
+        {
+          "id": "f-contact",
+          "label": "Contact",
+          "type": "url",
+          "url": "/contact"
+        }
       ]
     },
     {
       "id": "legal",
       "name": "Legal",
       "items": [
-        { "id": "privacy", "label": "Privacy", "type": "url", "url": "/privacy" },
-        { "id": "terms", "label": "Terms", "type": "url", "url": "/terms" }
+        {
+          "id": "privacy",
+          "label": "Privacy",
+          "type": "url",
+          "url": "/privacy"
+        },
+        {
+          "id": "terms",
+          "label": "Terms",
+          "type": "url",
+          "url": "/terms"
+        }
+      ]
+    },
+    {
+      "id": "nav-site",
+      "name": "Site navigation (Brands / Shop / Company)",
+      "items": [
+        {
+          "id": "grp-brands",
+          "label": "Brands",
+          "type": "label",
+          "children": [
+            {
+              "id": "nb-international",
+              "label": "International",
+              "type": "url",
+              "url": "/#brands"
+            },
+            {
+              "id": "nb-hino",
+              "label": "Hino Trucks",
+              "type": "url",
+              "url": "/#brands"
+            },
+            {
+              "id": "nb-icbus",
+              "label": "IC Bus",
+              "type": "url",
+              "url": "/#brands"
+            },
+            {
+              "id": "nb-idealease",
+              "label": "Idealease",
+              "type": "url",
+              "url": "/#brands"
+            },
+            {
+              "id": "nb-kalmar",
+              "label": "Kalmar Ottawa",
+              "type": "url",
+              "url": "/#brands"
+            },
+            {
+              "id": "nb-east",
+              "label": "East",
+              "type": "url",
+              "url": "/#brands"
+            },
+            {
+              "id": "nb-dorsey",
+              "label": "Dorsey Trailers",
+              "type": "url",
+              "url": "/#brands"
+            },
+            {
+              "id": "nb-navigator",
+              "label": "Navigator Forklifts",
+              "type": "url",
+              "url": "/#brands"
+            }
+          ]
+        },
+        {
+          "id": "grp-shop",
+          "label": "Shop",
+          "type": "label",
+          "children": [
+            {
+              "id": "ns-new-trucks",
+              "label": "New Trucks",
+              "type": "inventory",
+              "ref": "inventory?condition=new"
+            },
+            {
+              "id": "ns-used-trucks",
+              "label": "Used Trucks",
+              "type": "inventory",
+              "ref": "inventory?condition=used"
+            },
+            {
+              "id": "ns-new-trailers",
+              "label": "New Trailers",
+              "type": "inventory",
+              "ref": "inventory"
+            },
+            {
+              "id": "ns-used-trailers",
+              "label": "Used Trailers",
+              "type": "inventory",
+              "ref": "inventory"
+            },
+            {
+              "id": "ns-parts",
+              "label": "Parts",
+              "type": "inventory",
+              "ref": "parts"
+            },
+            {
+              "id": "ns-service",
+              "label": "Service",
+              "type": "page",
+              "ref": "service"
+            },
+            {
+              "id": "ns-appointment",
+              "label": "Service Appointment",
+              "type": "url",
+              "url": "/service#appointment"
+            },
+            {
+              "id": "ns-mobile",
+              "label": "Mobile Service",
+              "type": "url",
+              "url": "/service#mobile-service"
+            },
+            {
+              "id": "ns-bodyshop",
+              "label": "Body Shop",
+              "type": "url",
+              "url": "#"
+            },
+            {
+              "id": "ns-lease",
+              "label": "Lease & Rental",
+              "type": "url",
+              "url": "/lease-rental"
+            }
+          ]
+        },
+        {
+          "id": "grp-company",
+          "label": "Company",
+          "type": "label",
+          "children": [
+            {
+              "id": "nc-about",
+              "label": "About Us",
+              "type": "url",
+              "url": "/about"
+            },
+            {
+              "id": "nc-team",
+              "label": "Meet the Team",
+              "type": "url",
+              "url": "/about#team"
+            },
+            {
+              "id": "nc-careers",
+              "label": "Careers",
+              "type": "url",
+              "url": "/careers"
+            },
+            {
+              "id": "nc-reviews",
+              "label": "Reviews",
+              "type": "url",
+              "url": "/reviews"
+            },
+            {
+              "id": "nc-locations",
+              "label": "Locations",
+              "type": "url",
+              "url": "/locations"
+            },
+            {
+              "id": "nc-news",
+              "label": "News & Press",
+              "type": "url",
+              "url": "/blog"
+            },
+            {
+              "id": "nc-contact",
+              "label": "Contact",
+              "type": "url",
+              "url": "/contact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nav-header",
+      "name": "Main navigation",
+      "items": [
+        {
+          "id": "hn-inventory",
+          "label": "Inventory",
+          "type": "inventory",
+          "ref": "inventory",
+          "children": [
+            {
+              "id": "hn-inv-shop",
+              "label": "Shop Inventory",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "hn-inv-new",
+                  "label": "New Inventory",
+                  "type": "inventory",
+                  "ref": "inventory?condition=new"
+                },
+                {
+                  "id": "hn-inv-used",
+                  "label": "Used Inventory",
+                  "type": "inventory",
+                  "ref": "inventory?condition=used"
+                },
+                {
+                  "id": "hn-inv-all",
+                  "label": "All Inventory",
+                  "type": "inventory",
+                  "ref": "inventory"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hn-locations",
+          "label": "Locations",
+          "type": "url",
+          "url": "/#locations",
+          "children": [
+            {
+              "id": "hn-loc-fl",
+              "label": "Florida",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "hn-loc-miami",
+                  "label": "Miami",
+                  "type": "location",
+                  "ref": "maimi"
+                },
+                {
+                  "id": "hn-loc-ftlauderdale",
+                  "label": "Ft. Lauderdale",
+                  "type": "url",
+                  "url": "#"
+                },
+                {
+                  "id": "hn-loc-rivierabeach",
+                  "label": "Riviera Beach",
+                  "type": "url",
+                  "url": "#"
+                },
+                {
+                  "id": "hn-loc-ftpierce",
+                  "label": "Ft. Pierce",
+                  "type": "url",
+                  "url": "#"
+                },
+                {
+                  "id": "hn-loc-ftmyers",
+                  "label": "Ft. Myers",
+                  "type": "url",
+                  "url": "#"
+                }
+              ]
+            },
+            {
+              "id": "hn-loc-sc",
+              "label": "South Carolina",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "hn-loc-charleston",
+                  "label": "Charleston",
+                  "type": "url",
+                  "url": "#"
+                },
+                {
+                  "id": "hn-loc-columbia",
+                  "label": "Columbia",
+                  "type": "location",
+                  "ref": "columbia-2"
+                },
+                {
+                  "id": "hn-loc-conway",
+                  "label": "Conway",
+                  "type": "url",
+                  "url": "#"
+                },
+                {
+                  "id": "hn-loc-florence",
+                  "label": "Florence",
+                  "type": "url",
+                  "url": "#"
+                },
+                {
+                  "id": "hn-loc-greenville",
+                  "label": "Greenville",
+                  "type": "location",
+                  "ref": "greenville"
+                },
+                {
+                  "id": "hn-loc-greer",
+                  "label": "Greer",
+                  "type": "url",
+                  "url": "#"
+                }
+              ]
+            },
+            {
+              "id": "hn-loc-all-col",
+              "label": "Find a Location",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "hn-loc-all",
+                  "label": "All Locations",
+                  "type": "url",
+                  "url": "/#locations"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hn-parts",
+          "label": "Parts",
+          "type": "page",
+          "ref": "parts",
+          "children": [
+            {
+              "id": "hn-prt-shop",
+              "label": "Shop Parts",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "hn-prt-dept",
+                  "label": "Parts Department",
+                  "type": "page",
+                  "ref": "parts"
+                },
+                {
+                  "id": "hn-prt-order",
+                  "label": "Order Parts Online",
+                  "type": "inventory",
+                  "ref": "parts"
+                },
+                {
+                  "id": "hn-prt-request",
+                  "label": "Request a Part",
+                  "type": "url",
+                  "url": "/parts#parts-request"
+                },
+                {
+                  "id": "hn-prt-delivery",
+                  "label": "Parts Delivery",
+                  "type": "url",
+                  "url": "/parts#delivery"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hn-service",
+          "label": "Service",
+          "type": "page",
+          "ref": "service",
+          "children": [
+            {
+              "id": "hn-svc-col",
+              "label": "Service",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "hn-svc-overview",
+                  "label": "Service Department",
+                  "type": "page",
+                  "ref": "service"
+                },
+                {
+                  "id": "hn-svc-appointment",
+                  "label": "Schedule an Appointment",
+                  "type": "url",
+                  "url": "/service#appointment"
+                },
+                {
+                  "id": "hn-svc-mobile",
+                  "label": "Mobile Service",
+                  "type": "url",
+                  "url": "/service#mobile-service"
+                },
+                {
+                  "id": "hn-svc-warranty",
+                  "label": "Warranty Repairs",
+                  "type": "url",
+                  "url": "/service#warranty"
+                }
+              ]
+            },
+            {
+              "id": "hn-svc-more",
+              "label": "More",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "hn-svc-bodyshop",
+                  "label": "Body Shop",
+                  "type": "url",
+                  "url": "#"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hn-fleetrite",
+          "label": "Fleetrite",
+          "type": "url",
+          "url": "#"
+        },
+        {
+          "id": "hn-ebay",
+          "label": "Online Shop",
+          "type": "url",
+          "url": "#",
+          "newTab": true
+        },
+        {
+          "id": "hn-financing",
+          "label": "Financing",
+          "type": "page",
+          "ref": "financing"
+        },
+        {
+          "id": "hn-export",
+          "label": "Export Sales",
+          "type": "url",
+          "url": "#"
+        },
+        {
+          "id": "hn-careers",
+          "label": "Careers",
+          "type": "url",
+          "url": "/careers"
+        },
+        {
+          "id": "hn-contact",
+          "label": "Contact Us",
+          "type": "url",
+          "url": "/contact"
+        }
+      ]
+    },
+    {
+      "id": "nav-legal",
+      "name": "Home legal links",
+      "items": [
+        {
+          "id": "nl-privacy",
+          "label": "Privacy",
+          "type": "url",
+          "url": "/privacy"
+        },
+        {
+          "id": "nl-terms",
+          "label": "Terms & Conditions",
+          "type": "url",
+          "url": "/terms"
+        },
+        {
+          "id": "nl-policies",
+          "label": "Policies",
+          "type": "url",
+          "url": "/policies"
+        }
+      ]
+    },
+    {
+      "id": "hero-links",
+      "name": "Hero quick links",
+      "items": [
+        {
+          "id": "hl-fl",
+          "label": "International South Florida",
+          "type": "url",
+          "url": "#locations"
+        },
+        {
+          "id": "hl-sc",
+          "label": "International South Carolina",
+          "type": "url",
+          "url": "#locations"
+        },
+        {
+          "id": "hl-used",
+          "label": "Pre-Owned",
+          "type": "inventory",
+          "ref": "inventory?condition=used"
+        },
+        {
+          "id": "hl-parts",
+          "label": "Parts Store",
+          "type": "inventory",
+          "ref": "parts"
+        }
+      ]
+    },
+    {
+      "id": "parts-links",
+      "name": "Parts page quick links",
+      "items": [
+        {
+          "id": "pl-order",
+          "label": "Order parts online",
+          "type": "inventory",
+          "ref": "parts"
+        },
+        {
+          "id": "pl-request",
+          "label": "Request parts",
+          "type": "url",
+          "url": "#parts-request"
+        },
+        {
+          "id": "pl-delivery",
+          "label": "Parts delivery",
+          "type": "url",
+          "url": "#delivery"
+        },
+        {
+          "id": "pl-contact",
+          "label": "Contact a parts counter",
+          "type": "url",
+          "url": "#contact-parts"
+        }
       ]
     }
   ]

@@ -1,0 +1,260 @@
+{
+  "version": 2,
+  "id": "service-hours",
+  "name": "Service hours by location",
+  "description": "One card per location with its service department hours and phone, from Admin → Locations (departments and hours), plus an after-hours card.",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": "Service department hours"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "When we are open."
+    },
+    {
+      "key": "intro",
+      "type": "textarea",
+      "label": "Intro"
+    },
+    {
+      "key": "afterTitle",
+      "type": "text",
+      "label": "After-hours card title",
+      "default": "After hours"
+    },
+    {
+      "key": "afterBody",
+      "type": "textarea",
+      "label": "After-hours card text"
+    },
+    {
+      "key": "locations",
+      "type": "list",
+      "label": "Locations",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "city",
+          "type": "text",
+          "label": "City"
+        },
+        {
+          "key": "region",
+          "type": "text",
+          "label": "State"
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "Phone"
+        },
+        {
+          "key": "phoneUrl",
+          "type": "url",
+          "label": "Phone link"
+        },
+        {
+          "key": "href",
+          "type": "url",
+          "label": "Page link"
+        },
+        {
+          "key": "departmentRows",
+          "type": "list",
+          "label": "Departments",
+          "fields": [
+            {
+              "key": "name",
+              "type": "text",
+              "label": "Department"
+            },
+            {
+              "key": "key",
+              "type": "text",
+              "label": "Code"
+            },
+            {
+              "key": "hours",
+              "type": "text",
+              "label": "Hours"
+            },
+            {
+              "key": "phone",
+              "type": "text",
+              "label": "Phone"
+            },
+            {
+              "key": "phoneUrl",
+              "type": "url",
+              "label": "Phone link"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "sh",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 8,
+        "anchor": "hours"
+      },
+      "children": [
+        {
+          "id": "sh-head",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "sh-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "sh-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "{{eyebrow}}"
+                  }
+                },
+                {
+                  "id": "sh-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "{{intro}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sh-cards",
+          "type": "row",
+          "props": {
+            "gap": 4,
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "sh-card",
+              "type": "column",
+              "props": {
+                "span": 3,
+                "repeat": "locations"
+              },
+              "children": [
+                {
+                  "id": "sh-name",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{name}}",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "sh-city",
+                  "type": "text",
+                  "props": {
+                    "text": "{{city}}, {{region}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "sh-depts",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "sh-dept",
+                      "type": "column",
+                      "props": {
+                        "span": 12,
+                        "repeat": "departmentRows"
+                      },
+                      "children": [
+                        {
+                          "id": "sh-dept-t",
+                          "type": "text",
+                          "props": {
+                            "text": "<a href=\"#hours-{{key}}\">{{name}}</a><br>{{hours}}<br><a href=\"{{phoneUrl}}\">{{phone}}</a>",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "sh-links",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"{{phoneUrl}}\">{{phone}}</a><br><a href=\"{{href}}\">View location</a>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "sh-after",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "sh-after-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{afterTitle}}",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "sh-after-t",
+                  "type": "text",
+                  "props": {
+                    "text": "{{afterBody}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": ".bz-section[data-bz-node=\"sh\"]{padding-block:clamp(56px,6vw,88px)}\n[data-bz-node=\"sh\"] .bz-block{padding-block:0}\n[data-bz-node=\"sh-intro\"] p{max-width:40rem;margin:0}\n[data-bz-node=\"sh-intro\"] p:empty{display:none}\n[data-bz-node=\"sh-cards\"]{margin-top:var(--space-5);row-gap:var(--space-4)}\n[data-bz-node=\"sh-cards\"]>.bz-col{background:#fff;padding:24px;display:flex;flex-direction:column;gap:8px;min-height:220px}\n[data-bz-node=\"sh-cards\"]>[data-bz-node=\"sh-after\"]{background:var(--ink);color:#fff}\n[data-bz-node^=\"sh-name\"] h3,[data-bz-node=\"sh-after-h\"] h3{font:700 1rem/1.2 var(--font-heading);text-transform:uppercase;margin:0}\n[data-bz-node=\"sh-after-h\"] h3{color:#fff}\n[data-bz-node=\"sh-after-t\"] p{color:rgba(255,255,255,.82);font-size:.8125rem;line-height:1.75;margin:0}\n[data-bz-node^=\"sh-city\"] p{font-size:.75rem;color:var(--muted);margin:0}\n[data-bz-node^=\"sh-dept-t\"] p,[data-bz-node^=\"sh-links\"] p{font-size:.8125rem;line-height:1.7;color:#4a4945;margin:0}\n/* Only the service department shows; the department code travels on the label link. */\n[data-bz-node^=\"sh-depts\"]>.bz-col:not(:has(a[href=\"#hours-service\"])){display:none}\n[data-bz-node^=\"sh-dept-t\"] a[href^=\"#hours-\"]{pointer-events:none;color:var(--ink);font-weight:700;text-decoration:none}\n[data-bz-node^=\"sh-links\"]{margin-top:auto}\n[data-bz-node^=\"sh-links\"] a,[data-bz-node^=\"sh-dept-t\"] a[href^=\"tel\"]{font-weight:700;color:var(--ink);text-decoration:none}\n[data-bz-node^=\"sh-links\"] a[href^=\"/\"]{font-size:.6875rem;letter-spacing:.12em;text-transform:uppercase}\n[data-bz-node=\"sh\"] a[href=\"\"],[data-bz-node=\"sh\"] a[href=\"tel:\"]{display:none}\n@media (max-width:1100px){[data-bz-node=\"sh-cards\"]>.bz-col{grid-column:span 6}}\n@media (max-width:640px){[data-bz-node=\"sh-cards\"]>.bz-col{grid-column:1/-1}}\n"
+}

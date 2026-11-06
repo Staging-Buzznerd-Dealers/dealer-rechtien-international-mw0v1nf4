@@ -1,0 +1,136 @@
+{
+  "version": 2,
+  "id": "location-services",
+  "name": "Location departments & services",
+  "description": "What one rooftop offers, as cards — from Admin → Locations → the rooftop's Services tab.",
+  "props": [
+    {
+      "key": "locationSlug",
+      "type": "text",
+      "label": "Location (filled in per page)"
+    },
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": "What's on site"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "One address, every department."
+    },
+    {
+      "key": "rooftop",
+      "type": "list",
+      "label": "Location",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "serviceRows",
+          "type": "list",
+          "label": "Services",
+          "fields": [
+            {
+              "key": "name",
+              "type": "text",
+              "label": "Name"
+            },
+            {
+              "key": "description",
+              "type": "text",
+              "label": "Description"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "lv",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 8,
+        "anchor": "services"
+      },
+      "children": [
+        {
+          "id": "lv-head",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "lv-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "lv-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "{{eyebrow}}"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lv-cards",
+          "type": "row",
+          "props": {
+            "gap": 4,
+            "stackOn": "mobile",
+            "repeat": "rooftop"
+          },
+          "children": [
+            {
+              "id": "lv-card",
+              "type": "column",
+              "props": {
+                "span": 3,
+                "repeat": "serviceRows"
+              },
+              "children": [
+                {
+                  "id": "lv-name",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{name}}",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "lv-desc",
+                  "type": "text",
+                  "props": {
+                    "text": "{{description}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": ".bz-section[data-bz-node=\"lv\"]{padding-block:clamp(56px,6vw,88px)}\n[data-bz-node=\"lv\"] .bz-block{padding-block:0}\n[data-bz-node^=\"lv-cards\"]{margin-top:var(--space-5);row-gap:var(--space-4)}\n[data-bz-node^=\"lv-cards\"]>.bz-col{background:#fff;padding:clamp(22px,2.2vw,28px);display:flex;flex-direction:column;gap:var(--space-3)}\n[data-bz-node^=\"lv-name\"] h3{font:700 .875rem/1.3 var(--font-heading);text-transform:uppercase;margin:0}\n[data-bz-node^=\"lv-desc\"] p{font-size:.8125rem;line-height:1.75;color:#4a4945;margin:0}\n"
+}

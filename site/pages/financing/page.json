@@ -1,0 +1,967 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center",
+        "anchor": "top"
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "hero-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-crumbs",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Home</a> / Financing",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Commercial semi-truck financing and leasing.",
+                    "headingLevel": 1,
+                    "align": "center",
+                    "eyebrow": "Rechtien International & Carolina International"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Simple, transparent and flexible financing through International Financial, at Rechtien International in South Florida and Carolina International in South Carolina.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "credit-application",
+                        "label": "Apply for credit",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "call-main"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "styles": {
+        "base": {
+          "backgroundImage": "/images/hero-truck.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
+          "background": "#151515"
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "intro-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "intro-col",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "intro-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "International® Financial is your trusted partner for simple, transparent, and flexible financing solutions tailored for the transportation market. Backed by decades of industry experience, we make it easy to secure the right loans or leases — whether you are purchasing new, used, on-highway, vocational, or bus products.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "We deliver a customer-first experience with fast credit decisions, competitive options, and a dedicated team that understands the transportation industry. From seasonal and skip-payment structures to specialized commercial financing, International Financial helps ensure your business has the support it needs to keep moving forward.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-t3",
+                  "type": "text",
+                  "props": {
+                    "text": "Carolina International Trucks provides financing for its customers through a large variety of options, with competitive loans and leases at terms from 12–72 months, and an online credit application that makes the process simple and quick. Once your application is submitted, you will be contacted to discuss your options.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-t4",
+                  "type": "text",
+                  "props": {
+                    "text": "Rechtien International Trucks has you covered whether you are looking for financing or prefer to explore leasing. As your business grows and your fleet expands, flexible financing solutions become essential — and for businesses seeking driving power without ownership commitments, our semi-truck leasing options offer flexibility and scalability.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stats",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "stats-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "stats-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "stats-band",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "12–72",
+                        "label": "Month terms on competitive loans and leases at Carolina International Trucks"
+                      },
+                      {
+                        "value": "3",
+                        "label": "Popular options: retail finance loan, TRAC lease and FMV lease"
+                      },
+                      {
+                        "value": "11",
+                        "label": "Dealership locations across South Florida and South Carolina"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "options",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "options-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "options-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "options-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Financing and leasing options tailored to fit your needs.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Financing options"
+                  }
+                },
+                {
+                  "id": "options-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you prefer to own your truck or lease it, we will help you find the structure that fits your business. Rechtien International Trucks and Carolina International Trucks each offer the options below, as noted on each card.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "options-grid-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "options-grid-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "options-grid",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 3,
+                    "items": [
+                      {
+                        "label": "Retail Finance Loan",
+                        "desc": "12–72 months, fixed cost, with ownership at the end of the loan. Opt for financing when your plan calls for ownership, equity build-up and long-term asset value. Offered by Carolina International Trucks."
+                      },
+                      {
+                        "label": "TRAC Lease",
+                        "desc": "12–60 months with lower monthly payments and a guaranteed residual at the end of the lease. Offered by Carolina International Trucks."
+                      },
+                      {
+                        "label": "FMV Lease (Fair Market Value)",
+                        "desc": "Lower monthly payments, with the option to return the equipment at the end of the lease or purchase it at the fair market value. Offered by Carolina International Trucks."
+                      },
+                      {
+                        "label": "Direct Lease",
+                        "desc": "Choose a direct lease when you want to align payments to usage, seasonality or business cycles, and to keep fleet composition flexible as your business evolves. Offered by Rechtien International Trucks."
+                      },
+                      {
+                        "label": "Customized Leases & Secured Loans",
+                        "desc": "International Financial provides customized leases and secured loans for International-branded heavy- and medium-duty commercial trucks, with new and used vehicles available."
+                      },
+                      {
+                        "label": "Seasonal & Skip-Payment Structures",
+                        "desc": "From seasonal and skip-payment structures to specialized commercial financing, International Financial helps ensure your business has the support it needs to keep moving forward."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "why",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "why-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "why-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "why-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why choose Rechtien International Trucks.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Here's what sets us apart"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "why-grid-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "why-grid-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "why-grid",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 4,
+                    "items": [
+                      {
+                        "label": "Access to Strong Finance Networks",
+                        "desc": "Through our relationships with major lenders, we offer competitive financing and leasing programs."
+                      },
+                      {
+                        "label": "Tailored as You Grow",
+                        "desc": "Whether you are acquiring your first rig or building a fleet, our programs adjust to your business."
+                      },
+                      {
+                        "label": "Transparent Processes & Support",
+                        "desc": "From pre-qualification to documentation to end-term strategy, we keep the process clear and aligned with your business goals."
+                      },
+                      {
+                        "label": "A Partnership Mindset",
+                        "desc": "We help you evaluate semi-truck leasing vs. purchasing, optimize lifecycle cost, and plan for future growth rather than just closing a deal."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "why-note-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "why-note-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "why-note",
+                  "type": "text",
+                  "props": {
+                    "text": "With the strength of complete financing flexibility, you are empowered to choose what best serves your business. Contact us today if you have any questions.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apply",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "apply-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet",
+            "align": "start"
+          },
+          "children": [
+            {
+              "id": "apply-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "apply-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Apply for credit.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Credit applications"
+                  }
+                },
+                {
+                  "id": "apply-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "For the fastest response, fill out a credit application and return it to <a href=\"mailto:team@rechtien.com\">team@rechtien.com</a>. Carolina International Trucks also offers an online credit application — once it is submitted, you will be contacted to discuss your options.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "apply-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Even if you have had credit problems in the past, we have a variety of lenders and solutions that will work with us to get you in a truck today.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "apply-docs",
+                  "type": "row",
+                  "props": {
+                    "gap": 2,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "apply-doc-1",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "apply-dname-1",
+                          "type": "heading",
+                          "props": {
+                            "text": "Rechtien International credit application",
+                            "headingLevel": 4,
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "apply-dmeta-1",
+                          "type": "text",
+                          "props": {
+                            "text": "Credit application · PDF",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "apply-dact-1",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "label": "Open application",
+                                "url": "",
+                                "style": "primary"
+                              }
+                            ],
+                            "align": "left"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "apply-doc-2",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "apply-dname-2",
+                          "type": "heading",
+                          "props": {
+                            "text": "Carolina International credit application",
+                            "headingLevel": 4,
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "apply-dmeta-2",
+                          "type": "text",
+                          "props": {
+                            "text": "Credit application · online",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "apply-dact-2",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "label": "Open application",
+                                "url": "",
+                                "style": "primary"
+                              }
+                            ],
+                            "align": "left"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "apply-form",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "apply-form-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Start a financing request",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "eyebrow": "Talk to finance"
+                  }
+                },
+                {
+                  "id": "apply-form-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Send us a few details and a finance manager will be in touch. Nothing you send here is a credit application or a credit check.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "apply-widget",
+                  "type": "form",
+                  "props": {
+                    "formId": "financing"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "split",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "paddingY": 0,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "split-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "split-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "split-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why choose us for semi-truck financing?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "International Financial"
+                  }
+                },
+                {
+                  "id": "split-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "With a focus on International Motors' products, International Financial provides customized leases and secured loans for International™-branded heavy- and medium-duty commercial trucks. Our selections of new and used vehicles are available with customized leases and secured loans, plus truck lease offers to provide an added incentive to buy.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "split-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "We are straightforward and do not hit you with hidden fees during the life of your loan, because we want to earn your repeat business. Carolina International Trucks deals strictly in International or Hino truck, trailer and equipment financing, so our years of experience can help deliver the right financing deal to you.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "split-t3",
+                  "type": "text",
+                  "props": {
+                    "text": "Rechtien International Trucks also offers an online value-your-trade tool and a payment calculator to help you start the planning process at home.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "split-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Shop new trucks",
+                        "url": "/store/inventory?condition=new",
+                        "style": "link"
+                      },
+                      {
+                        "label": "Shop used trucks",
+                        "url": "/store/inventory?condition=used",
+                        "style": "link"
+                      },
+                      {
+                        "ctaId": "email-finance",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "split-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "split-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/financing-dump-truck.jpg",
+                      "alt": "International dump truck, available new or used with customized leases and secured loans"
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guide",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "guide-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "guide-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "guide-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Plan your financing.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Before you apply"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "guide-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "guide-a",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "guide-a-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Things to keep in mind",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "guide-a-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Opt for financing when your plan calls for ownership, equity build-up, and long-term asset value.\n\nConsider leasing if you prefer lower upfront costs, predictable payments, and the option to refresh your truck periodically.\n\nChoose a direct lease when you want to align payments to usage, seasonality, or business cycles.\n\nSelect our semi-truck leasing model for added flexibility in fleet composition and a partnership that adapts as your business evolves.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "guide-b",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "guide-b-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Questions businesses typically face",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "guide-b-t",
+                  "type": "text",
+                  "props": {
+                    "text": "What monthly payments make sense for your ROI and cash flow?\n\nDo you want to own the truck when the term ends, or prefer to return and refresh under lease?\n\nWhat are the residual values and tax implications of a lease vs. financing?\n\nHow can you gain the flexibility of semi-truck leasing while aligning your fleet with seasonal demand or growth plans?",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "faq",
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "faq-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "faq-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Financing FAQ"
+                  }
+                },
+                {
+                  "id": "faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "What financing and leasing options are available?",
+                          "a": "Carolina International Trucks offers a retail finance loan (12–72 months, fixed cost, with ownership at the end of the loan), a TRAC lease (12–60 months with lower monthly payments and a guaranteed residual) and an FMV lease (lower monthly payments, with the option to return or purchase the equipment at fair market value). Rechtien International Trucks offers semi-truck leasing, including direct leases. International Financial also provides customized leases and secured loans."
+                        },
+                        {
+                          "q": "What loan and lease terms are available?",
+                          "a": "Carolina International Trucks offers competitive loans and leases with terms from 12–72 months. Retail finance loans run 12–72 months and TRAC leases run 12–60 months."
+                        },
+                        {
+                          "q": "Do you finance new and used trucks?",
+                          "a": "Yes. Our selections of new and used vehicles are available with customized leases and secured loans, plus truck lease offers that provide an added incentive to buy."
+                        },
+                        {
+                          "q": "Which brands can I finance?",
+                          "a": "International Financial provides customized leases and secured loans for International-branded heavy- and medium-duty commercial trucks. Carolina International Trucks deals strictly in International or Hino truck, trailer and equipment financing."
+                        },
+                        {
+                          "q": "Can I get financing if I have had credit problems?",
+                          "a": "Even if you have had credit problems in the past, we have a variety of lenders and solutions that will work with us to get you in a truck today."
+                        },
+                        {
+                          "q": "Are there hidden fees?",
+                          "a": "We are straightforward and do not hit you with hidden fees during the life of your loan, because we want to earn your repeat business."
+                        },
+                        {
+                          "q": "How do I apply?",
+                          "a": "For the fastest response, fill out a credit application and return it to team@rechtien.com. Carolina International Trucks also offers an online credit application; once it is submitted, you will be contacted to discuss your options. You can also send a financing request using the form on this page."
+                        }
+                      ]
+                    },
+                    "snapshot": {
+                      "items": []
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Hit the road running.",
+                    "headingLevel": 2,
+                    "align": "center",
+                    "eyebrow": "Ready to get on the road?"
+                  }
+                },
+                {
+                  "id": "cta-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Find a payment that meets your semi-truck financing requirements. Apply for financing, or contact us with your questions — we will help you set up a plan that gets you on the road to your destination in no time.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btn",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "call-main"
+                      },
+                      {
+                        "ctaId": "credit-application",
+                        "label": "Apply for credit",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "email-finance"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

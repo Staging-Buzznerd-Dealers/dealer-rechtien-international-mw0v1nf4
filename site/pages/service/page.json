@@ -1,0 +1,1572 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center",
+        "anchor": "top"
+      },
+      "children": [
+        {
+          "id": "hero-bg",
+          "type": "image",
+          "props": {
+            "image": {
+              "src": "/images/hero-truck.jpg",
+              "alt": "International truck in for service"
+            },
+            "width": "full"
+          }
+        },
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "hero-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-crumbs",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Home</a> / Service",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Commercial truck service & repair in Florida & South Carolina",
+                    "headingLevel": 1,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Factory-trained technicians, all makes and models, and service bays across our Carolina International Trucks and Rechtien International Trucks locations — built to get you back on the road.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-service"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "intro-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "intro-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "intro-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "Uptime is everything. Maintenance is a necessity when you own and operate a truck fleet — the constant rigors of travel make every rig susceptible to damage and wear, so regular upkeep and care are vital to the longevity and integrity of your fleet. Whether your truck is fresh out of the showroom or has already logged serious miles, our technicians do it right, from routine inspections to full system overhauls.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "With every visit we provide transparent reporting, so you understand what was done, what is recommended and how to plan for future service. From light bulbs to complete engine replacements, if your vehicle has a diesel engine in it, we have the expertise to restore it and get it back to business.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "stats-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "stats-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "stats",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 3,
+                    "columns": 3,
+                    "items": [
+                      {
+                        "label": "100+",
+                        "desc": "ASE-certified and factory-trained technicians at Carolina International Trucks"
+                      },
+                      {
+                        "label": "130",
+                        "desc": "service bays across our six South Carolina facilities"
+                      },
+                      {
+                        "label": "2 hrs",
+                        "desc": "to a diagnostic advisory with Accelerated Service lanes in South Carolina"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "offer",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "service-offerings",
+        "values": {
+          "eyebrow": "What we service",
+          "heading": "Service that keeps your business moving.",
+          "intro": "Not all diesel repair shops are created equal. Our specialised equipment lets us service all makes and models of trucks and buses, and we can perform warranty work for most major brands and manufacturers.",
+          "items": [
+            {
+              "eyebrow": "All makes",
+              "title": "Maintenance, diagnostics & repairs",
+              "body": "Truck maintenance, diagnostics and repairs for all makes and models of trucks and buses.",
+              "ctaLabel": "",
+              "url": ""
+            },
+            {
+              "eyebrow": "Preventive maintenance",
+              "title": "While-you-wait PM service",
+              "body": "Preventive maintenance and fluid-analysis checks, with while-you-wait PM service to keep downtime to a minimum.",
+              "ctaLabel": "",
+              "url": ""
+            },
+            {
+              "eyebrow": "Diagnostics",
+              "title": "Computer diagnostics",
+              "body": "Full computer diagnostics and performance inspections for all major engines, transmissions and ABS systems.",
+              "ctaLabel": "",
+              "url": ""
+            },
+            {
+              "eyebrow": "Powertrain",
+              "title": "Engine & transmission repair",
+              "body": "Engine, transmission, axle and suspension repair or replacement, plus drivetrain and axle repair.",
+              "ctaLabel": "",
+              "url": ""
+            },
+            {
+              "eyebrow": "Engine performance",
+              "title": "Induction cleaning & valve lash",
+              "body": "Induction cleaning and valve lash adjustment to keep engine performance at its best.",
+              "ctaLabel": "",
+              "url": ""
+            },
+            {
+              "eyebrow": "Aftertreatment",
+              "title": "DPF / DOC cleaning",
+              "body": "Diesel particulate filter and diesel oxidation catalyst cleaning, available at our Columbia, Charleston, Florence and Greer locations.",
+              "ctaLabel": "",
+              "url": ""
+            },
+            {
+              "eyebrow": "Brakes & tires",
+              "title": "Brake, tire & alignment service",
+              "body": "Brake inspections and repairs, tire service and undercarriage maintenance, plus 3-axle alignments on Hunter alignment machines at our Greer and Columbia body shop.",
+              "ctaLabel": "",
+              "url": ""
+            },
+            {
+              "eyebrow": "Compliance",
+              "title": "DOT inspections",
+              "body": "DOT inspections to keep your fleet compliant and on the road.",
+              "ctaLabel": "",
+              "url": ""
+            },
+            {
+              "eyebrow": "Climate control",
+              "title": "A/C & HVAC repair",
+              "body": "Commercial truck A/C, heating and cooling — from mini split systems to full-scale HVAC repair — so the cab stays comfortable on the road.",
+              "ctaLabel": "",
+              "url": ""
+            },
+            {
+              "eyebrow": "Specialty",
+              "title": "Drop axle & PTO",
+              "body": "Drop axle installation and repair, and PTO repair for vocational equipment.",
+              "ctaLabel": "",
+              "url": ""
+            },
+            {
+              "eyebrow": "Glass",
+              "title": "Windshield replacement",
+              "body": "Windshield replacement to restore visibility and safety.",
+              "ctaLabel": "",
+              "url": ""
+            },
+            {
+              "eyebrow": "Mobile",
+              "title": "Mobile service & breakdown repair",
+              "body": "Mobile service calls and breakdown repairs for fleets or individual rigs — we come to the highway or the job site.",
+              "ctaLabel": "",
+              "url": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "warranty",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "ink",
+        "anchor": "warranty"
+      },
+      "children": [
+        {
+          "id": "warranty-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "warranty-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "warranty-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "We can perform your warranty work.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Authorized warranty service"
+                  }
+                },
+                {
+                  "id": "warranty-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Our service department is authorized to perform warranty work on most major brands and manufacturers, so you can keep warranty repairs close to home.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "warranty-list-col",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "warranty-list",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 3,
+                    "columns": 2,
+                    "items": [
+                      {
+                        "label": "Engines",
+                        "desc": "Cummins®, Navistar®, CAT®, Mitsubishi® and Hino."
+                      },
+                      {
+                        "label": "Transmissions",
+                        "desc": "Meritor and Eaton transmissions."
+                      },
+                      {
+                        "label": "ABS systems",
+                        "desc": "International®, Bendix and WABCO ABS systems."
+                      },
+                      {
+                        "label": "Authorized warranty",
+                        "desc": "International, Cummins, CAT, Mitsubishi Fuso, IC Bus®, Eaton, Arvin Meritor, Horton, Delco Remy and Leece Neville."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hours",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "service-hours",
+        "values": {
+          "eyebrow": "Service department hours",
+          "heading": "When we are open.",
+          "intro": "Service hours for every location. Call ahead or schedule online and we will have a bay ready.",
+          "afterTitle": "Broken down?",
+          "afterBody": "Breakdowns happen at the most inconvenient times. Call your nearest location and ask about mobile service — our technicians can come to you for diagnostics, roadside repairs or scheduled maintenance.",
+          "locations": {
+            "source": "locations",
+            "config": {
+              "pagePathPrefix": "/locations"
+            }
+          }
+        },
+        "data": {
+          "locations": [
+            {
+              "id": "18",
+              "name": "Maimi",
+              "subtitle": "",
+              "slug": "maimi",
+              "num": "01",
+              "href": "/locations/maimi",
+              "streetAddress": "7227 NW 74th Ave",
+              "city": "Miami",
+              "region": ",FL",
+              "postalCode": "33166",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "305-888-0111",
+              "phoneUrl": "tel:3058880111",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=7227%20NW%2074th%20Ave%2C%20Miami%2C%20%2CFL%2C%2033166",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "Sales · Parts",
+              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": "Florida",
+              "groupKey": "new-group",
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [
+                {
+                  "name": "Sales",
+                  "key": "sales",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat"
+                },
+                {
+                  "name": "Parts",
+                  "key": "parts",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat"
+                }
+              ],
+              "hoursRows": [
+                {
+                  "department": "Sales",
+                  "key": "sales",
+                  "summary": "08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "08:00 AM - 06:00 PM",
+                      "opensAt": "08:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "08:00 AM - 06:00 PM",
+                      "opensAt": "08:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "08:00 AM - 06:00 PM",
+                      "opensAt": "08:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "08:00 AM - 06:00 PM",
+                      "opensAt": "08:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "08:00 AM - 06:00 PM",
+                      "opensAt": "08:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "08:00 AM - 12:00 PM",
+                      "opensAt": "08:00",
+                      "closesAt": "12:00",
+                      "closed": false
+                    }
+                  ]
+                },
+                {
+                  "department": "Parts",
+                  "key": "parts",
+                  "summary": "07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "08:00 AM - 12:00 PM",
+                      "opensAt": "08:00",
+                      "closesAt": "12:00",
+                      "closed": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "19",
+              "name": "Columbia",
+              "subtitle": "",
+              "slug": "columbia-2",
+              "num": "02",
+              "href": "/locations/columbia-2",
+              "streetAddress": "1619 Bluff Road",
+              "city": "Columbia,",
+              "region": "SC",
+              "postalCode": "29201",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "(803) 799-4923",
+              "phoneUrl": "tel:8037994923",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=1619%20Bluff%20Road%2C%20Columbia%2C%2C%20SC%2C%2029201",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "Parts · Service",
+              "hours": "Parts: 07:00 AM - 06:00 PM Mon–Fri\n\nService: 07:00 AM - 06:00 PM Mon–Fri",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": "Carolina",
+              "groupKey": "new-group-2",
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [
+                {
+                  "name": "Parts",
+                  "key": "parts",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 06:00 PM Mon–Fri"
+                },
+                {
+                  "name": "Service",
+                  "key": "service",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 06:00 PM Mon–Fri"
+                }
+              ],
+              "hoursRows": [
+                {
+                  "department": "Parts",
+                  "key": "parts",
+                  "summary": "07:00 AM - 06:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    }
+                  ]
+                },
+                {
+                  "department": "Service",
+                  "key": "service",
+                  "summary": "07:00 AM - 06:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "20",
+              "name": "Greenville",
+              "subtitle": "",
+              "slug": "greenville",
+              "num": "03",
+              "href": "/locations/greenville",
+              "streetAddress": "1501 Whitehorse Rd",
+              "city": "Greenville",
+              "region": "SC",
+              "postalCode": "29605",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "",
+              "phoneUrl": null,
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=1501%20Whitehorse%20Rd%2C%20Greenville%2C%20SC%2C%2029605",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "Parts · Service",
+              "hours": "Parts: 07:00 AM - 05:00 PM Mon–Fri\n\nService: 07:00 AM - 05:00 PM Mon–Fri",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": "Carolina",
+              "groupKey": "new-group-2",
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [
+                {
+                  "name": "Parts",
+                  "key": "parts",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 05:00 PM Mon–Fri"
+                },
+                {
+                  "name": "Service",
+                  "key": "service",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 05:00 PM Mon–Fri"
+                }
+              ],
+              "hoursRows": [
+                {
+                  "department": "Parts",
+                  "key": "parts",
+                  "summary": "07:00 AM - 05:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    }
+                  ]
+                },
+                {
+                  "department": "Service",
+                  "key": "service",
+                  "summary": "07:00 AM - 05:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "snapshots": {}
+      }
+    },
+    {
+      "id": "mobile",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "mobile-service"
+      },
+      "children": [
+        {
+          "id": "mobile-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet",
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "mobile-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "mobile-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/white-international-truck.jpg",
+                      "alt": "International truck on the road"
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "mobile-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "mobile-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "When the truck can’t come to us.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Mobile service"
+                  }
+                },
+                {
+                  "id": "mobile-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "Breakdowns can happen at the most inconvenient time, and that is where International mobile service comes in. Whether you are on the highway or at a job site, our mobile technicians can come to you to perform diagnostic work, roadside repairs or scheduled maintenance.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "mobile-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "With this level of flexibility you minimise downtime and keep your operation moving. Our Accelerated Service lanes in South Carolina also give you a diagnostic advisory within two hours of your vehicle arriving — ask any of our service representatives for details.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "mobile-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "contact-us"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fleet",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "paper",
+        "anchor": "fleet"
+      },
+      "children": [
+        {
+          "id": "fleet-head",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "fleet-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "fleet-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why choose our service centers?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Fleet & business-owner benefits"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fleet-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "fleet-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "fleet-list",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 3,
+                    "columns": 3,
+                    "items": [
+                      {
+                        "label": "Less time in the shop",
+                        "desc": "Efficient scheduling and mobile options minimise the time your trucks sit idle."
+                      },
+                      {
+                        "label": "Longer asset life",
+                        "desc": "Expert maintenance and timely repairs extend the life of your equipment."
+                      },
+                      {
+                        "label": "Service and parts together",
+                        "desc": "Service and parts support under one roof reduces complexity and cost."
+                      },
+                      {
+                        "label": "Factory-trained technicians",
+                        "desc": "Technicians familiar with all major heavy-duty brands and drivetrains."
+                      },
+                      {
+                        "label": "Genuine OEM parts",
+                        "desc": "Genuine OEM parts and fluids, certified for your truck’s make and model."
+                      },
+                      {
+                        "label": "Transparent estimates",
+                        "desc": "Clear estimates and fleet-friendly packages for large or multi-truck operations, plus proactive maintenance plans to avoid surprise failures."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "res",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "res-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "res-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "res-grid",
+                  "type": "serviceGrid",
+                  "props": {
+                    "heading": "Plan your next visit.",
+                    "headingLevel": 2,
+                    "body": "Download the service brochure, apply for credit or book your appointment online.",
+                    "items": [
+                      {
+                        "label": "Service brochure",
+                        "desc": "Everything our service departments offer, in one document to keep or share with your fleet manager.",
+                        "cta": {
+                          "ctaId": "service-brochure"
+                        }
+                      },
+                      {
+                        "label": "Credit application",
+                        "desc": "Apply for credit so approved repairs and maintenance never wait on paperwork.",
+                        "cta": {
+                          "ctaId": "credit-application"
+                        }
+                      },
+                      {
+                        "label": "Service appointment",
+                        "desc": "Tell us about your truck and what it needs, and the service team will confirm a time.",
+                        "cta": {
+                          "ctaId": "schedule-service",
+                          "style": "link"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "appt",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "paper",
+        "anchor": "appointment"
+      },
+      "children": [
+        {
+          "id": "appt-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "appt-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "appt-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Schedule your service appointment.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Book online"
+                  }
+                },
+                {
+                  "id": "appt-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Tell us about your truck and what it needs. Choose your region and preferred location, and a service advisor will contact you to confirm the date and time.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "appt-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Broken down on the road or at a job site? Choose mobile service and our technicians can come to you.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "appt-btns",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-body-shop"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "appt-form-col",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "appt-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "service-appointment"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parts",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "ink",
+        "anchor": "parts"
+      },
+      "children": [
+        {
+          "id": "parts-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet",
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "parts-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "parts-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/red-international-truck.jpg",
+                      "alt": "Red International truck"
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "parts-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "parts-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Quality repairs begin with quality parts.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Parts & service under one roof"
+                  }
+                },
+                {
+                  "id": "parts-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Our service bays are backed by our parts departments, with genuine OEM and quality aftermarket parts on hand — so repairs are done with the right part, the first time.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "parts-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "parts-department"
+                      },
+                      {
+                        "ctaId": "order-parts",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brands",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "brands-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "brands-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "brands-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Brands we represent.",
+                    "headingLevel": 2,
+                    "align": "center",
+                    "eyebrow": "Service for the brands you run"
+                  }
+                },
+                {
+                  "id": "brands-logos",
+                  "type": "logoStrip",
+                  "props": {
+                    "logos": [
+                      {
+                        "name": "International",
+                        "image": {
+                          "src": "/logos/international.png",
+                          "alt": "International"
+                        }
+                      },
+                      {
+                        "name": "Hino Trucks",
+                        "image": {
+                          "src": "/logos/hino-trucks.png",
+                          "alt": "Hino Trucks"
+                        }
+                      },
+                      {
+                        "name": "Idealease",
+                        "image": {
+                          "src": "/logos/idealease.png",
+                          "alt": "Idealease"
+                        }
+                      },
+                      {
+                        "name": "Dorsey Trailers",
+                        "image": {
+                          "src": "/logos/dorsey.png",
+                          "alt": "Dorsey Trailers"
+                        }
+                      },
+                      {
+                        "name": "Navigator Forklifts",
+                        "image": {
+                          "src": "/logos/navigator-forklifts.png",
+                          "alt": "Navigator Forklifts"
+                        }
+                      },
+                      {
+                        "name": "Kalmar Ottawa"
+                      },
+                      {
+                        "name": "Cummins"
+                      },
+                      {
+                        "name": "Allison Transmission"
+                      },
+                      {
+                        "name": "East"
+                      },
+                      {
+                        "name": "Diamond Edge"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "faq"
+      },
+      "children": [
+        {
+          "id": "faq-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "faq-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Service FAQ"
+                  }
+                },
+                {
+                  "id": "faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "What types of vehicles do you service?",
+                          "a": "We service all makes and models of commercial trucks and buses — from preventive maintenance and diagnostics to complete engine replacements."
+                        },
+                        {
+                          "q": "Do you offer preventive fleet maintenance?",
+                          "a": "Yes. We offer preventive maintenance and fluid-analysis checks, while-you-wait PM service and proactive maintenance plans for fleets of any size."
+                        },
+                        {
+                          "q": "Do you perform warranty repairs?",
+                          "a": "Yes. We are authorized to perform warranty work for International, Cummins, CAT, Mitsubishi Fuso, IC Bus, Eaton, Arvin Meritor, Horton, Delco Remy and Leece Neville, among others."
+                        },
+                        {
+                          "q": "Do you offer mobile service?",
+                          "a": "Yes. Our mobile technicians can come to you on the highway or at a job site for diagnostics, roadside repairs or scheduled maintenance. Call your nearest location to arrange a visit."
+                        },
+                        {
+                          "q": "What is Accelerated Service?",
+                          "a": "Accelerated Service lanes at our South Carolina locations give you a diagnostic advisory within two hours of your vehicle arriving, so you get a rapid response and back on the road sooner."
+                        },
+                        {
+                          "q": "How do I schedule a service appointment?",
+                          "a": "Use the service appointment form on this page, or call the service department at your nearest location."
+                        }
+                      ]
+                    },
+                    "snapshot": {
+                      "items": []
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Contact our service departments.",
+                    "headingLevel": 2,
+                    "align": "center",
+                    "eyebrow": "Ready when you are"
+                  }
+                },
+                {
+                  "id": "cta-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Schedule an appointment online or call the service department closest to you — we will get your truck back to work.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btn",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-service"
+                      },
+                      {
+                        "ctaId": "contact-us",
+                        "style": "secondary"
+                      },
+                      {
+                        "ctaId": "contact-body-shop"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
