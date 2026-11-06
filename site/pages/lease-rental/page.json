@@ -1297,6 +1297,9 @@
                           "a": "Yes. See our financing page for options and a credit application."
                         }
                       ]
+                    },
+                    "snapshot": {
+                      "items": []
                     }
                   }
                 }

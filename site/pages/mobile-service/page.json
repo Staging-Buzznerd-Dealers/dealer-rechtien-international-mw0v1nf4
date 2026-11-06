@@ -735,6 +735,9 @@
                           "a": "Send a service request using the form on this page, choosing “Send mobile service to my location,” or contact your nearest location. To find out more about Idealease rentals or leasing, send a rental or lease inquiry and we will get back to you shortly."
                         }
                       ]
+                    },
+                    "snapshot": {
+                      "items": []
                     }
                   }
                 }
