@@ -1,0 +1,793 @@
+{
+  "version": 2,
+  "id": "associate-profile",
+  "name": "Sales associate profile",
+  "description": "One page per sales associate, filled from the content-kit worksheet: identity, locations, headshot, bio, experience, specialties, markets, contact, preferred CTA, welcome message, approved links, inventory feed and QR code. Field labels are numbered to match the worksheet.",
+  "props": [
+    {
+      "key": "name",
+      "type": "text",
+      "label": "1. Full name",
+      "default": "Associate Name"
+    },
+    {
+      "key": "firstName",
+      "type": "text",
+      "label": "1. First name (used in headings)",
+      "default": "Associate"
+    },
+    {
+      "key": "title",
+      "type": "text",
+      "label": "1. Title",
+      "default": "Sales Associate"
+    },
+    {
+      "key": "locations",
+      "type": "text",
+      "label": "2. Assigned location(s), as shown on the page",
+      "default": "Greenville, SC"
+    },
+    {
+      "key": "locationSlug",
+      "type": "text",
+      "label": "2. Primary location, Admin slug (scopes the inventory band)"
+    },
+    {
+      "key": "headshot",
+      "type": "image",
+      "label": "3. Headshot (portrait, at least 800 × 1000)"
+    },
+    {
+      "key": "bio",
+      "type": "textarea",
+      "label": "4. Short biography (60–120 words)"
+    },
+    {
+      "key": "experience",
+      "type": "text",
+      "label": "5. Industry experience, headline (e.g. 18+ years)",
+      "default": "10+ years"
+    },
+    {
+      "key": "experienceNote",
+      "type": "textarea",
+      "label": "5. Industry experience, one sentence"
+    },
+    {
+      "key": "specialties",
+      "type": "list",
+      "label": "6. Product specialties (3–6)",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Specialty"
+        },
+        {
+          "key": "note",
+          "type": "text",
+          "label": "One line about it"
+        }
+      ]
+    },
+    {
+      "key": "markets",
+      "type": "list",
+      "label": "7. Markets served",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Market or industry"
+        }
+      ]
+    },
+    {
+      "key": "phone",
+      "type": "text",
+      "label": "8. Phone, as shown",
+      "default": "(000) 000-0000"
+    },
+    {
+      "key": "phoneUrl",
+      "type": "url",
+      "label": "8. Phone link (tel:+1…)"
+    },
+    {
+      "key": "email",
+      "type": "text",
+      "label": "8. Email"
+    },
+    {
+      "key": "ctaLabel",
+      "type": "text",
+      "label": "9. Preferred call to action, label",
+      "default": "Schedule a visit"
+    },
+    {
+      "key": "ctaUrl",
+      "type": "url",
+      "label": "9. Preferred call to action, link",
+      "default": "#contact"
+    },
+    {
+      "key": "welcome",
+      "type": "textarea",
+      "label": "10. Personal welcome message (1–2 sentences, first person)"
+    },
+    {
+      "key": "links",
+      "type": "list",
+      "label": "11. Social / professional links (approved only)",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Label (e.g. LinkedIn)"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Link"
+        }
+      ]
+    },
+    {
+      "key": "inventoryUrl",
+      "type": "url",
+      "label": "12. Inventory-feed assignment, link to the filtered inventory",
+      "default": "/store/inventory"
+    },
+    {
+      "key": "qrCode",
+      "type": "image",
+      "label": "14. QR code (points at this page with the campaign's UTM tags)"
+    },
+    {
+      "key": "qrCaption",
+      "type": "text",
+      "label": "14. QR caption",
+      "default": "Scan to save this page"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ap",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "ink",
+        "anchor": "top"
+      },
+      "children": [
+        {
+          "id": "ap-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet",
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "ap-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "ap-crumbs",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Home</a> / <a href=\"/about#team\">Our team</a> / {{name}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ap-name",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{name}}",
+                    "headingLevel": 1,
+                    "align": "left",
+                    "eyebrow": "{{title}}"
+                  }
+                },
+                {
+                  "id": "ap-where",
+                  "type": "text",
+                  "props": {
+                    "text": "{{locations}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ap-welcome",
+                  "type": "text",
+                  "props": {
+                    "text": "{{welcome}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ap-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "{{ctaLabel}}",
+                        "url": "{{ctaUrl}}",
+                        "style": "primary",
+                        "intent": "contact-associate"
+                      },
+                      {
+                        "ctaId": "call-us",
+                        "label": "Call {{phone}}",
+                        "url": "{{phoneUrl}}",
+                        "style": "secondary",
+                        "intent": "call-associate"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ap-photo-col",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "ap-photo",
+                  "type": "image",
+                  "props": {
+                    "image": "{{headshot}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "about"
+      },
+      "children": [
+        {
+          "id": "ab-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "ab-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "ab-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "About {{firstName}}",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Meet your sales associate"
+                  }
+                },
+                {
+                  "id": "ab-bio",
+                  "type": "text",
+                  "props": {
+                    "text": "{{bio}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ab-exp",
+                  "type": "row",
+                  "props": {
+                    "gap": 5,
+                    "stackOn": "mobile",
+                    "align": "center"
+                  },
+                  "children": [
+                    {
+                      "id": "ab-exp-v",
+                      "type": "column",
+                      "props": {
+                        "span": 4
+                      },
+                      "children": [
+                        {
+                          "id": "ab-exp-num",
+                          "type": "text",
+                          "props": {
+                            "text": "{{experience}}",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "ab-exp-l",
+                          "type": "text",
+                          "props": {
+                            "text": "Industry experience",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ab-exp-t",
+                      "type": "column",
+                      "props": {
+                        "span": 8
+                      },
+                      "children": [
+                        {
+                          "id": "ab-exp-note",
+                          "type": "text",
+                          "props": {
+                            "text": "{{experienceNote}}",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ab-card",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "ab-card-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Contact {{firstName}}",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "ab-card-phone",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Phone</strong><br><a href=\"{{phoneUrl}}\">{{phone}}</a>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ab-card-email",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Email</strong><br><a href=\"mailto:{{email}}\">{{email}}</a>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ab-card-loc",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Location</strong><br>{{locations}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ab-card-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "contact-us",
+                        "label": "{{ctaLabel}}",
+                        "url": "{{ctaUrl}}",
+                        "style": "secondary",
+                        "intent": "contact-associate"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "ab-links",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "ab-link",
+                      "type": "column",
+                      "props": {
+                        "span": 12,
+                        "repeat": "links"
+                      },
+                      "children": [
+                        {
+                          "id": "ab-link-a",
+                          "type": "text",
+                          "props": {
+                            "text": "<a href=\"{{url}}\">{{label}}</a>",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sp",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "paper",
+        "anchor": "specialties"
+      },
+      "children": [
+        {
+          "id": "sp-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "sp-main",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "sp-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "What {{firstName}} specializes in.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Product specialties"
+                  }
+                },
+                {
+                  "id": "sp-grid",
+                  "type": "row",
+                  "props": {
+                    "gap": 4,
+                    "stackOn": "mobile"
+                  },
+                  "children": [
+                    {
+                      "id": "sp-card",
+                      "type": "column",
+                      "props": {
+                        "span": 6,
+                        "repeat": "specialties"
+                      },
+                      "children": [
+                        {
+                          "id": "sp-card-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "{{name}}",
+                            "headingLevel": 3,
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "sp-card-t",
+                          "type": "text",
+                          "props": {
+                            "text": "{{note}}",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "mk-col",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "mk-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Markets served",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "eyebrow": "Who {{firstName}} works with"
+                  }
+                },
+                {
+                  "id": "mk-list",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "mk-item",
+                      "type": "column",
+                      "props": {
+                        "span": 12,
+                        "repeat": "markets"
+                      },
+                      "children": [
+                        {
+                          "id": "mk-item-t",
+                          "type": "text",
+                          "props": {
+                            "text": "{{name}}",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iv",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "inventory"
+      },
+      "children": [
+        {
+          "id": "iv-head",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "stackOn": "tablet",
+            "align": "end"
+          },
+          "children": [
+            {
+              "id": "iv-head-copy",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "iv-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Inventory from {{firstName}}.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "In stock now"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "iv-head-btn",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "iv-btn",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "ctaId": "see-available",
+                        "label": "See all of {{firstName}}'s inventory",
+                        "url": "{{inventoryUrl}}",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "iv-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "iv-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "iv-stock",
+                  "type": "widget",
+                  "props": {
+                    "widget": "inventory-carousel",
+                    "config": {
+                      "locationSlug": "{{locationSlug}}"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ct",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "paper",
+        "anchor": "contact"
+      },
+      "children": [
+        {
+          "id": "ct-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "ct-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "ct-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Send {{firstName}} a message.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Get in touch"
+                  }
+                },
+                {
+                  "id": "ct-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Tell {{firstName}} what you are looking for and you will hear back directly — usually the same business day.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ct-qr",
+                  "type": "row",
+                  "props": {
+                    "gap": 4,
+                    "stackOn": "never",
+                    "align": "center"
+                  },
+                  "children": [
+                    {
+                      "id": "ct-qr-img",
+                      "type": "column",
+                      "props": {
+                        "span": 4
+                      },
+                      "children": [
+                        {
+                          "id": "ct-qr-code",
+                          "type": "image",
+                          "props": {
+                            "image": "{{qrCode}}",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ct-qr-txt",
+                      "type": "column",
+                      "props": {
+                        "span": 8
+                      },
+                      "children": [
+                        {
+                          "id": "ct-qr-cap",
+                          "type": "text",
+                          "props": {
+                            "text": "{{qrCaption}}",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ct-form-col",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "ct-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "associate-contact"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Sales associate profile — one design, filled per associate from the content-kit worksheet.\n   Empty optional fields (links, QR code, experience note) collapse rather than leave gaps. */\n[data-bz-section=\"associate-profile\"] .bz-block{padding-block:0 var(--space-3)}\n[data-bz-section=\"associate-profile\"] p:empty,[data-bz-section=\"associate-profile\"] a[href=\"\"]{display:none}\n\n/* Hero */\n.bz-section[data-bz-node=\"ap\"]{background:#1d1c1a;color:#fff;padding-block:clamp(120px,10vw,150px) clamp(56px,6vw,88px)}\n[data-bz-node=\"ap\"] .bz-block .bz-eyebrow{color:var(--accent)}\n[data-bz-node=\"ap-crumbs\"] p{font:700 .625rem/1.4 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.7);margin:0 0 var(--space-5)}\n[data-bz-node=\"ap-crumbs\"] a{color:#fff}\n[data-bz-node=\"ap-name\"] h1{color:#fff;margin-bottom:var(--space-3)}\n[data-bz-node=\"ap-where\"] p{display:flex;align-items:center;gap:10px;font:700 .75rem/1.4 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:#fff;margin:0}\n[data-bz-node=\"ap-where\"] p::before{content:\"\";width:14px;height:14px;flex:none;background:var(--accent);-webkit-mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z'/%3E%3C/svg%3E\") center/contain no-repeat;mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z'/%3E%3C/svg%3E\") center/contain no-repeat}\n[data-bz-node=\"ap-welcome\"]{margin-top:var(--space-5)}\n[data-bz-node=\"ap-welcome\"] p{font-size:1.125rem;line-height:1.7;color:rgba(255,255,255,.9);max-width:34rem;margin:0;padding-left:20px;border-left:3px solid var(--accent)}\n[data-bz-node=\"ap-cta\"] .bz-btns{flex-wrap:wrap;gap:12px}\n[data-bz-node=\"ap-cta\"] .bz-btn--secondary{background:transparent;color:#fff;border-color:#fff}\n[data-bz-node=\"ap-cta\"] .bz-btn--secondary:hover{background:#fff;color:var(--ink)}\n[data-bz-node=\"ap-photo\"] .bz-container,[data-bz-node=\"ap-photo\"] .bz-figure{max-width:none;padding:0;margin:0}\n[data-bz-node=\"ap-photo\"] img,[data-bz-node=\"ap-photo\"] .bz-photo--empty{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top;border-radius:6px;display:block}\n[data-bz-node=\"ap-photo\"] .bz-photo--empty{background:#2c2b28;color:transparent}\n\n/* About + contact card */\n[data-bz-node=\"ab-bio\"] p{font-size:1rem;line-height:1.85;max-width:40rem}\n[data-bz-node=\"ab-exp\"]{margin-top:var(--space-5);padding-top:var(--space-5);border-top:1px solid var(--line)}\n[data-bz-section=\"associate-profile\"] [data-bz-node=\"ab-exp-num\"] .bz-text p{font:800 clamp(2rem,3.4vw,2.75rem)/1 var(--font-heading);margin:0 0 6px}\n[data-bz-node=\"ab-exp-l\"] p{font:700 .625rem/1.4 var(--font-body);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:0}\n[data-bz-node=\"ab-exp-note\"] p{font-size:.875rem;line-height:1.75;color:#4a4945;margin:0}\n[data-bz-node=\"ab-card\"]{background:var(--paper);padding:clamp(24px,2.6vw,36px);align-self:start}\n[data-bz-node=\"ab-card-h\"] h3{font-size:1rem;margin:0 0 var(--space-4)}\n[data-bz-node^=\"ab-card-\"] p{font-size:.875rem;line-height:1.6;margin:0 0 var(--space-3)}\n[data-bz-node^=\"ab-card-\"] strong{font:700 .625rem/1.4 var(--font-body);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}\n[data-bz-node^=\"ab-card-\"] a{color:var(--ink);font-weight:700;text-decoration:none}\n[data-bz-node=\"ab-card-email\"] a[href=\"mailto:\"]{display:none}\n[data-bz-node=\"ab-links\"]{margin-top:var(--space-4);border-top:1px solid var(--line);padding-top:var(--space-3)}\n[data-bz-node^=\"ab-link-a\"] p{margin:0 0 6px}\n[data-bz-node^=\"ab-link-a\"] a{font:700 .6875rem/1.4 var(--font-body);letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}\n[data-bz-node^=\"ab-link-a\"] a::after{content:\" \\2197\"}\n\n/* Specialties + markets */\n[data-bz-node=\"sp-grid\"]{margin-top:var(--space-3);row-gap:var(--space-4)}\n[data-bz-node=\"sp-grid\"]>.bz-col{background:#fff;padding:22px 24px;border-top:3px solid var(--ink)}\n[data-bz-node^=\"sp-card-h\"] h3{font:700 .875rem/1.3 var(--font-heading);text-transform:uppercase;margin:0 0 6px}\n[data-bz-node^=\"sp-card-t\"] p{font-size:.8125rem;line-height:1.7;color:#4a4945;margin:0}\n[data-bz-node=\"mk-h\"] h3{font-size:1rem}\n[data-bz-node=\"mk-list\"]{display:flex;flex-wrap:wrap;gap:8px;margin-top:var(--space-3)}\n[data-bz-node=\"mk-list\"]>.bz-col{flex:0 0 auto;width:auto}\n[data-bz-node^=\"mk-item-t\"] p{margin:0;padding:9px 14px;background:#fff;border:1px solid var(--line);font:700 .6875rem/1.2 var(--font-body);letter-spacing:.08em;text-transform:uppercase}\n\n/* Inventory */\n[data-bz-node=\"iv-head-btn\"]{display:flex;justify-content:flex-end}\n[data-bz-node=\"iv-row\"]{margin-top:var(--space-4)}\n\n/* Contact + QR */\n[data-bz-node=\"ct-t\"] p{font-size:.9375rem;line-height:1.75;max-width:28rem}\n[data-bz-node=\"ct-qr\"]{margin-top:var(--space-5);background:#fff;padding:16px;max-width:360px}\n[data-bz-node=\"ct-qr\"]:has(.bz-photo--empty){display:none}\n[data-bz-node=\"ct-qr-code\"] .bz-container,[data-bz-node=\"ct-qr-code\"] .bz-figure{padding:0;margin:0;max-width:none}\n[data-bz-node=\"ct-qr-cap\"] p{font:700 .6875rem/1.5 var(--font-body);letter-spacing:.12em;text-transform:uppercase;margin:0}\n[data-bz-node=\"ct-form-col\"]{background:#fff;padding:clamp(24px,3vw,40px)}\n[data-bz-node=\"ct-form\"] .bz-form{max-width:none;border:0;padding:0;background:transparent}\n[data-bz-node=\"ct-form\"] button[type=\"submit\"]{background:var(--ink);color:#fff;border-color:var(--ink);min-height:48px;padding:0 28px}\n\n@media (max-width:1100px){[data-bz-node=\"iv-head-btn\"]{justify-content:flex-start}[data-bz-node=\"ap-photo-col\"]{max-width:420px}}\n/* The inventory widget brings its own \"Browse all inventory\" button; the band already has the associate-specific one. */\n[data-bz-node=\"iv-stock\"] .bz-widget>p:last-child{display:none}\n"
+}

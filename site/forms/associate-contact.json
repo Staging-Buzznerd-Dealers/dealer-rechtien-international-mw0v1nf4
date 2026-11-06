@@ -1,0 +1,132 @@
+{
+  "id": "associate-contact",
+  "name": "Sales associate contact",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "contact-associate",
+  "submitLabel": "Send message",
+  "successMessage": "Thanks — your message is on its way. You will hear back shortly.",
+  "consent": {
+    "enabled": true,
+    "required": true,
+    "text": "I agree to be contacted about this enquiry by phone, text or email."
+  },
+  "fields": [
+    {
+      "id": "ac-first",
+      "type": "first_name",
+      "label": "First name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "ac-last",
+      "type": "last_name",
+      "label": "Last name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "ac-company",
+      "type": "single_line",
+      "label": "Company",
+      "required": false
+    },
+    {
+      "id": "ac-email",
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "ac-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "ac-interest",
+      "type": "dropdown",
+      "label": "I'm interested in",
+      "required": true,
+      "options": [
+        {
+          "value": "new",
+          "label": "A new truck"
+        },
+        {
+          "value": "used",
+          "label": "A used truck"
+        },
+        {
+          "value": "fleet",
+          "label": "Fleet / multiple units"
+        },
+        {
+          "value": "lease",
+          "label": "Lease or rental"
+        },
+        {
+          "value": "trade",
+          "label": "Trading in"
+        },
+        {
+          "value": "other",
+          "label": "Something else"
+        }
+      ]
+    },
+    {
+      "id": "ac-message",
+      "type": "paragraph",
+      "label": "Message",
+      "required": false
+    },
+    {
+      "id": "ac-page",
+      "type": "single_line",
+      "label": "Associate page",
+      "hidden": true,
+      "valueSource": "pageUrl"
+    },
+    {
+      "id": "ac-utm-source",
+      "type": "single_line",
+      "label": "Campaign source",
+      "hidden": true,
+      "valueSource": "utmSource"
+    },
+    {
+      "id": "ac-utm-campaign",
+      "type": "single_line",
+      "label": "Campaign",
+      "hidden": true,
+      "valueSource": "utmCampaign"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "ac-default",
+      "name": "Sales managers (per-associate routing to be added)",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "sales-manager",
+      "scopeMode": "dynamic"
+    }
+  ],
+  "confirmations": [
+    {
+      "id": "ac-confirm",
+      "name": "Default",
+      "type": "message",
+      "logic": "AND",
+      "rules": [],
+      "message": "Thanks — your message is on its way. You will hear back shortly."
+    }
+  ]
+}

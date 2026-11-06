@@ -1,0 +1,71 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "profile",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "associate-profile",
+        "values": {
+          "name": "David Milliken",
+          "firstName": "David",
+          "title": "General Manager",
+          "locations": "Greer & Greenville, SC",
+          "locationSlug": "greenville",
+          "headshot": {
+            "src": "",
+            "alt": "David Milliken, General Manager"
+          },
+          "bio": "[Short biography — 60 to 120 words from the worksheet: background, how long with Carolina International Trucks, what customers can expect when they work with David.]",
+          "experience": "[00+ yrs]",
+          "experienceNote": "[One sentence on industry experience from the worksheet.]",
+          "specialties": [
+            {
+              "name": "[Specialty 1]",
+              "note": "[One line from the worksheet]"
+            },
+            {
+              "name": "[Specialty 2]",
+              "note": "[One line from the worksheet]"
+            },
+            {
+              "name": "[Specialty 3]",
+              "note": "[One line from the worksheet]"
+            },
+            {
+              "name": "[Specialty 4]",
+              "note": "[One line from the worksheet]"
+            }
+          ],
+          "markets": [
+            {
+              "name": "[Market 1]"
+            },
+            {
+              "name": "[Market 2]"
+            },
+            {
+              "name": "[Market 3]"
+            },
+            {
+              "name": "[Market 4]"
+            }
+          ],
+          "phone": "(864) 968-2221",
+          "phoneUrl": "tel:+18649682221",
+          "email": "DMilliken@carolinainternational.com",
+          "ctaLabel": "Schedule a visit",
+          "ctaUrl": "#contact",
+          "welcome": "[Personal welcome message — one or two sentences, in David's own words.]",
+          "links": [],
+          "inventoryUrl": "#",
+          "qrCode": {
+            "src": "",
+            "alt": "QR code for David Milliken's page"
+          },
+          "qrCaption": "Scan to save David's page"
+        }
+      }
+    }
+  ]
+}

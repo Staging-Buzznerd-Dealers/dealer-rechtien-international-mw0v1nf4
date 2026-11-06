@@ -181,5 +181,24 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "team-david-milliken",
+    "title": "David Milliken — General Manager, Greer & Greenville, SC",
+    "description": "Meet David Milliken, General Manager at Carolina International Trucks in Greer and Greenville, SC. Contact David, see his inventory and send a message.",
+    "path": "/team/david-milliken",
+    "out": "team/david-milliken/index.html",
+    "dir": "team-david-milliken",
+    "group": "team",
+    "status": "draft",
+    "seo": {
+      "ogImage": null,
+      "noindex": true
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]
