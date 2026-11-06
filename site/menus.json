@@ -754,30 +754,53 @@
           "ref": null,
           "children": [
             {
-              "id": "item-43",
-              "label": "Contact Us",
-              "type": "url",
-              "url": "/contact",
+              "id": "hn-about-col",
+              "label": "About Us",
+              "type": "label",
               "ref": null,
-              "children": []
-            },
-            {
-              "id": "item-43",
-              "label": "Careers",
-              "type": "url",
-              "url": "/careers",
-              "ref": null,
-              "children": []
-            },
-            {
-              "id": "item-43",
-              "label": "Meet The Team",
-              "type": "url",
-              "url": "#",
-              "ref": null,
-              "children": []
+              "url": null,
+              "newTab": false,
+              "children": [
+                {
+                  "id": "hn-about-overview",
+                  "label": "About Us",
+                  "type": "page",
+                  "ref": "about",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
+                },
+                {
+                  "id": "hn-about-contact",
+                  "label": "Contact Us",
+                  "type": "url",
+                  "ref": null,
+                  "url": "/contact",
+                  "newTab": false,
+                  "children": []
+                },
+                {
+                  "id": "hn-about-careers",
+                  "label": "Careers",
+                  "type": "url",
+                  "ref": null,
+                  "url": "/careers",
+                  "newTab": false,
+                  "children": []
+                },
+                {
+                  "id": "hn-about-team",
+                  "label": "Meet The Team",
+                  "type": "page",
+                  "ref": "team",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
+                }
+              ]
             }
-          ]
+          ],
+          "newTab": false
         }
       ]
     },
