@@ -796,6 +796,15 @@
                   "url": null,
                   "newTab": false,
                   "children": []
+                },
+                {
+                  "id": "hn-about-associate",
+                  "label": "Sales Associate Profile",
+                  "type": "page",
+                  "ref": "team-david-milliken",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 }
               ]
             }
