@@ -163,5 +163,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "international-360",
+    "title": "International 360 (I360) Truck Fleet Management",
+    "description": "International 360 fleet management and repair communication at Rechtien International in South Florida and Carolina International in South Carolina.",
+    "path": "/international-360",
+    "out": "international-360/index.html",
+    "dir": "international-360",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

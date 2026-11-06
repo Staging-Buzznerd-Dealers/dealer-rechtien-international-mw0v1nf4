@@ -1,0 +1,1246 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center",
+        "anchor": "top"
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "hero-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-crumbs",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Home</a> / International 360",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "International 360: truck fleet management.",
+                    "headingLevel": 1,
+                    "align": "center",
+                    "eyebrow": "Rechtien International & Carolina International"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "International 360 (I360) is a communication tool designed to accelerate the repair process, streamline communications with our service departments, and drive greater uptime.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "request-360-info"
+                      },
+                      {
+                        "ctaId": "service-page",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "styles": {
+        "base": {
+          "backgroundImage": "/images/hero-truck.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
+          "background": "#151515"
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "intro-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "mobile",
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "intro-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "intro-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Keep your entire fleet running smoothly for years to come.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "What International 360 does"
+                  }
+                },
+                {
+                  "id": "intro-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "Truck fleet management is key to a successful business, but keeping track of so many vehicles and data points can feel overwhelming. International 360 makes the process simple and easy. The International 360 program is a state-of-the-art communication system that pools your data in one convenient place.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you want to view the status of a single truck or connect with our service department for preventive maintenance, I360 puts everything you need at your fingertips. Find out more about this innovative truck fleet management program with Rechtien International Trucks in South Florida and Carolina International Trucks in South Carolina.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-t3",
+                  "type": "text",
+                  "props": {
+                    "text": "I360 is an all-new communication and fleet management solution that seeks to maximize business efficiency while minimizing total costs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "request-360-info"
+                      },
+                      {
+                        "ctaId": "service-page",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "intro-media",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "intro-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/international-360-diagram.jpg",
+                      "alt": "International 360 connects fleet managers, dealers and service centers, connected fleet providers and all-makes fleet assets"
+                    },
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-cap",
+                  "type": "text",
+                  "props": {
+                    "text": "International 360 connects fleet managers, dealers and service centers, connected fleet providers and all-makes fleet assets.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stats",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "stats-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "stats-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "stats-band",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "24+",
+                        "label": "Industry-leading telematics providers that I360 works with"
+                      },
+                      {
+                        "value": "24 hrs",
+                        "label": "Repair order status is updated every 24 hours"
+                      },
+                      {
+                        "value": "5 years",
+                        "label": "Subscription included with any new LT Series, RH Series or LoneStar (Carolina International)"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "what",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "what-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "what-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "what-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "What is International 360?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "How I360 helps"
+                  }
+                },
+                {
+                  "id": "what-t",
+                  "type": "text",
+                  "props": {
+                    "text": "I360 seeks to maximize business efficiency while minimizing total costs. It does that in three ways:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "what-grid-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "what-grid-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "what-grid",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 3,
+                    "items": [
+                      {
+                        "label": "Maximizing uptime",
+                        "desc": "Every day of downtime can cost your business over $1,000. I360 keeps you up to date on truck maintenance to prevent costly repairs, which helps to boost productivity."
+                      },
+                      {
+                        "label": "Accelerated repairs",
+                        "desc": "Besides the built-in preventive maintenance program, the system puts you in control of the process when repairs are needed. Get an instant estimate, schedule appointments, and even find parts within dealership inventory with the click of a button."
+                      },
+                      {
+                        "label": "Asset utilization",
+                        "desc": "Your I360 calendar shows the repair status and estimated time of completion for every truck in your fleet, so you can plan more efficiently."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "service",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "service-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "service-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "service-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Complete service information at your fingertips.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Everything in one place"
+                  }
+                },
+                {
+                  "id": "service-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Driving efficiency starts with having the right information in the right place. With International 360 you get:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "service-grid-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "service-grid-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "service-grid",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 2,
+                    "items": [
+                      {
+                        "label": "Seamless communications with dealers and up-to-date repair status"
+                      },
+                      {
+                        "label": "Complete VIN-based information: asset specs, complete parts catalog, remote health data, and more"
+                      },
+                      {
+                        "label": "Online service request initiation and estimate approvals"
+                      },
+                      {
+                        "label": "Complete service history, up-to-date campaign information, and engine calibration status. Integration with parts inventory systems shows which dealer locations have the parts you need on the shelf now."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dash",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "dash-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "dash-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "dash-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/international-360-dashboard.jpg",
+                      "alt": "International 360 repair dashboard showing all repairs, parts ordered and service requests on two computer monitors"
+                    },
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "dash-cap",
+                  "type": "text",
+                  "props": {
+                    "text": "The International 360 dashboard shows every repair, its status and estimated time of completion in one view.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "features-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "features-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "features-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "International 360 features.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Features"
+                  }
+                },
+                {
+                  "id": "features-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Ten tools in one portal, from filtered views of open jobs to online estimate approvals.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "features-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "stackOn": "tablet",
+            "align": "start"
+          },
+          "children": [
+            {
+              "id": "features-list",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "features-grid",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Filtered views of open jobs"
+                      },
+                      {
+                        "label": "Repair order status updated every 24 hours"
+                      },
+                      {
+                        "label": "VIN-based information"
+                      },
+                      {
+                        "label": "Comprehensive parts catalogs"
+                      },
+                      {
+                        "label": "Fleet-initiated service requests"
+                      },
+                      {
+                        "label": "Record of notes between fleet and dealer"
+                      },
+                      {
+                        "label": "Estimated time of completion"
+                      },
+                      {
+                        "label": "Up-to-date vehicle health reports"
+                      },
+                      {
+                        "label": "Online estimate approvals"
+                      },
+                      {
+                        "label": "“Feedback needed” notifications"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "features-media",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "features-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/international-360-features.jpg",
+                      "alt": "International 360 portal with ten numbered features: filtered views of open jobs, repair order status, VIN-based information, parts catalogs, service requests, notes, estimated completion, vehicle health reports, estimate approvals and feedback notifications"
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "features-more-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "features-more-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "features-more",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 2,
+                    "items": [
+                      {
+                        "label": "Up-to-date status",
+                        "desc": "Latest status of vehicles in service, along with notes between dealer and vehicle owner, estimated time of completion, and more."
+                      },
+                      {
+                        "label": "Integrated data",
+                        "desc": "Purchase and repair order numbers, links to vehicle health reports, estimate reviews and approvals, and dealer parts availability all in one easy-to-use tool."
+                      },
+                      {
+                        "label": "Easily sorted data",
+                        "desc": "Sort views of vehicles in service by filters including action required, driver waiting on repair, vehicle ready for pickup, company domiciles, and more."
+                      },
+                      {
+                        "label": "Insights delivered where you need them",
+                        "desc": "Access updates and communicate with dealers through our intuitive online portal, your email inbox, or direct integration into your preferred fleet maintenance management solutions."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "help",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "help-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "help-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "help-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "How can International 360 help you?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Works with the systems you already use"
+                  }
+                },
+                {
+                  "id": "help-t",
+                  "type": "text",
+                  "props": {
+                    "text": "If you already have a truck fleet management system, you might be surprised by just how seamlessly I360 can enhance your daily operations.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "help-grid-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "help-grid-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "help-grid",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 3,
+                    "items": [
+                      {
+                        "label": "Versatility",
+                        "desc": "I360 works with all makes, all models, with no surcharges. That means no monthly or annual per-VIN surcharges."
+                      },
+                      {
+                        "label": "Flexibility",
+                        "desc": "The I360 system works with over 24 industry-leading telematics providers, so you can quickly gain access to the data that you need."
+                      },
+                      {
+                        "label": "Customization",
+                        "desc": "The I360 system is compatible with a wide variety of fleet maintenance software providers, which means it won't hinder your day-to-day operations."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "standard",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "standard-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "standard-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "standard-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Get it standard.",
+                    "headingLevel": 2,
+                    "align": "center",
+                    "eyebrow": "Included with new trucks"
+                  }
+                },
+                {
+                  "id": "standard-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Carolina International Trucks notes that a five-year subscription to International 360 for your entire all-makes fleet is included with the purchase of any new International LT Series, RH Series, and LoneStar models.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "standard-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Ready to revolutionize your business? International 360 has a free mobile app to gain access to I360. Contact us to find out how to get started.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "standard-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "request-360-info"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "learn",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "request"
+      },
+      "children": [
+        {
+          "id": "learn-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet",
+            "align": "start"
+          },
+          "children": [
+            {
+              "id": "learn-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "learn-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Learn more with Rechtien International and Carolina International.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Request more information"
+                  }
+                },
+                {
+                  "id": "learn-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "Ready to learn more about the International 360 program? Contact us at Rechtien International Trucks or Carolina International Trucks for more information, and see how we can become part of your preventive maintenance program.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "learn-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Read about how Werner Enterprises is using International 360 to improve repair management process efficiency and achieve greater uptime.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "learn-docs",
+                  "type": "row",
+                  "props": {
+                    "gap": 2,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "learn-doc-1",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "learn-dname-1",
+                          "type": "heading",
+                          "props": {
+                            "text": "International 360 (I360) brochure",
+                            "headingLevel": 4,
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "id": "learn-dmeta-1",
+                          "type": "text",
+                          "props": {
+                            "text": "Brochure · PDF",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "learn-dact-1",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "label": "Open brochure",
+                                "url": "",
+                                "style": "primary"
+                              }
+                            ],
+                            "align": "left"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "learn-form",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "learn-form-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Request more information",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "eyebrow": "Contact us"
+                  }
+                },
+                {
+                  "id": "learn-form-t",
+                  "type": "text",
+                  "props": {
+                    "text": "We would love to hear from you. Please fill out this form and we will get in touch with you shortly.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "learn-widget",
+                  "type": "form",
+                  "props": {
+                    "formId": "international-360"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "locations",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "parts-contacts",
+        "values": {
+          "eyebrow": "Where to learn more",
+          "heading": "International 360 at our locations.",
+          "groups": [
+            {
+              "company": "Rechtien International Trucks",
+              "region": "South Florida · 5 locations",
+              "intro": "Contact Rechtien International Trucks for more information about International 360.",
+              "lineLabel": "",
+              "line": "",
+              "lineUrl": "",
+              "locations": [
+                {
+                  "name": "Miami",
+                  "street": "7227 NW 74th Ave",
+                  "city": "Miami, FL 33166",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "305-888-0111",
+                  "phoneUrl": "tel:+13058880111",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=7227%20NW%2074th%20Ave%2C%20Miami%2C%20FL%2033166"
+                },
+                {
+                  "name": "Ft. Lauderdale",
+                  "street": "2565 St Rd 84",
+                  "city": "Ft. Lauderdale, FL 33312",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "954-957-8390",
+                  "phoneUrl": "tel:+19549578390",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2565%20St%20Rd%2084%2C%20Ft.%20Lauderdale%2C%20FL%2033312"
+                },
+                {
+                  "name": "Riviera Beach",
+                  "street": "3787 Interstate Park Rd W.",
+                  "city": "Riviera Beach, FL 33404",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "561-882-9050",
+                  "phoneUrl": "tel:+15618829050",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=3787%20Interstate%20Park%20Rd%20W.%2C%20Riviera%20Beach%2C%20FL%2033404"
+                },
+                {
+                  "name": "Ft. Pierce",
+                  "street": "1699 North US Highway 1",
+                  "city": "Fort Pierce, FL 34950",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "772-466-1842",
+                  "phoneUrl": "tel:+17724661842",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=1699%20North%20US%20Highway%201%2C%20Fort%20Pierce%2C%20FL%2034950"
+                },
+                {
+                  "name": "Ft. Myers",
+                  "street": "2761 Edison Avenue",
+                  "city": "Ft. Myers, FL 33916",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "239-334-1000",
+                  "phoneUrl": "tel:+12393341000",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2761%20Edison%20Avenue%2C%20Ft.%20Myers%2C%20FL%2033916"
+                }
+              ]
+            },
+            {
+              "company": "Carolina International Trucks",
+              "region": "South Carolina · 6 locations",
+              "intro": "Contact Carolina International Trucks for more information about International 360.",
+              "lineLabel": "",
+              "line": "",
+              "lineUrl": "",
+              "locations": [
+                {
+                  "name": "Charleston",
+                  "street": "2580 Oscar Johnson Dr",
+                  "city": "Charleston, SC 29405",
+                  "tollFree": "(800) 666-3040",
+                  "tollFreeUrl": "tel:+18006663040",
+                  "phone": "(843) 747-3040",
+                  "phoneUrl": "tel:+18437473040",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2580%20Oscar%20Johnson%20Dr%2C%20Charleston%2C%20SC%2029405"
+                },
+                {
+                  "name": "Columbia",
+                  "street": "1619 Bluff Road",
+                  "city": "Columbia, SC 29201",
+                  "tollFree": "(800) 868-4923",
+                  "tollFreeUrl": "tel:+18008684923",
+                  "phone": "(803) 799-4923",
+                  "phoneUrl": "tel:+18037994923",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=1619%20Bluff%20Road%2C%20Columbia%2C%20SC%2029201"
+                },
+                {
+                  "name": "Florence",
+                  "street": "350 E Campground Rd",
+                  "city": "Florence, SC 29506",
+                  "tollFree": "(800) 477-3894",
+                  "tollFreeUrl": "tel:+18004773894",
+                  "phone": "(843) 468-9560",
+                  "phoneUrl": "tel:+18434689560",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=350%20E%20Campground%20Rd%2C%20Florence%2C%20SC%2029506"
+                },
+                {
+                  "name": "Greer",
+                  "street": "2520 Hwy 14 S",
+                  "city": "Greer, SC 29650",
+                  "tollFree": "(800) 284-0050",
+                  "tollFreeUrl": "tel:+18002840050",
+                  "phone": "(864) 848-0050",
+                  "phoneUrl": "tel:+18648480050",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2520%20Hwy%2014%20S%2C%20Greer%2C%20SC%2029650"
+                },
+                {
+                  "name": "Greenville",
+                  "street": "1501 Whitehorse Road",
+                  "city": "Greenville, SC 29605",
+                  "tollFree": "(866) 520-0440",
+                  "tollFreeUrl": "tel:+18665200440",
+                  "phone": "(864) 335-0440",
+                  "phoneUrl": "tel:+18643350440",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=1501%20Whitehorse%20Road%2C%20Greenville%2C%20SC%2029605"
+                },
+                {
+                  "name": "Conway",
+                  "street": "299 East Cox Ferry Road",
+                  "city": "Conway, SC 29526",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "(843) 438-3130",
+                  "phoneUrl": "tel:+18434383130",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=299%20East%20Cox%20Ferry%20Road%2C%20Conway%2C%20SC%2029526"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "faq",
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "faq-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "faq-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "International 360 FAQ"
+                  }
+                },
+                {
+                  "id": "faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "What is International 360?",
+                          "a": "International 360 (I360) is a communication tool designed to accelerate the repair process, streamline communications with our service department, and drive greater uptime. It is an all-new communication and fleet management solution that seeks to maximize business efficiency while minimizing total costs."
+                        },
+                        {
+                          "q": "Does I360 work with all makes and models?",
+                          "a": "Yes. I360 works with all makes and all models, with no surcharges — no monthly or annual per-VIN surcharges."
+                        },
+                        {
+                          "q": "Which telematics and maintenance systems does it work with?",
+                          "a": "The I360 system works with over 24 industry-leading telematics providers, and it is compatible with a wide variety of fleet maintenance software providers, so it will not hinder your day-to-day operations."
+                        },
+                        {
+                          "q": "What can I see and do in I360?",
+                          "a": "You can see up-to-date repair status, VIN-based information, repair order numbers, vehicle health reports, parts availability and estimated time of completion. You can start service requests online, approve estimates, schedule appointments, and find parts within dealership inventory."
+                        },
+                        {
+                          "q": "How often is repair order status updated?",
+                          "a": "Repair order status is updated every 24 hours."
+                        },
+                        {
+                          "q": "Is I360 included with new trucks?",
+                          "a": "Carolina International Trucks notes that a five-year subscription to International 360 for your entire all-makes fleet is included with the purchase of any new International LT Series, RH Series, and LoneStar models. Ask your dealership about your specific purchase."
+                        },
+                        {
+                          "q": "How do I get started?",
+                          "a": "Send a request using the form on this page, or contact the Rechtien International or Carolina International location nearest you. International 360 also has a free mobile app."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Put your fleet data at your fingertips.",
+                    "headingLevel": 2,
+                    "align": "center",
+                    "eyebrow": "Ready to learn more?"
+                  }
+                },
+                {
+                  "id": "cta-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Contact us about International 360 and see how it can become part of your preventive maintenance program.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btn",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "request-360-info"
+                      },
+                      {
+                        "ctaId": "call-main"
+                      },
+                      {
+                        "ctaId": "schedule-service",
+                        "style": "secondary"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
