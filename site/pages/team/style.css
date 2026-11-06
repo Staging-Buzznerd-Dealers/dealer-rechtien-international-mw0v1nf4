@@ -1,0 +1,57 @@
+/* ==========================================================================
+   Meet the Team (/team) — loaded on this page only. Base type, tokens and buttons
+   match the other page-scoped stylesheets so the shared chrome renders the same.
+   The chips, count and team sections are the team-directory component.
+   ========================================================================== */
+:root{
+  --accent:#ff6b3d; --accent-dark:#e0522a;
+  --ink:#151515; --ink-dark:#0c0c0c;
+  --muted:#6b6a66; --line:#d8d8d4; --card:#ffffff; --paper:#e6e6e4;
+  --night:#2b2a27;
+  --text-h1:clamp(1.75rem,3.05vw,2.875rem);
+  --text-h2:clamp(1.5rem,2.45vw,2.25rem);
+  --text-h3:1.375rem;
+  --text-body:1rem; --text-small:.875rem; --text-eyebrow:.6875rem;
+  --weight-heading:800; --leading-heading:1.1;
+  --container:1266px;
+  --radius-nav:4px; --radius-input:2px; --radius-card:0; --radius-chip:4px;
+}
+body{background:#fff;color:var(--ink);font-weight:400;letter-spacing:0;-webkit-font-smoothing:antialiased}
+
+/* ---- Type ---------------------------------------------------------------- */
+.bz-block h1,.bz-block h2,.bz-block h3{text-transform:uppercase;letter-spacing:0;font-weight:700}
+.bz-block h1{font-size:var(--text-h1);line-height:1.04}
+.bz-block h2{font-size:clamp(1.375rem,2vw,1.8125rem);line-height:1.08;margin-bottom:var(--space-5)}
+.bz-block p{font-size:.9375rem;line-height:1.75}
+.bz-block .bz-eyebrow,.bz-eyebrow{font:700 var(--text-eyebrow)/1.4 var(--font-body);letter-spacing:.22em;color:var(--muted);margin-bottom:var(--space-2)}
+.bz-block--heading{padding-block:0 var(--space-2)}
+
+/* ---- Buttons ------------------------------------------------------------- */
+.bz-btns{margin-block:var(--space-5) 0}
+.bz-btn{font:700 .75rem/1 var(--font-body);letter-spacing:.12em;text-transform:uppercase;min-height:46px;padding:0 22px;border-radius:4px;border:1px solid var(--ink);transition:background-color .18s ease,color .18s ease,border-color .18s ease,transform .18s ease}
+.bz-btn--primary{background:#fff;color:var(--ink);border-color:#fff}
+.bz-btn--primary:hover{background:transparent;color:#fff}
+.bz-btn--secondary{background:#fff;color:var(--ink);border-color:var(--ink)}
+.bz-btn--secondary:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.bz-btn--link{background:none;border:0;border-radius:0;min-height:0;padding:0;color:var(--ink);text-decoration:none;gap:10px}
+.bz-btn--link::after{content:"";width:15px;height:15px;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12h15M13 6l6 6-6 6'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12h15M13 6l6 6-6 6'/%3E%3C/svg%3E") center/contain no-repeat;transition:transform .18s ease}
+.bz-btn--link:hover::after{transform:translateX(4px)}
+
+
+
+
+
+/* ---- Hero: photo fills the band, copy sits over it ------------------------- */
+.bz-section[data-bz-node="hero"]{position:relative;min-height:clamp(440px,39vw,560px);display:flex;flex-direction:column;justify-content:center;padding:112px 0 72px;color:#fff;isolation:isolate;background:var(--night);overflow:hidden}
+.bz-section[data-bz-node="hero"]::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(21,21,21,.6) 0%,rgba(21,21,21,.4) 45%,rgba(21,21,21,.7) 100%)}
+[data-bz-node="hero-bg"]{position:absolute;inset:0;z-index:0;padding:0;margin:0}
+[data-bz-node="hero-bg"] .bz-container,[data-bz-node="hero-bg"] .bz-figure,[data-bz-node="hero-bg"] img{width:100%;max-width:none;height:100%;margin:0;padding:0;border-radius:0;object-fit:cover}
+[data-bz-node="hero"]>.bz-container{max-width:none;padding-inline:0}
+[data-bz-node="hero-row"]{position:relative;z-index:2;max-width:920px;margin-inline:auto;padding-inline:var(--space-4);width:100%;box-sizing:border-box}
+[data-bz-node="hero"] .bz-block{padding-block:0}
+[data-bz-node="hero-crumbs"] p{font:700 .625rem/1.4 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:#fff;margin:0 0 var(--space-3)}
+[data-bz-node="hero-crumbs"] a{color:#fff;border-bottom:1px solid transparent}
+[data-bz-node="hero-crumbs"] a:hover{border-bottom-color:currentColor}
+[data-bz-node="hero-h"] h1{color:#fff;margin:0 auto var(--space-4);max-width:16em;text-wrap:balance;text-shadow:0 2px 24px rgba(0,0,0,.35)}
+[data-bz-node="hero-lede"] p{color:#fff;max-width:36rem;margin:0 auto;font-size:.9375rem;line-height:1.7;text-shadow:0 1px 14px rgba(0,0,0,.4)}
+[data-bz-node="hero-cta"] .bz-btns{justify-content:center;margin-top:var(--space-5)}

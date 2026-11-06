@@ -34,9 +34,9 @@
             {
               "id": "about-team",
               "label": "Our team",
-              "type": "url",
-              "ref": null,
-              "url": "/about#team",
+              "type": "page",
+              "ref": "team",
+              "url": null,
               "newTab": false,
               "children": []
             },
@@ -325,9 +325,9 @@
             {
               "id": "nc-team",
               "label": "Meet the Team",
-              "type": "url",
-              "ref": null,
-              "url": "/about#team",
+              "type": "page",
+              "ref": "team",
+              "url": null,
               "newTab": false,
               "children": []
             },

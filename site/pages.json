@@ -200,5 +200,24 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "team",
+    "title": "Meet the Team",
+    "description": "Meet the Rechtien International Trucks and Carolina International Trucks team: executive staff and the people at every location in South Florida and South Carolina.",
+    "path": "/team",
+    "out": "team/index.html",
+    "dir": "team",
+    "group": "team",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

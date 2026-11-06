@@ -1,0 +1,922 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center",
+        "anchor": "top"
+      },
+      "children": [
+        {
+          "id": "hero-bg",
+          "type": "image",
+          "props": {
+            "image": {
+              "src": "/images/carolina-dealership.jpg",
+              "alt": "Carolina International Trucks dealership"
+            },
+            "width": "full"
+          }
+        },
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "hero-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-crumbs",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Home</a> / <a href=\"/about\">Our story</a> / Meet the team",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Meet the Carolina-Rechtien Team",
+                    "headingLevel": 1,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Rechtien International Trucks and Carolina International Trucks share one team across 11 locations in South Florida and South Carolina — executive staff, truck sales, parts, service and store management. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "directory",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "team-directory",
+        "values": {
+          "tagline": "Trucks, trailers, parts and service — one team across 11 locations.",
+          "groups": [
+            {
+              "key": "executive",
+              "chip": "Executive Staff",
+              "title": "Executive Staff",
+              "intro": "Leadership across Rechtien International Trucks and Carolina International Trucks. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+              "members": [
+                {
+                  "name": "Lorem Ipsum",
+                  "title": "President",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Dolor Sitamet",
+                  "title": "Vice President",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Consec Tetur",
+                  "title": "Chief Operating Officer",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Adipis Cingelit",
+                  "title": "Chief Financial Officer",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Sedo Eiusmod",
+                  "title": "VP, Sales",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Tempor Incidid",
+                  "title": "VP, Parts",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Utlab Oredolore",
+                  "title": "VP, Service",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Magna Aliqua",
+                  "title": "VP, Marketing",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                }
+              ]
+            },
+            {
+              "key": "miami",
+              "chip": "Miami",
+              "title": "Meet the Miami Team",
+              "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+              "members": [
+                {
+                  "name": "Enim Adminim",
+                  "title": "General Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Veniam Quisnos",
+                  "title": "Parts Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Trud Exercita",
+                  "title": "Service Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Ullam Colabor",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Nisi Utaliquip",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Exea Commodo",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                }
+              ]
+            },
+            {
+              "key": "fort-lauderdale",
+              "chip": "Ft. Lauderdale",
+              "title": "Meet the Ft. Lauderdale Team",
+              "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+              "members": [
+                {
+                  "name": "Duis Auteirure",
+                  "title": "General Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Dolor Inrepre",
+                  "title": "Parts Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Hend Eritinvol",
+                  "title": "Service Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Uptate Velitesse",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Cillum Dolore",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Fugiat Nulla",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                }
+              ]
+            },
+            {
+              "key": "riviera-beach",
+              "chip": "Riviera Beach",
+              "title": "Meet the Riviera Beach Team",
+              "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+              "members": [
+                {
+                  "name": "Paria Turexcep",
+                  "title": "General Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Teursint Occae",
+                  "title": "Parts Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Cati Cupidatat",
+                  "title": "Service Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Nonpro Ident",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Lorem Ipsum",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Dolor Sitamet",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                }
+              ]
+            },
+            {
+              "key": "fort-pierce",
+              "chip": "Ft. Pierce",
+              "title": "Meet the Ft. Pierce Team",
+              "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+              "members": [
+                {
+                  "name": "Consec Tetur",
+                  "title": "General Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Adipis Cingelit",
+                  "title": "Parts Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Sedo Eiusmod",
+                  "title": "Service Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Tempor Incidid",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Utlab Oredolore",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Magna Aliqua",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                }
+              ]
+            },
+            {
+              "key": "fort-myers",
+              "chip": "Ft. Myers",
+              "title": "Meet the Ft. Myers Team",
+              "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+              "members": [
+                {
+                  "name": "Enim Adminim",
+                  "title": "General Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Veniam Quisnos",
+                  "title": "Parts Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Trud Exercita",
+                  "title": "Service Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Ullam Colabor",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Nisi Utaliquip",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Exea Commodo",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                }
+              ]
+            },
+            {
+              "key": "columbia",
+              "chip": "Columbia",
+              "title": "Meet the Columbia Team",
+              "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+              "members": [
+                {
+                  "name": "Duis Auteirure",
+                  "title": "General Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Dolor Inrepre",
+                  "title": "Parts Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Hend Eritinvol",
+                  "title": "Service Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Uptate Velitesse",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Cillum Dolore",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Fugiat Nulla",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                }
+              ]
+            },
+            {
+              "key": "charleston",
+              "chip": "Charleston",
+              "title": "Meet the Charleston Team",
+              "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+              "members": [
+                {
+                  "name": "Paria Turexcep",
+                  "title": "General Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Teursint Occae",
+                  "title": "Parts Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Cati Cupidatat",
+                  "title": "Service Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Nonpro Ident",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Lorem Ipsum",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Dolor Sitamet",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                }
+              ]
+            },
+            {
+              "key": "florence",
+              "chip": "Florence",
+              "title": "Meet the Florence Team",
+              "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+              "members": [
+                {
+                  "name": "Consec Tetur",
+                  "title": "General Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Adipis Cingelit",
+                  "title": "Parts Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Sedo Eiusmod",
+                  "title": "Service Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Tempor Incidid",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Utlab Oredolore",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Magna Aliqua",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                }
+              ]
+            },
+            {
+              "key": "conway",
+              "chip": "Conway",
+              "title": "Meet the Conway Team",
+              "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+              "members": [
+                {
+                  "name": "Enim Adminim",
+                  "title": "General Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Veniam Quisnos",
+                  "title": "Parts Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Trud Exercita",
+                  "title": "Service Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Ullam Colabor",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Nisi Utaliquip",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Exea Commodo",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                }
+              ]
+            },
+            {
+              "key": "greenville",
+              "chip": "Greenville",
+              "title": "Meet the Greenville Team",
+              "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+              "members": [
+                {
+                  "name": "Duis Auteirure",
+                  "title": "General Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Dolor Inrepre",
+                  "title": "Parts Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Hend Eritinvol",
+                  "title": "Service Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Uptate Velitesse",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Cillum Dolore",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Fugiat Nulla",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                }
+              ]
+            },
+            {
+              "key": "greer",
+              "chip": "Greer",
+              "title": "Meet the Greer Team",
+              "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+              "members": [
+                {
+                  "name": "Paria Turexcep",
+                  "title": "General Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Teursint Occae",
+                  "title": "Parts Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Cati Cupidatat",
+                  "title": "Service Manager",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Nonpro Ident",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Lorem Ipsum",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Dolor Sitamet",
+                  "title": "Account Executive",
+                  "photo": {
+                    "src": "",
+                    "alt": ""
+                  },
+                  "inventoryUrl": "/store/inventory",
+                  "profileUrl": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

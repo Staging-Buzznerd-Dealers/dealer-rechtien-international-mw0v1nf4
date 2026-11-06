@@ -182,7 +182,7 @@
                   "id": "ap-crumbs",
                   "type": "text",
                   "props": {
-                    "text": "<a href=\"/\">Home</a> / <a href=\"/about#team\">Our team</a> / {{name}}",
+                    "text": "<a href=\"/\">Home</a> / <a href=\"/team\">Our team</a> / {{name}}",
                     "align": "left",
                     "width": "full"
                   }
