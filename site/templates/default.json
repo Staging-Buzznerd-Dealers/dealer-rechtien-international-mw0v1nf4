@@ -3,6 +3,7 @@
   "id": "default",
   "name": "Site template",
   "conditions": [{ "type": "entireSite", "ref": null }],
+  "css": "/* Logo sizes. The platform sets images inside blocks to height:auto, which beats the logo block's own height,\n   so the heights are stated here (same approach as the Homepage and Inventory templates). */\n[data-bz-node=\"logo\"] .bz-logo__img{height:40px;width:auto;max-width:none}\n[data-bz-node=\"footer-logo\"] .bz-logo__img{height:36px;width:auto;max-width:none}\n@media (max-width:640px){[data-bz-node=\"logo\"] .bz-logo__img{height:32px}}\n",
   "nodes": [
     {
       "id": "header",
@@ -18,7 +19,7 @@
               "id": "header-brand",
               "type": "column",
               "props": { "span": 3, "align": "center" },
-              "children": [{ "id": "logo", "type": "logo", "props": { "url": "/", "height": 34 } }]
+              "children": [{ "id": "logo", "type": "logo", "props": { "image": { "src": "/logos/rechtien-truck-group-logo-black.png", "alt": "International Rechtien Truck Group", "width": 1200, "height": 199 }, "url": "/", "height": 40 } }]
             },
             {
               "id": "header-nav",
@@ -63,7 +64,7 @@
               "id": "footer-brand",
               "type": "column",
               "props": { "span": 4 },
-              "children": [{ "id": "footer-logo", "type": "logo", "props": { "url": "/", "height": 28 } }]
+              "children": [{ "id": "footer-logo", "type": "logo", "props": { "image": { "src": "/logos/rechtien-truck-group-logo-white.png", "alt": "International Rechtien Truck Group", "width": 1200, "height": 199 }, "url": "/", "height": 36 } }]
             },
             {
               "id": "footer-links",
