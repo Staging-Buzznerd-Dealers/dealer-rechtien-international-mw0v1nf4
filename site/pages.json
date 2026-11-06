@@ -145,5 +145,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "mobile-service",
+    "title": "Mobile Truck Service | Idealease Mobile Service",
+    "description": "Idealease Mobile Service brings truck maintenance to your location, at Rechtien International in South Florida and Carolina International in South Carolina.",
+    "path": "/mobile-service",
+    "out": "mobile-service/index.html",
+    "dir": "mobile-service",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

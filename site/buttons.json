@@ -283,5 +283,42 @@
     "intent": "mobile-service",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "schedule-mobile-service",
+    "label": "Schedule mobile service",
+    "url": null,
+    "formId": "service-appointment",
+    "style": "primary",
+    "intent": "book-service",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "rental-lease-inquiry",
+    "label": "Rental or lease inquiry",
+    "url": "/lease-rental#requests",
+    "style": "secondary",
+    "intent": "lease-inquiry",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "lease-rental-page",
+    "label": "Lease & rental",
+    "url": "/lease-rental",
+    "style": "link",
+    "intent": "lease-rental",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "service-page",
+    "label": "Service department",
+    "url": "/service",
+    "style": "link",
+    "intent": "service",
+    "newTab": false,
+    "active": true
   }
 ]
