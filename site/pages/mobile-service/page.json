@@ -1,0 +1,816 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center",
+        "anchor": "top"
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "hero-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-crumbs",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Home</a> / Mobile service",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Mobile service that comes to you.",
+                    "headingLevel": 1,
+                    "align": "center",
+                    "eyebrow": "Idealease Mobile Service"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Schedule service when your vehicles are not operating — during off hours or on weekends — at your location, with Idealease Mobile Service from Rechtien International and Carolina International.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-mobile-service"
+                      },
+                      {
+                        "ctaId": "rental-lease-inquiry"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "styles": {
+        "base": {
+          "backgroundImage": "/images/hero-truck.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
+          "background": "#151515"
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "intro-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "mobile",
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "intro-copy",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "intro-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Is downtime for vehicle service and repairs impacting your business?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Mobile service"
+                  }
+                },
+                {
+                  "id": "intro-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "With Idealease Mobile Service, you can schedule service when your vehicles are not operating — during off hours or on weekends — at your location. Highly skilled technicians and well-equipped maintenance vehicles bring service and parts to you, and can perform up to 80% of all routine and preventive commercial truck maintenance at your location.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Improve vehicle uptime, reduce fuel costs and driver downtime for your fleet of five or more commercial trucks with cost-effective, convenient Mobile Service.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-t3",
+                  "type": "text",
+                  "props": {
+                    "text": "Idealease of South Florida, with Rechtien International Trucks, offers mobile service alongside full-service semi truck leasing and dedicated maintenance. Carolina Idealease, with Carolina International Trucks in South Carolina, also offers mobile service for its customers.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "intro-logo",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "intro-logo-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/logos/idealease.png",
+                      "alt": "Idealease truck leasing and rental logo"
+                    },
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-logo-cap",
+                  "type": "text",
+                  "props": {
+                    "text": "Mobile service through Idealease, in South Florida and South Carolina.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stats",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "stats-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "stats-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "stats-band",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "Up to 80%",
+                        "label": "Of routine and preventive commercial truck maintenance can be performed at your location"
+                      },
+                      {
+                        "value": "5+",
+                        "label": "Commercial trucks: mobile service is built for fleets of five or more"
+                      },
+                      {
+                        "value": "Off-hours",
+                        "label": "Schedule service during off hours or on weekends, when your vehicles are not operating"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "included",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "included-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "included-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "included-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "What mobile service includes.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "At your location"
+                  }
+                },
+                {
+                  "id": "included-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Our highly trained and skilled Mobile Service technicians can perform up to 80% of all routine and preventive commercial truck maintenance at your location, including:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "included-grid-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "included-grid-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "included-grid",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 4,
+                    "items": [
+                      {
+                        "label": "Scheduled PMs"
+                      },
+                      {
+                        "label": "Mobile Quick Check"
+                      },
+                      {
+                        "label": "Minor repairs"
+                      },
+                      {
+                        "label": "DVIR write-ups (vehicle inspections)"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "included-cta-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "included-cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "included-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-mobile-service"
+                      },
+                      {
+                        "ctaId": "lease-rental-page",
+                        "style": "link"
+                      },
+                      {
+                        "ctaId": "service-page",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "split",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "paddingY": 0,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "split-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "split-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "split-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Find out more about Idealease support services, safety and compliance.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Idealease support"
+                  }
+                },
+                {
+                  "id": "split-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "For the Idealease location near you, contact us. To find out more about rentals or leasing, send a rental or lease inquiry and we will get back to you shortly.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "split-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "For more information on Idealease, visit <a href=\"https://www.idealease.com\" target=\"_blank\" rel=\"noopener\">idealease.com</a>.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "split-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "rental-lease-inquiry"
+                      },
+                      {
+                        "ctaId": "contact-us",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "split-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "split-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/white-international-truck.jpg",
+                      "alt": "International truck serviced through Idealease Mobile Service"
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "schedule",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "schedule"
+      },
+      "children": [
+        {
+          "id": "schedule-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet",
+            "align": "start"
+          },
+          "children": [
+            {
+              "id": "schedule-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "schedule-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Schedule mobile service.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Service request"
+                  }
+                },
+                {
+                  "id": "schedule-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "Tell us about your vehicles and where they are. Choose “Send mobile service to my location” when the form asks where the work should be done, and enter the address or job site.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "schedule-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Mobile service is built for fleets of five or more commercial trucks. Prefer to talk it through? Call (800) 666-3040 or contact the location nearest you below.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "schedule-form",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "schedule-widget",
+                  "type": "form",
+                  "props": {
+                    "formId": "service-appointment"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "locations",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "parts-contacts",
+        "values": {
+          "eyebrow": "Where to get mobile service",
+          "heading": "Contact your nearest location.",
+          "groups": [
+            {
+              "company": "Rechtien International Trucks",
+              "region": "South Florida · 5 locations",
+              "intro": "Contact Idealease of South Florida today, or visit any of our 5 South Florida locations.",
+              "lineLabel": "",
+              "line": "",
+              "lineUrl": "",
+              "locations": [
+                {
+                  "name": "Miami",
+                  "street": "7227 NW 74th Ave",
+                  "city": "Miami, FL 33166",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "305-888-0111",
+                  "phoneUrl": "tel:+13058880111",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=7227%20NW%2074th%20Ave%2C%20Miami%2C%20FL%2033166"
+                },
+                {
+                  "name": "Ft. Lauderdale",
+                  "street": "2565 St Rd 84",
+                  "city": "Ft. Lauderdale, FL 33312",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "954-957-8390",
+                  "phoneUrl": "tel:+19549578390",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2565%20St%20Rd%2084%2C%20Ft.%20Lauderdale%2C%20FL%2033312"
+                },
+                {
+                  "name": "Riviera Beach",
+                  "street": "3787 Interstate Park Rd W.",
+                  "city": "Riviera Beach, FL 33404",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "561-882-9050",
+                  "phoneUrl": "tel:+15618829050",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=3787%20Interstate%20Park%20Rd%20W.%2C%20Riviera%20Beach%2C%20FL%2033404"
+                },
+                {
+                  "name": "Ft. Pierce",
+                  "street": "1699 North US Highway 1",
+                  "city": "Fort Pierce, FL 34950",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "772-466-1842",
+                  "phoneUrl": "tel:+17724661842",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=1699%20North%20US%20Highway%201%2C%20Fort%20Pierce%2C%20FL%2034950"
+                },
+                {
+                  "name": "Ft. Myers",
+                  "street": "2761 Edison Avenue",
+                  "city": "Ft. Myers, FL 33916",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "239-334-1000",
+                  "phoneUrl": "tel:+12393341000",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2761%20Edison%20Avenue%2C%20Ft.%20Myers%2C%20FL%2033916"
+                }
+              ]
+            },
+            {
+              "company": "Carolina International Trucks",
+              "region": "South Carolina · 6 locations",
+              "intro": "Carolina Idealease also offers mobile service. Contact or visit Carolina International Trucks in South Carolina.",
+              "lineLabel": "",
+              "line": "",
+              "lineUrl": "",
+              "locations": [
+                {
+                  "name": "Charleston",
+                  "street": "2580 Oscar Johnson Dr",
+                  "city": "Charleston, SC 29405",
+                  "tollFree": "(800) 666-3040",
+                  "tollFreeUrl": "tel:+18006663040",
+                  "phone": "(843) 747-3040",
+                  "phoneUrl": "tel:+18437473040",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2580%20Oscar%20Johnson%20Dr%2C%20Charleston%2C%20SC%2029405"
+                },
+                {
+                  "name": "Columbia",
+                  "street": "1619 Bluff Road",
+                  "city": "Columbia, SC 29201",
+                  "tollFree": "(800) 868-4923",
+                  "tollFreeUrl": "tel:+18008684923",
+                  "phone": "(803) 799-4923",
+                  "phoneUrl": "tel:+18037994923",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=1619%20Bluff%20Road%2C%20Columbia%2C%20SC%2029201"
+                },
+                {
+                  "name": "Florence",
+                  "street": "350 E Campground Rd",
+                  "city": "Florence, SC 29506",
+                  "tollFree": "(800) 477-3894",
+                  "tollFreeUrl": "tel:+18004773894",
+                  "phone": "(843) 468-9560",
+                  "phoneUrl": "tel:+18434689560",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=350%20E%20Campground%20Rd%2C%20Florence%2C%20SC%2029506"
+                },
+                {
+                  "name": "Greer",
+                  "street": "2520 Hwy 14 S",
+                  "city": "Greer, SC 29650",
+                  "tollFree": "(800) 284-0050",
+                  "tollFreeUrl": "tel:+18002840050",
+                  "phone": "(864) 848-0050",
+                  "phoneUrl": "tel:+18648480050",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2520%20Hwy%2014%20S%2C%20Greer%2C%20SC%2029650"
+                },
+                {
+                  "name": "Greenville",
+                  "street": "1501 Whitehorse Road",
+                  "city": "Greenville, SC 29605",
+                  "tollFree": "(866) 520-0440",
+                  "tollFreeUrl": "tel:+18665200440",
+                  "phone": "(864) 335-0440",
+                  "phoneUrl": "tel:+18643350440",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=1501%20Whitehorse%20Road%2C%20Greenville%2C%20SC%2029605"
+                },
+                {
+                  "name": "Conway",
+                  "street": "299 East Cox Ferry Road",
+                  "city": "Conway, SC 29526",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "(843) 438-3130",
+                  "phoneUrl": "tel:+18434383130",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=299%20East%20Cox%20Ferry%20Road%2C%20Conway%2C%20SC%2029526"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "faq",
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "faq-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "faq-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Mobile service FAQ"
+                  }
+                },
+                {
+                  "id": "faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "What is Idealease Mobile Service?",
+                          "a": "With Idealease Mobile Service, you can schedule service when your vehicles are not operating — during off hours or on weekends — at your location. Highly skilled technicians and well-equipped maintenance vehicles bring service and parts to you."
+                        },
+                        {
+                          "q": "What maintenance can be done at my location?",
+                          "a": "Our highly trained and skilled Mobile Service technicians can perform up to 80% of all routine and preventive commercial truck maintenance at your location, including scheduled PMs, Mobile Quick Check, minor repairs and DVIR write-ups (vehicle inspections)."
+                        },
+                        {
+                          "q": "When can I schedule mobile service?",
+                          "a": "During off hours or on weekends, when your vehicles are not operating, at your location."
+                        },
+                        {
+                          "q": "Who is mobile service for?",
+                          "a": "Mobile service helps improve vehicle uptime and reduce fuel costs and driver downtime for fleets of five or more commercial trucks."
+                        },
+                        {
+                          "q": "Is mobile service available in both South Florida and South Carolina?",
+                          "a": "Yes. Idealease of South Florida, with Rechtien International Trucks, offers mobile service, and Carolina Idealease, with Carolina International Trucks in South Carolina, also offers mobile service. Contact the location nearest you for details."
+                        },
+                        {
+                          "q": "How do I get started?",
+                          "a": "Send a service request using the form on this page, choosing “Send mobile service to my location,” or contact your nearest location. To find out more about Idealease rentals or leasing, send a rental or lease inquiry and we will get back to you shortly."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Contact Idealease of South Florida today.",
+                    "headingLevel": 2,
+                    "align": "center",
+                    "eyebrow": "Keep your trucks on the road"
+                  }
+                },
+                {
+                  "id": "cta-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Schedule mobile service, send a rental or lease inquiry, or call us. We will help you improve uptime and cut downtime for your fleet.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btn",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-mobile-service"
+                      },
+                      {
+                        "ctaId": "rental-lease-inquiry",
+                        "style": "secondary"
+                      },
+                      {
+                        "ctaId": "call-main"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
