@@ -749,54 +749,67 @@
         {
           "id": "item-11",
           "label": "About Us",
-          "type": "page",
-          "url": null,
-          "ref": "about",
+          "type": "url",
+          "url": "/about",
+          "ref": null,
           "children": [
             {
+              "id": "hn-about-col",
+              "label": "About Us",
+              "type": "label",
               "ref": null,
               "url": null,
               "newTab": false,
               "children": [
                 {
-                  "id": "item-43",
-                  "label": "Meet the Team",
+                  "id": "hn-about-overview",
+                  "label": "About Us",
                   "type": "page",
+                  "ref": "about",
                   "url": null,
-                  "ref": "team",
+                  "newTab": false,
                   "children": []
                 },
                 {
+                  "id": "hn-about-contact",
+                  "label": "Contact Us",
+                  "type": "url",
+                  "ref": null,
+                  "url": "/contact",
+                  "newTab": false,
+                  "children": []
+                },
+                {
+                  "id": "hn-about-careers",
+                  "label": "Careers",
+                  "type": "url",
+                  "ref": null,
+                  "url": "/careers",
+                  "newTab": false,
+                  "children": []
+                },
+                {
+                  "id": "hn-about-team",
+                  "label": "Meet The Team",
+                  "type": "page",
+                  "ref": "team",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
+                },
+                {
+                  "id": "hn-about-associate",
+                  "label": "Sales Associate Profile",
+                  "type": "page",
                   "ref": "team-david-milliken",
                   "url": null,
                   "newTab": false,
-                  "children": [],
-                  "id": "hn-abt-associate",
-                  "label": "Sales Associate Profile",
-                  "type": "page"
-                },
-                {
-                  "id": "item-43-careers",
-                  "label": "Careers",
-                  "type": "url",
-                  "url": "/careers",
-                  "ref": null,
-                  "children": []
-                },
-                {
-                  "id": "item-43-contact",
-                  "label": "Contact Us",
-                  "type": "url",
-                  "url": "/contact",
-                  "ref": null,
                   "children": []
                 }
-              ],
-              "id": "hn-abt-col",
-              "label": "About Us",
-              "type": "label"
+              ]
             }
-          ]
+          ],
+          "newTab": false
         }
       ]
     },
