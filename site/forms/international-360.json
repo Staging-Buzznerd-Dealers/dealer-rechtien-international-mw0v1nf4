@@ -1,0 +1,81 @@
+{
+  "id": "international-360",
+  "name": "International 360 information request",
+  "status": "live",
+  "system": false,
+  "pdpContext": false,
+  "surfaces": [
+    "page"
+  ],
+  "intent": "international-360",
+  "submitLabel": "Send your message",
+  "successMessage": "Thank you — your message has been received. Our service team will get in touch with you shortly.",
+  "consent": {
+    "enabled": true,
+    "required": true,
+    "text": "I agree to be contacted about International 360 by phone, text or email."
+  },
+  "fields": [
+    {
+      "id": "i3-first",
+      "type": "first_name",
+      "label": "First name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "i3-last",
+      "type": "last_name",
+      "label": "Last name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "i3-email",
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "i3-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "i3-region",
+      "type": "radio",
+      "label": "Which region?",
+      "required": false,
+      "options": [
+        {
+          "value": "south-florida",
+          "label": "South Florida (Rechtien International)"
+        },
+        {
+          "value": "south-carolina",
+          "label": "South Carolina (Carolina International)"
+        }
+      ]
+    },
+    {
+      "id": "i3-message",
+      "type": "paragraph",
+      "label": "Message",
+      "required": true
+    }
+  ],
+  "notifications": [
+    {
+      "id": "i3-default",
+      "name": "Default",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "service-advisor",
+      "scopeMode": "dynamic"
+    }
+  ]
+}

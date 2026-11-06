@@ -320,5 +320,15 @@
     "intent": "service",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "request-360-info",
+    "label": "Request more information",
+    "url": null,
+    "formId": "international-360",
+    "style": "primary",
+    "intent": "international-360",
+    "newTab": false,
+    "active": true
   }
 ]
