@@ -1,0 +1,796 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center",
+        "anchor": "top"
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "hero-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-crumbs",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Home</a> / Zero emissions",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Charging into the future.",
+                    "headingLevel": 1,
+                    "align": "center",
+                    "eyebrow": "Zero emissions"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "International dealers and trusted advisors help customers plan, execute, and optimize zero-emission vehicles and investments for the entire lifecycle.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "request-ze-info"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "styles": {
+        "base": {
+          "backgroundImage": "/images/hero-truck.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
+          "background": "#151515"
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "intro-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "mobile",
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "intro-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "intro-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Scalable, end-to-end solutions around your specific needs.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Zero-emission trucks"
+                  }
+                },
+                {
+                  "id": "intro-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "International dealers and trusted advisors help customers plan, execute, and optimize zero-emission vehicles and investments for the entire lifecycle. We design scalable, end-to-end solutions around your specific needs.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Carolina International Trucks serves South Carolina and Rechtien International Trucks serves South Florida, so your electrification plan can be supported close to where your trucks work.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "request-ze-info"
+                      },
+                      {
+                        "ctaId": "emv-series-link",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "intro-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "intro-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/zero-emissions-truck.jpg",
+                      "alt": "Blue International electric truck with a refrigerated box driving across a bridge"
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "miles",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "miles-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "miles-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "miles-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Over 1,000,000+ real world electric miles driven across all our brands.",
+                    "headingLevel": 2,
+                    "align": "center",
+                    "eyebrow": "Charging into the future"
+                  }
+                },
+                {
+                  "id": "miles-t",
+                  "type": "text",
+                  "props": {
+                    "text": "And we're just getting started.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dash",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "dash-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "dash-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "dash-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/zero-emissions-dash.jpg",
+                      "alt": "Electric truck digital instrument display reading Electric Powered, with power and speed gauges"
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roadmap",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "ev-roadmap",
+        "values": {
+          "eyebrow": "Our EV roadmap",
+          "heading": "Your path to a seamless transition.",
+          "steps": [
+            {
+              "icon": {
+                "src": "/icons/ev/consulting.svg",
+                "alt": "Consulting icon"
+              },
+              "title": "Consulting",
+              "subtitle": "Finding the best way forward",
+              "description": "Our discovery workshops dive into your fleet's electrification needs and concerns, building a customized EV roadmap for success."
+            },
+            {
+              "icon": {
+                "src": "/icons/ev/charging.svg",
+                "alt": "Charging icon"
+              },
+              "title": "Charging",
+              "subtitle": "Laying the groundwork",
+              "description": "We assess the placement of hardware and infrastructure, finding the best ways to support your vehicle charging and uptime."
+            },
+            {
+              "icon": {
+                "src": "/icons/ev/deployment.svg",
+                "alt": "Deployment icon"
+              },
+              "title": "Deployment",
+              "subtitle": "Bringing it all together",
+              "description": "We ensure your charging locations, staff, and remote diagnostics are prepared for your electric fleet to hit the road."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "roadmap-actions",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 4
+      },
+      "children": [
+        {
+          "id": "roadmap-actions-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "roadmap-more-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "roadmap-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "request-ze-info"
+                      },
+                      {
+                        "ctaId": "emv-series-link",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "switch",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "switch-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "switch-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "switch-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ready to make the switch?",
+                    "headingLevel": 2,
+                    "align": "center",
+                    "eyebrow": "International® Truck"
+                  }
+                },
+                {
+                  "id": "switch-t",
+                  "type": "text",
+                  "props": {
+                    "text": "International® Truck is ready to support you every step of the way. Contact a trusted advisor at <a href=\"https://internationaltrucks.com/zero-emissions\" target=\"_blank\" rel=\"noopener\">internationaltrucks.com/zero-emissions</a>.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "videos",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "videos-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "videos-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "videos-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Customer testimonial: US Air Conditioning Distributors.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Watch and learn"
+                  }
+                },
+                {
+                  "id": "videos-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Watch how International® Truck and its trusted advisors put their eMobility solutions process in motion to help customers like US Air Conditioning Distributors make a successful transition to electric.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "videos-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "video-a",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "video-a-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "US Air Condition Testimonial — International® eMV Series",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "video-a-t",
+                  "type": "text",
+                  "props": {
+                    "text": "See how International® Truck along with its trusted advisors is helping its customers like US Air Condition Distributors make a successful transition to electric, and how the International® eMV Series has not only made a positive impact to their business but also their own company goal of achieving long-term sustainability.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "video-a-btn",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Watch video",
+                        "url": "",
+                        "style": "primary"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "video-b",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "video-b-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Meeting of the Minds",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "video-b-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Hear from the team that came together from around the globe to design, test and build the revolutionary International S13 Integrated Powertrain.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "video-b-btn",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Watch video",
+                        "url": "",
+                        "style": "primary"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "videos-cta-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "videos-cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "videos-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "zero-emissions-site"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "contact",
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "contact-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet",
+            "align": "start"
+          },
+          "children": [
+            {
+              "id": "contact-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "contact-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Contact us.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Request information"
+                  }
+                },
+                {
+                  "id": "contact-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "Tell us about your fleet and we will follow up on zero-emission trucks and your EV roadmap.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "contact-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Prefer to talk? Call (800) 666-3040 or contact your nearest Carolina International location below.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "contact-form",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "contact-widget",
+                  "type": "form",
+                  "props": {
+                    "formId": "zero-emissions"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "locations",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "parts-contacts",
+        "values": {
+          "eyebrow": "Where to learn more",
+          "heading": "Carolina International Trucks locations.",
+          "groups": [
+            {
+              "company": "Carolina International Trucks",
+              "region": "South Carolina · 6 locations",
+              "intro": "Contact or visit Carolina International Trucks to talk through zero-emission trucks and your EV roadmap.",
+              "lineLabel": "",
+              "line": "",
+              "lineUrl": "",
+              "locations": [
+                {
+                  "name": "Charleston",
+                  "street": "2580 Oscar Johnson Dr",
+                  "city": "Charleston, SC 29405",
+                  "tollFree": "(800) 666-3040",
+                  "tollFreeUrl": "tel:+18006663040",
+                  "phone": "(843) 747-3040",
+                  "phoneUrl": "tel:+18437473040",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2580%20Oscar%20Johnson%20Dr%2C%20Charleston%2C%20SC%2029405"
+                },
+                {
+                  "name": "Columbia",
+                  "street": "1619 Bluff Road",
+                  "city": "Columbia, SC 29201",
+                  "tollFree": "(800) 868-4923",
+                  "tollFreeUrl": "tel:+18008684923",
+                  "phone": "(803) 799-4923",
+                  "phoneUrl": "tel:+18037994923",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=1619%20Bluff%20Road%2C%20Columbia%2C%20SC%2029201"
+                },
+                {
+                  "name": "Florence",
+                  "street": "350 E Campground Rd",
+                  "city": "Florence, SC 29506",
+                  "tollFree": "(800) 477-3894",
+                  "tollFreeUrl": "tel:+18004773894",
+                  "phone": "(843) 468-9560",
+                  "phoneUrl": "tel:+18434689560",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=350%20E%20Campground%20Rd%2C%20Florence%2C%20SC%2029506"
+                },
+                {
+                  "name": "Greer",
+                  "street": "2520 Hwy 14 S",
+                  "city": "Greer, SC 29650",
+                  "tollFree": "(800) 284-0050",
+                  "tollFreeUrl": "tel:+18002840050",
+                  "phone": "(864) 848-0050",
+                  "phoneUrl": "tel:+18648480050",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2520%20Hwy%2014%20S%2C%20Greer%2C%20SC%2029650"
+                },
+                {
+                  "name": "Greenville",
+                  "street": "1501 Whitehorse Road",
+                  "city": "Greenville, SC 29605",
+                  "tollFree": "(866) 520-0440",
+                  "tollFreeUrl": "tel:+18665200440",
+                  "phone": "(864) 335-0440",
+                  "phoneUrl": "tel:+18643350440",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=1501%20Whitehorse%20Road%2C%20Greenville%2C%20SC%2029605"
+                },
+                {
+                  "name": "Conway",
+                  "street": "299 East Cox Ferry Road",
+                  "city": "Conway, SC 29526",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "(843) 438-3130",
+                  "phoneUrl": "tel:+18434383130",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=299%20East%20Cox%20Ferry%20Road%2C%20Conway%2C%20SC%2029526"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ready to go electric?",
+                    "headingLevel": 2,
+                    "align": "center",
+                    "eyebrow": "Zero emissions"
+                  }
+                },
+                {
+                  "id": "cta-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Request information and we will help you plan, execute and optimize your move to zero-emission trucks.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btn",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "request-ze-info"
+                      },
+                      {
+                        "ctaId": "call-main",
+                        "style": "secondary"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
