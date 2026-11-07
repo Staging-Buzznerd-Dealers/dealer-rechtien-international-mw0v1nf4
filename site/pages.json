@@ -237,5 +237,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "zero-emissions",
+    "title": "Zero-Emission Trucks & EV Roadmap",
+    "description": "Zero-emission International trucks and an EV roadmap from Carolina International Trucks: consulting, charging and deployment for your fleet.",
+    "path": "/zero-emissions",
+    "out": "zero-emissions/index.html",
+    "dir": "zero-emissions",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

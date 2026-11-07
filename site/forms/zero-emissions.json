@@ -1,0 +1,97 @@
+{
+  "id": "zero-emissions",
+  "name": "Zero emissions information request",
+  "status": "live",
+  "system": false,
+  "pdpContext": false,
+  "surfaces": [
+    "page"
+  ],
+  "intent": "zero-emissions",
+  "submitLabel": "Submit",
+  "successMessage": "Thank you — your request has been received. A member of our team will be in touch about zero-emission trucks.",
+  "consent": {
+    "enabled": true,
+    "required": true,
+    "text": "I agree to be contacted about zero-emission trucks by phone, text or email."
+  },
+  "fields": [
+    {
+      "id": "ze-first",
+      "type": "first_name",
+      "label": "First name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "ze-last",
+      "type": "last_name",
+      "label": "Last name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "ze-email",
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "ze-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "ze-location",
+      "type": "dropdown",
+      "label": "Select a location",
+      "required": false,
+      "options": [
+        {
+          "value": "charleston",
+          "label": "Charleston"
+        },
+        {
+          "value": "columbia",
+          "label": "Columbia"
+        },
+        {
+          "value": "florence",
+          "label": "Florence"
+        },
+        {
+          "value": "greer",
+          "label": "Greer"
+        },
+        {
+          "value": "greenville",
+          "label": "Greenville"
+        },
+        {
+          "value": "conway",
+          "label": "Conway"
+        }
+      ]
+    },
+    {
+      "id": "ze-message",
+      "type": "paragraph",
+      "label": "Comments / questions",
+      "required": false
+    }
+  ],
+  "notifications": [
+    {
+      "id": "ze-default",
+      "name": "Default",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "salesperson",
+      "scopeMode": "dynamic"
+    }
+  ]
+}

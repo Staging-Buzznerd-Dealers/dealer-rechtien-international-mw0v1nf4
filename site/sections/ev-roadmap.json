@@ -1,0 +1,144 @@
+{
+  "version": 2,
+  "id": "ev-roadmap",
+  "name": "EV roadmap (steps)",
+  "css": "/* EV roadmap: three numbered step cards with an icon, title, subtitle and text. Every card comes\n   from the `steps` prop (one repeated node), so adding or editing a step is a list row. */\n.bz-section[data-bz-node=\"rm\"]{background:#fff;padding-block:clamp(56px,6vw,96px)}\n[data-bz-node=\"rm\"] .bz-block{padding-block:0 var(--space-3)}\n[data-bz-node=\"rm-h\"] h2{margin-bottom:var(--space-5)}\n[data-bz-node=\"rm-steps\"]{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;counter-reset:rm}\n[data-bz-node=\"rm-steps\"]>.bz-col{grid-column:auto;counter-increment:rm;background:#f7f7f5;border:1px solid var(--line);border-top:4px solid var(--accent);padding:clamp(22px,2.4vw,32px);position:relative}\n[data-bz-node=\"rm-steps\"]>.bz-col::before{content:counter(rm);position:absolute;top:18px;right:20px;font:800 2rem/1 var(--font-heading);color:#e1e1de}\n[data-bz-node^=\"rm-icon\"] .bz-container,[data-bz-node^=\"rm-icon\"] .bz-figure{padding:0;margin:0;max-width:none}\n[data-bz-node^=\"rm-icon\"]{margin-bottom:var(--space-3)}\n[data-bz-node^=\"rm-icon\"] img{width:64px;height:64px}\n[data-bz-node^=\"rm-title\"] h3{font:700 clamp(1rem,1.5vw,1.25rem)/1.2 var(--font-heading);text-transform:uppercase;margin:0 0 4px}\n[data-bz-node^=\"rm-sub\"] .bz-text p{font:700 .8125rem/1.4 var(--font-body)!important;color:var(--ink)!important;margin:0 0 var(--space-3)!important}\n[data-bz-node^=\"rm-desc\"] .bz-text p{font-size:.8125rem!important;line-height:1.8;color:#4a4945!important;margin:0!important}\n@media (max-width:1100px){[data-bz-node=\"rm-steps\"]{grid-template-columns:minmax(0,1fr)}[data-bz-node=\"rm-steps\"]>.bz-col{grid-column:1/-1}}\n",
+  "js": "",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": "Our EV roadmap"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Your path to a seamless transition."
+    },
+    {
+      "key": "steps",
+      "type": "list",
+      "label": "Steps",
+      "fields": [
+        {
+          "key": "icon",
+          "type": "image",
+          "label": "Icon"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "subtitle",
+          "type": "text",
+          "label": "Subtitle"
+        },
+        {
+          "key": "description",
+          "type": "textarea",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "rm",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "rm-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "rm-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "rm-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "eyebrow": "{{eyebrow}}",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "rm-steps",
+          "type": "row",
+          "props": {
+            "gap": 4,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "rm-step",
+              "type": "column",
+              "props": {
+                "span": 4,
+                "repeat": "steps"
+              },
+              "children": [
+                {
+                  "id": "rm-icon",
+                  "type": "image",
+                  "props": {
+                    "image": "{{icon}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "rm-title",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "rm-sub",
+                  "type": "text",
+                  "props": {
+                    "text": "{{subtitle}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "rm-desc",
+                  "type": "text",
+                  "props": {
+                    "text": "{{description}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

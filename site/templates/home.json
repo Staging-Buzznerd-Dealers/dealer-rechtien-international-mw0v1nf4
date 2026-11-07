@@ -48,6 +48,10 @@
       "ref": "emv-series"
     },
     {
+      "type": "page",
+      "ref": "zero-emissions"
+    },
+    {
       "type": "pageGroup",
       "ref": "team"
     }

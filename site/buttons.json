@@ -330,5 +330,33 @@
     "intent": "international-360",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "request-ze-info",
+    "label": "Request information",
+    "url": null,
+    "formId": "zero-emissions",
+    "style": "primary",
+    "intent": "zero-emissions",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "emv-series-link",
+    "label": "See the International eMV Series",
+    "url": "/emv-series",
+    "style": "link",
+    "intent": "emv-series",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "zero-emissions-site",
+    "label": "Learn more about zero emissions",
+    "url": "https://internationaltrucks.com/zero-emissions",
+    "style": "secondary",
+    "intent": "zero-emissions",
+    "newTab": true,
+    "active": true
   }
 ]
