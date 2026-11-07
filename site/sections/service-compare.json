@@ -1,0 +1,200 @@
+{
+  "version": 2,
+  "id": "service-compare",
+  "name": "Service comparison (what is included)",
+  "css": "/* Service comparison: what each service includes. One header row and one repeated row per task\n   (`rows` prop); each cell reads \"Included\" or an em dash. */\n.bz-section[data-bz-node=\"scmp\"]{background:#e6e6e4;padding-block:clamp(56px,6vw,96px)}\n[data-bz-node=\"scmp\"] .bz-block{padding-block:0}\n[data-bz-node=\"scmp-h\"] h2{max-width:60rem;margin-bottom:var(--space-3)}\n[data-bz-node=\"scmp-t\"] .bz-text p{font-size:.875rem;line-height:1.85;color:#3d3c39;max-width:56rem;margin:0 0 var(--space-5)}\n[data-bz-node=\"scmp-head\"],[data-bz-node^=\"scmp-row\"]{grid-template-columns:minmax(0,6fr) repeat(3,minmax(0,2fr));gap:0;background:#fff;border:1px solid var(--line);border-top:0}\n[data-bz-node=\"scmp-head\"]{border-top:1px solid var(--line);background:#151515}\n[data-bz-node=\"scmp-head\"]>.bz-col,[data-bz-node^=\"scmp-row\"]>.bz-col{grid-column:auto;padding:14px 16px;display:flex;align-items:center}\n[data-bz-node=\"scmp-head\"] .bz-text p{font:700 .6875rem/1.4 var(--font-body)!important;letter-spacing:.1em;text-transform:uppercase;color:#fff!important;margin:0!important;text-align:center;width:100%}\n[data-bz-node^=\"scmp-row\"]>.bz-col+.bz-col{border-left:1px solid var(--line);justify-content:center}\n[data-bz-node^=\"scmp-row\"] .bz-text p{font-size:.8125rem!important;line-height:1.4;color:var(--ink)!important;margin:0!important}\n[data-bz-node^=\"scmp-ct\"] .bz-text p{font:700 .6875rem/1.3 var(--font-body)!important;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-dark)!important;text-align:center}\n[data-bz-node^=\"scmp-\"] .bz-container{padding:0;max-width:none}\n@media (max-width:640px){[data-bz-node=\"scmp-head\"],[data-bz-node^=\"scmp-row\"]{grid-template-columns:minmax(0,5fr) repeat(3,minmax(0,2fr))}[data-bz-node=\"scmp-head\"]>.bz-col,[data-bz-node^=\"scmp-row\"]>.bz-col{padding:10px 8px}[data-bz-node^=\"scmp-c\"] .bz-text p,[data-bz-node=\"scmp-head\"] .bz-text p{font-size:.5625rem!important;letter-spacing:.04em}}\n",
+  "js": "",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "What is included."
+    },
+    {
+      "key": "intro",
+      "type": "textarea",
+      "label": "Intro"
+    },
+    {
+      "key": "headers",
+      "type": "list",
+      "label": "Column headings",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Column name"
+        }
+      ]
+    },
+    {
+      "key": "rows",
+      "type": "list",
+      "label": "Rows",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Task"
+        },
+        {
+          "key": "cells",
+          "type": "list",
+          "label": "Cells (one per column)",
+          "fields": [
+            {
+              "key": "value",
+              "type": "text",
+              "label": "Value"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "scmp",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "scmp-intro",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "scmp-intro-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "scmp-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "scmp-t",
+                  "type": "text",
+                  "props": {
+                    "text": "{{intro}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "scmp-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "scmp-hc0",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "scmp-hl",
+                  "type": "text",
+                  "props": {
+                    "text": " ",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "scmp-hcol",
+              "type": "column",
+              "props": {
+                "span": 2,
+                "repeat": "headers"
+              },
+              "children": [
+                {
+                  "id": "scmp-hn",
+                  "type": "text",
+                  "props": {
+                    "text": "{{name}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "scmp-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never",
+            "repeat": "rows"
+          },
+          "children": [
+            {
+              "id": "scmp-label",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "scmp-lt",
+                  "type": "text",
+                  "props": {
+                    "text": "{{label}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "scmp-cell",
+              "type": "column",
+              "props": {
+                "span": 2,
+                "repeat": "cells"
+              },
+              "children": [
+                {
+                  "id": "scmp-ct",
+                  "type": "text",
+                  "props": {
+                    "text": "{{value}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -52,6 +52,10 @@
       "ref": "zero-emissions"
     },
     {
+      "type": "page",
+      "ref": "service-specials"
+    },
+    {
       "type": "pageGroup",
       "ref": "team"
     }
