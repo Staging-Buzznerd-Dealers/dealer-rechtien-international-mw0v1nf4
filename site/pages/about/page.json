@@ -10,6 +10,14 @@
         "align": "center",
         "anchor": "top"
       },
+      "styles": {
+        "base": {
+          "backgroundImage": "/images/hero-truck.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
+          "background": "#151515"
+        }
+      },
       "children": [
         {
           "id": "hero-row",
@@ -58,15 +66,7 @@
             }
           ]
         }
-      ],
-      "styles": {
-        "base": {
-          "backgroundImage": "/images/hero-truck.jpg",
-          "backgroundSize": "cover",
-          "backgroundPosition": "center",
-          "background": "#151515"
-        }
-      }
+      ]
     },
     {
       "id": "intro",
@@ -154,7 +154,7 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/white-international-truck.jpg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/e5/white-international-truck.jpg",
                       "alt": "White International commercial truck from our South Florida and South Carolina dealership network"
                     },
                     "width": "full"
@@ -275,7 +275,7 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/carolina-dealership.jpg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/4d/carolina-dealership.jpg",
                       "alt": "Carolina International Trucks dealership building with the Carolina International Trucks, International and Idealease signs"
                     },
                     "width": "full"
@@ -686,7 +686,7 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/red-international-truck.jpg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/d5/red-international-truck.jpg",
                       "alt": "Red International commercial truck delivered with the support of our sales, service and parts teams"
                     },
                     "width": "full"
@@ -902,7 +902,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "cta",
