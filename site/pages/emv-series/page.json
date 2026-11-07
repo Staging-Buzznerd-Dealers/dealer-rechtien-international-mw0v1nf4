@@ -1,0 +1,742 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center",
+        "anchor": "top"
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "hero-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-crumbs",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Home</a> / International eMV™ Series",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Introducing the revolutionary International® Electric MV™ series.",
+                    "headingLevel": 1,
+                    "align": "center",
+                    "eyebrow": "International® eMV™ Series"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Specifically designed to be just what you need for your fleet — because we thought about more than the vehicle itself. We thought about the entire ecosystem.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "request-quote"
+                      },
+                      {
+                        "ctaId": "explore-inventory",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "styles": {
+        "base": {
+          "backgroundImage": "/images/hero-truck.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
+          "background": "#151515"
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "intro-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "mobile",
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "intro-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "intro-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Your partner for a seamless transition.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "eMobility"
+                  }
+                },
+                {
+                  "id": "intro-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "International dealers and trusted advisors provide customers with a complete eMobility solution, bringing knowledge and years of experience with technology and infrastructure to deliver customers the “just right” electric solution. It is designed to help commercial truck and bus customers implement electric vehicles via its unique consultative approach that goes beyond the vehicle, covering the entire eMobility lifecycle.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Here is how Rechtien International Trucks and International help you make the transition:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "request-quote"
+                      },
+                      {
+                        "ctaId": "explore-inventory",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "intro-media",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "intro-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/emv-truck.jpg",
+                      "alt": "Blue International eMV electric box truck"
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "steps",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "steps-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "steps-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "steps-grid",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 3,
+                    "items": [
+                      {
+                        "label": "Finding the best way forward",
+                        "desc": "Our discovery workshops dive into your fleet's electrification needs and concerns, building a customized EV roadmap for success."
+                      },
+                      {
+                        "label": "Laying the groundwork",
+                        "desc": "We assess the placement of hardware and infrastructure, finding the best ways to support your vehicle charging and uptime."
+                      },
+                      {
+                        "label": "Bringing it all together",
+                        "desc": "We ensure your charging locations, staff, and remote diagnostics are prepared for your electric fleet to hit the road."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unique",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "unique-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet",
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "unique-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "unique-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "What makes the eMV™ Series unique?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Built on a proven foundation"
+                  }
+                },
+                {
+                  "id": "unique-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "Built on the same proven foundation we use in our diesel MV, we made some key placement changes including the batteries and battery controller; the motor controller and motor; the radiator and Battery Thermal Management System (BTMS); as well as the air tanks and air bag suspension.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "unique-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Key features of the new eMV include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "unique-grid",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 3,
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "210 kWh battery pack"
+                      },
+                      {
+                        "label": "135 mile range"
+                      },
+                      {
+                        "label": "Electric drive motor"
+                      },
+                      {
+                        "label": "Industry leading 3 levels of regen braking"
+                      },
+                      {
+                        "label": "AC/DC charging and capability with up to 125 kW DC fast charge"
+                      },
+                      {
+                        "label": "New full digital display"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "unique-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "unique-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/emv-chassis.jpg",
+                      "alt": "International eMV chassis cutaway showing the battery packs, motor and thermal management system"
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stats",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "stats-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "stats-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "stats-band",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "210 kWh",
+                        "label": "Battery pack"
+                      },
+                      {
+                        "value": "135 mi",
+                        "label": "Range"
+                      },
+                      {
+                        "value": "125 kW",
+                        "label": "Maximum DC fast charge"
+                      },
+                      {
+                        "value": "335 hp",
+                        "label": "Vehicle performance"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tag",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "tag-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "tag-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "tag-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "More uptime. More capability. More safety and styling. Done just right.",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apps",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "apps-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet",
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "apps-media",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "apps-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/emv-chassis-cab.jpg",
+                      "alt": "Blue International eMV cab and chassis"
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "apps-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "apps-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "International® eMV applications.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Ready for the job"
+                  }
+                },
+                {
+                  "id": "apps-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "The new eMV™ Series suits any straight rail application* and, with a vehicle performance of 335 hp and a range of 135 miles, the new eMV is ready to help you get the job done, no matter what job comes your way. And its new thoughtful design with improved visibility through a sloped hood and breakaway mirrors provides additional safety for your crew.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "apps-note",
+                  "type": "text",
+                  "props": {
+                    "text": "*No PTO application, ePTO under development.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "apps-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "request-quote"
+                      },
+                      {
+                        "ctaId": "explore-inventory",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quote",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "quote"
+      },
+      "children": [
+        {
+          "id": "quote-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet",
+            "align": "start"
+          },
+          "children": [
+            {
+              "id": "quote-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "quote-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Request an eMV quote.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Talk to Rechtien International Trucks"
+                  }
+                },
+                {
+                  "id": "quote-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "Tell us about your fleet and how many units you are considering, and our sales team will follow up on the International eMV Series and your electrification plans.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "quote-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Prefer to talk? Call (800) 666-3040 or contact your nearest Rechtien International location below.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "quote-form",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "quote-widget",
+                  "type": "form",
+                  "props": {
+                    "formId": "request-a-quote"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "locations",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "parts-contacts",
+        "values": {
+          "eyebrow": "Where to learn more",
+          "heading": "Rechtien International Trucks locations.",
+          "groups": [
+            {
+              "company": "Rechtien International Trucks",
+              "region": "South Florida · 5 locations",
+              "intro": "Visit any Rechtien International location to talk through the International eMV Series.",
+              "lineLabel": "",
+              "line": "",
+              "lineUrl": "",
+              "locations": [
+                {
+                  "name": "Miami",
+                  "street": "7227 NW 74th Ave",
+                  "city": "Miami, FL 33166",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "305-888-0111",
+                  "phoneUrl": "tel:+13058880111",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=7227%20NW%2074th%20Ave%2C%20Miami%2C%20FL%2033166"
+                },
+                {
+                  "name": "Ft. Lauderdale",
+                  "street": "2565 St Rd 84",
+                  "city": "Ft. Lauderdale, FL 33312",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "954-957-8390",
+                  "phoneUrl": "tel:+19549578390",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2565%20St%20Rd%2084%2C%20Ft.%20Lauderdale%2C%20FL%2033312"
+                },
+                {
+                  "name": "Riviera Beach",
+                  "street": "3787 Interstate Park Rd W.",
+                  "city": "Riviera Beach, FL 33404",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "561-882-9050",
+                  "phoneUrl": "tel:+15618829050",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=3787%20Interstate%20Park%20Rd%20W.%2C%20Riviera%20Beach%2C%20FL%2033404"
+                },
+                {
+                  "name": "Ft. Pierce",
+                  "street": "1699 North US Highway 1",
+                  "city": "Fort Pierce, FL 34950",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "772-466-1842",
+                  "phoneUrl": "tel:+17724661842",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=1699%20North%20US%20Highway%201%2C%20Fort%20Pierce%2C%20FL%2034950"
+                },
+                {
+                  "name": "Ft. Myers",
+                  "street": "2761 Edison Avenue",
+                  "city": "Ft. Myers, FL 33916",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "239-334-1000",
+                  "phoneUrl": "tel:+12393341000",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2761%20Edison%20Avenue%2C%20Ft.%20Myers%2C%20FL%2033916"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ready to go electric?",
+                    "headingLevel": 2,
+                    "align": "center",
+                    "eyebrow": "International eMV™ Series"
+                  }
+                },
+                {
+                  "id": "cta-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Request a quote or call us, and we will help you find the “just right” electric solution for your fleet.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btn",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "request-quote"
+                      },
+                      {
+                        "ctaId": "explore-inventory",
+                        "style": "secondary"
+                      },
+                      {
+                        "ctaId": "call-main"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

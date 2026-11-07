@@ -219,5 +219,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "emv-series",
+    "title": "International eMV Electric Truck Series",
+    "description": "The International eMV Series electric truck: 210 kWh battery, 135-mile range and a complete eMobility solution from Rechtien International Trucks.",
+    "path": "/emv-series",
+    "out": "emv-series/index.html",
+    "dir": "emv-series",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

@@ -44,6 +44,10 @@
       "ref": "international-360"
     },
     {
+      "type": "page",
+      "ref": "emv-series"
+    },
+    {
       "type": "pageGroup",
       "ref": "team"
     }
