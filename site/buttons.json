@@ -358,5 +358,32 @@
     "intent": "zero-emissions",
     "newTab": true,
     "active": true
+  },
+  {
+    "id": "specials-schedule",
+    "label": "Schedule service",
+    "url": "/service#appointment",
+    "style": "primary",
+    "intent": "book-service",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "specials-parts",
+    "label": "Contact a parts representative",
+    "url": "/parts",
+    "style": "secondary",
+    "intent": "parts",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "service-department-link",
+    "label": "Service department",
+    "url": "/service",
+    "style": "link",
+    "intent": "service",
+    "newTab": false,
+    "active": true
   }
 ]

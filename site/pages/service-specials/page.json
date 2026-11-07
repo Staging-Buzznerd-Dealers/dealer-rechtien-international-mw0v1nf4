@@ -1,0 +1,879 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center",
+        "anchor": "top"
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "hero-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-crumbs",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Home</a> / <a href=\"/service\">Service</a> / Service specials",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Service specials.",
+                    "headingLevel": 1,
+                    "align": "center",
+                    "eyebrow": "Rechtien International Trucks"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Keep your engine running with Rechtien! Service specials at our five South Florida locations — we've got you covered.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "specials-schedule"
+                      },
+                      {
+                        "ctaId": "service-department-link",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "styles": {
+        "base": {
+          "backgroundImage": "/images/hero-truck.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
+          "background": "#151515"
+        }
+      }
+    },
+    {
+      "id": "dpf",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "dpf-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet",
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "dpf-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "dpf-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "DPF packages.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Limited-time offer"
+                  }
+                },
+                {
+                  "id": "dpf-sub",
+                  "type": "heading",
+                  "props": {
+                    "text": "DPF cleaning service",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "dpf-list",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 3,
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Thermal baking +"
+                      },
+                      {
+                        "label": "Pneumatic air cleaning"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "dpf-note",
+                  "type": "text",
+                  "props": {
+                    "text": "For a limited time only! Five locations across South Florida.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "dpf-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "specials-schedule"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "dpf-price",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "dpf-amount",
+                  "type": "heading",
+                  "props": {
+                    "text": "$349.95",
+                    "headingLevel": 3,
+                    "align": "center",
+                    "eyebrow": "DPF cleaning service"
+                  }
+                },
+                {
+                  "id": "dpf-valid",
+                  "type": "text",
+                  "props": {
+                    "text": "Offer valid through May 31, 2026",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "service-pricing",
+        "values": {
+          "heading": "Expert preventative maintenance, starting at $179.",
+          "services": [
+            {
+              "name": "Oil & filter only",
+              "inspection": "",
+              "description": "For basic maintenance at a great value, this limited service covers oil and engine filter change only.",
+              "prices": [
+                {
+                  "duty": "Light duty",
+                  "price": "$179",
+                  "quarts": "Up to 15 quarts"
+                },
+                {
+                  "duty": "Medium duty",
+                  "price": "$240",
+                  "quarts": "Up to 32 quarts"
+                },
+                {
+                  "duty": "Heavy duty",
+                  "price": "$305",
+                  "quarts": "Up to 44 quarts"
+                }
+              ]
+            },
+            {
+              "name": "Quick lube",
+              "inspection": "32-point inspection",
+              "description": "This basic service inspection includes an oil change, chassis lubrication and a review of 32 everyday operational items, such as fluids, wipers, air conditioning, brakes and instrument panel.",
+              "prices": [
+                {
+                  "duty": "Light duty",
+                  "price": "$299",
+                  "quarts": "Up to 15 quarts"
+                },
+                {
+                  "duty": "Medium duty",
+                  "price": "$359",
+                  "quarts": "Up to 32 quarts"
+                },
+                {
+                  "duty": "Heavy duty",
+                  "price": "$499",
+                  "quarts": "Up to 44 quarts"
+                }
+              ]
+            },
+            {
+              "name": "“B” service",
+              "inspection": "86-point inspection",
+              "description": "In addition to a lube and oil change, this more advanced inspection includes a complete cab interior inspection and a total inspection outside of the vehicle to check the condition of everything from mirrors and mudflaps to the exhaust and tires. We'll also do a thorough under-vehicle inspection to check transmission levels, springs and other vital systems. This inspection also satisfies all of the Department of Transportation annual inspection requirements.",
+              "prices": [
+                {
+                  "duty": "Light duty",
+                  "price": "$599",
+                  "quarts": "Up to 15 quarts"
+                },
+                {
+                  "duty": "Medium duty",
+                  "price": "$659",
+                  "quarts": "Up to 32 quarts"
+                },
+                {
+                  "duty": "Heavy duty",
+                  "price": "$699",
+                  "quarts": "Up to 44 quarts"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fine",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 4
+      },
+      "children": [
+        {
+          "id": "fine-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "fine-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "fine-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Pricing covers most truck and engine combinations. Inquire when making your appointment to confirm pricing. Additional repairs determined during the inspection and service are an additional cost and may need to be scheduled separately.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fleet",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "fleet-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet",
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "fleet-copy",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "fleet-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Nothing guards like Fleetguard.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "We use Fleetguard because"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "fleet-text",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "fleet-q",
+                  "type": "heading",
+                  "props": {
+                    "text": "Quality matters.",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "fleet-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Experience the unparalleled benefits of preventative maintenance at our service department, where we use Fleetguard filters. With a rich history of innovation dating back to 1959, Fleetguard continues to lead the industry with groundbreaking technologies. By entrusting your fleet to Fleetguard, you're not only safeguarding your engines for longer lifespans and reduced wear but also maximizing fuel efficiency, resulting in substantial savings over time. Say goodbye to unnecessary maintenance costs and hello to increased productivity with Fleetguard filters — the trusted choice for superior performance and reliability.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "contact-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "tablet",
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "contact-h-col",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "contact-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Contact us.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Need help?"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "contact-t-col",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "contact-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Need help? Contact a parts representative at any of our South Florida locations.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "contact-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "specials-parts"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "compare",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "service-compare",
+        "values": {
+          "heading": "Drive with confidence: choose from our range of comprehensive truck maintenance solutions.",
+          "intro": "Our comprehensive packages are tailored for heavy- and medium-duty trucks, catering to all makes and models. From simple oil changes to preventative maintenance services, we want to ensure your truck's optimal performance. Our preventive maintenance inspections include a thorough review of critical vehicle components, highlighted below. Whether you own a single truck or an entire fleet, we have the package to suit your needs.",
+          "rows": [
+            {
+              "label": "Drain engine oil",
+              "cells": [
+                {
+                  "value": "Included"
+                },
+                {
+                  "value": "Included"
+                },
+                {
+                  "value": "Included"
+                }
+              ]
+            },
+            {
+              "label": "Change engine oil filter",
+              "cells": [
+                {
+                  "value": "Included"
+                },
+                {
+                  "value": "Included"
+                },
+                {
+                  "value": "Included"
+                }
+              ]
+            },
+            {
+              "label": "Review health report",
+              "cells": [
+                {
+                  "value": "Included"
+                },
+                {
+                  "value": "Included"
+                },
+                {
+                  "value": "Included"
+                }
+              ]
+            },
+            {
+              "label": "Check for open recalls/campaigns",
+              "cells": [
+                {
+                  "value": "Included"
+                },
+                {
+                  "value": "Included"
+                },
+                {
+                  "value": "Included"
+                }
+              ]
+            },
+            {
+              "label": "Grease complete chassis (includes lift gate if equipped)",
+              "cells": [
+                {
+                  "value": "—"
+                },
+                {
+                  "value": "Included"
+                },
+                {
+                  "value": "Included"
+                }
+              ]
+            },
+            {
+              "label": "Engine mounted fuel filter",
+              "cells": [
+                {
+                  "value": "—"
+                },
+                {
+                  "value": "Included"
+                },
+                {
+                  "value": "Included"
+                }
+              ]
+            },
+            {
+              "label": "Fuel water separator",
+              "cells": [
+                {
+                  "value": "—"
+                },
+                {
+                  "value": "—"
+                },
+                {
+                  "value": "Included"
+                }
+              ]
+            },
+            {
+              "label": "Check HVAC defrosters, air vents, fan speed, and controls",
+              "cells": [
+                {
+                  "value": "—"
+                },
+                {
+                  "value": "Included"
+                },
+                {
+                  "value": "Included"
+                }
+              ]
+            },
+            {
+              "label": "Inspect HVAC filter",
+              "cells": [
+                {
+                  "value": "—"
+                },
+                {
+                  "value": "Included"
+                },
+                {
+                  "value": "Included"
+                }
+              ]
+            },
+            {
+              "label": "DOT inspection",
+              "cells": [
+                {
+                  "value": "—"
+                },
+                {
+                  "value": "—"
+                },
+                {
+                  "value": "Included"
+                }
+              ]
+            }
+          ],
+          "headers": [
+            {
+              "name": "Oil & filter only"
+            },
+            {
+              "name": "Quick lube 32-point inspection"
+            },
+            {
+              "name": "“B” service 86-point inspection"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "seo",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "seo-1",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "seo-1-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "seo-1-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Service specials at Rechtien International Trucks.",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "seo-1-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Keep your truck running at its best by utilizing the truck service specials at Rechtien International Trucks. Routine maintenance is crucial to extending the life and performance of your truck, and service coupons make it easier than ever to stay on schedule and go the distance. Whether you need heavy duty truck repair or International truck service, Rechtien International Trucks has service discounts you can depend on. Take advantage of these great service deals and <a href=\"/service#appointment\">schedule service</a> with us today!",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seo-2",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "seo-2-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "seo-2-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Reliable truck service at Rechtien International Trucks.",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "seo-2-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Why choose Rechtien? Commercial trucks require expert service, relying on certified technicians qualified to tackle a range of unique repair and service needs. Our five South Florida locations are here to help truck drivers all around South Florida and beyond get the care they need to get back on the road in no time. Our <a href=\"/service\">service department</a> offers a wide range of service coupons for:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "seo-2-list",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 3,
+                    "columns": 3,
+                    "items": [
+                      {
+                        "label": "Preventative maintenance service"
+                      },
+                      {
+                        "label": "DOT inspections"
+                      },
+                      {
+                        "label": "Complete computer diagnostics"
+                      },
+                      {
+                        "label": "Electronics installations and upgrades"
+                      },
+                      {
+                        "label": "Fluid level check and analysis"
+                      },
+                      {
+                        "label": "Complete diesel engine repair"
+                      },
+                      {
+                        "label": "Natural gas engine repair"
+                      },
+                      {
+                        "label": "Engine, transmission, and rear end service"
+                      },
+                      {
+                        "label": "Suspension and axle repair and replacement"
+                      },
+                      {
+                        "label": "Body and chassis repair"
+                      },
+                      {
+                        "label": "Front end alignments"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "seo-2-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Plus, our Riviera Beach location is proud to offer a full-service collision-repair body shop for semi truck accident repair.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seo-3",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "seo-3-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "seo-3-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Browse our truck service specials today.",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "seo-3-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Not only do we offer unbeatable heavy duty truck repair and service, we use high-quality OEM parts for every job, ensuring an exact fit every time. Our rotating parts specials help you save even more, avoiding third-party manufacturer parts that can't hold up to the performance of OEM components. Staying up to date with your truck maintenance schedule is one of our top safe driving tips, so if you're in need of International truck service or repair, don't delay. Use our service discounts for superior care to keep you going for the long haul. Contact us today!",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "seo-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "specials-schedule"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "locations",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "parts-contacts",
+        "values": {
+          "eyebrow": "Where to get service",
+          "heading": "Rechtien International Trucks locations.",
+          "groups": [
+            {
+              "company": "Rechtien International Trucks",
+              "region": "South Florida · 5 locations",
+              "intro": "Five locations across South Florida. Se habla español at our Miami and Ft. Lauderdale locations.",
+              "lineLabel": "",
+              "line": "",
+              "lineUrl": "",
+              "locations": [
+                {
+                  "name": "Miami",
+                  "street": "7227 NW 74th Ave",
+                  "city": "Miami, FL 33166",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "305-888-0111",
+                  "phoneUrl": "tel:+13058880111",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=7227%20NW%2074th%20Ave%2C%20Miami%2C%20FL%2033166"
+                },
+                {
+                  "name": "Ft. Lauderdale",
+                  "street": "2565 St Rd 84",
+                  "city": "Ft. Lauderdale, FL 33312",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "954-957-8390",
+                  "phoneUrl": "tel:+19549578390",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2565%20St%20Rd%2084%2C%20Ft.%20Lauderdale%2C%20FL%2033312"
+                },
+                {
+                  "name": "Riviera Beach",
+                  "street": "3787 Interstate Park Rd W.",
+                  "city": "Riviera Beach, FL 33404",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "561-882-9050",
+                  "phoneUrl": "tel:+15618829050",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=3787%20Interstate%20Park%20Rd%20W.%2C%20Riviera%20Beach%2C%20FL%2033404"
+                },
+                {
+                  "name": "Ft. Pierce",
+                  "street": "1699 North US Highway 1",
+                  "city": "Fort Pierce, FL 34950",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "772-466-1842",
+                  "phoneUrl": "tel:+17724661842",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=1699%20North%20US%20Highway%201%2C%20Fort%20Pierce%2C%20FL%2034950"
+                },
+                {
+                  "name": "Ft. Myers",
+                  "street": "2761 Edison Avenue",
+                  "city": "Ft. Myers, FL 33916",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "239-334-1000",
+                  "phoneUrl": "tel:+12393341000",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2761%20Edison%20Avenue%2C%20Ft.%20Myers%2C%20FL%2033916"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
