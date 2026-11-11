@@ -56,6 +56,10 @@
       "ref": "service-specials"
     },
     {
+      "type": "page",
+      "ref": "rechtien-university"
+    },
+    {
       "type": "pageGroup",
       "ref": "team"
     }

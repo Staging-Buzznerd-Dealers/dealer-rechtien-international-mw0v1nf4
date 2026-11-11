@@ -1,0 +1,343 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center",
+        "anchor": "top"
+      },
+      "styles": {
+        "base": {
+          "backgroundImage": "/images/hero-truck.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
+          "background": "#151515"
+        }
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "hero-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Rechtien University",
+                    "headingLevel": 1,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "hero-sub",
+                  "type": "text",
+                  "props": {
+                    "text": "Truck service training at it’s best",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "about-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "about-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "about-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Rechtien International Trucks University",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "about-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "When it comes to keeping your business’s trucks on the roads around South Florida and beyond, Rechtien University is there to make sure your team is properly trained. Designed to help your technicians and fleet managers get the most out of every International® truck you run, our program covers the skills that keep vehicles safe, compliant and on the road.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "about-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Along with making sure your team is informed and ready to work with your vehicles in multiple capacities, we also take your budget into account. Our program is not only high-quality and competitively priced, but it can also help you with minimizing operating costs. Find out more about our reputable semi truck service technician classes and fleet manager courses below!",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "adv-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Rechtien University program advantages",
+                    "headingLevel": 3,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "adv-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you’re more focused on fleet manager courses or <a href=\"/service\">semi truck service technician</a> classes, you’ll find it all at Rechtien International Trucks. In addition to our thorough curriculum, you’ll find plenty of other reasons to choose our advanced program. Just a few of our course advantages include:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "adv-list",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 3,
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "International Motors approved training courses"
+                      },
+                      {
+                        "label": "Certifications printed upon completion of course"
+                      },
+                      {
+                        "label": "Available Online"
+                      },
+                      {
+                        "label": "Track student progress with Managerial Reports"
+                      },
+                      {
+                        "label": "Customer-designated administrators can access education records for all their students"
+                      },
+                      {
+                        "label": "Unlimited enrollment"
+                      },
+                      {
+                        "label": "One time fee per employee"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "cert-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Get certified today at Rechtien University!",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "cert-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Do you have additional questions about semi truck service technician classes, fleet manager courses, and more? Feel free to <a href=\"/service#appointment\">reach out</a> to Rechtien International Trucks for more information! We’ll be happy to talk through the details and ensure your team has the education they need to keep moving your business forward!",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cert-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "university-register"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brands",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "brands-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "brands-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "brands-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Brands we represent",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "brands-logos",
+                  "type": "logoStrip",
+                  "props": {
+                    "logos": [
+                      {
+                        "name": "International",
+                        "image": {
+                          "src": "/logos/international.png",
+                          "alt": "International"
+                        }
+                      },
+                      {
+                        "name": "Kalmar Ottawa"
+                      },
+                      {
+                        "name": "Cummins"
+                      },
+                      {
+                        "name": "IC Bus"
+                      },
+                      {
+                        "name": "Allison Transmission"
+                      },
+                      {
+                        "name": "Idealease",
+                        "image": {
+                          "src": "/logos/idealease.png",
+                          "alt": "Idealease"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "locations",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "parts-contacts",
+        "values": {
+          "eyebrow": "Questions? Call your nearest location",
+          "heading": "Rechtien International Trucks locations.",
+          "groups": [
+            {
+              "company": "Rechtien International Trucks",
+              "region": "South Florida · 5 locations",
+              "intro": "Five locations across South Florida. Se habla español at our Miami and Ft. Lauderdale locations.",
+              "lineLabel": "",
+              "line": "",
+              "lineUrl": "",
+              "locations": [
+                {
+                  "name": "Miami",
+                  "street": "7227 NW 74th Ave",
+                  "city": "Miami, FL 33166",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "305-888-0111",
+                  "phoneUrl": "tel:+13058880111",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=7227%20NW%2074th%20Ave%2C%20Miami%2C%20FL%2033166"
+                },
+                {
+                  "name": "Ft. Lauderdale",
+                  "street": "2565 St Rd 84",
+                  "city": "Ft. Lauderdale, FL 33312",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "954-957-8390",
+                  "phoneUrl": "tel:+19549578390",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2565%20St%20Rd%2084%2C%20Ft.%20Lauderdale%2C%20FL%2033312"
+                },
+                {
+                  "name": "Riviera Beach",
+                  "street": "3787 Interstate Park Rd W.",
+                  "city": "Riviera Beach, FL 33404",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "561-882-9050",
+                  "phoneUrl": "tel:+15618829050",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=3787%20Interstate%20Park%20Rd%20W.%2C%20Riviera%20Beach%2C%20FL%2033404"
+                },
+                {
+                  "name": "Ft. Pierce",
+                  "street": "1699 North US Highway 1",
+                  "city": "Fort Pierce, FL 34950",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "772-466-1842",
+                  "phoneUrl": "tel:+17724661842",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=1699%20North%20US%20Highway%201%2C%20Fort%20Pierce%2C%20FL%2034950"
+                },
+                {
+                  "name": "Ft. Myers",
+                  "street": "2761 Edison Avenue",
+                  "city": "Ft. Myers, FL 33916",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "239-334-1000",
+                  "phoneUrl": "tel:+12393341000",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2761%20Edison%20Avenue%2C%20Ft.%20Myers%2C%20FL%2033916"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
