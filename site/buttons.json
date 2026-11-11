@@ -385,5 +385,15 @@
     "intent": "service",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "university-register",
+    "label": "Click here to register",
+    "url": null,
+    "formId": "request-info",
+    "style": "primary",
+    "intent": "register",
+    "newTab": false,
+    "active": true
   }
 ]

@@ -273,5 +273,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "rechtien-university",
+    "title": "Rechtien University: Truck Service Training",
+    "description": "Rechtien University offers International-approved semi truck service technician and fleet manager training — certifications, online access, progress reports and a one-time fee per employee.",
+    "path": "/rechtien-university",
+    "out": "rechtien-university/index.html",
+    "dir": "rechtien-university",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]
