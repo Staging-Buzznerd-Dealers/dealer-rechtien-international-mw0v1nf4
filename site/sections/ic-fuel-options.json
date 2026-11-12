@@ -1,0 +1,84 @@
+{
+  "version": 2,
+  "id": "ic-fuel-options",
+  "name": "IC Bus fuel options (columns of bullets)",
+  "css": "[data-bz-node=\"fo\"]{padding-block:0 clamp(32px,4vw,56px)}\n[data-bz-node=\"fo-col\"]{padding-bottom:var(--space-5)}\n[data-bz-node=\"fo-col\"] .bz-block{padding-block:0 var(--space-2)}\n[data-bz-node=\"fo-title\"] h3{font-size:clamp(1.0625rem,1.6vw,1.25rem);color:var(--ink);margin:0 0 var(--space-2)}\n[data-bz-node^=\"fo-bullet\"] p{position:relative;padding-left:20px;margin:0 0 6px;font-size:.875rem;line-height:1.7;color:#3d3c39}\n[data-bz-node^=\"fo-bullet\"] p::before{content:\"\";position:absolute;left:4px;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--accent)}\n",
+  "js": "",
+  "props": [
+    {
+      "key": "fuels",
+      "type": "list",
+      "label": "Fuel types",
+      "fields": [
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Fuel"
+        },
+        {
+          "key": "bullets",
+          "type": "list",
+          "label": "Bullet points",
+          "fields": [
+            {
+              "key": "text",
+              "type": "text",
+              "label": "Point"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "fo",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "fo-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "fo-col",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "repeat": "fuels"
+              },
+              "children": [
+                {
+                  "id": "fo-title",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "fo-bullet",
+                  "type": "text",
+                  "props": {
+                    "text": "{{text}}",
+                    "align": "left",
+                    "width": "full",
+                    "repeat": "bullets"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
