@@ -395,5 +395,14 @@
     "intent": "register",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "cse-brochure",
+    "label": "CSE trifold brochure",
+    "url": "#",
+    "style": "secondary",
+    "intent": "download-brochure",
+    "newTab": true,
+    "active": true
   }
 ]
