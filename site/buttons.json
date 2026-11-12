@@ -414,5 +414,23 @@
     "intent": "book-service",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "q4-calculate",
+    "label": "Calculate your savings now",
+    "url": "/financing",
+    "style": "link",
+    "intent": "calculate-savings",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "q4-inventory",
+    "label": "View our inventory",
+    "url": "/store/inventory",
+    "style": "link",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
   }
 ]

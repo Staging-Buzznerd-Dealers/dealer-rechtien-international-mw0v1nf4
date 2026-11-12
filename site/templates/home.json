@@ -68,6 +68,10 @@
       "ref": "dpf-cleaning"
     },
     {
+      "type": "page",
+      "ref": "q4-advantage"
+    },
+    {
       "type": "pageGroup",
       "ref": "team"
     }
