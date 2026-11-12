@@ -64,6 +64,10 @@
       "ref": "carolina-service-express"
     },
     {
+      "type": "page",
+      "ref": "dpf-cleaning"
+    },
+    {
       "type": "pageGroup",
       "ref": "team"
     }
