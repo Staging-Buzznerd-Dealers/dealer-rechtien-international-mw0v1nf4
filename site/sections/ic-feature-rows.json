@@ -1,0 +1,105 @@
+{
+  "version": 2,
+  "id": "ic-feature-rows",
+  "name": "IC Bus feature rows (bullets + image)",
+  "css": "[data-bz-node=\"fr\"]{padding-block:0 clamp(32px,4vw,56px)}\n[data-bz-node=\"fr-row\"]{padding-block:var(--space-4);align-items:center}\n[data-bz-node=\"fr-row\"] .bz-block{padding-block:0 var(--space-2)}\n[data-bz-node=\"fr-title\"] h3{font-size:clamp(1.0625rem,1.6vw,1.25rem);color:var(--ink);margin:0 0 var(--space-2)}\n[data-bz-node^=\"fr-bullet\"] p{position:relative;padding-left:20px;margin:0 0 6px;font-size:.875rem;line-height:1.7;color:#3d3c39}\n[data-bz-node^=\"fr-bullet\"] p::before{content:\"\";position:absolute;left:4px;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--accent)}\n[data-bz-node=\"fr-photo\"] img{width:100%;height:auto;display:block}\n",
+  "js": "",
+  "props": [
+    {
+      "key": "features",
+      "type": "list",
+      "label": "Features",
+      "fields": [
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "bullets",
+          "type": "list",
+          "label": "Bullet points",
+          "fields": [
+            {
+              "key": "text",
+              "type": "text",
+              "label": "Point"
+            }
+          ]
+        },
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Photo"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "fr",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "fr-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "stackOn": "tablet",
+            "repeat": "features"
+          },
+          "children": [
+            {
+              "id": "fr-text",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "fr-title",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "fr-bullet",
+                  "type": "text",
+                  "props": {
+                    "text": "{{text}}",
+                    "align": "left",
+                    "width": "full",
+                    "repeat": "bullets"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "fr-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "fr-photo",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -432,5 +432,32 @@
     "intent": "browse-inventory",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "shop-ic-bus",
+    "label": "Shop IC Bus",
+    "url": "/store/inventory",
+    "style": "link",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "ic-electric-brochure",
+    "label": "Download the electric bus brochure",
+    "url": "#",
+    "style": "secondary",
+    "intent": "download-brochure",
+    "newTab": true,
+    "active": true
+  },
+  {
+    "id": "ic-learn-more",
+    "label": "Learn more",
+    "url": "#",
+    "style": "primary",
+    "intent": "learn-more",
+    "newTab": false,
+    "active": true
   }
 ]

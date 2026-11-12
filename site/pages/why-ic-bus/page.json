@@ -1,0 +1,856 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "top",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 6,
+        "anchor": "top"
+      },
+      "children": [
+        {
+          "id": "top-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "top-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "top-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why IC Bus",
+                    "headingLevel": 1,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "top-img-1",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/ic-bus-placeholder.svg",
+                      "alt": "The next generation CE Series: ahead of its class",
+                      "width": 1200,
+                      "height": 700
+                    }
+                  }
+                },
+                {
+                  "id": "top-img-2",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/ic-bus-placeholder.svg",
+                      "alt": "DriverFirst thermal driver compartment",
+                      "width": 1200,
+                      "height": 700
+                    }
+                  }
+                },
+                {
+                  "id": "top-img-3",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/ic-bus-placeholder.svg",
+                      "alt": "What's new on the IC Bus CE Series",
+                      "width": 1200,
+                      "height": 700
+                    }
+                  }
+                },
+                {
+                  "id": "top-img-4",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/ic-bus-placeholder.svg",
+                      "alt": "IC Bus front view",
+                      "width": 1200,
+                      "height": 700
+                    }
+                  }
+                },
+                {
+                  "id": "top-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "[Copy needed]",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "top-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "shop-ic-bus"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "top-img-5",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/ic-bus-placeholder.svg",
+                      "alt": "IC Bus CE Series school bus",
+                      "width": 1200,
+                      "height": 700
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "safety",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "safety-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "safety-a",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "safety-a-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Start with safety",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "safety-a-t",
+                  "type": "text",
+                  "props": {
+                    "text": "[Copy needed]",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "safety-b",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "safety-b-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Electronic stability",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "safety-b-t",
+                  "type": "text",
+                  "props": {
+                    "text": "[Copy needed]",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "safety-video",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "safety-video-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "safety-video-note",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>[Video needed]</strong> Bendix ESP for IC Bus — Electronic Stability Control: How it works — add a Video block with the YouTube link and remove this note.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "driverfirst",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "df-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "df-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "df-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Put the DriverFirst",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "df-t",
+                  "type": "text",
+                  "props": {
+                    "text": "[Copy needed]",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "df-sub",
+                  "type": "heading",
+                  "props": {
+                    "text": "Experience DriverFirst for yourself.",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "df-list",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 3,
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "[Copy needed]"
+                      },
+                      {
+                        "label": "[Copy needed]"
+                      },
+                      {
+                        "label": "[Copy needed]"
+                      },
+                      {
+                        "label": "[Copy needed]"
+                      },
+                      {
+                        "label": "[Copy needed]"
+                      },
+                      {
+                        "label": "[Copy needed]"
+                      },
+                      {
+                        "label": "[Copy needed]"
+                      },
+                      {
+                        "label": "[Copy needed]"
+                      },
+                      {
+                        "label": "[Copy needed]"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "df-div",
+                  "type": "divider",
+                  "props": {}
+                },
+                {
+                  "id": "df-quote",
+                  "type": "text",
+                  "props": {
+                    "text": "<em>[Quote — copy needed]</em>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "ic-feature-rows",
+        "values": {
+          "features": [
+            {
+              "title": "Driver Visibility",
+              "bullets": [
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                }
+              ],
+              "image": {
+                "src": "/images/ic-bus-placeholder.svg",
+                "alt": "Driver visibility: front view of the IC Bus CE Series"
+              }
+            },
+            {
+              "title": "Driver Accommodation",
+              "bullets": [
+                {
+                  "text": "[Copy needed]"
+                }
+              ],
+              "image": {
+                "src": "/images/ic-bus-placeholder.svg",
+                "alt": "Driver accommodation: telescoping steering wheel"
+              }
+            },
+            {
+              "title": "Driver seat options",
+              "bullets": [
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                }
+              ],
+              "image": {
+                "src": "/images/ic-bus-placeholder.svg",
+                "alt": "Driver seat options"
+              }
+            },
+            {
+              "title": "Ingress/Egress",
+              "bullets": [
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                }
+              ],
+              "image": {
+                "src": "/images/ic-bus-placeholder.svg",
+                "alt": "Ingress and egress: entry door and steps"
+              }
+            },
+            {
+              "title": "RTI Seating",
+              "bullets": [
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                }
+              ],
+              "image": {
+                "src": "/images/ic-bus-placeholder.svg",
+                "alt": "RTI seating: passenger seats with belts"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "best",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "best-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "best-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "best-list",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Settle for nothing less than the best.",
+                        "desc": "[Copy needed]"
+                      },
+                      {
+                        "label": "We stop at nothing to deliver the best.",
+                        "desc": "[Copy needed]"
+                      },
+                      {
+                        "label": "Built right, right here at home.",
+                        "desc": "[Copy needed]"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "best-video-note",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>[Video needed]</strong> IC Bus: Driving Our Future — add a Video block with the YouTube link and remove this note.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "choice",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "choice-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "choice-a",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "choice-a-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/ic-bus-placeholder.svg",
+                      "alt": "IC Bus diesel engine",
+                      "width": 1200,
+                      "height": 700
+                    }
+                  }
+                },
+                {
+                  "id": "choice-a-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Get behind the power of choice",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "choice-a-t",
+                  "type": "text",
+                  "props": {
+                    "text": "[Copy needed]",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "choice-b",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "choice-b-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/ic-bus-placeholder.svg",
+                      "alt": "Charging an electric IC Bus",
+                      "width": 1200,
+                      "height": 700
+                    }
+                  }
+                },
+                {
+                  "id": "choice-b-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Get behind the power of choice",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "choice-b-t",
+                  "type": "text",
+                  "props": {
+                    "text": "[Copy needed]",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "engine",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 4
+      },
+      "children": [
+        {
+          "id": "engine-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "engine-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "engine-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "It all starts with the right engine",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "engine-t",
+                  "type": "text",
+                  "props": {
+                    "text": "[Copy needed]",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "engine-q",
+                  "type": "text",
+                  "props": {
+                    "text": "Which bus is right for your fleet?",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fuels",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "ic-fuel-options",
+        "values": {
+          "fuels": [
+            {
+              "title": "Diesel",
+              "bullets": [
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                }
+              ]
+            },
+            {
+              "title": "Propane",
+              "bullets": [
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                }
+              ]
+            },
+            {
+              "title": "Electric",
+              "bullets": [
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                },
+                {
+                  "text": "[Copy needed]"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "electric",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "electric-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "electric-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "electric-list",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 2,
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Introducing the Electric CE Series school bus",
+                        "desc": "[Copy needed]"
+                      },
+                      {
+                        "label": "Why go electric",
+                        "desc": "[Copy needed]"
+                      },
+                      {
+                        "label": "Charging to the head of the class",
+                        "desc": "[Copy needed]"
+                      },
+                      {
+                        "label": "It all starts with getting there",
+                        "desc": "[Copy needed]"
+                      },
+                      {
+                        "label": "Next steps for making the switch",
+                        "desc": "[Copy needed]"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "electric-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Interested in Electric?",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "electric-t",
+                  "type": "text",
+                  "props": {
+                    "text": "[Copy needed]",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "electric-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "ic-electric-brochure"
+                      },
+                      {
+                        "ctaId": "ic-learn-more"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "electric-div",
+                  "type": "divider",
+                  "props": {}
+                },
+                {
+                  "id": "electric-shop",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "shop-ic-bus"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

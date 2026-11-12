@@ -345,5 +345,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "why-ic-bus",
+    "title": "Why IC Bus: Safety, Comfort & Electric CE Series School Buses",
+    "description": "Why choose IC Bus school buses from Carolina International Trucks: DriverFirst design, safety and electronic stability, diesel, propane and electric CE Series options.",
+    "path": "/why-ic-bus",
+    "out": "why-ic-bus/index.html",
+    "dir": "why-ic-bus",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]
