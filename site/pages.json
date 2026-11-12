@@ -327,5 +327,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "q4-advantage",
+    "title": "Q4 Advantage: Year-End Truck Financing & Section 179 Savings",
+    "description": "Year-end truck offers from Carolina International Trucks: 90-day deferred payments, 100% bonus depreciation, 20% off planned maintenance, aggressive inventory pricing and Section 179 savings.",
+    "path": "/q4-advantage",
+    "out": "q4-advantage/index.html",
+    "dir": "q4-advantage",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

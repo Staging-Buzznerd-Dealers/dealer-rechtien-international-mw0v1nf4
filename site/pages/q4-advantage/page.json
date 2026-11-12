@@ -1,0 +1,278 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "banner",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "anchor": "top"
+      },
+      "children": [
+        {
+          "id": "banner-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "banner-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "banner-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/financing-dump-truck.jpg",
+                      "alt": "International trucks ready for year-end delivery at Carolina International Trucks"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "q4-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "q4-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "q4-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Q4 Advantage",
+                    "headingLevel": 1,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "q4-lede",
+                  "type": "heading",
+                  "props": {
+                    "text": "Finance Strategically. Drive Into 2026 With Confidence.",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "q4-offers",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 3,
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Drive Now, Pay Later",
+                        "desc": "Finance your next truck or bus with International® Financial and defer payments for 90 days. This limited-time offer allows qualified buyers to take delivery immediately while preserving cash flow for other expenses such as taxes, registration, and insurance. Offer ends December 31, 2025."
+                      },
+                      {
+                        "label": "Maximize Tax Benefits* before year-end",
+                        "desc": "100% bonus depreciation = full deduction of truck cost in purchase year, which provides significant tax savings when filing for current fiscal year. Vehicles must be in service by December 31, 2025. Consult your tax advisor about eligibility."
+                      },
+                      {
+                        "label": "Save 20% on Planned Maintenance",
+                        "desc": "Receive 20% off the Planned Maintenance portion of your Service Contract when financed through International Financial. This program includes expert service, genuine OEM parts, and support from the industry’s largest service network. Offer valid through the end of Q4."
+                      },
+                      {
+                        "label": "Year-End Inventory Opportunities",
+                        "desc": "Carolina International offers aggressive pricing on new and used trucks, with immediate delivery available."
+                      },
+                      {
+                        "label": "Tariff-Free In-Stock Inventory",
+                        "desc": "2025 and older in-stock units are available tariff-free, with reduced tariffs on 2026 models. This limited time opportunity allows you to secure equipment at lower total acquisition costs while inventory lasts. Contact Carolina International to confirm availability and take advantage of these savings before year-end."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "q4-div-1",
+                  "type": "divider",
+                  "props": {}
+                },
+                {
+                  "id": "q4-contact-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Contact Carolina International to confirm availability and take advantage of these savings before year-end.",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "q4-div-2",
+                  "type": "divider",
+                  "props": {}
+                },
+                {
+                  "id": "q4-bottom-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Bottom line — Plan ahead for 2026",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "q4-bottom-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Refresh your fleet, lock in current interest rates, and align capital expenditures with your growth goals. Upgraded equipment supports productivity and strengthens your operating structure heading into the new year.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "q4-div-3",
+                  "type": "divider",
+                  "props": {}
+                },
+                {
+                  "id": "s179-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Section 179",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "s179-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Find out more!",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "s179-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "q4-calculate"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "q4-div-4",
+                  "type": "divider",
+                  "props": {}
+                },
+                {
+                  "id": "inv-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Explore our inventory",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "inv-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Looking for equipment that qualifies for the Section 179 deduction? Check out our current and incoming inventory. We have a range of commercial trucks available to meet your needs right now, so you can secure your savings before the year ends.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "inv-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "q4-inventory"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "q4-div-5",
+                  "type": "divider",
+                  "props": {}
+                },
+                {
+                  "id": "help-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Contact us",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "help-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Have questions about Section 179 or our inventory? Our team is here to help you navigate your options and maximize your savings.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "help-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "contact-us"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "q4-div-6",
+                  "type": "divider",
+                  "props": {}
+                },
+                {
+                  "id": "q4-disclaimer",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Disclaimer:</strong> Consult your tax advisor for specific advice regarding the Section 179 deduction and other tax strategies.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
