@@ -309,5 +309,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "dpf-cleaning",
+    "title": "DPF Cleaning in South Carolina | Carolina International Trucks",
+    "description": "Diesel Particulate Filter (DPF) cleaning for all makes of trucks and heavy equipment at Carolina International Trucks in Greer/Greenville, Columbia and Charleston, SC.",
+    "path": "/dpf-cleaning",
+    "out": "dpf-cleaning/index.html",
+    "dir": "dpf-cleaning",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

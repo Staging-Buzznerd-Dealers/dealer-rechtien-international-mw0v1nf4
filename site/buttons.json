@@ -404,5 +404,15 @@
     "intent": "download-brochure",
     "newTab": true,
     "active": true
+  },
+  {
+    "id": "dpf-appointment",
+    "label": "Service appointment",
+    "url": null,
+    "formId": "service-appointment",
+    "style": "primary",
+    "intent": "book-service",
+    "newTab": false,
+    "active": true
   }
 ]

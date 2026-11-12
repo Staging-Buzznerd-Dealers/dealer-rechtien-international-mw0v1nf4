@@ -1,0 +1,203 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "banner",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "anchor": "top"
+      },
+      "children": [
+        {
+          "id": "banner-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "banner-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "banner-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/white-international-truck.jpg",
+                      "alt": "An International truck ready for DPF cleaning at Carolina International Trucks"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dpf",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "dpf-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "dpf-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "dpf-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Diesel Particulate Filter Cleaning at Carolina International Trucks",
+                    "headingLevel": 1,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "dpf-sub",
+                  "type": "heading",
+                  "props": {
+                    "text": "DPFs cleaned here",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Run clean. Run efficiently. Save money."
+                  }
+                },
+                {
+                  "id": "dpf-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "Carolina International Trucks offers Diesel Particulate Filter (DPF) cleaning for all makes of trucks and heavy equipment in Greenville, SC.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "dpf-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "The Diesel Particulate Filter (DPF) is standard equipment on all 2007 and later engines and must be cleaned at proper intervals of 250,000 miles (400,000 km or 6,000 hours) or less depending on duty cycle and manufacturers’ recommendations.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "dpf-t3",
+                  "type": "text",
+                  "props": {
+                    "text": "Left unchecked, soot and ash collected in a DPF can damage or destroy a filter — resulting in a DPF replacement cost of $3,000 or more and unwanted, unscheduled downtime.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "dpf-t4",
+                  "type": "text",
+                  "props": {
+                    "text": "The trained technicians at Carolina International Trucks will thoroughly clean your DPF to restore the engine to full power and efficiency. Your DPF cleaning service can be provided conveniently while your vehicle is in for service.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "dpf-t5",
+                  "type": "text",
+                  "props": {
+                    "text": "Call our Service Department to schedule your DPF cleaning today! Or request more information from Carolina International Trucks.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "dpf-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "dpf-appointment"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "locations",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "parts-contacts",
+        "values": {
+          "eyebrow": "DPF cleaning is available at",
+          "heading": "Carolina International Trucks service locations.",
+          "groups": [
+            {
+              "company": "Carolina International Trucks",
+              "region": "South Carolina · 3 locations",
+              "intro": "Schedule your DPF cleaning at the Carolina International Trucks service department nearest you.",
+              "lineLabel": "",
+              "line": "",
+              "lineUrl": "",
+              "locations": [
+                {
+                  "name": "Greer / Greenville",
+                  "street": "2580 Oscar Johnson Dr",
+                  "city": "Charleston, SC 29405",
+                  "tollFree": "(800) 666-3040",
+                  "tollFreeUrl": "tel:+18006663040",
+                  "phone": "(843) 747-3040",
+                  "phoneUrl": "tel:+18437473040",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2580%20Oscar%20Johnson%20Dr%2C%20Charleston%2C%20SC%2029405"
+                },
+                {
+                  "name": "Columbia",
+                  "street": "1619 Bluff Road",
+                  "city": "Columbia, SC 29201",
+                  "tollFree": "(800) 868-4923",
+                  "tollFreeUrl": "tel:+18008684923",
+                  "phone": "(803) 799-4923",
+                  "phoneUrl": "tel:+18037994923",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=1619%20Bluff%20Road%2C%20Columbia%2C%20SC%2029201"
+                },
+                {
+                  "name": "Greer",
+                  "street": "2520 Hwy 14 S",
+                  "city": "Greer, SC 29650",
+                  "tollFree": "(800) 284-0050",
+                  "tollFreeUrl": "tel:+18002840050",
+                  "phone": "(864) 848-0050",
+                  "phoneUrl": "tel:+18648480050",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2520%20Hwy%2014%20S%2C%20Greer%2C%20SC%2029650"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
