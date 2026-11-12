@@ -60,6 +60,10 @@
       "ref": "rechtien-university"
     },
     {
+      "type": "page",
+      "ref": "carolina-service-express"
+    },
+    {
       "type": "pageGroup",
       "ref": "team"
     }
