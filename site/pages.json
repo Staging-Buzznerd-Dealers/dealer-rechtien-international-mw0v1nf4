@@ -353,7 +353,7 @@
     "path": "/why-ic-bus",
     "out": "why-ic-bus/index.html",
     "dir": "why-ic-bus",
-    "status": "published",
+    "status": "draft",
     "seo": {
       "ogImage": null,
       "noindex": false
