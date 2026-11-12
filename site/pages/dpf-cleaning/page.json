@@ -165,13 +165,13 @@
               "locations": [
                 {
                   "name": "Greer / Greenville",
-                  "street": "2580 Oscar Johnson Dr",
-                  "city": "Charleston, SC 29405",
-                  "tollFree": "(800) 666-3040",
-                  "tollFreeUrl": "tel:+18006663040",
-                  "phone": "(843) 747-3040",
-                  "phoneUrl": "tel:+18437473040",
-                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2580%20Oscar%20Johnson%20Dr%2C%20Charleston%2C%20SC%2029405"
+                  "street": "2520 Hwy 14 S",
+                  "city": "Greer, SC 29650",
+                  "tollFree": "(800) 284-0050",
+                  "tollFreeUrl": "tel:+18002840050",
+                  "phone": "(864) 848-0050",
+                  "phoneUrl": "tel:+18648480050",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2520%20Hwy%2014%20S%2C%20Greer%2C%20SC%2029650"
                 },
                 {
                   "name": "Columbia",
@@ -184,14 +184,14 @@
                   "mapUrl": "https://www.google.com/maps/search/?api=1&query=1619%20Bluff%20Road%2C%20Columbia%2C%20SC%2029201"
                 },
                 {
-                  "name": "Greer",
-                  "street": "2520 Hwy 14 S",
-                  "city": "Greer, SC 29650",
-                  "tollFree": "(800) 284-0050",
-                  "tollFreeUrl": "tel:+18002840050",
-                  "phone": "(864) 848-0050",
-                  "phoneUrl": "tel:+18648480050",
-                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2520%20Hwy%2014%20S%2C%20Greer%2C%20SC%2029650"
+                  "name": "Charleston",
+                  "street": "2580 Oscar Johnson Dr",
+                  "city": "Charleston, SC 29405",
+                  "tollFree": "(800) 666-3040",
+                  "tollFreeUrl": "tel:+18006663040",
+                  "phone": "(843) 747-3040",
+                  "phoneUrl": "tel:+18437473040",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2580%20Oscar%20Johnson%20Dr%2C%20Charleston%2C%20SC%2029405"
                 }
               ]
             }
