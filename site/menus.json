@@ -426,6 +426,14 @@
                   "url": null,
                   "newTab": false,
                   "children": []
+                },
+                {
+                  "id": "item-47",
+                  "label": " S13 Integrated Powertrain",
+                  "type": "url",
+                  "url": "/specifications",
+                  "ref": null,
+                  "children": []
                 }
               ]
             }
@@ -750,8 +758,9 @@
           "id": "item-11",
           "label": "About Us",
           "type": "url",
-          "url": "/about",
           "ref": null,
+          "url": "/about",
+          "newTab": false,
           "children": [
             {
               "id": "hn-about-col",
@@ -808,8 +817,7 @@
                 }
               ]
             }
-          ],
-          "newTab": false
+          ]
         }
       ]
     },

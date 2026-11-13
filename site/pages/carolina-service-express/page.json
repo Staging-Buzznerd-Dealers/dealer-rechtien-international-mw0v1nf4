@@ -31,7 +31,7 @@
                   "props": {
                     "image": {
                       "src": "/images/red-international-truck.jpg",
-                      "alt": "A red International truck at Carolina International Trucks"
+                      "alt": "A red International truck at Rechtien Truck Group"
                     }
                   }
                 }
@@ -68,7 +68,7 @@
                   "id": "cse-h",
                   "type": "heading",
                   "props": {
-                    "text": "Carolina Service Express at Carolina International Trucks",
+                    "text": "Carolina Service Express at Rechtien Truck Group",
                     "headingLevel": 1,
                     "align": "left"
                   }
@@ -77,7 +77,7 @@
                   "id": "cse-intro",
                   "type": "text",
                   "props": {
-                    "text": "Carolina International Trucks Service Express (CSE) is our way of serving you, our customer, faster than ever before. We offer the following services:",
+                    "text": "Rechtien Truck Group Service Express (CSE) is our way of serving you, our customer, faster than ever before. We offer the following services:",
                     "align": "left",
                     "width": "full"
                   }
@@ -173,10 +173,10 @@
         "sectionId": "parts-contacts",
         "values": {
           "eyebrow": "Find Carolina Service Express",
-          "heading": "Carolina International Trucks locations.",
+          "heading": "Rechtien Truck Group locations.",
           "groups": [
             {
-              "company": "Carolina International Trucks",
+              "company": "Rechtien Truck Group",
               "region": "South Carolina · 6 locations",
               "intro": "Six South Carolina locations. Call or stop in — Carolina Service Express is ready when your truck is.",
               "lineLabel": "",

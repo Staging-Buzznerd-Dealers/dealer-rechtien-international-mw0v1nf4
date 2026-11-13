@@ -1,7 +1,7 @@
 [
   {
     "slug": "home",
-    "title": "Carolina-Rechtien International",
+    "title": "Rechtien Truck Group",
     "description": "New and pre-owned International trucks, IC Bus, Hino and trailers from 11 locations serving South Florida and South Carolina. Parts, service, financing and lease & rental.",
     "path": "/",
     "out": "index.html",
@@ -77,7 +77,7 @@
   {
     "slug": "service",
     "title": "Commercial Truck Service & Repair in Florida & South Carolina",
-    "description": "Truck service and repair for all makes at Carolina International Trucks (South Carolina) and Rechtien International Trucks (South Florida): preventive maintenance, diagnostics, warranty work, alignment, A/C and mobile service.",
+    "description": "Truck service and repair for all makes at Rechtien Truck Group in South Carolina and South Florida: preventive maintenance, diagnostics, warranty work, alignment, A/C and mobile service.",
     "path": "/service",
     "out": "service/index.html",
     "dir": "service",
@@ -94,8 +94,8 @@
   },
   {
     "slug": "about",
-    "title": "About Rechtien & Carolina International Trucks",
-    "description": "Rechtien International and Carolina International Trucks: one commercial truck dealer network with 11 locations in South Florida and South Carolina.",
+    "title": "About Rechtien Truck Group",
+    "description": "Rechtien Truck Group: one commercial truck dealer network with 11 locations in South Florida and South Carolina.",
     "path": "/about",
     "out": "about/index.html",
     "dir": "about",
@@ -113,7 +113,7 @@
   {
     "slug": "financing",
     "title": "Commercial Semi-Truck Financing & Leasing",
-    "description": "Commercial semi-truck financing and leasing through International Financial at Rechtien and Carolina International Trucks in South Florida and South Carolina.",
+    "description": "Commercial semi-truck financing and leasing through International Financial at Rechtien Truck Group in South Florida and South Carolina.",
     "path": "/financing",
     "out": "financing/index.html",
     "dir": "financing",
@@ -131,7 +131,7 @@
   {
     "slug": "lease-rental",
     "title": "Semi Truck Leasing & Rentals | Idealease",
-    "description": "Semi truck leasing and rentals with Idealease at Rechtien International in South Florida and Carolina International in South Carolina.",
+    "description": "Semi truck leasing and rentals with Idealease at Rechtien Truck Group in South Florida and South Carolina.",
     "path": "/lease-rental",
     "out": "lease-rental/index.html",
     "dir": "lease-rental",
@@ -149,7 +149,7 @@
   {
     "slug": "mobile-service",
     "title": "Mobile Truck Service | Idealease Mobile Service",
-    "description": "Idealease Mobile Service brings truck maintenance to your location, at Rechtien International in South Florida and Carolina International in South Carolina.",
+    "description": "Idealease Mobile Service brings truck maintenance to your location, at Rechtien Truck Group in South Florida and South Carolina.",
     "path": "/mobile-service",
     "out": "mobile-service/index.html",
     "dir": "mobile-service",
@@ -167,7 +167,7 @@
   {
     "slug": "international-360",
     "title": "International 360 (I360) Truck Fleet Management",
-    "description": "International 360 fleet management and repair communication at Rechtien International in South Florida and Carolina International in South Carolina.",
+    "description": "International 360 fleet management and repair communication at Rechtien Truck Group in South Florida and South Carolina.",
     "path": "/international-360",
     "out": "international-360/index.html",
     "dir": "international-360",
@@ -185,7 +185,7 @@
   {
     "slug": "team-david-milliken",
     "title": "David Milliken — General Manager, Greer & Greenville, SC",
-    "description": "Meet David Milliken, General Manager at Carolina International Trucks in Greer and Greenville, SC. Contact David, see his inventory and send a message.",
+    "description": "Meet David Milliken, General Manager at Rechtien Truck Group in Greer and Greenville, SC. Contact David, see his inventory and send a message.",
     "path": "/team/david-milliken",
     "out": "team/david-milliken/index.html",
     "dir": "team-david-milliken",
@@ -204,7 +204,7 @@
   {
     "slug": "team",
     "title": "Meet the Team",
-    "description": "Meet the Rechtien International Trucks and Carolina International Trucks team: executive staff and the people at every location in South Florida and South Carolina.",
+    "description": "Meet Rechtien Truck Group team: executive staff and the people at every location in South Florida and South Carolina.",
     "path": "/team",
     "out": "team/index.html",
     "dir": "team",
@@ -223,7 +223,7 @@
   {
     "slug": "emv-series",
     "title": "International eMV Electric Truck Series",
-    "description": "The International eMV Series electric truck: 210 kWh battery, 135-mile range and a complete eMobility solution from Rechtien International Trucks.",
+    "description": "The International eMV Series electric truck: 210 kWh battery, 135-mile range and a complete eMobility solution from Rechtien Truck Group.",
     "path": "/emv-series",
     "out": "emv-series/index.html",
     "dir": "emv-series",
@@ -241,7 +241,7 @@
   {
     "slug": "zero-emissions",
     "title": "Zero-Emission Trucks & EV Roadmap",
-    "description": "Zero-emission International trucks and an EV roadmap from Carolina International Trucks: consulting, charging and deployment for your fleet.",
+    "description": "Zero-emission International trucks and an EV roadmap from Rechtien Truck Group: consulting, charging and deployment for your fleet.",
     "path": "/zero-emissions",
     "out": "zero-emissions/index.html",
     "dir": "zero-emissions",
@@ -259,7 +259,7 @@
   {
     "slug": "service-specials",
     "title": "Truck Service Specials & Coupons",
-    "description": "Truck service specials from Rechtien International Trucks in South Florida: DPF cleaning, oil and filter, quick lube and B service pricing.",
+    "description": "Truck service specials from Rechtien Truck Group in South Florida: DPF cleaning, oil and filter, quick lube and B service pricing.",
     "path": "/service-specials",
     "out": "service-specials/index.html",
     "dir": "service-specials",
@@ -295,7 +295,7 @@
   {
     "slug": "carolina-service-express",
     "title": "Carolina Service Express: Fast Truck Service in South Carolina",
-    "description": "Carolina Service Express (CSE) at Carolina International Trucks: quick lube, express repairs, complete truck & trailer PM, menu pricing and factory-trained technicians across South Carolina.",
+    "description": "Carolina Service Express (CSE) at Rechtien Truck Group: quick lube, express repairs, complete truck & trailer PM, menu pricing and factory-trained technicians across South Carolina.",
     "path": "/carolina-service-express",
     "out": "carolina-service-express/index.html",
     "dir": "carolina-service-express",
@@ -312,8 +312,8 @@
   },
   {
     "slug": "dpf-cleaning",
-    "title": "DPF Cleaning in South Carolina | Carolina International Trucks",
-    "description": "Diesel Particulate Filter (DPF) cleaning for all makes of trucks and heavy equipment at Carolina International Trucks in Greer/Greenville, Columbia and Charleston, SC.",
+    "title": "DPF Cleaning in South Carolina | Rechtien Truck Group",
+    "description": "Diesel Particulate Filter (DPF) cleaning for all makes of trucks and heavy equipment at Rechtien Truck Group in Greer/Greenville, Columbia and Charleston, SC.",
     "path": "/dpf-cleaning",
     "out": "dpf-cleaning/index.html",
     "dir": "dpf-cleaning",
@@ -331,7 +331,7 @@
   {
     "slug": "q4-advantage",
     "title": "Q4 Advantage: Year-End Truck Financing & Section 179 Savings",
-    "description": "Year-end truck offers from Carolina International Trucks: 90-day deferred payments, 100% bonus depreciation, 20% off planned maintenance, aggressive inventory pricing and Section 179 savings.",
+    "description": "Year-end truck offers from Rechtien Truck Group: 90-day deferred payments, 100% bonus depreciation, 20% off planned maintenance, aggressive inventory pricing and Section 179 savings.",
     "path": "/q4-advantage",
     "out": "q4-advantage/index.html",
     "dir": "q4-advantage",
@@ -349,11 +349,11 @@
   {
     "slug": "why-ic-bus",
     "title": "Why IC Bus: Safety, Comfort & Electric CE Series School Buses",
-    "description": "Why choose IC Bus school buses from Carolina International Trucks: DriverFirst design, safety and electronic stability, diesel, propane and electric CE Series options.",
+    "description": "Why choose IC Bus school buses from Rechtien Truck Group: DriverFirst design, safety and electronic stability, diesel, propane and electric CE Series options.",
     "path": "/why-ic-bus",
     "out": "why-ic-bus/index.html",
     "dir": "why-ic-bus",
-    "status": "published",
+    "status": "draft",
     "seo": {
       "ogImage": null,
       "noindex": false

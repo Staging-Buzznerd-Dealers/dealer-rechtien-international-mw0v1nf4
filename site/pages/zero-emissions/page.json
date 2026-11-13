@@ -127,7 +127,7 @@
                   "id": "intro-t2",
                   "type": "text",
                   "props": {
-                    "text": "Carolina International Trucks serves South Carolina and Rechtien International Trucks serves South Florida, so your electrification plan can be supported close to where your trucks work.",
+                    "text": "Rechtien Truck Group serves South Carolina and South Florida, so your electrification plan can be supported close to where your trucks work.",
                     "align": "left",
                     "width": "full"
                   }
@@ -617,7 +617,7 @@
                   "id": "contact-t2",
                   "type": "text",
                   "props": {
-                    "text": "Prefer to talk? Call (800) 666-3040 or contact your nearest Carolina International location below.",
+                    "text": "Prefer to talk? Call (800) 666-3040 or contact your nearest Rechtien Truck Group location below.",
                     "align": "left",
                     "width": "full"
                   }
@@ -651,12 +651,12 @@
         "sectionId": "parts-contacts",
         "values": {
           "eyebrow": "Where to learn more",
-          "heading": "Carolina International Trucks locations.",
+          "heading": "Rechtien Truck Group locations.",
           "groups": [
             {
-              "company": "Carolina International Trucks",
+              "company": "Rechtien Truck Group",
               "region": "South Carolina · 6 locations",
-              "intro": "Contact or visit Carolina International Trucks to talk through zero-emission trucks and your EV roadmap.",
+              "intro": "Contact or visit Rechtien Truck Group to talk through zero-emission trucks and your EV roadmap.",
               "lineLabel": "",
               "line": "",
               "lineUrl": "",
