@@ -17,7 +17,6 @@
   --radius-nav:4px; --radius-input:2px; --radius-card:0; --radius-chip:4px;
 }
 body{background:#fff;color:var(--ink);font-weight:400;letter-spacing:0;-webkit-font-smoothing:antialiased}
-
 /* ---- Type ---------------------------------------------------------------- */
 .bz-block h1,.bz-block h2,.bz-block h3{text-transform:uppercase;letter-spacing:0;font-weight:700}
 .bz-block h1{font-size:var(--text-h1);line-height:1.04}
@@ -25,22 +24,8 @@ body{background:#fff;color:var(--ink);font-weight:400;letter-spacing:0;-webkit-f
 .bz-block p{font-size:.9375rem;line-height:1.75}
 .bz-block .bz-eyebrow,.bz-eyebrow{font:700 var(--text-eyebrow)/1.4 var(--font-body);letter-spacing:.22em;color:var(--muted);margin-bottom:var(--space-2)}
 .bz-block--heading{padding-block:0 var(--space-2)}
-
-/* ---- Buttons ------------------------------------------------------------- */
+/* Buttons: styled globally (site/custom-code.json). Rules here only position them. */
 .bz-btns{margin-block:var(--space-5) 0}
-.bz-btn{font:700 .75rem/1 var(--font-body);letter-spacing:.12em;text-transform:uppercase;min-height:46px;padding:0 22px;border-radius:4px;border:1px solid var(--ink);transition:background-color .18s ease,color .18s ease,border-color .18s ease,transform .18s ease}
-.bz-btn--primary{background:#fff;color:var(--ink);border-color:#fff}
-.bz-btn--primary:hover{background:transparent;color:#fff}
-.bz-btn--secondary{background:#fff;color:var(--ink);border-color:var(--ink)}
-.bz-btn--secondary:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
-.bz-btn--link{background:none;border:0;border-radius:0;min-height:0;padding:0;color:var(--ink);text-decoration:none;gap:10px}
-.bz-btn--link::after{content:"";width:15px;height:15px;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12h15M13 6l6 6-6 6'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12h15M13 6l6 6-6 6'/%3E%3C/svg%3E") center/contain no-repeat;transition:transform .18s ease}
-.bz-btn--link:hover::after{transform:translateX(4px)}
-
-
-
-
-
 /* ---- Hero: photo fills the band, copy sits over it ------------------------- */
 .bz-section[data-bz-node="hero"]{position:relative;min-height:clamp(440px,39vw,560px);display:flex;flex-direction:column;justify-content:center;padding:112px 0 72px;color:#fff;isolation:isolate;background:var(--night);overflow:hidden}
 .bz-section[data-bz-node="hero"]::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(21,21,21,.6) 0%,rgba(21,21,21,.4) 45%,rgba(21,21,21,.7) 100%)}
