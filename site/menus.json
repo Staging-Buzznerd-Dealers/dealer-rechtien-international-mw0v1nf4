@@ -386,7 +386,7 @@
       "items": [
         {
           "id": "hn-inventory",
-          "label": "Inventory",
+          "label": "Trucks",
           "type": "inventory",
           "ref": "inventory",
           "url": null,
@@ -394,7 +394,7 @@
           "children": [
             {
               "id": "hn-inv-shop",
-              "label": "Shop Inventory",
+              "label": "Shop Trucks",
               "type": "label",
               "ref": null,
               "url": null,
@@ -402,7 +402,7 @@
               "children": [
                 {
                   "id": "hn-inv-new",
-                  "label": "New Inventory",
+                  "label": "New Truck",
                   "type": "inventory",
                   "ref": "inventory?condition=new",
                   "url": null,
@@ -411,18 +411,9 @@
                 },
                 {
                   "id": "hn-inv-used",
-                  "label": "Used Inventory",
+                  "label": "Used Truck",
                   "type": "inventory",
                   "ref": "inventory?condition=used",
-                  "url": null,
-                  "newTab": false,
-                  "children": []
-                },
-                {
-                  "id": "hn-inv-all",
-                  "label": "All Inventory",
-                  "type": "inventory",
-                  "ref": "inventory",
                   "url": null,
                   "newTab": false,
                   "children": []
@@ -431,8 +422,9 @@
                   "id": "item-47",
                   "label": " S13 Integrated Powertrain",
                   "type": "url",
-                  "url": "/specifications",
                   "ref": null,
+                  "url": "/specifications",
+                  "newTab": false,
                   "children": []
                 }
               ]
