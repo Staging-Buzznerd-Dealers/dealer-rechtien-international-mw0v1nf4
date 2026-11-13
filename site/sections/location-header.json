@@ -16,12 +16,6 @@
       "default": "Store information"
     },
     {
-      "key": "contactsHeading",
-      "type": "text",
-      "label": "Department contacts heading",
-      "default": "Department contacts"
-    },
-    {
       "key": "gmEyebrow",
       "type": "text",
       "label": "Manager card eyebrow",
@@ -235,6 +229,10 @@
                         "ctaId": "get-directions",
                         "url": "{{mapUrl}}",
                         "style": "primary"
+                      },
+                      {
+                        "ctaId": "view-inventory",
+                        "style": "primary"
                       }
                     ]
                   }
@@ -320,44 +318,6 @@
                       }
                     ]
                   }
-                },
-                {
-                  "id": "ls-dept-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "{{contactsHeading}}",
-                    "headingLevel": 3,
-                    "align": "left"
-                  }
-                },
-                {
-                  "id": "ls-depts",
-                  "type": "row",
-                  "props": {
-                    "gap": 4,
-                    "stackOn": "mobile"
-                  },
-                  "children": [
-                    {
-                      "id": "ls-dept",
-                      "type": "column",
-                      "props": {
-                        "span": 6,
-                        "repeat": "departmentRows"
-                      },
-                      "children": [
-                        {
-                          "id": "ls-dept-t",
-                          "type": "text",
-                          "props": {
-                            "text": "<strong>{{name}}</strong><a href=\"{{phoneUrl}}\">{{phone}}</a><br><a href=\"mailto:{{email}}\">{{email}}</a>",
-                            "align": "left",
-                            "width": "full"
-                          }
-                        }
-                      ]
-                    }
-                  ]
                 }
               ]
             },
@@ -432,15 +392,91 @@
                   ]
                 },
                 {
-                  "id": "ls-map",
-                  "type": "widget",
-                  "props": {
-                    "widget": "locations-map",
-                    "config": {
-                      "locationSlug": "{{locationSlug}}",
-                      "mapProvider": "google"
+                  "id": "ls-map-row",
+                  "type": "row",
+                  "props": {},
+                  "children": [
+                    {
+                      "id": "ls-mapcard",
+                      "type": "column",
+                      "props": {
+                        "span": 12,
+                        "repeat": "rooftop"
+                      },
+                      "children": [
+                        {
+                          "id": "ls-map-t1",
+                          "type": "text",
+                          "props": {
+                            "text": "{{subtitle}} {{name}}, {{region}}",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "ls-map-t2",
+                          "type": "text",
+                          "props": {
+                            "text": "{{city}}, {{region}} {{postalCode}}",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "ls-map-coords",
+                          "type": "text",
+                          "props": {
+                            "text": "{{latitude}}, {{longitude}}",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "ls-map-bub",
+                          "type": "row",
+                          "props": {},
+                          "children": [
+                            {
+                              "id": "ls-map-in",
+                              "type": "column",
+                              "props": {
+                                "span": 12
+                              },
+                              "children": [
+                                {
+                                  "id": "ls-map-a1",
+                                  "type": "text",
+                                  "props": {
+                                    "text": "{{streetAddress}}",
+                                    "align": "left",
+                                    "width": "full"
+                                  }
+                                },
+                                {
+                                  "id": "ls-map-a2",
+                                  "type": "text",
+                                  "props": {
+                                    "text": "{{city}}, {{region}} {{postalCode}}",
+                                    "align": "left",
+                                    "width": "full"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": "ls-map-attr",
+                          "type": "text",
+                          "props": {
+                            "text": "<a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\" rel=\"noopener\">© OpenStreetMap contributors</a>",
+                            "align": "left",
+                            "width": "full"
+                          }
+                        }
+                      ]
                     }
-                  }
+                  ]
                 }
               ]
             }
@@ -449,5 +485,6 @@
       ]
     }
   ],
-  "css": "/* Location header. The banner image is the rooftop's own (Admin → Locations → Profile → Page banner); without one the band stays on ink. */\n.bz-section[data-bz-node=\"lh\"]{position:relative;min-height:clamp(380px,32vw,480px);display:flex;flex-direction:column;justify-content:center;padding:104px 0 64px;color:#fff;isolation:isolate;background:var(--night,#2b2a27);overflow:hidden}\n.bz-section[data-bz-node=\"lh\"]::before{content:\"\";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(21,21,21,.6) 0%,rgba(21,21,21,.45) 50%,rgba(21,21,21,.7) 100%)}\n[data-bz-node^=\"lh-banner\"]{position:absolute;inset:0;z-index:0;padding:0;margin:0}\n[data-bz-node^=\"lh-banner\"] .bz-container,[data-bz-node^=\"lh-banner\"] .bz-figure,[data-bz-node^=\"lh-banner\"] img{width:100%;max-width:none;height:100%;margin:0;padding:0;border-radius:0;object-fit:cover}\n[data-bz-node^=\"lh-banner\"] .bz-photo--empty,[data-bz-node^=\"lh-banner\"] .bz-placeholder{display:none}\n[data-bz-node=\"lh\"]>.bz-container{max-width:none;padding-inline:0}\n[data-bz-node=\"lh-row\"]{position:relative;z-index:2;max-width:920px;margin-inline:auto;padding-inline:var(--space-4);width:100%;box-sizing:border-box}\n[data-bz-node=\"lh\"] .bz-block{padding-block:0}\n[data-bz-node^=\"lh-crumbs\"] p{font:700 .625rem/1.4 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:#fff;margin:0 0 var(--space-3)}\n[data-bz-node^=\"lh-crumbs\"] a{color:#fff;border-bottom:1px solid transparent}\n[data-bz-node^=\"lh-crumbs\"] a:hover{border-bottom-color:currentColor}\n[data-bz-node^=\"lh-h\"] h1{color:#fff;margin:0 auto var(--space-4);max-width:18em;text-wrap:balance}\n[data-bz-node^=\"lh-addr\"] p{color:rgba(255,255,255,.88);margin:0 auto;font-size:.9375rem}\n[data-bz-node^=\"lh-cta\"] .bz-btns{justify-content:center;margin-top:var(--space-5)}\n\n/* Store details */\n[data-bz-node=\"ls\"] .bz-block{padding-block:0 var(--space-3)}\n[data-bz-node^=\"ls-name\"] h2{margin-bottom:var(--space-2)}\n[data-bz-node^=\"ls-sub\"] p{font:700 .75rem/1.4 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0}\n[data-bz-node^=\"ls-sub\"] p:empty{display:none}\n[data-bz-node^=\"ls-addr\"] p{font-size:.9375rem;line-height:1.7;margin:0}\n[data-bz-node=\"ls\"] .bz-text a{font-weight:700;color:var(--ink);text-decoration:none;font-size:.875rem;line-height:1.8}\n[data-bz-node=\"ls\"] .bz-text a[href^=\"mailto:\"]{font-weight:400;text-decoration:underline;text-underline-offset:3px}\n[data-bz-node=\"ls\"] a[href=\"tel:\"],[data-bz-node=\"ls\"] a[href=\"mailto:\"]{display:none}\n[data-bz-node^=\"ls-dir\"] .bz-btns{margin-top:var(--space-2)}\n[data-bz-node^=\"ls-dept-h\"]{margin-top:var(--space-6)}\n[data-bz-node^=\"ls-dept-h\"] h3{font-size:1rem;margin:0;padding-top:var(--space-5);border-top:1px solid var(--line)}\n[data-bz-node^=\"ls-dept-t\"] p{margin:0;padding:var(--space-4);background:var(--paper);height:100%}\n[data-bz-node^=\"ls-dept-t\"] strong{display:block;font:700 .75rem/1.4 var(--font-body);text-transform:uppercase;letter-spacing:.04em;margin-bottom:var(--space-2)}\n[data-bz-node^=\"ls-depts\"]{row-gap:var(--space-4)}\n\n/* The general manager is the one photograph on the page (client direction), from the team directory. */\n[data-bz-node^=\"ls-gm-card\"]{background:var(--ink);color:#fff}\n[data-bz-node^=\"ls-gm-card\"] .bz-block{padding:0 24px}\n[data-bz-node^=\"ls-gm-photo\"]{padding:0!important;margin-bottom:20px}\n[data-bz-node^=\"ls-gm-photo\"] .bz-container,[data-bz-node^=\"ls-gm-photo\"] .bz-figure{max-width:none;padding:0;margin:0}\n[data-bz-node^=\"ls-gm-photo\"] img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top;display:block;border-radius:0}\n[data-bz-node^=\"ls-gm-eyebrow\"] p{font:700 .625rem/1.4 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin:0 0 6px}\n[data-bz-node^=\"ls-gm-name\"] h3{color:#fff;font:700 1.25rem/1.15 var(--font-heading);text-transform:uppercase;margin:0 0 4px}\n[data-bz-node^=\"ls-gm-title\"] p{color:rgba(255,255,255,.75);font-size:.8125rem;margin:0}\n[data-bz-node^=\"ls-gm-title\"] p:empty{display:none}\n[data-bz-node^=\"ls-gm-phone\"]{padding-bottom:24px!important}\n[data-bz-node^=\"ls-gm-phone\"] p{margin:10px 0 0}\n[data-bz-node=\"ls\"] [data-bz-node^=\"ls-gm-phone\"] a{color:#fff;font-weight:700;font-size:.875rem;text-decoration:none}\n[data-bz-node^=\"ls-gm-phone\"] a[href=\"\"],[data-bz-node^=\"ls-gm-phone\"] a[href=\"tel:\"]{display:none}\n[data-bz-node=\"ls-map\"]{margin-top:var(--space-5)}\n[data-bz-node=\"ls-map\"] .bz-map{aspect-ratio:4/3;min-height:0}\n[data-bz-node=\"ls-map\"] .bz-loclist,[data-bz-node=\"ls-map\"] .bz-widget__h{display:none}\n\n@media (max-width:640px){.bz-section[data-bz-node=\"lh\"]{min-height:440px;padding:88px 0 48px}}\n"
+  "css": "/* Location header. The banner image is the rooftop's own (Admin → Locations → Profile → Page banner); without one the band stays on ink. */\n.bz-section[data-bz-node=\"lh\"]{position:relative;min-height:clamp(380px,32vw,480px);display:flex;flex-direction:column;justify-content:center;padding:104px 0 64px;color:#fff;isolation:isolate;background:var(--night,#2b2a27);overflow:hidden}\n.bz-section[data-bz-node=\"lh\"]::before{content:\"\";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(21,21,21,.6) 0%,rgba(21,21,21,.45) 50%,rgba(21,21,21,.7) 100%)}\n[data-bz-node^=\"lh-banner\"]{position:absolute;inset:0;z-index:0;padding:0;margin:0}\n[data-bz-node^=\"lh-banner\"] .bz-container,[data-bz-node^=\"lh-banner\"] .bz-figure,[data-bz-node^=\"lh-banner\"] img{width:100%;max-width:none;height:100%;margin:0;padding:0;border-radius:0;object-fit:cover}\n[data-bz-node^=\"lh-banner\"] .bz-photo--empty,[data-bz-node^=\"lh-banner\"] .bz-placeholder{display:none}\n[data-bz-node=\"lh\"]>.bz-container{max-width:none;padding-inline:0}\n[data-bz-node=\"lh-row\"]{position:relative;z-index:2;max-width:920px;margin-inline:auto;padding-inline:var(--space-4);width:100%;box-sizing:border-box}\n[data-bz-node=\"lh\"] .bz-block{padding-block:0}\n[data-bz-node^=\"lh-crumbs\"] p{font:700 .625rem/1.4 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:#fff;margin:0 0 var(--space-3)}\n[data-bz-node^=\"lh-crumbs\"] a{color:#fff;border-bottom:1px solid transparent}\n[data-bz-node^=\"lh-crumbs\"] a:hover{border-bottom-color:currentColor}\n[data-bz-node^=\"lh-h\"] h1{color:#fff;margin:0 auto var(--space-4);max-width:18em;text-wrap:balance}\n[data-bz-node^=\"lh-addr\"] p{color:rgba(255,255,255,.88);margin:0 auto;font-size:.9375rem}\n[data-bz-node^=\"lh-cta\"] .bz-btns{justify-content:center;margin-top:var(--space-5)}\n\n/* Store details */\n[data-bz-node=\"ls\"] .bz-block{padding-block:0 var(--space-3)}\n[data-bz-node^=\"ls-name\"] h2{margin-bottom:var(--space-2)}\n[data-bz-node^=\"ls-sub\"] p{font:700 .75rem/1.4 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0}\n[data-bz-node^=\"ls-sub\"] p:empty{display:none}\n[data-bz-node^=\"ls-addr\"] p{font-size:.9375rem;line-height:1.7;margin:0}\n[data-bz-node=\"ls\"] .bz-text a{font-weight:700;color:var(--ink);text-decoration:none;font-size:.875rem;line-height:1.8}\n[data-bz-node=\"ls\"] .bz-text a[href^=\"mailto:\"]{font-weight:400;text-decoration:underline;text-underline-offset:3px}\n[data-bz-node=\"ls\"] a[href=\"tel:\"],[data-bz-node=\"ls\"] a[href=\"mailto:\"]{display:none}\n[data-bz-node^=\"ls-dir\"] .bz-btns{margin-top:var(--space-2)}\n\n/* The general manager is the one photograph on the page (client direction), from the team directory. */\n[data-bz-node^=\"ls-gm-card\"]{background:var(--ink);color:#fff}\n[data-bz-node^=\"ls-gm-card\"] .bz-block{padding:0 24px}\n[data-bz-node^=\"ls-gm-photo\"]{padding:0!important;margin-bottom:20px}\n[data-bz-node^=\"ls-gm-photo\"] .bz-container,[data-bz-node^=\"ls-gm-photo\"] .bz-figure{max-width:none;padding:0;margin:0}\n[data-bz-node^=\"ls-gm-photo\"] img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top;display:block;border-radius:0}\n[data-bz-node^=\"ls-gm-eyebrow\"] p{font:700 .625rem/1.4 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin:0 0 6px}\n[data-bz-node^=\"ls-gm-name\"] h3{color:#fff;font:700 1.25rem/1.15 var(--font-heading);text-transform:uppercase;margin:0 0 4px}\n[data-bz-node^=\"ls-gm-title\"] p{color:rgba(255,255,255,.75);font-size:.8125rem;margin:0}\n[data-bz-node^=\"ls-gm-title\"] p:empty{display:none}\n[data-bz-node^=\"ls-gm-phone\"]{padding-bottom:24px!important}\n[data-bz-node^=\"ls-gm-phone\"] p{margin:10px 0 0}\n[data-bz-node=\"ls\"] [data-bz-node^=\"ls-gm-phone\"] a{color:#fff;font-weight:700;font-size:.875rem;text-decoration:none}\n[data-bz-node^=\"ls-gm-phone\"] a[href=\"\"],[data-bz-node^=\"ls-gm-phone\"] a[href=\"tel:\"]{display:none}\n\n/* Location map. A dark card, the same on every branch: real map tiles centred on the rooftop's own coordinates (script below), the address from its record in the title and bubble, and a pin at the exact centre. Without the script, or without coordinates, the card is the dark panel with the address bubble, so it is still correct. */\n[data-bz-node^=\"ls-mapcard\"]{position:relative;aspect-ratio:567/650;min-height:340px;margin-top:var(--space-5);border-radius:12px;overflow:hidden;isolation:isolate;color:#fff;background-color:#0d0d0d;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:64px 64px}\n[data-bz-node^=\"ls-mapcard\"]::before{content:\"\";position:absolute;inset:0;z-index:3;pointer-events:none;background:radial-gradient(circle at 50% 50%,rgba(226,35,26,.32),transparent 110px),linear-gradient(180deg,rgba(0,0,0,.72) 0,rgba(0,0,0,0) 150px)}\n[data-bz-node^=\"ls-mapcard\"]::after{content:\"\";position:absolute;left:50%;top:50%;z-index:5;width:36px;height:48px;transform:translate(-50%,-100%);pointer-events:none;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 48'%3E%3Cpath d='M18 1C9 1 1.5 8.2 1.5 17.2 1.5 29.5 18 47 18 47s16.5-17.5 16.5-29.8C34.5 8.2 27 1 18 1z' fill='%23e2231a' stroke='%23ff6b5e' stroke-width='1.5'/%3E%3Ccircle cx='18' cy='17' r='6' fill='%23fff'/%3E%3C/svg%3E\") center/contain no-repeat;filter:drop-shadow(0 6px 10px rgba(226,35,26,.55))}\n[data-bz-node^=\"ls-mapcard\"] .bz-block{padding:0}\n[data-bz-node^=\"ls-mapcard\"] .bz-container{padding:0;max-width:none}\n[data-bz-node^=\"ls-mapcard\"] p{margin:0;font-family:var(--font-body)}\n.ls-map-tiles{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none}\n.ls-map-tiles img{position:absolute;display:block;width:256px;height:256px;max-width:none;opacity:0;transition:opacity .45s ease;filter:invert(1) hue-rotate(180deg) grayscale(.55) brightness(.8) contrast(.92)}\n.ls-map-tiles img.is-loaded{opacity:1}\n[data-bz-node^=\"ls-map-t1\"],[data-bz-node^=\"ls-map-t2\"],[data-bz-node^=\"ls-map-coords\"]{position:absolute;left:18px;z-index:4;right:18px}\n[data-bz-node^=\"ls-map-t1\"]{top:16px}\n[data-bz-node^=\"ls-map-t1\"] p{font:700 clamp(1rem,1.6vw,1.1875rem)/1.2 var(--font-body);text-shadow:0 1px 8px rgba(0,0,0,.6)}\n[data-bz-node^=\"ls-map-t2\"]{top:44px}\n[data-bz-node^=\"ls-map-t2\"] p,[data-bz-node^=\"ls-map-coords\"] p{font:400 .75rem/1.4 var(--font-body);color:rgba(255,255,255,.72);text-shadow:0 1px 6px rgba(0,0,0,.7)}\n[data-bz-node^=\"ls-map-coords\"]{display:none}\n[data-bz-node^=\"ls-map-bub\"]{position:absolute;left:50%;bottom:calc(50% + 62px);z-index:5;width:max-content;max-width:calc(100% - 36px);transform:translateX(-50%);background:#1b1b1b;border:1px solid #333;border-radius:10px;padding:9px 22px 10px;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.45)}\n[data-bz-node^=\"ls-map-bub\"]::after{content:\"\";position:absolute;left:50%;bottom:-6px;width:10px;height:10px;transform:translateX(-50%) rotate(45deg);background:#1b1b1b;border-right:1px solid #333;border-bottom:1px solid #333}\n[data-bz-node^=\"ls-map-bub\"],[data-bz-node^=\"ls-map-bub\"] .bz-col{display:block;grid-template-columns:none;grid-column:auto;padding:0}\n[data-bz-node^=\"ls-map-in\"]{width:auto;margin:0}\n/* No tiles (no script, or the address could not be placed): an address card, with no pin implying a map that is not there. */\n[data-bz-node^=\"ls-mapcard\"]:not(.has-map)::before{background:linear-gradient(180deg,rgba(0,0,0,.72) 0,rgba(0,0,0,0) 150px)}\n[data-bz-node^=\"ls-mapcard\"]:not(.has-map)::after{display:none}\n[data-bz-node^=\"ls-mapcard\"]:not(.has-map) [data-bz-node^=\"ls-map-bub\"]{bottom:auto;top:50%;transform:translate(-50%,-50%)}\n[data-bz-node^=\"ls-mapcard\"]:not(.has-map) [data-bz-node^=\"ls-map-bub\"]::after{display:none}\n[data-bz-node^=\"ls-map-a1\"] p{font:700 .9375rem/1.3 var(--font-body);color:#fff}\n[data-bz-node^=\"ls-map-a2\"] p{font:400 .75rem/1.4 var(--font-body);color:rgba(255,255,255,.62);margin-top:2px}\n[data-bz-node^=\"ls-map-attr\"]{position:absolute;left:8px;bottom:8px;z-index:4;display:none}\n[data-bz-node^=\"ls-mapcard\"].has-map [data-bz-node^=\"ls-map-attr\"]{display:block}\n[data-bz-node^=\"ls-map-attr\"] p{font:400 .625rem/1.4 var(--font-body);padding:2px 7px;border-radius:3px;background:rgba(0,0,0,.6);color:rgba(255,255,255,.7)}\n[data-bz-node=\"ls\"] [data-bz-node^=\"ls-map-attr\"] a{color:inherit;font:inherit;font-weight:400;text-decoration:underline;text-underline-offset:2px}\n@media (max-width:640px){[data-bz-node^=\"ls-mapcard\"]{aspect-ratio:4/5}[data-bz-node^=\"ls-map-bub\"]{padding:8px 16px 9px}}\n@media (prefers-reduced-motion:reduce){.ls-map-tiles img{transition:none}}\n\n@media (max-width:640px){.bz-section[data-bz-node=\"lh\"]{min-height:440px;padding:88px 0 48px}}\n",
+  "js": "/* Location map: real map tiles centred on the rooftop, behind the card the blocks draw.\n   The card, title, address bubble and pin are blocks bound to the location record. This script\n   adds the tile layer and works out where the pin goes:\n     1. the record's own latitude / longitude (Admin > Locations), when it has them;\n     2. otherwise the street address is looked up once (OpenStreetMap Nominatim) and the answer\n        is remembered in the visitor's browser, so a record with no coordinates is still placed.\n   The pin sits at the exact centre of the card, so tiles are positioned in pixels from that centre\n   and the fraction of a tile the point falls into. With no script (the Design canvas runs none),\n   or if the address cannot be found, the card stays the dark panel with the address bubble. */\n(function () {\n  var Z = 16, SIZE = 256;\n  var TILES = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';\n  var GEOCODE = 'https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&q=';\n  function text(card, prefix) {\n    var el = card.querySelector('[data-bz-node^=\"' + prefix + '\"] p');\n    return el ? el.textContent.trim() : '';\n  }\n  function valid(lat, lon) {\n    return isFinite(lat) && isFinite(lon) && !(lat === 0 && lon === 0) && Math.abs(lat) <= 85.05 && Math.abs(lon) <= 180;\n  }\n  function fromRecord(card) {\n    var m = text(card, 'ls-map-coords').match(/(-?\\d+(?:\\.\\d+)?)\\s*,\\s*(-?\\d+(?:\\.\\d+)?)/);\n    if (!m) return null;\n    var lat = parseFloat(m[1]), lon = parseFloat(m[2]);\n    return valid(lat, lon) ? { lat: lat, lon: lon, exact: true } : null;\n  }\n  // \"7227 NW 74th Ave, Miami, ,FL 33166\" -> \"7227 NW 74th Ave, Miami, FL 33166\"\n  function addressOf(card) {\n    return (text(card, 'ls-map-a1') + ',' + text(card, 'ls-map-a2')).split(',')\n      .map(function (s) { return s.trim(); }).filter(Boolean).join(', ');\n  }\n  function remembered(key) {\n    try { var v = JSON.parse(localStorage.getItem(key)); return v && valid(v.lat, v.lon) ? v : null; } catch (e) { return null; }\n  }\n  function remember(key, v) { try { localStorage.setItem(key, JSON.stringify(v)); } catch (e) { /* private mode */ } }\n  function lookup(card, done) {\n    var q = addressOf(card);\n    if (!q || !window.fetch) return done(null);\n    var key = 'bz-geo:' + q.toLowerCase();\n    var hit = remembered(key);\n    if (hit) return done(hit);\n    fetch(GEOCODE + encodeURIComponent(q), { headers: { Accept: 'application/json' } })\n      .then(function (r) { return r.ok ? r.json() : []; })\n      .then(function (rows) {\n        var r = rows && rows[0], lat = r && parseFloat(r.lat), lon = r && parseFloat(r.lon);\n        if (r && valid(lat, lon)) { var v = { lat: lat, lon: lon, exact: false }; remember(key, v); done(v); } else done(null);\n      })\n      .catch(function () { done(null); });\n  }\n  function world(lat, lon) {\n    var n = Math.pow(2, Z) * SIZE, rad = lat * Math.PI / 180;\n    return { x: (lon + 180) / 360 * n, y: (1 - Math.log(Math.tan(rad) + 1 / Math.cos(rad)) / Math.PI) / 2 * n };\n  }\n  function place(card, pt) {\n    if (pt.exact) {\n      // \"City, ST 12345 · 27.9530° N, 82.3859° W\", on the line under the title\n      var line = card.querySelector('[data-bz-node^=\"ls-map-t2\"] p');\n      if (line) {\n        line.textContent = line.textContent.trim() + ' · ' + Math.abs(pt.lat).toFixed(4) + '° ' + (pt.lat < 0 ? 'S' : 'N') + ', ' +\n          Math.abs(pt.lon).toFixed(4) + '° ' + (pt.lon < 0 ? 'W' : 'E');\n      }\n    }\n    var w = world(pt.lat, pt.lon);\n    var tx = Math.floor(w.x / SIZE), ty = Math.floor(w.y / SIZE);\n    var fx = w.x - tx * SIZE, fy = w.y - ty * SIZE;           // where the point is inside its tile\n    var layer = document.createElement('div');\n    layer.className = 'ls-map-tiles';\n    layer.setAttribute('aria-hidden', 'true');\n    layer.setAttribute('data-map-centre', pt.lat + ',' + pt.lon);\n    layer.setAttribute('data-map-tile', Z + '/' + tx + '/' + ty);\n    card.insertBefore(layer, card.firstChild);\n    card.classList.add('has-map');\n    var made = {};\n    function draw() {\n      var r = card.getBoundingClientRect();\n      if (!r.width || !r.height) return;\n      var hw = r.width / 2, hh = r.height / 2;\n      var x0 = -Math.ceil((hw + fx) / SIZE), x1 = Math.ceil((hw + SIZE - fx) / SIZE);\n      var y0 = -Math.ceil((hh + fy) / SIZE), y1 = Math.ceil((hh + SIZE - fy) / SIZE);\n      for (var dy = y0; dy <= y1; dy++) {\n        for (var dx = x0; dx <= x1; dx++) {\n          var left = dx * SIZE - fx, top = dy * SIZE - fy;       // px from the card's centre to this tile's corner\n          if (left > hw || top > hh || left + SIZE < -hw || top + SIZE < -hh) continue;\n          var key = dx + ':' + dy, img = made[key];\n          if (!img) {\n            img = document.createElement('img');\n            img.alt = ''; img.width = SIZE; img.height = SIZE; img.decoding = 'async';\n            img.src = TILES.replace('{z}', Z).replace('{x}', tx + dx).replace('{y}', ty + dy);\n            img.onload = function () { this.classList.add('is-loaded'); };\n            layer.appendChild(img); made[key] = img;\n          }\n          img.style.left = 'calc(50% + ' + left + 'px)';\n          img.style.top = 'calc(50% + ' + top + 'px)';\n        }\n      }\n    }\n    draw();\n    if (window.ResizeObserver) new ResizeObserver(draw).observe(card); else window.addEventListener('resize', draw);\n  }\n  document.querySelectorAll('[data-bz-node^=\"ls-mapcard\"]').forEach(function (card) {\n    var pt = fromRecord(card);\n    if (pt) place(card, pt); else lookup(card, function (found) { if (found) place(card, found); });\n  });\n})();\n"
 }

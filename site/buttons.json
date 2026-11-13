@@ -459,5 +459,23 @@
     "intent": "learn-more",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "view-inventory",
+    "label": "View inventory",
+    "url": "#inventory",
+    "style": "primary",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "browse-all-inventory",
+    "label": "Browse all inventory",
+    "url": "/store",
+    "style": "secondary",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
   }
 ]

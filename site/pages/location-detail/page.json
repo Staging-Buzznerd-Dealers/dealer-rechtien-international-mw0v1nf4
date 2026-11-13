@@ -8,7 +8,6 @@
         "sectionId": "location-header",
         "values": {
           "storeEyebrow": "Store information",
-          "contactsHeading": "Department contacts",
           "gmEyebrow": "General manager",
           "gmDepartment": "general-manager",
           "gm": {
