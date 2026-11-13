@@ -1,0 +1,486 @@
+{
+  "version": 2,
+  "id": "location-cards",
+  "name": "Location cards (address, hours, phone)",
+  "description": "Location cards in two regional groups: label, name, address, hours, phone numbers, Directions and a link to the location's own page.",
+  "props": [
+    {
+      "key": "flEyebrow",
+      "type": "text",
+      "label": "South Florida eyebrow"
+    },
+    {
+      "key": "flHeading",
+      "type": "text",
+      "label": "South Florida heading"
+    },
+    {
+      "key": "florida",
+      "type": "list",
+      "label": "South Florida locations",
+      "fields": [
+        {
+          "key": "brand",
+          "type": "text",
+          "label": "Label (e.g. departments)"
+        },
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "address",
+          "type": "textarea",
+          "label": "Address"
+        },
+        {
+          "key": "note",
+          "type": "text",
+          "label": "Note (e.g. language)"
+        },
+        {
+          "key": "hours",
+          "type": "textarea",
+          "label": "Hours (one line per department, blank line between)"
+        },
+        {
+          "key": "phone1Label",
+          "type": "text",
+          "label": "Phone 1 label"
+        },
+        {
+          "key": "phone1",
+          "type": "text",
+          "label": "Phone 1"
+        },
+        {
+          "key": "phone1Url",
+          "type": "url",
+          "label": "Phone 1 link"
+        },
+        {
+          "key": "phone2Label",
+          "type": "text",
+          "label": "Phone 2 label"
+        },
+        {
+          "key": "phone2",
+          "type": "text",
+          "label": "Phone 2"
+        },
+        {
+          "key": "phone2Url",
+          "type": "url",
+          "label": "Phone 2 link"
+        },
+        {
+          "key": "mapUrl",
+          "type": "url",
+          "label": "Directions link"
+        },
+        {
+          "key": "pageUrl",
+          "type": "url",
+          "label": "Location page link (optional)"
+        },
+        {
+          "key": "lat",
+          "type": "text",
+          "label": "Map latitude (approximate)"
+        },
+        {
+          "key": "lon",
+          "type": "text",
+          "label": "Map longitude (approximate)"
+        }
+      ]
+    },
+    {
+      "key": "scEyebrow",
+      "type": "text",
+      "label": "South Carolina eyebrow"
+    },
+    {
+      "key": "scHeading",
+      "type": "text",
+      "label": "South Carolina heading"
+    },
+    {
+      "key": "carolina",
+      "type": "list",
+      "label": "South Carolina locations",
+      "fields": [
+        {
+          "key": "brand",
+          "type": "text",
+          "label": "Label (e.g. departments)"
+        },
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "address",
+          "type": "textarea",
+          "label": "Address"
+        },
+        {
+          "key": "note",
+          "type": "text",
+          "label": "Note (e.g. language)"
+        },
+        {
+          "key": "hours",
+          "type": "textarea",
+          "label": "Hours (one line per department, blank line between)"
+        },
+        {
+          "key": "phone1Label",
+          "type": "text",
+          "label": "Phone 1 label"
+        },
+        {
+          "key": "phone1",
+          "type": "text",
+          "label": "Phone 1"
+        },
+        {
+          "key": "phone1Url",
+          "type": "url",
+          "label": "Phone 1 link"
+        },
+        {
+          "key": "phone2Label",
+          "type": "text",
+          "label": "Phone 2 label"
+        },
+        {
+          "key": "phone2",
+          "type": "text",
+          "label": "Phone 2"
+        },
+        {
+          "key": "phone2Url",
+          "type": "url",
+          "label": "Phone 2 link"
+        },
+        {
+          "key": "mapUrl",
+          "type": "url",
+          "label": "Directions link"
+        },
+        {
+          "key": "pageUrl",
+          "type": "url",
+          "label": "Location page link (optional)"
+        },
+        {
+          "key": "lat",
+          "type": "text",
+          "label": "Map latitude (approximate)"
+        },
+        {
+          "key": "lon",
+          "type": "text",
+          "label": "Map longitude (approximate)"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "lc",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "lc-fl-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "lc-fl-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "lc-fl-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{flHeading}}",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "eyebrow": "{{flEyebrow}}"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lc-fl-grid",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "lc-fl-card",
+              "type": "column",
+              "props": {
+                "span": 4,
+                "repeat": "florida"
+              },
+              "children": [
+                {
+                  "id": "lc-fl-brand",
+                  "type": "text",
+                  "props": {
+                    "text": "{{brand}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lc-fl-name",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{name}}",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "lc-fl-addr",
+                  "type": "text",
+                  "props": {
+                    "text": "{{address}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lc-fl-note",
+                  "type": "text",
+                  "props": {
+                    "text": "{{note}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lc-fl-hours",
+                  "type": "text",
+                  "props": {
+                    "text": "{{hours}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lc-fl-ph1",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"{{phone1Url}}\">{{phone1Label}} {{phone1}}</a>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lc-fl-ph2",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"{{phone2Url}}\">{{phone2Label}} {{phone2}}</a>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lc-fl-coords",
+                  "type": "text",
+                  "props": {
+                    "text": "{{lat}},{{lon}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lc-fl-actions",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "label": "Directions",
+                        "url": "{{mapUrl}}",
+                        "style": "link"
+                      },
+                      {
+                        "label": "View location",
+                        "url": "{{pageUrl}}",
+                        "style": "link"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lc-sc-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "lc-sc-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "lc-sc-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{scHeading}}",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "eyebrow": "{{scEyebrow}}"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lc-sc-grid",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "lc-sc-card",
+              "type": "column",
+              "props": {
+                "span": 4,
+                "repeat": "carolina"
+              },
+              "children": [
+                {
+                  "id": "lc-sc-brand",
+                  "type": "text",
+                  "props": {
+                    "text": "{{brand}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lc-sc-name",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{name}}",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "lc-sc-addr",
+                  "type": "text",
+                  "props": {
+                    "text": "{{address}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lc-sc-note",
+                  "type": "text",
+                  "props": {
+                    "text": "{{note}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lc-sc-hours",
+                  "type": "text",
+                  "props": {
+                    "text": "{{hours}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lc-sc-ph1",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"{{phone1Url}}\">{{phone1Label}} {{phone1}}</a>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lc-sc-ph2",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"{{phone2Url}}\">{{phone2Label}} {{phone2}}</a>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lc-sc-coords",
+                  "type": "text",
+                  "props": {
+                    "text": "{{lat}},{{lon}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lc-sc-actions",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "label": "Directions",
+                        "url": "{{mapUrl}}",
+                        "style": "link"
+                      },
+                      {
+                        "label": "View location",
+                        "url": "{{pageUrl}}",
+                        "style": "link"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Location cards: white bordered cards, one per branch, in two regional groups (South Florida, South Carolina). A wrapping grid, so any number of branches fits. */\n.bz-section[data-bz-node=\"lc\"]{padding-block:clamp(24px,3vw,40px)}\n[data-bz-node=\"lc\"] .bz-block{padding-block:0}\n[data-bz-node=\"lc-fl-head\"],[data-bz-node=\"lc-sc-head\"]{margin-bottom:clamp(20px,2.5vw,32px)}\n[data-bz-node=\"lc-fl-grid\"]+[data-bz-node=\"lc-sc-head\"]{margin-top:clamp(40px,5vw,64px)}\n[data-bz-node=\"lc-fl-h\"] h3,[data-bz-node=\"lc-sc-h\"] h3{font-size:clamp(1.25rem,2vw,1.625rem);margin:0}\n[data-bz-node=\"lc-fl-grid\"],[data-bz-node=\"lc-sc-grid\"]{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:30px;align-items:stretch}\n[data-bz-node^=\"lc-fl-card\"],[data-bz-node^=\"lc-sc-card\"]{grid-column:auto;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);padding:34px 32px 30px;min-width:0;scroll-margin-top:96px}\n[data-bz-node^=\"lc-fl-card\"]:target,[data-bz-node^=\"lc-sc-card\"]:target{border-color:var(--ink);box-shadow:0 0 0 1px var(--ink)}\n[data-bz-node^=\"lc-fl-brand\"],[data-bz-node^=\"lc-sc-brand\"]{margin-bottom:22px}\n[data-bz-node^=\"lc-fl-brand\"] p,[data-bz-node^=\"lc-sc-brand\"] p{font:700 .6875rem/1.5 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:var(--ink);margin:0}\n[data-bz-node^=\"lc-fl-brand\"]:has(p:empty),[data-bz-node^=\"lc-sc-brand\"]:has(p:empty){display:none}\n[data-bz-node^=\"lc-fl-name\"] h3,[data-bz-node^=\"lc-sc-name\"] h3{font:700 1.375rem/1.25 var(--font-heading);text-transform:uppercase;margin:0 0 var(--space-4);color:var(--ink)}\n[data-bz-node^=\"lc-fl-addr\"] p,[data-bz-node^=\"lc-sc-addr\"] p,[data-bz-node^=\"lc-fl-hours\"] p,[data-bz-node^=\"lc-sc-hours\"] p,[data-bz-node^=\"lc-fl-note\"] p,[data-bz-node^=\"lc-sc-note\"] p{font-size:.9375rem;line-height:1.6;margin:0;color:#3d3c39}\n[data-bz-node^=\"lc-fl-note\"],[data-bz-node^=\"lc-sc-note\"]{margin-top:var(--space-2)}\n[data-bz-node^=\"lc-fl-note\"] p,[data-bz-node^=\"lc-sc-note\"] p{font-weight:700;color:var(--ink)}\n[data-bz-node^=\"lc-fl-note\"]:has(p:empty),[data-bz-node^=\"lc-sc-note\"]:has(p:empty){display:none}\n[data-bz-node^=\"lc-fl-hours\"],[data-bz-node^=\"lc-sc-hours\"]{margin-top:var(--space-3)}\n[data-bz-node^=\"lc-fl-hours\"] p+p,[data-bz-node^=\"lc-sc-hours\"] p+p{margin-top:var(--space-2)}\n[data-bz-node^=\"lc-fl-hours\"]:has(p:empty),[data-bz-node^=\"lc-sc-hours\"]:has(p:empty){display:none}\n[data-bz-node^=\"lc-fl-ph1\"],[data-bz-node^=\"lc-sc-ph1\"],[data-bz-node^=\"lc-fl-ph2\"],[data-bz-node^=\"lc-sc-ph2\"]{margin-top:var(--space-3)}\n[data-bz-node^=\"lc-fl-ph2\"],[data-bz-node^=\"lc-sc-ph2\"]{margin-top:var(--space-1)}\n[data-bz-node^=\"lc-fl-ph1\"] p,[data-bz-node^=\"lc-sc-ph1\"] p,[data-bz-node^=\"lc-fl-ph2\"] p,[data-bz-node^=\"lc-sc-ph2\"] p{margin:0}\n[data-bz-node^=\"lc-fl-ph1\"] a,[data-bz-node^=\"lc-sc-ph1\"] a,[data-bz-node^=\"lc-fl-ph2\"] a,[data-bz-node^=\"lc-sc-ph2\"] a{font:700 .8125rem/1.5 var(--font-body);letter-spacing:.04em;color:var(--ink);text-decoration:none}\n[data-bz-node^=\"lc-fl-ph1\"] a:hover,[data-bz-node^=\"lc-sc-ph1\"] a:hover,[data-bz-node^=\"lc-fl-ph2\"] a:hover,[data-bz-node^=\"lc-sc-ph2\"] a:hover{color:var(--btn-orange,#ff7144)}\n[data-bz-node^=\"lc-fl-ph1\"]:has(a[href=\"\"]),[data-bz-node^=\"lc-sc-ph1\"]:has(a[href=\"\"]),[data-bz-node^=\"lc-fl-ph1\"]:has(a[href=\"tel:\"]),[data-bz-node^=\"lc-sc-ph1\"]:has(a[href=\"tel:\"]),[data-bz-node^=\"lc-fl-ph2\"]:has(a[href=\"\"]),[data-bz-node^=\"lc-sc-ph2\"]:has(a[href=\"\"]),[data-bz-node^=\"lc-fl-ph2\"]:has(a[href=\"tel:\"]),[data-bz-node^=\"lc-sc-ph2\"]:has(a[href=\"tel:\"]){display:none}\n[data-bz-node^=\"lc-fl-coords\"],[data-bz-node^=\"lc-sc-coords\"]{display:none}\n[data-bz-node^=\"lc-fl-actions\"],[data-bz-node^=\"lc-sc-actions\"]{margin-top:auto;padding-top:var(--space-5)!important}\n[data-bz-node^=\"lc-fl-actions\"] .bz-btns,[data-bz-node^=\"lc-sc-actions\"] .bz-btns{margin:0;gap:10px 22px}\n[data-bz-node^=\"lc-fl-actions\"] a[href=\"\"],[data-bz-node^=\"lc-sc-actions\"] a[href=\"\"],[data-bz-node^=\"lc-fl-actions\"] a[href=\"#\"],[data-bz-node^=\"lc-sc-actions\"] a[href=\"#\"]{display:none}\n@media (max-width:640px){[data-bz-node=\"lc-fl-grid\"],[data-bz-node=\"lc-sc-grid\"]{grid-template-columns:1fr;gap:20px}[data-bz-node^=\"lc-fl-card\"],[data-bz-node^=\"lc-sc-card\"]{padding:28px 24px 26px}}\n",
+  "js": ""
+}

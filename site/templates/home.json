@@ -73,6 +73,10 @@
     },
     {
       "type": "page",
+      "ref": "locations"
+    },
+    {
+      "type": "page",
       "ref": "why-ic-bus"
     },
     {

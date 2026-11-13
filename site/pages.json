@@ -363,5 +363,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "locations",
+    "title": "Locations & Hours: South Florida & South Carolina Truck Dealer",
+    "description": "Addresses, hours and phone numbers for all 11 Rechtien International Trucks and Carolina International Trucks locations across South Florida and South Carolina.",
+    "path": "/locations",
+    "out": "locations/index.html",
+    "dir": "locations",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

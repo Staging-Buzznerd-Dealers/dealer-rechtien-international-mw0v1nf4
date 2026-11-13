@@ -1,0 +1,658 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center",
+        "anchor": "top"
+      },
+      "styles": {
+        "base": {
+          "backgroundImage": "/images/carolina-dealership.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
+          "background": "#151515"
+        }
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "hero-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-crumbs",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Home</a> / Locations & hours",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Locations & hours",
+                    "headingLevel": 1,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Eleven locations across South Florida and South Carolina for trucks, trailers, parts, service and leasing.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "center",
+                    "items": [
+                      {
+                        "label": "See all locations",
+                        "url": "#locations",
+                        "style": "primary",
+                        "intent": "find-location"
+                      },
+                      {
+                        "ctaId": "call-main",
+                        "label": "Call (800) 666-3040",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "find",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 4,
+        "anchor": "locations"
+      },
+      "children": [
+        {
+          "id": "find-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "find-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "find-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ready to find the right equipment for your business?",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Find a location"
+                  }
+                },
+                {
+                  "id": "find-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Visit us at one of our convenient locations across South Florida and South Carolina. Select the location closest to you for its address, hours and phone number.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "map",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-map",
+        "values": {
+          "caption": "Our locations"
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "loc",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-cards",
+        "values": {
+          "flEyebrow": "Rechtien International Trucks",
+          "flHeading": "South Florida",
+          "florida": [
+            {
+              "brand": "Sales · Parts · Service",
+              "name": "Miami",
+              "address": "7227 NW 74th Ave, Miami, FL 33166",
+              "note": "Se habla español",
+              "hours": "Sales: Monday-Friday: 8am – 5pm\n\nParts & Service: Monday-Friday: 7am – 6pm\n\nParts Saturday: 8am-12pm\n\nService: Saturday & Sunday: Closed",
+              "phone1Label": "Sales:",
+              "phone1": "305-888-0111",
+              "phone1Url": "tel:+13058880111",
+              "phone2Label": "",
+              "phone2": "",
+              "phone2Url": "",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=7227%20NW%2074th%20Ave%2C%20Miami%2C%20FL%2033166",
+              "pageUrl": "/locations/maimi",
+              "lat": "25.84",
+              "lon": "-80.32"
+            },
+            {
+              "brand": "Sales · Parts · Service",
+              "name": "Ft. Lauderdale",
+              "address": "2565 St Rd 84, Ft Lauderdale, FL 33312",
+              "note": "Se habla español",
+              "hours": "Sales: Monday-Friday: 8am – 5pm\n\nParts & Service: Monday-Friday: 7am – 5:30pm\n\nParts Saturday: 8am-12pm\n\nService: Saturday & Sunday: Closed",
+              "phone1Label": "Sales:",
+              "phone1": "954-957-8390",
+              "phone1Url": "tel:+19549578390",
+              "phone2Label": "",
+              "phone2": "",
+              "phone2Url": "",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=2565%20St%20Rd%2084%2C%20Ft%20Lauderdale%2C%20FL%2033312",
+              "pageUrl": "/locations/ft-lauderdale",
+              "lat": "26.09",
+              "lon": "-80.17"
+            },
+            {
+              "brand": "Sales · Parts · Service",
+              "name": "Riviera Beach",
+              "address": "3787 Interstate Park Rd W, Riviera Beach, FL 33404",
+              "note": "",
+              "hours": "Sales: Monday-Friday: 8am – 5pm\n\nParts & Service: Monday-Friday: 7am – 5pm\n\nParts Saturday: 8am-12pm\n\nSunday: Closed",
+              "phone1Label": "Sales:",
+              "phone1": "561-882-9050",
+              "phone1Url": "tel:+15618829050",
+              "phone2Label": "",
+              "phone2": "",
+              "phone2Url": "",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=3787%20Interstate%20Park%20Rd%20W%2C%20Riviera%20Beach%2C%20FL%2033404",
+              "pageUrl": "/locations/riviera-beach",
+              "lat": "26.78",
+              "lon": "-80.07"
+            },
+            {
+              "brand": "Sales · Parts · Service",
+              "name": "Fort Pierce",
+              "address": "1699 North US Highway 1, Fort Pierce, FL 34950",
+              "note": "",
+              "hours": "Sales: Monday-Friday: 7am – 5pm\n\nParts & Service: Monday-Friday: 7am – 5pm\n\nParts: Saturday & Sunday: Closed\n\nService: Saturday & Sunday: Closed",
+              "phone1Label": "Sales:",
+              "phone1": "772-466-1842",
+              "phone1Url": "tel:+17724661842",
+              "phone2Label": "",
+              "phone2": "",
+              "phone2Url": "",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=1699%20North%20US%20Highway%201%2C%20Fort%20Pierce%2C%20FL%2034950",
+              "pageUrl": "",
+              "lat": "27.46",
+              "lon": "-80.33"
+            },
+            {
+              "brand": "Sales · Parts · Service",
+              "name": "Ft. Myers",
+              "address": "2761 Edison Avenue, Ft. Myers, FL 33916",
+              "note": "",
+              "hours": "Sales: Monday-Friday: 8am – 5:00pm\n\nParts & Service: Monday-Friday: 7am – 5:00pm\n\nParts: Saturday & Sunday: Closed\n\nService: Saturday & Sunday: Closed",
+              "phone1Label": "Sales:",
+              "phone1": "239-334-1000",
+              "phone1Url": "tel:+12393341000",
+              "phone2Label": "",
+              "phone2": "",
+              "phone2Url": "",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=2761%20Edison%20Avenue%2C%20Ft.%20Myers%2C%20FL%2033916",
+              "pageUrl": "",
+              "lat": "26.63",
+              "lon": "-81.85"
+            }
+          ],
+          "scEyebrow": "Carolina International Trucks",
+          "scHeading": "South Carolina",
+          "carolina": [
+            {
+              "brand": "",
+              "name": "Charleston",
+              "address": "2580 Oscar Johnson Dr, Charleston, SC 29405",
+              "note": "",
+              "hours": "",
+              "phone1Label": "Toll free:",
+              "phone1": "(800) 666-3040",
+              "phone1Url": "tel:+18006663040",
+              "phone2Label": "Phone:",
+              "phone2": "(843) 747-3040",
+              "phone2Url": "tel:+18437473040",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=2580%20Oscar%20Johnson%20Dr%2C%20Charleston%2C%20SC%2029405",
+              "pageUrl": "",
+              "lat": "32.88",
+              "lon": "-79.97"
+            },
+            {
+              "brand": "",
+              "name": "Columbia",
+              "address": "1619 Bluff Road, Columbia, SC 29201",
+              "note": "",
+              "hours": "",
+              "phone1Label": "Toll free:",
+              "phone1": "(800) 868-4923",
+              "phone1Url": "tel:+18008684923",
+              "phone2Label": "Phone:",
+              "phone2": "(803) 799-4923",
+              "phone2Url": "tel:+18037994923",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=1619%20Bluff%20Road%2C%20Columbia%2C%20SC%2029201",
+              "pageUrl": "/locations/columbia-2",
+              "lat": "33.96",
+              "lon": "-81.03"
+            },
+            {
+              "brand": "",
+              "name": "Florence",
+              "address": "350 E Campground Rd, Florence, SC 29506",
+              "note": "",
+              "hours": "",
+              "phone1Label": "Toll free:",
+              "phone1": "(800) 477-3894",
+              "phone1Url": "tel:+18004773894",
+              "phone2Label": "Phone:",
+              "phone2": "(843) 468-9560",
+              "phone2Url": "tel:+18434689560",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=350%20E%20Campground%20Rd%2C%20Florence%2C%20SC%2029506",
+              "pageUrl": "",
+              "lat": "34.15",
+              "lon": "-79.74"
+            },
+            {
+              "brand": "",
+              "name": "Greer",
+              "address": "2520 Hwy 14 S, Greer, SC 29650",
+              "note": "",
+              "hours": "",
+              "phone1Label": "Toll free:",
+              "phone1": "(800) 284-0050",
+              "phone1Url": "tel:+18002840050",
+              "phone2Label": "Phone:",
+              "phone2": "(864) 848-0050",
+              "phone2Url": "tel:+18648480050",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=2520%20Hwy%2014%20S%2C%20Greer%2C%20SC%2029650",
+              "pageUrl": "",
+              "lat": "34.89",
+              "lon": "-82.20"
+            },
+            {
+              "brand": "",
+              "name": "Greenville",
+              "address": "1501 Whitehorse Rd, Greenville, SC 29605",
+              "note": "",
+              "hours": "",
+              "phone1Label": "Toll free:",
+              "phone1": "(866) 520-0440",
+              "phone1Url": "tel:+18665200440",
+              "phone2Label": "Phone:",
+              "phone2": "(864) 335-0440",
+              "phone2Url": "tel:+18643350440",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=1501%20Whitehorse%20Rd%2C%20Greenville%2C%20SC%2029605",
+              "pageUrl": "/locations/greenville",
+              "lat": "34.79",
+              "lon": "-82.41"
+            },
+            {
+              "brand": "",
+              "name": "Conway",
+              "address": "299 East Cox Ferry Road, Conway, SC 29526",
+              "note": "",
+              "hours": "",
+              "phone1Label": "Phone:",
+              "phone1": "(843) 438-3130",
+              "phone1Url": "tel:+18434383130",
+              "phone2Label": "",
+              "phone2": "",
+              "phone2Url": "",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=299%20East%20Cox%20Ferry%20Road%2C%20Conway%2C%20SC%2029526",
+              "pageUrl": "",
+              "lat": "33.78",
+              "lon": "-79.00"
+            }
+          ]
+        }
+      },
+      "children": []
+    },
+    {
+      "id": "closed",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "paddingY": 0,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "closed-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "closed-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "closed-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Service outside store hours.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "When we’re closed"
+                  }
+                },
+                {
+                  "id": "closed-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "With Idealease Mobile Service you can schedule service when your vehicles are not operating, during off hours or on weekends, at your location.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "closed-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Mobile service is available through Idealease in South Florida and South Carolina, for fleets of five or more commercial trucks.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "closed-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "label": "Mobile service",
+                        "url": "/mobile-service",
+                        "style": "link"
+                      },
+                      {
+                        "label": "Schedule service",
+                        "url": "/service#appointment",
+                        "style": "link"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "closed-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "closed-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/white-international-truck.jpg",
+                      "alt": "A white International truck at a Rechtien Truck Group location",
+                      "width": 640,
+                      "height": 480
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "depts",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "depts-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "depts-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "depts-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Sales, parts and service across our locations.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Departments"
+                  }
+                },
+                {
+                  "id": "depts-list",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 3,
+                    "columns": 4,
+                    "items": [
+                      {
+                        "label": "Truck sales",
+                        "desc": "New and pre-owned International trucks, IC Bus, Hino and trailers, with financing through International Financial."
+                      },
+                      {
+                        "label": "Parts",
+                        "desc": "Genuine OEM parts for the International and Hino trucks we sell and service, plus quality aftermarket parts. Order online, request a part, or visit a parts counter."
+                      },
+                      {
+                        "label": "Service",
+                        "desc": "ASE-certified and factory-trained technicians for all makes and models: preventive maintenance, diagnostics, DOT inspections, alignment and warranty work."
+                      },
+                      {
+                        "label": "Lease & rental",
+                        "desc": "Idealease semi truck leasing and rentals, plus Idealease Mobile Service, in South Florida and South Carolina."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "paper",
+        "anchor": "faq"
+      },
+      "children": [
+        {
+          "id": "faq-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "faq-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Location FAQs"
+                  }
+                },
+                {
+                  "id": "faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "How many Rechtien Truck Group locations are there?",
+                          "a": "Eleven. Five are in South Florida (Miami, Ft. Lauderdale, Riviera Beach, Fort Pierce and Fort Myers) and six are in South Carolina (Charleston, Columbia, Florence, Greer, Greenville and Conway)."
+                        },
+                        {
+                          "q": "What are the sales and service hours in South Florida?",
+                          "a": "Hours differ by location and department and are listed on each location card. At all five South Florida locations, sales and parts and service are open Monday to Friday, with parts and service starting at 7am; the cards show closing times and Saturday parts hours."
+                        },
+                        {
+                          "q": "Do you offer Spanish-speaking service?",
+                          "a": "Yes. Se habla español at our Miami and Ft. Lauderdale locations."
+                        },
+                        {
+                          "q": "How do I contact a South Carolina location?",
+                          "a": "Every South Carolina location lists its address and phone number on its card. Charleston, Columbia, Florence, Greer and Greenville also list a toll-free number; Conway lists a local number."
+                        },
+                        {
+                          "q": "Do you offer service outside store hours?",
+                          "a": "Yes. Idealease Mobile Service is available through Rechtien Truck Group in South Florida and South Carolina. Technicians come to your location during off hours or on weekends, for fleets of five or more commercial trucks."
+                        },
+                        {
+                          "q": "How do I get directions to a location?",
+                          "a": "Every location card has a Directions link that opens the address in Google Maps."
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "background": "ink",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Ready to get on the road?",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "cta-text",
+                  "type": "text",
+                  "props": {
+                    "text": "Talk to our team about the truck, trailer or service plan your business needs.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btn",
+                  "type": "buttons",
+                  "props": {
+                    "align": "center",
+                    "items": [
+                      {
+                        "ctaId": "contact-us"
+                      },
+                      {
+                        "ctaId": "see-available"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
