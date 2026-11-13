@@ -525,7 +525,7 @@
                   "id": "hn-loc-ftlauderdale",
                   "label": "Ft. Lauderdale",
                   "type": "location",
-                  "ref": null,
+                  "ref": "ft-lauderdale",
                   "url": null,
                   "newTab": false,
                   "children": []
@@ -534,7 +534,7 @@
                   "id": "hn-loc-rivierabeach",
                   "label": "Riviera Beach",
                   "type": "location",
-                  "ref": null,
+                  "ref": "riviera-beach",
                   "url": null,
                   "newTab": false,
                   "children": []
@@ -543,7 +543,7 @@
                   "id": "hn-loc-ftpierce",
                   "label": "Ft. Pierce",
                   "type": "location",
-                  "ref": null,
+                  "ref": "ft-pierce",
                   "url": null,
                   "newTab": false,
                   "children": []
@@ -552,7 +552,7 @@
                   "id": "hn-loc-ftmyers",
                   "label": "Ft. Myers",
                   "type": "location",
-                  "ref": null,
+                  "ref": "ft-myers",
                   "url": null,
                   "newTab": false,
                   "children": []
@@ -571,7 +571,7 @@
                   "id": "hn-loc-charleston",
                   "label": "Charleston",
                   "type": "location",
-                  "ref": null,
+                  "ref": "charleston",
                   "url": null,
                   "newTab": false,
                   "children": []
@@ -589,7 +589,7 @@
                   "id": "hn-loc-conway",
                   "label": "Conway",
                   "type": "location",
-                  "ref": null,
+                  "ref": "conway",
                   "url": null,
                   "newTab": false,
                   "children": []
@@ -598,7 +598,7 @@
                   "id": "hn-loc-florence",
                   "label": "Florence",
                   "type": "location",
-                  "ref": null,
+                  "ref": "florence",
                   "url": null,
                   "newTab": false,
                   "children": []
@@ -616,7 +616,7 @@
                   "id": "hn-loc-greer",
                   "label": "Greer",
                   "type": "location",
-                  "ref": null,
+                  "ref": "greer",
                   "url": null,
                   "newTab": false,
                   "children": []
