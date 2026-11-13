@@ -386,7 +386,7 @@
       "items": [
         {
           "id": "hn-inventory",
-          "label": "Inventory",
+          "label": "Trucks",
           "type": "inventory",
           "ref": "inventory",
           "url": null,
@@ -394,7 +394,7 @@
           "children": [
             {
               "id": "hn-inv-shop",
-              "label": "Shop Inventory",
+              "label": "Shop Trucks",
               "type": "label",
               "ref": null,
               "url": null,
@@ -402,7 +402,7 @@
               "children": [
                 {
                   "id": "hn-inv-new",
-                  "label": "New Inventory",
+                  "label": "New Truck",
                   "type": "inventory",
                   "ref": "inventory?condition=new",
                   "url": null,
@@ -411,25 +411,58 @@
                 },
                 {
                   "id": "hn-inv-used",
-                  "label": "Used Inventory",
+                  "label": "Used Truck",
                   "type": "inventory",
                   "ref": "inventory?condition=used",
                   "url": null,
                   "newTab": false,
                   "children": []
-                },
+                }
+              ]
+            },
+            {
+              "id": "item-48",
+              "label": "Shop Brands",
+              "type": "label",
+              "url": null,
+              "ref": null,
+              "children": [
                 {
-                  "id": "hn-inv-all",
-                  "label": "All Inventory",
-                  "type": "inventory",
-                  "ref": "inventory",
-                  "url": null,
-                  "newTab": false,
+                  "id": "item-49",
+                  "label": "International ",
+                  "type": "url",
+                  "url": "/#",
+                  "ref": null,
                   "children": []
                 },
                 {
-                  "id": "item-47",
-                  "label": " S13 Integrated Powertrain",
+                  "id": "item-50",
+                  "label": "Hino",
+                  "type": "url",
+                  "url": "/#",
+                  "ref": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "item-47",
+              "label": "Build & Finance",
+              "type": "label",
+              "url": null,
+              "ref": null,
+              "children": [
+                {
+                  "id": "item-48",
+                  "label": "Financing",
+                  "type": "url",
+                  "url": "/financing",
+                  "ref": null,
+                  "children": []
+                },
+                {
+                  "id": "item-49",
+                  "label": "S13 Integrated Powertrain",
                   "type": "url",
                   "url": "/specifications",
                   "ref": null,
@@ -734,15 +767,6 @@
           "ref": null,
           "url": "#",
           "newTab": true,
-          "children": []
-        },
-        {
-          "id": "hn-financing",
-          "label": "Financing",
-          "type": "page",
-          "ref": "financing",
-          "url": null,
-          "newTab": false,
           "children": []
         },
         {
