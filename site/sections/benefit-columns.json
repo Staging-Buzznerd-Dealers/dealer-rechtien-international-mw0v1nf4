@@ -1,0 +1,138 @@
+{
+  "version": 2,
+  "id": "benefit-columns",
+  "name": "Benefit columns (title + bullet list)",
+  "description": "A heading, an intro and columns of benefits, each a title with a bulleted list.",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "key": "intro",
+      "type": "textarea",
+      "label": "Intro"
+    },
+    {
+      "key": "groups",
+      "type": "list",
+      "label": "Benefit groups",
+      "fields": [
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "items",
+          "type": "list",
+          "label": "Benefits",
+          "fields": [
+            {
+              "key": "text",
+              "type": "text",
+              "label": "Benefit"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "bf",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "bf-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "bf-head-col",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "bf-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "{{eyebrow}}"
+                  }
+                },
+                {
+                  "id": "bf-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "{{intro}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bf-grid",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "bf-col",
+              "type": "column",
+              "props": {
+                "span": 4,
+                "repeat": "groups"
+              },
+              "children": [
+                {
+                  "id": "bf-title",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "bf-item",
+                  "type": "text",
+                  "props": {
+                    "text": "{{text}}",
+                    "align": "left",
+                    "width": "full",
+                    "repeat": "items"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Benefit columns: a title over a short rule, then one benefit per line with a small marker. */\n.bz-section[data-bz-node=\"bf\"]{padding-block:clamp(40px,5vw,72px)}\n[data-bz-node=\"bf\"] .bz-block{padding-block:0}\n[data-bz-node=\"bf-head\"]{margin-bottom:clamp(24px,3vw,40px)}\n[data-bz-node=\"bf-h\"] h2{margin-bottom:var(--space-3)}\n[data-bz-node=\"bf-intro\"] p{max-width:46rem;margin:0}\n[data-bz-node=\"bf-grid\"]{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:clamp(28px,4vw,56px);align-items:start}\n[data-bz-node^=\"bf-col\"]{grid-column:auto;min-width:0;border-top:2px solid var(--ink);padding-top:var(--space-4)}\n[data-bz-node^=\"bf-title\"] h3{font:700 1.125rem/1.25 var(--font-heading);text-transform:uppercase;margin:0 0 var(--space-3);color:var(--ink)}\n[data-bz-node^=\"bf-item\"]{margin-bottom:8px}\n[data-bz-node^=\"bf-item\"] p{position:relative;margin:0;padding-left:18px;font-size:.9375rem;line-height:1.5;color:#3d3c39}\n[data-bz-node^=\"bf-item\"] p::before{content:\"\";position:absolute;left:3px;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--accent)}\n[data-bz-node^=\"bf-item\"] p:empty{display:none}\n@media (max-width:640px){[data-bz-node=\"bf-grid\"]{grid-template-columns:1fr}}\n",
+  "js": ""
+}

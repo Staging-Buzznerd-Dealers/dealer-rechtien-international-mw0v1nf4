@@ -381,5 +381,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "careers",
+    "title": "Careers: Rechtien International Trucks & Carolina International Trucks",
+    "description": "Build a career with Rechtien International Trucks in South Florida or Carolina International Trucks in South Carolina: open positions, benefits, employee stories and our talent community.",
+    "path": "/careers",
+    "out": "careers/index.html",
+    "dir": "careers",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]
