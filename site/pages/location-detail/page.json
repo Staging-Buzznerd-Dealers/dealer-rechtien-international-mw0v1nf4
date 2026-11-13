@@ -700,7 +700,38 @@
                   "type": "widget",
                   "props": {
                     "widget": "faq",
-                    "config": {},
+                    "config": {
+                      "items": [
+                        {
+                          "q": "What does Rechtien Truck Group sell?",
+                          "a": "Rechtien Truck Group sells new and pre-owned International trucks, IC Bus, Hino and trailers from 11 locations serving South Florida and South Carolina, with parts, service, financing and lease and rental support."
+                        },
+                        {
+                          "q": "Do you finance commercial trucks?",
+                          "a": "Yes. Rechtien Truck Group provides financing through International Financial, with loan and lease options at terms from 12 to 72 months and an online credit application. Financing is available in South Florida and South Carolina."
+                        },
+                        {
+                          "q": "Can you service all makes and models of trucks?",
+                          "a": "Yes. Our service departments handle maintenance, diagnostics and repairs for all makes and models of trucks and buses, using ASE-certified and factory-trained technicians. We can also perform warranty work for most major brands and manufacturers."
+                        },
+                        {
+                          "q": "How do I schedule a service appointment?",
+                          "a": "Request an appointment online with the service appointment form on this website, or contact your nearest Rechtien Truck Group location directly. With every visit we provide transparent reporting, so you know what was done and what is recommended."
+                        },
+                        {
+                          "q": "Do you sell genuine OEM and aftermarket truck parts?",
+                          "a": "Yes. We carry genuine OEM parts for the International and Hino trucks we sell and service, plus high-quality aftermarket parts from suppliers including Fleetrite, Fleetguard and Dorman HD Solutions. You can order online, request a part, or visit a parts counter."
+                        },
+                        {
+                          "q": "Do you offer truck leasing and rentals?",
+                          "a": "Yes. Idealease leasing and rentals are available through Rechtien Truck Group in South Florida and South Carolina, including semi truck leasing and rentals. Send a lease or rental inquiry, or contact us, to find the Idealease location nearest you."
+                        },
+                        {
+                          "q": "Do you offer mobile truck service?",
+                          "a": "Yes. Idealease Mobile Service is available through Rechtien Truck Group in South Florida and South Carolina. Technicians come to your location during off hours or on weekends and can perform up to 80% of routine and preventive maintenance, for fleets of five or more commercial trucks."
+                        }
+                      ]
+                    },
                     "snapshot": {
                       "items": []
                     }
