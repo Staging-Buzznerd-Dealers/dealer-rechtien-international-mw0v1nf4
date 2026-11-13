@@ -39,7 +39,7 @@
   {
     "slug": "location-detail",
     "title": "{{name}}, {{region}} Truck Dealer — Hours & Location",
-    "description": "Hours, directions, department contacts and in-stock International trucks at our {{name}} location — {{streetAddress}}, {{city}}, {{region}} {{postalCode}}. Call {{phone}}.",
+    "description": "Hours, directions and in-stock International trucks at our {{name}} location — {{streetAddress}}, {{city}}, {{region}} {{postalCode}}. Call {{phone}}.",
     "path": "/locations/:slug",
     "out": "locations/:slug/index.html",
     "dir": "location-detail",
