@@ -612,25 +612,6 @@
                   "children": []
                 }
               ]
-            },
-            {
-              "id": "hn-loc-all-col",
-              "label": "Find a Location",
-              "type": "label",
-              "ref": null,
-              "url": null,
-              "newTab": false,
-              "children": [
-                {
-                  "id": "hn-loc-all",
-                  "label": "All Locations",
-                  "type": "url",
-                  "ref": null,
-                  "url": "/#locations",
-                  "newTab": false,
-                  "children": []
-                }
-              ]
             }
           ]
         },
