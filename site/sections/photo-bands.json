@@ -1,0 +1,292 @@
+{
+  "version": 2,
+  "id": "photo-bands",
+  "name": "Photo bands (why join + spotlight)",
+  "description": "Two bands of photo cards, each with a heading: 'why join' and 'employee spotlight'. A card is a photo, a title or name, a caption or role and an optional quote.",
+  "props": [
+    {
+      "key": "whyEyebrow",
+      "type": "text",
+      "label": "Why join: eyebrow"
+    },
+    {
+      "key": "whyHeading",
+      "type": "text",
+      "label": "Why join: heading"
+    },
+    {
+      "key": "whyIntro",
+      "type": "textarea",
+      "label": "Why join: intro"
+    },
+    {
+      "key": "why",
+      "type": "list",
+      "label": "Why join: cards",
+      "fields": [
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Photo"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title / name"
+        },
+        {
+          "key": "caption",
+          "type": "text",
+          "label": "Caption / role"
+        },
+        {
+          "key": "quote",
+          "type": "textarea",
+          "label": "Quote (optional)"
+        }
+      ]
+    },
+    {
+      "key": "spEyebrow",
+      "type": "text",
+      "label": "Spotlight: eyebrow"
+    },
+    {
+      "key": "spHeading",
+      "type": "text",
+      "label": "Spotlight: heading"
+    },
+    {
+      "key": "spIntro",
+      "type": "textarea",
+      "label": "Spotlight: intro"
+    },
+    {
+      "key": "spotlight",
+      "type": "list",
+      "label": "Spotlight: cards",
+      "fields": [
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Photo"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title / name"
+        },
+        {
+          "key": "caption",
+          "type": "text",
+          "label": "Caption / role"
+        },
+        {
+          "key": "quote",
+          "type": "textarea",
+          "label": "Quote (optional)"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "pb",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "pb-why-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "pb-why-head-col",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "pb-why-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{whyHeading}}",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "{{whyEyebrow}}"
+                  }
+                },
+                {
+                  "id": "pb-why-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "{{whyIntro}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pb-why-grid",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "pb-why-card",
+              "type": "column",
+              "props": {
+                "span": 4,
+                "repeat": "why"
+              },
+              "children": [
+                {
+                  "id": "pb-why-photo",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pb-why-title",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "pb-why-cap",
+                  "type": "text",
+                  "props": {
+                    "text": "{{caption}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pb-why-quote",
+                  "type": "text",
+                  "props": {
+                    "text": "{{quote}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pb-sp-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "pb-sp-head-col",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "pb-sp-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{spHeading}}",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "{{spEyebrow}}"
+                  }
+                },
+                {
+                  "id": "pb-sp-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "{{spIntro}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pb-sp-grid",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "pb-sp-card",
+              "type": "column",
+              "props": {
+                "span": 4,
+                "repeat": "spotlight"
+              },
+              "children": [
+                {
+                  "id": "pb-sp-photo",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pb-sp-title",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "pb-sp-cap",
+                  "type": "text",
+                  "props": {
+                    "text": "{{caption}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pb-sp-quote",
+                  "type": "text",
+                  "props": {
+                    "text": "{{quote}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Photo bands: a heading and a row of photo cards, twice (why join, employee spotlight). A wrapping grid, so any number of cards fits. */\n.bz-section[data-bz-node=\"pb\"]{padding-block:clamp(40px,5vw,72px)}\n[data-bz-node=\"pb\"] .bz-block{padding-block:0}\n[data-bz-node=\"pb-why-head\"],[data-bz-node=\"pb-sp-head\"]{margin-bottom:clamp(24px,3vw,40px)}\n[data-bz-node=\"pb-why-grid\"]+[data-bz-node=\"pb-sp-head\"]{margin-top:clamp(56px,7vw,96px)}\n[data-bz-node=\"pb-why-h\"] h2,[data-bz-node=\"pb-sp-h\"] h2{margin-bottom:var(--space-3)}\n[data-bz-node=\"pb-why-intro\"] p,[data-bz-node=\"pb-sp-intro\"] p{max-width:46rem;margin:0}\n[data-bz-node=\"pb-why-intro\"] p:empty,[data-bz-node=\"pb-sp-intro\"] p:empty{display:none}\n[data-bz-node=\"pb-why-grid\"],[data-bz-node=\"pb-sp-grid\"]{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px;align-items:start}\n[data-bz-node^=\"pb-why-card\"],[data-bz-node^=\"pb-sp-card\"]{grid-column:auto;min-width:0}\n[data-bz-node^=\"pb-why-photo\"],[data-bz-node^=\"pb-sp-photo\"]{margin-bottom:var(--space-4)}\n[data-bz-node^=\"pb-why-photo\"] .bz-container,[data-bz-node^=\"pb-sp-photo\"] .bz-container,[data-bz-node^=\"pb-why-photo\"] .bz-figure,[data-bz-node^=\"pb-sp-photo\"] .bz-figure{max-width:none;padding:0;margin:0}\n[data-bz-node^=\"pb-why-photo\"] img,[data-bz-node^=\"pb-sp-photo\"] img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center top;display:block;border-radius:0}\n[data-bz-node^=\"pb-why-title\"] h3,[data-bz-node^=\"pb-sp-title\"] h3{font:700 1.0625rem/1.25 var(--font-heading);text-transform:uppercase;margin:0 0 var(--space-1);color:var(--ink)}\n[data-bz-node^=\"pb-why-cap\"] p,[data-bz-node^=\"pb-sp-cap\"] p{font:700 .6875rem/1.5 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0}\n[data-bz-node^=\"pb-why-cap\"]:has(p:empty),[data-bz-node^=\"pb-sp-cap\"]:has(p:empty){display:none}\n[data-bz-node^=\"pb-why-quote\"] p,[data-bz-node^=\"pb-sp-quote\"] p{font-size:.9375rem;line-height:1.7;color:#3d3c39;margin:var(--space-3) 0 0;font-style:italic}\n[data-bz-node^=\"pb-why-quote\"]:has(p:empty),[data-bz-node^=\"pb-sp-quote\"]:has(p:empty){display:none}\n@media (max-width:640px){[data-bz-node=\"pb-why-grid\"],[data-bz-node=\"pb-sp-grid\"]{grid-template-columns:1fr;gap:28px}}\n",
+  "js": ""
+}

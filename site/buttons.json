@@ -477,5 +477,32 @@
     "intent": "browse-inventory",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "careers-apply",
+    "label": "Apply today",
+    "url": "#",
+    "style": "primary",
+    "intent": "apply",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "careers-talent",
+    "label": "Join our talent community",
+    "url": "#",
+    "style": "secondary",
+    "intent": "join-talent-community",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "careers-applications",
+    "label": "My applications",
+    "url": "#",
+    "style": "link",
+    "intent": "my-applications",
+    "newTab": false,
+    "active": true
   }
 ]
