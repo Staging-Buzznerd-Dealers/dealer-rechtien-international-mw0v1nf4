@@ -42,14 +42,14 @@
                     "text": "Commercial semi-truck financing and leasing.",
                     "headingLevel": 1,
                     "align": "center",
-                    "eyebrow": "Rechtien International & Carolina International"
+                    "eyebrow": "Rechtien Truck Group"
                   }
                 },
                 {
                   "id": "hero-lede",
                   "type": "text",
                   "props": {
-                    "text": "Simple, transparent and flexible financing through International Financial, at Rechtien International in South Florida and Carolina International in South Carolina.",
+                    "text": "Simple, transparent and flexible financing through International Financial, at Rechtien Truck Group in South Florida and South Carolina.",
                     "align": "center",
                     "width": "full"
                   }
@@ -130,7 +130,7 @@
                   "id": "intro-t3",
                   "type": "text",
                   "props": {
-                    "text": "Carolina International Trucks provides financing for its customers through a large variety of options, with competitive loans and leases at terms from 12–72 months, and an online credit application that makes the process simple and quick. Once your application is submitted, you will be contacted to discuss your options.",
+                    "text": "Rechtien Truck Group provides financing for its customers through a large variety of options, with competitive loans and leases at terms from 12–72 months, and an online credit application that makes the process simple and quick. Once your application is submitted, you will be contacted to discuss your options.",
                     "align": "left",
                     "width": "full"
                   }
@@ -139,7 +139,7 @@
                   "id": "intro-t4",
                   "type": "text",
                   "props": {
-                    "text": "Rechtien International Trucks has you covered whether you are looking for financing or prefer to explore leasing. As your business grows and your fleet expands, flexible financing solutions become essential — and for businesses seeking driving power without ownership commitments, our semi-truck leasing options offer flexibility and scalability.",
+                    "text": "Rechtien Truck Group has you covered whether you are looking for financing or prefer to explore leasing. As your business grows and your fleet expands, flexible financing solutions become essential — and for businesses seeking driving power without ownership commitments, our semi-truck leasing options offer flexibility and scalability.",
                     "align": "left",
                     "width": "full"
                   }
@@ -180,7 +180,7 @@
                     "stats": [
                       {
                         "value": "12–72",
-                        "label": "Month terms on competitive loans and leases at Carolina International Trucks"
+                        "label": "Month terms on competitive loans and leases at Rechtien Truck Group"
                       },
                       {
                         "value": "3",
@@ -236,7 +236,7 @@
                   "id": "options-t",
                   "type": "text",
                   "props": {
-                    "text": "Whether you prefer to own your truck or lease it, we will help you find the structure that fits your business. Rechtien International Trucks and Carolina International Trucks each offer the options below, as noted on each card.",
+                    "text": "Whether you prefer to own your truck or lease it, we will help you find the structure that fits your business. Rechtien Truck Group offers the options below, as noted on each card.",
                     "align": "left",
                     "width": "full"
                   }
@@ -269,19 +269,19 @@
                     "items": [
                       {
                         "label": "Retail Finance Loan",
-                        "desc": "12–72 months, fixed cost, with ownership at the end of the loan. Opt for financing when your plan calls for ownership, equity build-up and long-term asset value. Offered by Carolina International Trucks."
+                        "desc": "12–72 months, fixed cost, with ownership at the end of the loan. Opt for financing when your plan calls for ownership, equity build-up and long-term asset value. Offered by Rechtien Truck Group."
                       },
                       {
                         "label": "TRAC Lease",
-                        "desc": "12–60 months with lower monthly payments and a guaranteed residual at the end of the lease. Offered by Carolina International Trucks."
+                        "desc": "12–60 months with lower monthly payments and a guaranteed residual at the end of the lease. Offered by Rechtien Truck Group."
                       },
                       {
                         "label": "FMV Lease (Fair Market Value)",
-                        "desc": "Lower monthly payments, with the option to return the equipment at the end of the lease or purchase it at the fair market value. Offered by Carolina International Trucks."
+                        "desc": "Lower monthly payments, with the option to return the equipment at the end of the lease or purchase it at the fair market value. Offered by Rechtien Truck Group."
                       },
                       {
                         "label": "Direct Lease",
-                        "desc": "Choose a direct lease when you want to align payments to usage, seasonality or business cycles, and to keep fleet composition flexible as your business evolves. Offered by Rechtien International Trucks."
+                        "desc": "Choose a direct lease when you want to align payments to usage, seasonality or business cycles, and to keep fleet composition flexible as your business evolves. Offered by Rechtien Truck Group."
                       },
                       {
                         "label": "Customized Leases & Secured Loans",
@@ -328,7 +328,7 @@
                   "id": "why-h",
                   "type": "heading",
                   "props": {
-                    "text": "Why choose Rechtien International Trucks.",
+                    "text": "Why choose Rechtien Truck Group.",
                     "headingLevel": 2,
                     "align": "left",
                     "eyebrow": "Here's what sets us apart"
@@ -451,7 +451,7 @@
                   "id": "apply-t1",
                   "type": "text",
                   "props": {
-                    "text": "For the fastest response, fill out a credit application and return it to <a href=\"mailto:team@rechtien.com\">team@rechtien.com</a>. Carolina International Trucks also offers an online credit application — once it is submitted, you will be contacted to discuss your options.",
+                    "text": "For the fastest response, fill out a credit application and return it to <a href=\"mailto:team@rechtien.com\">team@rechtien.com</a>. Rechtien Truck Group also offers an online credit application — once it is submitted, you will be contacted to discuss your options.",
                     "align": "left",
                     "width": "full"
                   }
@@ -484,7 +484,7 @@
                           "id": "apply-dname-1",
                           "type": "heading",
                           "props": {
-                            "text": "Rechtien International credit application",
+                            "text": "South Florida credit application",
                             "headingLevel": 4,
                             "align": "left"
                           }
@@ -525,7 +525,7 @@
                           "id": "apply-dname-2",
                           "type": "heading",
                           "props": {
-                            "text": "Carolina International credit application",
+                            "text": "South Carolina credit application",
                             "headingLevel": 4,
                             "align": "left"
                           }
@@ -645,7 +645,7 @@
                   "id": "split-t2",
                   "type": "text",
                   "props": {
-                    "text": "We are straightforward and do not hit you with hidden fees during the life of your loan, because we want to earn your repeat business. Carolina International Trucks deals strictly in International or Hino truck, trailer and equipment financing, so our years of experience can help deliver the right financing deal to you.",
+                    "text": "We are straightforward and do not hit you with hidden fees during the life of your loan, because we want to earn your repeat business. Rechtien Truck Group deals strictly in International or Hino truck, trailer and equipment financing, so our years of experience can help deliver the right financing deal to you.",
                     "align": "left",
                     "width": "full"
                   }
@@ -654,7 +654,7 @@
                   "id": "split-t3",
                   "type": "text",
                   "props": {
-                    "text": "Rechtien International Trucks also offers an online value-your-trade tool and a payment calculator to help you start the planning process at home.",
+                    "text": "Rechtien Truck Group also offers an online value-your-trade tool and a payment calculator to help you start the planning process at home.",
                     "align": "left",
                     "width": "full"
                   }
@@ -855,11 +855,11 @@
                       "items": [
                         {
                           "q": "What financing and leasing options are available?",
-                          "a": "Carolina International Trucks offers a retail finance loan (12–72 months, fixed cost, with ownership at the end of the loan), a TRAC lease (12–60 months with lower monthly payments and a guaranteed residual) and an FMV lease (lower monthly payments, with the option to return or purchase the equipment at fair market value). Rechtien International Trucks offers semi-truck leasing, including direct leases. International Financial also provides customized leases and secured loans."
+                          "a": "Rechtien Truck Group offers a retail finance loan (12–72 months, fixed cost, with ownership at the end of the loan), a TRAC lease (12–60 months with lower monthly payments and a guaranteed residual) and an FMV lease (lower monthly payments, with the option to return or purchase the equipment at fair market value). Rechtien Truck Group offers semi-truck leasing, including direct leases. International Financial also provides customized leases and secured loans."
                         },
                         {
                           "q": "What loan and lease terms are available?",
-                          "a": "Carolina International Trucks offers competitive loans and leases with terms from 12–72 months. Retail finance loans run 12–72 months and TRAC leases run 12–60 months."
+                          "a": "Rechtien Truck Group offers competitive loans and leases with terms from 12–72 months. Retail finance loans run 12–72 months and TRAC leases run 12–60 months."
                         },
                         {
                           "q": "Do you finance new and used trucks?",
@@ -867,7 +867,7 @@
                         },
                         {
                           "q": "Which brands can I finance?",
-                          "a": "International Financial provides customized leases and secured loans for International-branded heavy- and medium-duty commercial trucks. Carolina International Trucks deals strictly in International or Hino truck, trailer and equipment financing."
+                          "a": "International Financial provides customized leases and secured loans for International-branded heavy- and medium-duty commercial trucks. Rechtien Truck Group deals strictly in International or Hino truck, trailer and equipment financing."
                         },
                         {
                           "q": "Can I get financing if I have had credit problems?",
@@ -879,7 +879,7 @@
                         },
                         {
                           "q": "How do I apply?",
-                          "a": "For the fastest response, fill out a credit application and return it to team@rechtien.com. Carolina International Trucks also offers an online credit application; once it is submitted, you will be contacted to discuss your options. You can also send a financing request using the form on this page."
+                          "a": "For the fastest response, fill out a credit application and return it to team@rechtien.com. Rechtien Truck Group also offers an online credit application; once it is submitted, you will be contacted to discuss your options. You can also send a financing request using the form on this page."
                         }
                       ]
                     },

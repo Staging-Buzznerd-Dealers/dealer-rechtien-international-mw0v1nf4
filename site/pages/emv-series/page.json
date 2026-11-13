@@ -131,7 +131,7 @@
                   "id": "intro-t2",
                   "type": "text",
                   "props": {
-                    "text": "Here is how Rechtien International Trucks and International help you make the transition:",
+                    "text": "Here is how Rechtien Truck Group and International help you make the transition:",
                     "align": "left",
                     "width": "full"
                   }
@@ -554,7 +554,7 @@
                     "text": "Request an eMV quote.",
                     "headingLevel": 2,
                     "align": "left",
-                    "eyebrow": "Talk to Rechtien International Trucks"
+                    "eyebrow": "Talk to Rechtien Truck Group"
                   }
                 },
                 {
@@ -570,7 +570,7 @@
                   "id": "quote-t2",
                   "type": "text",
                   "props": {
-                    "text": "Prefer to talk? Call (800) 666-3040 or contact your nearest Rechtien International location below.",
+                    "text": "Prefer to talk? Call (800) 666-3040 or contact your nearest Rechtien Truck Group location below.",
                     "align": "left",
                     "width": "full"
                   }
@@ -604,12 +604,12 @@
         "sectionId": "parts-contacts",
         "values": {
           "eyebrow": "Where to learn more",
-          "heading": "Rechtien International Trucks locations.",
+          "heading": "Rechtien Truck Group locations.",
           "groups": [
             {
-              "company": "Rechtien International Trucks",
+              "company": "Rechtien Truck Group",
               "region": "South Florida · 5 locations",
-              "intro": "Visit any Rechtien International location to talk through the International eMV Series.",
+              "intro": "Visit any Rechtien Truck Group location to talk through the International eMV Series.",
               "lineLabel": "",
               "line": "",
               "lineUrl": "",

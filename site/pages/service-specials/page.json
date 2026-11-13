@@ -42,7 +42,7 @@
                     "text": "Service specials.",
                     "headingLevel": 1,
                     "align": "center",
-                    "eyebrow": "Rechtien International Trucks"
+                    "eyebrow": "Rechtien Truck Group"
                   }
                 },
                 {
@@ -644,7 +644,7 @@
                   "id": "seo-1-h",
                   "type": "heading",
                   "props": {
-                    "text": "Service specials at Rechtien International Trucks.",
+                    "text": "Service specials at Rechtien Truck Group.",
                     "headingLevel": 2,
                     "align": "left"
                   }
@@ -653,7 +653,7 @@
                   "id": "seo-1-t",
                   "type": "text",
                   "props": {
-                    "text": "Keep your truck running at its best by utilizing the truck service specials at Rechtien International Trucks. Routine maintenance is crucial to extending the life and performance of your truck, and service coupons make it easier than ever to stay on schedule and go the distance. Whether you need heavy duty truck repair or International truck service, Rechtien International Trucks has service discounts you can depend on. Take advantage of these great service deals and <a href=\"/service#appointment\">schedule service</a> with us today!",
+                    "text": "Keep your truck running at its best by utilizing the truck service specials at Rechtien Truck Group. Routine maintenance is crucial to extending the life and performance of your truck, and service coupons make it easier than ever to stay on schedule and go the distance. Whether you need heavy duty truck repair or International truck service, Rechtien Truck Group has service discounts you can depend on. Take advantage of these great service deals and <a href=\"/service#appointment\">schedule service</a> with us today!",
                     "align": "left",
                     "width": "full"
                   }
@@ -681,7 +681,7 @@
                   "id": "seo-2-h",
                   "type": "heading",
                   "props": {
-                    "text": "Reliable truck service at Rechtien International Trucks.",
+                    "text": "Reliable truck service at Rechtien Truck Group.",
                     "headingLevel": 2,
                     "align": "left"
                   }
@@ -809,10 +809,10 @@
         "sectionId": "parts-contacts",
         "values": {
           "eyebrow": "Where to get service",
-          "heading": "Rechtien International Trucks locations.",
+          "heading": "Rechtien Truck Group locations.",
           "groups": [
             {
-              "company": "Rechtien International Trucks",
+              "company": "Rechtien Truck Group",
               "region": "South Florida · 5 locations",
               "intro": "Five locations across South Florida. Se habla español at our Miami and Ft. Lauderdale locations.",
               "lineLabel": "",

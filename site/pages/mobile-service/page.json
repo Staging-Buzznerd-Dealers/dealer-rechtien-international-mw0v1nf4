@@ -49,7 +49,7 @@
                   "id": "hero-lede",
                   "type": "text",
                   "props": {
-                    "text": "Schedule service when your vehicles are not operating — during off hours or on weekends — at your location, with Idealease Mobile Service from Rechtien International and Carolina International.",
+                    "text": "Schedule service when your vehicles are not operating — during off hours or on weekends — at your location, with Idealease Mobile Service from Rechtien Truck Group.",
                     "align": "center",
                     "width": "full"
                   }
@@ -139,7 +139,7 @@
                   "id": "intro-t3",
                   "type": "text",
                   "props": {
-                    "text": "Idealease of South Florida, with Rechtien International Trucks, offers mobile service alongside full-service semi truck leasing and dedicated maintenance. Carolina Idealease, with Carolina International Trucks in South Carolina, also offers mobile service for its customers.",
+                    "text": "Idealease of South Florida, with Rechtien Truck Group, offers mobile service alongside full-service semi truck leasing and dedicated maintenance. Carolina Idealease, with Rechtien Truck Group in South Carolina, also offers mobile service for its customers.",
                     "align": "left",
                     "width": "full"
                   }
@@ -535,7 +535,7 @@
           "heading": "Contact your nearest location.",
           "groups": [
             {
-              "company": "Rechtien International Trucks",
+              "company": "Rechtien Truck Group",
               "region": "South Florida · 5 locations",
               "intro": "Contact Idealease of South Florida today, or visit any of our 5 South Florida locations.",
               "lineLabel": "",
@@ -595,9 +595,9 @@
               ]
             },
             {
-              "company": "Carolina International Trucks",
+              "company": "Rechtien Truck Group",
               "region": "South Carolina · 6 locations",
-              "intro": "Carolina Idealease also offers mobile service. Contact or visit Carolina International Trucks in South Carolina.",
+              "intro": "Carolina Idealease also offers mobile service. Contact or visit Rechtien Truck Group in South Carolina.",
               "lineLabel": "",
               "line": "",
               "lineUrl": "",
@@ -728,7 +728,7 @@
                         },
                         {
                           "q": "Is mobile service available in both South Florida and South Carolina?",
-                          "a": "Yes. Idealease of South Florida, with Rechtien International Trucks, offers mobile service, and Carolina Idealease, with Carolina International Trucks in South Carolina, also offers mobile service. Contact the location nearest you for details."
+                          "a": "Yes. Idealease of South Florida, with Rechtien Truck Group, offers mobile service, and Carolina Idealease, with Rechtien Truck Group in South Carolina, also offers mobile service. Contact the location nearest you for details."
                         },
                         {
                           "q": "How do I get started?",

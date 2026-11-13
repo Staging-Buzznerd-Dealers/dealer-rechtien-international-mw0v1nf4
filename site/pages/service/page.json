@@ -59,7 +59,7 @@
                   "id": "hero-lede",
                   "type": "text",
                   "props": {
-                    "text": "Factory-trained technicians, all makes and models, and service bays across our Carolina International Trucks and Rechtien International Trucks locations — built to get you back on the road.",
+                    "text": "Factory-trained technicians, all makes and models, and service bays across our Rechtien Truck Group locations — built to get you back on the road.",
                     "align": "center",
                     "width": "full"
                   }
@@ -149,7 +149,7 @@
                     "items": [
                       {
                         "label": "100+",
-                        "desc": "ASE-certified and factory-trained technicians at Carolina International Trucks"
+                        "desc": "ASE-certified and factory-trained technicians at Rechtien Truck Group"
                       },
                       {
                         "label": "130",
