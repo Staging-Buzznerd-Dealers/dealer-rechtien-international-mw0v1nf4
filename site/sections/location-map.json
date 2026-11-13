@@ -1,0 +1,65 @@
+{
+  "version": 2,
+  "id": "location-map",
+  "name": "Locations map (a pin per card)",
+  "description": "A regional map with a pin for every location card on the page. Pins come from each card's latitude and longitude; the map zooms to fit them all.",
+  "props": [
+    {
+      "key": "caption",
+      "type": "text",
+      "label": "Caption",
+      "default": "Our locations"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "lm",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "lm-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "lm-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "lm-caption",
+                  "type": "text",
+                  "props": {
+                    "text": "{{caption}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lm-attr",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\" rel=\"noopener\">© OpenStreetMap contributors</a>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Locations map. A grey panel; the script adds real map tiles (zoomed to fit every pin) and a red pin per location card. With no script it is the grey panel with its caption. */\n.bz-section[data-bz-node=\"lm\"]{padding-block:clamp(16px,2vw,24px) clamp(8px,1vw,16px)}\n[data-bz-node=\"lm-col\"]{position:relative;aspect-ratio:2/1;min-height:300px;max-height:660px;background:var(--paper,#e6e6e4);overflow:hidden;isolation:isolate}\n[data-bz-node=\"lm-col\"] .bz-block{padding:0}\n[data-bz-node=\"lm-col\"] .bz-container{padding:0;max-width:none}\n[data-bz-node^=\"lm-caption\"]{position:absolute;left:18px;top:14px;z-index:3}\n[data-bz-node^=\"lm-caption\"] p{margin:0;font:700 .6875rem/1.4 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:#4a4945}\n[data-bz-node^=\"lm-attr\"]{position:absolute;left:8px;bottom:8px;z-index:3;display:none}\n[data-bz-node=\"lm-col\"].has-map [data-bz-node^=\"lm-attr\"]{display:block}\n[data-bz-node^=\"lm-attr\"] p{margin:0;font:400 .625rem/1.4 Arial,Helvetica,sans-serif;padding:2px 7px;border-radius:3px;background:rgba(255,255,255,.85);color:#333}\n[data-bz-node=\"lm\"] [data-bz-node^=\"lm-attr\"] a{color:inherit;font:inherit;text-decoration:underline;text-underline-offset:2px}\n.lm-tiles{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none}\n.lm-tiles img{position:absolute;display:block;width:256px;height:256px;max-width:none;opacity:0;transition:opacity .4s ease;filter:grayscale(1) contrast(.92) brightness(1.04)}\n.lm-tiles img.is-loaded{opacity:1}\n.lm-pins{position:absolute;inset:0;z-index:2}\n.lm-pin{position:absolute;display:block;width:26px;height:35px;margin:-35px 0 0 -13px;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 48'%3E%3Cpath d='M18 1C9 1 1.5 8.2 1.5 17.2 1.5 29.5 18 47 18 47s16.5-17.5 16.5-29.8C34.5 8.2 27 1 18 1z' fill='%23e2231a' stroke='%23fff' stroke-width='2'/%3E%3Ccircle cx='18' cy='17' r='6' fill='%23fff'/%3E%3C/svg%3E\") center/contain no-repeat;filter:drop-shadow(0 3px 4px rgba(0,0,0,.35));text-decoration:none;outline-offset:3px}\n.lm-pin:hover,.lm-pin:focus-visible{z-index:99999!important}\n.lm-pin__tip{position:absolute;left:50%;bottom:calc(100% + 4px);transform:translateX(-50%);padding:5px 10px;border-radius:4px;background:#1b1b1b;color:#fff;font:700 .6875rem/1.2 var(--font-body);letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .15s ease}\n.lm-pin:hover .lm-pin__tip,.lm-pin:focus-visible .lm-pin__tip{opacity:1}\n@media (max-width:640px){[data-bz-node=\"lm-col\"]{aspect-ratio:4/5;max-height:none}}\n@media (prefers-reduced-motion:reduce){.lm-tiles img,.lm-pin__tip{transition:none}}\n",
+  "js": "/* Locations map: real map tiles, zoomed to fit a pin for every location card on the page.\n   Pins come from the latitude/longitude fields of the cards (location-cards), read from the page,\n   so a card added to the list is on the map with no change here. The zoom is the largest at which\n   every pin fits the panel; tiles and pins are placed in pixels from the centre of the pins' box.\n   Without this script the panel stays a plain grey box with its caption. */\n(function () {\n  var SIZE = 256, TILES = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';\n  function slug(s) { return String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, ''); }\n  function world(lat, lon, z) {\n    var n = Math.pow(2, z) * SIZE, rad = lat * Math.PI / 180;\n    return { x: (lon + 180) / 360 * n, y: (1 - Math.log(Math.tan(rad) + 1 / Math.cos(rad)) / Math.PI) / 2 * n };\n  }\n  function pinsOnPage() {\n    var out = [];\n    document.querySelectorAll('[data-bz-node^=\"lc-\"][data-bz-node*=\"-card\"]').forEach(function (card) {\n      var c = card.querySelector('[data-bz-node*=\"-coords\"] p');\n      var m = c && c.textContent.match(/(-?\\d+(?:\\.\\d+)?)\\s*,\\s*(-?\\d+(?:\\.\\d+)?)/);\n      if (!m) return;\n      var lat = parseFloat(m[1]), lon = parseFloat(m[2]);\n      if (!isFinite(lat) || !isFinite(lon) || (lat === 0 && lon === 0) || Math.abs(lat) > 85.05 || Math.abs(lon) > 180) return;\n      var n = card.querySelector('[data-bz-node*=\"-name\"]');\n      var name = n ? n.textContent.trim() : '';\n      if (!card.id) card.id = 'location-' + slug(name);\n      out.push({ lat: lat, lon: lon, name: name, id: card.id });\n    });\n    return out;\n  }\n  document.querySelectorAll('[data-bz-node^=\"lm-col\"]').forEach(function (box) {\n    var pins = pinsOnPage();\n    if (!pins.length) return;\n    var tiles = document.createElement('div'); tiles.className = 'lm-tiles'; tiles.setAttribute('aria-hidden', 'true');\n    var layer = document.createElement('div'); layer.className = 'lm-pins';\n    box.insertBefore(layer, box.firstChild); box.insertBefore(tiles, box.firstChild);\n    box.classList.add('has-map');\n    var last = '';\n    function draw() {\n      var r = box.getBoundingClientRect(), W = r.width, H = r.height;\n      if (!W || !H || last === Math.round(W) + 'x' + Math.round(H)) return;\n      last = Math.round(W) + 'x' + Math.round(H);\n      var pad = Math.max(28, Math.min(44, W / 12)), z = 2, w, minx, maxx, miny, maxy;\n      for (var t = 10; t >= 2; t--) {\n        var ws = pins.map(function (p) { return world(p.lat, p.lon, t); });\n        minx = Math.min.apply(null, ws.map(function (q) { return q.x; })); maxx = Math.max.apply(null, ws.map(function (q) { return q.x; }));\n        miny = Math.min.apply(null, ws.map(function (q) { return q.y; })); maxy = Math.max.apply(null, ws.map(function (q) { return q.y; }));\n        z = t;\n        if (maxx - minx <= W - 2 * pad && maxy - miny <= H - 2 * pad - 35) break;   // 35px: a pin stands above its point\n      }\n      var cx = (minx + maxx) / 2, cy = (miny + maxy) / 2 - 17;\n      tiles.textContent = ''; layer.textContent = '';\n      tiles.setAttribute('data-map-zoom', z);\n      var limit = Math.pow(2, z), x0 = Math.floor((cx - W / 2) / SIZE), x1 = Math.floor((cx + W / 2) / SIZE);\n      var y0 = Math.floor((cy - H / 2) / SIZE), y1 = Math.floor((cy + H / 2) / SIZE);\n      for (var ty = y0; ty <= y1; ty++) {\n        if (ty < 0 || ty >= limit) continue;\n        for (var tx = x0; tx <= x1; tx++) {\n          var img = document.createElement('img');\n          img.alt = ''; img.width = SIZE; img.height = SIZE; img.decoding = 'async';\n          img.src = TILES.replace('{z}', z).replace('{x}', ((tx % limit) + limit) % limit).replace('{y}', ty);\n          img.style.left = (tx * SIZE - cx + W / 2) + 'px'; img.style.top = (ty * SIZE - cy + H / 2) + 'px';\n          img.onload = function () { this.classList.add('is-loaded'); };\n          tiles.appendChild(img);\n        }\n      }\n      pins.forEach(function (p) {\n        var q = world(p.lat, p.lon, z), a = document.createElement('a');\n        a.className = 'lm-pin'; a.href = '#' + p.id; a.setAttribute('aria-label', p.name);\n        a.setAttribute('data-pin', p.name);\n        var top = q.y - cy + H / 2;\n        a.style.left = (q.x - cx + W / 2) + 'px'; a.style.top = top + 'px'; a.style.zIndex = Math.round(top);\n        a.innerHTML = '<span class=\"lm-pin__tip\"></span>'; a.firstChild.textContent = p.name;\n        layer.appendChild(a);\n      });\n    }\n    draw();\n    if (window.ResizeObserver) new ResizeObserver(function () { draw(); }).observe(box);\n    else window.addEventListener('resize', draw);\n  });\n})();\n"
+}
