@@ -481,6 +481,14 @@
                   "url": "/specifications",
                   "newTab": false,
                   "children": []
+                },
+                {
+                  "id": "item-57",
+                  "label": "International eMV Electric Truck Series",
+                  "type": "url",
+                  "url": "/emv-series",
+                  "ref": null,
+                  "children": []
                 }
               ]
             }
