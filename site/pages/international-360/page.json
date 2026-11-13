@@ -42,7 +42,7 @@
                     "text": "International 360: truck fleet management.",
                     "headingLevel": 1,
                     "align": "center",
-                    "eyebrow": "Rechtien International & Carolina International"
+                    "eyebrow": "Rechtien Truck Group"
                   }
                 },
                 {
@@ -131,7 +131,7 @@
                   "id": "intro-t2",
                   "type": "text",
                   "props": {
-                    "text": "Whether you want to view the status of a single truck or connect with our service department for preventive maintenance, I360 puts everything you need at your fingertips. Find out more about this innovative truck fleet management program with Rechtien International Trucks in South Florida and Carolina International Trucks in South Carolina.",
+                    "text": "Whether you want to view the status of a single truck or connect with our service department for preventive maintenance, I360 puts everything you need at your fingertips. Find out more about this innovative truck fleet management program with Rechtien Truck Group in South Florida and South Carolina.",
                     "align": "left",
                     "width": "full"
                   }
@@ -234,7 +234,7 @@
                       },
                       {
                         "value": "5 years",
-                        "label": "Subscription included with any new LT Series, RH Series or LoneStar (Carolina International)"
+                        "label": "Subscription included with any new LT Series, RH Series or LoneStar (South Carolina)"
                       }
                     ]
                   }
@@ -774,7 +774,7 @@
                   "id": "standard-t",
                   "type": "text",
                   "props": {
-                    "text": "Carolina International Trucks notes that a five-year subscription to International 360 for your entire all-makes fleet is included with the purchase of any new International LT Series, RH Series, and LoneStar models.",
+                    "text": "Rechtien Truck Group notes that a five-year subscription to International 360 for your entire all-makes fleet is included with the purchase of any new International LT Series, RH Series, and LoneStar models.",
                     "align": "center",
                     "width": "full"
                   }
@@ -835,7 +835,7 @@
                   "id": "learn-h",
                   "type": "heading",
                   "props": {
-                    "text": "Learn more with Rechtien International and Carolina International.",
+                    "text": "Learn more with Rechtien Truck Group.",
                     "headingLevel": 2,
                     "align": "left",
                     "eyebrow": "Request more information"
@@ -845,7 +845,7 @@
                   "id": "learn-t1",
                   "type": "text",
                   "props": {
-                    "text": "Ready to learn more about the International 360 program? Contact us at Rechtien International Trucks or Carolina International Trucks for more information, and see how we can become part of your preventive maintenance program.",
+                    "text": "Ready to learn more about the International 360 program? Contact us at Rechtien Truck Group for more information, and see how we can become part of your preventive maintenance program.",
                     "align": "left",
                     "width": "full"
                   }
@@ -961,9 +961,9 @@
           "heading": "International 360 at our locations.",
           "groups": [
             {
-              "company": "Rechtien International Trucks",
+              "company": "Rechtien Truck Group",
               "region": "South Florida · 5 locations",
-              "intro": "Contact Rechtien International Trucks for more information about International 360.",
+              "intro": "Contact Rechtien Truck Group for more information about International 360.",
               "lineLabel": "",
               "line": "",
               "lineUrl": "",
@@ -1021,9 +1021,9 @@
               ]
             },
             {
-              "company": "Carolina International Trucks",
+              "company": "Rechtien Truck Group",
               "region": "South Carolina · 6 locations",
-              "intro": "Contact Carolina International Trucks for more information about International 360.",
+              "intro": "Contact Rechtien Truck Group for more information about International 360.",
               "lineLabel": "",
               "line": "",
               "lineUrl": "",
@@ -1158,11 +1158,11 @@
                         },
                         {
                           "q": "Is I360 included with new trucks?",
-                          "a": "Carolina International Trucks notes that a five-year subscription to International 360 for your entire all-makes fleet is included with the purchase of any new International LT Series, RH Series, and LoneStar models. Ask your dealership about your specific purchase."
+                          "a": "Rechtien Truck Group notes that a five-year subscription to International 360 for your entire all-makes fleet is included with the purchase of any new International LT Series, RH Series, and LoneStar models. Ask your dealership about your specific purchase."
                         },
                         {
                           "q": "How do I get started?",
-                          "a": "Send a request using the form on this page, or contact the Rechtien International or Carolina International location nearest you. International 360 also has a free mobile app."
+                          "a": "Send a request using the form on this page, or contact Rechtien Truck Group location nearest you. International 360 also has a free mobile app."
                         }
                       ]
                     },

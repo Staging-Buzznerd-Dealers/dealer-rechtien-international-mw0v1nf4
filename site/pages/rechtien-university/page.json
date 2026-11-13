@@ -85,7 +85,7 @@
                   "id": "about-h",
                   "type": "heading",
                   "props": {
-                    "text": "Rechtien International Trucks University",
+                    "text": "Rechtien Truck Group University",
                     "headingLevel": 2,
                     "align": "center"
                   }
@@ -121,7 +121,7 @@
                   "id": "adv-t",
                   "type": "text",
                   "props": {
-                    "text": "Whether you’re more focused on fleet manager courses or <a href=\"/service\">semi truck service technician</a> classes, you’ll find it all at Rechtien International Trucks. In addition to our thorough curriculum, you’ll find plenty of other reasons to choose our advanced program. Just a few of our course advantages include:",
+                    "text": "Whether you’re more focused on fleet manager courses or <a href=\"/service\">semi truck service technician</a> classes, you’ll find it all at Rechtien Truck Group. In addition to our thorough curriculum, you’ll find plenty of other reasons to choose our advanced program. Just a few of our course advantages include:",
                     "align": "left",
                     "width": "full"
                   }
@@ -170,7 +170,7 @@
                   "id": "cert-t",
                   "type": "text",
                   "props": {
-                    "text": "Do you have additional questions about semi truck service technician classes, fleet manager courses, and more? Feel free to <a href=\"/service#appointment\">reach out</a> to Rechtien International Trucks for more information! We’ll be happy to talk through the details and ensure your team has the education they need to keep moving your business forward!",
+                    "text": "Do you have additional questions about semi truck service technician classes, fleet manager courses, and more? Feel free to <a href=\"/service#appointment\">reach out</a> to Rechtien Truck Group for more information! We’ll be happy to talk through the details and ensure your team has the education they need to keep moving your business forward!",
                     "align": "left",
                     "width": "full"
                   }
@@ -273,10 +273,10 @@
         "sectionId": "parts-contacts",
         "values": {
           "eyebrow": "Questions? Call your nearest location",
-          "heading": "Rechtien International Trucks locations.",
+          "heading": "Rechtien Truck Group locations.",
           "groups": [
             {
-              "company": "Rechtien International Trucks",
+              "company": "Rechtien Truck Group",
               "region": "South Florida · 5 locations",
               "intro": "Five locations across South Florida. Se habla español at our Miami and Ft. Lauderdale locations.",
               "lineLabel": "",

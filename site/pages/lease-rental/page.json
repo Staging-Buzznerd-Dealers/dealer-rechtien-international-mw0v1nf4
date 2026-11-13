@@ -42,7 +42,7 @@
                     "text": "Semi truck leasing and rentals with Idealease.",
                     "headingLevel": 1,
                     "align": "center",
-                    "eyebrow": "Rechtien International & Carolina International"
+                    "eyebrow": "Rechtien Truck Group"
                   }
                 },
                 {
@@ -139,7 +139,7 @@
                   "id": "intro-t3",
                   "type": "text",
                   "props": {
-                    "text": "At Carolina International Trucks, we deliver professional semi truck leasing solutions to businesses across South Carolina, with a portfolio of commercial trucks for rent that includes the latest International trucks and 18-wheelers. In South Florida, Rechtien International Trucks works with Idealease of South Florida to help you choose a truck lease or rental that more than meets your needs.",
+                    "text": "At Rechtien Truck Group, we deliver professional semi truck leasing solutions to businesses across South Carolina, with a portfolio of commercial trucks for rent that includes the latest International trucks and 18-wheelers. In South Florida, Rechtien Truck Group works with Idealease of South Florida to help you choose a truck lease or rental that more than meets your needs.",
                     "align": "left",
                     "width": "full"
                   }
@@ -530,7 +530,7 @@
                     "text": "Why choose us over semi truck rental companies?",
                     "headingLevel": 2,
                     "align": "left",
-                    "eyebrow": "Rechtien International Trucks · Idealease of South Florida"
+                    "eyebrow": "Rechtien Truck Group · Idealease of South Florida"
                   }
                 },
                 {
@@ -980,7 +980,7 @@
                     "text": "Start a lease or rental request.",
                     "headingLevel": 2,
                     "align": "left",
-                    "eyebrow": "Learn more with Rechtien International & Carolina International"
+                    "eyebrow": "Learn more with Rechtien Truck Group"
                   }
                 },
                 {
@@ -1089,7 +1089,7 @@
           "heading": "Lease and rental locations in South Florida and South Carolina.",
           "groups": [
             {
-              "company": "Rechtien International Trucks",
+              "company": "Rechtien Truck Group",
               "region": "South Florida · 5 locations",
               "intro": "To find out more or talk through our rental options, contact us or visit any of our 5 South Florida locations today.",
               "lineLabel": "",
@@ -1149,9 +1149,9 @@
               ]
             },
             {
-              "company": "Carolina International Trucks",
+              "company": "Rechtien Truck Group",
               "region": "South Carolina · 6 locations",
-              "intro": "Contact or visit Carolina International Trucks in SC for your commercial fleet leasing needs.",
+              "intro": "Contact or visit Rechtien Truck Group in SC for your commercial fleet leasing needs.",
               "lineLabel": "",
               "line": "",
               "lineUrl": "",

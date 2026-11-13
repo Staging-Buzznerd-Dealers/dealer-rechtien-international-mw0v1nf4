@@ -52,11 +52,11 @@
       "options": [
         {
           "value": "south-florida",
-          "label": "South Florida (Rechtien International)"
+          "label": "South Florida"
         },
         {
           "value": "south-carolina",
-          "label": "South Carolina (Carolina International)"
+          "label": "South Carolina"
         }
       ]
     },

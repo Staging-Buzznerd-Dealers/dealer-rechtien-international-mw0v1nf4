@@ -17,7 +17,7 @@
           "props": {
             "image": {
               "src": "/images/carolina-dealership.jpg",
-              "alt": "Carolina International Trucks dealership"
+              "alt": "Rechtien Truck Group dealership"
             },
             "width": "full"
           }
@@ -50,7 +50,7 @@
                   "id": "hero-h",
                   "type": "heading",
                   "props": {
-                    "text": "Meet the Carolina-Rechtien Team",
+                    "text": "Meet the Rechtien Truck Group Team",
                     "headingLevel": 1,
                     "align": "center"
                   }
@@ -59,7 +59,7 @@
                   "id": "hero-lede",
                   "type": "text",
                   "props": {
-                    "text": "Rechtien International Trucks and Carolina International Trucks share one team across 11 locations in South Florida and South Carolina — executive staff, truck sales, parts, service and store management. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "text": "Rechtien Truck Group share one team across 11 locations in South Florida and South Carolina — executive staff, truck sales, parts, service and store management. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                     "align": "center",
                     "width": "full"
                   }
@@ -82,7 +82,7 @@
               "key": "executive",
               "chip": "Executive Staff",
               "title": "Executive Staff",
-              "intro": "Leadership across Rechtien International Trucks and Carolina International Trucks. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+              "intro": "Leadership across Rechtien Truck Group. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
               "members": [
                 {
                   "name": "Lorem Ipsum",
