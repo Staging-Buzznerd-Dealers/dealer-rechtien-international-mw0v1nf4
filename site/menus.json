@@ -404,8 +404,9 @@
                   "id": "item-51",
                   "label": "All Trucks",
                   "type": "inventory",
-                  "url": null,
                   "ref": "inventory",
+                  "url": null,
+                  "newTab": false,
                   "children": []
                 },
                 {
@@ -486,8 +487,9 @@
                   "id": "item-57",
                   "label": "International eMV Electric Truck Series",
                   "type": "url",
-                  "url": "/emv-series",
                   "ref": null,
+                  "url": "/emv-series",
+                  "newTab": false,
                   "children": []
                 }
               ]
@@ -522,36 +524,36 @@
                 {
                   "id": "hn-loc-ftlauderdale",
                   "label": "Ft. Lauderdale",
-                  "type": "url",
+                  "type": "location",
                   "ref": null,
-                  "url": "#",
+                  "url": null,
                   "newTab": false,
                   "children": []
                 },
                 {
                   "id": "hn-loc-rivierabeach",
                   "label": "Riviera Beach",
-                  "type": "url",
+                  "type": "location",
                   "ref": null,
-                  "url": "#",
+                  "url": null,
                   "newTab": false,
                   "children": []
                 },
                 {
                   "id": "hn-loc-ftpierce",
                   "label": "Ft. Pierce",
-                  "type": "url",
+                  "type": "location",
                   "ref": null,
-                  "url": "#",
+                  "url": null,
                   "newTab": false,
                   "children": []
                 },
                 {
                   "id": "hn-loc-ftmyers",
                   "label": "Ft. Myers",
-                  "type": "url",
+                  "type": "location",
                   "ref": null,
-                  "url": "#",
+                  "url": null,
                   "newTab": false,
                   "children": []
                 }
@@ -568,9 +570,9 @@
                 {
                   "id": "hn-loc-charleston",
                   "label": "Charleston",
-                  "type": "url",
+                  "type": "location",
                   "ref": null,
-                  "url": "#",
+                  "url": null,
                   "newTab": false,
                   "children": []
                 },
@@ -586,18 +588,18 @@
                 {
                   "id": "hn-loc-conway",
                   "label": "Conway",
-                  "type": "url",
+                  "type": "location",
                   "ref": null,
-                  "url": "#",
+                  "url": null,
                   "newTab": false,
                   "children": []
                 },
                 {
                   "id": "hn-loc-florence",
                   "label": "Florence",
-                  "type": "url",
+                  "type": "location",
                   "ref": null,
-                  "url": "#",
+                  "url": null,
                   "newTab": false,
                   "children": []
                 },
@@ -613,9 +615,9 @@
                 {
                   "id": "hn-loc-greer",
                   "label": "Greer",
-                  "type": "url",
+                  "type": "location",
                   "ref": null,
-                  "url": "#",
+                  "url": null,
                   "newTab": false,
                   "children": []
                 }
@@ -754,40 +756,45 @@
                   "id": "item-52",
                   "label": "Service Specials",
                   "type": "url",
-                  "url": "/service-specials",
                   "ref": null,
+                  "url": "/service-specials",
+                  "newTab": false,
                   "children": []
                 },
                 {
                   "id": "item-53",
                   "label": "Fleet Management",
                   "type": "url",
-                  "url": "/international-360",
                   "ref": null,
+                  "url": "/international-360",
+                  "newTab": false,
                   "children": []
                 },
                 {
                   "id": "item-54",
                   "label": "Rechtien University",
                   "type": "url",
-                  "url": "/rechtien-university",
                   "ref": null,
+                  "url": "/rechtien-university",
+                  "newTab": false,
                   "children": []
                 },
                 {
                   "id": "item-55",
                   "label": "Dpf Cleaning",
                   "type": "url",
-                  "url": "/dpf-cleaning",
                   "ref": null,
+                  "url": "/dpf-cleaning",
+                  "newTab": false,
                   "children": []
                 },
                 {
                   "id": "item-56",
                   "label": "Carolina Service Express",
                   "type": "url",
-                  "url": "/carolina-service-express",
                   "ref": null,
+                  "url": "/carolina-service-express",
+                  "newTab": false,
                   "children": []
                 }
               ]
@@ -888,15 +895,17 @@
               "id": "item-52",
               "label": "News & media",
               "type": "label",
-              "url": null,
               "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "item-53",
                   "label": "Blog",
                   "type": "url",
-                  "url": "#",
                   "ref": null,
+                  "url": "#",
+                  "newTab": false,
                   "children": []
                 }
               ]
