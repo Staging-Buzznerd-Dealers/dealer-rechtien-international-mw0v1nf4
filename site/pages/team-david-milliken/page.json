@@ -58,7 +58,7 @@
           "ctaUrl": "#contact",
           "welcome": "[Personal welcome message — one or two sentences, in David's own words.]",
           "links": [],
-          "inventoryUrl": "#",
+          "inventoryUrl": "/store/inventory",
           "qrCode": {
             "src": "",
             "alt": "QR code for David Milliken's page"
