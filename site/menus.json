@@ -802,7 +802,7 @@
           "children": [
             {
               "id": "hn-about-col",
-              "label": "About Us",
+              "label": "The Company",
               "type": "label",
               "ref": null,
               "url": null,
@@ -851,6 +851,23 @@
                   "ref": "team-david-milliken",
                   "url": null,
                   "newTab": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "item-52",
+              "label": "News & media",
+              "type": "label",
+              "url": null,
+              "ref": null,
+              "children": [
+                {
+                  "id": "item-53",
+                  "label": "Blog",
+                  "type": "url",
+                  "url": "#",
+                  "ref": null,
                   "children": []
                 }
               ]
