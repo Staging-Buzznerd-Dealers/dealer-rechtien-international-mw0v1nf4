@@ -116,37 +116,9 @@
               ]
             }
           ]
-        },
-        {
-          "id": "li-row",
-          "type": "row",
-          "props": {
-            "gap": 0
-          },
-          "children": [
-            {
-              "id": "li-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "li-stock",
-                  "type": "widget",
-                  "props": {
-                    "widget": "inventory-carousel",
-                    "config": {
-                      "locationSlug": "{{locationSlug}}"
-                    }
-                  }
-                }
-              ]
-            }
-          ]
         }
       ]
     }
   ],
-  "css": ".bz-section[data-bz-node=\"li\"]{padding-block:clamp(56px,6vw,88px)}\n[data-bz-node=\"li\"] .bz-block{padding-block:0}\n[data-bz-node^=\"li-intro\"] p{max-width:36rem;margin:0}\n[data-bz-node^=\"li-links\"]{display:flex;align-items:flex-end;justify-content:flex-end}\n[data-bz-node^=\"li-btns\"] .bz-btns{align-items:center;gap:24px;margin:0}\n[data-bz-node=\"li-row\"]{margin-top:var(--space-5)}\n@media (max-width:1100px){[data-bz-node^=\"li-links\"]{justify-content:flex-start}}\n\n/* \"Browse all inventory\" lives in the band header with the other button. The inventory widget draws the same button under its cards, flush against them, so that copy is hidden rather than showing it twice. */\n[data-bz-node^=\"li-stock\"] p:has(>a.bz-btn[data-bz-intent=\"browse-inventory\"]){display:none}\n"
+  "css": ".bz-section[data-bz-node=\"li\"]{padding-block:clamp(56px,6vw,88px)}\n[data-bz-node=\"li\"] .bz-block{padding-block:0}\n[data-bz-node^=\"li-intro\"] p{max-width:36rem;margin:0}\n[data-bz-node^=\"li-links\"]{display:flex;align-items:flex-end;justify-content:flex-end}\n[data-bz-node^=\"li-btns\"] .bz-btns{align-items:center;gap:24px;margin:0}\n@media (max-width:1100px){[data-bz-node^=\"li-links\"]{justify-content:flex-start}}\n"
 }
