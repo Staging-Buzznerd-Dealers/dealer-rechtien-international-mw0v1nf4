@@ -1,0 +1,220 @@
+{
+  "version": 2,
+  "id": "location-others",
+  "name": "Other locations (cards)",
+  "description": "A band of cards for every other branch: departments, name, address, hours, phone and a link to its page. Fill the list from Locations with the placement's From Locations switch.",
+  "props": [
+    {
+      "key": "locationSlug",
+      "type": "text",
+      "label": "Location (filled in on location pages)"
+    },
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": "Find a location"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Other locations."
+    },
+    {
+      "key": "intro",
+      "type": "textarea",
+      "label": "Intro"
+    },
+    {
+      "key": "locations",
+      "type": "list",
+      "label": "Locations",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "departments",
+          "type": "text",
+          "label": "Departments"
+        },
+        {
+          "key": "streetAddress",
+          "type": "text",
+          "label": "Street address"
+        },
+        {
+          "key": "city",
+          "type": "text",
+          "label": "City"
+        },
+        {
+          "key": "region",
+          "type": "text",
+          "label": "State"
+        },
+        {
+          "key": "postalCode",
+          "type": "text",
+          "label": "Postal code"
+        },
+        {
+          "key": "hours",
+          "type": "textarea",
+          "label": "Hours"
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "Phone"
+        },
+        {
+          "key": "phoneUrl",
+          "type": "url",
+          "label": "Phone link"
+        },
+        {
+          "key": "href",
+          "type": "url",
+          "label": "Page link"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "lo",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 8,
+        "anchor": "other-locations"
+      },
+      "children": [
+        {
+          "id": "lo-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "lo-head-col",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "lo-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "{{eyebrow}}"
+                  }
+                },
+                {
+                  "id": "lo-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "{{intro}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lo-rail",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "lo-card",
+              "type": "column",
+              "props": {
+                "span": 3,
+                "repeat": "locations"
+              },
+              "children": [
+                {
+                  "id": "lo-dept",
+                  "type": "text",
+                  "props": {
+                    "text": "{{departments}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lo-name",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{name}}",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "lo-addr",
+                  "type": "text",
+                  "props": {
+                    "text": "{{streetAddress}}, {{city}}, {{region}} {{postalCode}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lo-hours",
+                  "type": "text",
+                  "props": {
+                    "text": "{{hours}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lo-phone",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"{{phoneUrl}}\">{{phone}}</a>",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lo-view",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "label": "View location",
+                        "url": "{{href}}",
+                        "style": "link"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Other locations: a band of white cards on the paper background, one per other branch. The grid fills the width and wraps, so it holds four branches or fourteen. */\n.bz-section[data-bz-node=\"lo\"]{padding-block:clamp(56px,6vw,88px)}\n[data-bz-node=\"lo\"] .bz-block{padding-block:0}\n[data-bz-node=\"lo-head\"]{margin-bottom:clamp(32px,4vw,56px)}\n[data-bz-node=\"lo-h\"] h2{margin-bottom:var(--space-4)}\n[data-bz-node=\"lo-intro\"] p{max-width:46rem;margin:0}\n[data-bz-node=\"lo-rail\"]{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:30px;align-items:stretch}\n[data-bz-node^=\"lo-card\"]{grid-column:auto;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);padding:34px 32px 30px;min-width:0}\n[data-bz-node^=\"lo-dept\"]{margin-bottom:26px}\n[data-bz-node^=\"lo-dept\"] p{font:700 .6875rem/1.4 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:var(--ink);margin:0}\n[data-bz-node^=\"lo-dept\"]:has(p:empty){display:none}\n[data-bz-node^=\"lo-name\"] h3{font:700 1.375rem/1.25 var(--font-heading);text-transform:uppercase;margin:0 0 var(--space-4);color:var(--ink)}\n[data-bz-node^=\"lo-addr\"] p,[data-bz-node^=\"lo-hours\"] p{font-size:.9375rem;line-height:1.6;margin:0;color:#3d3c39}\n[data-bz-node^=\"lo-hours\"] p+p{margin-top:var(--space-2)}\n[data-bz-node^=\"lo-hours\"] p:empty,[data-bz-node^=\"lo-hours\"]:not(:has(p:not(:empty))){display:none}\n[data-bz-node^=\"lo-hours\"]{margin-top:var(--space-2)}\n[data-bz-node^=\"lo-phone\"]{margin-top:var(--space-4)}\n[data-bz-node^=\"lo-phone\"] a{font:700 .8125rem/1.4 var(--font-body);letter-spacing:.04em;color:var(--ink);text-decoration:none}\n[data-bz-node^=\"lo-phone\"] a:hover{color:var(--btn-orange,#ff7144)}\n[data-bz-node^=\"lo-phone\"]:has(a[href=\"\"]),[data-bz-node^=\"lo-phone\"]:has(a[href=\"tel:\"]){display:none}\n[data-bz-node^=\"lo-view\"]{margin-top:auto;padding-top:var(--space-5)!important}\n[data-bz-node^=\"lo-view\"] .bz-btns{margin:0}\n@media (max-width:640px){[data-bz-node=\"lo-rail\"]{grid-template-columns:1fr;gap:20px}}\n",
+  "js": ""
+}

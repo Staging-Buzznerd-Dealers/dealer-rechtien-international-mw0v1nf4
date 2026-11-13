@@ -517,6 +517,51 @@
       "children": []
     },
     {
+      "id": "offer",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-offerings",
+        "values": {
+          "eyebrow": "What's on site in",
+          "heading": "Everything your fleet needs.",
+          "intro": "Departments vary by location. Here is what Rechtien Truck Group offers across South Florida and South Carolina.",
+          "cards": [
+            {
+              "title": "Truck sales",
+              "body": "New and pre-owned International trucks, IC Bus, Hino and trailers, with financing through International Financial.",
+              "linkLabel": "Financing",
+              "linkUrl": "/financing"
+            },
+            {
+              "title": "Parts counter",
+              "body": "Genuine OEM parts for the International and Hino trucks we sell and service, plus quality aftermarket parts. Order online, request a part, or visit a parts counter.",
+              "linkLabel": "Parts department",
+              "linkUrl": "/parts"
+            },
+            {
+              "title": "Service & repair",
+              "body": "ASE-certified and factory-trained technicians for all makes and models: preventive maintenance, diagnostics, DOT inspections, alignment and warranty work.",
+              "linkLabel": "Service department",
+              "linkUrl": "/service"
+            },
+            {
+              "title": "Lease & rental",
+              "body": "Idealease semi truck leasing and rentals, plus Idealease Mobile Service, in South Florida and South Carolina.",
+              "linkLabel": "Lease & rental",
+              "linkUrl": "/lease-rental"
+            }
+          ],
+          "rooftop": {
+            "source": "locations",
+            "config": {
+              "locationSlug": "{{locationSlug}}"
+            }
+          }
+        }
+      },
+      "children": []
+    },
+    {
       "id": "reviews",
       "type": "section",
       "props": {
@@ -660,6 +705,26 @@
           ]
         }
       ]
+    },
+    {
+      "id": "others",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-others",
+        "values": {
+          "eyebrow": "Find a location",
+          "heading": "Other Rechtien Truck Group locations.",
+          "intro": "Ready to find the right commercial truck for your business? Visit one of our other locations across South Florida and South Carolina.",
+          "locations": {
+            "source": "locations",
+            "config": {
+              "excludeSlug": "{{locationSlug}}",
+              "pagePathPrefix": "/locations"
+            }
+          }
+        }
+      },
+      "children": []
     },
     {
       "id": "faq",

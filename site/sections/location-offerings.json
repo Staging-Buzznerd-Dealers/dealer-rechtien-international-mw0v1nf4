@@ -1,0 +1,181 @@
+{
+  "version": 2,
+  "id": "location-offerings",
+  "name": "What's on site (department cards)",
+  "description": "The group's departments as cards with a link each. The eyebrow names this location and the departments it actually has (from its record); the cards say what the group offers.",
+  "props": [
+    {
+      "key": "locationSlug",
+      "type": "text",
+      "label": "Location (filled in on location pages)"
+    },
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": "What's on site in"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Everything your fleet needs."
+    },
+    {
+      "key": "intro",
+      "type": "textarea",
+      "label": "Intro"
+    },
+    {
+      "key": "cards",
+      "type": "list",
+      "label": "Departments",
+      "fields": [
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "body",
+          "type": "textarea",
+          "label": "Description"
+        },
+        {
+          "key": "linkLabel",
+          "type": "text",
+          "label": "Link label"
+        },
+        {
+          "key": "linkUrl",
+          "type": "url",
+          "label": "Link to"
+        }
+      ]
+    },
+    {
+      "key": "rooftop",
+      "type": "list",
+      "label": "Location",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "departments",
+          "type": "text",
+          "label": "Departments"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "lf",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 8,
+        "anchor": "departments"
+      },
+      "children": [
+        {
+          "id": "lf-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "lf-head-col",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "repeat": "rooftop"
+              },
+              "children": [
+                {
+                  "id": "lf-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "{{eyebrow}} {{name}}: {{departments}}"
+                  }
+                },
+                {
+                  "id": "lf-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "{{intro}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lf-grid",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "lf-card",
+              "type": "column",
+              "props": {
+                "span": 3,
+                "repeat": "cards"
+              },
+              "children": [
+                {
+                  "id": "lf-t",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "lf-b",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lf-link",
+                  "type": "buttons",
+                  "props": {
+                    "align": "left",
+                    "items": [
+                      {
+                        "label": "{{linkLabel}}",
+                        "url": "{{linkUrl}}",
+                        "style": "link"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* What's on site: department cards on the paper background, same card as Other locations. */\n.bz-section[data-bz-node=\"lf\"]{padding-block:clamp(56px,6vw,88px)}\n[data-bz-node=\"lf\"] .bz-block{padding-block:0}\n[data-bz-node=\"lf-head\"]{margin-bottom:clamp(32px,4vw,56px)}\n[data-bz-node^=\"lf-h\"] h2{margin-bottom:var(--space-4)}\n[data-bz-node^=\"lf-intro\"] p{max-width:46rem;margin:0}\n[data-bz-node^=\"lf-intro\"] p:empty{display:none}\n[data-bz-node=\"lf-grid\"]{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:30px;align-items:stretch}\n[data-bz-node^=\"lf-card\"]{grid-column:auto;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);padding:34px 32px 30px;min-width:0}\n[data-bz-node^=\"lf-t\"] h3{font:700 1.375rem/1.25 var(--font-heading);text-transform:uppercase;margin:0 0 var(--space-4);color:var(--ink)}\n[data-bz-node^=\"lf-b\"] p{font-size:.9375rem;line-height:1.65;margin:0;color:#3d3c39}\n[data-bz-node^=\"lf-link\"]{margin-top:auto;padding-top:var(--space-5)!important}\n[data-bz-node^=\"lf-link\"] .bz-btns{margin:0}\n@media (max-width:640px){[data-bz-node=\"lf-grid\"]{grid-template-columns:1fr;gap:20px}}\n",
+  "js": ""
+}
