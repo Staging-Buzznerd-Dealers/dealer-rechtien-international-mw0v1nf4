@@ -499,7 +499,7 @@
           "label": "Locations",
           "type": "url",
           "ref": null,
-          "url": "/#locations",
+          "url": "/locations",
           "newTab": false,
           "children": [
             {
