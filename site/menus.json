@@ -428,6 +428,31 @@
                   "children": []
                 }
               ]
+            },
+            {
+              "id": "item-47",
+              "label": "Build & Finance",
+              "type": "label",
+              "url": null,
+              "ref": null,
+              "children": [
+                {
+                  "id": "item-48",
+                  "label": "Financing",
+                  "type": "url",
+                  "url": "/financing",
+                  "ref": null,
+                  "children": []
+                },
+                {
+                  "id": "item-49",
+                  "label": "S13 Integrated Powertrain",
+                  "type": "url",
+                  "url": "/specifications",
+                  "ref": null,
+                  "children": []
+                }
+              ]
             }
           ]
         },
@@ -726,15 +751,6 @@
           "ref": null,
           "url": "#",
           "newTab": true,
-          "children": []
-        },
-        {
-          "id": "hn-financing",
-          "label": "Financing",
-          "type": "page",
-          "ref": "financing",
-          "url": null,
-          "newTab": false,
           "children": []
         },
         {
