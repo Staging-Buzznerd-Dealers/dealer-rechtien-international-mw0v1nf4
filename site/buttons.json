@@ -558,5 +558,23 @@
     "intent": "contact",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "s13-powertrain-inventory",
+    "label": "Explore S13 powertrain inventory",
+    "url": "/store/inventory",
+    "style": "primary",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "schedule-fleet-consultation",
+    "label": "Schedule a fleet consultation",
+    "url": "/contact",
+    "style": "secondary",
+    "intent": "contact",
+    "newTab": false,
+    "active": true
   }
 ]
