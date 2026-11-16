@@ -540,5 +540,23 @@
     "intent": "read-blog",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "s13-inventory",
+    "label": "Explore S13 truck inventory",
+    "url": "/store/inventory",
+    "style": "primary",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "contact-sales-experts",
+    "label": "Contact our sales experts",
+    "url": "/contact",
+    "style": "secondary",
+    "intent": "contact",
+    "newTab": false,
+    "active": true
   }
 ]
