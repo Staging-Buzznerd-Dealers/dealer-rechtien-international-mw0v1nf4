@@ -648,5 +648,32 @@
     "intent": "browse-inventory",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "shop-preauction-under-20k",
+    "label": "Shop pre-auction inventory under $20K",
+    "url": "/store/inventory",
+    "style": "primary",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "find-rechtien-location",
+    "label": "Find a Rechtien location near you",
+    "url": "/locations",
+    "style": "secondary",
+    "intent": "find-location",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "parts-dept-btn",
+    "label": "Parts department",
+    "url": "/parts",
+    "style": "primary",
+    "intent": "browse-parts",
+    "newTab": false,
+    "active": true
   }
 ]
