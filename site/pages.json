@@ -417,5 +417,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "body-shop",
+    "title": "Truck Body Shop in Columbia, SC | Carolina International Trucks",
+    "description": "Collision repair, paint and truck body work in Columbia, South Carolina: frame straightening, paint and body repair, ASE-certified technicians, PPG paint and free quotes at the Carolina International Trucks body shop.",
+    "path": "/body-shop",
+    "out": "body-shop/index.html",
+    "dir": "body-shop",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

@@ -702,5 +702,14 @@
     "intent": "book-service",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "body-shop-call",
+    "label": "Call (803) 251-7244",
+    "url": "tel:+18032517244",
+    "style": "primary",
+    "intent": "call-dealer",
+    "newTab": false,
+    "active": true
   }
 ]
