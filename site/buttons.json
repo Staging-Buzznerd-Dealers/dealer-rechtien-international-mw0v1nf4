@@ -504,5 +504,32 @@
     "intent": "my-applications",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "browse-preauction",
+    "label": "Browse pre-auction inventory",
+    "url": "/store/inventory",
+    "style": "primary",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "schedule-upfitting",
+    "label": "Schedule custom upfitting service",
+    "url": "/service#appointment",
+    "style": "secondary",
+    "intent": "book-service",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "all-blog-posts",
+    "label": "All blog posts",
+    "url": "/blog",
+    "style": "link",
+    "intent": "read-blog",
+    "newTab": false,
+    "active": true
   }
 ]
