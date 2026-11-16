@@ -16,12 +16,6 @@
         "background": "ink",
         "minHeight": "full"
       },
-      "styles": {
-        "base": {
-          "backgroundSize": "cover",
-          "backgroundPosition": "center"
-        }
-      },
       "children": [
         {
           "id": "hero-row",
