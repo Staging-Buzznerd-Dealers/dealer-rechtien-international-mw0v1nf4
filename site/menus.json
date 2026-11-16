@@ -288,9 +288,8 @@
             {
               "id": "ns-bodyshop",
               "label": "Body Shop",
-              "type": "url",
-              "ref": null,
-              "url": "#",
+              "type": "page",
+              "ref": "body-shop",
               "newTab": false,
               "children": []
             },
@@ -849,9 +848,8 @@
                 {
                   "id": "hn-svc-bodyshop",
                   "label": "Body Shop",
-                  "type": "url",
-                  "ref": null,
-                  "url": "#",
+                  "type": "page",
+                  "ref": "body-shop",
                   "newTab": false,
                   "children": []
                 },

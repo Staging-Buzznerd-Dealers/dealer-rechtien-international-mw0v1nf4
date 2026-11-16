@@ -1,0 +1,104 @@
+{
+  "version": 2,
+  "id": "body-shop-lists",
+  "name": "Checklist panels",
+  "description": "Dark-titled panels, two per row, each with a two-column checklist. Add a panel, rename its title or edit its items on the placement.",
+  "props": [
+    {
+      "key": "panels",
+      "type": "list",
+      "label": "Panels",
+      "fields": [
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Panel title"
+        },
+        {
+          "key": "items",
+          "type": "list",
+          "label": "Checklist items",
+          "fields": [
+            {
+              "key": "text",
+              "type": "text",
+              "label": "Item"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "bsl",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "bsl-grid",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "bsl-col",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "repeat": "panels"
+              },
+              "children": [
+                {
+                  "id": "bsl-title",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 3,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "bsl-list",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "bsl-list-col",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "bsl-item",
+                          "type": "text",
+                          "props": {
+                            "text": "{{text}}",
+                            "width": "full",
+                            "align": "left",
+                            "repeat": "items"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Body shop checklist panels: a dark title bar over a two-column checklist, two panels per row. Panels and items are fields on the placement. */\n[data-bz-node=\"bsl-grid\"]{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,2.4vw,32px)}\n[data-bz-node=\"bsl-grid\"]>.bz-col{grid-column:auto;width:auto;max-width:none;padding:0;display:flex;flex-direction:column}\n[data-bz-node=\"bsl\"] .bz-block{padding-block:0}\n[data-bz-node^=\"bsl-title\"]{background:var(--night,#2b2a27);padding:clamp(18px,2vw,26px) clamp(18px,2.4vw,32px);min-height:5.5rem;display:flex;align-items:center;justify-content:center}\n.bz-block[data-bz-node^=\"bsl-title\"] h3{margin:0;color:#fff;text-align:center;font:700 .875rem/1.5 var(--font-body);letter-spacing:.02em;text-transform:none}\n[data-bz-node^=\"bsl-list-col\"]{columns:2;column-gap:clamp(20px,3vw,40px);padding:20px clamp(4px,1vw,12px) 0}\n[data-bz-node^=\"bsl-item\"]{break-inside:avoid;position:relative;padding:0 0 12px 28px;margin:0}\n[data-bz-node^=\"bsl-item\"] p{margin:0;font-size:.875rem;line-height:1.55;color:#2f2e2b}\n[data-bz-node^=\"bsl-item\"]::before{content:\"\";position:absolute;left:0;top:.2em;width:16px;height:16px;background:var(--accent-dark,#e0522a);\n  -webkit-mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E\") center/contain no-repeat;\n  mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E\") center/contain no-repeat}\n@media (max-width:900px){[data-bz-node=\"bsl-grid\"]{grid-template-columns:minmax(0,1fr)}}\n@media (max-width:520px){[data-bz-node^=\"bsl-list-col\"]{columns:1}}\n",
+  "js": ""
+}

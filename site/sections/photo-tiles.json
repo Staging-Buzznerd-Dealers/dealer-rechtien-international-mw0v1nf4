@@ -1,0 +1,91 @@
+{
+  "version": 2,
+  "id": "photo-tiles",
+  "name": "Photo tiles",
+  "description": "Photos in a row, each with a caption and a button underneath. Add a tile, change its photo, caption or button on the placement.",
+  "props": [
+    {
+      "key": "tiles",
+      "type": "list",
+      "label": "Tiles",
+      "fields": [
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Photo"
+        },
+        {
+          "key": "caption",
+          "type": "text",
+          "label": "Caption"
+        },
+        {
+          "key": "buttonLabel",
+          "type": "text",
+          "label": "Button label"
+        },
+        {
+          "key": "buttonUrl",
+          "type": "url",
+          "label": "Button link"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "pt",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "pt-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "pt-col",
+              "type": "column",
+              "props": {
+                "span": 4,
+                "repeat": "tiles"
+              },
+              "children": [
+                {
+                  "id": "pt-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "caption": "{{caption}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pt-btn",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{buttonLabel}}",
+                        "url": "{{buttonUrl}}",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Photo tiles: a photo with a caption and a button underneath, three to a row. Photos, captions and buttons are fields on the placement. */\n.bz-section[data-bz-node=\"pt\"]{padding-block:clamp(40px,4vw,64px)}\n[data-bz-node=\"pt\"] .bz-block{padding-block:0}\n[data-bz-node=\"pt-row\"]{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,2.4vw,32px);align-items:start}\n[data-bz-node=\"pt-row\"]>.bz-col{grid-column:auto;width:auto;max-width:none;padding:0}\n[data-bz-node^=\"pt-img\"] img{display:block;aspect-ratio:4/3;width:100%;height:auto;object-fit:cover;border-radius:0}\n[data-bz-node^=\"pt-img\"] figcaption{margin-top:8px;font:700 .625rem/1.4 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted,#6b6a66)}\n[data-bz-node^=\"pt-btn\"]{margin-top:var(--space-3)}\n[data-bz-node^=\"pt-btn\"] .bz-btns{margin:0}\n[data-bz-node^=\"pt-btn\"] .bz-btn{width:100%}\n@media (max-width:900px){[data-bz-node=\"pt-row\"]{grid-template-columns:minmax(0,1fr)}}\n",
+  "js": ""
+}

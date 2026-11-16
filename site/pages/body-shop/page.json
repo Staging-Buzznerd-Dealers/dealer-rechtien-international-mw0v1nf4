@@ -1,0 +1,398 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center",
+        "anchor": "top"
+      },
+      "styles": {
+        "base": {
+          "backgroundImage": "/images/hero-truck.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
+          "background": "#151515"
+        }
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "hero-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-crumbs",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Home</a> / <a href=\"/service\">Service</a> / Body shop",
+                    "width": "full",
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Had a wreck? Want to upgrade your image?",
+                    "headingLevel": 1,
+                    "align": "center",
+                    "eyebrow": "The All Makes Body Shop"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "The All Makes Body Shop of Carolina International Trucks will restore your vehicle to pre-loss condition.",
+                    "width": "full",
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "align": "center",
+                    "items": [
+                      {
+                        "ctaId": "body-shop-call"
+                      },
+                      {
+                        "ctaId": "contact-us",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "type": "section",
+      "props": {
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "about-h",
+          "type": "heading",
+          "props": {
+            "text": "Truck Body Shop in Columbia, SC",
+            "headingLevel": 2
+          }
+        },
+        {
+          "id": "about-t1",
+          "type": "text",
+          "props": {
+            "text": "Accidents and collisions can cause significant external damage to your vehicle. Without proper care, it can become irreparable and diminish the effectiveness of your truck over time. However, Carolina International Trucks is a highly-trusted body shop in Columbia, South Carolina. Our fully-equipped facility can return your vehicle back to pre-loss condition due to the trained and certified auto body mechanics we employ.",
+            "width": "full"
+          }
+        },
+        {
+          "id": "about-t2",
+          "type": "text",
+          "props": {
+            "text": "We specialize in full-body truck restoration that includes a multitude of refinishing and truck frame repair services. From custom detailing to fixing fractured windshields, buffing out scratches, and more, you can rest assured knowing your vehicle is in the right hands. Our technicians are highly trained in providing auto body service to a number of different manufacturers. From Hino® to International® truck body repair, you can trust us to restore your vehicle’s exterior.",
+            "width": "full"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lists",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "body-shop-lists",
+        "values": {
+          "panels": [
+            {
+              "title": "Located in Columbia, SC, our highly skilled body shop professionals use state-of-art equipment to restore your vehicle to pre-loss condition. No job is too big or too small! We Specialize In:",
+              "items": [
+                {
+                  "text": "Paint and body repair"
+                },
+                {
+                  "text": "Frame straightening"
+                },
+                {
+                  "text": "Aluminum box repairs"
+                },
+                {
+                  "text": "Body swaps and wiring"
+                },
+                {
+                  "text": "Wheelbase modifications (lengthen and shorten, move 3rd axle)"
+                },
+                {
+                  "text": "Cab repair and replacement"
+                },
+                {
+                  "text": "Cargo box panel, door and floor repair"
+                },
+                {
+                  "text": "Trailer refurbishing and repairs"
+                }
+              ]
+            },
+            {
+              "title": "We Also Offer Specialized Truck Body & Equipment Services:",
+              "items": [
+                {
+                  "text": "Repair, add or remove lift gates, arms and booms"
+                },
+                {
+                  "text": "Box removal & replacement"
+                },
+                {
+                  "text": "Fabrication"
+                },
+                {
+                  "text": "OEM, remanufactured and renewed parts"
+                },
+                {
+                  "text": "Collision repairs performed by ASE-certified technicians"
+                },
+                {
+                  "text": "Body conversions (flatbed to box, box to flatbed)"
+                },
+                {
+                  "text": "Fiberglass repair"
+                },
+                {
+                  "text": "DOT inspections"
+                },
+                {
+                  "text": "Glass replacement"
+                }
+              ]
+            },
+            {
+              "title": "Our Full-Service Paint and Body Shop Offers:",
+              "items": [
+                {
+                  "text": "Showroom quality finishes"
+                },
+                {
+                  "text": "PPG paint products"
+                },
+                {
+                  "text": "Installation of graphics and de-imaging"
+                },
+                {
+                  "text": "Paint technicians are I-Car & PPG certified"
+                },
+                {
+                  "text": "Body and painters"
+                },
+                {
+                  "text": "Color matching service"
+                },
+                {
+                  "text": "Small item painting"
+                }
+              ]
+            },
+            {
+              "title": "We offer high-quality commercial collision repair and refinishing for these vehicles and related body equipment including:",
+              "items": [
+                {
+                  "text": "Box trucks"
+                },
+                {
+                  "text": "Reefer units"
+                },
+                {
+                  "text": "Dump trucks"
+                },
+                {
+                  "text": "Commercial and school buses"
+                },
+                {
+                  "text": "Fire trucks and medic ambulances"
+                },
+                {
+                  "text": "Flatbeds"
+                },
+                {
+                  "text": "Tractors"
+                },
+                {
+                  "text": "Construction units"
+                },
+                {
+                  "text": "Coaches and RVs"
+                },
+                {
+                  "text": "Disposal and garbage trucks"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "quote",
+      "type": "section",
+      "props": {
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "quote-t",
+          "type": "text",
+          "props": {
+            "text": "<strong>We do free quotes! Call us direct at <a href=\"tel:+18032517244\">(803) 251-7244</a>! Or <a href=\"/contact\">Contact Us</a> for more information!</strong>",
+            "width": "full",
+            "align": "center"
+          }
+        }
+      ]
+    },
+    {
+      "id": "upgrade",
+      "type": "section",
+      "props": {
+        "paddingY": 0,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "upgrade-h",
+          "type": "heading",
+          "props": {
+            "text": "Need to Upgrade Your Image?",
+            "headingLevel": 2,
+            "eyebrow": "Paint booth"
+          }
+        },
+        {
+          "id": "upgrade-t",
+          "type": "text",
+          "props": {
+            "text": "Protect your resale value with a quality paint job at our state of the art paint booth in Columbia, South Carolina. We will make your older or used vehicle look like it just rolled out of the factory!",
+            "width": "full"
+          }
+        }
+      ]
+    },
+    {
+      "id": "photos",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "photo-tiles",
+        "values": {
+          "tiles": [
+            {
+              "image": {
+                "src": "/images/image-needed.svg",
+                "alt": "Before and after: a repaired truck"
+              },
+              "caption": "Before and after",
+              "buttonLabel": "Body shop brochure",
+              "buttonUrl": "#"
+            },
+            {
+              "image": {
+                "src": "/images/image-needed.svg",
+                "alt": "Before and after: a restored truck cab and frame"
+              },
+              "caption": "Before and after",
+              "buttonLabel": "Body shop poster",
+              "buttonUrl": "#"
+            },
+            {
+              "image": {
+                "src": "/images/image-needed.svg",
+                "alt": "Before and after: a collision repair"
+              },
+              "caption": "Before and after",
+              "buttonLabel": "Service request",
+              "buttonUrl": "/service#appointment"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "visit",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "branch-visit",
+        "values": {
+          "eyebrow": "Find the body shop",
+          "rooftop": {
+            "source": "locations",
+            "config": {
+              "locationSlug": "columbia-2"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "paddingY": 0,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "cta-h",
+          "type": "heading",
+          "props": {
+            "text": "Ready for a free quote?",
+            "headingLevel": 2,
+            "eyebrow": "Carolina International Trucks body shop",
+            "align": "center"
+          }
+        },
+        {
+          "id": "cta-t",
+          "type": "text",
+          "props": {
+            "text": "Call us direct at (803) 251-7244 or send a credit application and our team will take it from there.",
+            "width": "full",
+            "align": "center"
+          }
+        },
+        {
+          "id": "cta-btn",
+          "type": "buttons",
+          "props": {
+            "align": "center",
+            "items": [
+              {
+                "ctaId": "body-shop-call"
+              },
+              {
+                "ctaId": "apply-for-credit",
+                "style": "secondary"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
