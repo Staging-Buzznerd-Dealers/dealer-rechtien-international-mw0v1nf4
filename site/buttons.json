@@ -576,5 +576,77 @@
     "intent": "contact",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "order-ac-parts",
+    "label": "Order A/C parts online now",
+    "url": "/store/parts",
+    "style": "primary",
+    "intent": "browse-parts",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "schedule-ac-service-today",
+    "label": "Schedule A/C service today",
+    "url": "/service#appointment",
+    "style": "secondary",
+    "intent": "book-service",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "order-genuine-ac-parts",
+    "label": "Order genuine A/C parts",
+    "url": "/store/parts",
+    "style": "primary",
+    "intent": "browse-parts",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "schedule-ac-service",
+    "label": "Schedule A/C service",
+    "url": "/service#appointment",
+    "style": "secondary",
+    "intent": "book-service",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "explore-hv-inventory",
+    "label": "Explore our International HV Series inventory",
+    "url": "/store/inventory",
+    "style": "primary",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "contact-vocational-specialists",
+    "label": "Contact our vocational truck specialists",
+    "url": "/contact",
+    "style": "secondary",
+    "intent": "contact",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "apply-deferred-financing",
+    "label": "Apply for 90-day deferred financing",
+    "url": "/financing",
+    "style": "primary",
+    "intent": "apply-financing",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "explore-commercial-inventory",
+    "label": "Explore commercial truck inventory",
+    "url": "/store/inventory",
+    "style": "secondary",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
   }
 ]

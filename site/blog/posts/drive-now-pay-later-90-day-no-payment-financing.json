@@ -1,0 +1,409 @@
+{
+  "slug": "drive-now-pay-later-90-day-no-payment-financing",
+  "title": "Drive Now, Pay Later: Maximizing Cash Flow with 90-Day No Payment Financing",
+  "date": "2026-07-27",
+  "description": "Expanding your commercial fleet shouldn’t require compromising your operational liquidity.",
+  "coverImage": "/images/hero-truck.jpg",
+  "status": "published",
+  "keywords": [
+    "Drive Now Pay Later",
+    "90-day deferred financing",
+    "commercial truck financing",
+    "South Florida"
+  ],
+  "nodes": [
+    {
+      "id": "p-crumbs",
+      "type": "text",
+      "props": {
+        "text": "<a href=\"/\">Home</a> / Blog",
+        "width": "full"
+      }
+    },
+    {
+      "id": "p-main",
+      "type": "section",
+      "props": {
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "p-row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "p-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "p-toc-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "On this page",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "p-toc",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"#boosts-cash-flow\">How Deferred Financing Boosts Cash Flow</a>\n\n<a href=\"#localized-financing\">Localized Fleet Financing</a>\n\n<a href=\"#rechtien-advantage\">The Rechtien Advantage</a>\n\n<a href=\"#next-step\">Take the Next Step</a>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-aside",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "p-aside-col",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "p-aside-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "90-day deferred financing",
+                            "headingLevel": 3
+                          }
+                        },
+                        {
+                          "id": "p-aside-t",
+                          "type": "text",
+                          "props": {
+                            "text": "Apply for 90-day deferred financing or explore commercial truck inventory.",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "p-aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "ctaId": "browse-trucks",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p-content",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "p-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "Expanding your commercial fleet shouldn’t require compromising your operational liquidity. With the <strong>Drive Now, Pay Later</strong> program at Rechtien International Trucks, your business can access 90-day no payment financing on eligible commercial trucks.\n\nBy pushing your initial payment back three months, you can deploy new or pre-owned vehicles into your operations immediately. This structure allows your equipment to generate revenue and build positive momentum on the road long before your first invoice is due.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "apply-deferred-financing"
+                      },
+                      {
+                        "ctaId": "explore-commercial-inventory"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-h1",
+                  "type": "heading",
+                  "props": {
+                    "text": "How 90-Day Deferred Commercial Financing Boosts Your Cash Flow",
+                    "headingLevel": 2,
+                    "anchor": "boosts-cash-flow"
+                  }
+                },
+                {
+                  "id": "p-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "Acquiring new haulers, yard tractors, or medium-duty box trucks often presents a significant upfront cost. Standard commercial loans often require immediate monthly payments, which can strain working capital before a new vehicle becomes fully integrated into your delivery schedules.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-bul1",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Capital Protection:",
+                        "desc": "Maintain your existing liquid cash to support driver payroll, administrative expenses, and routine maintenance."
+                      },
+                      {
+                        "label": "Flexible Growth:",
+                        "desc": "Confidently bid on larger freight contracts or expand delivery zones without fear of immediate payment overhead."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "To review options that fit your fleet budget, explore our flexible <a href=\"/financing\">commercial truck financing options</a>.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-h2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Localized Fleet Financing Across South & Central Florida",
+                    "headingLevel": 2,
+                    "anchor": "localized-financing"
+                  }
+                },
+                {
+                  "id": "p-t3",
+                  "type": "text",
+                  "props": {
+                    "text": "With five strategically located dealerships, Rechtien International Trucks serves essential logistics corridors throughout Florida. Our local teams understand the regional freight landscape and assist fleets in getting on the road quickly.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-h2a",
+                  "type": "heading",
+                  "props": {
+                    "text": "Commercial Truck Financing in Miami & Ft. Lauderdale",
+                    "headingLevel": 3,
+                    "anchor": "miami-ft-lauderdale"
+                  }
+                },
+                {
+                  "id": "p-t4",
+                  "type": "text",
+                  "props": {
+                    "text": "From container transport leaving PortMiami to cargo haulers servicing Port Everglades, the Miami and Ft. Lauderdale markets require robust, dependable equipment. Taking advantage of 90-day deferred payments in South Florida lets you deploy heavy-duty tractors along the I-95 and SR-826 corridors right away. The extra financial cushion helps cover initial toll costs, fuel outlay, and port permits while your new rig generates steady income.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-h2b",
+                  "type": "heading",
+                  "props": {
+                    "text": "Commercial Fleet Solutions in Riviera Beach & Ft. Pierce",
+                    "headingLevel": 3,
+                    "anchor": "riviera-ft-pierce"
+                  }
+                },
+                {
+                  "id": "p-t5",
+                  "type": "text",
+                  "props": {
+                    "text": "For businesses operating along the Treasure Coast and Palm Beach County, our Riviera Beach and Ft. Pierce locations provide direct access to regional distribution hubs. Deploying a new yard tractor or regional haul truck near the Port of Palm Beach or along U.S. Highway 1 under deferred terms allows you to manage local distribution demands while keeping capital free for business expansion.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-h2c",
+                  "type": "heading",
+                  "props": {
+                    "text": "Commercial Truck Operations in Ft. Myers & the West Coast",
+                    "headingLevel": 3,
+                    "anchor": "ft-myers-west-coast"
+                  }
+                },
+                {
+                  "id": "p-t6",
+                  "type": "text",
+                  "props": {
+                    "text": "Crossing Alligator Alley or servicing the busy I-75 corridor near Ft. Myers requires durable vehicles backed by reliable support. A 90-day payment deferral gives West Coast operators the runway needed to establish new regional routes and build steady cash reserves prior to the first monthly billing cycle.\n\nBrowse our selection of <a href=\"/store/inventory?condition=new\">new International trucks</a> or search our <a href=\"/store/inventory?condition=used\">pre-owned commercial truck inventory</a> to find the right fit for your local routes.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-h3",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Rechtien Advantage: Benefits That Keep You Moving",
+                    "headingLevel": 2,
+                    "anchor": "rechtien-advantage"
+                  }
+                },
+                {
+                  "id": "p-t7",
+                  "type": "text",
+                  "props": {
+                    "text": "When you partner with Rechtien International Trucks, you receive more than just favorable financing terms—you gain a long-term fleet partner dedicated to maximizing your operational uptime.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-bul-lead",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Why Commercial Operators Choose Rechtien International Trucks:</strong>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-bul2",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Prestigious Presidential Award Winner:",
+                        "desc": "Recognized for excellence in customer service, sales, and dealership operations."
+                      },
+                      {
+                        "label": "Multi-Brand Selection:",
+                        "desc": "An extensive inventory featuring industry-leading brands, including International®, Hino, Ottawa yard tractors, as well as East, Dorsey, and Navigator equipment."
+                      },
+                      {
+                        "label": "Over 50 Dedicated Service Bays:",
+                        "desc": "Five full-service locations equipped with factory-trained technicians to keep your downtime to a minimum."
+                      },
+                      {
+                        "label": "Idealease of South Florida Integration:",
+                        "desc": "Access flexible long-term leasing, short-term rentals, and contract maintenance through our dedicated Idealease commercial fleet services."
+                      },
+                      {
+                        "label": "Mobile Service Fleet:",
+                        "desc": "On-site maintenance and emergency repairs brought directly to your job site or terminal."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-h4",
+                  "type": "heading",
+                  "props": {
+                    "text": "Take the Next Step with Drive Now, Pay Later",
+                    "headingLevel": 2,
+                    "anchor": "next-step"
+                  }
+                },
+                {
+                  "id": "p-t8",
+                  "type": "text",
+                  "props": {
+                    "text": "Don’t let tight initial capital prevent your business from taking on new opportunities. Take advantage of our 90-day no payment financing offer and give your commercial vehicles the time they need to pay for themselves.\n\nContact our sales and finance experts at any of our five <a href=\"/locations\">Rechtien dealership locations</a> in Miami, Ft. Lauderdale, Riviera Beach, Ft. Pierce, or Ft. Myers to discuss customized commercial fleet solutions today.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-legal-h",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Disclaimers:</strong>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-legal",
+                  "type": "text",
+                  "props": {
+                    "text": "<em>Offer valid for well-qualified buyers subject to credit approval. With up to 90 days to first payment, the first payment will be due up to approximately 90 days after the date of the loan agreement, but interest will accrue during the deferred payment period and be payable with the scheduled monthly payments. Contracts must be funded within the promotional period from 1/1/2026 – 12/31/2026. Eligible financing includes International® Financial loans, finance leases, TRAC leases, and Split TRAC leases. Offer eligibility, actual payments, terms, and down payment are determined by Navistar Financial Corporation based upon the creditworthiness of the customer. Participation is non-negotiable, not redeemable for cash, non-transferable, and cannot be combined with any other offers or discounts. Navistar Financial Corporation reserves the right to modify, adjust, or terminate this offer at any time. See Rechtien International Trucks for full details.</em>",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-more",
+      "type": "section",
+      "props": {
+        "background": "paper",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "p-more-posts",
+          "type": "postsList",
+          "props": {
+            "heading": "More from the blog.",
+            "headingLevel": 2,
+            "count": 4,
+            "cta": {
+              "ctaId": "all-blog-posts"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "p-cta",
+      "type": "section",
+      "props": {
+        "background": "ink",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "p-cta-h",
+          "type": "heading",
+          "props": {
+            "text": "Drive now, pay later.",
+            "eyebrow": "90-day deferred financing",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "p-cta-t",
+          "type": "text",
+          "props": {
+            "text": "Contact our sales and finance experts at any of our five South Florida locations to discuss customized commercial fleet solutions.",
+            "align": "center",
+            "width": "full"
+          }
+        },
+        {
+          "id": "p-cta-btns",
+          "type": "buttons",
+          "props": {
+            "align": "center",
+            "items": [
+              {
+                "ctaId": "apply-deferred-financing"
+              },
+              {
+                "ctaId": "explore-commercial-inventory",
+                "style": "secondary"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "css": "/* ==========================================================================\n   Single blog post, Sun State layout: dark masthead with breadcrumb and meta chips,\n   \"On this page\" sidebar, article column, \"More from the blog\" band, call-to-action band.\n   Loaded on this post only. The masthead (date + h1) is built by the platform, so it is\n   restyled here rather than authored as blocks. Buttons are styled globally.\n   ========================================================================== */\n:root{\n  --accent:#ff6b3d; --accent-dark:#e0522a;\n  --ink:#151515; --muted:#6b6a66; --line:#d8d8d4; --card:#ffffff; --paper:#e6e6e4; --night:#2b2a27;\n  --container:1266px;\n}\nbody{background:#fff;color:var(--ink);-webkit-font-smoothing:antialiased}\narticle{position:relative}\n.bz-block h1,.bz-block h2,.bz-block h3{text-transform:uppercase;letter-spacing:0;font-weight:700}\n/* ---- Masthead ---------------------------------------------------------------- */\narticle>.bz-block:first-child{position:relative;isolation:isolate;padding:0;color:#fff;background:#151515 url(/images/hero-truck.jpg) center/cover no-repeat}\narticle>.bz-block:first-child::before{content:\"\";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,10,14,.78) 0%,rgba(8,10,14,.6) 55%,rgba(8,10,14,.8) 100%)}\narticle>.bz-block:first-child>.bz-container{max-width:var(--container);padding:176px 30px 64px;display:flex;flex-direction:column}\narticle>.bz-block:first-child h1{order:1;color:#fff;max-width:17em;margin:0 0 var(--space-4);font-size:clamp(1.75rem,3.6vw,2.875rem);line-height:1.08;letter-spacing:.02em}\narticle>.bz-block:first-child .bz-eyebrow{order:2;margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;font:700 .6875rem/1.4 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.88)}\narticle>.bz-block:first-child .bz-eyebrow::before{content:\"Blog\";padding:5px 10px;background:var(--accent);color:#fff;letter-spacing:.2em}\narticle>.bz-block:first-child .bz-eyebrow::after{content:\"\\00b7\\00a0\\00a0Rechtien International Trucks\";white-space:pre}\n/* The cover is the card image on the blog page; the masthead already has its own photo. */\narticle>.bz-block:first-child>.bz-container+.bz-container{display:none}\n/* ---- Breadcrumb: sits over the masthead ---------------------------------------- */\n[data-bz-node=\"p-crumbs\"]{position:absolute;top:122px;left:0;right:0;z-index:2;padding:0}\n[data-bz-node=\"p-crumbs\"] .bz-container{max-width:var(--container);padding-inline:30px}\n[data-bz-node=\"p-crumbs\"] p{margin:0;font:700 .6875rem/1.4 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:#fff}\n[data-bz-node=\"p-crumbs\"] a{color:#fff;border-bottom:1px solid transparent;transition:border-color .18s ease}\n[data-bz-node=\"p-crumbs\"] a:hover{border-bottom-color:currentColor}\n/* ---- Article layout ---------------------------------------------------------------- */\n.bz-section[data-bz-node=\"p-main\"]{padding-block:clamp(40px,5vw,72px)}\n[data-bz-node=\"p-main\"]>.bz-container{max-width:1120px}\n[data-bz-node=\"p-row\"]{align-items:flex-start}\n[data-bz-node=\"p-side\"]{position:sticky;top:24px;align-self:flex-start}\n[data-bz-node=\"p-content\"]{max-width:760px}\nmain .bz-block{padding-block:0}\n/* Sidebar: table of contents */\n[data-bz-node=\"p-toc-h\"] h3{font:700 .625rem/1.4 var(--font-body);letter-spacing:.22em;color:var(--muted);margin:0 0 var(--space-3)}\n[data-bz-node=\"p-toc\"] .bz-text{max-width:none}\n[data-bz-node=\"p-toc\"] p{margin:0;font-size:.8125rem;line-height:1.4;border-top:1px solid var(--line)}\n[data-bz-node=\"p-toc\"] p:last-child{border-bottom:1px solid var(--line)}\n[data-bz-node=\"p-toc\"] a{display:block;padding:11px 0;font-weight:600;color:var(--ink);transition:color .18s ease,padding-left .18s ease}\n[data-bz-node=\"p-toc\"] a:hover{color:var(--accent-dark);padding-left:4px}\n/* Sidebar: card */\n[data-bz-node=\"p-aside\"]{margin-top:var(--space-6);padding:22px 22px 18px;background:var(--card);border:1px solid var(--line);border-radius:4px}\n[data-bz-node=\"p-aside-h\"] h3{margin:0 0 var(--space-2);font-size:1.0625rem;line-height:1.15}\n[data-bz-node=\"p-aside-t\"]{margin-bottom:var(--space-3)}\n[data-bz-node=\"p-aside-t\"] p{margin:0;font-size:.8125rem;line-height:1.65;color:#3d3c39}\n[data-bz-node=\"p-aside\"] .bz-btns{margin:0}\n/* Article body */\n[data-bz-node=\"p-content\"] .bz-text p{margin:0 0 var(--space-4);font-size:.9375rem;line-height:1.8;color:#2f2e2b}\n[data-bz-node=\"p-content\"] .bz-text a{color:var(--accent-dark);text-decoration:underline;text-underline-offset:3px}\n[data-bz-node=\"p-content\"] .bz-text a:hover{color:var(--ink)}\n[data-bz-node=\"p-content\"] .bz-block--heading{padding-top:var(--space-6);scroll-margin-top:24px}\n[data-bz-node=\"p-content\"] h2{margin:0 0 var(--space-4);font-size:clamp(1.375rem,2.2vw,1.875rem);line-height:1.1;scroll-margin-top:96px}\n[data-bz-node=\"p-intro-cta\"] .bz-btns{display:flex;flex-wrap:wrap;gap:12px;margin:var(--space-2) 0 var(--space-4)}\n[data-bz-node$=\"-lead\"] p{margin-bottom:var(--space-3)!important;color:var(--ink)!important}\n/* Lists inside the article: a single column of rows */\n[data-bz-node=\"p-content\"] .bz-block--list .bz-container{padding:0;max-width:none}\n[data-bz-node=\"p-content\"] .bz-grid{display:block;margin:0 0 var(--space-5);padding:0;list-style:none}\n[data-bz-node=\"p-content\"] .bz-feature{margin:0;padding:12px 0 12px 34px;position:relative;border-top:1px solid var(--line)}\n[data-bz-node=\"p-content\"] .bz-feature:last-child{border-bottom:1px solid var(--line)}\n[data-bz-node=\"p-content\"] .bz-feature__t{margin:0;font:700 .9375rem/1.5 var(--font-body);text-transform:none;letter-spacing:0;color:var(--ink)}\n[data-bz-node=\"p-content\"] .bz-feature__d{margin:2px 0 0;font-size:.9375rem;line-height:1.7;color:#2f2e2b}\n/* numbered steps */\n[data-bz-node=\"p-steps\"] .bz-grid{counter-reset:step}\n[data-bz-node=\"p-steps\"] .bz-feature{counter-increment:step}\n[data-bz-node=\"p-steps\"] .bz-feature::before{content:counter(step);position:absolute;left:0;top:13px;width:22px;height:22px;border-radius:50%;background:var(--ink);color:#fff;font:700 .75rem/22px var(--font-body);text-align:center}\n/* bullets */\n[data-bz-node^=\"p-bul\"] .bz-feature::before{content:\"\";position:absolute;left:8px;top:21px;width:7px;height:7px;border-radius:50%;background:var(--accent)}\n/* comparison table: the first row is the header */\n[data-bz-node=\"p-adv\"] .bz-feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:4px 24px;padding:14px 16px}\n[data-bz-node=\"p-adv\"] .bz-feature__d{margin:0}\n[data-bz-node=\"p-adv\"] .bz-feature:first-child{background:var(--ink)}\n[data-bz-node=\"p-adv\"] .bz-feature:first-child .bz-feature__t,[data-bz-node=\"p-adv\"] .bz-feature:first-child .bz-feature__d{color:#fff;font:700 .6875rem/1.4 var(--font-body);letter-spacing:.16em;text-transform:uppercase}\n/* Disclaimer */\n[data-bz-node=\"p-legal-h\"] p{margin:var(--space-5) 0 var(--space-2)!important;font-size:.8125rem!important}\n[data-bz-node=\"p-legal\"] p{font-size:.75rem!important;line-height:1.7!important;color:var(--muted)!important}\n/* ---- More from the blog ------------------------------------------------------------ */\n.bz-section[data-bz-node=\"p-more\"]{padding-block:clamp(48px,5vw,80px)}\n[data-bz-node=\"p-more\"] h2{font-size:clamp(1.375rem,2.2vw,1.875rem);line-height:1.1;margin:0}\n[data-bz-node=\"p-more\"] .bz-sechead{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;margin-bottom:var(--space-5)}\n[data-bz-node=\"p-more\"] .bz-card{background:var(--card);border:1px solid var(--line);border-radius:0}\n[data-bz-node=\"p-more\"] .bz-card__t{font:700 1rem/1.25 var(--font-heading);text-transform:uppercase}\n[data-bz-node=\"p-more\"] .bz-card__m{font:700 .625rem/1.4 var(--font-body);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}\n[data-bz-node=\"p-more\"] .bz-post__d{font-size:.8125rem;line-height:1.65;color:#3d3c39}\n[data-bz-node=\"p-more\"] .bz-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}\n[data-bz-node=\"p-more\"] .bz-photo{aspect-ratio:16/9;height:auto;min-height:0}\n[data-bz-node=\"p-more\"] .bz-photo img{width:100%;height:100%;object-fit:cover}\n/* A post should not recommend itself: the \"more\" list skips this page. */\n[data-bz-node=\"p-more\"] a[href$=\"/drive-now-pay-later-90-day-no-payment-financing\"]{display:none}\n/* ---- Call to action ------------------------------------------------------------- */\n.bz-section[data-bz-node=\"p-cta\"]{padding-block:clamp(56px,6vw,96px);text-align:center;background:var(--night)}\n[data-bz-node=\"p-cta\"] .bz-eyebrow{color:rgba(255,255,255,.75)}\n[data-bz-node=\"p-cta\"] h2{color:#fff;font-size:clamp(1.5rem,3vw,2.375rem);line-height:1.08;margin:0 0 var(--space-3)}\n[data-bz-node=\"p-cta\"] .bz-text p{color:rgba(255,255,255,.9);font-size:.9375rem;line-height:1.75;max-width:36rem;margin:0 auto var(--space-4)}\n[data-bz-node=\"p-cta\"] .bz-btns{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 14px}\n/* ---- Responsive -------------------------------------------------------------------- */\n@media (max-width:900px){\n  [data-bz-node=\"p-more\"] .bz-grid{grid-template-columns:repeat(2,minmax(0,1fr))}\n  article>.bz-block:first-child>.bz-container{padding:172px 20px 48px}\n  [data-bz-node=\"p-crumbs\"]{top:104px}\n  [data-bz-node=\"p-crumbs\"] .bz-container{padding-inline:20px}\n  [data-bz-node=\"p-side\"]{position:static}\n  [data-bz-node=\"p-aside\"]{display:none}\n}\n@media (max-width:640px){\n  [data-bz-node=\"p-more\"] .bz-grid{grid-template-columns:1fr}\n  [data-bz-node=\"p-adv\"] .bz-feature{grid-template-columns:1fr}\n}\n\n[data-bz-node=\"p-content\"] h3{margin:0 0 var(--space-3);font-size:clamp(1.125rem,1.6vw,1.375rem);line-height:1.15}\n"
+}
