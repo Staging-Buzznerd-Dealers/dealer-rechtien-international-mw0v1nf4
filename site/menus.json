@@ -500,45 +500,52 @@
           "id": "item-9",
           "label": "Trailers",
           "type": "url",
-          "url": "/#",
           "ref": null,
+          "url": "/#",
+          "newTab": false,
           "children": [
             {
               "id": "hn-trl-shop",
               "label": "Shop Trailers",
               "type": "label",
               "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "item-59",
                   "label": "All Trailers",
                   "type": "url",
-                  "url": "/#",
                   "ref": null,
+                  "url": "/#",
+                  "newTab": false,
                   "children": []
                 },
                 {
                   "id": "item-60",
                   "label": "East Trailers",
                   "type": "url",
-                  "url": "/",
                   "ref": null,
+                  "url": "/#",
+                  "newTab": false,
                   "children": []
                 },
                 {
                   "id": "item-61",
                   "label": "Dorsey Trailers",
                   "type": "url",
-                  "url": "/",
                   "ref": null,
+                  "url": "/#",
+                  "newTab": false,
                   "children": []
                 },
                 {
                   "id": "item-64",
                   "label": "Used Trailers",
                   "type": "url",
-                  "url": "/",
                   "ref": null,
+                  "url": "/#",
+                  "newTab": false,
                   "children": []
                 }
               ]
@@ -548,21 +555,25 @@
               "label": "Shop Forklifts",
               "type": "label",
               "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "item-62",
                   "label": "Forklifts",
                   "type": "url",
-                  "url": "/",
                   "ref": null,
+                  "url": "/#",
+                  "newTab": false,
                   "children": []
                 },
                 {
                   "id": "item-63",
                   "label": "Used Forklifts",
                   "type": "url",
-                  "url": "/",
                   "ref": null,
+                  "url": "/#",
+                  "newTab": false,
                   "children": []
                 }
               ]
@@ -571,17 +582,18 @@
               "id": "item-65",
               "label": "Others Links",
               "type": "label",
-              "url": null,
               "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "item-66",
                   "label": "Ottawa",
                   "type": "url",
-                  "url": "https://ottawatruckscenter.com/inventory/",
                   "ref": null,
-                  "children": [],
-                  "newTab": true
+                  "url": "https://ottawatruckscenter.com/inventory/",
+                  "newTab": true,
+                  "children": []
                 }
               ]
             }
