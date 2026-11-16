@@ -580,7 +580,8 @@
                   "type": "url",
                   "url": "https://ottawatruckscenter.com/inventory/",
                   "ref": null,
-                  "children": []
+                  "children": [],
+                  "newTab": true
                 }
               ]
             }
