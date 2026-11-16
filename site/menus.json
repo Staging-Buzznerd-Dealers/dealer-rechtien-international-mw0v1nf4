@@ -497,6 +497,63 @@
           ]
         },
         {
+          "id": "item-9",
+          "label": "Trailers",
+          "type": "url",
+          "url": "/#",
+          "ref": null,
+          "children": [
+            {
+              "id": "item-59",
+              "label": "All Trailers",
+              "type": "url",
+              "url": "/#",
+              "ref": null,
+              "children": []
+            },
+            {
+              "id": "item-60",
+              "label": "East Trailers",
+              "type": "url",
+              "url": "/",
+              "ref": null,
+              "children": []
+            },
+            {
+              "id": "item-61",
+              "label": "Dorsey Trailers",
+              "type": "url",
+              "url": "/",
+              "ref": null,
+              "children": []
+            },
+            {
+              "id": "item-62",
+              "label": "Forklifts",
+              "type": "url",
+              "url": "/",
+              "ref": null,
+              "children": []
+            },
+            {
+              "id": "item-63",
+              "label": "Used Forklifts",
+              "type": "url",
+              "url": "/",
+              "ref": null,
+              "children": []
+            },
+            {
+              "id": "item-64",
+              "label": "Used Trailers",
+              "type": "url",
+              "url": "/",
+              "ref": null,
+              "children": []
+            }
+          ]
+        },
+        {
           "id": "hn-locations",
           "label": "Locations",
           "type": "url",
