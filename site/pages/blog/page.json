@@ -55,7 +55,7 @@
                   "id": "bl-lede",
                   "type": "text",
                   "props": {
-                    "text": "News, fleet advice and truck ownership tips from Rechtien International Trucks.",
+                    "text": "News, fleet advice and truck ownership tips from the people at Rechtien International Trucks who work on these trucks every day.",
                     "width": "full",
                     "align": "center"
                   }
@@ -138,20 +138,16 @@
                   "id": "bl-ft-a-t",
                   "type": "text",
                   "props": {
-                    "text": "Purchasing a pre-auction, “as-is” commercial vehicle presents a strategic alternative to traditional retail buying.\n\nRead <a href=\"/blog/posts/as-is-advantage-customizing-pre-auction-trucks\">The “As-Is” Advantage: Customizing Pre-Auction Trucks for Your Specific Trade</a>.",
+                    "text": "Rechtien International Trucks writes on buying a pre-auction, “as-is” commercial truck: what it costs, how to scale a fleet on a budget, and how our service departments upfit it for your trade.",
                     "width": "full"
                   }
                 },
                 {
-                  "id": "bl-ft-a-cta",
-                  "type": "buttons",
+                  "id": "bl-ft-a-links",
+                  "type": "text",
                   "props": {
-                    "items": [
-                      {
-                        "ctaId": "browse-preauction",
-                        "style": "secondary"
-                      }
-                    ]
+                    "text": "<a href=\"/blog/posts/as-is-advantage-customizing-pre-auction-trucks\">The “As-Is” Advantage: Customizing Pre-Auction Trucks for Your Specific Trade</a>\n\n<a href=\"/blog/posts/pre-auction-pricing-scale-your-fleet-under-20000\">Pre-Auction Pricing: How to Scale Your Fleet for Under $20,000</a>\n\n<a href=\"/store/inventory?condition=used\">Browse pre-owned and pre-auction inventory</a>",
+                    "width": "full"
                   }
                 }
               ]
@@ -176,7 +172,7 @@
                   "id": "bl-ft-b-t",
                   "type": "text",
                   "props": {
-                    "text": "If something you read here sounds like your truck, bring it in. Schedule service, ask about mobile service, or talk to our parts department.",
+                    "text": "Most of these posts end the same way: get it looked at before it becomes a tow. Our service departments can fit you in, mobile service comes to your yard, and our parts department can ship what you need.",
                     "width": "full"
                   }
                 },
