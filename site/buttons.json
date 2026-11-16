@@ -531,5 +531,14 @@
     "intent": "read-blog",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "all-articles",
+    "label": "All articles",
+    "url": "/blog/posts",
+    "style": "link",
+    "intent": "read-blog",
+    "newTab": false,
+    "active": true
   }
 ]
