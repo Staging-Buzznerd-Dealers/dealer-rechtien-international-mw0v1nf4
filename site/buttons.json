@@ -508,7 +508,7 @@
   {
     "id": "browse-preauction",
     "label": "Browse pre-auction inventory",
-    "url": "/store/inventory",
+    "url": "/store/inventory?condition=used",
     "style": "primary",
     "intent": "browse-inventory",
     "newTab": false,
@@ -673,6 +673,33 @@
     "url": "/parts",
     "style": "primary",
     "intent": "browse-parts",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "used-trucks-link",
+    "label": "Used trucks",
+    "url": "/store/inventory?condition=used",
+    "style": "link",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "call-main-cta",
+    "label": "Call (800) 666-3040",
+    "url": "tel:+18006663040",
+    "style": "primary",
+    "intent": "call-dealer",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "schedule-service-short",
+    "label": "Schedule service",
+    "url": "/service#appointment",
+    "style": "secondary",
+    "intent": "book-service",
     "newTab": false,
     "active": true
   }
