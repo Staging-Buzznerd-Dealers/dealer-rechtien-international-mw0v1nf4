@@ -73,17 +73,17 @@
   var count = el('span', 'bl-count'); count.setAttribute('aria-live', 'polite');
   var empty = el('p', 'bl-empty', 'No posts in this category yet.'); empty.setAttribute('role', 'status'); empty.hidden = true;
   var pager = el('nav', 'bl-pager'); pager.setAttribute('aria-label', 'Blog pages');
-  var prev = el('button', 'bl-pager__btn', '← Newer entries'); prev.type = 'button';
+  var older = el('button', 'bl-pager__btn', '← Older entries'); older.type = 'button';
   var info = el('span', 'bl-pager__info');
-  var nextB = el('button', 'bl-pager__btn', 'Older entries →'); nextB.type = 'button';
-  pager.appendChild(prev); pager.appendChild(info); pager.appendChild(nextB);
+  var newer = el('button', 'bl-pager__btn', 'Next entries →'); newer.type = 'button';
+  pager.appendChild(older); pager.appendChild(info); pager.appendChild(newer);
 
   function card(p) {
     var a = el('a', 'bz-card bz-post'); a.href = p.url;
     if (p.image) { var i = el('img'); i.src = p.image; i.alt = p.title; i.width = 1200; i.height = 800; i.loading = 'lazy'; i.decoding = 'async'; a.appendChild(i); }
     var b = el('div', 'bz-card__body');
-    var m = [cats(p).join(', '), p.date ? shortDate(p.date) : ''].filter(Boolean).join(' · ');
-    if (m) b.appendChild(el('span', 'bz-card__m', m));
+    var cat = cats(p).join(', '), dt = p.date ? shortDate(p.date) : '';
+    if (cat || dt) { var m = el('span', 'bz-card__m'); if (cat) m.appendChild(el('b', '', cat)); if (dt) m.appendChild(el('span', '', dt)); b.appendChild(m); }
     b.appendChild(el('span', 'bz-card__t', p.title));
     if (p.excerpt) b.appendChild(el('span', 'bz-post__d', p.excerpt));
     a.appendChild(b); return a;
@@ -104,7 +104,7 @@
     count.textContent = list.length + (list.length === 1 ? ' article' : ' articles');
     [].forEach.call(chips.children, function (b) { var on = (b.getAttribute('data-cat') || '') === state.cat; b.classList.toggle('is-active', on); b.setAttribute('aria-pressed', on ? 'true' : 'false'); });
     pager.hidden = pages <= 1; info.textContent = 'Page ' + state.page + ' of ' + pages;
-    prev.disabled = state.page <= 1; nextB.disabled = state.page >= pages;
+    older.disabled = state.page >= pages; newer.disabled = state.page <= 1;
     writeUrl();
     if (scroll) { var top = head.getBoundingClientRect().top + window.pageYOffset - 24; window.scrollTo({ top: top, behavior: 'smooth' }); }
   }
@@ -114,8 +114,16 @@
     b.addEventListener('click', function () { state.cat = value; state.page = 1; render(false); });
     return b;
   }
-  prev.addEventListener('click', function () { state.page--; render(true); });
-  nextB.addEventListener('click', function () { state.page++; render(true); });
+  older.addEventListener('click', function () { state.page++; render(true); });
+  newer.addEventListener('click', function () { state.page--; render(true); });
+
+  /* The cards under "Elsewhere" end in a link named after the card; the first question starts open. */
+  [].forEach.call(document.querySelectorAll('[data-bz-node="bl-else-grid"] a.bz-card'), function (a) {
+    var t = a.querySelector('.bz-card__t');
+    if (t && !a.querySelector('.bl-card-link')) a.appendChild(el('span', 'bl-card-link', t.textContent + ' →'));
+  });
+  var firstFaq = document.querySelector('[data-bz-node="bl-faq-list"] details');
+  if (firstFaq) firstFaq.open = true;
 
   loadIndex().then(function (list) {
     posts = list.filter(Boolean); if (!posts.length) return;
