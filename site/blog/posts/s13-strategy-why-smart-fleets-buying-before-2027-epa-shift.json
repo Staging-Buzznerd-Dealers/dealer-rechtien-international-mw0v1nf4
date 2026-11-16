@@ -1,0 +1,321 @@
+{
+  "slug": "s13-strategy-why-smart-fleets-buying-before-2027-epa-shift",
+  "title": "The S13 Strategy: Why Smart Fleets are Buying Before the 2027 EPA Shift",
+  "date": "2026-07-27",
+  "description": "The commercial trucking industry is bracing for a monumental regulatory change. Smart fleets are acting now, and their strategy revolves around the International S13 Integrated Powertrain.",
+  "coverImage": "/images/white-international-truck.jpg",
+  "status": "published",
+  "keywords": [
+    "S13 Integrated Powertrain",
+    "2027 EPA emissions",
+    "fleet strategy",
+    "South Florida"
+  ],
+  "nodes": [
+    {
+      "id": "p-crumbs",
+      "type": "text",
+      "props": {
+        "text": "<a href=\"/\">Home</a> / Blog",
+        "width": "full"
+      }
+    },
+    {
+      "id": "p-main",
+      "type": "section",
+      "props": {
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "p-row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "p-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "p-toc-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "On this page",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "p-toc",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"#epa-shift\">The 2027 EPA Shift</a>\n\n<a href=\"#s13-advantage\">The S13 Advantage</a>\n\n<a href=\"#pre-buy-rush\">Beating the Pre-Buy Rush</a>\n\n<a href=\"#partner\">Partner with Rechtien</a>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-aside",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "p-aside-col",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "p-aside-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "S13 truck inventory",
+                            "headingLevel": 3
+                          }
+                        },
+                        {
+                          "id": "p-aside-t",
+                          "type": "text",
+                          "props": {
+                            "text": "Explore S13 truck inventory or contact our sales experts.",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "p-aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "ctaId": "browse-trucks",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p-content",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "p-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "The commercial trucking industry is bracing for a monumental regulatory change. Set to take effect on January 1, 2027, the incoming EPA emissions standards mandate that heavy-duty engines reduce nitrogen oxide (NOx) output by roughly 80% to 90%. For fleet operators traveling the busy I-95 corridor or hauling freight across South Florida, this looming deadline brings a critical choice.\n\nWaiting until the last minute can expose your business to severe backlogs, unpredictable equipment availability, and anticipated industry-wide price increases. Smart fleets are acting now, and their strategy revolves around the <a href=\"/specifications\">International® S13® Integrated Powertrain</a>.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "s13-inventory"
+                      },
+                      {
+                        "ctaId": "contact-sales-experts"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-h1",
+                  "type": "heading",
+                  "props": {
+                    "text": "The 2027 EPA Shift: What It Means for South Florida Fleets",
+                    "headingLevel": 2,
+                    "anchor": "epa-shift"
+                  }
+                },
+                {
+                  "id": "p-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "The upcoming EPA regulations are expected to drive measurable cost increases across the manufacturing spectrum. To reach compliance, many competing truck manufacturers are preparing expensive ground-up engine redesigns. These overhauls frequently involve adding heavy 48-volt electrical heaters and introducing highly complex aftertreatment hardware to meet the stricter standards.\n\nGetting ahead of the curve helps fleet managers secure reliable equipment while potentially bypassing upcoming price surges.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-h2",
+                  "type": "heading",
+                  "props": {
+                    "text": "The International S13 Advantage: Minimal Changes, Maximum Uptime",
+                    "headingLevel": 2,
+                    "anchor": "s13-advantage"
+                  }
+                },
+                {
+                  "id": "p-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "This is exactly where the International S13 Integrated Powertrain provides a distinct advantage. Engineered from a clean sheet in 2017 with long-term emissions regulations in mind, the current S13 platform already addresses the core demands of the future. While competitors face massive, expensive overhauls, the 2027 S13 is designed to carry over approximately 90% of its existing hardware.\n\nFor fleets operating in high-traffic zones, picking up imported goods from PortMiami, or navigating the coastal routes of Riviera Beach, this consistency acts as a tremendous asset. It translates to:",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-bul1",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Familiar Service Needs:",
+                        "desc": "Your maintenance teams and drivers can avoid costly retraining. Service tools, replacement parts, and daily operations remain practically identical to current S13 models."
+                      },
+                      {
+                        "label": "No EGR Cooler:",
+                        "desc": "The S13 operates entirely without an exhaust gas recirculation (EGR) cooler. This design choice eliminates a notorious maintenance headache and allows the engine to focus on generating reliable power."
+                      },
+                      {
+                        "label": "No Heavy 48V Heaters:",
+                        "desc": "Unlike competing engines, the S13 aims to achieve clean emissions through advanced combustion rather than layered, heavy 48V heated catalysts."
+                      },
+                      {
+                        "label": "Consistent Weight and Power:",
+                        "desc": "The powertrain is engineered to retain its lightweight profile while delivering up to 515 horsepower and 1,850 lb-ft of torque."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-h3",
+                  "type": "heading",
+                  "props": {
+                    "text": "Beating the Pre-Buy Rush from Ft. Pierce to Ft. Myers",
+                    "headingLevel": 2,
+                    "anchor": "pre-buy-rush"
+                  }
+                },
+                {
+                  "id": "p-t3",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether your trucks are transporting agricultural goods from Ft. Pierce or traveling across Alligator Alley to service the rapidly expanding markets in Ft. Myers, having dependable trucks on the road is vital. The upcoming 2027 EPA standards are expected to introduce extended warranty mandates and strict low-speed emissions testing. Because the International S13 eliminates active regenerations and simplifies the aftertreatment process, it stands out as an incredibly reliable choice for heavy duty applications.\n\nBy upgrading to S13-equipped trucks today—such as the acclaimed International LT® or HX® Series—you integrate equipment that boasts proven real-world reliability. When it becomes time to transition to the 2027 models, your fleet is designed to already be intimately familiar with the platform, mitigating the transition risks that other fleets might face.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-h4",
+                  "type": "heading",
+                  "props": {
+                    "text": "Partner with South Florida’s Premier Commercial Truck Dealership",
+                    "headingLevel": 2,
+                    "anchor": "partner"
+                  }
+                },
+                {
+                  "id": "p-t4",
+                  "type": "text",
+                  "props": {
+                    "text": "Navigating major regulatory shifts requires a dealer partner you can rely on. As a <a href=\"/about\">Prestige Certified dealership</a>, Rechtien International Trucks provides top-tier support to keep your business moving forward. We offer a comprehensive, full-service network spanning Miami, Ft. Lauderdale, Riviera Beach, Ft. Pierce, and Ft. Myers.\n\nOur factory-trained diesel technicians specialize in maintaining advanced commercial vehicles, and our Riviera Beach location even features a full-service collision repair body shop. Whether you are looking to purchase new equipment, explore our well-maintained <a href=\"/store/inventory?condition=used\">Idealease off-lease used inventory</a>, or <a href=\"/service#appointment\">schedule preventative maintenance</a> to keep your current fleet running strong, our team is dedicated to supporting your operational goals.\n\nDon’t wait for the impending pre-buy rush to dictate your fleet’s future. Prepare your business for the EPA shift today with a powertrain designed for tomorrow.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-legal-h",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Disclaimer:</strong>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-legal",
+                  "type": "text",
+                  "props": {
+                    "text": "<em>Vehicle and engine specifications, including the projected 2027 International® S13® Integrated Powertrain designs, are based on current manufacturer information and are subject to change by Navistar and International Motors without notice. Maximum horsepower and torque ratings reflect specific engine configurations; actual performance will vary depending on the vehicle model, gross vehicle weight, application, and operating conditions. Discussions of future regulatory impacts, anticipated market conditions, equipment availability, and potential industry price increases are forward-looking statements provided for informational purposes only and do not constitute business advice. Information regarding EPA emissions standards is for general reference; fleet operators should verify specific federal and state compliance requirements independently.</em>",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-more",
+      "type": "section",
+      "props": {
+        "background": "paper",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "p-more-posts",
+          "type": "postsList",
+          "props": {
+            "heading": "More from the blog.",
+            "headingLevel": 2,
+            "count": 4,
+            "cta": {
+              "ctaId": "all-blog-posts"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "p-cta",
+      "type": "section",
+      "props": {
+        "background": "ink",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "p-cta-h",
+          "type": "heading",
+          "props": {
+            "text": "Buy ahead of the 2027 shift.",
+            "eyebrow": "S13 Integrated Powertrain",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "p-cta-t",
+          "type": "text",
+          "props": {
+            "text": "Visit any of our five South Florida locations to talk through S13 trucks for your fleet.",
+            "align": "center",
+            "width": "full"
+          }
+        },
+        {
+          "id": "p-cta-btns",
+          "type": "buttons",
+          "props": {
+            "align": "center",
+            "items": [
+              {
+                "ctaId": "s13-inventory"
+              },
+              {
+                "ctaId": "contact-sales-experts",
+                "style": "secondary"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "css": "/* ==========================================================================\n   Single blog post, Sun State layout: dark masthead with breadcrumb and meta chips,\n   \"On this page\" sidebar, article column, \"More from the blog\" band, call-to-action band.\n   Loaded on this post only. The masthead (date + h1) is built by the platform, so it is\n   restyled here rather than authored as blocks. Buttons are styled globally.\n   ========================================================================== */\n:root{\n  --accent:#ff6b3d; --accent-dark:#e0522a;\n  --ink:#151515; --muted:#6b6a66; --line:#d8d8d4; --card:#ffffff; --paper:#e6e6e4; --night:#2b2a27;\n  --container:1266px;\n}\nbody{background:#fff;color:var(--ink);-webkit-font-smoothing:antialiased}\narticle{position:relative}\n.bz-block h1,.bz-block h2,.bz-block h3{text-transform:uppercase;letter-spacing:0;font-weight:700}\n/* ---- Masthead ---------------------------------------------------------------- */\narticle>.bz-block:first-child{position:relative;isolation:isolate;padding:0;color:#fff;background:#151515 url(/images/hero-truck.jpg) center/cover no-repeat}\narticle>.bz-block:first-child::before{content:\"\";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,10,14,.78) 0%,rgba(8,10,14,.6) 55%,rgba(8,10,14,.8) 100%)}\narticle>.bz-block:first-child>.bz-container{max-width:var(--container);padding:176px 30px 64px;display:flex;flex-direction:column}\narticle>.bz-block:first-child h1{order:1;color:#fff;max-width:17em;margin:0 0 var(--space-4);font-size:clamp(1.75rem,3.6vw,2.875rem);line-height:1.08;letter-spacing:.02em}\narticle>.bz-block:first-child .bz-eyebrow{order:2;margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;font:700 .6875rem/1.4 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.88)}\narticle>.bz-block:first-child .bz-eyebrow::before{content:\"Blog\";padding:5px 10px;background:var(--accent);color:#fff;letter-spacing:.2em}\narticle>.bz-block:first-child .bz-eyebrow::after{content:\"\\00b7\\00a0\\00a0Rechtien International Trucks\";white-space:pre}\n/* The cover is the card image on the blog page; the masthead already has its own photo. */\narticle>.bz-block:first-child>.bz-container+.bz-container{display:none}\n/* ---- Breadcrumb: sits over the masthead ---------------------------------------- */\n[data-bz-node=\"p-crumbs\"]{position:absolute;top:122px;left:0;right:0;z-index:2;padding:0}\n[data-bz-node=\"p-crumbs\"] .bz-container{max-width:var(--container);padding-inline:30px}\n[data-bz-node=\"p-crumbs\"] p{margin:0;font:700 .6875rem/1.4 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:#fff}\n[data-bz-node=\"p-crumbs\"] a{color:#fff;border-bottom:1px solid transparent;transition:border-color .18s ease}\n[data-bz-node=\"p-crumbs\"] a:hover{border-bottom-color:currentColor}\n/* ---- Article layout ---------------------------------------------------------------- */\n.bz-section[data-bz-node=\"p-main\"]{padding-block:clamp(40px,5vw,72px)}\n[data-bz-node=\"p-main\"]>.bz-container{max-width:1120px}\n[data-bz-node=\"p-row\"]{align-items:flex-start}\n[data-bz-node=\"p-side\"]{position:sticky;top:24px;align-self:flex-start}\n[data-bz-node=\"p-content\"]{max-width:760px}\nmain .bz-block{padding-block:0}\n/* Sidebar: table of contents */\n[data-bz-node=\"p-toc-h\"] h3{font:700 .625rem/1.4 var(--font-body);letter-spacing:.22em;color:var(--muted);margin:0 0 var(--space-3)}\n[data-bz-node=\"p-toc\"] .bz-text{max-width:none}\n[data-bz-node=\"p-toc\"] p{margin:0;font-size:.8125rem;line-height:1.4;border-top:1px solid var(--line)}\n[data-bz-node=\"p-toc\"] p:last-child{border-bottom:1px solid var(--line)}\n[data-bz-node=\"p-toc\"] a{display:block;padding:11px 0;font-weight:600;color:var(--ink);transition:color .18s ease,padding-left .18s ease}\n[data-bz-node=\"p-toc\"] a:hover{color:var(--accent-dark);padding-left:4px}\n/* Sidebar: card */\n[data-bz-node=\"p-aside\"]{margin-top:var(--space-6);padding:22px 22px 18px;background:var(--card);border:1px solid var(--line);border-radius:4px}\n[data-bz-node=\"p-aside-h\"] h3{margin:0 0 var(--space-2);font-size:1.0625rem;line-height:1.15}\n[data-bz-node=\"p-aside-t\"]{margin-bottom:var(--space-3)}\n[data-bz-node=\"p-aside-t\"] p{margin:0;font-size:.8125rem;line-height:1.65;color:#3d3c39}\n[data-bz-node=\"p-aside\"] .bz-btns{margin:0}\n/* Article body */\n[data-bz-node=\"p-content\"] .bz-text p{margin:0 0 var(--space-4);font-size:.9375rem;line-height:1.8;color:#2f2e2b}\n[data-bz-node=\"p-content\"] .bz-text a{color:var(--accent-dark);text-decoration:underline;text-underline-offset:3px}\n[data-bz-node=\"p-content\"] .bz-text a:hover{color:var(--ink)}\n[data-bz-node=\"p-content\"] .bz-block--heading{padding-top:var(--space-6);scroll-margin-top:24px}\n[data-bz-node=\"p-content\"] h2{margin:0 0 var(--space-4);font-size:clamp(1.375rem,2.2vw,1.875rem);line-height:1.1;scroll-margin-top:96px}\n[data-bz-node=\"p-intro-cta\"] .bz-btns{display:flex;flex-wrap:wrap;gap:12px;margin:var(--space-2) 0 var(--space-4)}\n[data-bz-node$=\"-lead\"] p{margin-bottom:var(--space-3)!important;color:var(--ink)!important}\n/* Lists inside the article: a single column of rows */\n[data-bz-node=\"p-content\"] .bz-block--list .bz-container{padding:0;max-width:none}\n[data-bz-node=\"p-content\"] .bz-grid{display:block;margin:0 0 var(--space-5);padding:0;list-style:none}\n[data-bz-node=\"p-content\"] .bz-feature{margin:0;padding:12px 0 12px 34px;position:relative;border-top:1px solid var(--line)}\n[data-bz-node=\"p-content\"] .bz-feature:last-child{border-bottom:1px solid var(--line)}\n[data-bz-node=\"p-content\"] .bz-feature__t{margin:0;font:700 .9375rem/1.5 var(--font-body);text-transform:none;letter-spacing:0;color:var(--ink)}\n[data-bz-node=\"p-content\"] .bz-feature__d{margin:2px 0 0;font-size:.9375rem;line-height:1.7;color:#2f2e2b}\n/* numbered steps */\n[data-bz-node=\"p-steps\"] .bz-grid{counter-reset:step}\n[data-bz-node=\"p-steps\"] .bz-feature{counter-increment:step}\n[data-bz-node=\"p-steps\"] .bz-feature::before{content:counter(step);position:absolute;left:0;top:13px;width:22px;height:22px;border-radius:50%;background:var(--ink);color:#fff;font:700 .75rem/22px var(--font-body);text-align:center}\n/* bullets */\n[data-bz-node^=\"p-bul\"] .bz-feature::before{content:\"\";position:absolute;left:8px;top:21px;width:7px;height:7px;border-radius:50%;background:var(--accent)}\n/* comparison table: the first row is the header */\n[data-bz-node=\"p-adv\"] .bz-feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:4px 24px;padding:14px 16px}\n[data-bz-node=\"p-adv\"] .bz-feature__d{margin:0}\n[data-bz-node=\"p-adv\"] .bz-feature:first-child{background:var(--ink)}\n[data-bz-node=\"p-adv\"] .bz-feature:first-child .bz-feature__t,[data-bz-node=\"p-adv\"] .bz-feature:first-child .bz-feature__d{color:#fff;font:700 .6875rem/1.4 var(--font-body);letter-spacing:.16em;text-transform:uppercase}\n/* Disclaimer */\n[data-bz-node=\"p-legal-h\"] p{margin:var(--space-5) 0 var(--space-2)!important;font-size:.8125rem!important}\n[data-bz-node=\"p-legal\"] p{font-size:.75rem!important;line-height:1.7!important;color:var(--muted)!important}\n/* ---- More from the blog ------------------------------------------------------------ */\n.bz-section[data-bz-node=\"p-more\"]{padding-block:clamp(48px,5vw,80px)}\n[data-bz-node=\"p-more\"] h2{font-size:clamp(1.375rem,2.2vw,1.875rem);line-height:1.1;margin:0}\n[data-bz-node=\"p-more\"] .bz-sechead{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;margin-bottom:var(--space-5)}\n[data-bz-node=\"p-more\"] .bz-card{background:var(--card);border:1px solid var(--line);border-radius:0}\n[data-bz-node=\"p-more\"] .bz-card__t{font:700 1rem/1.25 var(--font-heading);text-transform:uppercase}\n[data-bz-node=\"p-more\"] .bz-card__m{font:700 .625rem/1.4 var(--font-body);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}\n[data-bz-node=\"p-more\"] .bz-post__d{font-size:.8125rem;line-height:1.65;color:#3d3c39}\n[data-bz-node=\"p-more\"] .bz-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}\n[data-bz-node=\"p-more\"] .bz-photo{aspect-ratio:16/9;height:auto;min-height:0}\n[data-bz-node=\"p-more\"] .bz-photo img{width:100%;height:100%;object-fit:cover}\n/* A post should not recommend itself: the \"more\" list skips this page. */\n[data-bz-node=\"p-more\"] a[href$=\"/s13-strategy-why-smart-fleets-buying-before-2027-epa-shift\"]{display:none}\n/* ---- Call to action ------------------------------------------------------------- */\n.bz-section[data-bz-node=\"p-cta\"]{padding-block:clamp(56px,6vw,96px);text-align:center;background:var(--night)}\n[data-bz-node=\"p-cta\"] .bz-eyebrow{color:rgba(255,255,255,.75)}\n[data-bz-node=\"p-cta\"] h2{color:#fff;font-size:clamp(1.5rem,3vw,2.375rem);line-height:1.08;margin:0 0 var(--space-3)}\n[data-bz-node=\"p-cta\"] .bz-text p{color:rgba(255,255,255,.9);font-size:.9375rem;line-height:1.75;max-width:36rem;margin:0 auto var(--space-4)}\n[data-bz-node=\"p-cta\"] .bz-btns{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 14px}\n/* ---- Responsive -------------------------------------------------------------------- */\n@media (max-width:900px){\n  [data-bz-node=\"p-more\"] .bz-grid{grid-template-columns:repeat(2,minmax(0,1fr))}\n  article>.bz-block:first-child>.bz-container{padding:172px 20px 48px}\n  [data-bz-node=\"p-crumbs\"]{top:104px}\n  [data-bz-node=\"p-crumbs\"] .bz-container{padding-inline:20px}\n  [data-bz-node=\"p-side\"]{position:static}\n  [data-bz-node=\"p-aside\"]{display:none}\n}\n@media (max-width:640px){\n  [data-bz-node=\"p-more\"] .bz-grid{grid-template-columns:1fr}\n  [data-bz-node=\"p-adv\"] .bz-feature{grid-template-columns:1fr}\n}\n\n[data-bz-node=\"p-content\"] h3{margin:0 0 var(--space-3);font-size:clamp(1.125rem,1.6vw,1.375rem);line-height:1.15}\n"
+}
