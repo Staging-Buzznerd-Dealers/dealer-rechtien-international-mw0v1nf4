@@ -583,6 +583,9 @@
                           "a": "Every location card has a Directions link that opens the address in Google Maps."
                         }
                       ]
+                    },
+                    "snapshot": {
+                      "items": []
                     }
                   }
                 }
