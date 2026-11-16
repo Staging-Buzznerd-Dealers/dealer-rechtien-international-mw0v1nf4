@@ -1,6 +1,6 @@
 {
   "enabled": true,
-  "basePath": "/blog",
-  "title": "News & updates",
-  "description": "Dealership news, service tips and new arrivals."
+  "basePath": "/blog/posts",
+  "title": "All articles",
+  "description": "Every post from Rechtien International Trucks."
 }

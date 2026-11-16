@@ -904,7 +904,7 @@
                   "label": "Blog",
                   "type": "url",
                   "ref": null,
-                  "url": "#",
+                  "url": "/blog",
                   "newTab": false,
                   "children": []
                 }

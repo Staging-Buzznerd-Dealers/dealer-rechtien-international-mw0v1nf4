@@ -1,0 +1,343 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "bl-hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center"
+      },
+      "styles": {
+        "base": {
+          "backgroundImage": "/images/hero-truck.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
+          "background": "#151515"
+        }
+      },
+      "children": [
+        {
+          "id": "bl-hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "bl-hero-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "bl-crumbs",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Home</a> / Blog",
+                    "width": "full",
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "bl-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Blog",
+                    "headingLevel": 1,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "bl-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "News, fleet advice and truck ownership tips from Rechtien International Trucks.",
+                    "width": "full",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bl-intro",
+      "type": "section",
+      "props": {
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "bl-intro-t",
+          "type": "text",
+          "props": {
+            "text": "Posts cover pre-auction trucks, the S13 Integrated Powertrain and the 2027 EPA transition, air conditioning and replacement parts, and financing for South Florida fleets. If something here applies to a unit you run, call <a href=\"tel:+18006663040\">(800) 666-3040</a> or visit one of our five South Florida locations.",
+            "width": "full"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bl-latest",
+      "type": "section",
+      "props": {
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "bl-posts",
+          "type": "postsList",
+          "props": {
+            "heading": "Latest posts",
+            "headingLevel": 2,
+            "count": 6,
+            "cta": {
+              "ctaId": "all-articles"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "bl-feature",
+      "type": "section",
+      "props": {
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "bl-ft-row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "bl-ft-a",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "bl-ft-a-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Pre-auction trucks.",
+                    "headingLevel": 2,
+                    "eyebrow": "Featured topic"
+                  }
+                },
+                {
+                  "id": "bl-ft-a-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Purchasing a pre-auction, “as-is” commercial vehicle presents a strategic alternative to traditional retail buying.\n\nRead <a href=\"/blog/posts/as-is-advantage-customizing-pre-auction-trucks\">The “As-Is” Advantage: Customizing Pre-Auction Trucks for Your Specific Trade</a>.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "bl-ft-a-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "browse-preauction",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "bl-ft-b",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "bl-ft-b-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Turn the advice into an appointment.",
+                    "headingLevel": 2,
+                    "eyebrow": "From reading to doing"
+                  }
+                },
+                {
+                  "id": "bl-ft-b-t",
+                  "type": "text",
+                  "props": {
+                    "text": "If something you read here sounds like your truck, bring it in. Schedule service, ask about mobile service, or talk to our parts department.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "bl-ft-b-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-service",
+                        "style": "link"
+                      },
+                      {
+                        "ctaId": "mobile-service-link",
+                        "style": "link"
+                      },
+                      {
+                        "ctaId": "parts-department",
+                        "style": "link"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bl-else",
+      "type": "section",
+      "props": {
+        "paddingY": 0,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "bl-else-h",
+          "type": "heading",
+          "props": {
+            "text": "Elsewhere on the site.",
+            "headingLevel": 2,
+            "eyebrow": "More from Rechtien"
+          }
+        },
+        {
+          "id": "bl-else-grid",
+          "type": "categoryGrid",
+          "props": {
+            "items": [
+              {
+                "label": "Careers",
+                "meta": "Open positions, benefits, employee stories and our talent community.",
+                "url": "/careers"
+              },
+              {
+                "label": "Locations",
+                "meta": "Addresses, hours and phone numbers for every Rechtien and Carolina International location.",
+                "url": "/locations"
+              },
+              {
+                "label": "Rechtien University",
+                "meta": "International-approved service technician and fleet manager training.",
+                "url": "/rechtien-university"
+              },
+              {
+                "label": "Service specials",
+                "meta": "DPF cleaning, oil and filter, quick lube and B service pricing.",
+                "url": "/service-specials"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bl-faq",
+      "type": "section",
+      "props": {
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "bl-faq-h",
+          "type": "heading",
+          "props": {
+            "text": "Common questions.",
+            "headingLevel": 2,
+            "eyebrow": "About the blog"
+          }
+        },
+        {
+          "id": "bl-faq-list",
+          "type": "widget",
+          "props": {
+            "widget": "faq",
+            "config": {
+              "items": [
+                {
+                  "q": "Who writes the Rechtien blog?",
+                  "a": "Posts are published by Rechtien International Trucks."
+                },
+                {
+                  "q": "What topics does the blog cover?",
+                  "a": "Recent posts cover pre-auction and pre-owned trucks, the S13 Integrated Powertrain and the 2027 EPA transition, air conditioning and replacement parts, and financing."
+                },
+                {
+                  "q": "Can I get help with something I read here?",
+                  "a": "Yes. Call (800) 666-3040, or contact the service or parts department at any of our five South Florida locations in Miami, Ft. Lauderdale, Riviera Beach, Ft. Pierce and Ft. Myers."
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "bl-cta",
+      "type": "section",
+      "props": {
+        "paddingY": 0,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "bl-cta-h",
+          "type": "heading",
+          "props": {
+            "text": "Ask a technician, not an article.",
+            "headingLevel": 2,
+            "eyebrow": "Questions about your own unit?",
+            "align": "center"
+          }
+        },
+        {
+          "id": "bl-cta-t",
+          "type": "text",
+          "props": {
+            "text": "Call or message us and we will point you to the right department at one of our South Florida locations.",
+            "width": "full",
+            "align": "center"
+          }
+        },
+        {
+          "id": "bl-cta-btn",
+          "type": "buttons",
+          "props": {
+            "align": "center",
+            "items": [
+              {
+                "ctaId": "call-main"
+              },
+              {
+                "ctaId": "contact-us",
+                "style": "secondary"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

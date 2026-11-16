@@ -399,5 +399,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "blog",
+    "title": "Blog: Rechtien International Trucks",
+    "description": "News, fleet advice and truck ownership tips from Rechtien International Trucks: pre-auction trucks, the S13 Integrated Powertrain, replacement parts and financing.",
+    "path": "/blog",
+    "out": "blog/index.html",
+    "dir": "blog",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

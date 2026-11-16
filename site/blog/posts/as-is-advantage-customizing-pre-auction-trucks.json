@@ -1,0 +1,433 @@
+{
+  "slug": "as-is-advantage-customizing-pre-auction-trucks",
+  "title": "The “As-Is” Advantage: Customizing Pre-Auction Trucks for Your Specific Trade",
+  "date": "2026-08-14",
+  "description": "Finding the right commercial vehicle for your business operations in South Florida requires balancing upfront costs with long-term reliability.",
+  "coverImage": "/images/red-international-truck.jpg",
+  "status": "published",
+  "keywords": [
+    "pre-auction trucks",
+    "as-is commercial trucks",
+    "custom truck upfitting",
+    "South Florida"
+  ],
+  "nodes": [
+    {
+      "id": "p-crumbs",
+      "type": "text",
+      "props": {
+        "text": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Industry News",
+        "width": "full"
+      }
+    },
+    {
+      "id": "p-main",
+      "type": "section",
+      "props": {
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "p-row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "p-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "p-toc-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "On this page",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "p-toc",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"#smart-fleet-expansion\">Smart Fleet Expansion</a>\n\n<a href=\"#custom-refurbishing\">Custom Refurbishing</a>\n\n<a href=\"#rechtien-advantage\">The Rechtien Advantage</a>\n\n<a href=\"#tailored-builds\">Tailored Builds</a>\n\n<a href=\"#maximize-investment\">Maximize Your Investment</a>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-aside",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "p-aside-col",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "p-aside-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "Pre-auction inventory",
+                            "headingLevel": 3
+                          }
+                        },
+                        {
+                          "id": "p-aside-t",
+                          "type": "text",
+                          "props": {
+                            "text": "Explore our current pre-auction inventory or contact our service department to discuss your custom build.",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "p-aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "ctaId": "browse-trucks"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p-content",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "p-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "Finding the right commercial vehicle for your business operations in South Florida requires balancing upfront costs with long-term reliability. Whether managing a delivery fleet or working as an independent trade contractor, purchasing a pre-auction, “as-is” commercial vehicle presents a strategic alternative to traditional retail buying.\n\nBy acquiring a truck in its current condition before it goes to auction, you can secure a lower initial purchase price. This capital flexibility allows you to redirect your savings directly into custom refurbishing and trade-specific modifications through our dedicated service centers.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "browse-preauction"
+                      },
+                      {
+                        "ctaId": "schedule-upfitting"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-h1",
+                  "type": "heading",
+                  "props": {
+                    "text": "Smart Fleet Expansion in Miami & Ft. Lauderdale: The “As-Is” Strategy",
+                    "headingLevel": 2,
+                    "anchor": "smart-fleet-expansion"
+                  }
+                },
+                {
+                  "id": "p-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "When commercial trucks complete their lease terms or trade-in cycles, dealerships evaluate units for retail or wholesale auction. Buying <a href=\"/store/inventory\">pre-auction commercial trucks</a> in their “as-is” state means acquiring the vehicle before pre-sale reconditioning is applied.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-steps-lead",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>How the Capital Reallocation Process Works:</strong>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-steps",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Upfront Pre-Auction Savings:",
+                        "desc": "Acquire a commercial truck prior to auction markup or generic retail reconditioning."
+                      },
+                      {
+                        "label": "Reallocated Capital:",
+                        "desc": "Direct your saved capital toward the exact mechanical repairs and trade-specific upgrades your business demands."
+                      },
+                      {
+                        "label": "Custom Upfitting & Maintenance:",
+                        "desc": "Collaborate with certified technicians to add custom utility bodies, auxiliary power, or specialized rigging tailored to your South Florida job sites."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-h2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Custom Refurbishing: Trade-Specific Solutions for Riviera Beach & Ft. Pierce",
+                    "headingLevel": 2,
+                    "anchor": "custom-refurbishing"
+                  }
+                },
+                {
+                  "id": "p-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "The primary benefit of the pre-auction model is capital reallocation. The savings earned at purchase can be redirected toward tailored modifications. Because every industry demands specific tools and body styles, custom refurbishing helps align your truck with your daily workload:",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-trades",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Landscaping & Construction:",
+                        "desc": "Reinforced suspensions, specialized dump bodies, and heavy-duty towing setups."
+                      },
+                      {
+                        "label": "Plumbing & Electrical:",
+                        "desc": "Tailored utility beds, weatherproof tool storage, ladder racks, and interior shelving."
+                      },
+                      {
+                        "label": "Refrigerated Transport:",
+                        "desc": "Custom insulation, cargo tie-downs, and climate control installations."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-t3",
+                  "type": "text",
+                  "props": {
+                    "text": "By partnering with our team for <a href=\"/service\">custom commercial truck upfitting</a>, you avoid paying for generic retail upgrades that do not directly serve your trade.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-h3",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Rechtien Advantage: Full-Service Support in Ft. Myers & Beyond",
+                    "headingLevel": 2,
+                    "anchor": "rechtien-advantage"
+                  }
+                },
+                {
+                  "id": "p-t4",
+                  "type": "text",
+                  "props": {
+                    "text": "Transforming a pre-auction truck into a trade-ready workhorse requires an experienced team. As an authorized International Truck dealership with over 40 years of service across South Florida, Rechtien International Trucks provides the infrastructure and technical expertise needed to support your fleet.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-adv",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Rechtien Dealership Advantage",
+                        "desc": "Customer Benefit"
+                      },
+                      {
+                        "label": "5 Regional Full-Service Locations",
+                        "desc": "Convenient access in Miami, Ft. Lauderdale, Riviera Beach, Ft. Pierce, and Ft. Myers simplifies ongoing service near your job sites."
+                      },
+                      {
+                        "label": "Factory-Trained Technicians",
+                        "desc": "Specialized expertise in engine diagnostics, mechanical repairs, and trade-specific body installations."
+                      },
+                      {
+                        "label": "Extensive OEM Parts Inventory",
+                        "desc": "Direct access to OEM commercial truck parts to help minimize repair turnaround times."
+                      },
+                      {
+                        "label": "Idealease Fleet Integration",
+                        "desc": "Rental and leasing support options can help keep your business moving during vehicle refurbishing periods."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-t5",
+                  "type": "text",
+                  "props": {
+                    "text": "Our <a href=\"/service\">service team</a> collaborates with you to build a structured refurbishing plan that stays within your target budget while prioritizing safety and performance.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-h4",
+                  "type": "heading",
+                  "props": {
+                    "text": "Tailored Builds for South Florida’s Operating Environment",
+                    "headingLevel": 2,
+                    "anchor": "tailored-builds"
+                  }
+                },
+                {
+                  "id": "p-t6",
+                  "type": "text",
+                  "props": {
+                    "text": "Operating commercial vehicles in South Florida involves unique environmental demands. Intense heat, heavy stop-and-go traffic, and coastal salt exposure in areas like Riviera Beach and Miami require thoughtful vehicle preparation.\n\nWhen customizing your pre-auction truck, our service departments can incorporate region-specific upgrades, such as:",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-env",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "High-capacity cooling systems to combat ambient heat."
+                      },
+                      {
+                        "label": "Specialized undercoating and rust protection for coastal routes."
+                      },
+                      {
+                        "label": "Auxiliary power units and upgraded electrical systems."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-t7",
+                  "type": "text",
+                  "props": {
+                    "text": "Beginning with the initial inspection and continuing through ongoing maintenance, our service team works to support your vehicle throughout its operational lifecycle.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-h5",
+                  "type": "heading",
+                  "props": {
+                    "text": "Maximize Your Commercial Vehicle Investment",
+                    "headingLevel": 2,
+                    "anchor": "maximize-investment"
+                  }
+                },
+                {
+                  "id": "p-t8",
+                  "type": "text",
+                  "props": {
+                    "text": "Buying a pre-auction commercial truck offers a direct path toward building a customized fleet vehicle without paying retail premiums. By combining upfront pre-auction savings with the technical capabilities of Rechtien International Trucks, you can develop a reliable vehicle tailored directly to your trade.\n\nExplore our current pre-auction inventory or contact our service department at one of our locations in Ft. Lauderdale, Riviera Beach, Ft. Pierce, Miami, or Ft. Myers to discuss your custom build.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-legal-h",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Legal & Compliance Disclaimer:</strong>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-legal",
+                  "type": "text",
+                  "props": {
+                    "text": "<em>Vehicles offered “as is” are sold without any express or implied dealership warranties, and the buyer assumes all costs for required servicing, mechanical repairs, and safety inspections. Pre-auction inventory is limited, subject to prior sale, and advertised pricing excludes state/local taxes, title, registration, dealer fees, and custom refurbishing costs. All trade-specific upfitting and modifications are subject to the vehicle’s specific Gross Vehicle Weight Rating (GVWR), Gross Combined Weight Rating (GCWR), and manufacturer specifications, and must comply with applicable Department of Transportation (DOT) and Federal Motor Vehicle Safety Standards (FMVSS). Idealease rental and leasing programs are subject to credit approval, vehicle availability, and standard contract terms.</em>",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-more",
+      "type": "section",
+      "props": {
+        "background": "paper",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "p-more-posts",
+          "type": "postsList",
+          "props": {
+            "heading": "More from the blog.",
+            "headingLevel": 2,
+            "count": 4,
+            "cta": {
+              "ctaId": "all-blog-posts"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "p-cta",
+      "type": "section",
+      "props": {
+        "background": "ink",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "p-cta-h",
+          "type": "heading",
+          "props": {
+            "text": "Build your pre-auction truck.",
+            "eyebrow": "Pre-auction inventory and upfitting",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "p-cta-t",
+          "type": "text",
+          "props": {
+            "text": "Visit any of our five South Florida locations to discuss your custom build.",
+            "align": "center",
+            "width": "full"
+          }
+        },
+        {
+          "id": "p-cta-btns",
+          "type": "buttons",
+          "props": {
+            "align": "center",
+            "items": [
+              {
+                "ctaId": "browse-preauction"
+              },
+              {
+                "ctaId": "schedule-upfitting",
+                "style": "secondary"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "css": "/* ==========================================================================\n   Single blog post, Sun State layout: dark masthead with breadcrumb and meta chips,\n   \"On this page\" sidebar, article column, \"More from the blog\" band, call-to-action band.\n   Loaded on this post only. The masthead (date + h1) is built by the platform, so it is\n   restyled here rather than authored as blocks. Buttons are styled globally.\n   ========================================================================== */\n:root{\n  --accent:#ff6b3d; --accent-dark:#e0522a;\n  --ink:#151515; --muted:#6b6a66; --line:#d8d8d4; --card:#ffffff; --paper:#e6e6e4; --night:#2b2a27;\n  --container:1266px;\n}\nbody{background:#fff;color:var(--ink);-webkit-font-smoothing:antialiased}\narticle{position:relative}\n.bz-block h1,.bz-block h2,.bz-block h3{text-transform:uppercase;letter-spacing:0;font-weight:700}\n/* ---- Masthead ---------------------------------------------------------------- */\narticle>.bz-block:first-child{position:relative;isolation:isolate;padding:0;color:#fff;background:#151515 url(/images/hero-truck.jpg) center/cover no-repeat}\narticle>.bz-block:first-child::before{content:\"\";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,10,14,.78) 0%,rgba(8,10,14,.6) 55%,rgba(8,10,14,.8) 100%)}\narticle>.bz-block:first-child>.bz-container{max-width:var(--container);padding:176px 30px 64px;display:flex;flex-direction:column}\narticle>.bz-block:first-child h1{order:1;color:#fff;max-width:17em;margin:0 0 var(--space-4);font-size:clamp(1.75rem,3.6vw,2.875rem);line-height:1.08;letter-spacing:.02em}\narticle>.bz-block:first-child .bz-eyebrow{order:2;margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;font:700 .6875rem/1.4 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.88)}\narticle>.bz-block:first-child .bz-eyebrow::before{content:\"Industry News\";padding:5px 10px;background:var(--accent);color:#fff;letter-spacing:.2em}\narticle>.bz-block:first-child .bz-eyebrow::after{content:\"\\00b7\\00a0\\00a0Rechtien International Trucks\";white-space:pre}\n/* The cover is the card image on the blog page; the masthead already has its own photo. */\narticle>.bz-block:first-child>.bz-container+.bz-container{display:none}\n/* ---- Breadcrumb: sits over the masthead ---------------------------------------- */\n[data-bz-node=\"p-crumbs\"]{position:absolute;top:122px;left:0;right:0;z-index:2;padding:0}\n[data-bz-node=\"p-crumbs\"] .bz-container{max-width:var(--container);padding-inline:30px}\n[data-bz-node=\"p-crumbs\"] p{margin:0;font:700 .6875rem/1.4 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:#fff}\n[data-bz-node=\"p-crumbs\"] a{color:#fff;border-bottom:1px solid transparent;transition:border-color .18s ease}\n[data-bz-node=\"p-crumbs\"] a:hover{border-bottom-color:currentColor}\n/* ---- Article layout ---------------------------------------------------------------- */\n.bz-section[data-bz-node=\"p-main\"]{padding-block:clamp(40px,5vw,72px)}\n[data-bz-node=\"p-main\"]>.bz-container{max-width:1120px}\n[data-bz-node=\"p-row\"]{align-items:flex-start}\n[data-bz-node=\"p-side\"]{position:sticky;top:24px;align-self:flex-start}\n[data-bz-node=\"p-content\"]{max-width:760px}\nmain .bz-block{padding-block:0}\n/* Sidebar: table of contents */\n[data-bz-node=\"p-toc-h\"] h3{font:700 .625rem/1.4 var(--font-body);letter-spacing:.22em;color:var(--muted);margin:0 0 var(--space-3)}\n[data-bz-node=\"p-toc\"] .bz-text{max-width:none}\n[data-bz-node=\"p-toc\"] p{margin:0;font-size:.8125rem;line-height:1.4;border-top:1px solid var(--line)}\n[data-bz-node=\"p-toc\"] p:last-child{border-bottom:1px solid var(--line)}\n[data-bz-node=\"p-toc\"] a{display:block;padding:11px 0;font-weight:600;color:var(--ink);transition:color .18s ease,padding-left .18s ease}\n[data-bz-node=\"p-toc\"] a:hover{color:var(--accent-dark);padding-left:4px}\n/* Sidebar: card */\n[data-bz-node=\"p-aside\"]{margin-top:var(--space-6);padding:22px 22px 18px;background:var(--card);border:1px solid var(--line);border-radius:4px}\n[data-bz-node=\"p-aside-h\"] h3{margin:0 0 var(--space-2);font-size:1.0625rem;line-height:1.15}\n[data-bz-node=\"p-aside-t\"]{margin-bottom:var(--space-3)}\n[data-bz-node=\"p-aside-t\"] p{margin:0;font-size:.8125rem;line-height:1.65;color:#3d3c39}\n[data-bz-node=\"p-aside\"] .bz-btns{margin:0}\n/* Article body */\n[data-bz-node=\"p-content\"] .bz-text p{margin:0 0 var(--space-4);font-size:.9375rem;line-height:1.8;color:#2f2e2b}\n[data-bz-node=\"p-content\"] .bz-text a{color:var(--accent-dark);text-decoration:underline;text-underline-offset:3px}\n[data-bz-node=\"p-content\"] .bz-text a:hover{color:var(--ink)}\n[data-bz-node=\"p-content\"] .bz-block--heading{padding-top:var(--space-6);scroll-margin-top:24px}\n[data-bz-node=\"p-content\"] h2{margin:0 0 var(--space-4);font-size:clamp(1.375rem,2.2vw,1.875rem);line-height:1.1;scroll-margin-top:96px}\n[data-bz-node=\"p-intro-cta\"] .bz-btns{display:flex;flex-wrap:wrap;gap:12px;margin:var(--space-2) 0 var(--space-4)}\n[data-bz-node$=\"-lead\"] p{margin-bottom:var(--space-3)!important;color:var(--ink)!important}\n/* Lists inside the article: a single column of rows */\n[data-bz-node=\"p-content\"] .bz-block--list .bz-container{padding:0;max-width:none}\n[data-bz-node=\"p-content\"] .bz-grid{display:block;margin:0 0 var(--space-5);padding:0;list-style:none}\n[data-bz-node=\"p-content\"] .bz-feature{margin:0;padding:12px 0 12px 34px;position:relative;border-top:1px solid var(--line)}\n[data-bz-node=\"p-content\"] .bz-feature:last-child{border-bottom:1px solid var(--line)}\n[data-bz-node=\"p-content\"] .bz-feature__t{margin:0;font:700 .9375rem/1.5 var(--font-body);text-transform:none;letter-spacing:0;color:var(--ink)}\n[data-bz-node=\"p-content\"] .bz-feature__d{margin:2px 0 0;font-size:.9375rem;line-height:1.7;color:#2f2e2b}\n/* numbered steps */\n[data-bz-node=\"p-steps\"] .bz-grid{counter-reset:step}\n[data-bz-node=\"p-steps\"] .bz-feature{counter-increment:step}\n[data-bz-node=\"p-steps\"] .bz-feature::before{content:counter(step);position:absolute;left:0;top:13px;width:22px;height:22px;border-radius:50%;background:var(--ink);color:#fff;font:700 .75rem/22px var(--font-body);text-align:center}\n/* bullets */\n[data-bz-node=\"p-trades\"] .bz-feature::before,[data-bz-node=\"p-env\"] .bz-feature::before{content:\"\";position:absolute;left:8px;top:21px;width:7px;height:7px;border-radius:50%;background:var(--accent)}\n[data-bz-node=\"p-env\"] .bz-feature{padding-block:10px}\n[data-bz-node=\"p-env\"] .bz-feature::before{top:19px}\n[data-bz-node=\"p-env\"] .bz-feature__t{font-weight:400}\n/* comparison table: the first row is the header */\n[data-bz-node=\"p-adv\"] .bz-feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:4px 24px;padding:14px 16px}\n[data-bz-node=\"p-adv\"] .bz-feature__d{margin:0}\n[data-bz-node=\"p-adv\"] .bz-feature:first-child{background:var(--ink)}\n[data-bz-node=\"p-adv\"] .bz-feature:first-child .bz-feature__t,[data-bz-node=\"p-adv\"] .bz-feature:first-child .bz-feature__d{color:#fff;font:700 .6875rem/1.4 var(--font-body);letter-spacing:.16em;text-transform:uppercase}\n/* Disclaimer */\n[data-bz-node=\"p-legal-h\"] p{margin:var(--space-5) 0 var(--space-2)!important;font-size:.8125rem!important}\n[data-bz-node=\"p-legal\"] p{font-size:.75rem!important;line-height:1.7!important;color:var(--muted)!important}\n/* ---- More from the blog ------------------------------------------------------------ */\n.bz-section[data-bz-node=\"p-more\"]{padding-block:clamp(48px,5vw,80px)}\n[data-bz-node=\"p-more\"] h2{font-size:clamp(1.375rem,2.2vw,1.875rem);line-height:1.1;margin:0}\n[data-bz-node=\"p-more\"] .bz-sechead{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;margin-bottom:var(--space-5)}\n[data-bz-node=\"p-more\"] .bz-card{background:var(--card);border:1px solid var(--line);border-radius:0}\n[data-bz-node=\"p-more\"] .bz-card__t{font:700 1rem/1.25 var(--font-heading);text-transform:uppercase}\n[data-bz-node=\"p-more\"] .bz-card__m{font:700 .625rem/1.4 var(--font-body);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}\n[data-bz-node=\"p-more\"] .bz-post__d{font-size:.8125rem;line-height:1.65;color:#3d3c39}\n[data-bz-node=\"p-more\"] .bz-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}\n[data-bz-node=\"p-more\"] .bz-photo{aspect-ratio:16/9;height:auto;min-height:0}\n[data-bz-node=\"p-more\"] .bz-photo img{width:100%;height:100%;object-fit:cover}\n/* A post should not recommend itself: the \"more\" list skips this page. */\n[data-bz-node=\"p-more\"] a[href$=\"/as-is-advantage-customizing-pre-auction-trucks\"]{display:none}\n/* ---- Call to action ------------------------------------------------------------- */\n.bz-section[data-bz-node=\"p-cta\"]{padding-block:clamp(56px,6vw,96px);text-align:center;background:var(--night)}\n[data-bz-node=\"p-cta\"] .bz-eyebrow{color:rgba(255,255,255,.75)}\n[data-bz-node=\"p-cta\"] h2{color:#fff;font-size:clamp(1.5rem,3vw,2.375rem);line-height:1.08;margin:0 0 var(--space-3)}\n[data-bz-node=\"p-cta\"] .bz-text p{color:rgba(255,255,255,.9);font-size:.9375rem;line-height:1.75;max-width:36rem;margin:0 auto var(--space-4)}\n[data-bz-node=\"p-cta\"] .bz-btns{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 14px}\n/* ---- Responsive -------------------------------------------------------------------- */\n@media (max-width:900px){\n  [data-bz-node=\"p-more\"] .bz-grid{grid-template-columns:repeat(2,minmax(0,1fr))}\n  article>.bz-block:first-child>.bz-container{padding:150px 20px 48px}\n  [data-bz-node=\"p-crumbs\"]{top:104px}\n  [data-bz-node=\"p-crumbs\"] .bz-container{padding-inline:20px}\n  [data-bz-node=\"p-side\"]{position:static}\n  [data-bz-node=\"p-aside\"]{display:none}\n}\n@media (max-width:640px){\n  [data-bz-node=\"p-more\"] .bz-grid{grid-template-columns:1fr}\n  [data-bz-node=\"p-adv\"] .bz-feature{grid-template-columns:1fr}\n}\n"
+}
