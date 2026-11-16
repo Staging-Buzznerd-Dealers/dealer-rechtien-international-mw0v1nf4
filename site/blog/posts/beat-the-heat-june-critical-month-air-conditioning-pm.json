@@ -1,0 +1,313 @@
+{
+  "slug": "beat-the-heat-june-critical-month-air-conditioning-pm",
+  "title": "Beat the Heat: Why June is the Critical Month for Air Conditioning PM",
+  "date": "2026-07-27",
+  "description": "As the calendar flips to June across South Florida, the familiar humidity and soaring temperatures return in full force, turning truck cabins into uncomfortable environments if left unchecked.",
+  "coverImage": "/images/emv-truck.jpg",
+  "status": "published",
+  "keywords": [
+    "air conditioning preventative maintenance",
+    "commercial truck A/C",
+    "South Florida",
+    "fleet maintenance"
+  ],
+  "nodes": [
+    {
+      "id": "p-crumbs",
+      "type": "text",
+      "props": {
+        "text": "<a href=\"/\">Home</a> / Blog",
+        "width": "full"
+      }
+    },
+    {
+      "id": "p-main",
+      "type": "section",
+      "props": {
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "p-row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "p-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "p-toc-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "On this page",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "p-toc",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"#unique-strain\">The Unique Strain on A/C Systems</a>\n\n<a href=\"#tipping-point\">Why June Is the Tipping Point</a>\n\n<a href=\"#parts-24-7\">Find A/C Parts 24/7</a>\n\n<a href=\"#professional-pm\">Professional A/C PM</a>\n\n<a href=\"#keep-fleet-cool\">Keep Your Fleet Cool</a>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-aside",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "p-aside-col",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "p-aside-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "A/C parts and service",
+                            "headingLevel": 3
+                          }
+                        },
+                        {
+                          "id": "p-aside-t",
+                          "type": "text",
+                          "props": {
+                            "text": "Order A/C parts online or schedule A/C service.",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "p-aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "ctaId": "shop-parts",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p-content",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "p-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "As the calendar flips to June across South Florida, the familiar humidity and soaring temperatures return in full force, turning truck cabins into uncomfortable environments if left unchecked. For commercial truck drivers spending hours navigating busy highways and delivery routes, a reliable air conditioning system is more than just a basic comfort feature—it plays a vital role in driver safety, alertness, and overall focus.\n\nPreparing your fleet before the most intense summer weather arrives can help you avoid unexpected downtime and challenging working conditions. That makes June the ideal time to prioritize air conditioning preventative maintenance (PM) across your entire commercial fleet.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "order-ac-parts"
+                      },
+                      {
+                        "ctaId": "schedule-ac-service-today"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "p-h1",
+                  "type": "heading",
+                  "props": {
+                    "text": "The Unique Strain on Commercial A/C Systems in South Florida",
+                    "headingLevel": 2,
+                    "anchor": "unique-strain"
+                  }
+                },
+                {
+                  "id": "p-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "Running a heavy-duty truck in our unique coastal climate places significant stress on HVAC components. Think about the demanding conditions your vehicles face daily. Whether your fleet is idling in heavy, stop-and-go traffic near PortMiami, or hauling heavy freight up I-595 past Port Everglades in Ft. Lauderdale, the ambient heat is relentless. Addressing these complex heavy-duty truck HVAC systems now allows you to catch minor wear before it develops into a more extensive, time-consuming repair that could take a truck out of commission.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-h2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why June Is the Ideal Tipping Point for Proactive Maintenance",
+                    "headingLevel": 2,
+                    "anchor": "tipping-point"
+                  }
+                },
+                {
+                  "id": "p-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "June acts as the gateway to the most demanding months of the year for commercial trucking in Florida. If your route takes you along the Caloosahatchee River over the Edison Bridge in Ft. Myers, or you’re navigating the busy transport corridors near the Port of Palm Beach in Riviera Beach, your truck needs to be ready for extreme heat.\n\nConducting your A/C preventative maintenance in June gives your fleet a strategic head start. Technicians and fleet managers can inspect blower motors, test cabin temperatures, and check refrigerant levels before the peak summer rush brings longer wait times for commercial truck service. Catching a small refrigerant leak or replacing a clogged cabin filter early on helps preserve the lifespan of the entire cooling system, allowing your fleet to remain active and productive when the temperatures peak later in the season.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-h3",
+                  "type": "heading",
+                  "props": {
+                    "text": "Managing Fleet Maintenance In-House? Find Your A/C Parts 24/7",
+                    "headingLevel": 2,
+                    "anchor": "parts-24-7"
+                  }
+                },
+                {
+                  "id": "p-t3",
+                  "type": "text",
+                  "props": {
+                    "text": "For operations that prefer to handle their own wrenching and preventative maintenance, sourcing high-quality OEM components quickly is a top priority. Whether your shop is located near the historic Sunrise Theatre in Ft. Pierce or further south, Rechtien International Trucks supports your DIY maintenance strategy with a robust, easy-to-use eCommerce platform.\n\nWe offer a free, 24/7 online <a href=\"/store/parts\">commercial truck parts</a> ordering system equipped with highly accurate VIN-based search capabilities. This means you can efficiently locate exact-fit A/C compressors, condensers, air intake filters, and hoses for all truck makes without needing a special login. Our extensive inventory includes trusted brands like International, Cummins, and Allison. Plus, we offer direct parts delivery across multiple regions—including Miami-Dade, Broward, Palm Beach, Indian River, St. Lucie, and Martin counties. Equipping your in-house technicians with genuine, premium parts helps maintain the structural integrity of your fleet’s cooling systems, keeping your trucks moving smoothly along A1A and beyond.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-h4",
+                  "type": "heading",
+                  "props": {
+                    "text": "Professional A/C PM: Let Our Factory-Trained Technicians Help",
+                    "headingLevel": 2,
+                    "anchor": "professional-pm"
+                  }
+                },
+                {
+                  "id": "p-t4",
+                  "type": "text",
+                  "props": {
+                    "text": "If your shop is overloaded or you prefer to have specialized technicians handle your commercial truck service, Rechtien International Trucks provides comprehensive support. Our state-of-the-art service centers span across South Florida—with accessible locations in Miami, Ft. Lauderdale, Riviera Beach, Ft. Pierce, and Ft. Myers—making it convenient to <a href=\"/service\">schedule semi-truck service</a> no matter where your routes take you.\n\nOur factory-trained technicians are highly experienced in diagnosing and servicing complex A/C systems in International trucks and other major commercial brands. During an A/C preventative maintenance visit, our team can clean condenser fins, verify system pressures, inspect belts, and replace worn seals. Furthermore, as part of the International 360 program, communicating with our service department and tracking your truck’s repair status is seamless and transparent. Trusting your preventative maintenance to our dedicated service team gives you confidence that your drivers are supported by industry-leading expertise.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-h5",
+                  "type": "heading",
+                  "props": {
+                    "text": "Keep Your Fleet Cool and Productive This Summer",
+                    "headingLevel": 2,
+                    "anchor": "keep-fleet-cool"
+                  }
+                },
+                {
+                  "id": "p-t5",
+                  "type": "text",
+                  "props": {
+                    "text": "The rising temperatures of June serve as an important reminder to evaluate your fleet’s cooling systems before the extreme heat of July and August sets in. Taking proactive steps today—whether by stocking up on essential replacement parts for your internal maintenance shop or by booking an appointment with our factory-trained service professionals—can help your trucks stay safely on the road. Don’t wait for the mid-summer heatwaves to test your cabin cooling limits. Partner with Rechtien International Trucks to support your drivers and keep your operations moving forward.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-legal-h",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Disclaimers:</strong>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-legal",
+                  "type": "text",
+                  "props": {
+                    "text": "<em>This content is provided for general informational purposes only and does not replace professional diagnostic or repair services. Servicing commercial heavy-duty HVAC systems involves high-pressure refrigerants that must be handled by certified technicians using approved recovery equipment in strict accordance with EPA Section 609 regulations; unlawful venting is a federal offense. Rechtien International Trucks assumes no liability for vehicle downtime, property damage, personal injury, or voided warranties resulting from improper in-house maintenance or the misapplication of parts. Always consult your factory OEM service manual before performing repairs. International®, Cummins®, and Allison® are registered trademarks of their respective corporate owners. Parts inventory, delivery zones, and availability are subject to change, and fitment should always be verified using your vehicle identification number (VIN) prior to purchase.</em>",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-more",
+      "type": "section",
+      "props": {
+        "background": "paper",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "p-more-posts",
+          "type": "postsList",
+          "props": {
+            "heading": "More from the blog.",
+            "headingLevel": 2,
+            "count": 4,
+            "cta": {
+              "ctaId": "all-blog-posts"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "p-cta",
+      "type": "section",
+      "props": {
+        "background": "ink",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "p-cta-h",
+          "type": "heading",
+          "props": {
+            "text": "Keep your fleet cool.",
+            "eyebrow": "A/C parts and service",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "p-cta-t",
+          "type": "text",
+          "props": {
+            "text": "Visit any of our five South Florida locations for A/C parts and service.",
+            "align": "center",
+            "width": "full"
+          }
+        },
+        {
+          "id": "p-cta-btns",
+          "type": "buttons",
+          "props": {
+            "align": "center",
+            "items": [
+              {
+                "ctaId": "order-ac-parts"
+              },
+              {
+                "ctaId": "schedule-ac-service-today",
+                "style": "secondary"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "css": "/* ==========================================================================\n   Single blog post, Sun State layout: dark masthead with breadcrumb and meta chips,\n   \"On this page\" sidebar, article column, \"More from the blog\" band, call-to-action band.\n   Loaded on this post only. The masthead (date + h1) is built by the platform, so it is\n   restyled here rather than authored as blocks. Buttons are styled globally.\n   ========================================================================== */\n:root{\n  --accent:#ff6b3d; --accent-dark:#e0522a;\n  --ink:#151515; --muted:#6b6a66; --line:#d8d8d4; --card:#ffffff; --paper:#e6e6e4; --night:#2b2a27;\n  --container:1266px;\n}\nbody{background:#fff;color:var(--ink);-webkit-font-smoothing:antialiased}\narticle{position:relative}\n.bz-block h1,.bz-block h2,.bz-block h3{text-transform:uppercase;letter-spacing:0;font-weight:700}\n/* ---- Masthead ---------------------------------------------------------------- */\narticle>.bz-block:first-child{position:relative;isolation:isolate;padding:0;color:#fff;background:#151515 url(/images/hero-truck.jpg) center/cover no-repeat}\narticle>.bz-block:first-child::before{content:\"\";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,10,14,.78) 0%,rgba(8,10,14,.6) 55%,rgba(8,10,14,.8) 100%)}\narticle>.bz-block:first-child>.bz-container{max-width:var(--container);padding:176px 30px 64px;display:flex;flex-direction:column}\narticle>.bz-block:first-child h1{order:1;color:#fff;max-width:17em;margin:0 0 var(--space-4);font-size:clamp(1.75rem,3.6vw,2.875rem);line-height:1.08;letter-spacing:.02em}\narticle>.bz-block:first-child .bz-eyebrow{order:2;margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;font:700 .6875rem/1.4 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.88)}\narticle>.bz-block:first-child .bz-eyebrow::before{content:\"Blog\";padding:5px 10px;background:var(--accent);color:#fff;letter-spacing:.2em}\narticle>.bz-block:first-child .bz-eyebrow::after{content:\"\\00b7\\00a0\\00a0Rechtien International Trucks\";white-space:pre}\n/* The cover is the card image on the blog page; the masthead already has its own photo. */\narticle>.bz-block:first-child>.bz-container+.bz-container{display:none}\n/* ---- Breadcrumb: sits over the masthead ---------------------------------------- */\n[data-bz-node=\"p-crumbs\"]{position:absolute;top:122px;left:0;right:0;z-index:2;padding:0}\n[data-bz-node=\"p-crumbs\"] .bz-container{max-width:var(--container);padding-inline:30px}\n[data-bz-node=\"p-crumbs\"] p{margin:0;font:700 .6875rem/1.4 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:#fff}\n[data-bz-node=\"p-crumbs\"] a{color:#fff;border-bottom:1px solid transparent;transition:border-color .18s ease}\n[data-bz-node=\"p-crumbs\"] a:hover{border-bottom-color:currentColor}\n/* ---- Article layout ---------------------------------------------------------------- */\n.bz-section[data-bz-node=\"p-main\"]{padding-block:clamp(40px,5vw,72px)}\n[data-bz-node=\"p-main\"]>.bz-container{max-width:1120px}\n[data-bz-node=\"p-row\"]{align-items:flex-start}\n[data-bz-node=\"p-side\"]{position:sticky;top:24px;align-self:flex-start}\n[data-bz-node=\"p-content\"]{max-width:760px}\nmain .bz-block{padding-block:0}\n/* Sidebar: table of contents */\n[data-bz-node=\"p-toc-h\"] h3{font:700 .625rem/1.4 var(--font-body);letter-spacing:.22em;color:var(--muted);margin:0 0 var(--space-3)}\n[data-bz-node=\"p-toc\"] .bz-text{max-width:none}\n[data-bz-node=\"p-toc\"] p{margin:0;font-size:.8125rem;line-height:1.4;border-top:1px solid var(--line)}\n[data-bz-node=\"p-toc\"] p:last-child{border-bottom:1px solid var(--line)}\n[data-bz-node=\"p-toc\"] a{display:block;padding:11px 0;font-weight:600;color:var(--ink);transition:color .18s ease,padding-left .18s ease}\n[data-bz-node=\"p-toc\"] a:hover{color:var(--accent-dark);padding-left:4px}\n/* Sidebar: card */\n[data-bz-node=\"p-aside\"]{margin-top:var(--space-6);padding:22px 22px 18px;background:var(--card);border:1px solid var(--line);border-radius:4px}\n[data-bz-node=\"p-aside-h\"] h3{margin:0 0 var(--space-2);font-size:1.0625rem;line-height:1.15}\n[data-bz-node=\"p-aside-t\"]{margin-bottom:var(--space-3)}\n[data-bz-node=\"p-aside-t\"] p{margin:0;font-size:.8125rem;line-height:1.65;color:#3d3c39}\n[data-bz-node=\"p-aside\"] .bz-btns{margin:0}\n/* Article body */\n[data-bz-node=\"p-content\"] .bz-text p{margin:0 0 var(--space-4);font-size:.9375rem;line-height:1.8;color:#2f2e2b}\n[data-bz-node=\"p-content\"] .bz-text a{color:var(--accent-dark);text-decoration:underline;text-underline-offset:3px}\n[data-bz-node=\"p-content\"] .bz-text a:hover{color:var(--ink)}\n[data-bz-node=\"p-content\"] .bz-block--heading{padding-top:var(--space-6);scroll-margin-top:24px}\n[data-bz-node=\"p-content\"] h2{margin:0 0 var(--space-4);font-size:clamp(1.375rem,2.2vw,1.875rem);line-height:1.1;scroll-margin-top:96px}\n[data-bz-node=\"p-intro-cta\"] .bz-btns{display:flex;flex-wrap:wrap;gap:12px;margin:var(--space-2) 0 var(--space-4)}\n[data-bz-node$=\"-lead\"] p{margin-bottom:var(--space-3)!important;color:var(--ink)!important}\n/* Lists inside the article: a single column of rows */\n[data-bz-node=\"p-content\"] .bz-block--list .bz-container{padding:0;max-width:none}\n[data-bz-node=\"p-content\"] .bz-grid{display:block;margin:0 0 var(--space-5);padding:0;list-style:none}\n[data-bz-node=\"p-content\"] .bz-feature{margin:0;padding:12px 0 12px 34px;position:relative;border-top:1px solid var(--line)}\n[data-bz-node=\"p-content\"] .bz-feature:last-child{border-bottom:1px solid var(--line)}\n[data-bz-node=\"p-content\"] .bz-feature__t{margin:0;font:700 .9375rem/1.5 var(--font-body);text-transform:none;letter-spacing:0;color:var(--ink)}\n[data-bz-node=\"p-content\"] .bz-feature__d{margin:2px 0 0;font-size:.9375rem;line-height:1.7;color:#2f2e2b}\n/* numbered steps */\n[data-bz-node=\"p-steps\"] .bz-grid{counter-reset:step}\n[data-bz-node=\"p-steps\"] .bz-feature{counter-increment:step}\n[data-bz-node=\"p-steps\"] .bz-feature::before{content:counter(step);position:absolute;left:0;top:13px;width:22px;height:22px;border-radius:50%;background:var(--ink);color:#fff;font:700 .75rem/22px var(--font-body);text-align:center}\n/* bullets */\n[data-bz-node^=\"p-bul\"] .bz-feature::before{content:\"\";position:absolute;left:8px;top:21px;width:7px;height:7px;border-radius:50%;background:var(--accent)}\n/* comparison table: the first row is the header */\n[data-bz-node=\"p-adv\"] .bz-feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:4px 24px;padding:14px 16px}\n[data-bz-node=\"p-adv\"] .bz-feature__d{margin:0}\n[data-bz-node=\"p-adv\"] .bz-feature:first-child{background:var(--ink)}\n[data-bz-node=\"p-adv\"] .bz-feature:first-child .bz-feature__t,[data-bz-node=\"p-adv\"] .bz-feature:first-child .bz-feature__d{color:#fff;font:700 .6875rem/1.4 var(--font-body);letter-spacing:.16em;text-transform:uppercase}\n/* Disclaimer */\n[data-bz-node=\"p-legal-h\"] p{margin:var(--space-5) 0 var(--space-2)!important;font-size:.8125rem!important}\n[data-bz-node=\"p-legal\"] p{font-size:.75rem!important;line-height:1.7!important;color:var(--muted)!important}\n/* ---- More from the blog ------------------------------------------------------------ */\n.bz-section[data-bz-node=\"p-more\"]{padding-block:clamp(48px,5vw,80px)}\n[data-bz-node=\"p-more\"] h2{font-size:clamp(1.375rem,2.2vw,1.875rem);line-height:1.1;margin:0}\n[data-bz-node=\"p-more\"] .bz-sechead{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;margin-bottom:var(--space-5)}\n[data-bz-node=\"p-more\"] .bz-card{background:var(--card);border:1px solid var(--line);border-radius:0}\n[data-bz-node=\"p-more\"] .bz-card__t{font:700 1rem/1.25 var(--font-heading);text-transform:uppercase}\n[data-bz-node=\"p-more\"] .bz-card__m{font:700 .625rem/1.4 var(--font-body);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}\n[data-bz-node=\"p-more\"] .bz-post__d{font-size:.8125rem;line-height:1.65;color:#3d3c39}\n[data-bz-node=\"p-more\"] .bz-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}\n[data-bz-node=\"p-more\"] .bz-photo{aspect-ratio:16/9;height:auto;min-height:0}\n[data-bz-node=\"p-more\"] .bz-photo img{width:100%;height:100%;object-fit:cover}\n/* A post should not recommend itself: the \"more\" list skips this page. */\n[data-bz-node=\"p-more\"] a[href$=\"/beat-the-heat-june-critical-month-air-conditioning-pm\"]{display:none}\n/* ---- Call to action ------------------------------------------------------------- */\n.bz-section[data-bz-node=\"p-cta\"]{padding-block:clamp(56px,6vw,96px);text-align:center;background:var(--night)}\n[data-bz-node=\"p-cta\"] .bz-eyebrow{color:rgba(255,255,255,.75)}\n[data-bz-node=\"p-cta\"] h2{color:#fff;font-size:clamp(1.5rem,3vw,2.375rem);line-height:1.08;margin:0 0 var(--space-3)}\n[data-bz-node=\"p-cta\"] .bz-text p{color:rgba(255,255,255,.9);font-size:.9375rem;line-height:1.75;max-width:36rem;margin:0 auto var(--space-4)}\n[data-bz-node=\"p-cta\"] .bz-btns{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 14px}\n/* ---- Responsive -------------------------------------------------------------------- */\n@media (max-width:900px){\n  [data-bz-node=\"p-more\"] .bz-grid{grid-template-columns:repeat(2,minmax(0,1fr))}\n  article>.bz-block:first-child>.bz-container{padding:172px 20px 48px}\n  [data-bz-node=\"p-crumbs\"]{top:104px}\n  [data-bz-node=\"p-crumbs\"] .bz-container{padding-inline:20px}\n  [data-bz-node=\"p-side\"]{position:static}\n  [data-bz-node=\"p-aside\"]{display:none}\n}\n@media (max-width:640px){\n  [data-bz-node=\"p-more\"] .bz-grid{grid-template-columns:1fr}\n  [data-bz-node=\"p-adv\"] .bz-feature{grid-template-columns:1fr}\n}\n\n[data-bz-node=\"p-content\"] h3{margin:0 0 var(--space-3);font-size:clamp(1.125rem,1.6vw,1.375rem);line-height:1.15}\n"
+}
