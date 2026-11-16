@@ -1,0 +1,154 @@
+{
+  "version": 2,
+  "id": "post-hero",
+  "name": "Post hero",
+  "description": "The banner at the top of a blog post: banner photo, breadcrumb, title and the category, date, read time and author line. Change the photo and the wording on the placement; every post places it once.",
+  "props": [
+    {
+      "key": "banner",
+      "type": "image",
+      "label": "Banner image"
+    },
+    {
+      "key": "title",
+      "type": "text",
+      "label": "Post title"
+    },
+    {
+      "key": "breadcrumb",
+      "type": "text",
+      "label": "Breadcrumb (links allowed)",
+      "default": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a>"
+    },
+    {
+      "key": "category",
+      "type": "text",
+      "label": "Category"
+    },
+    {
+      "key": "date",
+      "type": "text",
+      "label": "Date"
+    },
+    {
+      "key": "readTime",
+      "type": "text",
+      "label": "Read time"
+    },
+    {
+      "key": "author",
+      "type": "text",
+      "label": "Author",
+      "default": "Rechtien International Trucks"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ph",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "ink",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "ph-banner",
+          "type": "image",
+          "props": {
+            "image": "{{banner}}",
+            "width": "full"
+          }
+        },
+        {
+          "id": "ph-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "ph-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "ph-crumbs",
+                  "type": "text",
+                  "props": {
+                    "text": "{{breadcrumb}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ph-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 1
+                  }
+                },
+                {
+                  "id": "ph-meta",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "ph-meta-col",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "ph-category",
+                          "type": "text",
+                          "props": {
+                            "text": "{{category}}",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "ph-date",
+                          "type": "text",
+                          "props": {
+                            "text": "{{date}}",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "ph-read",
+                          "type": "text",
+                          "props": {
+                            "text": "{{readTime}}",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "ph-author",
+                          "type": "text",
+                          "props": {
+                            "text": "{{author}}",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Post hero: the banner at the top of a blog post. The banner photo is the \"Banner image\" field on the placement (choose it from the Media Bin); with none chosen the band stays on ink. Category, date, read time and author are fields too. */\n:root{--ph-black:#0B0B0B;--ph-g300:#D7D5CE}\n.bz-section[data-bz-node=\"ph\"]{position:relative;isolation:isolate;overflow:hidden;padding:118px 0 56px;background:var(--ph-black);color:#fff}\n.bz-section[data-bz-node=\"ph\"]::before{content:\"\";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(11,11,11,.55),rgba(11,11,11,.9))}\n[data-bz-node=\"ph\"]>.bz-container{max-width:none;padding-inline:0}\n[data-bz-node=\"ph\"] .bz-block{padding-block:0}\n[data-bz-node^=\"ph-banner\"]{position:absolute;inset:0;z-index:0;padding:0;margin:0}\n[data-bz-node^=\"ph-banner\"] .bz-container,[data-bz-node^=\"ph-banner\"] .bz-figure,[data-bz-node^=\"ph-banner\"] img{width:100%;max-width:none;height:100%;margin:0;padding:0;border-radius:0;object-fit:cover}\n[data-bz-node^=\"ph-banner\"] .bz-photo--empty,[data-bz-node^=\"ph-banner\"] .bz-placeholder{display:none}\n[data-bz-node=\"ph-row\"]{position:relative;z-index:2;width:100%;max-width:1280px;margin-inline:auto;padding-inline:24px;box-sizing:border-box;display:block}\n[data-bz-node=\"ph-row\"]>.bz-col{max-width:760px;padding:0}\n[data-bz-node=\"ph-crumbs\"]{margin-bottom:20px}\n[data-bz-node=\"ph-crumbs\"] p{margin:0;font:600 12px/1.4 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:#fff}\n[data-bz-node=\"ph-crumbs\"] a{color:#fff;text-decoration:none}\n[data-bz-node=\"ph-crumbs\"] a:hover{color:var(--ph-g300)}\n[data-bz-node=\"ph-h\"]{margin-bottom:24px}\n[data-bz-node=\"ph-h\"] h1{margin:0;color:#fff;font-size:clamp(28px,4.2vw,48px);line-height:1.1;letter-spacing:.01em;text-transform:uppercase}\n[data-bz-node=\"ph-meta-col\"]{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 0;padding:0}\n[data-bz-node=\"ph-meta-col\"] .bz-block+.bz-block::before{content:\"\\00b7\";margin:0 16px;color:var(--ph-g300)}\n[data-bz-node=\"ph-meta-col\"] .bz-block{display:flex;align-items:baseline}\n[data-bz-node=\"ph-meta-col\"] p{margin:0;font:600 12px/1.7 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--ph-g300)}\n[data-bz-node=\"ph-category\"] p{font-weight:800;color:#fff}\n@media (max-width:900px){.bz-section[data-bz-node=\"ph\"]{padding:108px 0 44px}[data-bz-node=\"ph-row\"]{padding-inline:20px}}\n",
+  "js": ""
+}
