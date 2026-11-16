@@ -550,6 +550,23 @@
               "url": "/",
               "ref": null,
               "children": []
+            },
+            {
+              "id": "item-65",
+              "label": "Others Links",
+              "type": "label",
+              "url": null,
+              "ref": null,
+              "children": [
+                {
+                  "id": "item-66",
+                  "label": "Ottawa",
+                  "type": "url",
+                  "url": "https://ottawatruckscenter.com/inventory/",
+                  "ref": null,
+                  "children": []
+                }
+              ]
             }
           ]
         },
