@@ -496,8 +496,9 @@
                   "id": "item-69",
                   "label": "IC Bus",
                   "type": "url",
-                  "url": "/why-ic-bus",
                   "ref": null,
+                  "url": "/why-ic-bus",
+                  "newTab": false,
                   "children": []
                 }
               ]
@@ -795,6 +796,8 @@
               "label": "More from Rechtien",
               "type": "label",
               "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "hn-ebay",
@@ -816,11 +819,19 @@
                 },
                 {
                   "id": "hn-export",
-                  "label": "Export Sales",
+                  "label": "Export Sales (EN)",
                   "type": "url",
                   "ref": null,
-                  "url": "#",
+                  "url": "/used-trucks-for-export-latin-america-caribbean",
                   "newTab": false,
+                  "children": []
+                },
+                {
+                  "id": "item-71",
+                  "label": "Export Sales (ES)",
+                  "type": "url",
+                  "url": "/camiones-usados-exportacion-america-latina-caribe",
+                  "ref": null,
                   "children": []
                 }
               ]
