@@ -248,7 +248,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "quote",
@@ -304,26 +305,32 @@
           "tiles": [
             {
               "image": {
-                "src": "/images/image-needed.svg",
-                "alt": "Before and after: a repaired truck"
+                "src": "https://vendure.ai4dealerships.com/assets/source/62/b_a_1a_combo.jpg",
+                "alt": "Before and after: a repaired truck",
+                "width": 331,
+                "height": 220
               },
               "caption": "Before and after",
               "buttonLabel": "Body shop brochure",
-              "buttonUrl": "#"
+              "buttonUrl": "https://vendure.ai4dealerships.com/assets/source/30/body-shop-tri-fold-updated-2025.pdf"
             },
             {
               "image": {
-                "src": "/images/image-needed.svg",
-                "alt": "Before and after: a restored truck cab and frame"
+                "src": "https://vendure.ai4dealerships.com/assets/source/f7/b_a_2a_combo.jpg",
+                "alt": "Before and after: a restored truck cab and frame",
+                "width": 331,
+                "height": 220
               },
               "caption": "Before and after",
               "buttonLabel": "Body shop poster",
-              "buttonUrl": "#"
+              "buttonUrl": "https://vendure.ai4dealerships.com/assets/source/54/cit_bspstr_prt.pdf"
             },
             {
               "image": {
-                "src": "/images/image-needed.svg",
-                "alt": "Before and after: a collision repair"
+                "src": "https://vendure.ai4dealerships.com/assets/source/5f/b_a_3a_combo.jpg",
+                "alt": "Before and after: a collision repair",
+                "width": 331,
+                "height": 220
               },
               "caption": "Before and after",
               "buttonLabel": "Service request",
@@ -331,7 +338,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "visit",
@@ -347,7 +355,8 @@
             }
           }
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "cta",
