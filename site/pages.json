@@ -435,5 +435,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "used-trucks-for-export-latin-america-caribbean",
+    "title": "Used International Trucks for Export | Rechtien Truck Group",
+    "description": "Explore lease-maintained, pre-owned International Trucks available for export from Miami and South Carolina. We bring over 40 years of export expertise for your business success.",
+    "path": "/used-trucks-for-export-latin-america-caribbean",
+    "out": "used-trucks-for-export-latin-america-caribbean/index.html",
+    "dir": "used-trucks-for-export-latin-america-caribbean",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]
