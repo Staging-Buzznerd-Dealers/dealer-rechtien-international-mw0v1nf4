@@ -1,0 +1,538 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center",
+        "anchor": "top",
+        "background": "ink",
+        "backgroundVideo": {
+          "src": "/videos/specifications-banner-placeholder.mp4",
+          "poster": "/images/hero-truck.jpg"
+        }
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "hero-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Probados en los Estados Unidos. Disponibles para usted.",
+                    "headingLevel": 1,
+                    "align": "center",
+                    "eyebrow": "CAMIONES USADOS PARA AMÉRICA LATINA Y EL CARIBE"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Los camiones International usados, mantenidos durante su período de arrendamiento, están disponibles para exportación desde Miami, Florida, y Carolina del Sur. Encuentre un camión listo para su próxima etapa con la asesoría de Rechtien Truck Group. Apoyamos el éxito de su negocio con un servicio integral de suministro de repuestos y más de 40 años de experiencia en exportación.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "es-export-view-inventory"
+                      },
+                      {
+                        "ctaId": "es-export-talk-specialist"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "proven",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "proven-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "proven-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "proven-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Probados en la carretera. Listos para lo que viene.",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "proven-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "Son Proven Trucks porque han demostrado su capacidad a conductores y flotas de todo Estados Unidos.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "proven-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Estos camiones han transportado mercancías, cumplido promesas y contribuido a la economía global. Han recorrido autopistas, calles urbanas y caminos rurales, entregando lo que importa, día tras día.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "proven-t3",
+                  "type": "text",
+                  "props": {
+                    "text": "Ahora, estos camiones probados en carretera y mantenidos durante su período de arrendamiento están disponibles para ayudar a que su negocio siga avanzando en su mercado local.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "proven-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "es-export-connect-team"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "proven-media",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "proven-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/imagen-pendiente.svg",
+                      "alt": "Imagen de marcador de posición: camión International usado, mantenido durante su arrendamiento (se reemplazará)"
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "why",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "why-head-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "why-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "why-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "¿Por qué comprar con Rechtien Truck Group?",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "why-list-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "why-list-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "why-items",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 3,
+                    "columns": 4,
+                    "items": [
+                      {
+                        "label": "Desempeño probado en carretera",
+                        "desc": "Estos camiones tienen experiencia donde más importa: en la carretera, trabajando para empresas de todo Estados Unidos."
+                      },
+                      {
+                        "label": "Mantenimiento durante el arrendamiento",
+                        "desc": "Explore camiones International usados que recibieron mantenimiento durante su período de servicio. Consulte con nuestro equipo sobre los registros disponibles del camión que le interesa."
+                      },
+                      {
+                        "label": "Opciones para su negocio",
+                        "desc": "Ya sea que necesite un tractocamión de servicio pesado o un camión con cabina dormitorio, nuestro equipo puede ayudarle a explorar las opciones disponibles para su operación."
+                      },
+                      {
+                        "label": "Experiencia en exportación",
+                        "desc": "Con más de 40 años de experiencia en exportación, Rechtien Truck Group puede orientarle durante el proceso de compra e importación para su destino."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "why-btn-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "why-btn-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "why-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "es-export-speak-team"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "steps",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "steps-head-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "steps-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "steps-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Renueve su flota en 4 pasos",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "steps-list-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "steps-list-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "steps-items",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 3,
+                    "columns": 4,
+                    "items": [
+                      {
+                        "label": "Cuéntenos qué necesita",
+                        "desc": "Indíquenos su destino, el uso que dará al camión y las especificaciones que busca."
+                      },
+                      {
+                        "label": "Explore el inventario disponible",
+                        "desc": "Nuestro equipo le ayudará a revisar los camiones que se ajusten a sus necesidades."
+                      },
+                      {
+                        "label": "Converse sobre los detalles de compra y exportación",
+                        "desc": "Reciba orientación sobre el camión disponible, la documentación y los siguientes pasos para su destino."
+                      },
+                      {
+                        "label": "Prepárese para el envío",
+                        "desc": "Coordine los trámites y preparativos correspondientes para su compra y exportación."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parts",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "parts-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "parts-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "parts-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Respaldo en repuestos para el camino por delante.",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "parts-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "Un camión confiable merece un respaldo confiable en repuestos. A través de la plataforma de comercio electrónico de Rechtien Truck Group, puede explorar repuestos y recibir apoyo para su suministro, ayudándole a mantener su operación en marcha.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "parts-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Ya sea que dé mantenimiento a un solo camión o administre una flota, nuestro equipo puede ayudarle a identificar los repuestos que necesita para su vehículo y conversar sobre las opciones para su destino.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "parts-items",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 3,
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Explore repuestos en línea",
+                        "desc": "Busque en la plataforma de comercio electrónico los repuestos que necesita para su camión y su mantenimiento."
+                      },
+                      {
+                        "label": "Reciba apoyo para encontrar repuestos",
+                        "desc": "¿Necesita ayuda para identificar un repuesto? Contacte a nuestro equipo con los datos de su vehículo y sus necesidades."
+                      },
+                      {
+                        "label": "Planifique para su destino",
+                        "desc": "Consulte sobre la disponibilidad de repuestos y las opciones de compra y envío aplicables a su ubicación."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "parts-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "es-export-shop-parts"
+                      },
+                      {
+                        "ctaId": "es-export-contact-parts"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "parts-note",
+                  "type": "text",
+                  "props": {
+                    "text": "La disponibilidad, compatibilidad, precios y opciones de envío de los repuestos pueden variar. Confirme los detalles con el equipo de Rechtien Truck Group.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "parts-media",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "parts-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/imagen-pendiente.svg",
+                      "alt": "Imagen de marcador de posición: camión International usado, mantenido durante su arrendamiento (se reemplazará)"
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "final",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "final-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "final-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "final-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "es-export-view-inventory"
+                      },
+                      {
+                        "ctaId": "es-export-talk-specialist"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
