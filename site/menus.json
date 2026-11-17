@@ -789,6 +789,41 @@
                   "children": []
                 }
               ]
+            },
+            {
+              "id": "hn-prt-more",
+              "label": "More from Rechtien",
+              "type": "label",
+              "ref": null,
+              "children": [
+                {
+                  "id": "hn-ebay",
+                  "label": "Online Shop",
+                  "type": "url",
+                  "ref": null,
+                  "url": "#",
+                  "newTab": true,
+                  "children": []
+                },
+                {
+                  "id": "hn-fleetrite",
+                  "label": "Fleetrite",
+                  "type": "url",
+                  "ref": null,
+                  "url": "#",
+                  "newTab": false,
+                  "children": []
+                },
+                {
+                  "id": "hn-export",
+                  "label": "Export Sales",
+                  "type": "url",
+                  "ref": null,
+                  "url": "#",
+                  "newTab": false,
+                  "children": []
+                }
+              ]
             }
           ]
         },
@@ -911,33 +946,6 @@
               ]
             }
           ]
-        },
-        {
-          "id": "hn-fleetrite",
-          "label": "Fleetrite",
-          "type": "url",
-          "ref": null,
-          "url": "#",
-          "newTab": false,
-          "children": []
-        },
-        {
-          "id": "hn-ebay",
-          "label": "Online Shop",
-          "type": "url",
-          "ref": null,
-          "url": "#",
-          "newTab": true,
-          "children": []
-        },
-        {
-          "id": "hn-export",
-          "label": "Export Sales",
-          "type": "url",
-          "ref": null,
-          "url": "#",
-          "newTab": false,
-          "children": []
         },
         {
           "id": "item-11",
