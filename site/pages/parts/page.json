@@ -691,127 +691,291 @@
                         }
                       },
                       {
-                        "name": "Fleetrite"
+                        "name": "Fleetrite",
+                        "image": {
+                          "src": "/logos/fleetrite.png",
+                          "alt": "Fleetrite"
+                        }
                       },
                       {
-                        "name": "Cummins"
+                        "name": "Cummins",
+                        "image": {
+                          "src": "/logos/cummins.png",
+                          "alt": "Cummins"
+                        }
                       },
                       {
-                        "name": "Accuride"
+                        "name": "Accuride",
+                        "image": {
+                          "src": "/logos/accuride.png",
+                          "alt": "Accuride"
+                        }
                       },
                       {
-                        "name": "Allison Transmission"
+                        "name": "Allison Transmission",
+                        "image": {
+                          "src": "/logos/allison-transmission.png",
+                          "alt": "Allison Transmission"
+                        }
                       },
                       {
-                        "name": "B/A Products Co."
+                        "name": "B/A Products Co.",
+                        "image": {
+                          "src": "/logos/ba-products.png",
+                          "alt": "B/A Products Co."
+                        }
                       },
                       {
-                        "name": "Bendix"
+                        "name": "Bendix",
+                        "image": {
+                          "src": "/logos/bendix.png",
+                          "alt": "Bendix"
+                        }
                       },
                       {
-                        "name": "Spicer"
+                        "name": "Spicer",
+                        "image": {
+                          "src": "/logos/spicer.png",
+                          "alt": "Spicer"
+                        }
                       },
                       {
-                        "name": "Denso"
+                        "name": "Denso",
+                        "image": {
+                          "src": "/logos/denso.png",
+                          "alt": "Denso"
+                        }
                       },
                       {
-                        "name": "Dinex"
+                        "name": "Dinex",
+                        "image": {
+                          "src": "/logos/dinex.png",
+                          "alt": "Dinex"
+                        }
                       },
                       {
-                        "name": "Donovan"
+                        "name": "Donovan",
+                        "image": {
+                          "src": "/logos/donovan.png",
+                          "alt": "Donovan"
+                        }
                       },
                       {
-                        "name": "Dorman HD Solutions"
+                        "name": "Dorman HD Solutions",
+                        "image": {
+                          "src": "/logos/dorman-hd-solutions.png",
+                          "alt": "Dorman HD Solutions"
+                        }
                       },
                       {
-                        "name": "East"
+                        "name": "East",
+                        "image": {
+                          "src": "/logos/east.png",
+                          "alt": "East"
+                        }
                       },
                       {
-                        "name": "Ecco"
+                        "name": "Ecco",
+                        "image": {
+                          "src": "/logos/ecco.png",
+                          "alt": "Ecco"
+                        }
                       },
                       {
-                        "name": "EnerSys"
+                        "name": "EnerSys",
+                        "image": {
+                          "src": "/logos/enersys.png",
+                          "alt": "EnerSys"
+                        }
                       },
                       {
-                        "name": "Exide Technologies"
+                        "name": "Exide Technologies",
+                        "image": {
+                          "src": "/logos/exide-technologies.png",
+                          "alt": "Exide Technologies"
+                        }
                       },
                       {
-                        "name": "Federal-Mogul"
+                        "name": "Federal-Mogul",
+                        "image": {
+                          "src": "/logos/federal-mogul.png",
+                          "alt": "Federal-Mogul"
+                        }
                       },
                       {
-                        "name": "Fleetguard"
+                        "name": "Fleetguard",
+                        "image": {
+                          "src": "/logos/fleetguard.png",
+                          "alt": "Fleetguard"
+                        }
                       },
                       {
-                        "name": "Kalmar Ottawa"
+                        "name": "Kalmar Ottawa",
+                        "image": {
+                          "src": "/logos/kalmar-ottawa.png",
+                          "alt": "Kalmar Ottawa"
+                        }
                       },
                       {
-                        "name": "Kem Krest"
+                        "name": "Kem Krest",
+                        "image": {
+                          "src": "/logos/kem-krest.png",
+                          "alt": "Kem Krest"
+                        }
                       },
                       {
-                        "name": "Leece-Neville Heavy Duty Systems"
+                        "name": "Leece-Neville Heavy Duty Systems",
+                        "image": {
+                          "src": "/logos/leece-neville.png",
+                          "alt": "Leece-Neville Heavy Duty Systems"
+                        }
                       },
                       {
-                        "name": "Mobile Climate Control"
+                        "name": "Mobile Climate Control",
+                        "image": {
+                          "src": "/logos/mobile-climate-control.png",
+                          "alt": "Mobile Climate Control"
+                        }
                       },
                       {
-                        "name": "McNeilus"
+                        "name": "McNeilus",
+                        "image": {
+                          "src": "/logos/mcneilus.png",
+                          "alt": "McNeilus"
+                        }
                       },
                       {
-                        "name": "Meritor"
+                        "name": "Meritor",
+                        "image": {
+                          "src": "/logos/meritor.png",
+                          "alt": "Meritor"
+                        }
                       },
                       {
-                        "name": "Phillips"
+                        "name": "Phillips",
+                        "image": {
+                          "src": "/logos/phillips.png",
+                          "alt": "Phillips"
+                        }
                       },
                       {
-                        "name": "PAI"
+                        "name": "PAI",
+                        "image": {
+                          "src": "/logos/pai.png",
+                          "alt": "PAI"
+                        }
                       },
                       {
-                        "name": "Minimizer"
+                        "name": "Minimizer",
+                        "image": {
+                          "src": "/logos/minimizer.png",
+                          "alt": "Minimizer"
+                        }
                       },
                       {
-                        "name": "MGM Brakes"
+                        "name": "MGM Brakes",
+                        "image": {
+                          "src": "/logos/mgm-brakes.png",
+                          "alt": "MGM Brakes"
+                        }
                       },
                       {
-                        "name": "Seats"
+                        "name": "Seats",
+                        "image": {
+                          "src": "/logos/seats.png",
+                          "alt": "Seats"
+                        }
                       },
                       {
-                        "name": "SKF"
+                        "name": "SKF",
+                        "image": {
+                          "src": "/logos/skf.png",
+                          "alt": "SKF"
+                        }
                       },
                       {
-                        "name": "Spectra Premium"
+                        "name": "Spectra Premium",
+                        "image": {
+                          "src": "/logos/spectra-premium.png",
+                          "alt": "Spectra Premium"
+                        }
                       },
                       {
-                        "name": "TransAxle"
+                        "name": "TransAxle",
+                        "image": {
+                          "src": "/logos/transaxle.png",
+                          "alt": "TransAxle"
+                        }
                       },
                       {
-                        "name": "Truck-Lite"
+                        "name": "Truck-Lite",
+                        "image": {
+                          "src": "/logos/truck-lite.png",
+                          "alt": "Truck-Lite"
+                        }
                       },
                       {
-                        "name": "Diamond Advantage Diesel Parts"
+                        "name": "Diamond Advantage Diesel Parts",
+                        "image": {
+                          "src": "/logos/diamond-advantage.png",
+                          "alt": "Diamond Advantage Diesel Parts"
+                        }
                       },
                       {
-                        "name": "Wabco"
+                        "name": "Wabco",
+                        "image": {
+                          "src": "/logos/wabco.png",
+                          "alt": "Wabco"
+                        }
                       },
                       {
-                        "name": "Weitron"
+                        "name": "Weitron",
+                        "image": {
+                          "src": "/logos/weitron.png",
+                          "alt": "Weitron"
+                        }
                       },
                       {
-                        "name": "Delco Remy"
+                        "name": "Delco Remy",
+                        "image": {
+                          "src": "/logos/delco-remy.png",
+                          "alt": "Delco Remy"
+                        }
                       },
                       {
-                        "name": "Eaton"
+                        "name": "Eaton",
+                        "image": {
+                          "src": "/logos/eaton.png",
+                          "alt": "Eaton"
+                        }
                       },
                       {
-                        "name": "GoLight"
+                        "name": "GoLight",
+                        "image": {
+                          "src": "/logos/golight.png",
+                          "alt": "GoLight"
+                        }
                       },
                       {
-                        "name": "MEI Corporation"
+                        "name": "MEI Corporation",
+                        "image": {
+                          "src": "/logos/mei-corporation.png",
+                          "alt": "MEI Corporation"
+                        }
                       },
                       {
-                        "name": "Renewed"
+                        "name": "Renewed",
+                        "image": {
+                          "src": "/logos/renewed.png",
+                          "alt": "Renewed"
+                        }
                       },
                       {
-                        "name": "UpTime Parts"
+                        "name": "UpTime Parts",
+                        "image": {
+                          "src": "/logos/uptime-parts.png",
+                          "alt": "UpTime Parts"
+                        }
                       }
                     ]
                   }
