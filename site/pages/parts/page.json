@@ -823,6 +823,66 @@
       ]
     },
     {
+      "id": "fleetrite",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "fleetrite-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "fleetrite-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "fleetrite-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Looking for an aftermarket alternative?",
+                    "headingLevel": 2,
+                    "align": "center",
+                    "eyebrow": "Fleetrite parts"
+                  }
+                },
+                {
+                  "id": "fleetrite-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Fleetrite is a line of quality aftermarket parts made for heavy-duty commercial trucks and trailers, a cost-conscious option alongside genuine OEM parts. Explore the Fleetrite range, or ask our parts team which option fits your truck, your budget and your downtime.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fleetrite-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "explore-fleetrite"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "near",
       "type": "section",
       "props": {
