@@ -711,5 +711,14 @@
     "intent": "call-dealer",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "explore-fleetrite",
+    "label": "Explore Fleetrite Parts",
+    "url": "#",
+    "style": "secondary",
+    "intent": "browse-parts",
+    "newTab": false,
+    "active": true
   }
 ]
