@@ -56,7 +56,7 @@
           "email": "DMilliken@carolinainternational.com",
           "ctaLabel": "Schedule a visit",
           "ctaUrl": "#contact",
-          "welcome": "[Personal welcome message — one or two sentences, in David's own words.]",
+          "welcome": "",
           "links": [],
           "inventoryUrl": "/store/inventory",
           "qrCode": {
