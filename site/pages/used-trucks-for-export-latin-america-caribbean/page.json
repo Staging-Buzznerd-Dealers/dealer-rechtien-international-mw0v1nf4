@@ -1,0 +1,538 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center",
+        "anchor": "top",
+        "background": "ink",
+        "backgroundVideo": {
+          "src": "/videos/specifications-banner-placeholder.mp4",
+          "poster": "/images/hero-truck.jpg"
+        }
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "hero-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Proven to the World. Available for You.",
+                    "headingLevel": 1,
+                    "align": "center",
+                    "eyebrow": "PRE-OWNED TRUCKS FOR LATIN AMERICA & THE CARIBBEAN"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Lease-maintained, pre-owned International Trucks are available for export from Miami, Florida, and South Carolina. Find a truck that’s ready for its next chapter, with guidance from Rechtien Truck Group, supporting your business success with comprehensive parts sourcing and over 40 years of export expertise.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "export-view-inventory"
+                      },
+                      {
+                        "ctaId": "export-talk-specialist"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "proven",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "proven-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "proven-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "proven-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Proven on the Road. Ready for What’s Next.",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "proven-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "They’re Proven Trucks because they’ve quite literally proven themselves to drivers and fleets across the United States.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "proven-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "These are trucks that have moved goods, kept promises, and helped shape daily life. They’ve traveled highways, city streets, and back roads—delivering what matters, day in and day out.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "proven-t3",
+                  "type": "text",
+                  "props": {
+                    "text": "Now, these road-tested, lease-maintained trucks are available to help your business keep moving in your home market.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "proven-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "export-connect-team"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "proven-media",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "proven-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/image-needed.svg",
+                      "alt": "Placeholder image: lease-maintained International truck (to be replaced)"
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "why",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "why-head-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "why-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "why-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why source with Rechtien Truck Group?",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "why-list-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "why-list-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "why-items",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 3,
+                    "columns": 4,
+                    "items": [
+                      {
+                        "label": "Road-tested performance",
+                        "desc": "These trucks have experience where it counts: on the road, working for businesses across the United States."
+                      },
+                      {
+                        "label": "Lease-maintained history",
+                        "desc": "Explore pre-owned International Trucks maintained during their time in service. Ask our team about the records available for the truck you’re considering."
+                      },
+                      {
+                        "label": "Choices for your business",
+                        "desc": "Whether you need a heavy-duty tractor or a sleeper cab, our team can help you explore available options for your operation."
+                      },
+                      {
+                        "label": "Export expertise",
+                        "desc": "With over 40 years of export experience, Rechtien Truck Group can help you navigate the purchasing and importation process for your destination."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "why-btn-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "why-btn-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "why-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "export-speak-team"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "steps",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "steps-head-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "steps-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "steps-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Upgrade your fleet in 4 steps:",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "steps-list-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "steps-list-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "steps-items",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 3,
+                    "columns": 4,
+                    "items": [
+                      {
+                        "label": "Tell us what you need",
+                        "desc": "Share your destination, intended application, and preferred truck specifications."
+                      },
+                      {
+                        "label": "Explore available inventory",
+                        "desc": "Our team will help you review trucks that match your requirements."
+                      },
+                      {
+                        "label": "Discuss purchase and export details",
+                        "desc": "Get guidance on the available truck, documentation, and next steps for your destination."
+                      },
+                      {
+                        "label": "Prepare for the journey",
+                        "desc": "Coordinate the applicable arrangements for your purchase and export."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parts",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "parts-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "parts-copy",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "parts-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Parts Support for the Road Ahead",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "parts-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "A dependable truck deserves dependable parts support. Through Rechtien Truck Group’s ecommerce platform, you can explore parts and sourcing support to help keep your operation moving.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "parts-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Whether you’re maintaining one truck or managing a fleet, our team can help you identify the parts you need for your vehicle and discuss options for your destination.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "parts-items",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 3,
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Explore parts online",
+                        "desc": "Search the ecommerce platform for parts for your truck and maintenance needs."
+                      },
+                      {
+                        "label": "Get sourcing support",
+                        "desc": "Need help identifying a part? Contact our team with your vehicle details and requirements."
+                      },
+                      {
+                        "label": "Plan for your destination",
+                        "desc": "Ask about parts availability and the purchasing and shipping options applicable to your location."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "parts-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "export-shop-parts"
+                      },
+                      {
+                        "ctaId": "export-contact-parts"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "parts-note",
+                  "type": "text",
+                  "props": {
+                    "text": "Parts availability, compatibility, pricing, and shipping options vary. Confirm details with the Rechtien Truck Group team.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "parts-media",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "parts-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/image-needed.svg",
+                      "alt": "Placeholder image: lease-maintained International truck (to be replaced)"
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "final",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "final-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "final-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "final-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "export-view-inventory"
+                      },
+                      {
+                        "ctaId": "export-talk-specialist"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

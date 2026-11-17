@@ -720,5 +720,59 @@
     "intent": "browse-parts",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "export-view-inventory",
+    "label": "View Inventory",
+    "url": "/store/inventory",
+    "style": "primary",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "export-talk-specialist",
+    "label": "Talk to an Export Specialist",
+    "url": "#",
+    "style": "secondary",
+    "intent": "contact",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "export-connect-team",
+    "label": "Connect with our team",
+    "url": "#",
+    "style": "primary",
+    "intent": "contact",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "export-speak-team",
+    "label": "Speak With Our Export Team",
+    "url": "#",
+    "style": "primary",
+    "intent": "contact",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "export-shop-parts",
+    "label": "Shop Truck Parts",
+    "url": "/store/parts",
+    "style": "primary",
+    "intent": "browse-parts",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "export-contact-parts",
+    "label": "Contact Our Parts Team",
+    "url": "#",
+    "style": "secondary",
+    "intent": "parts-enquiry",
+    "newTab": false,
+    "active": true
   }
 ]
