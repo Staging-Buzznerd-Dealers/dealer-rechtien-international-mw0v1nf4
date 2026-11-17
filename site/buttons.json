@@ -774,5 +774,59 @@
     "intent": "parts-enquiry",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "es-export-view-inventory",
+    "label": "Ver inventario",
+    "url": "/store/inventory",
+    "style": "primary",
+    "intent": "browse-inventory",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "es-export-talk-specialist",
+    "label": "Hablar con un especialista en exportación",
+    "url": "#",
+    "style": "secondary",
+    "intent": "contact",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "es-export-connect-team",
+    "label": "Contacte a nuestro equipo",
+    "url": "#",
+    "style": "primary",
+    "intent": "contact",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "es-export-speak-team",
+    "label": "Hable con nuestro equipo de exportación",
+    "url": "#",
+    "style": "primary",
+    "intent": "contact",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "es-export-shop-parts",
+    "label": "Comprar repuestos para camiones",
+    "url": "/store/parts",
+    "style": "primary",
+    "intent": "browse-parts",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "es-export-contact-parts",
+    "label": "Contactar al equipo de repuestos",
+    "url": "#",
+    "style": "secondary",
+    "intent": "parts-enquiry",
+    "newTab": false,
+    "active": true
   }
 ]

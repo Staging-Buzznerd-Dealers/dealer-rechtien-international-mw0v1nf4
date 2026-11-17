@@ -453,5 +453,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "camiones-usados-exportacion-america-latina-caribe",
+    "title": "Camiones International Usados para Exportación | Rechtien Truck Group",
+    "description": "Explore camiones International usados, mantenidos durante su arrendamiento y disponibles para exportación desde Miami y Carolina del Sur, EEUU. Más de 40 años de experiencia en exportación para el éxito de su negocio.",
+    "path": "/camiones-usados-exportacion-america-latina-caribe",
+    "out": "camiones-usados-exportacion-america-latina-caribe/index.html",
+    "dir": "camiones-usados-exportacion-america-latina-caribe",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]
