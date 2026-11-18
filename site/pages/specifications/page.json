@@ -443,15 +443,15 @@
               "docs": [
                 {
                   "label": "eMV Series brochure",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/4c/int_brochure-emvseries-9-26-1-1.pdf"
                 },
                 {
                   "label": "eMV Specifications",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/40/int_emvseries-specs-2024-9-23-1-1.pdf"
                 },
                 {
                   "label": "eMV Body Integration",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/96/pm_international_specsheet-epower_2024-final-web-1.pdf"
                 }
               ],
               "inventoryUrl": "/store/inventory",
