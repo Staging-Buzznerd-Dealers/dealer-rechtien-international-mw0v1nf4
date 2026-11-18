@@ -240,12 +240,12 @@
                             "items": [
                               {
                                 "label": "View PDF",
-                                "url": "",
+                                "url": "https://vendure.ai4dealerships.com/assets/source/af/int-s13-spec-sheet-ltandrh-2024-9-23-2-1.pdf",
                                 "style": "primary"
                               },
                               {
                                 "label": "Download PDF",
-                                "url": "",
+                                "url": "https://vendure.ai4dealerships.com/assets/source/af/int-s13-spec-sheet-ltandrh-2024-9-23-2-1.pdf",
                                 "style": "secondary"
                               }
                             ],
@@ -286,12 +286,12 @@
                             "items": [
                               {
                                 "label": "View PDF",
-                                "url": "",
+                                "url": "https://vendure.ai4dealerships.com/assets/source/ad/int-s13-spec-sheet-hx-2024-9-23-2-1.pdf",
                                 "style": "primary"
                               },
                               {
                                 "label": "Download PDF",
-                                "url": "",
+                                "url": "https://vendure.ai4dealerships.com/assets/source/ad/int-s13-spec-sheet-hx-2024-9-23-2-1.pdf",
                                 "style": "secondary"
                               }
                             ],
