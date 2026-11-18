@@ -464,19 +464,19 @@
               "docs": [
                 {
                   "label": "HV509 specifications",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/ca/int_hv-series-specs-509-2024-9-23-2-1.pdf"
                 },
                 {
                   "label": "HV515 specifications",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/b9/int_hv-series-specs-515-2024-9-23-2-1.pdf"
                 },
                 {
                   "label": "HV609 specifications",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/2b/int_hv-series-specs-609-2024-9-23-2-1.pdf"
                 },
                 {
                   "label": "HV615 specifications",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/4c/int_hv-series-specs-615-2024-9-23-2-1.pdf"
                 }
               ],
               "inventoryUrl": "/store/inventory",
