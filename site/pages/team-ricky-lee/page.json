@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "profile",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "associate-profile",
+        "values": {
+          "name": "Ricky Lee",
+          "firstName": "Ricky",
+          "title": "Account Manager",
+          "locations": "Columbia, SC",
+          "headshot": {
+            "src": "",
+            "alt": "Ricky Lee, Account Manager"
+          },
+          "bio": "",
+          "experience": "",
+          "experienceNote": "",
+          "specialties": [],
+          "markets": [],
+          "phone": "",
+          "phoneUrl": "",
+          "email": "rlee@carolinainternational.com",
+          "ctaLabel": "Email Ricky",
+          "ctaUrl": "mailto:rlee@carolinainternational.com",
+          "links": [
+            {
+              "label": "LinkedIn",
+              "url": "https://www.linkedin.com/in/ricky-lee-4807a2124/"
+            }
+          ],
+          "inventoryUrl": "/store/inventory?condition=used"
+        }
+      },
+      "children": []
+    }
+  ]
+}

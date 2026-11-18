@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "profile",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "associate-profile",
+        "values": {
+          "name": "Bill Faircloth",
+          "firstName": "Bill",
+          "title": "Account Manager",
+          "locations": "Columbia, SC",
+          "headshot": {
+            "src": "",
+            "alt": "Bill Faircloth, Account Manager"
+          },
+          "bio": "",
+          "experience": "",
+          "experienceNote": "",
+          "specialties": [],
+          "markets": [],
+          "phone": "",
+          "phoneUrl": "",
+          "email": "bfaircloth@carolinainternational.com",
+          "ctaLabel": "Email Bill",
+          "ctaUrl": "mailto:bfaircloth@carolinainternational.com",
+          "links": [
+            {
+              "label": "LinkedIn",
+              "url": "https://www.linkedin.com/in/bill-faircloth-2585b0284/"
+            }
+          ],
+          "inventoryUrl": "/store/inventory?condition=new"
+        }
+      },
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "profile",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "associate-profile",
+        "values": {
+          "name": "Steve Wiser",
+          "firstName": "Steve",
+          "title": "Account Manager",
+          "locations": "Columbia, SC",
+          "headshot": {
+            "src": "",
+            "alt": "Steve Wiser, Account Manager"
+          },
+          "bio": "",
+          "experience": "",
+          "experienceNote": "",
+          "specialties": [],
+          "markets": [],
+          "phone": "",
+          "phoneUrl": "",
+          "email": "swiser@carolinainternational.com",
+          "ctaLabel": "Email Steve",
+          "ctaUrl": "mailto:swiser@carolinainternational.com",
+          "links": [
+            {
+              "label": "LinkedIn",
+              "url": "https://www.linkedin.com/in/steve-wiser-605103314/"
+            }
+          ],
+          "inventoryUrl": "/store/inventory?condition=new"
+        }
+      },
+      "children": []
+    }
+  ]
+}

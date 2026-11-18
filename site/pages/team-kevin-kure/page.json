@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "profile",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "associate-profile",
+        "values": {
+          "name": "Kevin Kure",
+          "firstName": "Kevin",
+          "title": "Account Manager",
+          "locations": "Charleston, SC",
+          "headshot": {
+            "src": "",
+            "alt": "Kevin Kure, Account Manager"
+          },
+          "bio": "",
+          "experience": "",
+          "experienceNote": "",
+          "specialties": [],
+          "markets": [],
+          "phone": "",
+          "phoneUrl": "",
+          "email": "kkure@carolinainternational.com",
+          "ctaLabel": "Email Kevin",
+          "ctaUrl": "mailto:kkure@carolinainternational.com",
+          "links": [
+            {
+              "label": "LinkedIn",
+              "url": "https://www.linkedin.com/in/kevin-kure-ctp-15a39a100/"
+            }
+          ],
+          "inventoryUrl": "/store/inventory?condition=new"
+        }
+      },
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "profile",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "associate-profile",
+        "values": {
+          "name": "Joe Allen",
+          "firstName": "Joe",
+          "title": "Account Manager",
+          "locations": "Florence, SC",
+          "headshot": {
+            "src": "",
+            "alt": "Joe Allen, Account Manager"
+          },
+          "bio": "",
+          "experience": "",
+          "experienceNote": "",
+          "specialties": [],
+          "markets": [],
+          "phone": "",
+          "phoneUrl": "",
+          "email": "jallen@carolinainternational.com",
+          "ctaLabel": "Email Joe",
+          "ctaUrl": "mailto:jallen@carolinainternational.com",
+          "links": [
+            {
+              "label": "LinkedIn",
+              "url": "https://www.linkedin.com/in/joe-allen-b464ab273/"
+            }
+          ],
+          "inventoryUrl": "/store/inventory"
+        }
+      },
+      "children": []
+    }
+  ]
+}

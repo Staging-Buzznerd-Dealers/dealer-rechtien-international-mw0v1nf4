@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "profile",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "associate-profile",
+        "values": {
+          "name": "Laddie Williams",
+          "firstName": "Laddie",
+          "title": "Account Manager",
+          "locations": "Ft. Myers, FL",
+          "headshot": {
+            "src": "",
+            "alt": "Laddie Williams, Account Manager"
+          },
+          "bio": "",
+          "experience": "",
+          "experienceNote": "",
+          "specialties": [],
+          "markets": [],
+          "phone": "",
+          "phoneUrl": "",
+          "email": "lwilliams@rechtien.com",
+          "ctaLabel": "Email Laddie",
+          "ctaUrl": "mailto:lwilliams@rechtien.com",
+          "links": [
+            {
+              "label": "LinkedIn",
+              "url": "https://www.linkedin.com/in/laddie-williams-9305b1388/"
+            }
+          ],
+          "inventoryUrl": "/store/inventory"
+        }
+      },
+      "children": []
+    }
+  ]
+}

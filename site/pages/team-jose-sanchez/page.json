@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "profile",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "associate-profile",
+        "values": {
+          "name": "Jose Sanchez",
+          "firstName": "Jose",
+          "title": "Account Manager",
+          "locations": "Miami & Ft. Lauderdale, FL",
+          "headshot": {
+            "src": "",
+            "alt": "Jose Sanchez, Account Manager"
+          },
+          "bio": "",
+          "experience": "",
+          "experienceNote": "",
+          "specialties": [],
+          "markets": [],
+          "phone": "",
+          "phoneUrl": "",
+          "email": "josanchez@rechtien.com",
+          "ctaLabel": "Email Jose",
+          "ctaUrl": "mailto:josanchez@rechtien.com",
+          "links": [
+            {
+              "label": "LinkedIn",
+              "url": "https://www.linkedin.com/in/jose-f-sanchez-9b817432/"
+            }
+          ],
+          "inventoryUrl": "/store/inventory?condition=new"
+        }
+      },
+      "children": []
+    }
+  ]
+}

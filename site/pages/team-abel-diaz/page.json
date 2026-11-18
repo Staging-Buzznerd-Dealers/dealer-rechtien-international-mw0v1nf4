@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "profile",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "associate-profile",
+        "values": {
+          "name": "Abel Diaz",
+          "firstName": "Abel",
+          "title": "Account Manager",
+          "locations": "Miami, FL",
+          "headshot": {
+            "src": "",
+            "alt": "Abel Diaz, Account Manager"
+          },
+          "bio": "",
+          "experience": "",
+          "experienceNote": "",
+          "specialties": [],
+          "markets": [],
+          "phone": "",
+          "phoneUrl": "",
+          "email": "adiaz@rechtien.com",
+          "ctaLabel": "Email Abel",
+          "ctaUrl": "mailto:adiaz@rechtien.com",
+          "links": [
+            {
+              "label": "LinkedIn",
+              "url": "https://www.linkedin.com/in/abeldiazjr/"
+            }
+          ],
+          "inventoryUrl": "/store/inventory?condition=used"
+        }
+      },
+      "children": []
+    }
+  ]
+}

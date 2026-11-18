@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "profile",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "associate-profile",
+        "values": {
+          "name": "Charlie Champion",
+          "firstName": "Charlie",
+          "title": "Account Manager",
+          "locations": "Greer, SC",
+          "headshot": {
+            "src": "",
+            "alt": "Charlie Champion, Account Manager"
+          },
+          "bio": "",
+          "experience": "",
+          "experienceNote": "",
+          "specialties": [],
+          "markets": [],
+          "phone": "",
+          "phoneUrl": "",
+          "email": "cchampion@carolinainternational.com",
+          "ctaLabel": "Email Charlie",
+          "ctaUrl": "mailto:cchampion@carolinainternational.com",
+          "links": [],
+          "inventoryUrl": "/store/inventory"
+        }
+      },
+      "children": []
+    }
+  ]
+}
