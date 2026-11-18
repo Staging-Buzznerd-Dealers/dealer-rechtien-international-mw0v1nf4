@@ -1,0 +1,232 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center",
+        "anchor": "top"
+      },
+      "styles": {
+        "base": {
+          "backgroundImage": "/images/contact-hero.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
+          "background": "#151515"
+        }
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "hero-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Contact us",
+                    "headingLevel": 1,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "hero-sub",
+                  "type": "text",
+                  "props": {
+                    "text": "Experience our superior service and selection",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "contact"
+      },
+      "children": [
+        {
+          "id": "intro-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "intro-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "intro-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Contact Rechtien Truck Group",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "intro-div",
+                  "type": "divider",
+                  "props": {}
+                },
+                {
+                  "id": "intro-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Call us at any of our <a href=\"/locations\">11 locations in South Florida and South Carolina</a> or come by today and experience our superior service and selection!",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "message",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "paper",
+        "anchor": "message"
+      },
+      "children": [
+        {
+          "id": "message-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "message-card",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "message-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Leave a message below",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "message-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "contact-us"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "links",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "links-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "links-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "links-btns",
+                  "type": "buttons",
+                  "props": {
+                    "align": "center",
+                    "items": [
+                      {
+                        "ctaId": "explore-inventory",
+                        "label": "Inventory",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "apply-for-credit",
+                        "label": "Financing",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "about-us",
+                        "label": "About us",
+                        "style": "primary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "locations",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "contact-locations",
+        "values": {
+          "locations": {
+            "source": "locations",
+            "config": {
+              "pagePathPrefix": "/locations"
+            }
+          }
+        },
+        "snapshots": {}
+      },
+      "children": []
+    }
+  ]
+}

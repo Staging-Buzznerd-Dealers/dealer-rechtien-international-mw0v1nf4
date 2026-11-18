@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Contact us (/contact).
+   Loaded on this page only (site/pages/contact/style.css). Buttons are styled globally
+   (site/custom-code.json); rules here only position them.
+   ========================================================================== */
+:root{
+  --accent:#ff6b3d; --accent-dark:#e0522a;
+  --ink:#151515; --ink-dark:#0c0c0c;
+  --muted:#6b6a66; --line:#d8d8d4; --card:#ffffff; --paper:#e6e6e4;
+  --night:#2b2a27;
+  --text-h1:clamp(1.75rem,3.05vw,2.875rem);
+  --text-h2:clamp(1.5rem,2.45vw,2.25rem);
+  --text-h3:1.375rem;
+  --text-body:1rem; --text-small:.875rem; --text-eyebrow:.6875rem;
+  --weight-heading:800; --leading-heading:1.1;
+  --container:1266px;
+  --radius-nav:4px; --radius-input:2px; --radius-card:0; --radius-chip:4px;
+}
+body{background:#fff;color:var(--ink);font-weight:400;letter-spacing:0;-webkit-font-smoothing:antialiased}
+/* ---- Type ---------------------------------------------------------------- */
+.bz-block h1,.bz-block h2,.bz-block h3{text-transform:uppercase;letter-spacing:0;font-weight:700}
+.bz-block h1{font-size:var(--text-h1);line-height:1.04}
+.bz-block h2{font-size:clamp(1.375rem,2vw,1.8125rem);line-height:1.08;margin-bottom:var(--space-5)}
+.bz-block p{font-size:.9375rem;line-height:1.75}
+.bz-block .bz-eyebrow,.bz-eyebrow{font:700 var(--text-eyebrow)/1.4 var(--font-body);letter-spacing:.22em;color:var(--muted);margin-bottom:var(--space-2)}
+.bz-block--heading{padding-block:0 var(--space-2)}
+/* Buttons: styled globally (site/custom-code.json). Rules here only position them. */
+.bz-btns{margin-block:var(--space-5) 0}
+/* ---- Shared rhythm ---------------------------------------------------------------- */
+/* Padding is set per band here; the components (map, cards) keep their own tighter spacing. */
+
+main .bz-block{padding-block:0 var(--space-3)}
+main .bz-section p{max-width:none}
+.bz-block h2{font-size:clamp(1.375rem,2.1vw,1.875rem);line-height:1.1}
+.bz-block .bz-eyebrow,.bz-eyebrow{font:700 .625rem/1.4 var(--font-body);letter-spacing:.22em;color:var(--muted);margin-bottom:var(--space-2)}
+main .bz-text p{font-size:.875rem;line-height:1.85;color:#3d3c39;margin:0 0 var(--space-3)}
+.bz-section--bg-ink{background:var(--night)}
+main .bz-section--bg-ink .bz-eyebrow{color:rgba(255,255,255,.75)}
+main .bz-section--bg-ink h2,main .bz-section--bg-ink h3{color:#fff}
+main .bz-section--bg-ink .bz-text p{color:rgba(255,255,255,.9)}
+.bz-block--buttons .bz-btns{display:flex;flex-wrap:wrap;gap:12px 22px;align-items:center}
+/* ---- Hero ------------------------------------------------------------------------------------ */
+.bz-section[data-bz-node="hero"]{min-height:clamp(300px,25vw,380px);display:flex;flex-direction:column;justify-content:center;padding:96px 0 64px;color:#fff;isolation:isolate}
+.bz-section[data-bz-node="hero"]::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,10,14,.25) 0%,rgba(8,10,14,.1) 55%,rgba(8,10,14,.3) 100%)}
+[data-bz-node="hero"] .bz-container{max-width:960px}
+[data-bz-node="hero-h"] h1{color:#fff;margin:0 0 var(--space-3);letter-spacing:.3em;font-size:clamp(1.75rem,4vw,3rem);line-height:1.1}
+[data-bz-node="hero-sub"] p{color:var(--accent)!important;font:500 clamp(1.125rem,2vw,1.5rem)/1.3 var(--font-heading)!important;text-transform:uppercase;margin:0!important}
+
+[data-bz-node="hero"] .bz-container{max-width:900px}
+[data-bz-node="hero-h"] .bz-eyebrow{color:var(--accent);letter-spacing:.24em;margin-bottom:var(--space-3)}
+[data-bz-node="hero-crumbs"] p{font:700 .625rem/1.4 var(--font-body)!important;letter-spacing:.2em;text-transform:uppercase;color:#fff!important;margin:0 0 var(--space-3)!important}
+[data-bz-node="hero-crumbs"] a{color:#fff;border-bottom:1px solid transparent;transition:border-color .18s ease}
+[data-bz-node="hero-crumbs"] a:hover{border-bottom-color:currentColor}
+[data-bz-node="hero-lede"] p{color:#fff!important;font-size:1rem!important;line-height:1.7;max-width:38rem;margin:0 auto!important}
+[data-bz-node="hero-cta"] .bz-btns{justify-content:center;margin-top:var(--space-5)}
+
+
+/* ---- Intro ------------------------------------------------------------------------------------ */
+.bz-section[data-bz-node="intro"]{padding-block:clamp(56px,6vw,96px)}
+[data-bz-node="intro"] h2{font-size:clamp(1.375rem,2.4vw,2rem);text-align:center;margin-bottom:var(--space-4)}
+[data-bz-node="intro-div"]{max-width:680px;margin-inline:auto}
+[data-bz-node="intro-t"] p{max-width:44rem;margin-inline:auto!important;text-align:center}
+[data-bz-node="intro-t"] a{color:var(--accent-dark);font-weight:700}
+/* ---- Message form: framed card on the paper band ------------------------------------------------ */
+.bz-section[data-bz-node="message"]{padding-block:clamp(48px,6vw,88px)}
+[data-bz-node="message-card"]{max-width:860px;margin-inline:auto;background:#fff;border:10px solid #d4dcde;border-radius:18px;padding:clamp(22px,3vw,40px)}
+[data-bz-node="message-card"] .bz-block{padding-block:0}
+[data-bz-node="message-t"] p{font-size:.9375rem!important;margin:0 0 var(--space-3)!important}
+[data-bz-node="message-form"] .bz-container{padding:0;max-width:none}
+[data-bz-node="message-form"] .bz-form{max-width:none;border:0;padding:0;background:transparent}
+[data-bz-node="message-form"] .bz-form__t{display:none}
+[data-bz-node="message-form"] label{font:700 .8125rem/1.4 var(--font-body)}
+[data-bz-node="message-form"] input[type=text],[data-bz-node="message-form"] input[type=email],[data-bz-node="message-form"] input[type=tel],[data-bz-node="message-form"] textarea{border:1px solid #bdbdb8;border-radius:2px;padding:11px 12px;font:400 .9375rem var(--font-body);width:100%;box-sizing:border-box;background:#fff}
+[data-bz-node="message-form"] textarea{min-height:140px}
+/* ---- Quick links: three equal buttons ------------------------------------------------------------ */
+[data-bz-node="links-btns"] .bz-btns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;max-width:1010px;margin:0 auto}
+[data-bz-node="links-btns"] .bz-btn{width:100%;justify-content:center;text-align:center}
+@media (max-width:700px){[data-bz-node="links-btns"] .bz-btns{grid-template-columns:1fr;gap:12px}}
+/* Filled accent buttons, as in the reference (global button styles stay untouched elsewhere). */
+[data-bz-node="links-btns"] .bz-btn,[data-bz-node="message-form"] button[type=submit]{background:var(--btn-orange,#ff6b3d);border-color:var(--btn-orange,#ff6b3d);color:#fff}
+[data-bz-node="links-btns"] .bz-btn:hover,[data-bz-node="message-form"] button[type=submit]:hover{background:var(--accent-dark);border-color:var(--accent-dark);color:#fff}
+[data-bz-node="message-form"] button[type=submit]{width:auto;min-width:200px;justify-self:start;padding:14px 26px;border:1px solid var(--btn-orange,#ff6b3d);cursor:pointer;font:700 .75rem/1 var(--font-body);letter-spacing:.14em;text-transform:uppercase}
