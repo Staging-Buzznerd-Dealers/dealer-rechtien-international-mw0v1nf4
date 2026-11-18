@@ -531,15 +531,15 @@
               "docs": [
                 {
                   "label": "HX Series brochure",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/42/int_hx-series-brochure-2024-9-23-3-1.pdf"
                 },
                 {
                   "label": "HX520 specifications",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/eb/pm_int_hx520specs-v1.1-1.pdf"
                 },
                 {
                   "label": "HX620 specifications",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/1c/int_hx620specs-2024-9-23-2-1.pdf"
                 }
               ],
               "inventoryUrl": "/store/inventory",
