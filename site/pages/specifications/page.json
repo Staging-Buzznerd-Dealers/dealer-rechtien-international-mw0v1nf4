@@ -565,15 +565,15 @@
               "docs": [
                 {
                   "label": "LoneStar Series brochure",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/0d/lonestar_1-1.pdf"
                 },
                 {
                   "label": "LoneStar Day Cab",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/0b/lonestar_daycab-1.pdf"
                 },
                 {
                   "label": "LoneStar Sleeper",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/cf/lonestar_sleeper-1.pdf"
                 }
               ],
               "inventoryUrl": "/store/inventory",
