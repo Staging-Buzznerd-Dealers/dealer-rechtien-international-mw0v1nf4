@@ -54,16 +54,10 @@
           "phone": "(864) 968-2221",
           "phoneUrl": "tel:+18649682221",
           "email": "DMilliken@carolinainternational.com",
-          "ctaLabel": "Schedule a visit",
-          "ctaUrl": "#contact",
-          "welcome": "[Personal welcome message — one or two sentences, in David's own words.]",
+          "ctaLabel": "Email David",
+          "ctaUrl": "mailto:DMilliken@carolinainternational.com",
           "links": [],
-          "inventoryUrl": "/store/inventory",
-          "qrCode": {
-            "src": "",
-            "alt": "QR code for David Milliken's page"
-          },
-          "qrCaption": "Scan to save David's page"
+          "inventoryUrl": "/store/inventory"
         },
         "snapshots": {
           "iv-stock": {
