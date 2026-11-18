@@ -231,7 +231,7 @@
     "status": "published",
     "seo": {
       "ogImage": null,
-      "noindex": false
+      "noindex": true
     },
     "templates": {
       "header": null,
@@ -250,7 +250,7 @@
     "status": "published",
     "seo": {
       "ogImage": null,
-      "noindex": false
+      "noindex": true
     },
     "templates": {
       "header": null,
@@ -269,7 +269,7 @@
     "status": "published",
     "seo": {
       "ogImage": null,
-      "noindex": false
+      "noindex": true
     },
     "templates": {
       "header": null,
@@ -288,7 +288,7 @@
     "status": "published",
     "seo": {
       "ogImage": null,
-      "noindex": false
+      "noindex": true
     },
     "templates": {
       "header": null,
@@ -307,7 +307,7 @@
     "status": "published",
     "seo": {
       "ogImage": null,
-      "noindex": false
+      "noindex": true
     },
     "templates": {
       "header": null,
@@ -326,7 +326,7 @@
     "status": "published",
     "seo": {
       "ogImage": null,
-      "noindex": false
+      "noindex": true
     },
     "templates": {
       "header": null,
@@ -345,7 +345,7 @@
     "status": "published",
     "seo": {
       "ogImage": null,
-      "noindex": false
+      "noindex": true
     },
     "templates": {
       "header": null,
@@ -364,7 +364,7 @@
     "status": "published",
     "seo": {
       "ogImage": null,
-      "noindex": false
+      "noindex": true
     },
     "templates": {
       "header": null,
@@ -383,7 +383,7 @@
     "status": "published",
     "seo": {
       "ogImage": null,
-      "noindex": false
+      "noindex": true
     },
     "templates": {
       "header": null,
@@ -402,7 +402,7 @@
     "status": "published",
     "seo": {
       "ogImage": null,
-      "noindex": false
+      "noindex": true
     },
     "templates": {
       "header": null,
@@ -421,7 +421,7 @@
     "status": "published",
     "seo": {
       "ogImage": null,
-      "noindex": false
+      "noindex": true
     },
     "templates": {
       "header": null,
@@ -440,7 +440,7 @@
     "status": "published",
     "seo": {
       "ogImage": null,
-      "noindex": false
+      "noindex": true
     },
     "templates": {
       "header": null,
@@ -459,7 +459,7 @@
     "status": "published",
     "seo": {
       "ogImage": null,
-      "noindex": false
+      "noindex": true
     },
     "templates": {
       "header": null,
@@ -478,7 +478,7 @@
     "status": "published",
     "seo": {
       "ogImage": null,
-      "noindex": false
+      "noindex": true
     },
     "templates": {
       "header": null,
@@ -497,7 +497,7 @@
     "status": "published",
     "seo": {
       "ogImage": null,
-      "noindex": false
+      "noindex": true
     },
     "templates": {
       "header": null,
@@ -516,7 +516,7 @@
     "status": "published",
     "seo": {
       "ogImage": null,
-      "noindex": false
+      "noindex": true
     },
     "templates": {
       "header": null,

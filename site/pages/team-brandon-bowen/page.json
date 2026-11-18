@@ -15,11 +15,41 @@
             "src": "",
             "alt": "Brandon Bowen, Account Manager"
           },
-          "bio": "",
-          "experience": "",
-          "experienceNote": "",
-          "specialties": [],
-          "markets": [],
+          "bio": "[Short biography — 60 to 120 words from the worksheet: background, how long with Rechtien Truck Group, what customers can expect when they work with Brandon.]",
+          "experience": "[00+ yrs]",
+          "experienceNote": "[One sentence on industry experience from the worksheet.]",
+          "specialties": [
+            {
+              "name": "[Specialty 1]",
+              "note": "[One line from the worksheet]"
+            },
+            {
+              "name": "[Specialty 2]",
+              "note": "[One line from the worksheet]"
+            },
+            {
+              "name": "[Specialty 3]",
+              "note": "[One line from the worksheet]"
+            },
+            {
+              "name": "[Specialty 4]",
+              "note": "[One line from the worksheet]"
+            }
+          ],
+          "markets": [
+            {
+              "name": "[Market 1]"
+            },
+            {
+              "name": "[Market 2]"
+            },
+            {
+              "name": "[Market 3]"
+            },
+            {
+              "name": "[Market 4]"
+            }
+          ],
           "phone": "",
           "phoneUrl": "",
           "email": "bbowen@carolinainternational.com",
