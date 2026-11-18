@@ -39,10 +39,8 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/ic-bus-placeholder.svg",
-                      "alt": "The next generation CE Series: ahead of its class",
-                      "width": 1200,
-                      "height": 700
+                      "src": "/images/ic-bus-hero-ce-series.jpg",
+                      "alt": "The next generation CE Series: ahead of its class"
                     }
                   }
                 },
@@ -51,10 +49,8 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/ic-bus-placeholder.svg",
-                      "alt": "DriverFirst thermal driver compartment",
-                      "width": 1200,
-                      "height": 700
+                      "src": "/images/ic-bus-driverfirst-compartment.jpg",
+                      "alt": "DriverFirst thermal driver compartment"
                     }
                   }
                 },
@@ -63,10 +59,8 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/ic-bus-placeholder.svg",
-                      "alt": "What's new on the IC Bus CE Series",
-                      "width": 1200,
-                      "height": 700
+                      "src": "/images/ic-bus-whats-new.jpg",
+                      "alt": "What's new on the IC Bus CE Series"
                     }
                   }
                 },
@@ -75,10 +69,8 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/ic-bus-placeholder.svg",
-                      "alt": "IC Bus front view",
-                      "width": 1200,
-                      "height": 700
+                      "src": "/images/ic-bus-front-view.jpg",
+                      "alt": "IC Bus front view"
                     }
                   }
                 },
@@ -108,10 +100,8 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/ic-bus-placeholder.svg",
-                      "alt": "IC Bus CE Series school bus",
-                      "width": 1200,
-                      "height": 700
+                      "src": "/images/ic-bus-ce-series-bus.jpg",
+                      "alt": "IC Bus CE Series school bus"
                     }
                   }
                 }
@@ -351,7 +341,7 @@
                 }
               ],
               "image": {
-                "src": "/images/ic-bus-placeholder.svg",
+                "src": "/images/ic-bus-driver-visibility.jpg",
                 "alt": "Driver visibility: front view of the IC Bus CE Series"
               }
             },
@@ -363,7 +353,7 @@
                 }
               ],
               "image": {
-                "src": "/images/ic-bus-placeholder.svg",
+                "src": "/images/ic-bus-driver-accommodation.jpg",
                 "alt": "Driver accommodation: telescoping steering wheel"
               }
             },
@@ -387,7 +377,7 @@
                 }
               ],
               "image": {
-                "src": "/images/ic-bus-placeholder.svg",
+                "src": "/images/ic-bus-driver-seat.jpg",
                 "alt": "Driver seat options"
               }
             },
@@ -405,7 +395,7 @@
                 }
               ],
               "image": {
-                "src": "/images/ic-bus-placeholder.svg",
+                "src": "/images/ic-bus-ingress-egress.jpg",
                 "alt": "Ingress and egress: entry door and steps"
               }
             },
@@ -426,7 +416,7 @@
                 }
               ],
               "image": {
-                "src": "/images/ic-bus-placeholder.svg",
+                "src": "/images/ic-bus-rti-seating.jpg",
                 "alt": "RTI seating: passenger seats with belts"
               }
             }
@@ -522,10 +512,8 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/ic-bus-placeholder.svg",
-                      "alt": "IC Bus diesel engine",
-                      "width": 1200,
-                      "height": 700
+                      "src": "/images/ic-bus-diesel-engine.jpg",
+                      "alt": "IC Bus diesel engine"
                     }
                   }
                 },
@@ -561,10 +549,8 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/ic-bus-placeholder.svg",
-                      "alt": "Charging an electric IC Bus",
-                      "width": 1200,
-                      "height": 700
+                      "src": "/images/ic-bus-electric-charging.jpg",
+                      "alt": "Charging an electric IC Bus"
                     }
                   }
                 },

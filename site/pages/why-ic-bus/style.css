@@ -47,6 +47,8 @@ main .bz-section--bg-ink .bz-text p{color:rgba(255,255,255,.9)}
 [data-bz-node="top-h"] h1{color:#fff;font-size:clamp(1.625rem,3vw,2.5rem);margin:0 0 var(--space-4)}
 [data-bz-node="top"] .bz-text p{color:rgba(255,255,255,.9)!important}
 [data-bz-node="top"] .bz-block--image{max-width:520px;margin:0 auto var(--space-3)}
+/* The front-view photo is a small inset in the reference, not a full-width banner. */
+[data-bz-node="top-img-4"]{max-width:300px;margin:0 auto var(--space-3) clamp(0px,12%,120px)}
 .bz-block--image img{width:100%;height:auto;display:block}
 [data-bz-node="safety"] h3,[data-bz-node="driverfirst"] h3{font-size:clamp(1.0625rem,1.6vw,1.25rem);margin:0 0 var(--space-2)}
 [data-bz-node="safety-video"]{margin-top:var(--space-5)}
@@ -62,3 +64,6 @@ main .bz-section--bg-ink .bz-text p{color:rgba(255,255,255,.9)}
 [data-bz-node="best-list"] .bz-feature__d,[data-bz-node="electric-list"] .bz-feature__d{font-size:.875rem;line-height:1.75;color:#4a4945;margin:0}
 [data-bz-node="electric-div"]{margin:var(--space-5) 0}
 [data-bz-node="electric-cta"] .bz-btns{margin:var(--space-3) 0 0}
+
+/* Choice photos are small framed thumbnails in the reference; the source art is low resolution, so keep them compact. */
+[data-bz-node="choice-a-img"],[data-bz-node="choice-b-img"]{max-width:300px}
