@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Contact us (/contact).
+   Contact us (/contact), following the About and Locations page design.
    Loaded on this page only (site/pages/contact/style.css). Buttons are styled globally
    (site/custom-code.json); rules here only position them.
    ========================================================================== */
@@ -28,7 +28,8 @@ body{background:#fff;color:var(--ink);font-weight:400;letter-spacing:0;-webkit-f
 .bz-btns{margin-block:var(--space-5) 0}
 /* ---- Shared rhythm ---------------------------------------------------------------- */
 /* Padding is set per band here; the components (map, cards) keep their own tighter spacing. */
-
+.bz-section[data-bz-node="depts"],.bz-section[data-bz-node="faq"],.bz-section[data-bz-node="cta"]{padding-block:clamp(56px,6vw,96px)}
+.bz-section[data-bz-node="find"]{padding-block:clamp(56px,6vw,96px) 0}
 main .bz-block{padding-block:0 var(--space-3)}
 main .bz-section p{max-width:none}
 .bz-block h2{font-size:clamp(1.375rem,2.1vw,1.875rem);line-height:1.1}
@@ -41,42 +42,64 @@ main .bz-section--bg-ink .bz-text p{color:rgba(255,255,255,.9)}
 .bz-block--buttons .bz-btns{display:flex;flex-wrap:wrap;gap:12px 22px;align-items:center}
 /* ---- Hero ------------------------------------------------------------------------------------ */
 .bz-section[data-bz-node="hero"]{min-height:clamp(300px,25vw,380px);display:flex;flex-direction:column;justify-content:center;padding:96px 0 64px;color:#fff;isolation:isolate}
-.bz-section[data-bz-node="hero"]::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,10,14,.25) 0%,rgba(8,10,14,.1) 55%,rgba(8,10,14,.3) 100%)}
+.bz-section[data-bz-node="hero"]::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,10,14,.3) 0%,rgba(8,10,14,.18) 55%,rgba(8,10,14,.4) 100%)}
 [data-bz-node="hero"] .bz-container{max-width:960px}
-[data-bz-node="hero-h"] h1{color:#fff;margin:0 0 var(--space-3);letter-spacing:.3em;font-size:clamp(1.75rem,4vw,3rem);line-height:1.1}
+[data-bz-node="hero-h"] h1{color:#fff;margin:0 0 var(--space-3);letter-spacing:.04em;font-size:clamp(1.75rem,4vw,3rem);line-height:1.1}
 [data-bz-node="hero-sub"] p{color:var(--accent)!important;font:500 clamp(1.125rem,2vw,1.5rem)/1.3 var(--font-heading)!important;text-transform:uppercase;margin:0!important}
 
 [data-bz-node="hero"] .bz-container{max-width:900px}
-[data-bz-node="hero-h"] .bz-eyebrow{color:var(--accent);letter-spacing:.24em;margin-bottom:var(--space-3)}
 [data-bz-node="hero-crumbs"] p{font:700 .625rem/1.4 var(--font-body)!important;letter-spacing:.2em;text-transform:uppercase;color:#fff!important;margin:0 0 var(--space-3)!important}
 [data-bz-node="hero-crumbs"] a{color:#fff;border-bottom:1px solid transparent;transition:border-color .18s ease}
 [data-bz-node="hero-crumbs"] a:hover{border-bottom-color:currentColor}
 [data-bz-node="hero-lede"] p{color:#fff!important;font-size:1rem!important;line-height:1.7;max-width:38rem;margin:0 auto!important}
 [data-bz-node="hero-cta"] .bz-btns{justify-content:center;margin-top:var(--space-5)}
 
+/* ---- Find a location (intro above the map and the cards) ------------------------------------- */
+[data-bz-node="find"] h2{max-width:22em}
+[data-bz-node="find-t"] p{max-width:46rem;margin:0}
 
-/* ---- Intro ------------------------------------------------------------------------------------ */
-.bz-section[data-bz-node="intro"]{padding-block:clamp(56px,6vw,96px)}
-[data-bz-node="intro"] h2{font-size:clamp(1.375rem,2.4vw,2rem);text-align:center;margin-bottom:var(--space-4)}
-[data-bz-node="intro-div"]{max-width:680px;margin-inline:auto}
-[data-bz-node="intro-t"] p{max-width:44rem;margin-inline:auto!important;text-align:center}
-[data-bz-node="intro-t"] a{color:var(--accent-dark);font-weight:700}
-/* ---- Message form: framed card on the paper band ------------------------------------------------ */
-.bz-section[data-bz-node="message"]{padding-block:clamp(48px,6vw,88px)}
-[data-bz-node="message-card"]{max-width:860px;margin-inline:auto;background:#fff;border:10px solid #d4dcde;border-radius:18px;padding:clamp(22px,3vw,40px)}
-[data-bz-node="message-card"] .bz-block{padding-block:0}
-[data-bz-node="message-t"] p{font-size:.9375rem!important;margin:0 0 var(--space-3)!important}
-[data-bz-node="message-form"] .bz-container{padding:0;max-width:none}
-[data-bz-node="message-form"] .bz-form{max-width:none;border:0;padding:0;background:transparent}
-[data-bz-node="message-form"] .bz-form__t{display:none}
-[data-bz-node="message-form"] label{font:700 .8125rem/1.4 var(--font-body)}
-[data-bz-node="message-form"] input[type=text],[data-bz-node="message-form"] input[type=email],[data-bz-node="message-form"] input[type=tel],[data-bz-node="message-form"] textarea{border:1px solid #bdbdb8;border-radius:2px;padding:11px 12px;font:400 .9375rem var(--font-body);width:100%;box-sizing:border-box;background:#fff}
-[data-bz-node="message-form"] textarea{min-height:140px}
-/* ---- Quick links: three equal buttons ------------------------------------------------------------ */
-[data-bz-node="links-btns"] .bz-btns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;max-width:1010px;margin:0 auto}
-[data-bz-node="links-btns"] .bz-btn{width:100%;justify-content:center;text-align:center}
-@media (max-width:700px){[data-bz-node="links-btns"] .bz-btns{grid-template-columns:1fr;gap:12px}}
-/* Filled accent buttons, as in the reference (global button styles stay untouched elsewhere). */
-[data-bz-node="links-btns"] .bz-btn,[data-bz-node="message-form"] button[type=submit]{background:var(--btn-orange,#ff6b3d);border-color:var(--btn-orange,#ff6b3d);color:#fff}
-[data-bz-node="links-btns"] .bz-btn:hover,[data-bz-node="message-form"] button[type=submit]:hover{background:var(--accent-dark);border-color:var(--accent-dark);color:#fff}
-[data-bz-node="message-form"] button[type=submit]{width:auto;min-width:200px;justify-self:start;padding:14px 26px;border:1px solid var(--btn-orange,#ff6b3d);cursor:pointer;font:700 .75rem/1 var(--font-body);letter-spacing:.14em;text-transform:uppercase}
+/* ---- Departments: four columns with a rule above each ---------------------------------------- */
+[data-bz-node="depts-h"]{margin-bottom:var(--space-4)}
+[data-bz-node="depts-list"] .bz-grid{gap:30px}
+[data-bz-node="depts-list"] .bz-feature{background:none;border:0;border-top:2px solid var(--ink);border-radius:0;padding:16px 0 0}
+[data-bz-node="depts-list"] .bz-feature__t{font:700 .8125rem/1.3 var(--font-heading);text-transform:uppercase;letter-spacing:.04em;margin:0 0 var(--space-2);color:var(--ink)}
+[data-bz-node="depts-list"] .bz-feature__d{font-size:.8125rem;line-height:1.7;color:#4a4945;margin:0}
+
+/* ---- Closing call-to-action ------------------------------------------------------------------ */
+[data-bz-node="cta-btn"] .bz-btns{justify-content:center;margin-top:var(--space-4)}
+
+[data-bz-node="hero-h"] .bz-eyebrow{color:var(--accent);letter-spacing:.24em;margin-bottom:var(--space-3)}
+
+/* ---- Ways to reach us + form: grey band, dark card beside the message form ---------------------- */
+.bz-section[data-bz-node="touch"]{padding-block:clamp(48px,6vw,88px)}
+[data-bz-node="touch-row"]{grid-template-columns:5fr 7fr;gap:clamp(32px,5vw,72px)}
+[data-bz-node="touch-row"]>.bz-col{grid-column:auto}
+[data-bz-node="touch-card"]{background:#151515;color:#fff;padding:clamp(28px,3vw,44px)}
+[data-bz-node="touch-card"] .bz-block{padding:0 0 var(--space-3)}
+[data-bz-node="touch-card"] h2{color:#fff;font-size:clamp(1.375rem,2.1vw,1.75rem)}
+[data-bz-node="touch-card-t"] .bz-text p{color:rgba(255,255,255,.9)!important;font-size:.875rem!important;line-height:1.7;position:relative;padding-left:18px;margin:0 0 14px!important}
+[data-bz-node="touch-card-t"] .bz-text p::before{content:"";position:absolute;left:0;top:.7em;width:5px;height:5px;border-radius:50%;background:var(--accent)}
+[data-bz-node="touch-card-cta"] .bz-btns{margin-top:var(--space-4)}
+[data-bz-node="touch-form"] h2{font-size:clamp(1.375rem,2.4vw,2.125rem)}
+[data-bz-node="touch-form"] .bz-block{padding-block:0 var(--space-3)}
+[data-bz-node="touch-form-t"] p{max-width:40rem;margin:0 0 var(--space-3)!important}
+[data-bz-node="touch-widget"] .bz-container{padding:0;max-width:none}
+[data-bz-node="touch-widget"] .bz-form{max-width:none;background:#fff;border:1px solid var(--line);padding:clamp(20px,2.6vw,32px)}
+[data-bz-node="touch-widget"] .bz-form__t{display:none}
+[data-bz-node="touch-widget"] label{font:700 .8125rem/1.4 var(--font-body)}
+[data-bz-node="touch-widget"] input[type=text],[data-bz-node="touch-widget"] input[type=email],[data-bz-node="touch-widget"] input[type=tel],[data-bz-node="touch-widget"] textarea{border:1px solid #bdbdb8;border-radius:2px;padding:11px 12px;font:400 .9375rem var(--font-body);width:100%;box-sizing:border-box;background:#fff}
+[data-bz-node="touch-widget"] textarea{min-height:130px}
+[data-bz-node="touch-widget"] button[type=submit]{background:var(--ink);border:1px solid var(--ink);color:#fff;padding:14px 26px;cursor:pointer;font:700 .75rem/1 var(--font-body);letter-spacing:.14em;text-transform:uppercase;justify-self:start;width:auto}
+[data-bz-node="touch-widget"] button[type=submit]:hover{background:var(--accent-dark);border-color:var(--accent-dark)}
+[data-bz-node="cta-btn-a"] .bz-btns,[data-bz-node="cta-btn-b"] .bz-btns{justify-content:center;margin-top:var(--space-4)}
+[data-bz-node="cta-t"] p{max-width:40rem;margin-inline:auto!important}
+
+@media (max-width:1100px){
+  [data-bz-node="touch-row"]{grid-template-columns:minmax(0,1fr);gap:32px}
+  [data-bz-node="touch-row"]>.bz-col{grid-column:1/-1}
+  [data-bz-node="depts-list"] .bz-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:640px){
+  .bz-section[data-bz-node="hero"]{padding:88px 0 48px}
+  [data-bz-node="depts-list"] .bz-grid{grid-template-columns:1fr}
+}
