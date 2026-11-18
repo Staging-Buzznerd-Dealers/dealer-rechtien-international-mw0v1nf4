@@ -221,6 +221,310 @@
     }
   },
   {
+    "slug": "team-raul-arellano",
+    "title": "Raul Arellano — Account Manager, Miami, FL",
+    "description": "Meet Raul Arellano, Account Manager at Rechtien Truck Group in Miami, FL. Contact Raul and browse inventory.",
+    "path": "/team/raul-arellano",
+    "out": "team/raul-arellano/index.html",
+    "dir": "team-raul-arellano",
+    "group": "team",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "team-jose-sanchez",
+    "title": "Jose Sanchez — Account Manager, Miami & Ft. Lauderdale, FL",
+    "description": "Meet Jose Sanchez, Account Manager at Rechtien Truck Group in Miami & Ft. Lauderdale, FL. Contact Jose and browse inventory.",
+    "path": "/team/jose-sanchez",
+    "out": "team/jose-sanchez/index.html",
+    "dir": "team-jose-sanchez",
+    "group": "team",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "team-abel-diaz",
+    "title": "Abel Diaz — Account Manager, Miami, FL",
+    "description": "Meet Abel Diaz, Account Manager at Rechtien Truck Group in Miami, FL. Contact Abel and browse inventory.",
+    "path": "/team/abel-diaz",
+    "out": "team/abel-diaz/index.html",
+    "dir": "team-abel-diaz",
+    "group": "team",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "team-hiram-gordillo",
+    "title": "Hiram Gordillo — Account Manager, Riviera Beach, FL",
+    "description": "Meet Hiram Gordillo, Account Manager at Rechtien Truck Group in Riviera Beach, FL. Contact Hiram and browse inventory.",
+    "path": "/team/hiram-gordillo",
+    "out": "team/hiram-gordillo/index.html",
+    "dir": "team-hiram-gordillo",
+    "group": "team",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "team-carlos-correa",
+    "title": "Carlos Correa — Account Manager, Riviera Beach, FL",
+    "description": "Meet Carlos Correa, Account Manager at Rechtien Truck Group in Riviera Beach, FL. Contact Carlos and browse inventory.",
+    "path": "/team/carlos-correa",
+    "out": "team/carlos-correa/index.html",
+    "dir": "team-carlos-correa",
+    "group": "team",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "team-laddie-williams",
+    "title": "Laddie Williams — Account Manager, Ft. Myers, FL",
+    "description": "Meet Laddie Williams, Account Manager at Rechtien Truck Group in Ft. Myers, FL. Contact Laddie and browse inventory.",
+    "path": "/team/laddie-williams",
+    "out": "team/laddie-williams/index.html",
+    "dir": "team-laddie-williams",
+    "group": "team",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "team-randy-betten",
+    "title": "Randy Betten — Account Manager, Ft. Myers, FL",
+    "description": "Meet Randy Betten, Account Manager at Rechtien Truck Group in Ft. Myers, FL. Contact Randy and browse inventory.",
+    "path": "/team/randy-betten",
+    "out": "team/randy-betten/index.html",
+    "dir": "team-randy-betten",
+    "group": "team",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "team-brandon-bowen",
+    "title": "Brandon Bowen — Account Manager, Columbia, SC",
+    "description": "Meet Brandon Bowen, Account Manager at Rechtien Truck Group in Columbia, SC. Contact Brandon and browse inventory.",
+    "path": "/team/brandon-bowen",
+    "out": "team/brandon-bowen/index.html",
+    "dir": "team-brandon-bowen",
+    "group": "team",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "team-kevin-kure",
+    "title": "Kevin Kure — Account Manager, Charleston, SC",
+    "description": "Meet Kevin Kure, Account Manager at Rechtien Truck Group in Charleston, SC. Contact Kevin and browse inventory.",
+    "path": "/team/kevin-kure",
+    "out": "team/kevin-kure/index.html",
+    "dir": "team-kevin-kure",
+    "group": "team",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "team-bill-faircloth",
+    "title": "Bill Faircloth — Account Manager, Columbia, SC",
+    "description": "Meet Bill Faircloth, Account Manager at Rechtien Truck Group in Columbia, SC. Contact Bill and browse inventory.",
+    "path": "/team/bill-faircloth",
+    "out": "team/bill-faircloth/index.html",
+    "dir": "team-bill-faircloth",
+    "group": "team",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "team-steve-wiser",
+    "title": "Steve Wiser — Account Manager, Columbia, SC",
+    "description": "Meet Steve Wiser, Account Manager at Rechtien Truck Group in Columbia, SC. Contact Steve and browse inventory.",
+    "path": "/team/steve-wiser",
+    "out": "team/steve-wiser/index.html",
+    "dir": "team-steve-wiser",
+    "group": "team",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "team-steven-myers",
+    "title": "Steven Myers — Account Manager, Greer, SC",
+    "description": "Meet Steven Myers, Account Manager at Rechtien Truck Group in Greer, SC. Contact Steven and browse inventory.",
+    "path": "/team/steven-myers",
+    "out": "team/steven-myers/index.html",
+    "dir": "team-steven-myers",
+    "group": "team",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "team-charlie-howle",
+    "title": "Charlie Howle — Account Manager, Charleston, SC",
+    "description": "Meet Charlie Howle, Account Manager at Rechtien Truck Group in Charleston, SC. Contact Charlie and browse inventory.",
+    "path": "/team/charlie-howle",
+    "out": "team/charlie-howle/index.html",
+    "dir": "team-charlie-howle",
+    "group": "team",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "team-charlie-champion",
+    "title": "Charlie Champion — Account Manager, Greer, SC",
+    "description": "Meet Charlie Champion, Account Manager at Rechtien Truck Group in Greer, SC. Contact Charlie and browse inventory.",
+    "path": "/team/charlie-champion",
+    "out": "team/charlie-champion/index.html",
+    "dir": "team-charlie-champion",
+    "group": "team",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "team-joe-allen",
+    "title": "Joe Allen — Account Manager, Florence, SC",
+    "description": "Meet Joe Allen, Account Manager at Rechtien Truck Group in Florence, SC. Contact Joe and browse inventory.",
+    "path": "/team/joe-allen",
+    "out": "team/joe-allen/index.html",
+    "dir": "team-joe-allen",
+    "group": "team",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "team-ricky-lee",
+    "title": "Ricky Lee — Account Manager, Columbia, SC",
+    "description": "Meet Ricky Lee, Account Manager at Rechtien Truck Group in Columbia, SC. Contact Ricky and browse inventory.",
+    "path": "/team/ricky-lee",
+    "out": "team/ricky-lee/index.html",
+    "dir": "team-ricky-lee",
+    "group": "team",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
     "slug": "emv-series",
     "title": "International eMV Electric Truck Series",
     "description": "The International eMV Series electric truck: 210 kWh battery, 135-mile range and a complete eMobility solution from Rechtien Truck Group.",

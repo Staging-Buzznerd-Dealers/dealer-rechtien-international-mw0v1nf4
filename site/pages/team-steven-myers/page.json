@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "profile",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "associate-profile",
+        "values": {
+          "name": "Steven Myers",
+          "firstName": "Steven",
+          "title": "Account Manager",
+          "locations": "Greer, SC",
+          "headshot": {
+            "src": "",
+            "alt": "Steven Myers, Account Manager"
+          },
+          "bio": "",
+          "experience": "",
+          "experienceNote": "",
+          "specialties": [],
+          "markets": [],
+          "phone": "",
+          "phoneUrl": "",
+          "email": "smyers@carolinainternational.com",
+          "ctaLabel": "Email Steven",
+          "ctaUrl": "mailto:smyers@carolinainternational.com",
+          "links": [
+            {
+              "label": "LinkedIn",
+              "url": "https://www.linkedin.com/in/steve-myers-97a93a96/"
+            }
+          ],
+          "inventoryUrl": "/store/inventory"
+        }
+      },
+      "children": []
+    }
+  ]
+}

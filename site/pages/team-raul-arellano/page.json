@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "profile",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "associate-profile",
+        "values": {
+          "name": "Raul Arellano",
+          "firstName": "Raul",
+          "title": "Account Manager",
+          "locations": "Miami, FL",
+          "headshot": {
+            "src": "",
+            "alt": "Raul Arellano, Account Manager"
+          },
+          "bio": "",
+          "experience": "",
+          "experienceNote": "",
+          "specialties": [],
+          "markets": [],
+          "phone": "",
+          "phoneUrl": "",
+          "email": "rarellano@rechtien.com",
+          "ctaLabel": "Email Raul",
+          "ctaUrl": "mailto:rarellano@rechtien.com",
+          "links": [
+            {
+              "label": "LinkedIn",
+              "url": "https://www.linkedin.com/in/raul-arellano-7b84125b/"
+            }
+          ],
+          "inventoryUrl": "/store/inventory?condition=new"
+        }
+      },
+      "children": []
+    }
+  ]
+}

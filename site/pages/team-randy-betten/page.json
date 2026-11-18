@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "profile",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "associate-profile",
+        "values": {
+          "name": "Randy Betten",
+          "firstName": "Randy",
+          "title": "Account Manager",
+          "locations": "Ft. Myers, FL",
+          "headshot": {
+            "src": "",
+            "alt": "Randy Betten, Account Manager"
+          },
+          "bio": "",
+          "experience": "",
+          "experienceNote": "",
+          "specialties": [],
+          "markets": [],
+          "phone": "",
+          "phoneUrl": "",
+          "email": "rbetten@rechtien.com",
+          "ctaLabel": "Email Randy",
+          "ctaUrl": "mailto:rbetten@rechtien.com",
+          "links": [
+            {
+              "label": "LinkedIn",
+              "url": "https://www.linkedin.com/in/randy-betten-a460a640/"
+            }
+          ],
+          "inventoryUrl": "/store/inventory"
+        }
+      },
+      "children": []
+    }
+  ]
+}

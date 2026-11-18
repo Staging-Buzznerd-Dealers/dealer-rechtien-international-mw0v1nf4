@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "profile",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "associate-profile",
+        "values": {
+          "name": "Brandon Bowen",
+          "firstName": "Brandon",
+          "title": "Account Manager",
+          "locations": "Columbia, SC",
+          "headshot": {
+            "src": "",
+            "alt": "Brandon Bowen, Account Manager"
+          },
+          "bio": "",
+          "experience": "",
+          "experienceNote": "",
+          "specialties": [],
+          "markets": [],
+          "phone": "",
+          "phoneUrl": "",
+          "email": "bbowen@carolinainternational.com",
+          "ctaLabel": "Email Brandon",
+          "ctaUrl": "mailto:bbowen@carolinainternational.com",
+          "links": [
+            {
+              "label": "LinkedIn",
+              "url": "https://www.linkedin.com/in/brandon-bowen-92101415/"
+            }
+          ],
+          "inventoryUrl": "/store/inventory?condition=new"
+        }
+      },
+      "children": []
+    }
+  ]
+}

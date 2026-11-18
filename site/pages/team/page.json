@@ -173,64 +173,34 @@
               "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
               "members": [
                 {
-                  "name": "Enim Adminim",
-                  "title": "General Manager",
+                  "name": "Raul Arellano",
+                  "title": "Account Manager",
                   "photo": {
                     "src": "",
-                    "alt": ""
+                    "alt": "Raul Arellano, Account Manager"
                   },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
+                  "inventoryUrl": "/store/inventory?condition=new",
+                  "profileUrl": "/team/raul-arellano"
                 },
                 {
-                  "name": "Veniam Quisnos",
-                  "title": "Parts Manager",
+                  "name": "Jose Sanchez",
+                  "title": "Account Manager",
                   "photo": {
                     "src": "",
-                    "alt": ""
+                    "alt": "Jose Sanchez, Account Manager"
                   },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
+                  "inventoryUrl": "/store/inventory?condition=new",
+                  "profileUrl": "/team/jose-sanchez"
                 },
                 {
-                  "name": "Trud Exercita",
-                  "title": "Service Manager",
+                  "name": "Abel Diaz",
+                  "title": "Account Manager",
                   "photo": {
                     "src": "",
-                    "alt": ""
+                    "alt": "Abel Diaz, Account Manager"
                   },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Ullam Colabor",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Nisi Utaliquip",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Exea Commodo",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
+                  "inventoryUrl": "/store/inventory?condition=used",
+                  "profileUrl": "/team/abel-diaz"
                 }
               ]
             },
@@ -241,64 +211,14 @@
               "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
               "members": [
                 {
-                  "name": "Duis Auteirure",
-                  "title": "General Manager",
+                  "name": "Jose Sanchez",
+                  "title": "Account Manager",
                   "photo": {
                     "src": "",
-                    "alt": ""
+                    "alt": "Jose Sanchez, Account Manager"
                   },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Dolor Inrepre",
-                  "title": "Parts Manager",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Hend Eritinvol",
-                  "title": "Service Manager",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Uptate Velitesse",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Cillum Dolore",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Fugiat Nulla",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
+                  "inventoryUrl": "/store/inventory?condition=new",
+                  "profileUrl": "/team/jose-sanchez"
                 }
               ]
             },
@@ -309,64 +229,24 @@
               "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
               "members": [
                 {
-                  "name": "Paria Turexcep",
-                  "title": "General Manager",
+                  "name": "Hiram Gordillo",
+                  "title": "Account Manager",
                   "photo": {
                     "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Teursint Occae",
-                  "title": "Parts Manager",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Cati Cupidatat",
-                  "title": "Service Manager",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Nonpro Ident",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
+                    "alt": "Hiram Gordillo, Account Manager"
                   },
                   "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
+                  "profileUrl": "/team/hiram-gordillo"
                 },
                 {
-                  "name": "Lorem Ipsum",
-                  "title": "Account Executive",
+                  "name": "Carlos Correa",
+                  "title": "Account Manager",
                   "photo": {
                     "src": "",
-                    "alt": ""
+                    "alt": "Carlos Correa, Account Manager"
                   },
                   "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Dolor Sitamet",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
+                  "profileUrl": "/team/carlos-correa"
                 }
               ]
             },
@@ -445,64 +325,24 @@
               "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
               "members": [
                 {
-                  "name": "Enim Adminim",
-                  "title": "General Manager",
+                  "name": "Laddie Williams",
+                  "title": "Account Manager",
                   "photo": {
                     "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Veniam Quisnos",
-                  "title": "Parts Manager",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Trud Exercita",
-                  "title": "Service Manager",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Ullam Colabor",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
+                    "alt": "Laddie Williams, Account Manager"
                   },
                   "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
+                  "profileUrl": "/team/laddie-williams"
                 },
                 {
-                  "name": "Nisi Utaliquip",
-                  "title": "Account Executive",
+                  "name": "Randy Betten",
+                  "title": "Account Manager",
                   "photo": {
                     "src": "",
-                    "alt": ""
+                    "alt": "Randy Betten, Account Manager"
                   },
                   "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Exea Commodo",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
+                  "profileUrl": "/team/randy-betten"
                 }
               ]
             },
@@ -513,64 +353,44 @@
               "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
               "members": [
                 {
-                  "name": "Duis Auteirure",
-                  "title": "General Manager",
+                  "name": "Brandon Bowen",
+                  "title": "Account Manager",
                   "photo": {
                     "src": "",
-                    "alt": ""
+                    "alt": "Brandon Bowen, Account Manager"
                   },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
+                  "inventoryUrl": "/store/inventory?condition=new",
+                  "profileUrl": "/team/brandon-bowen"
                 },
                 {
-                  "name": "Dolor Inrepre",
-                  "title": "Parts Manager",
+                  "name": "Bill Faircloth",
+                  "title": "Account Manager",
                   "photo": {
                     "src": "",
-                    "alt": ""
+                    "alt": "Bill Faircloth, Account Manager"
                   },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
+                  "inventoryUrl": "/store/inventory?condition=new",
+                  "profileUrl": "/team/bill-faircloth"
                 },
                 {
-                  "name": "Hend Eritinvol",
-                  "title": "Service Manager",
+                  "name": "Steve Wiser",
+                  "title": "Account Manager",
                   "photo": {
                     "src": "",
-                    "alt": ""
+                    "alt": "Steve Wiser, Account Manager"
                   },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
+                  "inventoryUrl": "/store/inventory?condition=new",
+                  "profileUrl": "/team/steve-wiser"
                 },
                 {
-                  "name": "Uptate Velitesse",
-                  "title": "Account Executive",
+                  "name": "Ricky Lee",
+                  "title": "Account Manager",
                   "photo": {
                     "src": "",
-                    "alt": ""
+                    "alt": "Ricky Lee, Account Manager"
                   },
-                  "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Cillum Dolore",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Fugiat Nulla",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
+                  "inventoryUrl": "/store/inventory?condition=used",
+                  "profileUrl": "/team/ricky-lee"
                 }
               ]
             },
@@ -581,64 +401,24 @@
               "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
               "members": [
                 {
-                  "name": "Paria Turexcep",
-                  "title": "General Manager",
+                  "name": "Kevin Kure",
+                  "title": "Account Manager",
                   "photo": {
                     "src": "",
-                    "alt": ""
+                    "alt": "Kevin Kure, Account Manager"
                   },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
+                  "inventoryUrl": "/store/inventory?condition=new",
+                  "profileUrl": "/team/kevin-kure"
                 },
                 {
-                  "name": "Teursint Occae",
-                  "title": "Parts Manager",
+                  "name": "Charlie Howle",
+                  "title": "Account Manager",
                   "photo": {
                     "src": "",
-                    "alt": ""
+                    "alt": "Charlie Howle, Account Manager"
                   },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Cati Cupidatat",
-                  "title": "Service Manager",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Nonpro Ident",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Lorem Ipsum",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Dolor Sitamet",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
+                  "inventoryUrl": "/store/inventory?condition=new",
+                  "profileUrl": "/team/charlie-howle"
                 }
               ]
             },
@@ -649,64 +429,14 @@
               "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
               "members": [
                 {
-                  "name": "Consec Tetur",
-                  "title": "General Manager",
+                  "name": "Joe Allen",
+                  "title": "Account Manager",
                   "photo": {
                     "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Adipis Cingelit",
-                  "title": "Parts Manager",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Sedo Eiusmod",
-                  "title": "Service Manager",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Tempor Incidid",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
+                    "alt": "Joe Allen, Account Manager"
                   },
                   "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Utlab Oredolore",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Magna Aliqua",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
+                  "profileUrl": "/team/joe-allen"
                 }
               ]
             },
@@ -853,64 +583,24 @@
               "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
               "members": [
                 {
-                  "name": "Paria Turexcep",
-                  "title": "General Manager",
+                  "name": "Steven Myers",
+                  "title": "Account Manager",
                   "photo": {
                     "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Teursint Occae",
-                  "title": "Parts Manager",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Cati Cupidatat",
-                  "title": "Service Manager",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Nonpro Ident",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
+                    "alt": "Steven Myers, Account Manager"
                   },
                   "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
+                  "profileUrl": "/team/steven-myers"
                 },
                 {
-                  "name": "Lorem Ipsum",
-                  "title": "Account Executive",
+                  "name": "Charlie Champion",
+                  "title": "Account Manager",
                   "photo": {
                     "src": "",
-                    "alt": ""
+                    "alt": "Charlie Champion, Account Manager"
                   },
                   "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Dolor Sitamet",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
+                  "profileUrl": "/team/charlie-champion"
                 }
               ]
             }

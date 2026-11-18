@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "profile",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "associate-profile",
+        "values": {
+          "name": "Carlos Correa",
+          "firstName": "Carlos",
+          "title": "Account Manager",
+          "locations": "Riviera Beach, FL",
+          "headshot": {
+            "src": "",
+            "alt": "Carlos Correa, Account Manager"
+          },
+          "bio": "",
+          "experience": "",
+          "experienceNote": "",
+          "specialties": [],
+          "markets": [],
+          "phone": "",
+          "phoneUrl": "",
+          "email": "ccorrea@rechtien.com",
+          "ctaLabel": "Email Carlos",
+          "ctaUrl": "mailto:ccorrea@rechtien.com",
+          "links": [
+            {
+              "label": "LinkedIn",
+              "url": "https://www.linkedin.com/in/carlos-correa-0410299/"
+            }
+          ],
+          "inventoryUrl": "/store/inventory"
+        }
+      },
+      "children": []
+    }
+  ]
+}

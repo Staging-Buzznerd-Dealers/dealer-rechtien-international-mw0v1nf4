@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "profile",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "associate-profile",
+        "values": {
+          "name": "Charlie Howle",
+          "firstName": "Charlie",
+          "title": "Account Manager",
+          "locations": "Charleston, SC",
+          "headshot": {
+            "src": "",
+            "alt": "Charlie Howle, Account Manager"
+          },
+          "bio": "",
+          "experience": "",
+          "experienceNote": "",
+          "specialties": [],
+          "markets": [],
+          "phone": "",
+          "phoneUrl": "",
+          "email": "chowle@carolinainternational.com",
+          "ctaLabel": "Email Charlie",
+          "ctaUrl": "mailto:chowle@carolinainternational.com",
+          "links": [
+            {
+              "label": "LinkedIn",
+              "url": "https://www.linkedin.com/in/charlie-howle-1787b975/"
+            }
+          ],
+          "inventoryUrl": "/store/inventory?condition=new"
+        }
+      },
+      "children": []
+    }
+  ]
+}

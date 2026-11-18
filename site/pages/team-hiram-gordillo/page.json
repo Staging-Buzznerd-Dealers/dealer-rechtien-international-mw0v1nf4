@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "profile",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "associate-profile",
+        "values": {
+          "name": "Hiram Gordillo",
+          "firstName": "Hiram",
+          "title": "Account Manager",
+          "locations": "Riviera Beach, FL",
+          "headshot": {
+            "src": "",
+            "alt": "Hiram Gordillo, Account Manager"
+          },
+          "bio": "",
+          "experience": "",
+          "experienceNote": "",
+          "specialties": [],
+          "markets": [],
+          "phone": "",
+          "phoneUrl": "",
+          "email": "hgordillo@rechtien.com",
+          "ctaLabel": "Email Hiram",
+          "ctaUrl": "mailto:hgordillo@rechtien.com",
+          "links": [
+            {
+              "label": "LinkedIn",
+              "url": "https://www.linkedin.com/in/hiramgordillo/"
+            }
+          ],
+          "inventoryUrl": "/store/inventory"
+        }
+      },
+      "children": []
+    }
+  ]
+}
