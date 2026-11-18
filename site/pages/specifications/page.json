@@ -489,15 +489,15 @@
               "docs": [
                 {
                   "label": "LT Series brochure",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/2c/int_brochure-ltseries-2024-9-23-1-1.pdf"
                 },
                 {
                   "label": "LT Series Day Cab",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/36/int_ltseries-daycabspecs-2024-9-23-1-1.pdf"
                 },
                 {
                   "label": "LT Series Sleeper",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/74/int_ltseries-sleeperspecs-2024-9-23-1-1.pdf"
                 }
               ],
               "inventoryUrl": "/store/inventory",
