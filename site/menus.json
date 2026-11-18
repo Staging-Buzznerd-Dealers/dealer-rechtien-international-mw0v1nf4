@@ -491,15 +491,6 @@
                   "url": "/emv-series",
                   "newTab": false,
                   "children": []
-                },
-                {
-                  "id": "item-69",
-                  "label": "IC Bus",
-                  "type": "url",
-                  "ref": null,
-                  "url": "/why-ic-bus",
-                  "newTab": false,
-                  "children": []
                 }
               ]
             }
@@ -1038,8 +1029,9 @@
           "id": "item-7",
           "label": "Online Shop",
           "type": "url",
-          "url": "#",
           "ref": null,
+          "url": "#",
+          "newTab": false,
           "children": []
         }
       ]
