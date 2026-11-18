@@ -800,15 +800,6 @@
               "newTab": false,
               "children": [
                 {
-                  "id": "hn-ebay",
-                  "label": "Online Shop",
-                  "type": "url",
-                  "ref": null,
-                  "url": "#",
-                  "newTab": true,
-                  "children": []
-                },
-                {
                   "id": "hn-fleetrite",
                   "label": "Fleetrite",
                   "type": "url",
@@ -830,8 +821,9 @@
                   "id": "item-71",
                   "label": "Export Sales (ES)",
                   "type": "url",
-                  "url": "/camiones-usados-exportacion-america-latina-caribe",
                   "ref": null,
+                  "url": "/camiones-usados-exportacion-america-latina-caribe",
+                  "newTab": false,
                   "children": []
                 }
               ]
@@ -1041,6 +1033,14 @@
               ]
             }
           ]
+        },
+        {
+          "id": "item-7",
+          "label": "Online Shop",
+          "type": "url",
+          "url": "#",
+          "ref": null,
+          "children": []
         }
       ]
     },

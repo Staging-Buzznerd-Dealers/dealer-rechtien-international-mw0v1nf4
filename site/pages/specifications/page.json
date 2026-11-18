@@ -240,12 +240,12 @@
                             "items": [
                               {
                                 "label": "View PDF",
-                                "url": "",
+                                "url": "https://vendure.ai4dealerships.com/assets/source/af/int-s13-spec-sheet-ltandrh-2024-9-23-2-1.pdf",
                                 "style": "primary"
                               },
                               {
                                 "label": "Download PDF",
-                                "url": "",
+                                "url": "https://vendure.ai4dealerships.com/assets/source/af/int-s13-spec-sheet-ltandrh-2024-9-23-2-1.pdf",
                                 "style": "secondary"
                               }
                             ],
@@ -286,12 +286,12 @@
                             "items": [
                               {
                                 "label": "View PDF",
-                                "url": "",
+                                "url": "https://vendure.ai4dealerships.com/assets/source/ad/int-s13-spec-sheet-hx-2024-9-23-2-1.pdf",
                                 "style": "primary"
                               },
                               {
                                 "label": "Download PDF",
-                                "url": "",
+                                "url": "https://vendure.ai4dealerships.com/assets/source/ad/int-s13-spec-sheet-hx-2024-9-23-2-1.pdf",
                                 "style": "secondary"
                               }
                             ],
@@ -370,17 +370,17 @@
                       {
                         "label": "CV Series comparison",
                         "meta": "PDF",
-                        "url": ""
+                        "url": "https://vendure.ai4dealerships.com/assets/source/23/cv_04_24_2026_10_34_09-1-1.pdf"
                       },
                       {
                         "label": "HX Series comparison",
                         "meta": "PDF",
-                        "url": ""
+                        "url": "https://vendure.ai4dealerships.com/assets/source/aa/hx_04_24_2026_03_44_43-1.pdf"
                       },
                       {
                         "label": "LT Series comparison",
                         "meta": "PDF",
-                        "url": ""
+                        "url": "https://vendure.ai4dealerships.com/assets/source/8b/lt_04_24_2026_10_41_05-1.pdf"
                       }
                     ]
                   }
@@ -406,31 +406,31 @@
               "docs": [
                 {
                   "label": "MV Series brochure",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/fb/int24-mv-series-brochure-2024-9-23-2-1.pdf"
                 },
                 {
                   "label": "MV Specifications",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/e5/int24-pm-mv-series-spec-sheet-final-1.pdf"
                 },
                 {
                   "label": "MV Dry Van",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/e8/int24-pm-mv-series-van-spec-sheet-final-1.pdf"
                 },
                 {
                   "label": "MV Utility",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/00/int24-pm-mv-series-utility-spec-sheet-final-1.pdf"
                 },
                 {
                   "label": "MV Recovery",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/3c/int24-mv-series-recovery-spec-sheet-final-1.pdf"
                 },
                 {
                   "label": "MV Boom",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/d5/int24-mv-series-boom-spec-sheet-final-1.pdf"
                 },
                 {
                   "label": "MV Snowplow",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/6d/int24-pm-mv-series-snowplow-spec-sheet-final-1.pdf"
                 }
               ],
               "inventoryUrl": "/store/inventory",
@@ -443,15 +443,15 @@
               "docs": [
                 {
                   "label": "eMV Series brochure",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/4c/int_brochure-emvseries-9-26-1-1.pdf"
                 },
                 {
                   "label": "eMV Specifications",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/40/int_emvseries-specs-2024-9-23-1-1.pdf"
                 },
                 {
                   "label": "eMV Body Integration",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/96/pm_international_specsheet-epower_2024-final-web-1.pdf"
                 }
               ],
               "inventoryUrl": "/store/inventory",
@@ -464,19 +464,19 @@
               "docs": [
                 {
                   "label": "HV509 specifications",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/ca/int_hv-series-specs-509-2024-9-23-2-1.pdf"
                 },
                 {
                   "label": "HV515 specifications",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/b9/int_hv-series-specs-515-2024-9-23-2-1.pdf"
                 },
                 {
                   "label": "HV609 specifications",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/2b/int_hv-series-specs-609-2024-9-23-2-1.pdf"
                 },
                 {
                   "label": "HV615 specifications",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/4c/int_hv-series-specs-615-2024-9-23-2-1.pdf"
                 }
               ],
               "inventoryUrl": "/store/inventory",
@@ -489,15 +489,15 @@
               "docs": [
                 {
                   "label": "LT Series brochure",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/2c/int_brochure-ltseries-2024-9-23-1-1.pdf"
                 },
                 {
                   "label": "LT Series Day Cab",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/36/int_ltseries-daycabspecs-2024-9-23-1-1.pdf"
                 },
                 {
                   "label": "LT Series Sleeper",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/74/int_ltseries-sleeperspecs-2024-9-23-1-1.pdf"
                 }
               ],
               "inventoryUrl": "/store/inventory",
@@ -510,15 +510,15 @@
               "docs": [
                 {
                   "label": "RH Series brochure",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/8f/int_brochure-rhseries-9-23-1-1.pdf"
                 },
                 {
                   "label": "RH Series Day Cab",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/88/int_rhseries-daycabspecs-2024-9-23-1-1.pdf"
                 },
                 {
                   "label": "RH Series Sleeper",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/62/int_rhseries-sleeperspecs-2024-9-23-1-1.pdf"
                 }
               ],
               "inventoryUrl": "/store/inventory",
@@ -531,15 +531,15 @@
               "docs": [
                 {
                   "label": "HX Series brochure",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/42/int_hx-series-brochure-2024-9-23-3-1.pdf"
                 },
                 {
                   "label": "HX520 specifications",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/eb/pm_int_hx520specs-v1.1-1.pdf"
                 },
                 {
                   "label": "HX620 specifications",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/1c/int_hx620specs-2024-9-23-2-1.pdf"
                 }
               ],
               "inventoryUrl": "/store/inventory",
@@ -552,7 +552,7 @@
               "docs": [
                 {
                   "label": "CV Series brochure",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/58/int_cv-series-brochure-9-23-2-1.pdf"
                 }
               ],
               "inventoryUrl": "/store/inventory",
@@ -565,15 +565,15 @@
               "docs": [
                 {
                   "label": "LoneStar Series brochure",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/0d/lonestar_1-1.pdf"
                 },
                 {
                   "label": "LoneStar Day Cab",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/0b/lonestar_daycab-1.pdf"
                 },
                 {
                   "label": "LoneStar Sleeper",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/cf/lonestar_sleeper-1.pdf"
                 }
               ],
               "inventoryUrl": "/store/inventory",
