@@ -422,15 +422,15 @@
                 },
                 {
                   "label": "MV Recovery",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/3c/int24-mv-series-recovery-spec-sheet-final-1.pdf"
                 },
                 {
                   "label": "MV Boom",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/d5/int24-mv-series-boom-spec-sheet-final-1.pdf"
                 },
                 {
                   "label": "MV Snowplow",
-                  "url": ""
+                  "url": "https://vendure.ai4dealerships.com/assets/source/6d/int24-pm-mv-series-snowplow-spec-sheet-final-1.pdf"
                 }
               ],
               "inventoryUrl": "/store/inventory",
