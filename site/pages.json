@@ -165,6 +165,24 @@
     }
   },
   {
+    "slug": "truck-alignments",
+    "title": "Truck Alignments | Carolina International Trucks",
+    "description": "Computerized truck and trailer alignments at every Rechtien Truck Group location, with before and after print-outs from factory-trained technicians.",
+    "path": "/truck-alignments",
+    "out": "truck-alignments/index.html",
+    "dir": "truck-alignments",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
     "slug": "mobile-service",
     "title": "Mobile Truck Service | Idealease Mobile Service",
     "description": "Idealease Mobile Service brings truck maintenance to your location, at Rechtien Truck Group in South Florida and South Carolina.",

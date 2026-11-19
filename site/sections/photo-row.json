@@ -1,0 +1,61 @@
+{
+  "version": 2,
+  "id": "photo-row",
+  "name": "Photo row",
+  "description": "A row of photos, up to three across, each with its own alt text. Used for the technician photos on the truck alignments page.",
+  "props": [
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Photos",
+      "fields": [
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Photo"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "pr",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "pr-row",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "pr-item",
+              "type": "column",
+              "props": {
+                "span": 4,
+                "repeat": "items"
+              },
+              "children": [
+                {
+                  "id": "pr-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Photo row: equal-height photos, three across. */\n[data-bz-node=\"pr-row\"]{grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.4vw,32px)}\n[data-bz-node=\"pr-row\"]>.bz-col{grid-column:auto}\n[data-bz-node^=\"pr-img\"] .bz-container,[data-bz-node^=\"pr-img\"] .bz-figure{padding:0;margin:0;max-width:none}\n[data-bz-node^=\"pr-img\"] img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:4px}\n@media (max-width:640px){[data-bz-node=\"pr-row\"]{grid-template-columns:minmax(0,1fr)}}"
+}

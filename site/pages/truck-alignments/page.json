@@ -1,0 +1,196 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center",
+        "anchor": "top"
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "hero-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-crumbs",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Home</a> / <a href=\"/service\">Service</a> / Truck Alignments",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Truck Alignments at Carolina International Trucks",
+                    "headingLevel": 1,
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "styles": {
+        "base": {
+          "backgroundImage": "/images/hero-truck.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
+          "background": "#151515"
+        }
+      }
+    },
+    {
+      "id": "body",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "body-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "body-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "body-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "By the time you’ve noticed an unusual wear pattern on your tires, it is already too late for a truck alignment. You’ve ruined a good set of tires, and once they have a poor wear pattern, they can’t be fixed. An improper truck alignment (along with improper tire inflation) is the number one cause of poor fuel economy and failure in tires.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "body-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Our computerized alignment machines read every possible measurement on your truck or trailer, including caster, camber, toe, and more. With measurement possibilities down to 1/32\", our experienced technicians will give you before and after print-outs showing you how your vehicle came in, what we did to correct the alignment, and specifications after.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "body-t3",
+                  "type": "text",
+                  "props": {
+                    "text": "Truck and trailer alignments are available at every one of our locations, and will be performed by factory-trained technicians. For our customers in the Florence area, we will even bring our alignment machine to you with our Mobile Maintenance unit! Prices vary depending on axles, and not every alignment costs the same. Please call one of our stores today to get more details and schedule your appointment.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "photos",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "photo-row",
+        "values": {
+          "items": [
+            {
+              "image": {
+                "src": "/images/image-needed.svg",
+                "alt": "A technician beside a computerized truck alignment machine",
+                "width": 800,
+                "height": 600
+              }
+            },
+            {
+              "image": {
+                "src": "/images/image-needed.svg",
+                "alt": "A technician fitting an alignment sensor to a truck wheel",
+                "width": 800,
+                "height": 600
+              }
+            },
+            {
+              "image": {
+                "src": "/images/image-needed.svg",
+                "alt": "A technician adjusting the alignment on a truck wheel",
+                "width": 800,
+                "height": 600
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 6
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cta-btn",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "schedule-service-short",
+                        "label": "Service appointment",
+                        "style": "primary"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
