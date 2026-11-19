@@ -508,6 +508,14 @@
                   "url": "/truck-configurator",
                   "ref": null,
                   "children": []
+                },
+                {
+                  "id": "item-74",
+                  "label": "Zero Emissions Truck",
+                  "type": "url",
+                  "url": "/zero-emissions",
+                  "ref": null,
+                  "children": []
                 }
               ]
             }
