@@ -1,0 +1,66 @@
+/* ==========================================================================
+   CIT University — Rechtien Truck Group
+   Loaded on this page only (site/pages/cit-university/style.css). Base type, tokens
+   and buttons match the other page-scoped stylesheets so the shared header/footer
+   chrome (site/templates/home.json) renders the same here. Layout: image hero, then logo and copy side by side.
+   Fonts come from site/tokens.json (INTL Headline / INTL Text).
+   ========================================================================== */
+:root{
+  --accent:#ff6b3d; --accent-dark:#e0522a;
+  --ink:#151515; --ink-dark:#0c0c0c;
+  --muted:#6b6a66; --line:#d8d8d4; --card:#ffffff; --paper:#e6e6e4;
+  --night:#2b2a27;
+  --text-h1:clamp(1.75rem,3.05vw,2.875rem);
+  --text-h2:clamp(1.5rem,2.45vw,2.25rem);
+  --text-h3:1.375rem;
+  --text-body:1rem; --text-small:.875rem; --text-eyebrow:.6875rem;
+  --weight-heading:800; --leading-heading:1.1;
+  --container:1266px;
+  --radius-nav:4px; --radius-input:2px; --radius-card:0; --radius-chip:4px;
+}
+body{background:#fff;color:var(--ink);font-weight:400;letter-spacing:0;-webkit-font-smoothing:antialiased}
+/* ---- Type ---------------------------------------------------------------- */
+.bz-block h1,.bz-block h2,.bz-block h3{text-transform:uppercase;letter-spacing:0;font-weight:700}
+.bz-block h1{font-size:var(--text-h1);line-height:1.04}
+.bz-block h2{font-size:clamp(1.375rem,2vw,1.8125rem);line-height:1.08;margin-bottom:var(--space-5)}
+.bz-block p{font-size:.9375rem;line-height:1.75}
+.bz-block .bz-eyebrow,.bz-eyebrow{font:700 var(--text-eyebrow)/1.4 var(--font-body);letter-spacing:.22em;color:var(--muted);margin-bottom:var(--space-2)}
+.bz-block--heading{padding-block:0 var(--space-2)}
+/* Buttons: styled globally (site/custom-code.json). Rules here only position them. */
+.bz-btns{margin-block:var(--space-5) 0}
+/* ---- Shared rhythm ---------------------------------------------------------------- */
+main .bz-section[data-bz-node]:not([data-bz-node="hero"]){padding-block:clamp(56px,6vw,96px)}
+main .bz-block{padding-block:0 var(--space-3)}
+main .bz-section p{max-width:none}
+.bz-block h2{font-size:clamp(1.375rem,2.1vw,1.875rem);line-height:1.1}
+.bz-block .bz-eyebrow,.bz-eyebrow{font:700 .625rem/1.4 var(--font-body);letter-spacing:.22em;color:var(--muted);margin-bottom:var(--space-2)}
+main .bz-text p{font-size:.875rem;line-height:1.85;color:#3d3c39;margin:0 0 var(--space-3)}
+.bz-section--bg-ink{background:var(--night)}
+main .bz-section--bg-ink .bz-eyebrow{color:rgba(255,255,255,.75)}
+main .bz-section--bg-ink h2,main .bz-section--bg-ink h3{color:#fff}
+main .bz-section--bg-ink .bz-text p{color:rgba(255,255,255,.9)}
+.bz-block--buttons .bz-btns{display:flex;flex-wrap:wrap;gap:12px 22px;align-items:center}
+/* ---- Hero: centred headline over a dark image ------------------------------------------ */
+.bz-section[data-bz-node="hero"]{min-height:clamp(380px,30vw,480px);display:flex;flex-direction:column;justify-content:center;padding:120px 0 64px;color:#fff;isolation:isolate}
+.bz-section[data-bz-node="hero"]::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,10,14,.72) 0%,rgba(8,10,14,.5) 55%,rgba(8,10,14,.66) 100%)}
+[data-bz-node="hero"] .bz-container{max-width:900px}
+[data-bz-node="hero-crumbs"] p{font:700 .625rem/1.4 var(--font-body)!important;letter-spacing:.2em;text-transform:uppercase;color:#fff!important;margin:0 0 var(--space-3)!important}
+[data-bz-node="hero-crumbs"] a{color:#fff;border-bottom:1px solid transparent;transition:border-color .18s ease}
+[data-bz-node="hero-crumbs"] a:hover{border-bottom-color:currentColor}
+[data-bz-node="hero-h"] .bz-eyebrow{color:var(--accent);letter-spacing:.24em;margin-bottom:var(--space-3)}
+[data-bz-node="hero-h"] h1{color:#fff;margin:0 auto var(--space-4);max-width:16em;text-wrap:balance}
+[data-bz-node="hero-lede"] p{color:#fff!important;font-size:1rem!important;line-height:1.75;max-width:40rem;margin:0 auto!important}
+/* ---- Logo + copy ------------------------------------------------------------------------------------ */
+[data-bz-node="uni-row"]{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,5vw,72px);align-items:start}
+[data-bz-node="uni-row"]>.bz-col{grid-column:auto}
+[data-bz-node="uni-logo"] .bz-container,[data-bz-node="uni-logo"] .bz-figure{padding:0;margin:0 auto;max-width:300px}
+[data-bz-node="uni-logo"] img{display:block;width:100%;height:auto}
+[data-bz-node="uni-cap"] p{font-size:.8125rem!important;text-align:center;max-width:26rem;margin:var(--space-4) auto var(--space-3)!important}
+[data-bz-node="uni-brand"] h3{font:700 1.125rem/1.2 var(--font-heading);text-transform:uppercase;text-align:center;margin:0}
+[data-bz-node="uni-copy"] .bz-text p{font-size:.9375rem;line-height:1.85}
+[data-bz-node="uni-copy"] a{color:var(--ink);border-bottom:1px solid currentColor}
+[data-bz-node="uni-join-t"] p,[data-bz-node="uni-enrolled"] p{font-size:1rem!important;text-align:center;margin:var(--space-5) 0 0!important}
+[data-bz-node="uni-join"] .bz-btns,[data-bz-node="uni-login"] .bz-btns{justify-content:center;margin:var(--space-2) 0 0}
+[data-bz-node="uni-login"] .bz-btns{margin-top:var(--space-4)}
+@media (max-width:1100px){[data-bz-node="uni-row"]{grid-template-columns:minmax(0,1fr);gap:32px}[data-bz-node="uni-row"]>.bz-col{grid-column:1/-1}}
+@media (max-width:640px){.bz-section[data-bz-node="hero"]{padding:104px 0 56px;min-height:360px}}

@@ -633,6 +633,24 @@
     }
   },
   {
+    "slug": "cit-university",
+    "title": "Carolina International Trucks University | Rechtien Truck Group",
+    "description": "Customized online training from Carolina International Trucks: service systems, maintenance and repair procedures, completion certificates and verified learning.",
+    "path": "/cit-university",
+    "out": "cit-university/index.html",
+    "dir": "cit-university",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
     "slug": "carolina-service-express",
     "title": "Carolina Service Express: Fast Truck Service in South Carolina",
     "description": "Carolina Service Express (CSE) at Rechtien Truck Group: quick lube, express repairs, complete truck & trailer PM, menu pricing and factory-trained technicians across South Carolina.",
