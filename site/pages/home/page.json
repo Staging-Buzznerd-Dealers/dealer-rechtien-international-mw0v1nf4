@@ -243,28 +243,6 @@
           "heading": "Find a location",
           "brandLabel": "Brand",
           "intro": "Ready to find the right commercial trucks for your business? Visit us at one of our convenient locations across South Florida and South Carolina to find the perfect trucks and trailers for your needs.",
-          "states": [
-            {
-              "label": "Florida",
-              "key": "florida",
-              "icon": {
-                "src": "/logos/state-florida.svg",
-                "alt": "",
-                "width": 64,
-                "height": 64
-              }
-            },
-            {
-              "label": "Carolina",
-              "key": "carolina",
-              "icon": {
-                "src": "/logos/state-carolina.svg",
-                "alt": "",
-                "width": 64,
-                "height": 64
-              }
-            }
-          ],
           "brandOptions": {
             "source": "location-brands"
           },
