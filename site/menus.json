@@ -1038,6 +1038,14 @@
               "url": "https://www.idealease.com/safety-compliance/safety-bulletins",
               "ref": null,
               "children": []
+            },
+            {
+              "id": "item-72",
+              "label": "Mobile Service",
+              "type": "url",
+              "url": "/mobile-service",
+              "ref": null,
+              "children": []
             }
           ]
         }
