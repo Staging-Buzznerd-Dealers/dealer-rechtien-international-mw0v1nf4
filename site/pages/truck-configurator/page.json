@@ -1,0 +1,573 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "center",
+        "anchor": "top"
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "hero-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-crumbs",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Home</a> / Truck Configurator",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Semi Truck Configurator",
+                    "headingLevel": 1,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "hero-lede",
+                  "type": "text",
+                  "props": {
+                    "text": "Build your International the way the job needs it — series, cab, powertrain and equipment — then send us the spec for pricing, lead time and upfit.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "start-building"
+                      },
+                      {
+                        "ctaId": "view-inventory",
+                        "url": "/store/inventory"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "styles": {
+        "base": {
+          "backgroundImage": "/images/red-international-truck.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
+          "background": "#151515"
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "intro-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "intro-copy",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "intro-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "The configurator is the fastest way to turn a job description into a real truck spec. Pick the series, work through the cab, powertrain and equipment choices, and see what the build looks like before you talk price.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "It’s free and no account is needed. When you have a build you like, send it over — we’ll quote it, tell you the current lead time and check whether a comparable unit is already on the ground in South Florida or South Carolina.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "build",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "configurator"
+      },
+      "children": [
+        {
+          "id": "build-head",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "stackOn": "mobile",
+            "align": "end"
+          },
+          "children": [
+            {
+              "id": "build-head-copy",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "build-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Build your truck.",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "build-head-btn",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "build-open",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "open-configurator",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "build-card",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "stackOn": "tablet",
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "build-card-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "build-card-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "HX™ Series custom builder",
+                    "headingLevel": 3,
+                    "align": "left",
+                    "eyebrow": "International configurator"
+                  }
+                },
+                {
+                  "id": "build-card-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Step through each part of the truck, then save or screenshot the build and send it to us.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "build-steps",
+                  "type": "list",
+                  "props": {
+                    "headingLevel": 3,
+                    "columns": 2,
+                    "items": [
+                      {
+                        "label": "Truck series"
+                      },
+                      {
+                        "label": "Vocation"
+                      },
+                      {
+                        "label": "Paint color"
+                      },
+                      {
+                        "label": "Powertrain"
+                      },
+                      {
+                        "label": "Cab + axles"
+                      },
+                      {
+                        "label": "Exterior"
+                      },
+                      {
+                        "label": "Accessories"
+                      },
+                      {
+                        "label": "Interior"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "build-card-btn",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "open-configurator",
+                        "style": "primary"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "build-card-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "build-card-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/red-international-truck.jpg",
+                      "alt": "A red International truck",
+                      "width": 1200,
+                      "height": 800
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "build-note-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "build-note-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "build-note",
+                  "type": "text",
+                  "props": {
+                    "text": "The configurator is hosted by International. If it doesn’t load in the frame above, open it in a new tab. Pricing and availability are confirmed by Rechtien Truck Group — see our <a href=\"/terms\">Terms and Conditions</a>.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "series",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "series-cards",
+        "values": {
+          "eyebrow": "Start from a series",
+          "heading": "Which International fits the job?",
+          "intro": "Pick the family first, then spec it. Every series has a brochure and spec sheets if you want the numbers before you start building, and the configurator lets you switch series once it’s open.",
+          "items": [
+            {
+              "eyebrow": "Severe service",
+              "title": "HX Series",
+              "text": "Heavy-haul and severe-service chassis for dump, mixer, crane and heavy vocational work. S13 Integrated Powertrain available.",
+              "linkLabel": "View more",
+              "url": "/store/inventory"
+            },
+            {
+              "eyebrow": "On highway",
+              "title": "LT Series",
+              "text": "Line-haul and regional tractor, day cab or sleeper, built around fuel economy and driver comfort. S13 available.",
+              "linkLabel": "View more",
+              "url": "/store/inventory"
+            },
+            {
+              "eyebrow": "On highway",
+              "title": "RH Series",
+              "text": "Regional haul tractor for shorter runs and mixed duty cycles, day cab or sleeper. S13 available.",
+              "linkLabel": "View more",
+              "url": "/store/inventory"
+            },
+            {
+              "eyebrow": "Vocational",
+              "title": "HV Series",
+              "text": "Vocational chassis in HV509, HV515, HV609 and HV615 configurations for municipal, utility and construction fleets.",
+              "linkLabel": "View more",
+              "url": "/store/inventory"
+            },
+            {
+              "eyebrow": "Medium duty",
+              "title": "MV Series",
+              "text": "Medium-duty workhorse for dry van, utility, recovery, boom and snowplow bodies — the most upfit-friendly of the lineup.",
+              "linkLabel": "View more",
+              "url": "/store/inventory"
+            },
+            {
+              "eyebrow": "Class 4–5 / electric",
+              "title": "CV & eMV Series",
+              "text": "CV Series for class 4–5 work, and the battery-electric eMV Series with body integration guidance for zero-emission routes.",
+              "linkLabel": "View more",
+              "url": "/emv-series"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "steps",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "process-steps",
+        "values": {
+          "eyebrow": "From build to delivery",
+          "heading": "Four steps.",
+          "items": [
+            {
+              "number": "01",
+              "title": "Pick the series",
+              "text": "Start from the family that fits the job — severe service, on-highway, vocational or medium duty.",
+              "linkLabel": "Compare series",
+              "url": "#series"
+            },
+            {
+              "number": "02",
+              "title": "Build the spec",
+              "text": "Work through cab, powertrain, axles, wheelbase and equipment. The S13 Integrated Powertrain is available on LT, RH and HX.",
+              "linkLabel": "S13 Powertrain",
+              "url": "/specifications"
+            },
+            {
+              "number": "03",
+              "title": "Send it to us",
+              "text": "Save or screenshot the build and send it over. We confirm pricing, lead time and whether a comparable unit is in stock.",
+              "linkLabel": "Send your build",
+              "url": "#send"
+            },
+            {
+              "number": "04",
+              "title": "Finance and upfit",
+              "text": "Financing with minimum down payment and approved credit, then body, hoist or liftgate work before delivery.",
+              "linkLabel": "Financing",
+              "url": "/financing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "faq",
+        "background": "paper"
+      },
+      "children": [
+        {
+          "id": "faq-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "faq-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "faq-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common questions.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Configurator FAQs"
+                  }
+                },
+                {
+                  "id": "faq-list",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "Is the truck configurator free to use?",
+                          "a": "Yes. The International configurator is free and requires no account. Build as many specs as you like, then send the one you want priced to our sales team."
+                        },
+                        {
+                          "q": "Does the configurator show prices?",
+                          "a": "No. Send us the build you like and we’ll confirm pricing, lead time and whether a comparable unit is already in stock."
+                        },
+                        {
+                          "q": "Which series can I configure?",
+                          "a": "The HX, LT, RH, HV, MV, CV and eMV Series. Pick the family first, and the configurator lets you switch series once it’s open."
+                        },
+                        {
+                          "q": "Can I order the S13 Integrated Powertrain?",
+                          "a": "The S13 Integrated Powertrain is available on the LT, RH and HX Series. Choose it while you build your spec, then send the build to us."
+                        },
+                        {
+                          "q": "How long does a factory order take?",
+                          "a": "It depends on the series, the spec and the current build schedule. Send us your build and we’ll confirm the current lead time and check whether a comparable unit is already in stock."
+                        },
+                        {
+                          "q": "Can you add a body or equipment to the build?",
+                          "a": "Yes. We can arrange body, hoist or liftgate work before delivery. Tell us what the job needs when you send your build."
+                        }
+                      ]
+                    },
+                    "snapshot": {
+                      "items": []
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "ink",
+        "anchor": "send"
+      },
+      "children": [
+        {
+          "id": "cta-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "cta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "cta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Send it over and we’ll price it.",
+                    "headingLevel": 2,
+                    "align": "center",
+                    "eyebrow": "Built a spec?"
+                  }
+                },
+                {
+                  "id": "cta-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Call (800) 666-3040 or message us with your build. We’ll confirm pricing, lead time and whether something close is already in stock.",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "cta-btn",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "call-main-cta"
+                      },
+                      {
+                        "ctaId": "send-your-build"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

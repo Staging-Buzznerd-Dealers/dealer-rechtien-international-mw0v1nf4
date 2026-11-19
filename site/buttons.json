@@ -828,5 +828,32 @@
     "intent": "parts-enquiry",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "start-building",
+    "label": "Start building",
+    "url": "#configurator",
+    "style": "primary",
+    "intent": "start-configurator",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "open-configurator",
+    "label": "Open the configurator in a new tab",
+    "url": "https://www.navconfig.com/index.html#/",
+    "style": "secondary",
+    "intent": "start-configurator",
+    "newTab": true,
+    "active": true
+  },
+  {
+    "id": "send-your-build",
+    "label": "Send your build",
+    "url": "/contact",
+    "style": "primary",
+    "intent": "contact",
+    "newTab": false,
+    "active": true
   }
 ]
