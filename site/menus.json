@@ -1030,7 +1030,16 @@
           "ref": null,
           "url": "https://dealer-rechtien-international-mw0v1.vercel.app/lease-rental",
           "newTab": false,
-          "children": []
+          "children": [
+            {
+              "id": "item-71",
+              "label": "Safety and Compliance Sign Up",
+              "type": "url",
+              "url": "https://www.idealease.com/safety-compliance/safety-bulletins",
+              "ref": null,
+              "children": []
+            }
+          ]
         }
       ]
     },
