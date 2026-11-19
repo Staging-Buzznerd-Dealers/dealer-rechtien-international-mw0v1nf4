@@ -426,6 +426,14 @@
                   "url": null,
                   "newTab": false,
                   "children": []
+                },
+                {
+                  "id": "item-71",
+                  "label": "Ottawa Truck Center",
+                  "type": "url",
+                  "url": "https://ottawatruckscenter.com/inventory/",
+                  "ref": null,
+                  "children": []
                 }
               ]
             },
@@ -585,17 +593,7 @@
               "ref": null,
               "url": null,
               "newTab": false,
-              "children": [
-                {
-                  "id": "item-66",
-                  "label": "Ottawa",
-                  "type": "url",
-                  "ref": null,
-                  "url": "https://ottawatruckscenter.com/inventory/",
-                  "newTab": true,
-                  "children": []
-                }
-              ]
+              "children": []
             }
           ]
         },
