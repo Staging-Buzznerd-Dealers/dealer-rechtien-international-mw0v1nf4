@@ -1,0 +1,104 @@
+{
+  "id": "location-contact",
+  "name": "Contact Our Team",
+  "status": "live",
+  "surfaces": ["page"],
+  "intent": "request-info",
+  "submitLabel": "Send request",
+  "successMessage": "Thanks — someone from the team will be in touch.",
+  "consent": {
+    "enabled": true,
+    "required": true,
+    "text": "I agree to be contacted about this enquiry by phone, text or email."
+  },
+  "fields": [
+    { "id": "lc-first", "type": "first_name", "label": "First name", "required": true },
+    { "id": "lc-last", "type": "last_name", "label": "Last name", "required": true },
+    { "id": "lc-email", "type": "email", "label": "Email", "required": true },
+    { "id": "lc-phone", "type": "phone", "label": "Phone", "required": false },
+    {
+      "id": "lc-topic",
+      "type": "dropdown",
+      "label": "What is this about?",
+      "required": true,
+      "placeholder": "Choose…",
+      "options": [
+        { "value": "sales", "label": "Sales" },
+        { "value": "service", "label": "Service" }
+      ]
+    },
+    {
+      "id": "lc-inventory",
+      "type": "dropdown",
+      "label": "Inventory Type",
+      "required": true,
+      "placeholder": "Choose…",
+      "options": [
+        { "value": "New Inventory", "label": "New Inventory" },
+        { "value": "Used Inventory", "label": "Used Inventory" }
+      ],
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [{ "fieldId": "lc-topic", "operator": "is", "value": "sales" }]
+      }
+    },
+    {
+      "id": "lc-location",
+      "type": "dropdown",
+      "label": "Select Location",
+      "required": true,
+      "placeholder": "Choose…",
+      "options": [
+        { "value": "Miami", "label": "Miami" },
+        { "value": "Ft. Lauderdale", "label": "Ft. Lauderdale" },
+        { "value": "Riviera Beach", "label": "Riviera Beach" },
+        { "value": "Ft. Pierce", "label": "Ft. Pierce" },
+        { "value": "Ft. Myers", "label": "Ft. Myers" },
+        { "value": "Charleston", "label": "Charleston" },
+        { "value": "Columbia", "label": "Columbia" },
+        { "value": "Conway", "label": "Conway" },
+        { "value": "Florence", "label": "Florence" },
+        { "value": "Greenville", "label": "Greenville" },
+        { "value": "Greer", "label": "Greer" }
+      ],
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [{ "fieldId": "lc-topic", "operator": "is", "value": "service" }]
+      }
+    },
+    {
+      "id": "lc-unit",
+      "type": "single_line",
+      "label": "Which unit or part?",
+      "required": false,
+      "logic": {
+        "logic": "OR",
+        "action": "show",
+        "rules": [{ "fieldId": "lc-topic", "operator": "is", "value": "service" }]
+      }
+    },
+    { "id": "lc-message", "type": "paragraph", "label": "Message", "required": false }
+  ],
+  "notifications": [
+    {
+      "id": "lc-sales",
+      "name": "Sales enquiries",
+      "logic": "AND",
+      "rules": [{ "fieldId": "lc-topic", "operator": "is", "value": "sales" }],
+      "targetType": "role",
+      "roleId": "salesperson",
+      "scopeMode": "dynamic"
+    },
+    {
+      "id": "lc-service",
+      "name": "Service enquiries",
+      "logic": "AND",
+      "rules": [{ "fieldId": "lc-topic", "operator": "is", "value": "service" }],
+      "targetType": "role",
+      "roleId": "service-advisor",
+      "scopeMode": "dynamic"
+    }
+  ]
+}

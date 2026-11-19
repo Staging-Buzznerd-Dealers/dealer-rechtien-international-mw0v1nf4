@@ -697,7 +697,7 @@
                   "id": "contact-form",
                   "type": "form",
                   "props": {
-                    "formId": "request-info"
+                    "formId": "location-contact"
                   }
                 }
               ]
