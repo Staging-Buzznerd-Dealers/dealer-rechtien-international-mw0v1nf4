@@ -174,11 +174,6 @@
             "fieldId": "lc-topic",
             "operator": "is",
             "value": "parts"
-          },
-          {
-            "fieldId": "lc-topic",
-            "operator": "is",
-            "value": "service"
           }
         ]
       }
