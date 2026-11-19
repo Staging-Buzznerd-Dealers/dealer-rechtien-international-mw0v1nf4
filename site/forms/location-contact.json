@@ -140,13 +140,23 @@
         }
       ],
       "logic": {
-        "logic": "AND",
+        "logic": "OR",
         "action": "show",
         "rules": [
           {
             "fieldId": "lc-topic",
             "operator": "is",
+            "value": "sales"
+          },
+          {
+            "fieldId": "lc-topic",
+            "operator": "is",
             "value": "service"
+          },
+          {
+            "fieldId": "lc-topic",
+            "operator": "is",
+            "value": "parts"
           }
         ]
       }
