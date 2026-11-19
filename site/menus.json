@@ -1043,28 +1043,49 @@
         {
           "id": "item-7",
           "label": "Leasing and Rentals",
-          "type": "url",
-          "ref": null,
-          "url": "https://dealer-rechtien-international-mw0v1.vercel.app/lease-rental",
+          "type": "page",
+          "ref": "lease-rental",
           "newTab": false,
           "children": [
             {
-              "id": "item-71",
-              "label": "Safety and Compliance Sign Up",
-              "type": "url",
+              "id": "hn-lease-col",
+              "label": "Lease & Rental",
+              "type": "label",
               "ref": null,
-              "url": "https://www.idealease.com/safety-compliance/safety-bulletins",
-              "newTab": false,
-              "children": []
+              "children": [
+                {
+                  "id": "hn-lease-overview",
+                  "label": "Leasing and Rentals",
+                  "type": "page",
+                  "ref": "lease-rental"
+                },
+                {
+                  "id": "item-72",
+                  "label": "Mobile Service",
+                  "type": "url",
+                  "ref": null,
+                  "url": "/mobile-service",
+                  "newTab": false,
+                  "children": []
+                }
+              ]
             },
             {
-              "id": "item-72",
-              "label": "Mobile Service",
-              "type": "url",
+              "id": "hn-lease-more",
+              "label": "Idealease",
+              "type": "label",
               "ref": null,
-              "url": "/mobile-service",
-              "newTab": false,
-              "children": []
+              "children": [
+                {
+                  "id": "item-71",
+                  "label": "Safety and Compliance Sign Up",
+                  "type": "url",
+                  "ref": null,
+                  "url": "https://www.idealease.com/safety-compliance/safety-bulletins",
+                  "newTab": false,
+                  "children": []
+                }
+              ]
             }
           ]
         }
