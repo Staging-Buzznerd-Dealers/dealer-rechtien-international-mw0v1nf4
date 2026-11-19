@@ -1027,10 +1027,10 @@
         },
         {
           "id": "item-7",
-          "label": "Online Shop",
+          "label": "Leasing and Rentals",
           "type": "url",
           "ref": null,
-          "url": "#",
+          "url": "https://dealer-rechtien-international-mw0v1.vercel.app/lease-rental",
           "newTab": false,
           "children": []
         }
