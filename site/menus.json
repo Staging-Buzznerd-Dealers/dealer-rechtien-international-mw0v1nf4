@@ -505,16 +505,18 @@
                   "id": "item-73",
                   "label": "Truck Configurator",
                   "type": "url",
-                  "url": "/truck-configurator",
                   "ref": null,
+                  "url": "/truck-configurator",
+                  "newTab": false,
                   "children": []
                 },
                 {
                   "id": "item-74",
                   "label": "Zero Emissions Truck",
                   "type": "url",
-                  "url": "/zero-emissions",
                   "ref": null,
+                  "url": "/zero-emissions",
+                  "newTab": false,
                   "children": []
                 }
               ]
@@ -602,15 +604,6 @@
                   "children": []
                 }
               ]
-            },
-            {
-              "id": "item-65",
-              "label": "Others Links",
-              "type": "label",
-              "ref": null,
-              "url": null,
-              "newTab": false,
-              "children": []
             }
           ]
         },
@@ -1045,6 +1038,7 @@
           "label": "Leasing and Rentals",
           "type": "page",
           "ref": "lease-rental",
+          "url": null,
           "newTab": false,
           "children": [
             {
@@ -1052,12 +1046,17 @@
               "label": "Lease & Rental",
               "type": "label",
               "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "hn-lease-overview",
                   "label": "Leasing and Rentals",
                   "type": "page",
-                  "ref": "lease-rental"
+                  "ref": "lease-rental",
+                  "url": null,
+                  "newTab": false,
+                  "children": []
                 },
                 {
                   "id": "item-72",
@@ -1075,6 +1074,8 @@
               "label": "Idealease",
               "type": "label",
               "ref": null,
+              "url": null,
+              "newTab": false,
               "children": [
                 {
                   "id": "item-71",
