@@ -874,5 +874,14 @@
     "intent": "login",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "finance-department",
+    "label": "Finance department",
+    "url": "/financing",
+    "style": "primary",
+    "intent": "financing",
+    "newTab": false,
+    "active": true
   }
 ]
