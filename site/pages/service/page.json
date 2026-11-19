@@ -3159,19 +3159,39 @@
                         }
                       },
                       {
-                        "name": "Kalmar Ottawa"
+                        "name": "Kalmar Ottawa",
+                        "image": {
+                          "src": "/logos/kalmar-ottawa.png",
+                          "alt": "Kalmar Ottawa"
+                        }
                       },
                       {
-                        "name": "Cummins"
+                        "name": "Cummins",
+                        "image": {
+                          "src": "/logos/cummins.png",
+                          "alt": "Cummins"
+                        }
                       },
                       {
-                        "name": "Allison Transmission"
+                        "name": "Allison Transmission",
+                        "image": {
+                          "src": "/logos/allison-transmission.png",
+                          "alt": "Allison Transmission"
+                        }
                       },
                       {
-                        "name": "East"
+                        "name": "East",
+                        "image": {
+                          "src": "/logos/east.png",
+                          "alt": "East"
+                        }
                       },
                       {
-                        "name": "Diamond Edge"
+                        "name": "Diamond Edge",
+                        "image": {
+                          "src": "/logos/diamond-edge.png",
+                          "alt": "Diamond Edge"
+                        }
                       }
                     ]
                   }
