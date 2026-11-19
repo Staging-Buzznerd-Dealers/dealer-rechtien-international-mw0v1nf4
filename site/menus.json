@@ -433,7 +433,7 @@
                   "type": "url",
                   "ref": null,
                   "url": "https://ottawatruckscenter.com/inventory/",
-                  "newTab": false,
+                  "newTab": true,
                   "children": []
                 }
               ]
@@ -1107,7 +1107,7 @@
                   "type": "url",
                   "ref": null,
                   "url": "https://www.idealease.com/safety-compliance/safety-bulletins",
-                  "newTab": false,
+                  "newTab": true,
                   "children": []
                 }
               ]
