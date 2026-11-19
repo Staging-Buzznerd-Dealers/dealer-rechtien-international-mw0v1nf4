@@ -157,7 +157,7 @@
                   "id": "touch-widget",
                   "type": "form",
                   "props": {
-                    "formId": "contact-us"
+                    "formId": "location-contact"
                   }
                 }
               ]
