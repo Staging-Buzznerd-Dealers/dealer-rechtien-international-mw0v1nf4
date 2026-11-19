@@ -855,5 +855,24 @@
     "intent": "contact",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "student-education-request",
+    "label": "Student Education Request",
+    "url": null,
+    "formId": "request-info",
+    "style": "link",
+    "intent": "register",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "cit-university-login",
+    "label": "Login to CIT University",
+    "url": "#",
+    "style": "primary",
+    "intent": "login",
+    "newTab": false,
+    "active": true
   }
 ]
