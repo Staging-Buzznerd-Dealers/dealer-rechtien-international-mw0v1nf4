@@ -431,8 +431,9 @@
                   "id": "item-71",
                   "label": "Ottawa Truck Center",
                   "type": "url",
-                  "url": "https://ottawatruckscenter.com/inventory/",
                   "ref": null,
+                  "url": "https://ottawatruckscenter.com/inventory/",
+                  "newTab": false,
                   "children": []
                 }
               ]
@@ -498,6 +499,14 @@
                   "ref": null,
                   "url": "/emv-series",
                   "newTab": false,
+                  "children": []
+                },
+                {
+                  "id": "item-73",
+                  "label": "Truck Configurator",
+                  "type": "url",
+                  "url": "/truck-configurator",
+                  "ref": null,
                   "children": []
                 }
               ]
@@ -1035,16 +1044,18 @@
               "id": "item-71",
               "label": "Safety and Compliance Sign Up",
               "type": "url",
-              "url": "https://www.idealease.com/safety-compliance/safety-bulletins",
               "ref": null,
+              "url": "https://www.idealease.com/safety-compliance/safety-bulletins",
+              "newTab": false,
               "children": []
             },
             {
               "id": "item-72",
               "label": "Mobile Service",
               "type": "url",
-              "url": "/mobile-service",
               "ref": null,
+              "url": "/mobile-service",
+              "newTab": false,
               "children": []
             }
           ]
