@@ -1,0 +1,156 @@
+{
+  "version": 2,
+  "id": "process-steps",
+  "name": "Numbered steps",
+  "description": "A dark band: heading, then up to four numbered steps with a short paragraph and a link each. Used for 'Four steps' on the truck configurator page.",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": "From build to delivery"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Four steps."
+    },
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Steps",
+      "fields": [
+        {
+          "key": "number",
+          "type": "text",
+          "label": "Number"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "text",
+          "type": "textarea",
+          "label": "Description"
+        },
+        {
+          "key": "linkLabel",
+          "type": "text",
+          "label": "Link label"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "st",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "st-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "st-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "st-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "{{eyebrow}}"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "st-grid",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "st-item",
+              "type": "column",
+              "props": {
+                "span": 3,
+                "repeat": "items"
+              },
+              "children": [
+                {
+                  "id": "st-n",
+                  "type": "text",
+                  "props": {
+                    "text": "{{number}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "st-item-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "st-item-t",
+                  "type": "text",
+                  "props": {
+                    "text": "{{text}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "st-item-b",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{linkLabel}}",
+                        "url": "{{url}}",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Numbered steps on the dark band. */\n.bz-section[data-bz-node=\"st\"]{background:#2b2a27}\n[data-bz-node=\"st-grid\"]{margin-top:var(--space-5);grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(20px,3vw,40px)}\n[data-bz-node=\"st-grid\"]>.bz-col{grid-column:auto;display:flex;flex-direction:column}\n[data-bz-node^=\"st-n\"] p{font:700 .625rem/1.4 var(--font-body)!important;letter-spacing:.18em;color:rgba(255,255,255,.7)!important;margin:0 0 var(--space-2)!important}\n[data-bz-node^=\"st-item-h\"] h3{font:700 1rem/1.2 var(--font-heading);text-transform:uppercase;color:#fff;margin:0 0 var(--space-3)}\n[data-bz-node^=\"st-item-t\"] p{font-size:.8125rem!important;line-height:1.8;color:rgba(255,255,255,.82)!important;margin:0!important}\n[data-bz-node^=\"st-item-b\"]{margin-top:auto;padding-top:var(--space-4)}\n[data-bz-node^=\"st-item-b\"] .bz-btns{margin:0}\n[data-bz-node^=\"st-item-b\"] .bz-btn{font:700 .6875rem/1 var(--font-body);letter-spacing:.08em}\n@media (max-width:1100px){[data-bz-node=\"st-grid\"]{grid-template-columns:repeat(2,minmax(0,1fr))}}\n@media (max-width:640px){[data-bz-node=\"st-grid\"]{grid-template-columns:minmax(0,1fr)}}"
+}

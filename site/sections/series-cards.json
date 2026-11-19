@@ -1,0 +1,170 @@
+{
+  "version": 2,
+  "id": "series-cards",
+  "name": "Series cards",
+  "description": "A heading, intro and a grid of cards: small label, title, one short paragraph and a link. Used for the International series on the truck configurator page.",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow",
+      "default": "Start from a series"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Which International fits the job?"
+    },
+    {
+      "key": "intro",
+      "type": "textarea",
+      "label": "Intro"
+    },
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Cards",
+      "fields": [
+        {
+          "key": "eyebrow",
+          "type": "text",
+          "label": "Label"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "text",
+          "type": "textarea",
+          "label": "Description"
+        },
+        {
+          "key": "linkLabel",
+          "type": "text",
+          "label": "Link label"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "sr",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "anchor": "series"
+      },
+      "children": [
+        {
+          "id": "sr-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "sr-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "sr-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "{{eyebrow}}"
+                  }
+                },
+                {
+                  "id": "sr-t",
+                  "type": "text",
+                  "props": {
+                    "text": "{{intro}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sr-grid",
+          "type": "row",
+          "props": {
+            "gap": 4,
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "sr-card",
+              "type": "column",
+              "props": {
+                "span": 4,
+                "repeat": "items"
+              },
+              "children": [
+                {
+                  "id": "sr-card-e",
+                  "type": "text",
+                  "props": {
+                    "text": "{{eyebrow}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "sr-card-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "sr-card-t",
+                  "type": "text",
+                  "props": {
+                    "text": "{{text}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "sr-card-b",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{linkLabel}}",
+                        "url": "{{url}}",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "/* Series cards: bordered white cards in a three-column grid. */\n[data-bz-node=\"sr-t\"] p{max-width:40rem}\n[data-bz-node=\"sr-grid\"]{margin-top:var(--space-5);grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}\n[data-bz-node=\"sr-grid\"]>.bz-col{grid-column:auto;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);padding:clamp(22px,2.4vw,30px)}\n[data-bz-node^=\"sr-card-e\"] p{font:700 .625rem/1.4 var(--font-body)!important;letter-spacing:.18em;text-transform:uppercase;color:var(--ink)!important;margin:0 0 var(--space-2)!important}\n[data-bz-node^=\"sr-card-h\"] h3{font:700 1.0625rem/1.2 var(--font-heading);text-transform:uppercase;margin:0 0 var(--space-3)}\n[data-bz-node^=\"sr-card-t\"] p{font-size:.8125rem!important;line-height:1.8;color:#4a4945!important;margin:0!important}\n[data-bz-node^=\"sr-card-b\"]{margin-top:auto;padding-top:var(--space-4)}\n[data-bz-node^=\"sr-card-b\"] .bz-btns{margin:0}\n[data-bz-node^=\"sr-card-b\"] .bz-btn{font:700 .6875rem/1 var(--font-body);letter-spacing:.08em}\n@media (max-width:1100px){[data-bz-node=\"sr-grid\"]{grid-template-columns:repeat(2,minmax(0,1fr))}}\n@media (max-width:640px){[data-bz-node=\"sr-grid\"]{grid-template-columns:minmax(0,1fr)}}"
+}

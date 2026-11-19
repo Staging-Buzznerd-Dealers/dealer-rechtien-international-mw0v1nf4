@@ -147,6 +147,24 @@
     }
   },
   {
+    "slug": "truck-configurator",
+    "title": "Semi Truck Configurator | Rechtien Truck Group",
+    "description": "Build your International semi truck by series, cab, powertrain and equipment, then send Rechtien Truck Group the spec for pricing, lead time and upfit.",
+    "path": "/truck-configurator",
+    "out": "truck-configurator/index.html",
+    "dir": "truck-configurator",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
     "slug": "mobile-service",
     "title": "Mobile Truck Service | Idealease Mobile Service",
     "description": "Idealease Mobile Service brings truck maintenance to your location, at Rechtien Truck Group in South Florida and South Carolina.",
