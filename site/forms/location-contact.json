@@ -192,14 +192,27 @@
       "logic": "AND",
       "rules": [
         {
+          "fieldId": "lc-inventory",
+          "operator": "is",
+          "value": "New Inventory"
+        },
+        {
           "fieldId": "lc-topic",
           "operator": "is",
           "value": "sales"
+        },
+        {
+          "fieldId": "lc-location",
+          "operator": "is",
+          "value": "Miami"
         }
       ],
-      "targetType": "role",
+      "targetType": "email",
       "roleId": "salesperson",
-      "scopeMode": "dynamic"
+      "scopeMode": "dynamic",
+      "administratorId": "10",
+      "contactName": "sharma",
+      "email": "sharma@buzznerd.com"
     },
     {
       "id": "lc-service",
@@ -233,7 +246,7 @@
       "scopeMode": "dynamic"
     }
   ],
-  "updatedAt": "2026-11-20T16:19:35.037Z",
+  "updatedAt": "2026-11-20T16:44:33.362Z",
   "confirmations": [
     {
       "id": "c-mwp6oio51",
