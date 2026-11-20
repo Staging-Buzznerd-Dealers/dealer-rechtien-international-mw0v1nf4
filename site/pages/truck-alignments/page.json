@@ -123,26 +123,26 @@
           "items": [
             {
               "image": {
-                "src": "/images/image-needed.svg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/b8/picture_2.png",
                 "alt": "A technician beside a computerized truck alignment machine",
-                "width": 800,
-                "height": 600
+                "width": 190,
+                "height": 181
               }
             },
             {
               "image": {
-                "src": "/images/image-needed.svg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/75/picture_1.png",
                 "alt": "A technician fitting an alignment sensor to a truck wheel",
-                "width": 800,
-                "height": 600
+                "width": 186,
+                "height": 201
               }
             },
             {
               "image": {
-                "src": "/images/image-needed.svg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/1d/picture_3.png",
                 "alt": "A technician adjusting the alignment on a truck wheel",
-                "width": 800,
-                "height": 600
+                "width": 183,
+                "height": 152
               }
             }
           ]
