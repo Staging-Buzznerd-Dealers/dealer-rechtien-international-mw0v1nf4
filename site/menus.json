@@ -787,6 +787,14 @@
                   "url": "/parts#delivery",
                   "newTab": false,
                   "children": []
+                },
+                {
+                  "id": "item-80",
+                  "label": "Buy on Ebay",
+                  "type": "url",
+                  "url": "https://www.ebay.com/str/rechtienintl",
+                  "ref": null,
+                  "children": []
                 }
               ]
             },
@@ -885,8 +893,9 @@
                   "id": "item-77",
                   "label": "Truck Alignments",
                   "type": "url",
-                  "url": "/truck-alignments",
                   "ref": null,
+                  "url": "/truck-alignments",
+                  "newTab": false,
                   "children": []
                 }
               ]
@@ -957,8 +966,9 @@
                   "id": "item-79",
                   "label": "CIT University",
                   "type": "url",
-                  "url": "/cit-university",
                   "ref": null,
+                  "url": "/cit-university",
+                  "newTab": false,
                   "children": []
                 }
               ]
@@ -1030,8 +1040,9 @@
                   "id": "item-78",
                   "label": "Section 179 Deduction",
                   "type": "url",
-                  "url": "/q4-advantage",
                   "ref": null,
+                  "url": "/q4-advantage",
+                  "newTab": false,
                   "children": []
                 }
               ]
