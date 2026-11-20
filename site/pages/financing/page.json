@@ -696,8 +696,10 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/financing-dump-truck.jpg",
-                      "alt": "International dump truck, available new or used with customized leases and secured loans"
+                      "src": "https://vendure.ai4dealerships.com/assets/source/d5/red-international-truck.jpg",
+                      "alt": "International dump truck, available new or used with customized leases and secured loans",
+                      "width": 700,
+                      "height": 484
                     },
                     "width": "full"
                   }
