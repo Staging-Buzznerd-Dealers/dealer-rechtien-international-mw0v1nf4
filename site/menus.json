@@ -791,7 +791,8 @@
                   "type": "url",
                   "url": "https://www.ebay.com/str/rechtienintl",
                   "ref": null,
-                  "children": []
+                  "children": [],
+                  "newTab": true
                 }
               ]
             },
