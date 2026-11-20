@@ -111,7 +111,7 @@
         {
           "fieldId": "spec:category",
           "operator": "is",
-          "value": "Used"
+          "value": "Used Inventory"
         }
       ],
       "targetType": "user",
@@ -120,5 +120,5 @@
       "administratorId": "10"
     }
   ],
-  "updatedAt": "2026-11-20T16:40:08.331Z"
+  "updatedAt": "2026-11-20T16:42:05.562Z"
 }
