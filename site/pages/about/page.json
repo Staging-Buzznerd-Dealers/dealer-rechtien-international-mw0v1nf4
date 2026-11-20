@@ -600,23 +600,28 @@
                       },
                       {
                         "label": "International Trucks",
-                        "meta": "International® medium, heavy and severe service trucks at both dealerships."
+                        "meta": "International® medium, heavy and severe service trucks at both dealerships.",
+                        "url": "/store/inventory"
                       },
                       {
                         "label": "Hino Trucks",
-                        "meta": "Hino trucks at Rechtien Truck Group."
+                        "meta": "Hino trucks at Rechtien Truck Group.",
+                        "url": "/store/inventory"
                       },
                       {
                         "label": "Mitsubishi FUSO Trucks",
-                        "meta": "Medium duty commercial work trucks at Rechtien Truck Group, South Carolina."
+                        "meta": "Medium duty commercial work trucks at Rechtien Truck Group, South Carolina.",
+                        "url": "/store/inventory"
                       },
                       {
                         "label": "IC Bus",
-                        "meta": "School and commercial buses sold, serviced and supported by Rechtien Truck Group, South Carolina."
+                        "meta": "School and commercial buses sold, serviced and supported by Rechtien Truck Group, South Carolina.",
+                        "url": "/why-ic-bus"
                       },
                       {
                         "label": "Trailers",
-                        "meta": "East, Pitts and Dorsey trailers at Rechtien Truck Group, South Florida."
+                        "meta": "East, Pitts and Dorsey trailers at Rechtien Truck Group, South Florida.",
+                        "url": "/store/inventory"
                       },
                       {
                         "label": "Parts Department",
@@ -625,19 +630,23 @@
                       },
                       {
                         "label": "Service & Maintenance",
-                        "meta": "Service departments at both dealerships — 130+ service bays in South Carolina and mobile maintenance services."
+                        "meta": "Service departments at both dealerships — 130+ service bays in South Carolina and mobile maintenance services.",
+                        "url": "/service"
                       },
                       {
                         "label": "Body Shop",
-                        "meta": "A state-of-the-art paint booth and body shop in Columbia, South Carolina."
+                        "meta": "A state-of-the-art paint booth and body shop in Columbia, South Carolina.",
+                        "url": "/body-shop"
                       },
                       {
                         "label": "Truck Leasing & Rentals",
-                        "meta": "Idealease leasing and rental through Rechtien Truck Group in South Carolina and South Florida."
+                        "meta": "Idealease leasing and rental through Rechtien Truck Group in South Carolina and South Florida.",
+                        "url": "/lease-rental"
                       },
                       {
                         "label": "Fleet Solutions",
-                        "meta": "Total transportation products and services for your business, from sales and financing to ongoing maintenance."
+                        "meta": "Total transportation products and services for your business, from sales and financing to ongoing maintenance.",
+                        "url": "/international-360"
                       }
                     ]
                   }
