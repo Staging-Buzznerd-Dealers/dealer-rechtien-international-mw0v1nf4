@@ -15,7 +15,6 @@
       },
       "styles": {
         "base": {
-          "backgroundImage": "/images/hero-truck.jpg",
           "backgroundSize": "cover",
           "backgroundPosition": "center",
           "background": "#151515"
