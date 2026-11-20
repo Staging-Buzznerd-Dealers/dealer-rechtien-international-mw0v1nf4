@@ -2,16 +2,17 @@
   "version": 2,
   "nodes": [
     {
-      "id": "banner",
+      "id": "hero",
       "type": "section",
       "props": {
         "width": "boxed",
         "paddingY": 0,
+        "align": "center",
         "anchor": "top"
       },
       "children": [
         {
-          "id": "banner-row",
+          "id": "hero-row",
           "type": "row",
           "props": {
             "gap": 0,
@@ -19,27 +20,43 @@
           },
           "children": [
             {
-              "id": "banner-col",
+              "id": "hero-col",
               "type": "column",
               "props": {
                 "span": 12
               },
               "children": [
                 {
-                  "id": "banner-img",
-                  "type": "image",
+                  "id": "hero-crumbs",
+                  "type": "text",
                   "props": {
-                    "image": {
-                      "src": "/images/white-international-truck.jpg",
-                      "alt": "An International truck ready for DPF cleaning at Rechtien Truck Group"
-                    }
+                    "text": "<a href=\"/\">Home</a> / <a href=\"/service\">Service</a> / DPF Cleaning",
+                    "align": "center",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Diesel Particulate Filter Cleaning at Rechtien Truck Group",
+                    "headingLevel": 1,
+                    "align": "center"
                   }
                 }
               ]
             }
           ]
         }
-      ]
+      ],
+      "styles": {
+        "base": {
+          "backgroundImage": "/images/hero-truck.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
+          "background": "#151515"
+        }
+      }
     },
     {
       "id": "dpf",
@@ -64,15 +81,6 @@
                 "span": 12
               },
               "children": [
-                {
-                  "id": "dpf-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "Diesel Particulate Filter Cleaning at Rechtien Truck Group",
-                    "headingLevel": 1,
-                    "align": "left"
-                  }
-                },
                 {
                   "id": "dpf-sub",
                   "type": "heading",

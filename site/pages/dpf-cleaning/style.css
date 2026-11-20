@@ -2,7 +2,7 @@
    DPF Cleaning — Rechtien Truck Group
    Loaded on this page only (site/pages/dpf-cleaning/style.css). Base type, tokens and
    buttons match the other page-scoped stylesheets so the shared header/footer chrome
-   (site/templates/home.json) renders the same here. Layout: banner image, DPF copy with a schedule button, South Carolina service location cards.
+   (site/templates/home.json) renders the same here. Layout: image hero, DPF copy with a schedule button, South Carolina service location cards.
    ========================================================================== */
 :root{
   --accent:#ff6b3d; --accent-dark:#e0522a;
@@ -39,11 +39,18 @@ main .bz-section--bg-ink .bz-eyebrow{color:rgba(255,255,255,.75)}
 main .bz-section--bg-ink h2,main .bz-section--bg-ink h3{color:#fff}
 main .bz-section--bg-ink .bz-text p{color:rgba(255,255,255,.9)}
 .bz-block--buttons .bz-btns{display:flex;flex-wrap:wrap;gap:12px 22px;align-items:center}
-/* ---- Banner ---------------------------------------------------------------------------------- */
-.bz-section[data-bz-node="banner"]{padding-block:clamp(96px,9vw,128px) 0!important;background:#151515}
-[data-bz-node="banner-img"] img{width:100%;max-height:420px;object-fit:cover;object-position:center 60%;display:block;border-bottom:4px solid var(--ink)}
+/* ---- Hero: centred headline over a dark image ------------------------------------------ */
+.bz-section[data-bz-node="hero"]{min-height:clamp(380px,30vw,480px);display:flex;flex-direction:column;justify-content:center;padding:120px 0 64px;color:#fff;isolation:isolate}
+.bz-section[data-bz-node="hero"]::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,10,14,.72) 0%,rgba(8,10,14,.5) 55%,rgba(8,10,14,.66) 100%)}
+[data-bz-node="hero"] .bz-container{max-width:900px}
+[data-bz-node="hero-crumbs"] p{font:700 .625rem/1.4 var(--font-body)!important;letter-spacing:.2em;text-transform:uppercase;color:#fff!important;margin:0 0 var(--space-3)!important}
+[data-bz-node="hero-crumbs"] a{color:#fff;border-bottom:1px solid transparent;transition:border-color .18s ease}
+[data-bz-node="hero-crumbs"] a:hover{border-bottom-color:currentColor}
+[data-bz-node="hero-h"] .bz-eyebrow{color:var(--accent);letter-spacing:.24em;margin-bottom:var(--space-3)}
+[data-bz-node="hero-h"] h1{color:#fff;margin:0 auto var(--space-4);max-width:16em;text-wrap:balance}
+[data-bz-node="hero-lede"] p{color:#fff!important;font-size:1rem!important;line-height:1.75;max-width:40rem;margin:0 auto!important}
+@media (max-width:640px){.bz-section[data-bz-node="hero"]{padding:104px 0 56px;min-height:460px}}
 /* ---- DPF copy -------------------------------------------------------------------------------- */
-[data-bz-node="dpf-h"] h1{font-size:clamp(1.625rem,3vw,2.5rem);margin:0 0 var(--space-4);color:var(--ink)}
 [data-bz-node="dpf-sub"] h2{color:var(--accent-dark);font-size:clamp(1.25rem,2vw,1.625rem);margin-bottom:var(--space-3)}
 [data-bz-node="dpf-sub"] .bz-eyebrow{order:2;color:var(--ink);font-size:.75rem;letter-spacing:.12em;margin:0 0 var(--space-4)}
 [data-bz-node="dpf"] .bz-text p{max-width:62rem}
