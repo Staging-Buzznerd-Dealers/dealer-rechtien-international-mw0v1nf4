@@ -458,9 +458,9 @@
                 {
                   "id": "item-50",
                   "label": "Hino",
-                  "type": "inventory",
-                  "ref": "inventory",
-                  "url": null,
+                  "type": "url",
+                  "ref": null,
+                  "url": "/store/showrooms?fvid=578",
                   "newTab": false,
                   "children": []
                 }
