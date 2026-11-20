@@ -449,8 +449,9 @@
                 {
                   "id": "item-49",
                   "label": "International ",
-                  "type": "inventory",
-                  "ref": "inventory",
+                  "type": "url",
+                  "ref": null,
+                  "url": "/store/showrooms?fvid=667",
                   "newTab": false,
                   "children": []
                 },
@@ -459,6 +460,7 @@
                   "label": "Hino",
                   "type": "inventory",
                   "ref": "inventory",
+                  "url": null,
                   "newTab": false,
                   "children": []
                 }
@@ -542,6 +544,7 @@
                   "label": "All Trailers",
                   "type": "inventory",
                   "ref": "inventory",
+                  "url": null,
                   "newTab": false,
                   "children": []
                 },
@@ -789,10 +792,10 @@
                   "id": "item-80",
                   "label": "Buy on Ebay",
                   "type": "url",
-                  "url": "https://www.ebay.com/str/rechtienintl",
                   "ref": null,
-                  "children": [],
-                  "newTab": true
+                  "url": "https://www.ebay.com/str/rechtienintl",
+                  "newTab": true,
+                  "children": []
                 }
               ]
             },
