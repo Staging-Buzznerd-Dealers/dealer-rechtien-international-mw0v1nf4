@@ -212,9 +212,10 @@
           "value": "service"
         }
       ],
-      "targetType": "role",
+      "targetType": "email",
       "roleId": "service-advisor",
-      "scopeMode": "dynamic"
+      "scopeMode": "dynamic",
+      "email": "vik@buzznerd.com"
     },
     {
       "id": "lc-parts",
@@ -232,5 +233,16 @@
       "scopeMode": "dynamic"
     }
   ],
-  "updatedAt": "2026-11-19T14:06:20.964Z"
+  "updatedAt": "2026-11-20T16:19:35.037Z",
+  "confirmations": [
+    {
+      "id": "c-mwp6oio51",
+      "name": "Default",
+      "logic": "AND",
+      "rules": [],
+      "type": "message",
+      "message": "Thanks — we will be in touch shortly.",
+      "redirectUrl": ""
+    }
+  ]
 }
