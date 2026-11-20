@@ -383,8 +383,8 @@
               "perk1": null,
               "perk2": null,
               "perk3": null,
-              "departments": "Parts · Service",
-              "hours": "Parts: 07:00 AM - 06:00 PM Mon–Fri\n\nService: 07:00 AM - 06:00 PM Mon–Fri",
+              "departments": "Service · Parts",
+              "hours": "Service: 07:00 AM - 06:00 PM Mon–Fri\n\nParts: 07:00 AM - 06:00 PM Mon–Fri",
               "phone2": null,
               "phone2Url": null,
               "phone3": null,
@@ -404,16 +404,16 @@
               "perkRows": [],
               "departmentRows": [
                 {
-                  "name": "Parts",
-                  "key": "parts",
+                  "name": "Service",
+                  "key": "service",
                   "phone": null,
                   "phoneUrl": null,
                   "email": null,
                   "hours": "07:00 AM - 06:00 PM Mon–Fri"
                 },
                 {
-                  "name": "Service",
-                  "key": "service",
+                  "name": "Parts",
+                  "key": "parts",
                   "phone": null,
                   "phoneUrl": null,
                   "email": null,
@@ -422,8 +422,8 @@
               ],
               "hoursRows": [
                 {
-                  "department": "Parts",
-                  "key": "parts",
+                  "department": "Service",
+                  "key": "service",
                   "summary": "07:00 AM - 06:00 PM Mon–Fri",
                   "days": [
                     {
@@ -478,8 +478,8 @@
                   ]
                 },
                 {
-                  "department": "Service",
-                  "key": "service",
+                  "department": "Parts",
+                  "key": "parts",
                   "summary": "07:00 AM - 06:00 PM Mon–Fri",
                   "days": [
                     {
