@@ -867,49 +867,7 @@
                     "gap": 2,
                     "stackOn": "never"
                   },
-                  "children": [
-                    {
-                      "id": "learn-doc-1",
-                      "type": "column",
-                      "props": {
-                        "span": 12
-                      },
-                      "children": [
-                        {
-                          "id": "learn-dname-1",
-                          "type": "heading",
-                          "props": {
-                            "text": "International 360 (I360) brochure",
-                            "headingLevel": 4,
-                            "align": "left"
-                          }
-                        },
-                        {
-                          "id": "learn-dmeta-1",
-                          "type": "text",
-                          "props": {
-                            "text": "Brochure · PDF",
-                            "align": "left",
-                            "width": "full"
-                          }
-                        },
-                        {
-                          "id": "learn-dact-1",
-                          "type": "buttons",
-                          "props": {
-                            "items": [
-                              {
-                                "label": "Open brochure",
-                                "url": "",
-                                "style": "primary"
-                              }
-                            ],
-                            "align": "left"
-                          }
-                        }
-                      ]
-                    }
-                  ]
+                  "children": []
                 }
               ]
             },
