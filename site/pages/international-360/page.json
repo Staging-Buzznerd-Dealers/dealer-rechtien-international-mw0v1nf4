@@ -8,8 +8,7 @@
         "width": "boxed",
         "paddingY": 0,
         "align": "center",
-        "anchor": "top",
-        "backgroundVideo": {}
+        "anchor": "top"
       },
       "styles": {
         "base": {
