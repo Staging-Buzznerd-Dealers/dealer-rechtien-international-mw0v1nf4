@@ -220,7 +220,7 @@
               "phone2": "",
               "phone2Url": "",
               "mapUrl": "https://www.google.com/maps/search/?api=1&query=1699%20North%20US%20Highway%201%2C%20Fort%20Pierce%2C%20FL%2034950",
-              "pageUrl": "",
+              "pageUrl": "/locations/ft-pierce",
               "lat": "27.46",
               "lon": "-80.33"
             },
@@ -237,7 +237,7 @@
               "phone2": "",
               "phone2Url": "",
               "mapUrl": "https://www.google.com/maps/search/?api=1&query=2761%20Edison%20Avenue%2C%20Ft.%20Myers%2C%20FL%2033916",
-              "pageUrl": "",
+              "pageUrl": "/locations/ft-myers",
               "lat": "26.63",
               "lon": "-81.85"
             }
@@ -258,7 +258,7 @@
               "phone2": "(843) 747-3040",
               "phone2Url": "tel:+18437473040",
               "mapUrl": "https://www.google.com/maps/search/?api=1&query=2580%20Oscar%20Johnson%20Dr%2C%20Charleston%2C%20SC%2029405",
-              "pageUrl": "",
+              "pageUrl": "/locations/charleston",
               "lat": "32.88",
               "lon": "-79.97"
             },
@@ -292,7 +292,7 @@
               "phone2": "(843) 468-9560",
               "phone2Url": "tel:+18434689560",
               "mapUrl": "https://www.google.com/maps/search/?api=1&query=350%20E%20Campground%20Rd%2C%20Florence%2C%20SC%2029506",
-              "pageUrl": "",
+              "pageUrl": "/locations/florence",
               "lat": "34.15",
               "lon": "-79.74"
             },
@@ -309,7 +309,7 @@
               "phone2": "(864) 848-0050",
               "phone2Url": "tel:+18648480050",
               "mapUrl": "https://www.google.com/maps/search/?api=1&query=2520%20Hwy%2014%20S%2C%20Greer%2C%20SC%2029650",
-              "pageUrl": "",
+              "pageUrl": "/locations/greer",
               "lat": "34.89",
               "lon": "-82.20"
             },
@@ -343,7 +343,7 @@
               "phone2": "",
               "phone2Url": "",
               "mapUrl": "https://www.google.com/maps/search/?api=1&query=299%20East%20Cox%20Ferry%20Road%2C%20Conway%2C%20SC%2029526",
-              "pageUrl": "",
+              "pageUrl": "/locations/conway",
               "lat": "33.78",
               "lon": "-79.00"
             }

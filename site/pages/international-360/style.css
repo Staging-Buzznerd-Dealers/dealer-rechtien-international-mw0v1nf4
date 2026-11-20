@@ -105,7 +105,9 @@ main .bz-section.bz-section[data-bz-node="intro"][data-bz-type]{padding-block:cl
 [data-bz-node="intro-row"]>.bz-col{grid-column:auto}
 [data-bz-node="intro-media"]{background:#fff;border:1px solid var(--line);padding:clamp(16px,2vw,28px)}
 [data-bz-node="intro-media"] .bz-container,[data-bz-node="intro-media"] .bz-figure{padding:0;margin:0;max-width:none}
-[data-bz-node="intro-img"] img{width:100%;height:auto;display:block}
+/* The three pictures on this page are small files (344, 866 and 740px wide). They are drawn at most at their
+   own pixel width and centred, never stretched to fill the column: stretching is what made them soft. */
+[data-bz-node="intro-img"] img{width:100%;max-width:344px;height:auto;display:block;margin-inline:auto}
 [data-bz-node="intro-cap"] p{font-size:.75rem!important;color:var(--muted)!important;margin:var(--space-3) 0 0!important}
 [data-bz-node="intro-cta"] .bz-btns{margin-top:var(--space-4)}
 /* ---- Bordered cards (what, features-more, help) ---------------------------------------------- */
@@ -124,7 +126,7 @@ main .bz-section.bz-section[data-bz-node="intro"][data-bz-type]{padding-block:cl
 /* ---- Dashboard image --------------------------------------------------------------------------------- */
 .bz-section[data-bz-node="dash"]{padding-block:clamp(32px,4vw,56px)}
 [data-bz-node="dash-img"] .bz-container,[data-bz-node="dash-img"] .bz-figure{padding:0;margin:0;max-width:none}
-[data-bz-node="dash-img"] img{width:100%;height:auto;display:block;border-radius:8px;box-shadow:0 14px 40px rgba(0,0,0,.14)}
+[data-bz-node="dash-img"] img{width:100%;max-width:866px;height:auto;display:block;margin-inline:auto;border-radius:8px;box-shadow:0 14px 40px rgba(0,0,0,.14)}
 [data-bz-node="dash-cap"] p{font-size:.75rem!important;color:var(--muted)!important;margin:var(--space-3) 0 0!important}
 /* ---- Features: numbered list + portal graphic ----------------------------------------------------------- */
 [data-bz-node="features-row"]{grid-template-columns:minmax(0,5fr) minmax(0,7fr);margin-top:var(--space-5)}
@@ -135,7 +137,7 @@ main .bz-section.bz-section[data-bz-node="intro"][data-bz-type]{padding-block:cl
 [data-bz-node="features-grid"] .bz-feature__t{font:700 .75rem/1.4 var(--font-heading);margin:0;color:var(--ink)}
 [data-bz-node="features-media"]{background:#fff;border:1px solid var(--line);padding:clamp(12px,1.6vw,20px)}
 [data-bz-node="features-media"] .bz-container,[data-bz-node="features-media"] .bz-figure{padding:0;margin:0;max-width:none}
-[data-bz-node="features-img"] img{width:100%;height:auto;display:block}
+[data-bz-node="features-img"] img{width:100%;max-width:740px;height:auto;display:block;margin-inline:auto}
 [data-bz-node="features-more-row"]{margin-top:var(--space-6)}
 /* ---- Get it standard (dark) ----------------------------------------------------------------------------------- */
 .bz-section[data-bz-node="standard"]{background:#2b2a27}

@@ -449,18 +449,16 @@
                 {
                   "id": "item-49",
                   "label": "International ",
-                  "type": "url",
-                  "ref": null,
-                  "url": "/#",
+                  "type": "inventory",
+                  "ref": "inventory",
                   "newTab": false,
                   "children": []
                 },
                 {
                   "id": "item-50",
                   "label": "Hino",
-                  "type": "url",
-                  "ref": null,
-                  "url": "/#",
+                  "type": "inventory",
+                  "ref": "inventory",
                   "newTab": false,
                   "children": []
                 }
@@ -542,9 +540,8 @@
                 {
                   "id": "item-59",
                   "label": "All Trailers",
-                  "type": "url",
-                  "ref": null,
-                  "url": "/#",
+                  "type": "inventory",
+                  "ref": "inventory",
                   "newTab": false,
                   "children": []
                 },
@@ -811,7 +808,7 @@
                   "label": "Fleetrite",
                   "type": "url",
                   "ref": null,
-                  "url": "#",
+                  "url": "/parts#fleetrite",
                   "newTab": false,
                   "children": []
                 },
