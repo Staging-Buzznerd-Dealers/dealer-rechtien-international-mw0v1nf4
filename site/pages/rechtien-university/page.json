@@ -234,26 +234,42 @@
                       {
                         "name": "International",
                         "image": {
-                          "src": "/logos/international.png",
+                          "src": "/logos/grey-international.png",
                           "alt": "International"
                         }
                       },
                       {
-                        "name": "Kalmar Ottawa"
+                        "name": "Kalmar Ottawa",
+                        "image": {
+                          "src": "/logos/grey-kalmar-ottawa.png",
+                          "alt": "Kalmar Ottawa"
+                        }
                       },
                       {
-                        "name": "Cummins"
+                        "name": "Cummins",
+                        "image": {
+                          "src": "/logos/grey-cummins.png",
+                          "alt": "Cummins"
+                        }
                       },
                       {
-                        "name": "IC Bus"
+                        "name": "IC Bus",
+                        "image": {
+                          "src": "/logos/grey-ic-bus.png",
+                          "alt": "IC Bus"
+                        }
                       },
                       {
-                        "name": "Allison Transmission"
+                        "name": "Allison Transmission",
+                        "image": {
+                          "src": "/logos/grey-allison-transmission.png",
+                          "alt": "Allison Transmission"
+                        }
                       },
                       {
                         "name": "Idealease",
                         "image": {
-                          "src": "/logos/idealease.png",
+                          "src": "/logos/grey-idealease.png",
                           "alt": "Idealease"
                         }
                       }

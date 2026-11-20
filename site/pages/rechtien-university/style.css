@@ -61,9 +61,10 @@ main .bz-section--bg-ink .bz-text p{color:rgba(255,255,255,.9)}
 .bz-section[data-bz-node="brands"]{background:#f7f8fa}
 [data-bz-node="brands"] .bz-block{padding-block:0}
 [data-bz-node="brands"] h2{color:#4a4945;text-align:center}
-[data-bz-node="brands-logos"] .bz-logos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 24px;margin-top:var(--space-6)}
+[data-bz-node="brands-logos"] .bz-logos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 24px;margin-top:var(--space-6);border-block:0}
 [data-bz-node="brands-logos"] .bz-logo{min-height:120px;display:grid;place-items:center;text-align:center;background:none;border:0}
-[data-bz-node="brands-logos"] .bz-logo img{max-height:96px;width:auto;max-width:70%;object-fit:contain;filter:grayscale(1);opacity:.75}
+/* The logo files are already grey (grey-*.png), so no filter or fade here. */
+[data-bz-node="brands-logos"] .bz-logo img{height:auto;width:auto;max-width:70%;object-fit:contain}
 [data-bz-node="brands-logos"] .bz-logo__t{font:800 1.25rem/1.25 var(--font-heading);letter-spacing:.02em;text-transform:uppercase;color:#6b6a66}
 @media (max-width:900px){[data-bz-node="brands-logos"] .bz-logos{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.bz-section[data-bz-node="hero"]{padding:88px 0 48px}[data-bz-node="hero-h"] h1{letter-spacing:.18em}}
