@@ -8,7 +8,10 @@
         "width": "boxed",
         "paddingY": 0,
         "align": "center",
-        "anchor": "top"
+        "anchor": "top",
+        "backgroundVideo": {
+          "src": "https://youtu.be/Jf0v2hLFnrk"
+        }
       },
       "styles": {
         "base": {
