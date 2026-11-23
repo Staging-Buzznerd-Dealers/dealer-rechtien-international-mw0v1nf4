@@ -134,18 +134,18 @@
             {
               "id": "nb-international",
               "label": "International",
-              "type": "url",
-              "ref": null,
-              "url": "/store/showrooms?fvid=667",
+              "type": "inventory",
+              "ref": "showrooms?fvid=667",
+              "url": null,
               "newTab": false,
               "children": []
             },
             {
               "id": "nb-hino",
               "label": "Hino Trucks",
-              "type": "url",
-              "ref": null,
-              "url": "/store/showrooms?fvid=578",
+              "type": "inventory",
+              "ref": "showrooms?fvid=578",
+              "url": null,
               "newTab": false,
               "children": []
             },
