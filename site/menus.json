@@ -252,9 +252,9 @@
             {
               "id": "ns-parts",
               "label": "Parts",
-              "type": "inventory",
-              "ref": "parts",
-              "url": null,
+              "type": "url",
+              "ref": null,
+              "url": "/parts",
               "newTab": false,
               "children": []
             },
