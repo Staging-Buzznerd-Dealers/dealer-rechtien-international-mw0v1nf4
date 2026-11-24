@@ -883,5 +883,14 @@
     "intent": "financing",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "about-learn-more",
+    "label": "Learn more",
+    "url": "/about",
+    "style": "primary",
+    "intent": "about",
+    "newTab": false,
+    "active": true
   }
 ]
