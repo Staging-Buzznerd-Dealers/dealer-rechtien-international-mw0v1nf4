@@ -1035,7 +1035,8 @@
                   "props": {
                     "items": [
                       {
-                        "ctaId": "explore-fleetrite"
+                        "ctaId": "explore-fleetrite",
+                        "url": "https://www.fleetrite.com/"
                       }
                     ],
                     "align": "center"
