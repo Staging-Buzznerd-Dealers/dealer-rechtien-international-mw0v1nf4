@@ -37,7 +37,7 @@
                   "id": "hero-h",
                   "type": "heading",
                   "props": {
-                    "text": "Your trusted partner for trucks, trailers, and more.",
+                    "text": "Your trusted partner for trucks, parts & service.",
                     "headingLevel": 1,
                     "align": "center",
                     "eyebrow": "11 Locations • Serving South Florida and South Carolina"
@@ -103,7 +103,7 @@
                   "props": {
                     "text": "Built to keep business moving",
                     "headingLevel": 2,
-                    "align": "left"
+                    "align": "center"
                   }
                 },
                 {
@@ -111,7 +111,7 @@
                   "type": "text",
                   "props": {
                     "text": "At Rechtien Truck Group, we’re more than just a dealership — we’re industry experts who understand the challenges of the road. Our culture is built on accountability, action, and a commitment to doing what’s right. From our parts and service teams to our finance specialists, every member of the Rechtien Truck Group family is dedicated to helping you succeed.",
-                    "align": "left",
+                    "align": "center",
                     "width": "full"
                   }
                 },
@@ -121,10 +121,10 @@
                   "props": {
                     "items": [
                       {
-                        "ctaId": "read-more"
+                        "ctaId": "about-learn-more"
                       }
                     ],
-                    "align": "left"
+                    "align": "center"
                   }
                 }
               ]
@@ -182,7 +182,29 @@
                 "alt": "Dorsey Trailers"
               },
               "url": "/#brands",
+              "regions": "florida carolina"
+            },
+            {
+              "name": "East",
+              "image": {
+                "src": "/logos/east.png",
+                "width": 117,
+                "height": 56,
+                "alt": "East"
+              },
+              "url": "/#brands",
               "regions": "florida"
+            },
+            {
+              "name": "Summit",
+              "image": {
+                "src": "/logos/summit.png",
+                "width": 200,
+                "height": 140,
+                "alt": "Summit"
+              },
+              "url": "/#brands",
+              "regions": "carolina"
             },
             {
               "name": "Hino Trucks",
@@ -207,6 +229,17 @@
               "regions": "florida carolina"
             },
             {
+              "name": "IC Bus",
+              "image": {
+                "src": "/logos/ic-bus.png",
+                "width": 142,
+                "height": 150,
+                "alt": "IC Bus"
+              },
+              "url": "/why-ic-bus",
+              "regions": "carolina"
+            },
+            {
               "name": "Idealease",
               "image": {
                 "src": "/logos/idealease.png",
@@ -218,6 +251,17 @@
               "regions": "florida carolina"
             },
             {
+              "name": "Kalmar Ottawa",
+              "image": {
+                "src": "/logos/kalmar-ottawa-red.png",
+                "width": 126,
+                "height": 183,
+                "alt": "Kalmar Ottawa"
+              },
+              "url": "/#brands",
+              "regions": "florida"
+            },
+            {
               "name": "Navigator Forklifts",
               "image": {
                 "src": "/logos/navigator-forklifts.png",
@@ -226,7 +270,7 @@
                 "alt": "Navigator Forklifts"
               },
               "url": "/#brands",
-              "regions": "florida"
+              "regions": "florida carolina"
             }
           ]
         }
@@ -241,21 +285,26 @@
         "values": {
           "eyebrow": "Find a location",
           "heading": "Find a location",
-          "brandLabel": "Brand",
           "intro": "Ready to find the right commercial trucks for your business? Visit us at one of our convenient locations across South Florida and South Carolina to find the perfect trucks and trailers for your needs.",
-          "brandOptions": {
-            "source": "location-brands"
-          },
           "locations": {
             "source": "locations",
             "config": {
               "pagePathPrefix": "/locations"
             }
-          }
+          },
+          "stateOptions": [
+            {
+              "label": "South Florida",
+              "value": "fl"
+            },
+            {
+              "label": "South Carolina",
+              "value": "sc"
+            }
+          ]
         },
         "snapshots": {},
         "data": {
-          "brandOptions": [],
           "locations": [
             {
               "id": "18",
@@ -2812,79 +2861,6 @@
       },
       "children": [
         {
-          "id": "sp1",
-          "type": "row",
-          "props": {
-            "gap": 0,
-            "align": "stretch",
-            "stackOn": "tablet"
-          },
-          "children": [
-            {
-              "id": "sp1-copy",
-              "type": "column",
-              "props": {
-                "span": 6
-              },
-              "children": [
-                {
-                  "id": "sp1-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "The same trailers, every time.",
-                    "headingLevel": 2,
-                    "align": "left",
-                    "eyebrow": "New & used trailers"
-                  }
-                },
-                {
-                  "id": "sp1-text",
-                  "type": "text",
-                  "props": {
-                    "text": "At Rechtien Truck Group, customer service is our priority. With quality products, quick service, and dedicated care, we provide everything you need for your business to succeed. Explore our diverse selection of new and used trailers to find the equipment you’re looking for.",
-                    "align": "left",
-                    "width": "full"
-                  }
-                },
-                {
-                  "id": "sp1-cta",
-                  "type": "buttons",
-                  "props": {
-                    "items": [
-                      {
-                        "ctaId": "see-available"
-                      }
-                    ],
-                    "align": "left"
-                  }
-                }
-              ]
-            },
-            {
-              "id": "sp1-media",
-              "type": "column",
-              "props": {
-                "span": 6
-              },
-              "children": [
-                {
-                  "id": "sp1-img",
-                  "type": "image",
-                  "props": {
-                    "image": {
-                      "src": "/images/hero-truck.jpg",
-                      "alt": "Idealease International truck parked in front of a brick building",
-                      "width": 1200,
-                      "height": 969
-                    },
-                    "width": "full"
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
           "id": "sp2",
           "type": "row",
           "props": {
@@ -2927,17 +2903,17 @@
                   "id": "sp2-h",
                   "type": "heading",
                   "props": {
-                    "text": "Built by industry leaders.",
+                    "text": "Brands you can rely on.",
                     "headingLevel": 2,
                     "align": "left",
-                    "eyebrow": "About our brands"
+                    "eyebrow": "About our inventory"
                   }
                 },
                 {
                   "id": "sp2-text",
                   "type": "text",
                   "props": {
-                    "text": "At Rechtien Truck Group, we offer only the best quality for the best price — International trucks, IC Bus, Hino, and trailers from industry leaders like Dorsey and East. When you choose a truck or trailer through us, you’re investing in durability, reliability, and innovation.",
+                    "text": "At Rechtien Truck Group, we offer only the best quality for the best price — International trucks, IC Bus, Hino, and trailers from industry leaders like Dorsey, East & Summit. When you choose a truck or trailer through us, you’re investing in durability, reliability, and innovation.",
                     "align": "left",
                     "width": "full"
                   }
@@ -2957,78 +2933,74 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "voices",
-      "type": "section",
-      "props": {
-        "width": "boxed",
-        "background": "paper",
-        "paddingY": 8
-      },
-      "children": [
-        {
-          "id": "voices-head",
-          "type": "row",
-          "props": {
-            "gap": 0
-          },
-          "children": [
-            {
-              "id": "voices-head-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "voices-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "What our customers say.",
-                    "headingLevel": 2,
-                    "align": "left",
-                    "eyebrow": "Testimonials"
-                  }
-                }
-              ]
-            }
-          ]
         },
         {
-          "id": "voices-row",
+          "id": "sp1",
           "type": "row",
           "props": {
-            "gap": 0
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "tablet"
           },
           "children": [
             {
-              "id": "voices-col",
+              "id": "sp1-copy",
               "type": "column",
               "props": {
-                "span": 12
+                "span": 6
               },
               "children": [
                 {
-                  "id": "voices-list",
-                  "type": "testimonials",
+                  "id": "sp1-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Let’s get you hauling.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "New & used trailers"
+                  }
+                },
+                {
+                  "id": "sp1-text",
+                  "type": "text",
+                  "props": {
+                    "text": "Tell us what you’re moving, and we’ll match you with a trailer built for the job. Our team is ready to help. Explore our diverse selection of new and used trailers today.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "sp1-cta",
+                  "type": "buttons",
                   "props": {
                     "items": [
                       {
-                        "quote": "“I have had most of my service department dealings with Renee. She always goes the extra mile to accommodate me. The demands of the business I work for are high at times, and she has always displayed a sense of urgency, and professionalism to resolve my issues. Great employee & asset to Rechtien Truck Group. Please keep up the good work.”",
-                        "name": "Anonymous"
-                      },
-                      {
-                        "quote": "“Call them cause my check engine light came on. Got to shop it was a warm welcome from kim,Pam and Nathan. Best service I have ever had dealing with international. I give this shop 100 stars. Thanks from Lorenzo Vaughn”",
-                        "name": "festa Adam"
-                      },
-                      {
-                        "quote": "“My number 1 option for Hino parts”",
-                        "name": "Mark DeYoung"
+                        "ctaId": "see-available"
                       }
-                    ]
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "sp1-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "sp1-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/hero-truck.jpg",
+                      "alt": "Idealease International truck parked in front of a brick building",
+                      "width": 1200,
+                      "height": 969
+                    },
+                    "width": "full"
                   }
                 }
               ]

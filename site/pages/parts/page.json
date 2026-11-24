@@ -1700,6 +1700,75 @@
       ]
     },
     {
+      "id": "voices",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "voices-head",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "voices-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "voices-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "What our customers say.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Testimonials"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "voices-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "voices-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "voices-list",
+                  "type": "testimonials",
+                  "props": {
+                    "items": [
+                      {
+                        "quote": "“My number 1 option for Hino parts”",
+                        "name": "Mark DeYoung"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "why",
       "type": "section",
       "props": {
