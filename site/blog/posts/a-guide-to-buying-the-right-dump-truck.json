@@ -1,0 +1,322 @@
+{
+  "slug": "a-guide-to-buying-the-right-dump-truck",
+  "title": "A Guide to Buying the Right Dump Truck",
+  "date": "2025-07-30",
+  "description": "Purchasing the right dump truck is a crucial decision. This guide covers the top factors to consider so your investment delivers the best returns.",
+  "coverImage": "/images/dump-truck-buying-guide.jpg",
+  "status": "published",
+  "keywords": [
+    "dump truck",
+    "buying guide",
+    "dump truck capacity",
+    "dump trucks for sale"
+  ],
+  "css": "/* ==========================================================================\n   Single blog post: the Rechtien blog post design handoff.\n   Dark photo masthead with breadcrumb and meta row, \"On this page\" sidebar with a promo\n   box, a 740px article column (bordered check / numbered / table lists, disclaimer box),\n   \"More from Rechtien\" cards and a dark call-to-action. Loaded on posts only; every rule\n   is scoped to this post's nodes. The masthead (date + h1) is built by the platform, so it\n   is restyled here. The site header and footer stay as they are (the handoff's header and\n   footer are recreations from a screenshot). Fonts are the site's own brand fonts: the\n   handoff's Montserrat and Hind are marked as stand-ins.\n   ========================================================================== */\n:root{\n  --pg-black:#0B0B0B; --pg-green:#0E3A2F; --pg-green-d:#072019;\n  --pg-g50:#FAF9F5; --pg-g100:#F2F0EA; --pg-g200:#E8E6DF; --pg-g300:#D7D5CE; --pg-g400:#B4B3AC;\n  --pg-g500:#8E8D85; --pg-g700:#46463F; --pg-g800:#2E2E2B; --pg-g900:#1A1A18;\n  --pg-focus:0 0 0 3px rgba(43,55,212,.35);\n}\nhtml{scroll-behavior:smooth}\nbody{background:#fff;color:var(--pg-black);-webkit-font-smoothing:antialiased}\narticle{position:relative}\narticle a:focus-visible{outline:none;box-shadow:var(--pg-focus)}\n/* ---- Buttons: black primary, outline secondary, 4px radius (set through the global button variables) ---- */\narticle{--btn-bg:var(--pg-black);--btn-fg:#fff;--btn-bd:var(--pg-black);--btn-bg-hover:var(--pg-green);--btn-fg-hover:#fff;--btn-bd-hover:var(--pg-green);\n  --btn-h:42px;--btn-px:20px;--btn-radius:4px;--btn-size:.6875rem;--btn-track:.14em;--btn-link:var(--pg-black);--btn-ring:var(--pg-black)}\narticle .bz-btn{font-weight:800;border-width:1.5px}\narticle .bz-btn:active{transform:scale(.97);opacity:1}\narticle .bz-btn--secondary{--btn-bg:transparent;--btn-fg:var(--pg-black);--btn-bd:var(--pg-black);--btn-bg-hover:var(--pg-black);--btn-fg-hover:#fff;--btn-bd-hover:var(--pg-black)}\narticle .bz-btn--link{--btn-size:.625rem}\narticle .bz-btn--link:hover{color:var(--pg-green)}\n/* The platform builds a date and title masthead for every post; the Post hero component above replaces it. */\narticle>.bz-block:first-child{display:none}\n/* ---- Article layout: 200px sidebar + 740px column ------------------------------ */\n.bz-section[data-bz-node=\"p-main\"]{padding:0}\n[data-bz-node=\"p-main\"]>.bz-container{max-width:1100px;padding:64px 24px 80px}\n[data-bz-node=\"p-row\"]{display:flex;flex-wrap:wrap;gap:48px 64px;align-items:flex-start}\n[data-bz-node=\"p-row\"]>.bz-col{grid-column:auto;width:auto;padding:0}\n[data-bz-node=\"p-side\"]{flex:0 0 200px;min-width:0;position:sticky;top:24px}\n[data-bz-node=\"p-content\"]{flex:1 1 480px;min-width:0;max-width:740px;font-size:16px;line-height:1.8;color:var(--pg-g700)}\nmain .bz-block{padding-block:0}\n[data-bz-node=\"p-side\"] .bz-container,[data-bz-node=\"p-content\"] .bz-container{padding-inline:0;max-width:none}\n/* ---- Sidebar: table of contents + promo box ------------------------------------- */\n[data-bz-node=\"p-toc-h\"] h3{margin:0 0 20px;font:700 10px/1.4 var(--font-body);letter-spacing:.16em;text-transform:uppercase;color:var(--pg-g500)}\n[data-bz-node=\"p-toc\"] .bz-text{max-width:none}\n[data-bz-node=\"p-toc\"] p{margin:0 0 14px;font:600 12px/1.4 var(--font-body)}\n[data-bz-node=\"p-toc\"] a{color:var(--pg-g800);text-decoration:none;transition:color .14s cubic-bezier(.22,.61,.36,1)}\n[data-bz-node=\"p-toc\"] a:hover,[data-bz-node=\"p-toc\"] a.is-active{color:var(--pg-green)}\n[data-bz-node=\"p-aside\"]{margin-top:32px;border:1px solid var(--pg-g300);border-radius:4px;padding:20px;background:none}\n[data-bz-node=\"p-aside\"] .bz-col,[data-bz-node=\"p-aside\"]>.bz-col{padding:0}\n[data-bz-node=\"p-aside-h\"] h3{margin:0 0 8px;font:700 10px/1.4 var(--font-body);letter-spacing:.16em;text-transform:uppercase;color:var(--pg-g500)}\n[data-bz-node=\"p-aside-t\"]{margin-bottom:14px}\n[data-bz-node=\"p-aside-t\"] p{margin:0;font-size:13px;line-height:1.6;color:var(--pg-g700)}\n[data-bz-node=\"p-aside-cta\"] .bz-btns{margin:0}\n/* ---- Article column ------------------------------------------------------------- */\n[data-bz-node=\"p-content\"] .bz-text{max-width:none}\n[data-bz-node=\"p-content\"] .bz-text p{margin:0 0 20px;font-size:16px;line-height:1.8;color:var(--pg-g700);text-wrap:pretty}\n[data-bz-node=\"p-content\"] .bz-text a{color:var(--pg-green);text-decoration:underline}\n[data-bz-node=\"p-content\"] .bz-text a:hover{color:var(--pg-green-d)}\n[data-bz-node=\"p-content\"] strong{color:var(--pg-black)}\n[data-bz-node=\"p-content\"] .bz-block--heading{padding:0}\n[data-bz-node=\"p-content\"] h2{margin:56px 0 20px;font-size:clamp(22px,2.6vw,28px);line-height:1.2;letter-spacing:.01em;text-transform:uppercase;color:var(--pg-black)}\n[data-bz-node=\"p-content\"] [id]{scroll-margin-top:24px}\n[data-bz-node=\"p-legal-h\"]{scroll-margin-top:44px}\n[data-bz-node=\"p-content\"] .bz-block--heading h3{margin:0 0 12px;font-size:15px;line-height:1.4;letter-spacing:0;text-transform:none;color:var(--pg-black)}\n[data-bz-node=\"p-content\"] h3.bz-feature__t{margin:0}\n/* images: 16:9 in the article; a post-specific photo keeps its own shape */\n[data-bz-node=\"p-content\"] .bz-block--image{margin:0 0 32px}\n[data-bz-node=\"p-content\"] .bz-block--image img{display:block;width:100%;height:auto;border-radius:4px}\n[data-bz-node=\"p-img1\"] img,[data-bz-node=\"p-img2\"] img{aspect-ratio:16/9;object-fit:cover}\n/* call-to-action boxes */\n[data-bz-node=\"p-intro-cta\"] .bz-btns{display:flex;flex-wrap:wrap;gap:12px;margin:32px 0 0;padding:20px 24px;border:1px solid var(--pg-g200)}\n[data-bz-node=\"p-end-cta\"] .bz-btns{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 40px}\n[data-bz-node=\"p-intro-cta\"].bz-block,[data-bz-node=\"p-end-cta\"].bz-block{padding:0}\n/* ---- Lists ----------------------------------------------------------------------- */\n[data-bz-node=\"p-content\"] .bz-block--list .bz-grid{display:block;list-style:none;margin:0 0 24px;padding:0;border:1px solid var(--pg-g200)}\n[data-bz-node=\"p-content\"] .bz-feature{position:relative;display:block;margin:0;padding:14px 20px 14px 50px;min-height:0;background:none;border:0;border-top:1px solid var(--pg-g200);border-radius:0;box-shadow:none;font-size:16px;line-height:1.8;color:var(--pg-g700)}\n[data-bz-node=\"p-content\"] .bz-feature:first-child{border-top:0}\n[data-bz-node=\"p-content\"] .bz-feature__t{display:inline;margin:0;font:700 16px/1.8 var(--font-body);letter-spacing:0;text-transform:none;color:var(--pg-black)}\n[data-bz-node=\"p-content\"] .bz-feature__t::after{content:\" \"}\n[data-bz-node=\"p-content\"] .bz-feature__d{display:inline;margin:0;font-size:16px;line-height:1.8;color:var(--pg-g700)}\n/* label-only rows (a plain checklist) are not bold */\n[data-bz-node=\"p-env\"] .bz-feature__t{font-weight:400;color:var(--pg-g700)}\n/* check icon */\n[data-bz-node=\"p-content\"] .bz-feature::before{content:\"\";position:absolute;left:20px;top:20px;width:16px;height:16px;background:var(--pg-green);\n  -webkit-mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E\") center/contain no-repeat;\n  mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E\") center/contain no-repeat}\n/* numbered list */\n[data-bz-node=\"p-steps\"] .bz-grid{counter-reset:step}\n[data-bz-node=\"p-steps\"] .bz-feature{counter-increment:step;padding-left:56px}\n[data-bz-node=\"p-steps\"] .bz-feature::before{content:counter(step) \".\";top:14px;left:20px;width:auto;height:auto;background:none;-webkit-mask:none;mask:none;font:800 16px/1.8 var(--font-heading);color:var(--pg-green)}\n/* comparison table: the first row is the header */\n[data-bz-node=\"p-adv\"] .bz-feature{display:grid;grid-template-columns:34% minmax(0,1fr);padding:0;font-size:14px;line-height:1.6}\n[data-bz-node=\"p-adv\"] .bz-feature::before{display:none}\n[data-bz-node=\"p-adv\"] .bz-feature__t{display:block;padding:14px 20px;font:800 14px/1.6 var(--font-body);color:var(--pg-black)}\n[data-bz-node=\"p-adv\"] .bz-feature__t::after{content:none}\n[data-bz-node=\"p-adv\"] .bz-feature__d{display:block;padding:14px 20px;font-size:14px;line-height:1.6;color:var(--pg-g700)}\n[data-bz-node=\"p-adv\"] .bz-feature:first-child{background:var(--pg-g50)}\n[data-bz-node=\"p-adv\"] .bz-feature:first-child .bz-feature__d{font-weight:800;color:var(--pg-black)}\n/* ---- Disclaimer ------------------------------------------------------------------- */\n[data-bz-node=\"p-legal-box\"]{display:block;margin:0}\n[data-bz-node=\"p-legal-box\"]>.bz-col{padding:20px 24px;background:var(--pg-g50);border:1px solid var(--pg-g200)}\n[data-bz-node=\"p-legal-box\"] .bz-block{padding:0}\n[data-bz-node=\"p-legal-h\"] p{margin:0 0 8px!important;font-size:13px!important;line-height:1.7!important}\n[data-bz-node=\"p-legal\"] p{margin:0!important;font-size:13px!important;line-height:1.7!important;color:var(--pg-g700)!important}\n/* ---- More from Rechtien ------------------------------------------------------------- */\n.bz-section[data-bz-node=\"p-more\"]{padding:0;background:var(--pg-g100)}\n[data-bz-node=\"p-more\"]>.bz-container{max-width:1100px;padding:56px 24px 48px}\n[data-bz-node=\"p-more-h\"] .bz-eyebrow{margin:0 0 8px;font:700 10px/1.4 var(--font-body);letter-spacing:.16em;text-transform:uppercase;color:var(--pg-g500)}\n[data-bz-node=\"p-more-h\"] h2{margin:0 0 28px;font-size:clamp(22px,2.6vw,28px);line-height:1.2;text-transform:uppercase;color:var(--pg-black)}\n[data-bz-node=\"p-more-posts\"]>.bz-container{display:flex;flex-direction:column-reverse;padding:0;max-width:none}\n[data-bz-node=\"p-more\"] .bz-sechead{margin:28px 0 0;display:block}\n[data-bz-node=\"p-more\"] .bz-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px;align-items:stretch}\n[data-bz-node=\"p-more\"] .bz-card{display:block;background:#fff;border:0;border-radius:0;text-decoration:none;color:var(--pg-black);transition:transform .22s cubic-bezier(.22,.61,.36,1),box-shadow .22s cubic-bezier(.22,.61,.36,1)}\n[data-bz-node=\"p-more\"] .bz-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(11,11,11,.09)}\n[data-bz-node=\"p-more\"] .bz-card>img,[data-bz-node=\"p-more\"] .bz-card .bz-photo{display:block;width:100%;height:140px;aspect-ratio:auto;object-fit:cover}\n.bz-photo--empty{display:none!important}\n/* the dump-truck photo keeps its subject low in the frame */\n[data-bz-node=\"p-more\"] .bz-card>img[src$=\"financing-dump-truck.jpg\"]{object-position:15% 85%}\n[data-bz-node=\"p-more\"] .bz-card__body{display:block;padding:20px}\n[data-bz-node=\"p-more\"] .bz-card__m{display:block;margin:0 0 10px;font:700 10px/1.4 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--pg-g500)}\n[data-bz-node=\"p-more\"] .bz-card__t{display:block;margin:0 0 12px;font:800 15px/1.35 var(--font-heading);text-transform:uppercase;color:var(--pg-black)}\n[data-bz-node=\"p-more\"] .bz-post__d{display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden;margin:0 0 14px;font-size:13px;line-height:1.65;color:var(--pg-g700)}\n[data-bz-node=\"p-more\"] .bz-card__body::after{content:\"Read more \\2192\";display:block;font:800 10px/1.4 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--pg-green)}\n/* ---- Call to action ------------------------------------------------------------------ */\n.bz-section[data-bz-node=\"p-cta\"]{padding:0;background:var(--pg-g900);color:#fff;text-align:center}\n[data-bz-node=\"p-cta\"]>.bz-container{max-width:760px;padding:72px 24px}\n[data-bz-node=\"p-cta\"] .bz-block{padding:0}\n[data-bz-node=\"p-cta\"] .bz-eyebrow{margin:0 0 16px;font:700 10px/1.4 var(--font-body);letter-spacing:.16em;text-transform:uppercase;color:var(--pg-g400)}\n[data-bz-node=\"p-cta\"] h2{margin:0 0 16px;color:#fff;font-size:clamp(24px,3.4vw,36px);line-height:1.15;text-transform:uppercase}\n[data-bz-node=\"p-cta-t\"]{margin-bottom:28px}\n[data-bz-node=\"p-cta-t\"] p{margin:0 auto;max-width:none;font-size:15px;line-height:1.7;color:var(--pg-g300)}\n[data-bz-node=\"p-cta-btns\"] .bz-btns{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:0}\n[data-bz-node=\"p-cta\"] .bz-btn{--btn-bg:#fff;--btn-fg:var(--pg-black);--btn-bd:#fff;--btn-bg-hover:var(--pg-g200);--btn-fg-hover:var(--pg-black);--btn-bd-hover:var(--pg-g200)}\n[data-bz-node=\"p-cta\"] .bz-btn--secondary{--btn-bg:transparent;--btn-fg:#fff;--btn-bd:#fff;--btn-bg-hover:#fff;--btn-fg-hover:var(--pg-black);--btn-bd-hover:#fff}\n/* ---- Responsive ------------------------------------------------------------------------ */\n@media (max-width:900px){\n  [data-bz-node=\"p-side\"]{position:static;flex:1 1 100%}\n}\n@media (max-width:640px){\n  [data-bz-node=\"p-adv\"] .bz-feature{grid-template-columns:1fr}\n  [data-bz-node=\"p-adv\"] .bz-feature__t{padding-bottom:0}\n  [data-bz-node=\"p-adv\"] .bz-feature:first-child .bz-feature__d{display:none}\n}\n/* ---- This post ---- */\n[data-bz-node=\"p-more\"] a[href$=\"/common-replacement-truck-parts\"]{display:none}\n",
+  "js": "/* On this page: highlight the heading in view. More from Rechtien: leave this post out and show three. */\n(function () {\n  var links = [].slice.call(document.querySelectorAll('[data-bz-node=\"p-toc\"] a[href^=\"#\"]'));\n  var targets = links.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)); }).filter(Boolean);\n  if (links.length && 'IntersectionObserver' in window) {\n    var map = {};\n    links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });\n    var io = new IntersectionObserver(function (entries) {\n      entries.forEach(function (en) {\n        if (en.isIntersecting && map[en.target.id]) {\n          links.forEach(function (l) { l.classList.remove('is-active'); });\n          map[en.target.id].classList.add('is-active');\n        }\n      });\n    }, { rootMargin: '-10% 0px -75% 0px' });\n    targets.forEach(function (t) { io.observe(t); });\n  }\n  var here = location.pathname.replace(/\\/$/, '');\n  var cards = [].slice.call(document.querySelectorAll('[data-bz-node=\"p-more\"] a.bz-card'));\n  var kept = 0;\n  cards.forEach(function (a) {\n    if (a.getAttribute('href').replace(/\\/$/, '') === here || kept >= 3) a.parentNode.removeChild(a);\n    else kept++;\n  });\n})();\n",
+  "nodes": [
+    {
+      "id": "p-hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-hero",
+        "values": {
+          "banner": {
+            "src": "/images/hero-truck.jpg",
+            "alt": ""
+          },
+          "title": "A Guide to Buying the Right Dump Truck",
+          "breadcrumb": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / Buying Guide",
+          "category": "Buying Guide",
+          "date": "July 30, 2025",
+          "readTime": "2 min read",
+          "author": "Rechtien International Trucks"
+        }
+      }
+    },
+    {
+      "id": "p-main",
+      "type": "section",
+      "props": {
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "p-row",
+          "type": "row",
+          "props": {
+            "gap": 6
+          },
+          "children": [
+            {
+              "id": "p-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "p-toc-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "On this page",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "p-toc",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"#capacity\">Determine Your Required Capacity</a>\n\n<a href=\"#types\">Understand Different Types of Dump Trucks</a>\n\n<a href=\"#engine\">Assess Engine Power and Fuel Efficiency</a>\n\n<a href=\"#features\">Evaluate Features and Technology</a>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-aside",
+                  "type": "row",
+                  "props": {
+                    "gap": 0
+                  },
+                  "children": [
+                    {
+                      "id": "p-aside-col",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "p-aside-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "Trucks for sale",
+                            "headingLevel": 3
+                          }
+                        },
+                        {
+                          "id": "p-aside-t",
+                          "type": "text",
+                          "props": {
+                            "text": "Browse new and used International trucks.",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "p-aside-cta",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "ctaId": "browse-trucks",
+                                "style": "link"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p-content",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "p-photo",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/dump-truck-buying-guide.jpg",
+                      "alt": "A white dump truck parked in front of a dealership",
+                      "width": 950,
+                      "height": 230
+                    },
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "When it comes to expanding or upgrading your fleet, purchasing <a href=\"/store/inventory\">the right dump truck</a> is a crucial decision. Whether you are in construction, waste management, or landscaping, choosing the best dump truck ensures efficiency and productivity. This guide will help you understand the top factors to consider when buying a dump truck so that your investment delivers the best returns.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-h1",
+                  "type": "heading",
+                  "props": {
+                    "text": "Determine Your Required Capacity",
+                    "headingLevel": 2,
+                    "anchor": "capacity"
+                  }
+                },
+                {
+                  "id": "p-1-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "The first step in purchasing a dump truck is determining the load capacity required for your operations. Consider your most frequent type of work—whether it’s hauling gravel, soil, or debris—and identify how much material needs to be moved per trip. Knowing this will help you select a dump truck with the right bed size and payload capacity.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-h2",
+                  "type": "heading",
+                  "props": {
+                    "text": "Understand Different Types of Dump Trucks",
+                    "headingLevel": 2,
+                    "anchor": "types"
+                  }
+                },
+                {
+                  "id": "p-2-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "Dump trucks come in various types, including standard dump trucks, articulated haulers, and transfer trucks. Each design serves specific purposes and offers unique benefits based on your business needs. For instance, articulated haulers are ideal for rough terrains and off-road applications due to their high maneuverability.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-h3",
+                  "type": "heading",
+                  "props": {
+                    "text": "Assess Engine Power and Fuel Efficiency",
+                    "headingLevel": 2,
+                    "anchor": "engine"
+                  }
+                },
+                {
+                  "id": "p-3-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "Engine power impacts a dump truck’s ability to haul heavy loads efficiently. Look for trucks with robust engines that can handle tough jobs while maintaining good fuel efficiency. Balancing engine performance with fuel savings is key to long-term profitability.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-h4",
+                  "type": "heading",
+                  "props": {
+                    "text": "Evaluate Features and Technology",
+                    "headingLevel": 2,
+                    "anchor": "features"
+                  }
+                },
+                {
+                  "id": "p-4-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "Today’s dump trucks can come equipped with advanced technology like GPS navigation systems, automatic transmissions, and safety features such as rearview cameras or collision avoidance systems. Carefully review these options as they can significantly enhance operational efficiency and safety.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-4-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "Rechtien Truck Group, your local dump truck dealer in South Carolina, is committed to helping businesses find the ideal equipment solutions tailored to their needs. Serving Columbia, SC, and the surrounding areas, we offer a wide range of new and used dump trucks for sale. Visit us today at our dealership, where our friendly experts are ready to assist you in making an informed purchase decision that drives success for your company.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "p-end-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "explore-inventory"
+                      },
+                      {
+                        "ctaId": "contact-us",
+                        "style": "secondary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-more",
+      "type": "section",
+      "props": {
+        "background": "paper",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "p-more-h",
+          "type": "heading",
+          "props": {
+            "text": "More from Rechtien International Trucks",
+            "headingLevel": 2,
+            "eyebrow": "Keep reading"
+          }
+        },
+        {
+          "id": "p-more-posts",
+          "type": "postsList",
+          "props": {
+            "headingLevel": 2,
+            "count": 4,
+            "cta": {
+              "ctaId": "all-blog-posts"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "p-cta",
+      "type": "section",
+      "props": {
+        "background": "ink",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "p-cta-h",
+          "type": "heading",
+          "props": {
+            "text": "Find your dump truck.",
+            "headingLevel": 2,
+            "eyebrow": "Sales",
+            "align": "center"
+          }
+        },
+        {
+          "id": "p-cta-t",
+          "type": "text",
+          "props": {
+            "text": "Call (800) 666-3040 or visit any Rechtien location in South Carolina.",
+            "width": "full",
+            "align": "center"
+          }
+        },
+        {
+          "id": "p-cta-btns",
+          "type": "buttons",
+          "props": {
+            "align": "center",
+            "items": [
+              {
+                "ctaId": "call-main-cta"
+              },
+              {
+                "ctaId": "explore-inventory",
+                "style": "secondary"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
