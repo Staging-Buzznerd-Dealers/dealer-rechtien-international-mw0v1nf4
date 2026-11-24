@@ -182,7 +182,29 @@
                 "alt": "Dorsey Trailers"
               },
               "url": "/#brands",
+              "regions": "florida carolina"
+            },
+            {
+              "name": "East",
+              "image": {
+                "src": "/logos/east.png",
+                "width": 117,
+                "height": 56,
+                "alt": "East"
+              },
+              "url": "/#brands",
               "regions": "florida"
+            },
+            {
+              "name": "Summit",
+              "image": {
+                "src": "/logos/summit.png",
+                "width": 200,
+                "height": 140,
+                "alt": "Summit"
+              },
+              "url": "/#brands",
+              "regions": "carolina"
             },
             {
               "name": "Hino Trucks",
@@ -207,6 +229,17 @@
               "regions": "florida carolina"
             },
             {
+              "name": "IC Bus",
+              "image": {
+                "src": "/logos/ic-bus.png",
+                "width": 142,
+                "height": 150,
+                "alt": "IC Bus"
+              },
+              "url": "/why-ic-bus",
+              "regions": "carolina"
+            },
+            {
               "name": "Idealease",
               "image": {
                 "src": "/logos/idealease.png",
@@ -218,6 +251,17 @@
               "regions": "florida carolina"
             },
             {
+              "name": "Kalmar Ottawa",
+              "image": {
+                "src": "/logos/kalmar-ottawa-red.png",
+                "width": 126,
+                "height": 183,
+                "alt": "Kalmar Ottawa"
+              },
+              "url": "/#brands",
+              "regions": "florida"
+            },
+            {
               "name": "Navigator Forklifts",
               "image": {
                 "src": "/logos/navigator-forklifts.png",
@@ -226,7 +270,7 @@
                 "alt": "Navigator Forklifts"
               },
               "url": "/#brands",
-              "regions": "florida"
+              "regions": "florida carolina"
             }
           ]
         }

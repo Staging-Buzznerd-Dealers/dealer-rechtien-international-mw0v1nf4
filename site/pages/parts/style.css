@@ -158,3 +158,15 @@ main .bz-section--bg-ink .bz-text p{color:rgba(255,255,255,.88)}
 /* ---- Tablet & mobile ------------------------------------------------------------------------------------------------ */
 @media (max-width:1100px){[data-bz-node="intro-row"],[data-bz-node="inv-row"],[data-bz-node="deliv-row"],[data-bz-node="order-row"],[data-bz-node="request-row"]{grid-template-columns:minmax(0,1fr);gap:0}[data-bz-node="intro-row"]>.bz-col,[data-bz-node="inv-row"]>.bz-col,[data-bz-node="deliv-row"]>.bz-col,[data-bz-node="order-row"]>.bz-col,[data-bz-node="request-row"]>.bz-col{grid-column:1/-1}[data-bz-node="request-row"]{gap:24px}[data-bz-node="intro-copy"],[data-bz-node="inv-copy"],[data-bz-node="order-copy"],[data-bz-node="deliv-copy"]{padding:48px 24px}[data-bz-node="intro-media"],[data-bz-node="inv-media"],[data-bz-node="deliv-media"],[data-bz-node="order-media"]{min-height:320px}[data-bz-node="deliv-row"] [data-bz-node="deliv-media"]{order:-1}[data-bz-node="cats-grid"] .bz-grid{grid-template-columns:repeat(3,minmax(0,1fr))}[data-bz-node="why-list"] .bz-grid{grid-template-columns:repeat(2,minmax(0,1fr))}[data-bz-node="covered-list"] .bz-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.bz-section[data-bz-node="hero"]{padding:104px 0 56px;min-height:520px}[data-bz-node$="-copy"]{padding:40px 16px!important}[data-bz-node="intro-media"],[data-bz-node="inv-media"],[data-bz-node="deliv-media"],[data-bz-node="order-media"]{min-height:240px}[data-bz-node="cats-grid"] .bz-grid{grid-template-columns:repeat(2,minmax(0,1fr))}[data-bz-node="cats-grid"] .bz-card{padding:20px 12px}[data-bz-node="fleet-grid"] .bz-grid,[data-bz-node="why-list"] .bz-grid,[data-bz-node="covered-list"] .bz-grid{grid-template-columns:1fr}[data-bz-node="deliv-b-list"] .bz-grid{grid-template-columns:repeat(2,minmax(0,1fr))}[data-bz-node="brands-logos"] .bz-logos{grid-template-columns:repeat(2,minmax(0,1fr))}[data-bz-node="near-menu"] .bz-nav{flex-direction:column;align-items:stretch}}
+
+/* ---- Customer reviews ---------------------------------------------------------- */
+.bz-section[data-bz-node="voices"]{background:var(--paper);padding-block:clamp(56px,6vw,96px)}
+[data-bz-node="voices-list"] .bz-grid{gap:20px}
+[data-bz-node="voices-list"] .bz-quote{background:#fff;border:1px solid var(--line);border-radius:0;box-shadow:none;margin:0;padding:26px;display:flex;flex-direction:column;justify-content:space-between;gap:24px;min-height:248px;transition:box-shadow .2s ease,transform .2s ease}
+[data-bz-node="voices-list"] .bz-quote:hover{box-shadow:0 10px 28px rgba(0,0,0,.08);transform:translateY(-2px)}
+[data-bz-node="voices-list"] .bz-stars{display:none}
+[data-bz-node="voices-list"] blockquote{margin:0;font:400 .9375rem/1.55 var(--font-body);color:var(--ink)}
+[data-bz-node="voices-list"] .bz-quote__n{font:700 .8125rem/1.3 var(--font-body);color:var(--ink)}
+/* One review only on this page: a single card at a readable width instead of a full-width one. */
+[data-bz-node="voices-list"] .bz-grid{grid-template-columns:minmax(0,34rem)}
+[data-bz-node="voices-list"] .bz-quote{min-height:0}

@@ -3381,6 +3381,79 @@
       ]
     },
     {
+      "id": "voices",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "paper",
+        "paddingY": 8
+      },
+      "children": [
+        {
+          "id": "voices-head",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "voices-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "voices-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "What our customers say.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "Testimonials"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "voices-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "voices-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "voices-list",
+                  "type": "testimonials",
+                  "props": {
+                    "items": [
+                      {
+                        "quote": "“I have had most of my service department dealings with Renee. She always goes the extra mile to accommodate me. The demands of the business I work for are high at times, and she has always displayed a sense of urgency, and professionalism to resolve my issues. Great employee & asset to Rechtien Truck Group. Please keep up the good work.”",
+                        "name": "Anonymous"
+                      },
+                      {
+                        "quote": "“Call them cause my check engine light came on. Got to shop it was a warm welcome from kim,Pam and Nathan. Best service I have ever had dealing with international. I give this shop 100 stars. Thanks from Lorenzo Vaughn”",
+                        "name": "festa Adam"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "faq",
       "type": "section",
       "props": {
