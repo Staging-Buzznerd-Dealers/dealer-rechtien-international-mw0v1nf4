@@ -12,7 +12,7 @@
       },
       "styles": {
         "base": {
-          "backgroundImage": "/images/hero-truck.jpg",
+          "backgroundImage": "https://vendure.ai4dealerships.com/assets/source/e6/_ph_6093.jpg3508_-1xoxar.png",
           "backgroundSize": "cover",
           "backgroundPosition": "center",
           "background": "#151515"
@@ -353,7 +353,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     }
   ]
 }
