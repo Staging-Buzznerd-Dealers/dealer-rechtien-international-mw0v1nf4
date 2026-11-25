@@ -10,6 +10,14 @@
         "align": "center",
         "anchor": "top"
       },
+      "styles": {
+        "base": {
+          "backgroundImage": "https://vendure.ai4dealerships.com/assets/source/c7/international-emv-grille-badge-close-up-260914.jpg3508_-1xoxar.png",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
+          "background": "#151515"
+        }
+      },
       "children": [
         {
           "id": "hero-row",
@@ -74,15 +82,7 @@
             }
           ]
         }
-      ],
-      "styles": {
-        "base": {
-          "backgroundImage": "/images/hero-truck.jpg",
-          "backgroundSize": "cover",
-          "backgroundPosition": "center",
-          "background": "#151515"
-        }
-      }
+      ]
     },
     {
       "id": "intro",
@@ -166,7 +166,7 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/emv-truck.jpg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/11/international-emv-box-truck-parked-charging-260311.jpg3508_-1xoxar.png",
                       "alt": "Blue International eMV electric box truck"
                     },
                     "width": "full"
@@ -324,7 +324,7 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/emv-chassis.jpg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/57/emv_bottom_clay_ontransparent_v004.png1024_-1xoxar.png",
                       "alt": "International eMV chassis cutaway showing the battery packs, motor and thermal management system"
                     },
                     "width": "full"
@@ -457,7 +457,7 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/emv-chassis-cab.jpg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/51/international-emv-badge-close-up-240318-1754.jpg1024_-1xoxar-1.png",
                       "alt": "Blue International eMV cab and chassis"
                     },
                     "width": "full"
@@ -668,7 +668,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "cta",
