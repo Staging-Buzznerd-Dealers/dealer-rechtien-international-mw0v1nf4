@@ -437,7 +437,7 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/white-international-truck.jpg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/94/mob_serv_1-1.jpg",
                       "alt": "A white International truck at a Rechtien Truck Group location",
                       "width": 640,
                       "height": 480
