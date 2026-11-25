@@ -10,6 +10,14 @@
         "align": "center",
         "anchor": "top"
       },
+      "styles": {
+        "base": {
+          "backgroundImage": "https://vendure.ai4dealerships.com/assets/source/59/international-emv-stake-flatbed-parked-landscape-nursery-straight-on-260311.jpg1024_-1xoxar.png",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
+          "background": "#151515"
+        }
+      },
       "children": [
         {
           "id": "hero-row",
@@ -70,15 +78,7 @@
             }
           ]
         }
-      ],
-      "styles": {
-        "base": {
-          "backgroundImage": "/images/hero-truck.jpg",
-          "backgroundSize": "cover",
-          "backgroundPosition": "center",
-          "background": "#151515"
-        }
-      }
+      ]
     },
     {
       "id": "intro",
@@ -162,7 +162,7 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/zero-emissions-truck.jpg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/db/international-emv-series-utility-boom-arm-driver-fixing-powerlines-260914.jpg1024_-1xoxar.png",
                       "alt": "Blue International electric truck with a refrigerated box driving across a bridge"
                     },
                     "width": "full"
@@ -251,7 +251,7 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/zero-emissions-dash.jpg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/04/international-emv-digital-cluster-260311.jpg3508_-1xoxar.png",
                       "alt": "Electric truck digital instrument display reading Electric Powered, with power and speed gauges"
                     },
                     "width": "full"
@@ -301,7 +301,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "roadmap-actions",
@@ -725,7 +726,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "cta",
