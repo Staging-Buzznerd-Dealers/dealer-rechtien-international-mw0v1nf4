@@ -892,59 +892,5 @@
     "intent": "about",
     "newTab": false,
     "active": true
-  },
-  {
-    "id": "social-fl-linkedin",
-    "label": "LinkedIn – Florida channel",
-    "url": "https://www.linkedin.com/company/rechtientrucks/",
-    "style": "link",
-    "intent": "follow-social",
-    "newTab": true,
-    "active": true
-  },
-  {
-    "id": "social-fl-instagram",
-    "label": "Instagram – Florida channel",
-    "url": "https://www.instagram.com/rechtientrucks/",
-    "style": "link",
-    "intent": "follow-social",
-    "newTab": true,
-    "active": true
-  },
-  {
-    "id": "social-fl-facebook",
-    "label": "Facebook – Florida channel",
-    "url": "https://www.facebook.com/rechtientrucks/",
-    "style": "link",
-    "intent": "follow-social",
-    "newTab": true,
-    "active": true
-  },
-  {
-    "id": "social-sc-linkedin",
-    "label": "LinkedIn – Carolina channel",
-    "url": "https://www.linkedin.com/company/carolina-international-trucks-inc/",
-    "style": "link",
-    "intent": "follow-social",
-    "newTab": true,
-    "active": true
-  },
-  {
-    "id": "social-sc-instagram",
-    "label": "Instagram – Carolina channel",
-    "url": "https://www.instagram.com/carolinainternationaltrucks/",
-    "style": "link",
-    "intent": "follow-social",
-    "newTab": true,
-    "active": true
-  },
-  {
-    "id": "social-sc-facebook",
-    "label": "Facebook – Carolina channel",
-    "url": "https://www.facebook.com/carolinaintltrucks",
-    "style": "link",
-    "intent": "follow-social",
-    "newTab": true,
-    "active": true
   }
 ]
