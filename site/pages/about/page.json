@@ -347,6 +347,15 @@
                     "align": "left",
                     "width": "full"
                   }
+                },
+                {
+                  "id": "heading",
+                  "type": "heading",
+                  "props": {
+                    "headingLevel": 5,
+                    "align": "left",
+                    "text": "CARLOS CURRLIN"
+                  }
                 }
               ]
             }
