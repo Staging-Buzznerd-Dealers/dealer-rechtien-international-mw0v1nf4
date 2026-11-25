@@ -156,7 +156,7 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/image-needed.svg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/9d/international-mv-train-bridge-chicago-251014-0013.tif1024_-1xoxar.png",
                       "alt": "Placeholder image: lease-maintained International truck (to be replaced)"
                     },
                     "width": "full"
@@ -477,7 +477,7 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/image-needed.svg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/06/navistarshoot_102219_-679.jpeg1024_-1xoxar.png",
                       "alt": "Placeholder image: lease-maintained International truck (to be replaced)"
                     },
                     "width": "full"
