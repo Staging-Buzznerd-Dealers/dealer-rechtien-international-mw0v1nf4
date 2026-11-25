@@ -342,6 +342,60 @@
                     "align": "left",
                     "width": "full"
                   }
+                },
+                {
+                  "id": "ftr-soc-fl-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Follow our Florida Channels",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "ftr-soc-fl",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "social-fl-linkedin"
+                      },
+                      {
+                        "ctaId": "social-fl-instagram"
+                      },
+                      {
+                        "ctaId": "social-fl-facebook"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "ftr-soc-sc-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Follow our Carolina Channels",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "ftr-soc-sc",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "social-sc-linkedin"
+                      },
+                      {
+                        "ctaId": "social-sc-instagram"
+                      },
+                      {
+                        "ctaId": "social-sc-facebook"
+                      }
+                    ],
+                    "align": "left"
+                  }
                 }
               ]
             },
