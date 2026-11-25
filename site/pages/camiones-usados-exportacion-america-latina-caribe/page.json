@@ -11,8 +11,12 @@
         "anchor": "top",
         "background": "ink",
         "backgroundVideo": {
-          "src": "/videos/specifications-banner-placeholder.mp4",
           "poster": "/images/hero-truck.jpg"
+        }
+      },
+      "styles": {
+        "base": {
+          "backgroundImage": "https://vendure.ai4dealerships.com/assets/source/fb/export-header.png"
         }
       },
       "children": [
@@ -156,8 +160,10 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/imagen-pendiente.svg",
-                      "alt": "Imagen de marcador de posición: camión International usado, mantenido durante su arrendamiento (se reemplazará)"
+                      "src": "https://vendure.ai4dealerships.com/assets/source/9d/international-mv-train-bridge-chicago-251014-0013.tif1024_-1xoxar.png",
+                      "alt": "Imagen de marcador de posición: camión International usado, mantenido durante su arrendamiento (se reemplazará)",
+                      "width": 1024,
+                      "height": 682
                     },
                     "width": "full"
                   }
@@ -477,8 +483,10 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/imagen-pendiente.svg",
-                      "alt": "Imagen de marcador de posición: camión International usado, mantenido durante su arrendamiento (se reemplazará)"
+                      "src": "https://vendure.ai4dealerships.com/assets/source/06/navistarshoot_102219_-679.jpeg1024_-1xoxar.png",
+                      "alt": "Imagen de marcador de posición: camión International usado, mantenido durante su arrendamiento (se reemplazará)",
+                      "width": 1024,
+                      "height": 683
                     },
                     "width": "full"
                   }
