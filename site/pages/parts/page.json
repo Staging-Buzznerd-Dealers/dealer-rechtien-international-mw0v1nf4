@@ -12,7 +12,7 @@
       },
       "styles": {
         "base": {
-          "backgroundImage": "/images/hero-truck.jpg",
+          "backgroundImage": "https://vendure.ai4dealerships.com/assets/source/b6/export-header-1.png",
           "backgroundSize": "cover",
           "backgroundPosition": "center",
           "background": "#151515"
@@ -169,7 +169,7 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/red-international-truck.jpg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/0f/fleetrite_parts_01-hires.jpg1024_-1xoxar.png",
                       "alt": "Red International commercial truck serviced and supplied by our parts department"
                     },
                     "width": "full"
@@ -1281,7 +1281,7 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/white-international-truck.jpg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/b6/fleetrite_hands_on_03-hires.jpg1024_-1xoxar-1.png",
                       "alt": "White International truck ready for parts and service"
                     },
                     "width": "full"
@@ -1323,7 +1323,7 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/hero-truck.jpg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/45/fleetrite_hands-on_02-hires.jpg1024_-1xoxar.png",
                       "alt": "International truck on a delivery route"
                     },
                     "width": "full"
@@ -1538,7 +1538,7 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/red-international-truck.jpg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/9f/result-27.png",
                       "alt": "International truck ready to be fitted with parts ordered online"
                     },
                     "width": "full"
