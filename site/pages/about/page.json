@@ -387,38 +387,56 @@
               },
               "children": [
                 {
-                  "id": "glance-row",
+                  "id": "row-2",
                   "type": "row",
                   "props": {
-                    "stackOn": "tablet",
-                    "align": "start",
-                    "gap": 7
+                    "gap": 6
                   },
                   "children": [
                     {
-                      "id": "glance-card",
+                      "id": "column-2",
                       "type": "column",
                       "props": {
-                        "span": 10
+                        "span": 12
                       },
                       "children": [
                         {
-                          "id": "glance-h",
-                          "type": "heading",
+                          "id": "glance-row",
+                          "type": "row",
                           "props": {
-                            "text": "Why choose us?",
-                            "headingLevel": 2,
-                            "align": "left"
-                          }
-                        },
-                        {
-                          "id": "glance-t",
-                          "type": "text",
-                          "props": {
-                            "text": "11 dealership locations across South Florida and South Carolina.\n\nMore than four decades of experience in South Florida, since 1981.\n\nA history since 1992 as the largest commercial truck dealer in South Carolina.\n\nComprehensive truck sales and service for medium, heavy and severe service trucks.\n\nMultiple commercial vehicle brands: International, IC Bus, Kalmar Ottawa and Hino Trucks, plus East, Summit and Dorsey Trailers.\n\nParts and maintenance support, including more than 130 service bays and mobile maintenance services at Rechtien Truck Group.\n\nLeasing and rental options, including Idealease at Rechtien Truck Group.\n\nExperienced dealership teams — our South Carolina dealerships alone have more than 270 employees.\n\n",
-                            "align": "left",
-                            "width": "full"
-                          }
+                            "stackOn": "tablet",
+                            "align": "start",
+                            "gap": 7
+                          },
+                          "children": [
+                            {
+                              "id": "glance-card",
+                              "type": "column",
+                              "props": {
+                                "span": 10
+                              },
+                              "children": [
+                                {
+                                  "id": "glance-h",
+                                  "type": "heading",
+                                  "props": {
+                                    "text": "Why choose us?",
+                                    "headingLevel": 2,
+                                    "align": "left"
+                                  }
+                                },
+                                {
+                                  "id": "glance-t",
+                                  "type": "text",
+                                  "props": {
+                                    "text": "11 dealership locations across South Florida and South Carolina.\n\nMore than four decades of experience in South Florida, since 1981.\n\nA history since 1992 as the largest commercial truck dealer in South Carolina.\n\nComprehensive truck sales and service for medium, heavy and severe service trucks.\n\nMultiple commercial vehicle brands: International, IC Bus, Kalmar Ottawa and Hino Trucks, plus East, Summit and Dorsey Trailers.\n\nParts and maintenance support, including more than 130 service bays and mobile maintenance services at Rechtien Truck Group.\n\nLeasing and rental options, including Idealease at Rechtien Truck Group.\n\nExperienced dealership teams — our South Carolina dealerships alone have more than 270 employees.\n\n",
+                                    "align": "left",
+                                    "width": "full"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
                         }
                       ]
                     }
