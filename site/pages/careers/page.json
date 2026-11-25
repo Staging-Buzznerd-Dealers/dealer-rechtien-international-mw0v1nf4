@@ -12,7 +12,7 @@
       },
       "styles": {
         "base": {
-          "backgroundImage": "/images/hero-truck.jpg",
+          "backgroundImage": "https://vendure.ai4dealerships.com/assets/source/34/_b8a7828.jpeg3508_-1xoxar.webp",
           "backgroundSize": "cover",
           "backgroundPosition": "center",
           "background": "#151515"
@@ -261,7 +261,7 @@
                   "id": "text",
                   "type": "text",
                   "props": {
-                    "text": "Rechtien Truck Group - Carolina",
+                    "text": "Rechtien Truck Group - Florida",
                     "align": "left",
                     "width": "full"
                   }
