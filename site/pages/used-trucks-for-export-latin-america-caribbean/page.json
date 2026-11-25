@@ -15,6 +15,11 @@
           "poster": "/images/hero-truck.jpg"
         }
       },
+      "styles": {
+        "base": {
+          "backgroundImage": "https://vendure.ai4dealerships.com/assets/source/fb/export-header.png"
+        }
+      },
       "children": [
         {
           "id": "hero-row",
