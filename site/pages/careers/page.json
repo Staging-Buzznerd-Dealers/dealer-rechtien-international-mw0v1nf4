@@ -57,7 +57,7 @@
                   "id": "hero-lede",
                   "type": "text",
                   "props": {
-                    "text": "Build a career with Rechtien International Trucks in South Florida or Carolina International Trucks in South Carolina.",
+                    "text": "Build a career with Rechtien Truck Group in South Florida or South Carolina.",
                     "align": "center",
                     "width": "full"
                   }
@@ -111,20 +111,10 @@
               },
               "children": [
                 {
-                  "id": "about-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "Careers at Rechtien Truck Group.",
-                    "headingLevel": 2,
-                    "align": "left",
-                    "eyebrow": "Build a career here"
-                  }
-                },
-                {
                   "id": "about-t1",
                   "type": "text",
                   "props": {
-                    "text": "Carolina International Trucks is the largest commercial truck dealer in South Carolina, providing a statewide presence of sales, service and support for medium, heavy and severe-service International trucks. We also sell and service IC Bus vehicles, Hino trucks and Mitsubishi Fuso medium duty commercial work trucks. To support customer uptime, Carolina International Trucks has over $5 million in stocked parts and a state-of-the-art paint booth and body shop in Columbia. Carolina Idealease provides short-term and long-term solutions through truck leasing, rental and mobile maintenance support.",
+                    "text": "Rechtien Truck Group is the largest commercial truck dealer in South\nCarolina and a leading truck dealer group in South Florida, providing\npresence of sales, service and support for medium, heavy and severe-\nservice International trucks. We also sell and service IC Bus, Hino Trucks\nand other commercial work trucks. To support customer uptime, Rechtien\nTruck Group has over $8 million in stocked parts and a state-of-the-art\npaint booth & body shop in both states (Columbia & Riviera Beach). Our\nLeasing & Rental division, Idealease, provides short-term and long-term\nsolutions through truck leasing, rental and mobile maintenance support.\nays.",
                     "align": "left",
                     "width": "full"
                   }
@@ -133,16 +123,7 @@
                   "id": "about-t2",
                   "type": "text",
                   "props": {
-                    "text": "Rechtien International Trucks serves South Florida from five locations: Miami, Ft. Lauderdale, Riviera Beach, Fort Pierce and Fort Myers. Together, Rechtien Truck Group has more than 270 employees across South Florida and South Carolina.",
-                    "align": "left",
-                    "width": "full"
-                  }
-                },
-                {
-                  "id": "about-t3",
-                  "type": "text",
-                  "props": {
-                    "text": "We offer multiple incentive plans, a tool certification program and more. Our comprehensive benefits plan includes health, dental and vision insurance, 401(k) with company match, paid holidays, vacation and personal days.",
+                    "text": "\nJoin a company of over 360 employees who enjoy multiple incentive plans, tool\ncertification programs and more. Our comprehensive benefits plan includes\nhealth, dental and vision insurance, 401(k) with company match, paid holidays,\nvacation days & personal d",
                     "align": "left",
                     "width": "full"
                   }
@@ -212,7 +193,7 @@
                   "id": "op-a-co",
                   "type": "text",
                   "props": {
-                    "text": "Carolina International Trucks · South Carolina",
+                    "text": "Rechtien Truck Group - Florida",
                     "align": "left",
                     "width": "full"
                   }
@@ -270,52 +251,67 @@
               ]
             },
             {
-              "id": "op-b",
+              "id": "column",
               "type": "column",
               "props": {
                 "span": 6
               },
               "children": [
                 {
-                  "id": "op-b-co",
+                  "id": "text",
                   "type": "text",
                   "props": {
-                    "text": "Rechtien International Trucks · South Florida",
+                    "text": "Rechtien Truck Group - Carolina",
                     "align": "left",
                     "width": "full"
                   }
                 },
                 {
-                  "id": "op-b-h",
+                  "id": "heading",
                   "type": "heading",
                   "props": {
-                    "text": "Join our talent community",
+                    "text": "Currently hiring",
                     "headingLevel": 3,
                     "align": "left"
                   }
                 },
                 {
-                  "id": "op-b-t",
-                  "type": "text",
+                  "id": "list",
+                  "type": "list",
                   "props": {
-                    "text": "We don't have any job openings now, but we want to let you know when we do. Join our Talent Community, and we'll keep you posted.",
-                    "align": "left",
-                    "width": "full"
+                    "headingLevel": 4,
+                    "columns": 1,
+                    "items": [
+                      {
+                        "label": "Parts Driver"
+                      },
+                      {
+                        "label": "Diesel Technician"
+                      },
+                      {
+                        "label": "Parts Sales - Inside"
+                      },
+                      {
+                        "label": "Parts Sales"
+                      },
+                      {
+                        "label": "Shop Foreman"
+                      },
+                      {
+                        "label": "Diesel Technician"
+                      }
+                    ]
                   }
                 },
                 {
-                  "id": "op-b-cta",
+                  "id": "buttons",
                   "type": "buttons",
                   "props": {
                     "align": "left",
                     "items": [
                       {
-                        "ctaId": "careers-talent",
+                        "ctaId": "careers-apply",
                         "style": "primary"
-                      },
-                      {
-                        "ctaId": "careers-applications",
-                        "style": "link"
                       }
                     ]
                   }
