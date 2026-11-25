@@ -241,12 +241,12 @@
                         "desc": "Our South Carolina dealership was founded in 1992 by Dick Ryan. Built on the hard work of its employees and on customers who keep challenging it to find new transportation solutions, it grew into the largest commercial truck dealer in South Carolina, with six locations."
                       },
                       {
-                        "label": "May 2022 · The acquisition",
+                        "label": "May 2022 · THE MERGER",
                         "desc": "In May 2022 the South Florida and South Carolina dealerships came together as Rechtien Truck Group, bringing two International dealerships with long histories in their markets together."
                       },
                       {
                         "label": "Today · 11 locations",
-                        "desc": "The acquisition expanded the dealership network to 11 locations across South Florida and South Carolina — five in South Florida and six in South Carolina."
+                        "desc": "With the addition of Weller International in Fort Myers, FL, the dealership network\nhas expanded to 11 locations across South Florida and South Carolina  — five in South Florida and six in South Carolina."
                       }
                     ]
                   }
@@ -324,7 +324,7 @@
                   "id": "owner-h",
                   "type": "heading",
                   "props": {
-                    "text": "A message from the owner.",
+                    "text": "A MESSAGE FROM THE MANAGING DIRECTOR",
                     "headingLevel": 2,
                     "align": "left",
                     "eyebrow": "Rechtien Truck Group"
@@ -343,7 +343,7 @@
                   "id": "owner-t2",
                   "type": "text",
                   "props": {
-                    "text": "Since Rechtien Truck Group's inception in 1992, our business philosophy has been one of complete service for all your business needs. You can expect a professional, knowledgeable staff that is capable of meeting your business needs. We are not only dedicated to exceeding customers' expectations — we are here to deliver transportation solutions for all your business needs.",
+                    "text": "Since Rechtien Truck Group's inception in 1981, our business philosophy has been one of complete service for all your business needs. You can expect a professional, knowledgeable staff that is capable of meeting your business needs. We are not only dedicated to exceeding customers' expectations — we are here to deliver transportation solutions for all your business needs.",
                     "align": "left",
                     "width": "full"
                   }
