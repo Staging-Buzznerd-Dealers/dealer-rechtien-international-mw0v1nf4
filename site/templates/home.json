@@ -490,12 +490,12 @@
                           "type": "image",
                           "props": {
                             "image": {
-                              "src": "/logos/social-linkedin.png",
-                              "alt": "LinkedIn – Florida channel",
+                              "src": "https://vendure.ai4dealerships.com/assets/source/5e/international_icon_facebook_white.svg",
+                              "alt": "Facebook– Florida channel",
                               "width": 160,
                               "height": 160
                             },
-                            "url": "https://www.linkedin.com/company/rechtientrucks/",
+                            "url": "https://www.facebook.com/rechtientrucks/",
                             "width": "full"
                           }
                         }
@@ -513,7 +513,7 @@
                           "type": "image",
                           "props": {
                             "image": {
-                              "src": "/logos/social-instagram.png",
+                              "src": "https://vendure.ai4dealerships.com/assets/source/06/international_icon_instagram_white.svg",
                               "alt": "Instagram – Florida channel",
                               "width": 160,
                               "height": 160
@@ -536,12 +536,12 @@
                           "type": "image",
                           "props": {
                             "image": {
-                              "src": "/logos/social-facebook.png",
-                              "alt": "Facebook – Florida channel",
+                              "src": "https://vendure.ai4dealerships.com/assets/source/d7/international_icon_linkedin_white.svg",
+                              "alt": "Link – Florida channel",
                               "width": 160,
                               "height": 160
                             },
-                            "url": "https://www.facebook.com/rechtientrucks/",
+                            "url": "s://www.linkedin.com/company/rechtientrucks/",
                             "width": "full"
                           }
                         }
@@ -579,12 +579,12 @@
                           "type": "image",
                           "props": {
                             "image": {
-                              "src": "/logos/social-linkedin.png",
+                              "src": "https://vendure.ai4dealerships.com/assets/source/5e/international_icon_facebook_white.svg",
                               "alt": "LinkedIn – Carolina channel",
-                              "width": 160,
-                              "height": 160
+                              "width": 32,
+                              "height": 32
                             },
-                            "url": "https://www.linkedin.com/company/carolina-international-trucks-inc/",
+                            "url": "https://www.facebook.com/carolinaintltrucks",
                             "width": "full"
                           }
                         }
@@ -602,10 +602,10 @@
                           "type": "image",
                           "props": {
                             "image": {
-                              "src": "/logos/social-instagram.png",
+                              "src": "https://vendure.ai4dealerships.com/assets/source/06/international_icon_instagram_white.svg",
                               "alt": "Instagram – Carolina channel",
-                              "width": 160,
-                              "height": 160
+                              "width": 32,
+                              "height": 32
                             },
                             "url": "https://www.instagram.com/carolinainternationaltrucks/",
                             "width": "full"
@@ -625,12 +625,12 @@
                           "type": "image",
                           "props": {
                             "image": {
-                              "src": "/logos/social-facebook.png",
-                              "alt": "Facebook – Carolina channel",
-                              "width": 160,
-                              "height": 160
+                              "src": "https://vendure.ai4dealerships.com/assets/source/d7/international_icon_linkedin_white.svg",
+                              "alt": "linkedin– Carolina channel",
+                              "width": 32,
+                              "height": 32
                             },
-                            "url": "https://www.facebook.com/carolinaintltrucks",
+                            "url": "https://www.linkedin.com/company/carolina-international-trucks-inc/",
                             "width": "full"
                           }
                         }
