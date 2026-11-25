@@ -563,15 +563,6 @@
                     "align": "left",
                     "eyebrow": "Our products & services"
                   }
-                },
-                {
-                  "id": "products-t",
-                  "type": "text",
-                  "props": {
-                    "text": "Each card shows which dealership offers it, so you can see what is available in South Florida and South Carolina.",
-                    "align": "left",
-                    "width": "full"
-                  }
                 }
               ]
             }
@@ -618,9 +609,9 @@
                         "url": "/store/inventory"
                       },
                       {
-                        "label": "Mitsubishi FUSO Trucks",
-                        "meta": "Medium duty commercial work trucks at Rechtien Truck Group, South Carolina.",
-                        "url": "/store/inventory"
+                        "label": "Online Parts Store",
+                        "meta": "Browse our full selection of all makes Truck & Bus parts and order online.",
+                        "url": "/parts"
                       },
                       {
                         "label": "IC Bus",
@@ -658,15 +649,6 @@
                         "url": "/international-360"
                       }
                     ]
-                  }
-                },
-                {
-                  "id": "products-note",
-                  "type": "text",
-                  "props": {
-                    "text": "Rechtien Truck Group's product lines also include Ottawa trucks and forklifts alongside East, Pitts and Dorsey trailers.",
-                    "align": "left",
-                    "width": "full"
                   }
                 }
               ]
