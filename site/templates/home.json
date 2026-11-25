@@ -210,6 +210,13 @@
                             "menuId": "nav-header",
                             "layout": "mega",
                             "depth": 3
+                          },
+                          "styles": {
+                            "base": {
+                              "fontSize": 13,
+                              "fontWeight": "500",
+                              "textTransform": "uppercase"
+                            }
                           }
                         }
                       ]
