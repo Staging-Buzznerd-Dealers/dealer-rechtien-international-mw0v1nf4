@@ -10,9 +10,7 @@
         "align": "center",
         "anchor": "top",
         "background": "ink",
-        "backgroundVideo": {
-          "poster": "/images/hero-truck.jpg"
-        }
+        "backgroundImage": "/images/hero-truck.jpg"
       },
       "styles": {
         "base": {
