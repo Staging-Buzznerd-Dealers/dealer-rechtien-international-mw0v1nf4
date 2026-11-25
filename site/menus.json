@@ -889,15 +889,6 @@
                   "url": "/service#warranty",
                   "newTab": false,
                   "children": []
-                },
-                {
-                  "id": "item-77",
-                  "label": "Truck Alignments",
-                  "type": "url",
-                  "ref": null,
-                  "url": "/truck-alignments",
-                  "newTab": false,
-                  "children": []
                 }
               ]
             },
@@ -942,15 +933,6 @@
                   "type": "url",
                   "ref": null,
                   "url": "/rechtien-university",
-                  "newTab": false,
-                  "children": []
-                },
-                {
-                  "id": "item-55",
-                  "label": "Dpf Cleaning",
-                  "type": "url",
-                  "ref": null,
-                  "url": "/dpf-cleaning",
                   "newTab": false,
                   "children": []
                 },
@@ -1034,15 +1016,6 @@
                   "type": "page",
                   "ref": "team-david-milliken",
                   "url": null,
-                  "newTab": false,
-                  "children": []
-                },
-                {
-                  "id": "item-78",
-                  "label": "Section 179 Deduction",
-                  "type": "url",
-                  "ref": null,
-                  "url": "/q4-advantage",
                   "newTab": false,
                   "children": []
                 }
