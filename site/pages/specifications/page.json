@@ -434,12 +434,8 @@
                 }
               ],
               "inventoryUrl": "/store/inventory",
-              "image": {
-                "src": "/images/series-image-placeholder.svg",
-                "alt": "International MV Series photo",
-                "width": 1600,
-                "height": 900
-              }
+              "videoSrc": "/videos/specifications-banner-placeholder.mp4",
+              "videoPoster": "/images/specifications-banner-poster.jpg"
             },
             {
               "title": "International eMV Series",
@@ -459,12 +455,8 @@
                 }
               ],
               "inventoryUrl": "/store/inventory",
-              "image": {
-                "src": "/images/series-image-placeholder.svg",
-                "alt": "International eMV Series photo",
-                "width": 1600,
-                "height": 900
-              }
+              "videoSrc": "/videos/specifications-banner-placeholder.mp4",
+              "videoPoster": "/images/specifications-banner-poster.jpg"
             },
             {
               "title": "International HV Series",
@@ -488,12 +480,8 @@
                 }
               ],
               "inventoryUrl": "/store/inventory",
-              "image": {
-                "src": "/images/series-image-placeholder.svg",
-                "alt": "International HV Series photo",
-                "width": 1600,
-                "height": 900
-              }
+              "videoSrc": "/videos/specifications-banner-placeholder.mp4",
+              "videoPoster": "/images/specifications-banner-poster.jpg"
             },
             {
               "title": "International LT Series",
@@ -513,12 +501,8 @@
                 }
               ],
               "inventoryUrl": "/store/inventory",
-              "image": {
-                "src": "/images/series-image-placeholder.svg",
-                "alt": "International LT Series photo",
-                "width": 1600,
-                "height": 900
-              }
+              "videoSrc": "/videos/specifications-banner-placeholder.mp4",
+              "videoPoster": "/images/specifications-banner-poster.jpg"
             },
             {
               "title": "International RH Series",
@@ -563,12 +547,8 @@
                 }
               ],
               "inventoryUrl": "/store/inventory",
-              "image": {
-                "src": "/images/series-image-placeholder.svg",
-                "alt": "International HX Series photo",
-                "width": 1600,
-                "height": 900
-              }
+              "videoSrc": "/videos/specifications-banner-placeholder.mp4",
+              "videoPoster": "/images/specifications-banner-poster.jpg"
             }
           ]
         }
