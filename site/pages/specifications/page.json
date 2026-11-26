@@ -545,40 +545,6 @@
               "inventoryUrl": "/store/inventory",
               "videoSrc": "/videos/specifications-banner-placeholder.mp4",
               "videoPoster": "/images/specifications-banner-poster.jpg"
-            },
-            {
-              "title": "International CV Series",
-              "meta": "Class 4-6 · 1 document",
-              "docs": [
-                {
-                  "label": "CV Series brochure",
-                  "url": "https://vendure.ai4dealerships.com/assets/source/58/int_cv-series-brochure-9-23-2-1.pdf"
-                }
-              ],
-              "inventoryUrl": "/store/inventory",
-              "videoSrc": "/videos/specifications-banner-placeholder.mp4",
-              "videoPoster": "/images/specifications-banner-poster.jpg"
-            },
-            {
-              "title": "LoneStar",
-              "meta": "On highway · 3 documents",
-              "docs": [
-                {
-                  "label": "LoneStar Series brochure",
-                  "url": "https://vendure.ai4dealerships.com/assets/source/0d/lonestar_1-1.pdf"
-                },
-                {
-                  "label": "LoneStar Day Cab",
-                  "url": "https://vendure.ai4dealerships.com/assets/source/0b/lonestar_daycab-1.pdf"
-                },
-                {
-                  "label": "LoneStar Sleeper",
-                  "url": "https://vendure.ai4dealerships.com/assets/source/cf/lonestar_sleeper-1.pdf"
-                }
-              ],
-              "inventoryUrl": "/store/inventory",
-              "videoSrc": "/videos/specifications-banner-placeholder.mp4",
-              "videoPoster": "/images/specifications-banner-poster.jpg"
             }
           ]
         }
