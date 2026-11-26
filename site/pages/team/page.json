@@ -84,81 +84,37 @@
               "title": "Executive Staff",
               "members": [
                 {
-                  "name": "Lorem Ipsum",
-                  "title": "President",
+                  "name": "Bill Sims",
+                  "title": "Regional Director of South Carolina",
+                  "location": "Columbia",
+                  "email": "bsims@carolinainternational.com",
                   "photo": {
                     "src": "",
-                    "alt": ""
+                    "alt": "Bill Sims, Regional Director of South Carolina"
                   },
                   "inventoryUrl": "",
                   "profileUrl": ""
                 },
                 {
-                  "name": "Dolor Sitamet",
-                  "title": "Vice President",
+                  "name": "Chris Weber",
+                  "title": "Director of Idealease - Florida & Carolina",
+                  "location": "Miami",
+                  "email": "cweber@rechtien.com",
                   "photo": {
                     "src": "",
-                    "alt": ""
+                    "alt": "Chris Weber, Director of Idealease - Florida & Carolina"
                   },
                   "inventoryUrl": "",
                   "profileUrl": ""
                 },
                 {
-                  "name": "Consec Tetur",
-                  "title": "Chief Operating Officer",
+                  "name": "Rodrigo Viegas",
+                  "title": "Director of Truck Sales",
+                  "location": "Miami",
+                  "email": "rviegas@rechtien.com",
                   "photo": {
                     "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Adipis Cingelit",
-                  "title": "Chief Financial Officer",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Sedo Eiusmod",
-                  "title": "VP, Sales",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Tempor Incidid",
-                  "title": "VP, Parts",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Utlab Oredolore",
-                  "title": "VP, Service",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Magna Aliqua",
-                  "title": "VP, Marketing",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
+                    "alt": "Rodrigo Viegas, Director of Truck Sales"
                   },
                   "inventoryUrl": "",
                   "profileUrl": ""
@@ -171,8 +127,106 @@
               "title": "Meet the Miami Team",
               "members": [
                 {
+                  "name": "Carlos Currlin",
+                  "title": "Managing Director",
+                  "location": "Miami",
+                  "email": "ccurrlin@rechtien.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Carlos Currlin, Managing Director"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Millie Mejia",
+                  "title": "Dir. of Business Operations & Administration",
+                  "location": "Miami",
+                  "email": "mmejia@rechtien.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Millie Mejia, Dir. of Business Operations & Administration"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Stephen Nunez",
+                  "title": "Marketing Manager",
+                  "location": "Miami",
+                  "email": "snunez@rechtien.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Stephen Nunez, Marketing Manager"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Chris Weber",
+                  "title": "Director of Idealease - Florida & Carolina",
+                  "location": "Miami",
+                  "email": "cweber@rechtien.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Chris Weber, Director of Idealease - Florida & Carolina"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Andy Almeida",
+                  "title": "Parts Manager",
+                  "location": "Miami",
+                  "email": "aalmeida@rechtien.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Andy Almeida, Parts Manager"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "David Perez",
+                  "title": "Service Manager",
+                  "location": "Miami",
+                  "email": "dperez@rechtien.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "David Perez, Service Manager"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Rodrigo Viegas",
+                  "title": "Director of Truck Sales",
+                  "location": "Miami",
+                  "email": "rviegas@rechtien.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Rodrigo Viegas, Director of Truck Sales"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Abraham Canton Sosa",
+                  "title": "Parts Sales Manager",
+                  "location": "Miami",
+                  "email": "acanton@rechtien.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Abraham Canton Sosa, Parts Sales Manager"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
                   "name": "Raul Arellano",
                   "title": "Account Manager",
+                  "location": "Miami",
+                  "email": "rarellano@rechtien.com",
                   "photo": {
                     "src": "",
                     "alt": "Raul Arellano, Account Manager"
@@ -183,6 +237,8 @@
                 {
                   "name": "Jose Sanchez",
                   "title": "Account Manager",
+                  "location": "Miami & Fort Lauderdale",
+                  "email": "josanchez@rechtien.com",
                   "photo": {
                     "src": "",
                     "alt": "Jose Sanchez, Account Manager"
@@ -193,6 +249,8 @@
                 {
                   "name": "Abel Diaz",
                   "title": "Account Manager",
+                  "location": "Miami",
+                  "email": "adiaz@rechtien.com",
                   "photo": {
                     "src": "",
                     "alt": "Abel Diaz, Account Manager"
@@ -206,11 +264,72 @@
               "key": "fort-lauderdale",
               "chip": "Ft. Lauderdale",
               "title": "Meet the Ft. Lauderdale Team",
-              "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
               "members": [
+                {
+                  "name": "Jorge Barnichta",
+                  "title": "General Manager",
+                  "location": "Ft. Lauderdale",
+                  "email": "jbarnichta@rechtien.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Jorge Barnichta, General Manager"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Joe Bryant",
+                  "title": "Parts Manager",
+                  "location": "Ft. Lauderdale",
+                  "email": "jbryant@rechtien.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Joe Bryant, Parts Manager"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Johnatan Avendano",
+                  "title": "Service Manager",
+                  "location": "Ft. Lauderdale",
+                  "email": "javendano@rechtien.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Johnatan Avendano, Service Manager"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Bernardo Re",
+                  "title": "Regional Lease Manager",
+                  "location": "Ft. Lauderdale",
+                  "email": "bernardore@rechtien.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Bernardo Re, Regional Lease Manager"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Shane Long",
+                  "title": "Director of Customer Solutions & Support",
+                  "location": "Ft. Lauderdale",
+                  "email": "slong@rechtien.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Shane Long, Director of Customer Solutions & Support"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
                 {
                   "name": "Jose Sanchez",
                   "title": "Account Manager",
+                  "location": "Miami & Fort Lauderdale",
+                  "email": "josanchez@rechtien.com",
                   "photo": {
                     "src": "",
                     "alt": "Jose Sanchez, Account Manager"
@@ -226,8 +345,58 @@
               "title": "Meet the Riviera Beach Team",
               "members": [
                 {
+                  "name": "Doug Capps",
+                  "title": "Director of Technical Support",
+                  "location": "Riviera Beach",
+                  "email": "dcapps@rechtien.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Doug Capps, Director of Technical Support"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "James Slominski",
+                  "title": "Body Shop Manager",
+                  "location": "Riviera Beach",
+                  "email": "jslominski@rechtien.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "James Slominski, Body Shop Manager"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Juan Abreu",
+                  "title": "Parts Manager",
+                  "location": "Riviera Beach",
+                  "email": "jabreu@rechtien.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Juan Abreu, Parts Manager"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Joe Nitz",
+                  "title": "Service Manager",
+                  "location": "Riviera Beach",
+                  "email": "jnitz@rechtien.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Joe Nitz, Service Manager"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
                   "name": "Hiram Gordillo",
                   "title": "Account Manager",
+                  "location": "Riviera Beach",
+                  "email": "hgordillo@rechtien.com",
                   "photo": {
                     "src": "",
                     "alt": "Hiram Gordillo, Account Manager"
@@ -238,6 +407,8 @@
                 {
                   "name": "Carlos Correa",
                   "title": "Account Manager",
+                  "location": "Riviera Beach",
+                  "email": "ccorrea@rechtien.com",
                   "photo": {
                     "src": "",
                     "alt": "Carlos Correa, Account Manager"
@@ -253,63 +424,27 @@
               "title": "Meet the Ft. Pierce Team",
               "members": [
                 {
-                  "name": "Consec Tetur",
-                  "title": "General Manager",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Adipis Cingelit",
+                  "name": "Kirby Tucker",
                   "title": "Parts Manager",
+                  "location": "Ft. Pierce",
+                  "email": "ktucker@rechtien.com",
                   "photo": {
                     "src": "",
-                    "alt": ""
+                    "alt": "Kirby Tucker, Parts Manager"
                   },
                   "inventoryUrl": "",
                   "profileUrl": ""
                 },
                 {
-                  "name": "Sedo Eiusmod",
+                  "name": "Jason Endres",
                   "title": "Service Manager",
+                  "location": "Ft. Pierce",
+                  "email": "jendres@rechtien.com",
                   "photo": {
                     "src": "",
-                    "alt": ""
+                    "alt": "Jason Endres, Service Manager"
                   },
                   "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Tempor Incidid",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Utlab Oredolore",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Magna Aliqua",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
                   "profileUrl": ""
                 }
               ]
@@ -320,8 +455,34 @@
               "title": "Meet the Ft. Myers Team",
               "members": [
                 {
+                  "name": "Doug Pierce",
+                  "title": "General Manager",
+                  "location": "Fort Myers",
+                  "email": "dpierce@rechtien.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Doug Pierce, General Manager"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Richard Carwile",
+                  "title": "Parts Manager",
+                  "location": "Fort Myers",
+                  "email": "rcarwile@rechtien.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Richard Carwile, Parts Manager"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
                   "name": "Laddie Williams",
                   "title": "Account Manager",
+                  "location": "Fort Myers",
+                  "email": "lwilliams@rechtien.com",
                   "photo": {
                     "src": "",
                     "alt": "Laddie Williams, Account Manager"
@@ -332,6 +493,8 @@
                 {
                   "name": "Randy Betten",
                   "title": "Account Manager",
+                  "location": "Fort Myers",
+                  "email": "rbetten@rechtien.com",
                   "photo": {
                     "src": "",
                     "alt": "Randy Betten, Account Manager"
@@ -347,8 +510,82 @@
               "title": "Meet the Columbia Team",
               "members": [
                 {
+                  "name": "Richard Seegars",
+                  "title": "Service Manager",
+                  "location": "Columbia",
+                  "email": "rseegars@carolinainternational.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Richard Seegars, Service Manager"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Jason Bell",
+                  "title": "Leasing General Manager - South Carolina",
+                  "location": "Columbia",
+                  "email": "jbell@carolinainternational.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Jason Bell, Leasing General Manager - South Carolina"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Craig Minnick",
+                  "title": "Body Shop Manager",
+                  "location": "Columbia",
+                  "email": "cminnick@carolinainternational.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Craig Minnick, Body Shop Manager"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Michael Pelletterie",
+                  "title": "Parts Manager",
+                  "location": "Columbia",
+                  "email": "mpelletterie@carolinainternational.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Michael Pelletterie, Parts Manager"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Jesse Kutzko",
+                  "title": "Truck Sales Manager - South Carolina",
+                  "location": "Columbia",
+                  "email": "jkutzko@carolinainternational.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Jesse Kutzko, Truck Sales Manager - South Carolina"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Bill Sims",
+                  "title": "Regional Director of South Carolina",
+                  "location": "Columbia",
+                  "email": "bsims@carolinainternational.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Bill Sims, Regional Director of South Carolina"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
                   "name": "Brandon Bowen",
                   "title": "Account Manager",
+                  "location": "Columbia",
+                  "email": "bbowen@carolinainternational.com",
                   "photo": {
                     "src": "",
                     "alt": "Brandon Bowen, Account Manager"
@@ -359,6 +596,8 @@
                 {
                   "name": "Bill Faircloth",
                   "title": "Account Manager",
+                  "location": "Columbia",
+                  "email": "bfaircloth@carolinainternational.com",
                   "photo": {
                     "src": "",
                     "alt": "Bill Faircloth, Account Manager"
@@ -369,6 +608,8 @@
                 {
                   "name": "Steve Wiser",
                   "title": "Account Manager",
+                  "location": "Columbia",
+                  "email": "swiser@carolinainternational.com",
                   "photo": {
                     "src": "",
                     "alt": "Steve Wiser, Account Manager"
@@ -379,6 +620,8 @@
                 {
                   "name": "Ricky Lee",
                   "title": "Account Manager",
+                  "location": "Columbia",
+                  "email": "rlee@carolinainternational.com",
                   "photo": {
                     "src": "",
                     "alt": "Ricky Lee, Account Manager"
@@ -394,8 +637,46 @@
               "title": "Meet the Charleston Team",
               "members": [
                 {
+                  "name": "Eric Hayes",
+                  "title": "General Manager",
+                  "location": "Charleston",
+                  "email": "ehayes@carolinainternational.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Eric Hayes, General Manager"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Barry Benson",
+                  "title": "Parts Manager",
+                  "location": "Charleston",
+                  "email": "",
+                  "photo": {
+                    "src": "",
+                    "alt": "Barry Benson, Parts Manager"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Mike Chmielowiec",
+                  "title": "Service Manager",
+                  "location": "Charleston",
+                  "email": "mchmielowiec@carolinainternational.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Mike Chmielowiec, Service Manager"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
                   "name": "Kevin Kure",
                   "title": "Account Manager",
+                  "location": "Charleston",
+                  "email": "kkure@carolinainternational.com",
                   "photo": {
                     "src": "",
                     "alt": "Kevin Kure, Account Manager"
@@ -406,6 +687,8 @@
                 {
                   "name": "Charlie Howle",
                   "title": "Account Manager",
+                  "location": "Charleston",
+                  "email": "chowle@carolinainternational.com",
                   "photo": {
                     "src": "",
                     "alt": "Charlie Howle, Account Manager"
@@ -421,8 +704,34 @@
               "title": "Meet the Florence Team",
               "members": [
                 {
+                  "name": "Jason Pate",
+                  "title": "Parts Manager",
+                  "location": "Florence",
+                  "email": "jpate@carolinainternational.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Jason Pate, Parts Manager"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Steve Sinclair",
+                  "title": "Service Manager",
+                  "location": "Florence",
+                  "email": "ssinclair@carolinainternational.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Steve Sinclair, Service Manager"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
                   "name": "Joe Allen",
                   "title": "Account Manager",
+                  "location": "Florence",
+                  "email": "jallen@carolinainternational.com",
                   "photo": {
                     "src": "",
                     "alt": "Joe Allen, Account Manager"
@@ -438,63 +747,15 @@
               "title": "Meet the Conway Team",
               "members": [
                 {
-                  "name": "Enim Adminim",
-                  "title": "General Manager",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Veniam Quisnos",
-                  "title": "Parts Manager",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Trud Exercita",
+                  "name": "William Wandall",
                   "title": "Service Manager",
+                  "location": "Conway",
+                  "email": "wwandall@carolinainternational.com",
                   "photo": {
                     "src": "",
-                    "alt": ""
+                    "alt": "William Wandall, Service Manager"
                   },
                   "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Ullam Colabor",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Nisi Utaliquip",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Exea Commodo",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
                   "profileUrl": ""
                 }
               ]
@@ -505,63 +766,39 @@
               "title": "Meet the Greenville Team",
               "members": [
                 {
-                  "name": "Duis Auteirure",
+                  "name": "Dave Milliken",
                   "title": "General Manager",
+                  "location": "Greenville",
+                  "email": "",
                   "photo": {
                     "src": "",
-                    "alt": ""
+                    "alt": "Dave Milliken, General Manager"
                   },
                   "inventoryUrl": "",
                   "profileUrl": ""
                 },
                 {
-                  "name": "Dolor Inrepre",
+                  "name": "Greg Maddox",
                   "title": "Parts Manager",
+                  "location": "Greenville",
+                  "email": "gmaddox@carolinainternational.com",
                   "photo": {
                     "src": "",
-                    "alt": ""
+                    "alt": "Greg Maddox, Parts Manager"
                   },
                   "inventoryUrl": "",
                   "profileUrl": ""
                 },
                 {
-                  "name": "Hend Eritinvol",
+                  "name": "Jesse Cothran",
                   "title": "Service Manager",
+                  "location": "Greenville",
+                  "email": "jcothran@carolinainternational.com",
                   "photo": {
                     "src": "",
-                    "alt": ""
+                    "alt": "Jesse Cothran, Service Manager"
                   },
                   "inventoryUrl": "",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Uptate Velitesse",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Cillum Dolore",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
-                  "profileUrl": ""
-                },
-                {
-                  "name": "Fugiat Nulla",
-                  "title": "Account Executive",
-                  "photo": {
-                    "src": "",
-                    "alt": ""
-                  },
-                  "inventoryUrl": "/store/inventory",
                   "profileUrl": ""
                 }
               ]
@@ -570,11 +807,48 @@
               "key": "greer",
               "chip": "Greer",
               "title": "Meet the Greer Team",
-              "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
               "members": [
+                {
+                  "name": "Dave Milliken",
+                  "title": "General Manager",
+                  "location": "Greer",
+                  "email": "",
+                  "photo": {
+                    "src": "",
+                    "alt": "Dave Milliken, General Manager"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "John Keener",
+                  "title": "Parts Manager",
+                  "location": "Greer",
+                  "email": "jkeener@carolinainternational.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "John Keener, Parts Manager"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
+                {
+                  "name": "Brandon McKaba",
+                  "title": "Service Manager",
+                  "location": "Greer",
+                  "email": "bmckaba@carolinainternational.com",
+                  "photo": {
+                    "src": "",
+                    "alt": "Brandon McKaba, Service Manager"
+                  },
+                  "inventoryUrl": "",
+                  "profileUrl": ""
+                },
                 {
                   "name": "Steven Myers",
                   "title": "Account Manager",
+                  "location": "Greer",
+                  "email": "smyers@carolinainternational.com",
                   "photo": {
                     "src": "",
                     "alt": "Steven Myers, Account Manager"
@@ -585,6 +859,8 @@
                 {
                   "name": "Charlie Champion",
                   "title": "Account Manager",
+                  "location": "Greer",
+                  "email": "cchampion@carolinainternational.com",
                   "photo": {
                     "src": "",
                     "alt": "Charlie Champion, Account Manager"
