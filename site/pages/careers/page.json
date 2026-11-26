@@ -372,18 +372,17 @@
           "spotlight": [
             {
               "image": {
-                "src": "/images/image-needed.svg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/d8/careers-3.png",
                 "alt": "Heather Hoffmann, Diesel Technician",
                 "width": 800,
                 "height": 600
               },
-              "title": "Heather Hoffmann",
-              "caption": "Diesel Technician · Since 2019",
-              "quote": ""
+              "title": " Eugene Burnette & Kyle Stoll",
+              "caption": "SCTA Technicians of The Quarter 2026"
             },
             {
               "image": {
-                "src": "/images/image-needed.svg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/6f/careers-2.png",
                 "alt": "Join our team",
                 "width": 800,
                 "height": 600
@@ -394,14 +393,13 @@
             },
             {
               "image": {
-                "src": "/images/image-needed.svg",
-                "alt": "Doris Ferguson, Receptionist & Hospitality Manager",
+                "src": "https://vendure.ai4dealerships.com/assets/source/f8/careers-4.png",
+                "alt": "Celebrating Over 40 Years at Rechtien Truck Group!",
                 "width": 800,
                 "height": 600
               },
-              "title": "Doris Ferguson",
-              "caption": "Receptionist & Hospitality Manager · Since 2003",
-              "quote": ""
+              "title": "Raul Arellano ",
+              "caption": "Celebrating Over 40 Years at Rechtien Truck Group!"
             }
           ]
         }
