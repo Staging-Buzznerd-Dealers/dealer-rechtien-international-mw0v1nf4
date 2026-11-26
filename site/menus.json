@@ -12,6 +12,7 @@
           "ref": "home",
           "url": null,
           "newTab": false,
+          "icon": null,
           "children": []
         },
         {
@@ -21,6 +22,7 @@
           "ref": "inventory",
           "url": null,
           "newTab": false,
+          "icon": null,
           "children": []
         },
         {
@@ -30,6 +32,7 @@
           "ref": null,
           "url": "/about",
           "newTab": false,
+          "icon": null,
           "children": [
             {
               "id": "about-team",
@@ -38,6 +41,7 @@
               "ref": "team",
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": []
             },
             {
@@ -47,6 +51,7 @@
               "ref": null,
               "url": "/about#history",
               "newTab": false,
+              "icon": null,
               "children": []
             }
           ]
@@ -58,6 +63,7 @@
           "ref": null,
           "url": "/contact",
           "newTab": false,
+          "icon": null,
           "children": []
         }
       ]
@@ -73,6 +79,7 @@
           "ref": "inventory",
           "url": null,
           "newTab": false,
+          "icon": null,
           "children": []
         },
         {
@@ -82,6 +89,7 @@
           "ref": null,
           "url": "/about",
           "newTab": false,
+          "icon": null,
           "children": []
         },
         {
@@ -91,6 +99,7 @@
           "ref": null,
           "url": "/contact",
           "newTab": false,
+          "icon": null,
           "children": []
         }
       ]
@@ -106,6 +115,7 @@
           "ref": null,
           "url": "/privacy",
           "newTab": false,
+          "icon": null,
           "children": []
         },
         {
@@ -115,6 +125,7 @@
           "ref": null,
           "url": "/terms",
           "newTab": false,
+          "icon": null,
           "children": []
         }
       ]
@@ -130,6 +141,7 @@
           "ref": null,
           "url": null,
           "newTab": false,
+          "icon": null,
           "children": [
             {
               "id": "nb-international",
@@ -138,6 +150,7 @@
               "ref": "showrooms?fvid=667",
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": []
             },
             {
@@ -147,6 +160,7 @@
               "ref": "showrooms?fvid=578",
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": []
             },
             {
@@ -156,6 +170,7 @@
               "ref": null,
               "url": "/#brands",
               "newTab": false,
+              "icon": null,
               "children": []
             },
             {
@@ -165,6 +180,7 @@
               "ref": null,
               "url": "/#brands",
               "newTab": false,
+              "icon": null,
               "children": []
             },
             {
@@ -172,9 +188,14 @@
               "label": "Kalmar Ottawa",
               "type": "url",
               "ref": null,
-              "url": "/#brands",
-              "newTab": false,
-              "children": []
+              "url": "https://ottawatruckscenter.com/inventory/",
+              "newTab": true,
+              "icon": {
+                "src": "https://vendure.ai4dealerships.com/assets/source/fb/export-header.png",
+                "tint": true
+              },
+              "children": [],
+              "showIcon": true
             },
             {
               "id": "nb-east",
@@ -183,6 +204,7 @@
               "ref": null,
               "url": "/#brands",
               "newTab": false,
+              "icon": null,
               "children": []
             },
             {
@@ -192,6 +214,7 @@
               "ref": null,
               "url": "/#brands",
               "newTab": false,
+              "icon": null,
               "children": []
             },
             {
@@ -201,6 +224,7 @@
               "ref": null,
               "url": "/#brands",
               "newTab": false,
+              "icon": null,
               "children": []
             }
           ]
@@ -212,6 +236,7 @@
           "ref": null,
           "url": null,
           "newTab": false,
+          "icon": null,
           "children": [
             {
               "id": "ns-new-trucks",
@@ -220,6 +245,7 @@
               "ref": "inventory?condition=new",
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": []
             },
             {
@@ -229,6 +255,7 @@
               "ref": "inventory?condition=used",
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": []
             },
             {
@@ -238,6 +265,7 @@
               "ref": "inventory",
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": []
             },
             {
@@ -247,6 +275,7 @@
               "ref": "inventory",
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": []
             },
             {
@@ -256,6 +285,7 @@
               "ref": null,
               "url": "/parts",
               "newTab": false,
+              "icon": null,
               "children": []
             },
             {
@@ -265,6 +295,7 @@
               "ref": "service",
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": []
             },
             {
@@ -274,6 +305,7 @@
               "ref": null,
               "url": "/service#appointment",
               "newTab": false,
+              "icon": null,
               "children": []
             },
             {
@@ -283,6 +315,7 @@
               "ref": null,
               "url": "/mobile-service",
               "newTab": false,
+              "icon": null,
               "children": []
             },
             {
@@ -292,6 +325,7 @@
               "ref": "body-shop",
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": []
             },
             {
@@ -301,6 +335,7 @@
               "ref": null,
               "url": "/lease-rental",
               "newTab": false,
+              "icon": null,
               "children": []
             }
           ]
@@ -312,6 +347,7 @@
           "ref": null,
           "url": null,
           "newTab": false,
+          "icon": null,
           "children": [
             {
               "id": "nc-about",
@@ -320,6 +356,7 @@
               "ref": null,
               "url": "/about",
               "newTab": false,
+              "icon": null,
               "children": []
             },
             {
@@ -329,6 +366,7 @@
               "ref": "team",
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": []
             },
             {
@@ -338,6 +376,7 @@
               "ref": null,
               "url": "/careers",
               "newTab": false,
+              "icon": null,
               "children": []
             },
             {
@@ -347,6 +386,7 @@
               "ref": null,
               "url": "/reviews",
               "newTab": false,
+              "icon": null,
               "children": []
             },
             {
@@ -356,6 +396,7 @@
               "ref": null,
               "url": "/locations",
               "newTab": false,
+              "icon": null,
               "children": []
             },
             {
@@ -365,6 +406,7 @@
               "ref": null,
               "url": "/blog",
               "newTab": false,
+              "icon": null,
               "children": []
             },
             {
@@ -374,6 +416,7 @@
               "ref": null,
               "url": "/contact",
               "newTab": false,
+              "icon": null,
               "children": []
             }
           ]
@@ -391,6 +434,7 @@
           "ref": "inventory",
           "url": null,
           "newTab": false,
+          "icon": null,
           "children": [
             {
               "id": "hn-inv-shop",
@@ -399,6 +443,7 @@
               "ref": null,
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": [
                 {
                   "id": "item-51",
@@ -407,6 +452,7 @@
                   "ref": "inventory",
                   "url": null,
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -416,6 +462,7 @@
                   "ref": "inventory?condition=new",
                   "url": null,
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -425,6 +472,7 @@
                   "ref": "inventory?condition=used",
                   "url": null,
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -434,6 +482,7 @@
                   "ref": null,
                   "url": "https://ottawatruckscenter.com/inventory/",
                   "newTab": true,
+                  "icon": null,
                   "children": []
                 }
               ]
@@ -445,6 +494,7 @@
               "ref": null,
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": [
                 {
                   "id": "item-49",
@@ -453,6 +503,7 @@
                   "ref": "showrooms?fvid=667",
                   "url": null,
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -462,6 +513,7 @@
                   "ref": "showrooms?fvid=578",
                   "url": null,
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 }
               ]
@@ -473,6 +525,7 @@
               "ref": null,
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": [
                 {
                   "id": "item-48",
@@ -481,6 +534,7 @@
                   "ref": null,
                   "url": "/financing",
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -490,6 +544,7 @@
                   "ref": null,
                   "url": "/specifications",
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -499,6 +554,7 @@
                   "ref": null,
                   "url": "/emv-series",
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -508,6 +564,7 @@
                   "ref": null,
                   "url": "/truck-configurator",
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -517,6 +574,7 @@
                   "ref": null,
                   "url": "/zero-emissions",
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 }
               ]
@@ -530,6 +588,7 @@
           "ref": null,
           "url": "/#",
           "newTab": false,
+          "icon": null,
           "children": [
             {
               "id": "hn-trl-shop",
@@ -538,6 +597,7 @@
               "ref": null,
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": [
                 {
                   "id": "item-59",
@@ -546,6 +606,7 @@
                   "ref": "inventory",
                   "url": null,
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -555,6 +616,7 @@
                   "ref": null,
                   "url": "/#",
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -564,6 +626,7 @@
                   "ref": null,
                   "url": "/#",
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -573,6 +636,7 @@
                   "ref": null,
                   "url": "/#",
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -582,6 +646,7 @@
                   "ref": null,
                   "url": "/#",
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 }
               ]
@@ -593,6 +658,7 @@
               "ref": null,
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": [
                 {
                   "id": "item-62",
@@ -601,6 +667,7 @@
                   "ref": null,
                   "url": "/#",
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -610,6 +677,7 @@
                   "ref": null,
                   "url": "/#",
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 }
               ]
@@ -623,6 +691,7 @@
           "ref": null,
           "url": "/locations",
           "newTab": false,
+          "icon": null,
           "children": [
             {
               "id": "hn-loc-fl",
@@ -631,6 +700,7 @@
               "ref": null,
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": [
                 {
                   "id": "hn-loc-miami",
@@ -639,6 +709,7 @@
                   "ref": "maimi",
                   "url": null,
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -648,6 +719,7 @@
                   "ref": "ft-lauderdale",
                   "url": null,
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -657,6 +729,7 @@
                   "ref": "riviera-beach",
                   "url": null,
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -666,6 +739,7 @@
                   "ref": "ft-pierce",
                   "url": null,
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -675,6 +749,7 @@
                   "ref": "ft-myers",
                   "url": null,
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 }
               ]
@@ -686,6 +761,7 @@
               "ref": null,
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": [
                 {
                   "id": "hn-loc-charleston",
@@ -694,6 +770,7 @@
                   "ref": "charleston",
                   "url": null,
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -703,6 +780,7 @@
                   "ref": "columbia-2",
                   "url": null,
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -712,6 +790,7 @@
                   "ref": "conway",
                   "url": null,
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -721,6 +800,7 @@
                   "ref": "florence",
                   "url": null,
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -730,6 +810,7 @@
                   "ref": "greenville",
                   "url": null,
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -739,6 +820,7 @@
                   "ref": "greer",
                   "url": null,
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 }
               ]
@@ -752,6 +834,7 @@
           "ref": "parts",
           "url": null,
           "newTab": false,
+          "icon": null,
           "children": [
             {
               "id": "hn-prt-shop",
@@ -760,6 +843,7 @@
               "ref": null,
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": [
                 {
                   "id": "hn-prt-dept",
@@ -768,6 +852,7 @@
                   "ref": "parts",
                   "url": null,
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -777,6 +862,7 @@
                   "ref": "parts",
                   "url": null,
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -786,6 +872,7 @@
                   "ref": null,
                   "url": "/parts#parts-request",
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -795,6 +882,7 @@
                   "ref": null,
                   "url": "/parts#delivery",
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -804,6 +892,7 @@
                   "ref": null,
                   "url": "https://www.ebay.com/str/rechtienintl",
                   "newTab": true,
+                  "icon": null,
                   "children": []
                 }
               ]
@@ -815,6 +904,7 @@
               "ref": null,
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": [
                 {
                   "id": "hn-fleetrite",
@@ -823,6 +913,7 @@
                   "ref": null,
                   "url": "/parts#fleetrite",
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -832,6 +923,7 @@
                   "ref": null,
                   "url": "/used-trucks-for-export-latin-america-caribbean",
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -841,6 +933,7 @@
                   "ref": null,
                   "url": "/camiones-usados-exportacion-america-latina-caribe",
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 }
               ]
@@ -854,6 +947,7 @@
           "ref": "service",
           "url": null,
           "newTab": false,
+          "icon": null,
           "children": [
             {
               "id": "hn-svc-col",
@@ -862,6 +956,7 @@
               "ref": null,
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": [
                 {
                   "id": "hn-svc-overview",
@@ -870,6 +965,7 @@
                   "ref": "service",
                   "url": null,
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -879,6 +975,7 @@
                   "ref": null,
                   "url": "/service#appointment",
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -888,6 +985,7 @@
                   "ref": null,
                   "url": "/mobile-service",
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -897,6 +995,7 @@
                   "ref": "body-shop",
                   "url": null,
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 }
               ]
@@ -908,6 +1007,7 @@
               "ref": null,
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": [
                 {
                   "id": "item-53",
@@ -916,6 +1016,7 @@
                   "ref": null,
                   "url": "/international-360",
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -925,6 +1026,7 @@
                   "ref": null,
                   "url": "/rechtien-university",
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 }
               ]
@@ -938,6 +1040,7 @@
           "ref": null,
           "url": "/about",
           "newTab": false,
+          "icon": null,
           "children": [
             {
               "id": "hn-about-col",
@@ -946,6 +1049,7 @@
               "ref": null,
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": [
                 {
                   "id": "hn-about-overview",
@@ -954,6 +1058,7 @@
                   "ref": "about",
                   "url": null,
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -963,6 +1068,7 @@
                   "ref": null,
                   "url": "/contact",
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -972,6 +1078,7 @@
                   "ref": null,
                   "url": "/careers",
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -981,6 +1088,7 @@
                   "ref": "team",
                   "url": null,
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 }
               ]
@@ -992,6 +1100,7 @@
               "ref": null,
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": [
                 {
                   "id": "item-53",
@@ -1000,6 +1109,7 @@
                   "ref": null,
                   "url": "/blog",
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 }
               ]
@@ -1013,6 +1123,7 @@
           "ref": "lease-rental",
           "url": null,
           "newTab": false,
+          "icon": null,
           "children": [
             {
               "id": "hn-lease-col",
@@ -1021,6 +1132,7 @@
               "ref": null,
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": [
                 {
                   "id": "hn-lease-overview",
@@ -1029,6 +1141,7 @@
                   "ref": "lease-rental",
                   "url": null,
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 },
                 {
@@ -1038,6 +1151,7 @@
                   "ref": null,
                   "url": "/mobile-service",
                   "newTab": false,
+                  "icon": null,
                   "children": []
                 }
               ]
@@ -1049,6 +1163,7 @@
               "ref": null,
               "url": null,
               "newTab": false,
+              "icon": null,
               "children": [
                 {
                   "id": "item-71",
@@ -1057,6 +1172,7 @@
                   "ref": null,
                   "url": "https://www.idealease.com/safety-compliance/safety-bulletins",
                   "newTab": true,
+                  "icon": null,
                   "children": []
                 }
               ]
@@ -1076,6 +1192,7 @@
           "ref": null,
           "url": "/privacy",
           "newTab": false,
+          "icon": null,
           "children": []
         },
         {
@@ -1085,6 +1202,7 @@
           "ref": null,
           "url": "/terms",
           "newTab": false,
+          "icon": null,
           "children": []
         },
         {
@@ -1094,6 +1212,7 @@
           "ref": null,
           "url": "/policies",
           "newTab": false,
+          "icon": null,
           "children": []
         }
       ]
@@ -1109,6 +1228,7 @@
           "ref": null,
           "url": "#locations",
           "newTab": false,
+          "icon": null,
           "children": []
         },
         {
@@ -1118,6 +1238,7 @@
           "ref": null,
           "url": "#locations",
           "newTab": false,
+          "icon": null,
           "children": []
         },
         {
@@ -1127,6 +1248,7 @@
           "ref": "inventory?condition=used",
           "url": null,
           "newTab": false,
+          "icon": null,
           "children": []
         },
         {
@@ -1136,6 +1258,7 @@
           "ref": "parts",
           "url": null,
           "newTab": false,
+          "icon": null,
           "children": []
         }
       ]
@@ -1151,6 +1274,7 @@
           "ref": "parts",
           "url": null,
           "newTab": false,
+          "icon": null,
           "children": []
         },
         {
@@ -1160,6 +1284,7 @@
           "ref": null,
           "url": "#parts-request",
           "newTab": false,
+          "icon": null,
           "children": []
         },
         {
@@ -1169,6 +1294,7 @@
           "ref": null,
           "url": "#delivery",
           "newTab": false,
+          "icon": null,
           "children": []
         },
         {
@@ -1178,6 +1304,7 @@
           "ref": null,
           "url": "#contact-parts",
           "newTab": false,
+          "icon": null,
           "children": []
         }
       ]
