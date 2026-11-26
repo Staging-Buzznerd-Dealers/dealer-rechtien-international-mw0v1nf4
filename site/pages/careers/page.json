@@ -334,7 +334,7 @@
           "why": [
             {
               "image": {
-                "src": "/images/image-needed.svg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/2f/careers-1.png",
                 "alt": "Charity initiatives",
                 "width": 800,
                 "height": 600
@@ -345,7 +345,7 @@
             },
             {
               "image": {
-                "src": "/images/image-needed.svg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/6f/careers-1-1.png",
                 "alt": "Customer events",
                 "width": 800,
                 "height": 600
@@ -356,7 +356,7 @@
             },
             {
               "image": {
-                "src": "/images/image-needed.svg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/d5/_dsc2494.jpg",
                 "alt": "Employee events",
                 "width": 800,
                 "height": 600
