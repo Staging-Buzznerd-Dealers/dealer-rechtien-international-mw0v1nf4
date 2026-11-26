@@ -1,8 +1,8 @@
 /* ==========================================================================
-   CIT University — Rechtien Truck Group
+   Former CIT University address — Rechtien Truck Group
    Loaded on this page only (site/pages/cit-university/style.css). Base type, tokens
    and buttons match the other page-scoped stylesheets so the shared header/footer
-   chrome (site/templates/home.json) renders the same here. Layout: image hero, then logo and copy side by side.
+   chrome (site/templates/home.json) renders the same here. The page moved to /rechtien-university; this is only the hero with a link and a script that forwards visitors.
    Fonts come from site/tokens.json (INTL Headline / INTL Text).
    ========================================================================== */
 :root{
@@ -50,17 +50,5 @@ main .bz-section--bg-ink .bz-text p{color:rgba(255,255,255,.9)}
 [data-bz-node="hero-h"] .bz-eyebrow{color:var(--accent);letter-spacing:.24em;margin-bottom:var(--space-3)}
 [data-bz-node="hero-h"] h1{color:#fff;margin:0 auto var(--space-4);max-width:16em;text-wrap:balance}
 [data-bz-node="hero-lede"] p{color:#fff!important;font-size:1rem!important;line-height:1.75;max-width:40rem;margin:0 auto!important}
-/* ---- Logo + copy ------------------------------------------------------------------------------------ */
-[data-bz-node="uni-row"]{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,5vw,72px);align-items:start}
-[data-bz-node="uni-row"]>.bz-col{grid-column:auto}
-[data-bz-node="uni-logo"] .bz-container,[data-bz-node="uni-logo"] .bz-figure{padding:0;margin:0 auto;max-width:300px}
-[data-bz-node="uni-logo"] img{display:block;width:100%;height:auto}
-[data-bz-node="uni-cap"] p{font-size:.8125rem!important;text-align:center;max-width:26rem;margin:var(--space-4) auto var(--space-3)!important}
-[data-bz-node="uni-brand"] h3{font:700 1.125rem/1.2 var(--font-heading);text-transform:uppercase;text-align:center;margin:0}
-[data-bz-node="uni-copy"] .bz-text p{font-size:.9375rem;line-height:1.85}
-[data-bz-node="uni-copy"] a{color:var(--ink);border-bottom:1px solid currentColor}
-[data-bz-node="uni-join-t"] p,[data-bz-node="uni-enrolled"] p{font-size:1rem!important;text-align:center;margin:var(--space-5) 0 0!important}
-[data-bz-node="uni-join"] .bz-btns,[data-bz-node="uni-login"] .bz-btns{justify-content:center;margin:var(--space-2) 0 0}
-[data-bz-node="uni-login"] .bz-btns{margin-top:var(--space-4)}
-@media (max-width:1100px){[data-bz-node="uni-row"]{grid-template-columns:minmax(0,1fr);gap:32px}[data-bz-node="uni-row"]>.bz-col{grid-column:1/-1}}
+[data-bz-node="hero-go"] .bz-btns{justify-content:center;margin-top:var(--space-4)}
 @media (max-width:640px){.bz-section[data-bz-node="hero"]{padding:104px 0 56px;min-height:360px}}

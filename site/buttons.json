@@ -868,7 +868,7 @@
   },
   {
     "id": "cit-university-login",
-    "label": "Login to CIT University",
+    "label": "Login to Rechtien University",
     "url": "#",
     "style": "primary",
     "intent": "login",
