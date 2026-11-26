@@ -545,6 +545,76 @@
                   "mapUrl": "https://www.google.com/maps/search/?api=1&query=2761%20Edison%20Avenue%2C%20Ft.%20Myers%2C%20FL%2033916"
                 }
               ]
+            },
+            {
+              "company": "Rechtien Truck Group",
+              "region": "South Carolina · 6 locations",
+              "intro": "Rechtien Truck Group is conveniently located near Columbia, Charleston, Florence, Greenville, Greer and Conway, with a presence covering the entire state of South Carolina.",
+              "lineLabel": "",
+              "line": "",
+              "lineUrl": "",
+              "locations": [
+                {
+                  "name": "Charleston",
+                  "street": "2580 Oscar Johnson Dr",
+                  "city": "Charleston, SC 29405",
+                  "tollFree": "(800) 666-3040",
+                  "tollFreeUrl": "tel:+18006663040",
+                  "phone": "(843) 747-3040",
+                  "phoneUrl": "tel:+18437473040",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2580%20Oscar%20Johnson%20Dr%2C%20Charleston%2C%20SC%2029405"
+                },
+                {
+                  "name": "Columbia",
+                  "street": "1619 Bluff Road",
+                  "city": "Columbia, SC 29201",
+                  "tollFree": "(800) 868-4923",
+                  "tollFreeUrl": "tel:+18008684923",
+                  "phone": "(803) 799-4923",
+                  "phoneUrl": "tel:+18037994923",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=1619%20Bluff%20Road%2C%20Columbia%2C%20SC%2029201"
+                },
+                {
+                  "name": "Florence",
+                  "street": "350 E Campground Rd",
+                  "city": "Florence, SC 29506",
+                  "tollFree": "(800) 477-3894",
+                  "tollFreeUrl": "tel:+18004773894",
+                  "phone": "(843) 468-9560",
+                  "phoneUrl": "tel:+18434689560",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=350%20E%20Campground%20Rd%2C%20Florence%2C%20SC%2029506"
+                },
+                {
+                  "name": "Greer",
+                  "street": "2520 Hwy 14 S",
+                  "city": "Greer, SC 29650",
+                  "tollFree": "(800) 284-0050",
+                  "tollFreeUrl": "tel:+18002840050",
+                  "phone": "(864) 848-0050",
+                  "phoneUrl": "tel:+18648480050",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=2520%20Hwy%2014%20S%2C%20Greer%2C%20SC%2029650"
+                },
+                {
+                  "name": "Greenville",
+                  "street": "1501 Whitehorse Road",
+                  "city": "Greenville, SC 29605",
+                  "tollFree": "(866) 520-0440",
+                  "tollFreeUrl": "tel:+18665200440",
+                  "phone": "(864) 335-0440",
+                  "phoneUrl": "tel:+18643350440",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=1501%20Whitehorse%20Road%2C%20Greenville%2C%20SC%2029605"
+                },
+                {
+                  "name": "Conway",
+                  "street": "299 East Cox Ferry Road",
+                  "city": "Conway, SC 29526",
+                  "tollFree": "",
+                  "tollFreeUrl": "",
+                  "phone": "(843) 438-3130",
+                  "phoneUrl": "tel:+18434383130",
+                  "mapUrl": "https://www.google.com/maps/search/?api=1&query=299%20East%20Cox%20Ferry%20Road%2C%20Conway%2C%20SC%2029526"
+                }
+              ]
             }
           ]
         }
