@@ -48,10 +48,10 @@
   },
   {
     "id": "call-main",
-    "label": "(800) 666-3040",
-    "url": "tel:+18006663040",
+    "label": "Contact us",
+    "url": "/contact",
     "style": "secondary",
-    "intent": "call-dealer",
+    "intent": "contact",
     "newTab": false,
     "active": true
   },
@@ -687,10 +687,10 @@
   },
   {
     "id": "call-main-cta",
-    "label": "Call (800) 666-3040",
-    "url": "tel:+18006663040",
+    "label": "Contact us",
+    "url": "/contact",
     "style": "primary",
-    "intent": "call-dealer",
+    "intent": "contact",
     "newTab": false,
     "active": true
   },
