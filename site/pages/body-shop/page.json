@@ -125,7 +125,7 @@
         "values": {
           "panels": [
             {
-              "title": "Located in Columbia, SC, our highly skilled body shop professionals use state-of-art equipment to restore your vehicle to pre-loss condition. No job is too big or too small! We Specialize In:",
+              "title": "Located in Columbia, SC and Riviera Beach, FL, our highly skilled body shop professionals use state-of-art equipment to restore your vehicle to pre-loss condition. No job is too big or too small! We Specialize In:",
               "items": [
                 {
                   "text": "Paint and body repair"
@@ -252,24 +252,6 @@
       "children": []
     },
     {
-      "id": "quote",
-      "type": "section",
-      "props": {
-        "paddingY": 0
-      },
-      "children": [
-        {
-          "id": "quote-t",
-          "type": "text",
-          "props": {
-            "text": "<strong>We do free quotes! Call us direct at <a href=\"tel:+18032517244\">(803) 251-7244</a>! Or <a href=\"/contact\">Contact Us</a> for more information!</strong>",
-            "width": "full",
-            "align": "center"
-          }
-        }
-      ]
-    },
-    {
       "id": "upgrade",
       "type": "section",
       "props": {
@@ -341,7 +323,7 @@
       "props": {
         "sectionId": "branch-visit",
         "values": {
-          "eyebrow": "Find the body shop",
+          "eyebrow": "Contact our Body Shops",
           "rooftop": {
             "source": "locations",
             "config": {
