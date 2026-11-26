@@ -567,6 +567,14 @@
                   "children": []
                 },
                 {
+                  "id": "item-76",
+                  "label": "Summit Trailers",
+                  "type": "url",
+                  "url": "/#",
+                  "ref": null,
+                  "children": []
+                },
+                {
                   "id": "item-64",
                   "label": "Used Trailers",
                   "type": "url",
@@ -988,15 +996,6 @@
                   "label": "Meet The Team",
                   "type": "page",
                   "ref": "team",
-                  "url": null,
-                  "newTab": false,
-                  "children": []
-                },
-                {
-                  "id": "hn-about-associate",
-                  "label": "Sales Associate Profile",
-                  "type": "page",
-                  "ref": "team-david-milliken",
                   "url": null,
                   "newTab": false,
                   "children": []
