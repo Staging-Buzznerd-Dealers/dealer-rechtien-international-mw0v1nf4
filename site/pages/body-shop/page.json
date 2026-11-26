@@ -254,6 +254,11 @@
           ]
         }
       },
+      "styles": {
+        "base": {
+          "paddingBottom": 50
+        }
+      },
       "children": []
     },
     {
