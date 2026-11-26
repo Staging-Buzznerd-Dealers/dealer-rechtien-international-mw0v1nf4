@@ -107,7 +107,7 @@
                   "id": "touch-card-t",
                   "type": "text",
                   "props": {
-                    "text": "Call our main line at (800) 666-3040.\n\nVisit any of our 11 locations in South Florida and South Carolina. Find the address, phone number and directions below.\n\nExplore new and pre-owned International trucks, IC Bus, Hino and trailers online.",
+                    "text": "Find a location below, use our\ncontact form or send us a email\nwith your request.\n\n\nVisit any of our 11 locations in South Florida and South Carolina. Find the address, phone number and directions below.\n\nExplore new and pre-owned International trucks, IC Bus, Hino and trailers online.",
                     "align": "left",
                     "width": "full"
                   }
@@ -120,7 +120,9 @@
                     "items": [
                       {
                         "ctaId": "call-main",
-                        "style": "primary"
+                        "style": "secondary",
+                        "label": "Email Us: sales@rechtien.com",
+                        "url": "mailto:sales@rechtien.com"
                       }
                     ]
                   }
