@@ -10,6 +10,14 @@
         "align": "center",
         "anchor": "top"
       },
+      "styles": {
+        "base": {
+          "backgroundImage": "https://vendure.ai4dealerships.com/assets/source/1a/s13_hx_230208_day_2_5870-1.jpg1024_-1xoxar.png",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
+          "background": "#151515"
+        }
+      },
       "children": [
         {
           "id": "hero-row",
@@ -73,15 +81,7 @@
             }
           ]
         }
-      ],
-      "styles": {
-        "base": {
-          "backgroundImage": "/images/red-international-truck.jpg",
-          "backgroundSize": "cover",
-          "backgroundPosition": "center",
-          "background": "#151515"
-        }
-      }
+      ]
     },
     {
       "id": "intro",
@@ -382,7 +382,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "steps",
@@ -423,7 +424,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "faq",
