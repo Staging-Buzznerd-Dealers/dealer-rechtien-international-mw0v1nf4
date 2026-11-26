@@ -3010,6 +3010,91 @@
       ]
     },
     {
+      "id": "s13",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 8,
+        "background": "paper",
+        "anchor": "s13"
+      },
+      "children": [
+        {
+          "id": "s13-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "s13-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "s13-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Engine, transmission and aftertreatment designed as one.",
+                    "headingLevel": 2,
+                    "align": "left",
+                    "eyebrow": "International S13 Integrated Powertrain"
+                  }
+                },
+                {
+                  "id": "s13-text",
+                  "type": "text",
+                  "props": {
+                    "text": "A clean sheet of paper and decades of experience. That’s what the engineering team started with when they began work on the International® S13® Integrated Powertrain.\n\nThanks to this spirit of collaboration between partner companies, the team was able to shift what’s possible and rethink, redesign and reinvent what an integrated powertrain can be. The result is an engine, transmission and aftertreatment system designed to work as one that’s simple, easy to service and delivers stellar performance with superior operating economy.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "s13-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "s13-home"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "s13-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "s13-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/image-needed.svg",
+                      "alt": "International S13 Integrated Powertrain",
+                      "width": 1200,
+                      "height": 700
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "cta",
       "type": "section",
       "props": {

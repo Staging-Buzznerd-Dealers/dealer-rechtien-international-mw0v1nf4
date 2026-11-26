@@ -892,5 +892,14 @@
     "intent": "about",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "s13-home",
+    "label": "S13 Integrated Powertrain",
+    "url": "/specifications#s13",
+    "style": "secondary",
+    "intent": "browse-specifications",
+    "newTab": false,
+    "active": true
   }
 ]
