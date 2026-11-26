@@ -47,7 +47,7 @@
                   "id": "hero-h",
                   "type": "heading",
                   "props": {
-                    "text": "Carolina International Trucks University",
+                    "text": "Rechtien Truck Group - South Carolina University",
                     "headingLevel": 1,
                     "align": "center"
                   }
@@ -99,7 +99,7 @@
                   "id": "uni-cap",
                   "type": "text",
                   "props": {
-                    "text": "Get the most from your fleet using the Carolina International Trucks (CIT) customized online training portal.",
+                    "text": "Get the most from your fleet using the Rechtien Truck Group - South Carolina customized online training portal.",
                     "align": "center",
                     "width": "full"
                   }
@@ -108,7 +108,7 @@
                   "id": "uni-brand",
                   "type": "heading",
                   "props": {
-                    "text": "Carolina International Trucks",
+                    "text": "Rechtien Truck Group - South Carolina",
                     "headingLevel": 3,
                     "align": "center"
                   }
@@ -144,7 +144,7 @@
                   "id": "uni-t3",
                   "type": "text",
                   "props": {
-                    "text": "Contact us today to learn how the CIT University online training can help you increase up-time and reduce maintenance costs: Sam Scarborough, Carolina International Trucks Training Manager <a href=\"mailto:SSscarborough@CarolinaInternational.com\">SSscarborough@CarolinaInternational.com</a>",
+                    "text": "Contact us today to learn how the CIT University online training can help you increase up-time and reduce maintenance costs: Sam Scarborough, Rechtien Truck Group - South Carolina Training Manager <a href=\"mailto:SSscarborough@CarolinaInternational.com\">SSscarborough@CarolinaInternational.com</a>",
                     "align": "left",
                     "width": "full"
                   }

@@ -334,7 +334,7 @@
         "sectionId": "photo-bands",
         "values": {
           "whyEyebrow": "Why join us",
-          "whyHeading": "Why join Carolina International Trucks",
+          "whyHeading": "Why join Rechtien Truck Group - South Carolina",
           "whyIntro": "Become part of a winning team at one of the region's premier dealerships. We offer a family atmosphere and a professional work environment, with a reputation built on the hard work of each individual at our company. Don't start another job — build a career through our training programs and growth opportunities.",
           "why": [
             {
@@ -419,7 +419,7 @@
         "values": {
           "eyebrow": "Benefits",
           "heading": "Benefits that support you.",
-          "intro": "At Carolina International Trucks, we offer an extensive benefit package to assist our employees' health and well-being. We offer a wide array of products and programs to support our employees' physical, mental and financial health.",
+          "intro": "At Rechtien Truck Group - South Carolina, we offer an extensive benefit package to assist our employees' health and well-being. We offer a wide array of products and programs to support our employees' physical, mental and financial health.",
           "groups": [
             {
               "title": "Health",
@@ -559,7 +559,7 @@
                   "id": "where-sc",
                   "type": "text",
                   "props": {
-                    "text": "<strong>South Carolina</strong> (Carolina International Trucks): Charleston, Columbia, Florence, Greer, Greenville and Conway.",
+                    "text": "<strong>South Carolina</strong> (Rechtien Truck Group - South Carolina): Charleston, Columbia, Florence, Greer, Greenville and Conway.",
                     "align": "left",
                     "width": "full"
                   }

@@ -166,7 +166,7 @@
   },
   {
     "slug": "truck-alignments",
-    "title": "Truck Alignments | Carolina International Trucks",
+    "title": "Truck Alignments | Rechtien Truck Group - South Carolina",
     "description": "Computerized truck and trailer alignments at every Rechtien Truck Group location, with before and after print-outs from factory-trained technicians.",
     "path": "/truck-alignments",
     "out": "truck-alignments/index.html",
@@ -634,8 +634,8 @@
   },
   {
     "slug": "cit-university",
-    "title": "Carolina International Trucks University | Rechtien Truck Group",
-    "description": "Customized online training from Carolina International Trucks: service systems, maintenance and repair procedures, completion certificates and verified learning.",
+    "title": "Rechtien Truck Group - South Carolina University | Rechtien Truck Group",
+    "description": "Customized online training from Rechtien Truck Group - South Carolina: service systems, maintenance and repair procedures, completion certificates and verified learning.",
     "path": "/cit-university",
     "out": "cit-university/index.html",
     "dir": "cit-university",
@@ -725,7 +725,7 @@
   {
     "slug": "locations",
     "title": "Locations & Hours: South Florida & South Carolina Truck Dealer",
-    "description": "Addresses, hours and phone numbers for all 11 Rechtien International Trucks and Carolina International Trucks locations across South Florida and South Carolina.",
+    "description": "Addresses, hours and phone numbers for all 11 Rechtien International Trucks and Rechtien Truck Group - South Carolina locations across South Florida and South Carolina.",
     "path": "/locations",
     "out": "locations/index.html",
     "dir": "locations",
@@ -742,8 +742,8 @@
   },
   {
     "slug": "careers",
-    "title": "Careers: Rechtien International Trucks & Carolina International Trucks",
-    "description": "Build a career with Rechtien International Trucks in South Florida or Carolina International Trucks in South Carolina: open positions, benefits, employee stories and our talent community.",
+    "title": "Careers: Rechtien International Trucks & Rechtien Truck Group - South Carolina",
+    "description": "Build a career with Rechtien International Trucks in South Florida or Rechtien Truck Group - South Carolina: open positions, benefits, employee stories and our talent community.",
     "path": "/careers",
     "out": "careers/index.html",
     "dir": "careers",
@@ -796,8 +796,8 @@
   },
   {
     "slug": "body-shop",
-    "title": "Truck Body Shop in Columbia, SC | Carolina International Trucks",
-    "description": "Collision repair, paint and truck body work in Columbia, South Carolina: frame straightening, paint and body repair, ASE-certified technicians, PPG paint and free quotes at the Carolina International Trucks body shop.",
+    "title": "Truck Body Shop in Columbia, SC | Rechtien Truck Group - South Carolina",
+    "description": "Collision repair, paint and truck body work in Columbia, South Carolina: frame straightening, paint and body repair, ASE-certified technicians, PPG paint and free quotes at the Rechtien Truck Group - South Carolina body shop.",
     "path": "/body-shop",
     "out": "body-shop/index.html",
     "dir": "body-shop",
