@@ -189,7 +189,7 @@
               "type": "url",
               "ref": null,
               "url": "https://ottawatruckscenter.com/inventory/",
-              "newTab": true,
+              "newTab": false,
               "icon": {
                 "src": "https://vendure.ai4dealerships.com/assets/source/fb/export-header.png",
                 "tint": true
