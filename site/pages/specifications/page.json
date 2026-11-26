@@ -845,9 +845,6 @@
                     "items": [
                       {
                         "ctaId": "call-main"
-                      },
-                      {
-                        "ctaId": "contact-us"
                       }
                     ],
                     "align": "center"

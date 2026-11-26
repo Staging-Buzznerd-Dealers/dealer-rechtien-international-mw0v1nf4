@@ -398,10 +398,6 @@
             "items": [
               {
                 "ctaId": "call-main-cta"
-              },
-              {
-                "ctaId": "contact-us",
-                "style": "secondary"
               }
             ]
           }

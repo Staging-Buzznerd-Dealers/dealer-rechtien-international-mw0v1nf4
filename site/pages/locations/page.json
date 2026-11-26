@@ -75,7 +75,6 @@
                       },
                       {
                         "ctaId": "call-main",
-                        "label": "Call (800) 666-3040",
                         "style": "secondary"
                       }
                     ]
