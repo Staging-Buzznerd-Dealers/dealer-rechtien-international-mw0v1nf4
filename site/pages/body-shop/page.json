@@ -57,7 +57,7 @@
                   "id": "hero-lede",
                   "type": "text",
                   "props": {
-                    "text": "The All Makes Body Shop of Carolina International Trucks will restore your vehicle to pre-loss condition.",
+                    "text": "The All Makes Body Shop of Rechtien Truck Group - South Carolina will restore your vehicle to pre-loss condition.",
                     "width": "full",
                     "align": "center"
                   }
@@ -103,7 +103,7 @@
           "id": "about-t1",
           "type": "text",
           "props": {
-            "text": "Accidents and collisions can cause significant external damage to your vehicle. Without proper care, it can become irreparable and diminish the effectiveness of your truck over time. However, Carolina International Trucks is a highly-trusted body shop in Columbia, South Carolina. Our fully-equipped facility can return your vehicle back to pre-loss condition due to the trained and certified auto body mechanics we employ.",
+            "text": "Accidents and collisions can cause significant external damage to your vehicle. Without proper care, it can become irreparable and diminish the effectiveness of your truck over time. However, Rechtien Truck Group - South Carolina is a highly-trusted body shop in Columbia, South Carolina. Our fully-equipped facility can return your vehicle back to pre-loss condition due to the trained and certified auto body mechanics we employ.",
             "width": "full"
           }
         },
@@ -555,7 +555,7 @@
           "props": {
             "text": "Ready for a free quote?",
             "headingLevel": 2,
-            "eyebrow": "Carolina International Trucks body shop",
+            "eyebrow": "Rechtien Truck Group - South Carolina body shop",
             "align": "center"
           }
         },
