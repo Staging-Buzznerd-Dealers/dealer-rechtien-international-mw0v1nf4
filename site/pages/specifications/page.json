@@ -523,7 +523,7 @@
               ],
               "inventoryUrl": "/store/inventory",
               "image": {
-                "src": "/images/series-image-placeholder.svg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/5b/rh.png",
                 "alt": "International RH Series photo",
                 "width": 1600,
                 "height": 900
