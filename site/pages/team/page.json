@@ -59,7 +59,7 @@
                   "id": "hero-lede",
                   "type": "text",
                   "props": {
-                    "text": "Rechtien Truck Group share one team across 11 locations in South Florida and South Carolina — executive staff, truck sales, parts, service and store management.",
+                    "text": "At Rechtien Truck Group, fostering winning relationships is our top priority — Whether you're looking to source new or pre-owned trucks, need complex maintenance solutions or comprehensive parts support, trust our managerial teams to guide you to the best solutions.",
                     "align": "center",
                     "width": "full"
                   }
@@ -82,7 +82,6 @@
               "key": "executive",
               "chip": "Executive Staff",
               "title": "Executive Staff",
-              "intro": "Leadership across Rechtien Truck Group. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
               "members": [
                 {
                   "name": "Lorem Ipsum",
@@ -170,7 +169,6 @@
               "key": "miami",
               "chip": "Miami",
               "title": "Meet the Miami Team",
-              "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
               "members": [
                 {
                   "name": "Raul Arellano",
@@ -226,7 +224,6 @@
               "key": "riviera-beach",
               "chip": "Riviera Beach",
               "title": "Meet the Riviera Beach Team",
-              "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
               "members": [
                 {
                   "name": "Hiram Gordillo",
@@ -254,7 +251,6 @@
               "key": "fort-pierce",
               "chip": "Ft. Pierce",
               "title": "Meet the Ft. Pierce Team",
-              "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
               "members": [
                 {
                   "name": "Consec Tetur",
@@ -322,7 +318,6 @@
               "key": "fort-myers",
               "chip": "Ft. Myers",
               "title": "Meet the Ft. Myers Team",
-              "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
               "members": [
                 {
                   "name": "Laddie Williams",
@@ -350,7 +345,6 @@
               "key": "columbia",
               "chip": "Columbia",
               "title": "Meet the Columbia Team",
-              "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
               "members": [
                 {
                   "name": "Brandon Bowen",
@@ -398,7 +392,6 @@
               "key": "charleston",
               "chip": "Charleston",
               "title": "Meet the Charleston Team",
-              "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
               "members": [
                 {
                   "name": "Kevin Kure",
@@ -426,7 +419,6 @@
               "key": "florence",
               "chip": "Florence",
               "title": "Meet the Florence Team",
-              "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
               "members": [
                 {
                   "name": "Joe Allen",
@@ -444,7 +436,6 @@
               "key": "conway",
               "chip": "Conway",
               "title": "Meet the Conway Team",
-              "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
               "members": [
                 {
                   "name": "Enim Adminim",
@@ -512,7 +503,6 @@
               "key": "greenville",
               "chip": "Greenville",
               "title": "Meet the Greenville Team",
-              "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
               "members": [
                 {
                   "name": "Duis Auteirure",
