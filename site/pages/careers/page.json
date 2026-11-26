@@ -301,6 +301,11 @@
                         "label": "Diesel Technician"
                       }
                     ]
+                  },
+                  "styles": {
+                    "base": {
+                      "textTransform": "uppercase"
+                    }
                   }
                 },
                 {
