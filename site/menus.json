@@ -937,15 +937,6 @@
                   "children": []
                 },
                 {
-                  "id": "item-56",
-                  "label": "Carolina Service Express",
-                  "type": "url",
-                  "ref": null,
-                  "url": "/carolina-service-express",
-                  "newTab": false,
-                  "children": []
-                },
-                {
                   "id": "item-79",
                   "label": "CIT University",
                   "type": "url",
