@@ -522,8 +522,12 @@
                 }
               ],
               "inventoryUrl": "/store/inventory",
-              "videoSrc": "/videos/specifications-banner-placeholder.mp4",
-              "videoPoster": "/images/specifications-banner-poster.jpg"
+              "image": {
+                "src": "/images/series-image-placeholder.svg",
+                "alt": "International RH Series photo",
+                "width": 1600,
+                "height": 900
+              }
             },
             {
               "title": "International HX Series",
