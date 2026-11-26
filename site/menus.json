@@ -935,15 +935,6 @@
                   "url": "/rechtien-university",
                   "newTab": false,
                   "children": []
-                },
-                {
-                  "id": "item-79",
-                  "label": "CIT University",
-                  "type": "url",
-                  "ref": null,
-                  "url": "/cit-university",
-                  "newTab": false,
-                  "children": []
                 }
               ]
             }

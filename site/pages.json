@@ -617,7 +617,7 @@
   {
     "slug": "rechtien-university",
     "title": "Rechtien University: Truck Service Training",
-    "description": "Rechtien University offers International-approved semi truck service technician and fleet manager training — certifications, online access, progress reports and a one-time fee per employee.",
+    "description": "Rechtien University offers International-approved semi truck service technician and fleet manager training — certifications, online access and enrollment, progress reports, completion certificates and a one-time fee per employee.",
     "path": "/rechtien-university",
     "out": "rechtien-university/index.html",
     "dir": "rechtien-university",
@@ -634,15 +634,15 @@
   },
   {
     "slug": "cit-university",
-    "title": "Rechtien Truck Group - South Carolina University | Rechtien Truck Group",
-    "description": "Customized online training from Rechtien Truck Group - South Carolina: service systems, maintenance and repair procedures, completion certificates and verified learning.",
+    "title": "Rechtien University | Rechtien Truck Group",
+    "description": "This page has moved to Rechtien University.",
     "path": "/cit-university",
     "out": "cit-university/index.html",
     "dir": "cit-university",
     "status": "published",
     "seo": {
       "ogImage": null,
-      "noindex": false
+      "noindex": true
     },
     "templates": {
       "header": null,

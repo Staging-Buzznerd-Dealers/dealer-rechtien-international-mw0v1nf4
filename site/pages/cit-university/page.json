@@ -35,157 +35,33 @@
               },
               "children": [
                 {
-                  "id": "hero-crumbs",
-                  "type": "text",
-                  "props": {
-                    "text": "<a href=\"/\">Home</a> / CIT University",
-                    "align": "center",
-                    "width": "full"
-                  }
-                },
-                {
                   "id": "hero-h",
                   "type": "heading",
                   "props": {
-                    "text": "Rechtien Truck Group - South Carolina University",
+                    "text": "Rechtien University",
                     "headingLevel": 1,
                     "align": "center"
                   }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "uni",
-      "type": "section",
-      "props": {
-        "width": "boxed",
-        "paddingY": 8
-      },
-      "children": [
-        {
-          "id": "uni-row",
-          "type": "row",
-          "props": {
-            "gap": 7,
-            "stackOn": "tablet",
-            "align": "start"
-          },
-          "children": [
-            {
-              "id": "uni-logo-col",
-              "type": "column",
-              "props": {
-                "span": 5
-              },
-              "children": [
-                {
-                  "id": "uni-logo",
-                  "type": "image",
-                  "props": {
-                    "image": {
-                      "src": "https://vendure.ai4dealerships.com/assets/source/d1/logocit.png",
-                      "alt": "CIT University logo",
-                      "width": 600,
-                      "height": 600
-                    },
-                    "width": "full"
-                  }
                 },
                 {
-                  "id": "uni-cap",
+                  "id": "hero-lede",
                   "type": "text",
                   "props": {
-                    "text": "Get the most from your fleet using the Rechtien Truck Group - South Carolina customized online training portal.",
+                    "text": "This page has moved. CIT University is now part of Rechtien University, with the online training portal, enrollment and login all on one page.",
                     "align": "center",
                     "width": "full"
                   }
                 },
                 {
-                  "id": "uni-brand",
-                  "type": "heading",
-                  "props": {
-                    "text": "Rechtien Truck Group - South Carolina",
-                    "headingLevel": 3,
-                    "align": "center"
-                  }
-                }
-              ]
-            },
-            {
-              "id": "uni-copy",
-              "type": "column",
-              "props": {
-                "span": 7
-              },
-              "children": [
-                {
-                  "id": "uni-t1",
-                  "type": "text",
-                  "props": {
-                    "text": "International Trucks advanced vehicle technologies provide more UPTIME, calling for comprehensive training in service systems, maintenance and repair procedures. Count on CIT University to provide comprehensive online training designed to give you the tools you need to control your UPTIME and reduce maintenance costs.",
-                    "align": "left",
-                    "width": "full"
-                  }
-                },
-                {
-                  "id": "uni-t2",
-                  "type": "text",
-                  "props": {
-                    "text": "Our online portal offers training on your time, convenient access, effective training, completion certificates, and verified learning.",
-                    "align": "left",
-                    "width": "full"
-                  }
-                },
-                {
-                  "id": "uni-t3",
-                  "type": "text",
-                  "props": {
-                    "text": "Contact us today to learn how the CIT University online training can help you increase up-time and reduce maintenance costs: Sam Scarborough, Rechtien Truck Group - South Carolina Training Manager <a href=\"mailto:SSscarborough@CarolinaInternational.com\">SSscarborough@CarolinaInternational.com</a>",
-                    "align": "left",
-                    "width": "full"
-                  }
-                },
-                {
-                  "id": "uni-join-t",
-                  "type": "text",
-                  "props": {
-                    "text": "When you are ready to join, complete and submit the Student Education Request form.",
-                    "align": "center",
-                    "width": "full"
-                  }
-                },
-                {
-                  "id": "uni-join",
+                  "id": "hero-go",
                   "type": "buttons",
                   "props": {
                     "items": [
                       {
-                        "ctaId": "student-education-request"
-                      }
-                    ],
-                    "align": "center"
-                  }
-                },
-                {
-                  "id": "uni-enrolled",
-                  "type": "text",
-                  "props": {
-                    "text": "Already enrolled? LOGIN to start or continue your comprehensive online CIT University training.",
-                    "align": "center",
-                    "width": "full"
-                  }
-                },
-                {
-                  "id": "uni-login",
-                  "type": "buttons",
-                  "props": {
-                    "items": [
-                      {
-                        "ctaId": "cit-university-login"
+                        "label": "Go to Rechtien University",
+                        "url": "/rechtien-university",
+                        "style": "primary",
+                        "intent": "university"
                       }
                     ],
                     "align": "center"
