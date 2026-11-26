@@ -88,15 +88,18 @@
       "id": "about",
       "type": "section",
       "props": {
-        "paddingY": 0
+        "paddingY": 0,
+        "align": "center",
+        "width": "boxed"
       },
       "children": [
         {
           "id": "about-h",
           "type": "heading",
           "props": {
-            "text": "Truck Body Shop in Columbia, SC",
-            "headingLevel": 2
+            "text": "all makes truck body shops in Columbia, SC & riviera Beach, FL",
+            "headingLevel": 2,
+            "align": "center"
           }
         },
         {
@@ -104,7 +107,8 @@
           "type": "text",
           "props": {
             "text": "Accidents and collisions can cause significant external damage to your vehicle. Without proper care, it can become irreparable and diminish the effectiveness of your truck over time. However, Rechtien Truck Group - South Carolina is a highly-trusted body shop in Columbia, South Carolina. Our fully-equipped facility can return your vehicle back to pre-loss condition due to the trained and certified auto body mechanics we employ.",
-            "width": "full"
+            "width": "full",
+            "align": "center"
           }
         },
         {
@@ -112,7 +116,8 @@
           "type": "text",
           "props": {
             "text": "We specialize in full-body truck restoration that includes a multitude of refinishing and truck frame repair services. From custom detailing to fixing fractured windshields, buffing out scratches, and more, you can rest assured knowing your vehicle is in the right hands. Our technicians are highly trained in providing auto body service to a number of different manufacturers. From Hino® to International® truck body repair, you can trust us to restore your vehicle’s exterior.",
-            "width": "full"
+            "width": "full",
+            "align": "center"
           }
         }
       ]
