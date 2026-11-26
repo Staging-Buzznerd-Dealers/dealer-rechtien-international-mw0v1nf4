@@ -80,3 +80,13 @@ body{background:#fff;color:var(--ink);font-weight:400;letter-spacing:0;-webkit-f
 /* ---- Tablet & mobile ------------------------------------------------------------- */
 @media (max-width:1100px){[data-bz-node="intro-copy"]{padding:56px 0 40px}[data-bz-node="intro-media"]{min-height:320px}[data-bz-node="sp1-media"],[data-bz-node="sp2-media"]{min-height:300px}[data-bz-node="sp1-copy"],[data-bz-node="sp2-copy"]{padding:36px 28px}}
 @media (max-width:640px){.bz-section[data-bz-node="hero"]{padding:88px 0 56px;min-height:560px}[data-bz-node="hero-search"] .bz-searchbar{flex-wrap:wrap}[data-bz-node="hero-search"] .bz-input{flex:1 1 100%}[data-bz-node="hero-search"] .bz-btn{flex:1 1 100%}[data-bz-node="hero-nav"] .bz-nav{gap:var(--space-2) 24px}[data-bz-node="sp1-copy"],[data-bz-node="sp2-copy"]{padding:28px 22px}[data-bz-node="intro-media"]{min-height:260px}}
+/* ---- S13 Integrated Powertrain: copy and photo in the same bordered card as the sections above, on a paper band ---- */
+.bz-section[data-bz-node="s13"]{padding-block:clamp(56px,6vw,88px)}
+[data-bz-node="s13-row"]{border:1px solid var(--line);background:#fff;align-items:stretch}
+[data-bz-node="s13-copy"]{display:flex;flex-direction:column;justify-content:center;padding:48px 38px}
+[data-bz-node="s13-media"]{min-height:420px;position:relative}
+[data-bz-node="s13-media"] .bz-block--image,[data-bz-node="s13-media"] .bz-container,[data-bz-node="s13-media"] .bz-figure{height:100%;margin:0;padding:0}
+[data-bz-node="s13-media"] img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+[data-bz-node="s13-h"] h2{font-size:clamp(1.5rem,2.3vw,2.125rem)}
+@media (max-width:1100px){[data-bz-node="s13-media"]{min-height:300px}[data-bz-node="s13-copy"]{padding:36px 28px}}
+@media (max-width:640px){[data-bz-node="s13-copy"]{padding:28px 22px}}
