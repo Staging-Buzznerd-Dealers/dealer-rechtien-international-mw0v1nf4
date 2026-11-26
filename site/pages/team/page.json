@@ -16,7 +16,7 @@
           "type": "image",
           "props": {
             "image": {
-              "src": "/images/carolina-dealership.jpg",
+              "src": "https://vendure.ai4dealerships.com/assets/source/33/_dsc1990.jpg",
               "alt": "Rechtien Truck Group dealership"
             },
             "width": "full"
@@ -606,7 +606,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     }
   ]
 }
