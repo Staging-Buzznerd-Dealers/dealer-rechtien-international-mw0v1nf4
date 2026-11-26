@@ -61,18 +61,19 @@ main .bz-section--bg-ink .bz-text p{color:rgba(255,255,255,.9)}
 
 /* ---- Open positions: two white cards on the paper band ---------------------------------------- */
 [data-bz-node="op-head"]{margin-bottom:clamp(24px,3vw,40px)}
-[data-bz-node="op-a"],[data-bz-node="op-b"]{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);padding:clamp(28px,3.5vw,44px)}
-[data-bz-node="op-a"] .bz-block,[data-bz-node="op-b"] .bz-block{padding-block:0}
-[data-bz-node$="-co"]{margin-bottom:var(--space-3)}
-[data-bz-node$="-co"] p{font:700 .625rem/1.5 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0}
-[data-bz-node="op-a-h"] h3,[data-bz-node="op-b-h"] h3{font:700 1.5rem/1.2 var(--font-heading);text-transform:uppercase;margin:0 0 var(--space-4);color:var(--ink)}
-[data-bz-node="op-b-t"] p{font-size:.9375rem;line-height:1.7;color:#3d3c39;margin:0 0 var(--space-4)}
-[data-bz-node="op-a-list"] .bz-grid{display:block;margin:0 0 var(--space-4)}
-[data-bz-node="op-a-list"] .bz-feature{display:block;background:none;border:0;border-top:1px solid var(--line);border-radius:0;padding:14px 0;min-height:0}
-[data-bz-node="op-a-list"] .bz-feature:last-child{border-bottom:1px solid var(--line)}
-[data-bz-node="op-a-list"] .bz-feature__t{font:700 .875rem/1.4 var(--font-heading);text-transform:uppercase;letter-spacing:.02em;margin:0;color:var(--ink)}
-[data-bz-node="op-a-cta"],[data-bz-node="op-b-cta"]{margin-top:auto;padding-top:var(--space-4)!important}
-[data-bz-node="op-a-cta"] .bz-btns,[data-bz-node="op-b-cta"] .bz-btns{margin:0;gap:12px 24px}
+/* Each hiring card is styled by its place in the row (a column of the openings row), not by its block ids,
+   so a column duplicated or renamed in the editor looks like the first one. */
+[data-bz-node="op-row"]>.bz-col{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);padding:clamp(28px,3.5vw,44px)}
+[data-bz-node="op-row"]>.bz-col .bz-block{padding-block:0}
+[data-bz-node="op-row"]>.bz-col>.bz-block--text:first-child{margin-bottom:var(--space-3)}
+[data-bz-node="op-row"]>.bz-col>.bz-block--text:first-child p{font:700 .625rem/1.5 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0}
+[data-bz-node="op-row"]>.bz-col .bz-block--heading h3{font:700 1.5rem/1.2 var(--font-heading);text-transform:uppercase;margin:0 0 var(--space-4);color:var(--ink)}
+[data-bz-node="op-row"]>.bz-col .bz-block--list .bz-grid{display:block;margin:0 0 var(--space-4)}
+[data-bz-node="op-row"]>.bz-col .bz-block--list .bz-feature{display:block;background:none;border:0;border-top:1px solid var(--line);border-radius:0;padding:14px 0;min-height:0}
+[data-bz-node="op-row"]>.bz-col .bz-block--list .bz-feature:last-child{border-bottom:1px solid var(--line)}
+[data-bz-node="op-row"]>.bz-col .bz-block--list .bz-feature__t{font:700 .875rem/1.4 var(--font-heading);text-transform:uppercase;letter-spacing:.02em;margin:0;color:var(--ink)}
+[data-bz-node="op-row"]>.bz-col>.bz-block--buttons:last-child{margin-top:auto;padding-top:var(--space-4)!important}
+[data-bz-node="op-row"]>.bz-col .bz-block--buttons .bz-btns{margin:0;gap:12px 24px}
 
 /* ---- Where you would work ------------------------------------------------------------------- */
 [data-bz-node="where-h"]{margin-bottom:var(--space-3)}
