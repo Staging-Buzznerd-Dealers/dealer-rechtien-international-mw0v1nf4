@@ -36,7 +36,7 @@
       ]
     }
   ],
-  "css": "/* My International feature rows: copy and photo side by side, alternating sides. */\n[data-bz-node=\"mf\"]{padding-block:clamp(24px,3vw,48px)}\n[data-bz-node^=\"mf-row\"]{align-items:center;padding-block:clamp(20px,3vw,40px)}\n[data-bz-node^=\"mf-row\"]:nth-child(even)>.bz-col:first-child{order:2}\n[data-bz-node^=\"mf-copy\"]{padding-inline:clamp(0px,4vw,64px)}\n[data-bz-node^=\"mf-title\"] h2{font-size:clamp(1.125rem,1.7vw,1.5rem);line-height:1.1;margin:0 0 var(--space-3)}\n[data-bz-node^=\"mf-text\"] p{font-size:.875rem;line-height:1.75;color:#3d3c39;margin:0 0 var(--space-3)}\n[data-bz-node^=\"mf-cta\"] .bz-btns{margin:var(--space-2) 0 0}\n[data-bz-node^=\"mf-photo\"] img{width:100%;height:auto;display:block;border-radius:4px}\n@media (max-width:900px){\n  [data-bz-node^=\"mf-row\"]>.bz-col:first-child,[data-bz-node^=\"mf-row\"]:nth-child(even)>.bz-col:first-child{order:0}\n  [data-bz-node^=\"mf-copy\"]{order:1;padding-inline:0}\n  [data-bz-node^=\"mf-media\"]{order:0}\n}\n",
+  "css": "/* My International feature rows: copy and photo side by side, alternating sides. */\n[data-bz-node=\"mf\"]{padding-block:clamp(40px,5vw,72px)}\n[data-bz-node^=\"mf-row\"]{align-items:center;padding-block:clamp(20px,3vw,40px)}\n[data-bz-node^=\"mf-row\"]:nth-child(even)>.bz-col:first-child{order:2}\n[data-bz-node^=\"mf-copy\"]{padding-inline:clamp(0px,4vw,64px)}\n[data-bz-node^=\"mf-title\"] h2{font-size:clamp(1.125rem,1.7vw,1.5rem);line-height:1.1;margin:0 0 var(--space-3)}\n[data-bz-node^=\"mf-text\"] p{font-size:.875rem;line-height:1.75;color:#3d3c39;margin:0 0 var(--space-3)}\n[data-bz-node^=\"mf-cta\"] .bz-btns{margin:var(--space-2) 0 0}\n[data-bz-node^=\"mf-photo\"] img{width:100%;aspect-ratio:4/3;object-fit:cover;height:auto;display:block;border-radius:4px}\n@media (max-width:900px){\n  [data-bz-node^=\"mf-row\"]>.bz-col:first-child,[data-bz-node^=\"mf-row\"]:nth-child(even)>.bz-col:first-child{order:0}\n  [data-bz-node^=\"mf-copy\"]{order:1;padding-inline:0}\n  [data-bz-node^=\"mf-media\"]{order:0}\n}\n",
   "js": "",
   "nodes": [
     {
@@ -44,7 +44,7 @@
       "type": "section",
       "props": {
         "width": "boxed",
-        "paddingY": 0
+        "paddingY": 6
       },
       "children": [
         {

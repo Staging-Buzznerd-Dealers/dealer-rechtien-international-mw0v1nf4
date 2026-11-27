@@ -7,7 +7,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 0,
-        "align": "start",
+        "align": "center",
         "anchor": "top"
       },
       "children": [
@@ -27,12 +27,21 @@
               },
               "children": [
                 {
+                  "id": "hero-crumbs",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Home</a> / My International™",
+                    "width": "full",
+                    "align": "center"
+                  }
+                },
+                {
                   "id": "hero-h",
                   "type": "heading",
                   "props": {
                     "text": "My International™",
                     "headingLevel": 1,
-                    "align": "left"
+                    "align": "center"
                   }
                 }
               ]
@@ -42,7 +51,7 @@
       ],
       "styles": {
         "base": {
-          "backgroundImage": "/images/my-international/hero.jpg",
+          "backgroundImage": "/images/hero-truck.jpg",
           "backgroundSize": "cover",
           "backgroundPosition": "center",
           "background": "#151515"
@@ -208,13 +217,15 @@
               },
               "children": [
                 {
-                  "id": "video-img",
-                  "type": "image",
+                  "id": "video-block",
+                  "type": "video",
                   "props": {
-                    "image": {
-                      "src": "/images/my-international/dashboard-video.jpg",
-                      "alt": "The My International dashboard showing vehicle locations on a map"
+                    "video": {
+                      "src": "https://vendure.ai4dealerships.com/assets/source/f4/2026_s13_ambient_v2.mp4",
+                      "poster": "https://vendure.ai4dealerships.com/assets/source/c2/s13-1.jpg",
+                      "title": "My International video (placeholder)"
                     },
+                    "controls": true,
                     "width": "full"
                   }
                 }
@@ -285,13 +296,6 @@
                     ],
                     "align": "left"
                   }
-                },
-                {
-                  "id": "demo-form",
-                  "type": "form",
-                  "props": {
-                    "formId": "my-international-demo"
-                  }
                 }
               ]
             }
@@ -312,8 +316,8 @@
               "ctaLabel": "Explore",
               "ctaUrl": "#",
               "image": {
-                "src": "/images/my-international/advanced-remote-diagnostics.jpg",
-                "alt": "A fleet specialist monitoring vehicle diagnostics on dual computer screens"
+                "src": "/images/image-needed.svg",
+                "alt": "Advanced Remote Diagnostics photo placeholder"
               }
             },
             {
@@ -322,8 +326,8 @@
               "ctaLabel": "Explore",
               "ctaUrl": "#",
               "image": {
-                "src": "/images/my-international/remote-lock-unlock.jpg",
-                "alt": "A driver checking his phone beside a white International truck"
+                "src": "/images/image-needed.svg",
+                "alt": "Remote Lock/Unlock photo placeholder"
               }
             },
             {
@@ -332,8 +336,8 @@
               "ctaLabel": "Explore",
               "ctaUrl": "#",
               "image": {
-                "src": "/images/my-international/fuel-analytics.jpg",
-                "alt": "Two technicians reviewing vehicle data on a tablet beside a truck wheel"
+                "src": "/images/image-needed.svg",
+                "alt": "Fuel Analytics photo placeholder"
               }
             },
             {
@@ -342,8 +346,8 @@
               "ctaLabel": "Explore",
               "ctaUrl": "#",
               "image": {
-                "src": "/images/my-international/service-communications.jpg",
-                "alt": "A phone mounted in a truck cab showing a service map"
+                "src": "/images/image-needed.svg",
+                "alt": "Service Communications photo placeholder"
               }
             },
             {
@@ -352,8 +356,8 @@
               "ctaLabel": "Explore",
               "ctaUrl": "#",
               "image": {
-                "src": "/images/my-international/over-the-air-programming.jpg",
-                "alt": "A fleet manager working on a laptop in an office"
+                "src": "/images/image-needed.svg",
+                "alt": "Over-the-Air Programming photo placeholder"
               }
             },
             {
@@ -362,8 +366,8 @@
               "ctaLabel": "Explore",
               "ctaUrl": "#",
               "image": {
-                "src": "/images/my-international/gateway-integrations.jpg",
-                "alt": "A technician using a laptop in front of an open International truck hood"
+                "src": "/images/image-needed.svg",
+                "alt": "Gateway Integrations photo placeholder"
               }
             }
           ]
@@ -483,7 +487,8 @@
       "type": "section",
       "props": {
         "width": "boxed",
-        "paddingY": 7
+        "paddingY": 7,
+        "background": "ink"
       },
       "children": [
         {
@@ -538,13 +543,6 @@
                       }
                     ],
                     "align": "left"
-                  }
-                },
-                {
-                  "id": "renew-form",
-                  "type": "form",
-                  "props": {
-                    "formId": "my-international-renewal"
                   }
                 }
               ]
@@ -608,8 +606,8 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/my-international/explore-parts.jpg",
-                      "alt": "A parts specialist in a truck parts warehouse"
+                      "src": "/images/image-needed.svg",
+                      "alt": "Parts photo placeholder"
                     },
                     "width": "full"
                   }
@@ -660,8 +658,8 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/my-international/explore-fleet-resources.jpg",
-                      "alt": "An International dump truck leaving a service bay"
+                      "src": "/images/image-needed.svg",
+                      "alt": "Fleet Resources photo placeholder"
                     },
                     "width": "full"
                   }

@@ -922,12 +922,11 @@
   {
     "id": "mi-request-demo",
     "label": "Request a demo",
-    "url": null,
+    "url": "/contact",
     "style": "primary",
-    "intent": "my-international-demo",
+    "intent": "contact",
     "newTab": false,
-    "active": true,
-    "formId": "my-international-demo"
+    "active": true
   },
   {
     "id": "mi-google-play",
@@ -950,11 +949,10 @@
   {
     "id": "mi-renew",
     "label": "Contact us",
-    "url": null,
+    "url": "/contact",
     "style": "primary",
-    "intent": "my-international-renewal",
+    "intent": "contact",
     "newTab": false,
-    "active": true,
-    "formId": "my-international-renewal"
+    "active": true
   }
 ]
