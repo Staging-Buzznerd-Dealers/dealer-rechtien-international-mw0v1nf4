@@ -340,12 +340,17 @@
               },
               "children": [
                 {
-                  "id": "visit-title",
-                  "type": "text",
+                  "id": "heading",
+                  "type": "heading",
                   "props": {
-                    "text": "Contact our Body Shops",
+                    "headingLevel": 2,
                     "align": "center",
-                    "width": "full"
+                    "text": "Contact our Body Shops"
+                  },
+                  "styles": {
+                    "base": {
+                      "paddingBottom": 30
+                    }
                   }
                 }
               ]
