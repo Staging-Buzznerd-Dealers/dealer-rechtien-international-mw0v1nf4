@@ -1161,8 +1161,8 @@
               "perk1": null,
               "perk2": null,
               "perk3": null,
-              "departments": "Sales · Parts",
-              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
+              "departments": "Sales · Service · Parts",
+              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nService: 07:00 AM - 06:00 PM Mon–Fri\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
               "phone2": null,
               "phone2Url": null,
               "phone3": null,
@@ -1188,6 +1188,14 @@
                   "phoneUrl": null,
                   "email": null,
                   "hours": "08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat"
+                },
+                {
+                  "name": "Service",
+                  "key": "service",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 06:00 PM Mon–Fri"
                 },
                 {
                   "name": "Parts",
@@ -1252,6 +1260,62 @@
                       "opensAt": "08:00",
                       "closesAt": "12:00",
                       "closed": false
+                    }
+                  ]
+                },
+                {
+                  "department": "Service",
+                  "key": "service",
+                  "summary": "07:00 AM - 06:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
                     }
                   ]
                 },
@@ -1409,6 +1473,53 @@
                   "hours": "08:00 AM - 12:00 PM",
                   "opensAt": "08:00",
                   "closesAt": "12:00"
+                }
+              ]
+            },
+            {
+              "heading": "Service",
+              "hours": [
+                {
+                  "day": "Sunday",
+                  "hours": "Closed",
+                  "opensAt": null,
+                  "closesAt": null
+                },
+                {
+                  "day": "Monday",
+                  "hours": "07:00 AM - 06:00 PM",
+                  "opensAt": "07:00",
+                  "closesAt": "18:00"
+                },
+                {
+                  "day": "Tuesday",
+                  "hours": "07:00 AM - 06:00 PM",
+                  "opensAt": "07:00",
+                  "closesAt": "18:00"
+                },
+                {
+                  "day": "Wednesday",
+                  "hours": "07:00 AM - 06:00 PM",
+                  "opensAt": "07:00",
+                  "closesAt": "18:00"
+                },
+                {
+                  "day": "Thursday",
+                  "hours": "07:00 AM - 06:00 PM",
+                  "opensAt": "07:00",
+                  "closesAt": "18:00"
+                },
+                {
+                  "day": "Friday",
+                  "hours": "07:00 AM - 06:00 PM",
+                  "opensAt": "07:00",
+                  "closesAt": "18:00"
+                },
+                {
+                  "day": "Saturday",
+                  "hours": "Closed",
+                  "opensAt": null,
+                  "closesAt": null
                 }
               ]
             },
@@ -1585,8 +1696,8 @@
               "perk1": null,
               "perk2": null,
               "perk3": null,
-              "departments": "Sales · Parts",
-              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
+              "departments": "Sales · Service · Parts",
+              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nService: 07:00 AM - 06:00 PM Mon–Fri\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
               "phone2": null,
               "phone2Url": null,
               "phone3": null,
@@ -1612,6 +1723,14 @@
                   "phoneUrl": null,
                   "email": null,
                   "hours": "08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat"
+                },
+                {
+                  "name": "Service",
+                  "key": "service",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 06:00 PM Mon–Fri"
                 },
                 {
                   "name": "Parts",
@@ -1676,6 +1795,62 @@
                       "opensAt": "08:00",
                       "closesAt": "12:00",
                       "closed": false
+                    }
+                  ]
+                },
+                {
+                  "department": "Service",
+                  "key": "service",
+                  "summary": "07:00 AM - 06:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
                     }
                   ]
                 },
@@ -1770,8 +1945,8 @@
               "perk1": null,
               "perk2": null,
               "perk3": null,
-              "departments": "Sales · Parts",
-              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
+              "departments": "Sales · Service · Parts",
+              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nService: 07:00 AM - 06:00 PM Mon–Fri\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
               "phone2": null,
               "phone2Url": null,
               "phone3": null,
@@ -1797,6 +1972,14 @@
                   "phoneUrl": null,
                   "email": null,
                   "hours": "08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat"
+                },
+                {
+                  "name": "Service",
+                  "key": "service",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 06:00 PM Mon–Fri"
                 },
                 {
                   "name": "Parts",
@@ -1861,6 +2044,62 @@
                       "opensAt": "08:00",
                       "closesAt": "12:00",
                       "closed": false
+                    }
+                  ]
+                },
+                {
+                  "department": "Service",
+                  "key": "service",
+                  "summary": "07:00 AM - 06:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
                     }
                   ]
                 },
@@ -5241,8 +5480,8 @@
               "perk1": null,
               "perk2": null,
               "perk3": null,
-              "departments": "Sales · Parts",
-              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
+              "departments": "Sales · Service · Parts",
+              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nService: 07:00 AM - 06:00 PM Mon–Fri\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
               "phone2": null,
               "phone2Url": null,
               "phone3": null,
@@ -5268,6 +5507,14 @@
                   "phoneUrl": null,
                   "email": null,
                   "hours": "08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat"
+                },
+                {
+                  "name": "Service",
+                  "key": "service",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 06:00 PM Mon–Fri"
                 },
                 {
                   "name": "Parts",
@@ -5332,6 +5579,62 @@
                       "opensAt": "08:00",
                       "closesAt": "12:00",
                       "closed": false
+                    }
+                  ]
+                },
+                {
+                  "department": "Service",
+                  "key": "service",
+                  "summary": "07:00 AM - 06:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
                     }
                   ]
                 },
@@ -8766,8 +9069,8 @@
               "perk1": null,
               "perk2": null,
               "perk3": null,
-              "departments": "Sales · Parts",
-              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
+              "departments": "Sales · Service · Parts",
+              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nService: 07:00 AM - 06:00 PM Mon–Fri\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
               "phone2": null,
               "phone2Url": null,
               "phone3": null,
@@ -8793,6 +9096,14 @@
                   "phoneUrl": null,
                   "email": null,
                   "hours": "08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat"
+                },
+                {
+                  "name": "Service",
+                  "key": "service",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 06:00 PM Mon–Fri"
                 },
                 {
                   "name": "Parts",
@@ -8857,6 +9168,62 @@
                       "opensAt": "08:00",
                       "closesAt": "12:00",
                       "closed": false
+                    }
+                  ]
+                },
+                {
+                  "department": "Service",
+                  "key": "service",
+                  "summary": "07:00 AM - 06:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
                     }
                   ]
                 },
@@ -12227,8 +12594,8 @@
               "perk1": null,
               "perk2": null,
               "perk3": null,
-              "departments": "Sales · Parts",
-              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
+              "departments": "Sales · Service · Parts",
+              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nService: 07:00 AM - 06:00 PM Mon–Fri\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
               "phone2": null,
               "phone2Url": null,
               "phone3": null,
@@ -12254,6 +12621,14 @@
                   "phoneUrl": null,
                   "email": null,
                   "hours": "08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat"
+                },
+                {
+                  "name": "Service",
+                  "key": "service",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 06:00 PM Mon–Fri"
                 },
                 {
                   "name": "Parts",
@@ -12318,6 +12693,62 @@
                       "opensAt": "08:00",
                       "closesAt": "12:00",
                       "closed": false
+                    }
+                  ]
+                },
+                {
+                  "department": "Service",
+                  "key": "service",
+                  "summary": "07:00 AM - 06:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
                     }
                   ]
                 },
@@ -15688,8 +16119,8 @@
               "perk1": null,
               "perk2": null,
               "perk3": null,
-              "departments": "Sales · Parts",
-              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
+              "departments": "Sales · Service · Parts",
+              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nService: 07:00 AM - 06:00 PM Mon–Fri\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
               "phone2": null,
               "phone2Url": null,
               "phone3": null,
@@ -15715,6 +16146,14 @@
                   "phoneUrl": null,
                   "email": null,
                   "hours": "08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat"
+                },
+                {
+                  "name": "Service",
+                  "key": "service",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 06:00 PM Mon–Fri"
                 },
                 {
                   "name": "Parts",
@@ -15779,6 +16218,62 @@
                       "opensAt": "08:00",
                       "closesAt": "12:00",
                       "closed": false
+                    }
+                  ]
+                },
+                {
+                  "department": "Service",
+                  "key": "service",
+                  "summary": "07:00 AM - 06:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
                     }
                   ]
                 },
@@ -18910,8 +19405,8 @@
               "perk1": null,
               "perk2": null,
               "perk3": null,
-              "departments": "Sales · Parts",
-              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
+              "departments": "Sales · Service · Parts",
+              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nService: 07:00 AM - 06:00 PM Mon–Fri\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
               "phone2": null,
               "phone2Url": null,
               "phone3": null,
@@ -18937,6 +19432,14 @@
                   "phoneUrl": null,
                   "email": null,
                   "hours": "08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat"
+                },
+                {
+                  "name": "Service",
+                  "key": "service",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 06:00 PM Mon–Fri"
                 },
                 {
                   "name": "Parts",
@@ -19001,6 +19504,62 @@
                       "opensAt": "08:00",
                       "closesAt": "12:00",
                       "closed": false
+                    }
+                  ]
+                },
+                {
+                  "department": "Service",
+                  "key": "service",
+                  "summary": "07:00 AM - 06:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
                     }
                   ]
                 },
@@ -22196,8 +22755,8 @@
               "perk1": null,
               "perk2": null,
               "perk3": null,
-              "departments": "Sales · Parts",
-              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
+              "departments": "Sales · Service · Parts",
+              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nService: 07:00 AM - 06:00 PM Mon–Fri\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
               "phone2": null,
               "phone2Url": null,
               "phone3": null,
@@ -22223,6 +22782,14 @@
                   "phoneUrl": null,
                   "email": null,
                   "hours": "08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat"
+                },
+                {
+                  "name": "Service",
+                  "key": "service",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 06:00 PM Mon–Fri"
                 },
                 {
                   "name": "Parts",
@@ -22287,6 +22854,62 @@
                       "opensAt": "08:00",
                       "closesAt": "12:00",
                       "closed": false
+                    }
+                  ]
+                },
+                {
+                  "department": "Service",
+                  "key": "service",
+                  "summary": "07:00 AM - 06:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
                     }
                   ]
                 },
@@ -25960,8 +26583,8 @@
               "perk1": null,
               "perk2": null,
               "perk3": null,
-              "departments": "Sales · Parts",
-              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
+              "departments": "Sales · Service · Parts",
+              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nService: 07:00 AM - 06:00 PM Mon–Fri\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
               "phone2": null,
               "phone2Url": null,
               "phone3": null,
@@ -25987,6 +26610,14 @@
                   "phoneUrl": null,
                   "email": null,
                   "hours": "08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat"
+                },
+                {
+                  "name": "Service",
+                  "key": "service",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 06:00 PM Mon–Fri"
                 },
                 {
                   "name": "Parts",
@@ -26051,6 +26682,62 @@
                       "opensAt": "08:00",
                       "closesAt": "12:00",
                       "closed": false
+                    }
+                  ]
+                },
+                {
+                  "department": "Service",
+                  "key": "service",
+                  "summary": "07:00 AM - 06:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
                     }
                   ]
                 },
@@ -29357,8 +30044,8 @@
               "perk1": null,
               "perk2": null,
               "perk3": null,
-              "departments": "Sales · Parts",
-              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
+              "departments": "Sales · Service · Parts",
+              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nService: 07:00 AM - 06:00 PM Mon–Fri\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
               "phone2": null,
               "phone2Url": null,
               "phone3": null,
@@ -29384,6 +30071,14 @@
                   "phoneUrl": null,
                   "email": null,
                   "hours": "08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat"
+                },
+                {
+                  "name": "Service",
+                  "key": "service",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 06:00 PM Mon–Fri"
                 },
                 {
                   "name": "Parts",
@@ -29448,6 +30143,62 @@
                       "opensAt": "08:00",
                       "closesAt": "12:00",
                       "closed": false
+                    }
+                  ]
+                },
+                {
+                  "department": "Service",
+                  "key": "service",
+                  "summary": "07:00 AM - 06:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
                     }
                   ]
                 },
@@ -33057,8 +33808,8 @@
               "perk1": null,
               "perk2": null,
               "perk3": null,
-              "departments": "Sales · Parts",
-              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
+              "departments": "Sales · Service · Parts",
+              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nService: 07:00 AM - 06:00 PM Mon–Fri\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
               "phone2": null,
               "phone2Url": null,
               "phone3": null,
@@ -33084,6 +33835,14 @@
                   "phoneUrl": null,
                   "email": null,
                   "hours": "08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat"
+                },
+                {
+                  "name": "Service",
+                  "key": "service",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 06:00 PM Mon–Fri"
                 },
                 {
                   "name": "Parts",
@@ -33148,6 +33907,62 @@
                       "opensAt": "08:00",
                       "closesAt": "12:00",
                       "closed": false
+                    }
+                  ]
+                },
+                {
+                  "department": "Service",
+                  "key": "service",
+                  "summary": "07:00 AM - 06:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
                     }
                   ]
                 },
@@ -36215,8 +37030,8 @@
               "perk1": null,
               "perk2": null,
               "perk3": null,
-              "departments": "Sales · Parts",
-              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
+              "departments": "Sales · Service · Parts",
+              "hours": "Sales: 08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat\n\nService: 07:00 AM - 06:00 PM Mon–Fri\n\nParts: 07:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
               "phone2": null,
               "phone2Url": null,
               "phone3": null,
@@ -36242,6 +37057,14 @@
                   "phoneUrl": null,
                   "email": null,
                   "hours": "08:00 AM - 06:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat"
+                },
+                {
+                  "name": "Service",
+                  "key": "service",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 06:00 PM Mon–Fri"
                 },
                 {
                   "name": "Parts",
@@ -36306,6 +37129,62 @@
                       "opensAt": "08:00",
                       "closesAt": "12:00",
                       "closed": false
+                    }
+                  ]
+                },
+                {
+                  "department": "Service",
+                  "key": "service",
+                  "summary": "07:00 AM - 06:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
                     }
                   ]
                 },
