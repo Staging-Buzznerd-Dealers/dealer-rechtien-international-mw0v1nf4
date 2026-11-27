@@ -7,13 +7,60 @@
     {
       "key": "eyebrow",
       "type": "text",
-      "label": "Eyebrow",
-      "default": "Find the body shop"
+      "label": "Heading above the locations",
+      "default": "Contact our Body Shops"
     },
     {
       "key": "rooftop",
       "type": "list",
-      "label": "Location",
+      "label": "First location",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "streetAddress",
+          "type": "text",
+          "label": "Street address"
+        },
+        {
+          "key": "city",
+          "type": "text",
+          "label": "City"
+        },
+        {
+          "key": "region",
+          "type": "text",
+          "label": "State"
+        },
+        {
+          "key": "postalCode",
+          "type": "text",
+          "label": "Postal code"
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "Phone"
+        },
+        {
+          "key": "phoneUrl",
+          "type": "url",
+          "label": "Phone link"
+        },
+        {
+          "key": "mapUrl",
+          "type": "url",
+          "label": "Directions link"
+        }
+      ]
+    },
+    {
+      "key": "rooftop2",
+      "type": "list",
+      "label": "Second location",
       "fields": [
         {
           "key": "name",
@@ -68,7 +115,7 @@
       },
       "children": [
         {
-          "id": "bv-row",
+          "id": "bv-title-row",
           "type": "row",
           "props": {
             "gap": 0,
@@ -76,10 +123,38 @@
           },
           "children": [
             {
+              "id": "bv-title-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "bv-title",
+                  "type": "text",
+                  "props": {
+                    "text": "{{eyebrow}}",
+                    "align": "center",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bv-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
               "id": "bv-col",
               "type": "column",
               "props": {
-                "span": 12,
+                "span": 6,
                 "repeat": "rooftop"
               },
               "children": [
@@ -89,8 +164,7 @@
                   "props": {
                     "text": "{{name}}",
                     "headingLevel": 2,
-                    "align": "center",
-                    "eyebrow": "{{eyebrow}}"
+                    "align": "center"
                   }
                 },
                 {
@@ -123,12 +197,60 @@
                   }
                 }
               ]
+            },
+            {
+              "id": "bv-colb",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "repeat": "rooftop2"
+              },
+              "children": [
+                {
+                  "id": "bv-hb",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{name}}",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "bv-addrb",
+                  "type": "text",
+                  "props": {
+                    "text": "{{streetAddress}}, {{city}}, {{region}} {{postalCode}}",
+                    "width": "full",
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "bv-ctab",
+                  "type": "buttons",
+                  "props": {
+                    "align": "center",
+                    "items": [
+                      {
+                        "ctaId": "call-us",
+                        "label": "Call {{phone}}",
+                        "url": "{{phoneUrl}}",
+                        "style": "primary"
+                      },
+                      {
+                        "ctaId": "get-directions",
+                        "url": "{{mapUrl}}",
+                        "style": "primary"
+                      }
+                    ]
+                  }
+                }
+              ]
             }
           ]
         }
       ]
     }
   ],
-  "css": "/* Branch card: the rooftop's name, address, phone and directions from Admin → Locations. Nothing is typed in; without a published location the band does not show. */\n.bz-section[data-bz-node=\"bv\"]:not(:has([data-bz-node^=\"bv-col\"])){display:none}\n.bz-section[data-bz-node=\"bv\"]{background:var(--paper,#e6e6e4);padding-block:clamp(40px,5vw,64px)}\n[data-bz-node=\"bv\"] .bz-block{padding-block:0}\n[data-bz-node^=\"bv-col\"]{display:block;max-width:44rem;margin-inline:auto;text-align:center;padding:0}\n[data-bz-node^=\"bv-eyebrow\"] .bz-eyebrow{margin:0}\n[data-bz-node^=\"bv-h\"] h2{margin:0 0 var(--space-3)}\n[data-bz-node^=\"bv-addr\"]{margin-bottom:var(--space-4)}\n[data-bz-node^=\"bv-addr\"] p{margin:0;font-size:.9375rem;line-height:1.7;color:#3d3c39}\n[data-bz-node^=\"bv-cta\"] .bz-btns{justify-content:center;gap:12px;margin:0}\n",
+  "css": "/* Branch band: a heading, then up to two locations side by side (name, address, phone and directions from Admin → Locations). Nothing is typed in; without a published location the band does not show. */\n.bz-section[data-bz-node=\"bv\"]:not(:has([data-bz-node^=\"bv-col\"])){display:none}\n.bz-section[data-bz-node=\"bv\"]{background:var(--paper,#e6e6e4);padding-block:clamp(40px,5vw,64px)}\n[data-bz-node=\"bv\"] .bz-block{padding-block:0}\nmain [data-bz-node=\"bv-title\"] .bz-text p{margin:0 0 var(--space-5);text-align:center;font:400 clamp(1.125rem,1.7vw,1.375rem)/1.3 var(--font-body);color:var(--ink)}\n/* Locations: side by side, centred; one location sits centred on its own, and they stack on a narrow screen */\n[data-bz-node=\"bv-row\"]{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:var(--space-6) clamp(32px,6vw,96px)}\n[data-bz-node^=\"bv-col\"]{display:block;flex:1 1 20rem;max-width:30rem;text-align:center;padding:0;grid-column:auto}\n[data-bz-node^=\"bv-h\"] h2{margin:0 0 var(--space-3)}\n[data-bz-node^=\"bv-addr\"]{margin-bottom:var(--space-4)}\n[data-bz-node^=\"bv-addr\"] p{margin:0;font-size:.9375rem;line-height:1.7;color:#3d3c39}\n[data-bz-node^=\"bv-cta\"] .bz-btns{justify-content:center;flex-wrap:wrap;gap:12px;margin:0}\n",
   "js": ""
 }

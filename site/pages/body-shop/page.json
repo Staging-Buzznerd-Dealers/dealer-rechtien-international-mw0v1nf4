@@ -327,9 +327,441 @@
             "config": {
               "locationSlug": "columbia-2"
             }
+          },
+          "rooftop2": {
+            "source": "locations",
+            "config": {
+              "locationSlug": "riviera-beach"
+            }
           }
         },
-        "snapshots": {}
+        "snapshots": {},
+        "data": {
+          "rooftop": [
+            {
+              "id": "19",
+              "name": "Columbia",
+              "subtitle": "",
+              "slug": "columbia-2",
+              "num": "06",
+              "href": "/locations/columbia-2",
+              "streetAddress": "1619 Bluff Road",
+              "city": "Columbia,",
+              "region": "SC",
+              "postalCode": "29201",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "(803) 799-4923",
+              "phoneUrl": "tel:8037994923",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=1619%20Bluff%20Road%2C%20Columbia%2C%2C%20SC%2C%2029201",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "Service · Parts",
+              "hours": "Service: 07:00 AM - 06:00 PM Mon–Fri\n\nParts: 07:00 AM - 06:00 PM Mon–Fri",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": "Carolina",
+              "groupKey": "new-group-2",
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [
+                {
+                  "name": "Service",
+                  "key": "service",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 06:00 PM Mon–Fri"
+                },
+                {
+                  "name": "Parts",
+                  "key": "parts",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 06:00 PM Mon–Fri"
+                }
+              ],
+              "hoursRows": [
+                {
+                  "department": "Service",
+                  "key": "service",
+                  "summary": "07:00 AM - 06:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    }
+                  ]
+                },
+                {
+                  "department": "Parts",
+                  "key": "parts",
+                  "summary": "07:00 AM - 06:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 06:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "18:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "rooftop2": [
+            {
+              "id": "23",
+              "name": "Riviera Beach",
+              "subtitle": "",
+              "slug": "riviera-beach",
+              "num": "03",
+              "href": "/locations/riviera-beach",
+              "streetAddress": "3787 Interstate Park Rd S",
+              "city": "Riviera Beach",
+              "region": "FL 33404",
+              "postalCode": "USA",
+              "country": null,
+              "latitude": null,
+              "longitude": null,
+              "phone": "561-882-9050",
+              "phoneUrl": "tel:5618829050",
+              "mapUrl": "https://www.google.com/maps/search/?api=1&query=3787%20Interstate%20Park%20Rd%20S%2C%20Riviera%20Beach%2C%20FL%2033404%2C%20USA",
+              "email": null,
+              "brands": "",
+              "services": "",
+              "perks": "",
+              "brandKeys": "",
+              "perkKeys": "",
+              "perk1": null,
+              "perk2": null,
+              "perk3": null,
+              "departments": "Sales · Service · Parts",
+              "hours": "Sales: 08:00 AM - 05:00 PM Mon–Fri\n\nService: 07:00 AM - 05:00 PM Mon–Fri\n\nParts: 07:00 AM - 05:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
+              "phone2": null,
+              "phone2Url": null,
+              "phone3": null,
+              "phone3Url": null,
+              "group": "Florida",
+              "groupKey": "new-group",
+              "photo": {
+                "src": "",
+                "alt": ""
+              },
+              "banner": {
+                "src": "",
+                "alt": ""
+              },
+              "brandRows": [],
+              "serviceRows": [],
+              "perkRows": [],
+              "departmentRows": [
+                {
+                  "name": "Sales",
+                  "key": "sales",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "08:00 AM - 05:00 PM Mon–Fri"
+                },
+                {
+                  "name": "Service",
+                  "key": "service",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 05:00 PM Mon–Fri"
+                },
+                {
+                  "name": "Parts",
+                  "key": "parts",
+                  "phone": null,
+                  "phoneUrl": null,
+                  "email": null,
+                  "hours": "07:00 AM - 05:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat"
+                }
+              ],
+              "hoursRows": [
+                {
+                  "department": "Sales",
+                  "key": "sales",
+                  "summary": "08:00 AM - 05:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "08:00 AM - 05:00 PM",
+                      "opensAt": "08:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "08:00 AM - 05:00 PM",
+                      "opensAt": "08:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "08:00 AM - 05:00 PM",
+                      "opensAt": "08:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "08:00 AM - 05:00 PM",
+                      "opensAt": "08:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "08:00 AM - 05:00 PM",
+                      "opensAt": "08:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    }
+                  ]
+                },
+                {
+                  "department": "Service",
+                  "key": "service",
+                  "summary": "07:00 AM - 05:00 PM Mon–Fri",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    }
+                  ]
+                },
+                {
+                  "department": "Parts",
+                  "key": "parts",
+                  "summary": "07:00 AM - 05:00 PM Mon–Fri, 08:00 AM - 12:00 PM Sat",
+                  "days": [
+                    {
+                      "day": "Sunday",
+                      "hours": "Closed",
+                      "opensAt": null,
+                      "closesAt": null,
+                      "closed": true
+                    },
+                    {
+                      "day": "Monday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Tuesday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Wednesday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Thursday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Friday",
+                      "hours": "07:00 AM - 05:00 PM",
+                      "opensAt": "07:00",
+                      "closesAt": "17:00",
+                      "closed": false
+                    },
+                    {
+                      "day": "Saturday",
+                      "hours": "08:00 AM - 12:00 PM",
+                      "opensAt": "08:00",
+                      "closesAt": "12:00",
+                      "closed": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
       },
       "children": []
     },
