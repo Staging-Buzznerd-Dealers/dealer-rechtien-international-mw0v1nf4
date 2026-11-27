@@ -330,6 +330,12 @@
             "config": {
               "locationSlug": "columbia-2"
             }
+          },
+          "rooftop2": {
+            "source": "locations",
+            "config": {
+              "locationSlug": "riviera-beach"
+            }
           }
         },
         "snapshots": {}
