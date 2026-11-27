@@ -75,3 +75,17 @@ body{background:#fff;color:var(--ink);font-weight:400;letter-spacing:0;-webkit-f
 [data-bz-node="reviews-list"] blockquote{font-size:.875rem;line-height:1.8;color:#4a4945;margin:var(--space-3) 0 var(--space-4)}
 [data-bz-node="reviews-list"] .bz-quote__n{font:700 .8125rem/1.3 var(--font-body);text-transform:uppercase}
 [data-bz-node="reviews-list"] .bz-quote__r{font-size:.75rem;color:var(--muted)}
+
+/* ---- Body shop promo: a compact band, shown only at the locations that have a body shop ---------------------- */
+.bz-section[data-bz-node="bodyshop"]{padding-block:clamp(32px,4vw,48px)}
+[data-bz-node="bodyshop"] .bz-block{padding-block:0}
+[data-bz-node="bodyshop-h"] h2{margin:0 0 var(--space-2);font-size:clamp(1.25rem,1.8vw,1.625rem)}
+main [data-bz-node="bodyshop-t"] .bz-text p{margin:0;font-size:.9375rem;line-height:1.7;color:#3d3c39;max-width:38rem}
+[data-bz-node="bodyshop-act"]{display:flex;justify-content:flex-end}
+[data-bz-node="bodyshop-cta"] .bz-btns{margin:0}
+@media (max-width:1100px){[data-bz-node="bodyshop-act"]{justify-content:flex-start}}
+/* The location page is one document for every branch, so the band is in the page for all of them and this rule
+   hides it on the others: it stays visible in the editor, and on a page whose address ends in one of the two slugs
+   below. To show it at another branch, add that branch's slug (the end of its page address) to both lines. */
+html:has(link[rel="canonical"][href*="/locations/"]):not(:has(link[rel="canonical"][href$="/locations/riviera-beach"])):not(:has(link[rel="canonical"][href$="/locations/columbia-2"])) .bz-section[data-bz-node="bodyshop"]{display:none}
+

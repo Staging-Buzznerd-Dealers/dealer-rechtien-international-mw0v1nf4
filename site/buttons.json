@@ -901,5 +901,14 @@
     "intent": "browse-specifications",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "visit-body-shop",
+    "label": "Visit Our Body Shop",
+    "url": "/body-shop",
+    "style": "primary",
+    "intent": "body-shop",
+    "newTab": false,
+    "active": true
   }
 ]

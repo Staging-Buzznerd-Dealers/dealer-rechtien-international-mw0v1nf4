@@ -562,6 +562,77 @@
       "children": []
     },
     {
+      "id": "bodyshop",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 6,
+        "background": "paper",
+        "anchor": "body-shop"
+      },
+      "children": [
+        {
+          "id": "bodyshop-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "stackOn": "tablet",
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "bodyshop-copy",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "bodyshop-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Need Body Shop Services?",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "bodyshop-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Collision repair, paint and truck body work from our body shop team. Explore our Body Shop services.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "bodyshop-act",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "bodyshop-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "visit-body-shop"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "reviews",
       "type": "section",
       "props": {
