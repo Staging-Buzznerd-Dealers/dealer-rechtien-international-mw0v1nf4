@@ -62,7 +62,7 @@
                       {
                         "ctaId": "contact-us",
                         "style": "secondary",
-                        "url": "#[data-bz-node=\"visit\"]"
+                        "url": "#contact"
                       }
                     ]
                   }
