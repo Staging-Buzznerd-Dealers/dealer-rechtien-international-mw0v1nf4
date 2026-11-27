@@ -316,7 +316,7 @@
               "ctaLabel": "Explore",
               "ctaUrl": "#",
               "image": {
-                "src": "/images/image-needed.svg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/60/int25-myinternational-desktop-office-1.avif",
                 "alt": "Advanced Remote Diagnostics photo placeholder"
               }
             },
@@ -326,8 +326,10 @@
               "ctaLabel": "Explore",
               "ctaUrl": "#",
               "image": {
-                "src": "/images/image-needed.svg",
-                "alt": "Remote Lock/Unlock photo placeholder"
+                "src": "https://vendure.ai4dealerships.com/assets/source/11/mobile-service-2000-x-1500-px.png",
+                "alt": "Remote Lock/Unlock photo placeholder",
+                "width": 2000,
+                "height": 1500
               }
             },
             {
@@ -336,7 +338,7 @@
               "ctaLabel": "Explore",
               "ctaUrl": "#",
               "image": {
-                "src": "/images/image-needed.svg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/d0/int25-myinternational-fuel-analytics-1.avif",
                 "alt": "Fuel Analytics photo placeholder"
               }
             },
@@ -346,7 +348,7 @@
               "ctaLabel": "Explore",
               "ctaUrl": "#",
               "image": {
-                "src": "/images/image-needed.svg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/99/int25-myinternational-mobile-in-cab-map-1.avif",
                 "alt": "Service Communications photo placeholder"
               }
             },
@@ -356,7 +358,7 @@
               "ctaLabel": "Explore",
               "ctaUrl": "#",
               "image": {
-                "src": "/images/image-needed.svg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/f3/international-person-computer-office-dealer-251017-13191.avif",
                 "alt": "Over-the-Air Programming photo placeholder"
               }
             },
@@ -366,7 +368,7 @@
               "ctaLabel": "Explore",
               "ctaUrl": "#",
               "image": {
-                "src": "/images/image-needed.svg",
+                "src": "https://vendure.ai4dealerships.com/assets/source/27/int25-myinternational-desktop-garage-1.avif",
                 "alt": "Gateway Integrations photo placeholder"
               }
             }
@@ -607,7 +609,7 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/image-needed.svg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/97/international-male-factory-worker-atc-build-shop-231205-7509.avif",
                       "alt": "Parts photo placeholder"
                     },
                     "width": "full"
@@ -659,7 +661,7 @@
                   "type": "image",
                   "props": {
                     "image": {
-                      "src": "/images/image-needed.svg",
+                      "src": "https://vendure.ai4dealerships.com/assets/source/ea/international-hx-series-driving-garage-lisle-exterior-231205-13713.avif",
                       "alt": "Fleet Resources photo placeholder"
                     },
                     "width": "full"
