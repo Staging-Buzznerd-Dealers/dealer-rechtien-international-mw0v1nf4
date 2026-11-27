@@ -1,0 +1,121 @@
+{
+  "version": 2,
+  "id": "my-int-features",
+  "name": "My International feature rows (photo + copy)",
+  "props": [
+    {
+      "key": "features",
+      "type": "list",
+      "label": "Features",
+      "fields": [
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Heading"
+        },
+        {
+          "key": "text",
+          "type": "textarea",
+          "label": "Description"
+        },
+        {
+          "key": "ctaLabel",
+          "type": "text",
+          "label": "Link label"
+        },
+        {
+          "key": "ctaUrl",
+          "type": "url",
+          "label": "Link goes to"
+        },
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Photo"
+        }
+      ]
+    }
+  ],
+  "css": "/* My International feature rows: copy and photo side by side, alternating sides. */\n[data-bz-node=\"mf\"]{padding-block:clamp(24px,3vw,48px)}\n[data-bz-node^=\"mf-row\"]{align-items:center;padding-block:clamp(20px,3vw,40px)}\n[data-bz-node^=\"mf-row\"]:nth-child(even)>.bz-col:first-child{order:2}\n[data-bz-node^=\"mf-copy\"]{padding-inline:clamp(0px,4vw,64px)}\n[data-bz-node^=\"mf-title\"] h2{font-size:clamp(1.125rem,1.7vw,1.5rem);line-height:1.1;margin:0 0 var(--space-3)}\n[data-bz-node^=\"mf-text\"] p{font-size:.875rem;line-height:1.75;color:#3d3c39;margin:0 0 var(--space-3)}\n[data-bz-node^=\"mf-cta\"] .bz-btns{margin:var(--space-2) 0 0}\n[data-bz-node^=\"mf-photo\"] img{width:100%;height:auto;display:block;border-radius:4px}\n@media (max-width:900px){\n  [data-bz-node^=\"mf-row\"]>.bz-col:first-child,[data-bz-node^=\"mf-row\"]:nth-child(even)>.bz-col:first-child{order:0}\n  [data-bz-node^=\"mf-copy\"]{order:1;padding-inline:0}\n  [data-bz-node^=\"mf-media\"]{order:0}\n}\n",
+  "js": "",
+  "nodes": [
+    {
+      "id": "mf",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "mf-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "stackOn": "tablet",
+            "repeat": "features"
+          },
+          "children": [
+            {
+              "id": "mf-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "mf-title",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "mf-text",
+                  "type": "text",
+                  "props": {
+                    "text": "{{text}}",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "mf-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{ctaLabel}}",
+                        "url": "{{ctaUrl}}",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "mf-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "mf-photo",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

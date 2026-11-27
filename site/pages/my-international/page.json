@@ -1,0 +1,708 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "align": "start",
+        "anchor": "top"
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "hero-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "My International™",
+                    "headingLevel": 1,
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "styles": {
+        "base": {
+          "backgroundImage": "/images/my-international/hero.jpg",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center",
+          "background": "#151515"
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "intro-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "intro-l",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "intro-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Introducing My International™. Uptime-boosting tools. All in one place.",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "intro-r",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "intro-t1",
+                  "type": "text",
+                  "props": {
+                    "text": "My International™ is a comprehensive, connected digital ecosystem that streamlines how you manage your fleet and collaborate with our dealer network. Whether you operate one truck or a thousand, we provide the real-time insights and communication tools you need to reduce costs, save time, and maximize uptime.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-t2",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Standard on every new build:</strong> All new class 6–8 vehicles include a factory-installed telematics device along with a 5-year connected data plan and access to My International.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-t3",
+                  "type": "text",
+                  "props": {
+                    "text": "Everything you need, connected and in one place:",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-list",
+                  "type": "list",
+                  "props": {
+                    "columns": 1,
+                    "headingLevel": 2,
+                    "items": [
+                      {
+                        "label": "Advanced remote diagnostics and vehicle health reporting",
+                        "desc": "Get instant fault code severity ratings and interactive plans to resolve issues faster."
+                      },
+                      {
+                        "label": "Service communications",
+                        "desc": "Coordinate directly with dealers and use proactive scheduling to get back on the road sooner."
+                      },
+                      {
+                        "label": "Remote software & parameter updates",
+                        "desc": "Optimize vehicle performance and update settings remotely without a service visit."
+                      },
+                      {
+                        "label": "Fuel analytics",
+                        "desc": "Access detailed performance reports to maximize the efficiency of your International® S13® integrated powertrain and A26 engine."
+                      },
+                      {
+                        "label": "Remote lock/unlock",
+                        "desc": "Avoid the downtime and expense of vehicle lockouts with instant remote access."
+                      },
+                      {
+                        "label": "GPS tracking & geofencing",
+                        "desc": "Monitor vehicle locations and set custom boundary alerts for better fleet security."
+                      },
+                      {
+                        "label": "Warranty & contract management",
+                        "desc": "View your warranty coverage and service contracts in one place, whenever you want."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "intro-foot",
+                  "type": "text",
+                  "props": {
+                    "text": "*Availability of Fuel Analytics, Remote Lock/Unlock, and certain OTA capabilities will vary based on vehicle build date and/or powertrain configuration. Contact your International sales or connected vehicle representative with specific questions.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "intro-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "mi-log-in"
+                      },
+                      {
+                        "ctaId": "mi-enroll"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "video",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "video-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "video-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "video-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/my-international/dashboard-video.jpg",
+                      "alt": "The My International dashboard showing vehicle locations on a map"
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "demo-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "demo-l",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "demo-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Want a deeper look?",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "demo-r",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "demo-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Request a demo of My International.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "demo-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "mi-request-demo"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "demo-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "my-international-demo"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "my-int-features",
+        "values": {
+          "features": [
+            {
+              "title": "Advanced Remote Diagnostics",
+              "text": "My International uses advanced analytics to transform vehicle data into clear, actionable insights. Easily monitor vehicle health and performance for greater uptime and efficiency.",
+              "ctaLabel": "Explore",
+              "ctaUrl": "#",
+              "image": {
+                "src": "/images/my-international/advanced-remote-diagnostics.jpg",
+                "alt": "A fleet specialist monitoring vehicle diagnostics on dual computer screens"
+              }
+            },
+            {
+              "title": "Remote Lock/Unlock",
+              "text": "Eliminate lockout-related downtime and expense. My International allows fleets and owner-operators to remotely unlock compatible vehicles, keeping your drivers on the road.",
+              "ctaLabel": "Explore",
+              "ctaUrl": "#",
+              "image": {
+                "src": "/images/my-international/remote-lock-unlock.jpg",
+                "alt": "A driver checking his phone beside a white International truck"
+              }
+            },
+            {
+              "title": "Fuel Analytics",
+              "text": "My International® Fuel Analytics turns data into savings. Tracking engine speed, idle time and more, it helps lower your total cost of ownership.",
+              "ctaLabel": "Explore",
+              "ctaUrl": "#",
+              "image": {
+                "src": "/images/my-international/fuel-analytics.jpg",
+                "alt": "Two technicians reviewing vehicle data on a tablet beside a truck wheel"
+              }
+            },
+            {
+              "title": "Service Communications",
+              "text": "Track your vehicle's status and review service estimates in real time. My International facilitates direct communication with your dealer and proactive scheduling to ensure faster turnaround.",
+              "ctaLabel": "Explore",
+              "ctaUrl": "#",
+              "image": {
+                "src": "/images/my-international/service-communications.jpg",
+                "alt": "A phone mounted in a truck cab showing a service map"
+              }
+            },
+            {
+              "title": "Over-the-Air Programming",
+              "text": "Keep your trucks on the road, not in the shop. My International lets you update engine software and parameters remotely. You can optimize performance without a service visit.",
+              "ctaLabel": "Explore",
+              "ctaUrl": "#",
+              "image": {
+                "src": "/images/my-international/over-the-air-programming.jpg",
+                "alt": "A fleet manager working on a laptop in an office"
+              }
+            },
+            {
+              "title": "Gateway Integrations",
+              "text": "Bring your entire fleet together. My International integrates with over 30 telematics providers, so you can manage all makes of vehicles in one place without extra hardware, gateway hubs, or installation visits.",
+              "ctaLabel": "Explore",
+              "ctaUrl": "#",
+              "image": {
+                "src": "/images/my-international/gateway-integrations.jpg",
+                "alt": "A technician using a laptop in front of an open International truck hood"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "foot",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 3
+      },
+      "children": [
+        {
+          "id": "foot-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "foot-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "foot-t",
+                  "type": "text",
+                  "props": {
+                    "text": "*Availability of Fuel Analytics, Remote Lock/Unlock, and certain OTA capabilities will vary based on vehicle build date and/or powertrain configuration. Contact your International sales or connected vehicle representative with specific questions.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "app",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "app-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "app-l",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "app-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "My International Mobile App",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "app-r",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "app-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Manage your fleet from anywhere. Access real-time vehicle insights, track service status, and request new service events from your mobile device. And we're just getting started! More enhancements are coming soon.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "app-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "mi-google-play"
+                      },
+                      {
+                        "ctaId": "mi-app-store"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "renew",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "renew-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "renew-l",
+              "type": "column",
+              "props": {
+                "span": 5
+              },
+              "children": [
+                {
+                  "id": "renew-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Renew Your My International Subscription",
+                    "headingLevel": 2,
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "renew-r",
+              "type": "column",
+              "props": {
+                "span": 7
+              },
+              "children": [
+                {
+                  "id": "renew-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Every International® truck and IC Bus™ vehicle includes a <strong>5-year My International subscription.</strong> After the initial subscription period ends, you can renew connected services for <strong>12</strong> or <strong>24 months.</strong> Submit a renewal request below. Our Service Contracts team will follow up with pricing and next steps.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "renew-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "mi-renew"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "renew-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "my-international-renewal"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "explore",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 7
+      },
+      "children": [
+        {
+          "id": "explore-head",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "explore-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "explore-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Explore More",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "explore-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "explore-a",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "explore-a-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/my-international/explore-parts.jpg",
+                      "alt": "A parts specialist in a truck parts warehouse"
+                    },
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "explore-a-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Parts",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "explore-a-t",
+                  "type": "text",
+                  "props": {
+                    "text": "International offers a vast inventory of quality parts so your fleet has the right parts at the right time to get the job done.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "explore-a-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Explore",
+                        "url": "/parts",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "explore-b",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "explore-b-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/my-international/explore-fleet-resources.jpg",
+                      "alt": "An International dump truck leaving a service bay"
+                    },
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "explore-b-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Fleet Resources",
+                    "headingLevel": 3,
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "explore-b-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Our suite of resources equips fleet managers and service technicians with the expertise, tools and technology to keep vehicles and businesses operating at full potential.",
+                    "align": "left",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "explore-b-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Explore",
+                        "url": "/service",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

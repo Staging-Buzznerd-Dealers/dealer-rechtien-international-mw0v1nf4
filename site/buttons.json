@@ -322,16 +322,6 @@
     "active": true
   },
   {
-    "id": "request-360-info",
-    "label": "Request more information",
-    "url": null,
-    "formId": "international-360",
-    "style": "primary",
-    "intent": "international-360",
-    "newTab": false,
-    "active": true
-  },
-  {
     "id": "request-ze-info",
     "label": "Request information",
     "url": null,
@@ -910,5 +900,61 @@
     "intent": "body-shop",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "mi-log-in",
+    "label": "Log into dashboard",
+    "url": "#",
+    "style": "primary",
+    "intent": "my-international-login",
+    "newTab": true,
+    "active": true
+  },
+  {
+    "id": "mi-enroll",
+    "label": "Enroll",
+    "url": "#",
+    "style": "secondary",
+    "intent": "my-international-enroll",
+    "newTab": true,
+    "active": true
+  },
+  {
+    "id": "mi-request-demo",
+    "label": "Request a demo",
+    "url": null,
+    "style": "primary",
+    "intent": "my-international-demo",
+    "newTab": false,
+    "active": true,
+    "formId": "my-international-demo"
+  },
+  {
+    "id": "mi-google-play",
+    "label": "Download on Google Play",
+    "url": "#",
+    "style": "primary",
+    "intent": "my-international-app",
+    "newTab": true,
+    "active": true
+  },
+  {
+    "id": "mi-app-store",
+    "label": "Download on the App Store",
+    "url": "#",
+    "style": "secondary",
+    "intent": "my-international-app",
+    "newTab": true,
+    "active": true
+  },
+  {
+    "id": "mi-renew",
+    "label": "Contact us",
+    "url": null,
+    "style": "primary",
+    "intent": "my-international-renewal",
+    "newTab": false,
+    "active": true,
+    "formId": "my-international-renewal"
   }
 ]

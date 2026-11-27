@@ -201,12 +201,12 @@
     }
   },
   {
-    "slug": "international-360",
-    "title": "International 360 (I360) Truck Fleet Management",
-    "description": "International 360 fleet management and repair communication at Rechtien International Trucks and Carolina International Trucks in South Florida and South Carolina.",
-    "path": "/international-360",
-    "out": "international-360/index.html",
-    "dir": "international-360",
+    "slug": "my-international",
+    "title": "My International™: Connected Truck Fleet Management",
+    "description": "My International™ is a comprehensive, connected digital ecosystem that streamlines how you manage your fleet and collaborate with our dealer network.",
+    "path": "/my-international",
+    "out": "my-international/index.html",
+    "dir": "my-international",
     "status": "published",
     "seo": {
       "ogImage": null,

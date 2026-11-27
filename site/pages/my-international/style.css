@@ -1,0 +1,55 @@
+/* ==========================================================================
+   My International: Rechtien International Trucks and Carolina International Trucks
+   Page-scoped styles (site/pages/my-international/style.css). Base type, tokens and
+   buttons follow the other page stylesheets so the shared header and footer render the
+   same here. Layout: dark photo hero with the title bottom-left, heading-left / copy-right
+   bands, a full-width dashboard picture, six alternating feature rows (the my-int-features
+   component), a footnote, app and renewal bands, and two "Explore more" cards.
+   ========================================================================== */
+:root{
+  --accent:#ff6b3d; --accent-dark:#e0522a;
+  --ink:#151515; --muted:#6b6a66; --line:#d8d8d4; --paper:#e6e6e4;
+  --text-h1:clamp(2rem,4.4vw,3.75rem);
+  --text-eyebrow:.6875rem;
+  --container:1266px;
+}
+body{background:#fff;color:var(--ink);font-weight:400;letter-spacing:0;-webkit-font-smoothing:antialiased}
+/* ---- Type ---------------------------------------------------------------- */
+.bz-block h1,.bz-block h2,.bz-block h3{text-transform:uppercase;letter-spacing:0;font-weight:700}
+.bz-block h1{font-size:var(--text-h1);line-height:1.04}
+.bz-block h2{font-size:clamp(1.375rem,2.1vw,1.875rem);line-height:1.1;margin-bottom:var(--space-4)}
+.bz-block h3{font-size:clamp(1rem,1.4vw,1.25rem);line-height:1.15;margin:0 0 var(--space-2)}
+.bz-block p{font-size:.9375rem;line-height:1.75}
+.bz-block--heading{padding-block:0 var(--space-2)}
+.bz-btns{margin-block:var(--space-5) 0}
+main .bz-section[data-bz-node]:not([data-bz-node="hero"]){padding-block:clamp(40px,5vw,72px)}
+main .bz-block{padding-block:0 var(--space-3)}
+main .bz-section p{max-width:none}
+main .bz-text p{font-size:.875rem;line-height:1.85;color:#3d3c39;margin:0 0 var(--space-3)}
+.bz-block--buttons .bz-btns{display:flex;flex-wrap:wrap;gap:12px 14px;align-items:center}
+/* ---- Hero: dark photo, title bottom-left ------------------------------------------------ */
+.bz-section[data-bz-node="hero"]{min-height:clamp(300px,28vw,420px);display:flex;flex-direction:column;justify-content:flex-end;padding:120px 0 clamp(24px,3vw,40px);color:#fff;isolation:isolate}
+.bz-section[data-bz-node="hero"]::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,10,14,.35) 0%,rgba(8,10,14,.25) 45%,rgba(8,10,14,.7) 100%)}
+[data-bz-node="hero-h"] h1{color:#fff;margin:0}
+/* ---- Heading left, copy right ---------------------------------------------------------------- */
+[data-bz-node$="-row"]:is([data-bz-node="intro-row"],[data-bz-node="demo-row"],[data-bz-node="app-row"],[data-bz-node="renew-row"]){align-items:start}
+[data-bz-node="intro-h"] h2,[data-bz-node="app-h"] h2,[data-bz-node="renew-h"] h2,[data-bz-node="demo-h"] h2{font-size:clamp(1.25rem,2vw,1.75rem);max-width:15em}
+/* Seven benefit bullets: bold lead-in, then the sentence, on one line each */
+[data-bz-node="intro-list"] .bz-grid{display:block;margin:0 0 var(--space-3);padding:0;list-style:none}
+[data-bz-node="intro-list"] .bz-feature{position:relative;padding:0 0 6px 20px;margin:0;border:0;background:none;box-shadow:none}
+[data-bz-node="intro-list"] .bz-feature::before{content:"";position:absolute;left:4px;top:.72em;width:6px;height:6px;border-radius:50%;background:var(--ink)}
+[data-bz-node="intro-list"] .bz-feature__t,[data-bz-node="intro-list"] .bz-feature__d{display:inline;font-size:.875rem;line-height:1.7;margin:0;color:#3d3c39;text-transform:none;letter-spacing:0}
+[data-bz-node="intro-list"] .bz-feature__t{font-weight:700;color:var(--ink)}
+[data-bz-node="intro-list"] .bz-feature__t::after{content:": ";font-weight:700}
+[data-bz-node="intro-foot"] p,[data-bz-node="foot-t"] p{font-size:.6875rem;line-height:1.6;color:var(--muted);margin:0 0 var(--space-3)}
+/* ---- Dashboard picture ------------------------------------------------------------------------------ */
+main .bz-section.bz-section[data-bz-node="video"][data-bz-type]{padding-block:0}
+[data-bz-node="video-img"] img{width:100%;height:auto;display:block;border-radius:4px}
+/* ---- Footnote (repeated under the features) ------------------------------------------------------ */
+main .bz-section.bz-section[data-bz-node="foot"][data-bz-type]{padding-block:0 var(--space-4)}
+/* ---- Explore more -------------------------------------------------------------------------------------- */
+[data-bz-node="explore-h"] h2{text-align:center}
+[data-bz-node="explore-a-img"] img,[data-bz-node="explore-b-img"] img{width:100%;height:auto;display:block;border-radius:4px;margin-bottom:var(--space-3)}
+[data-bz-node="explore-a-t"] p,[data-bz-node="explore-b-t"] p{margin:0 0 var(--space-2)}
+/* ---- Request-a-demo and renewal forms sit under their buttons (the buttons jump to them) -------------- */
+[data-bz-node="demo-form"],[data-bz-node="renew-form"]{margin-top:var(--space-6);padding:clamp(20px,2.4vw,32px);background:var(--paper)}
