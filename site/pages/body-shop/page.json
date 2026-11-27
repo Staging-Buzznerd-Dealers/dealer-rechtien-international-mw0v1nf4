@@ -60,9 +60,6 @@
                     "align": "center",
                     "items": [
                       {
-                        "ctaId": "body-shop-call"
-                      },
-                      {
                         "ctaId": "contact-us",
                         "style": "secondary"
                       }
