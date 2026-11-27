@@ -322,7 +322,8 @@
       "props": {
         "width": "boxed",
         "paddingY": 6,
-        "background": "paper"
+        "background": "paper",
+        "anchor": "contact"
       },
       "children": [
         {
