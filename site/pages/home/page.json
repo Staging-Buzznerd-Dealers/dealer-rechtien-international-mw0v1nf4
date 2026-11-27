@@ -110,7 +110,7 @@
                   "id": "intro-text",
                   "type": "text",
                   "props": {
-                    "text": "At Rechtien Truck Group, we’re more than just a dealership — we’re industry experts who understand the challenges of the road. Our culture is built on accountability, action, and a commitment to doing what’s right. From our parts and service teams to our finance specialists, every member of the Rechtien Truck Group family is dedicated to helping you succeed.",
+                    "text": "At Rechtien International Trucks and Carolina International Trucks, we’re more than just a dealership — we’re industry experts who understand the challenges of the road. Our culture is built on accountability, action, and a commitment to doing what’s right. From our parts and service teams to our finance specialists, every member of the Rechtien International Trucks and Carolina International Trucks family is dedicated to helping you succeed.",
                     "align": "center",
                     "width": "full"
                   }
@@ -308,7 +308,7 @@
           "locations": [
             {
               "id": "18",
-              "name": "Maimi",
+              "name": "Miami",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -2853,7 +2853,7 @@
         "values": {
           "eyebrow": "Our inventory",
           "heading": "Everything to keep you moving.",
-          "intro": "We make finding the right equipment from reputable brands easier than ever at Rechtien Truck Group. Whether you need a commercial truck, trailer, or school bus, we have the equipment you need to keep your business moving.",
+          "intro": "We make finding the right equipment from reputable brands easier than ever at Rechtien International Trucks and Carolina International Trucks. Whether you need a commercial truck, trailer, or school bus, we have the equipment you need to keep your business moving.",
           "items": [
             {
               "num": "01",
@@ -2977,7 +2977,7 @@
                   "id": "sp2-text",
                   "type": "text",
                   "props": {
-                    "text": "At Rechtien Truck Group, we offer only the best quality for the best price — International trucks, IC Bus, Hino, and trailers from industry leaders like Dorsey, East & Summit. When you choose a truck or trailer through us, you’re investing in durability, reliability, and innovation.",
+                    "text": "At Rechtien International Trucks and Carolina International Trucks, we offer only the best quality for the best price — International trucks, IC Bus, Hino, and trailers from industry leaders like Dorsey, East & Summit. When you choose a truck or trailer through us, you’re investing in durability, reliability, and innovation.",
                     "align": "left",
                     "width": "full"
                   }

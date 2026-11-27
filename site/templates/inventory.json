@@ -45,7 +45,7 @@
                   "props": {
                     "image": {
                       "src": "/logos/rechtien-truck-group-logo-white.png",
-                      "alt": "International Rechtien Truck Group",
+                      "alt": "International Rechtien International Trucks and Carolina International Trucks",
                       "width": 1200,
                       "height": 199
                     },
@@ -178,7 +178,7 @@
                           "props": {
                             "image": {
                               "src": "/logos/rechtien-truck-group-logo-white.png",
-                              "alt": "International Rechtien Truck Group",
+                              "alt": "International Rechtien International Trucks and Carolina International Trucks",
                               "width": 1200,
                               "height": 199
                             },
@@ -317,7 +317,7 @@
                   "props": {
                     "image": {
                       "src": "/logos/rechtien-truck-group-logo-white.png",
-                      "alt": "International Rechtien Truck Group",
+                      "alt": "International Rechtien International Trucks and Carolina International Trucks",
                       "width": 1200,
                       "height": 199
                     },
@@ -563,7 +563,7 @@
                   "id": "ftr-copy",
                   "type": "text",
                   "props": {
-                    "text": "© 2026 Rechtien Truck Group. All rights reserved.",
+                    "text": "© 2026 Rechtien International Trucks and Carolina International Trucks. All rights reserved.",
                     "align": "left",
                     "width": "full"
                   }

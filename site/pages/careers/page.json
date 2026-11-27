@@ -50,14 +50,14 @@
                     "text": "Moving your career forward.",
                     "headingLevel": 1,
                     "align": "center",
-                    "eyebrow": "Careers at Rechtien Truck Group"
+                    "eyebrow": "Careers at Rechtien International Trucks and Carolina International Trucks"
                   }
                 },
                 {
                   "id": "hero-lede",
                   "type": "text",
                   "props": {
-                    "text": "Build a career with Rechtien Truck Group in South Florida or South Carolina.",
+                    "text": "Build a career with Rechtien International Trucks and Carolina International Trucks in South Florida or South Carolina.",
                     "align": "center",
                     "width": "full"
                   }
@@ -114,7 +114,7 @@
                   "id": "about-t1",
                   "type": "text",
                   "props": {
-                    "text": "Rechtien Truck Group is the largest commercial truck dealer in South\nCarolina and a leading truck dealer group in South Florida, providing\npresence of sales, service and support for medium, heavy and severe-\nservice International trucks. We also sell and service IC Bus, Hino Trucks\nand other commercial work trucks. To support customer uptime, Rechtien\nTruck Group has over $8 million in stocked parts and a state-of-the-art\npaint booth & body shop in both states (Columbia & Riviera Beach). Our\nLeasing & Rental division, Idealease, provides short-term and long-term\nsolutions through truck leasing, rental and mobile maintenance support.\nays.",
+                    "text": "Rechtien International Trucks and Carolina International Trucks is the largest commercial truck dealer in South\nCarolina and a leading truck dealer group in South Florida, providing\npresence of sales, service and support for medium, heavy and severe-\nservice International trucks. We also sell and service IC Bus, Hino Trucks\nand other commercial work trucks. To support customer uptime, Rechtien\nTruck Group has over $8 million in stocked parts and a state-of-the-art\npaint booth & body shop in both states (Columbia & Riviera Beach). Our\nLeasing & Rental division, Idealease, provides short-term and long-term\nsolutions through truck leasing, rental and mobile maintenance support.\nays.",
                     "align": "left",
                     "width": "full"
                   }
@@ -193,7 +193,7 @@
                   "id": "op-a-co",
                   "type": "text",
                   "props": {
-                    "text": "Rechtien Truck Group - Florida",
+                    "text": "Rechtien International Trucks and Carolina International Trucks - Florida",
                     "align": "left",
                     "width": "full"
                   }
@@ -261,7 +261,7 @@
                   "id": "text",
                   "type": "text",
                   "props": {
-                    "text": "Rechtien Truck Group - Carolina",
+                    "text": "Rechtien International Trucks and Carolina International Trucks - Carolina",
                     "align": "left",
                     "width": "full"
                   }
@@ -334,7 +334,7 @@
         "sectionId": "photo-bands",
         "values": {
           "whyEyebrow": "Why join us",
-          "whyHeading": "Why join Rechtien Truck Group - South Carolina",
+          "whyHeading": "Why join Rechtien International Trucks and Carolina International Trucks - South Carolina",
           "whyIntro": "Become part of a winning team at one of the region's premier dealerships. We offer a family atmosphere and a professional work environment, with a reputation built on the hard work of each individual at our company. Don't start another job — build a career through our training programs and growth opportunities.",
           "why": [
             {
@@ -399,12 +399,12 @@
             {
               "image": {
                 "src": "https://vendure.ai4dealerships.com/assets/source/f8/careers-4.png",
-                "alt": "Celebrating Over 40 Years at Rechtien Truck Group!",
+                "alt": "Celebrating Over 40 Years at Rechtien International Trucks and Carolina International Trucks!",
                 "width": 800,
                 "height": 600
               },
               "title": "Raul Arellano ",
-              "caption": "Celebrating Over 40 Years at Rechtien Truck Group!"
+              "caption": "Celebrating Over 40 Years at Rechtien International Trucks and Carolina International Trucks!"
             }
           ]
         }
@@ -419,7 +419,7 @@
         "values": {
           "eyebrow": "Benefits",
           "heading": "Benefits that support you.",
-          "intro": "At Rechtien Truck Group - South Carolina, we offer an extensive benefit package to assist our employees' health and well-being. We offer a wide array of products and programs to support our employees' physical, mental and financial health.",
+          "intro": "At Rechtien International Trucks and Carolina International Trucks - South Carolina, we offer an extensive benefit package to assist our employees' health and well-being. We offer a wide array of products and programs to support our employees' physical, mental and financial health.",
           "groups": [
             {
               "title": "Health",
@@ -559,7 +559,7 @@
                   "id": "where-sc",
                   "type": "text",
                   "props": {
-                    "text": "<strong>South Carolina</strong> (Rechtien Truck Group - South Carolina): Charleston, Columbia, Florence, Greer, Greenville and Conway.",
+                    "text": "<strong>South Carolina</strong> (Rechtien International Trucks and Carolina International Trucks - South Carolina): Charleston, Columbia, Florence, Greer, Greenville and Conway.",
                     "align": "left",
                     "width": "full"
                   }

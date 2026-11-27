@@ -17,7 +17,7 @@
           "props": {
             "image": {
               "src": "https://vendure.ai4dealerships.com/assets/source/33/_dsc1990.jpg",
-              "alt": "Rechtien Truck Group dealership"
+              "alt": "Rechtien International Trucks and Carolina International Trucks dealership"
             },
             "width": "full"
           }
@@ -50,7 +50,7 @@
                   "id": "hero-h",
                   "type": "heading",
                   "props": {
-                    "text": "Meet the Rechtien Truck Group Team",
+                    "text": "Meet the Rechtien International Trucks and Carolina International Trucks Team",
                     "headingLevel": 1,
                     "align": "center"
                   }
@@ -59,7 +59,7 @@
                   "id": "hero-lede",
                   "type": "text",
                   "props": {
-                    "text": "At Rechtien Truck Group, fostering winning relationships is our top priority — Whether you're looking to source new or pre-owned trucks, need complex maintenance solutions or comprehensive parts support, trust our managerial teams to guide you to the best solutions.",
+                    "text": "At Rechtien International Trucks and Carolina International Trucks, fostering winning relationships is our top priority — Whether you're looking to source new or pre-owned trucks, need complex maintenance solutions or comprehensive parts support, trust our managerial teams to guide you to the best solutions.",
                     "align": "center",
                     "width": "full"
                   }

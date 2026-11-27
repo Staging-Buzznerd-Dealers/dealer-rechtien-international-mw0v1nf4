@@ -317,7 +317,7 @@
                   "id": "build-note",
                   "type": "text",
                   "props": {
-                    "text": "The configurator is hosted by International. If it doesn’t load in the frame above, open it in a new tab. Pricing and availability are confirmed by Rechtien Truck Group — see our <a href=\"/terms\">Terms and Conditions</a>.",
+                    "text": "The configurator is hosted by International. If it doesn’t load in the frame above, open it in a new tab. Pricing and availability are confirmed by Rechtien International Trucks and Carolina International Trucks — see our <a href=\"/terms\">Terms and Conditions</a>.",
                     "align": "left",
                     "width": "full"
                   }

@@ -131,7 +131,7 @@
                   "id": "intro-t2",
                   "type": "text",
                   "props": {
-                    "text": "Here is how Rechtien Truck Group and International help you make the transition:",
+                    "text": "Here is how Rechtien International Trucks and Carolina International Trucks and International help you make the transition:",
                     "align": "left",
                     "width": "full"
                   }
@@ -554,7 +554,7 @@
                     "text": "Request an eMV quote.",
                     "headingLevel": 2,
                     "align": "left",
-                    "eyebrow": "Talk to Rechtien Truck Group"
+                    "eyebrow": "Talk to Rechtien International Trucks and Carolina International Trucks"
                   }
                 },
                 {
@@ -570,7 +570,7 @@
                   "id": "quote-t2",
                   "type": "text",
                   "props": {
-                    "text": "Prefer to talk? Call (800) 666-3040 or contact your nearest Rechtien Truck Group location below.",
+                    "text": "Prefer to talk? Call (800) 666-3040 or contact your nearest Rechtien International Trucks and Carolina International Trucks location below.",
                     "align": "left",
                     "width": "full"
                   }
@@ -604,12 +604,12 @@
         "sectionId": "parts-contacts",
         "values": {
           "eyebrow": "Where to learn more",
-          "heading": "Rechtien Truck Group locations.",
+          "heading": "Rechtien International Trucks and Carolina International Trucks locations.",
           "groups": [
             {
-              "company": "Rechtien Truck Group",
+              "company": "Rechtien International Trucks and Carolina International Trucks",
               "region": "South Florida · 5 locations",
-              "intro": "Visit any Rechtien Truck Group location to talk through the International eMV Series.",
+              "intro": "Visit any Rechtien International Trucks and Carolina International Trucks location to talk through the International eMV Series.",
               "lineLabel": "",
               "line": "",
               "lineUrl": "",

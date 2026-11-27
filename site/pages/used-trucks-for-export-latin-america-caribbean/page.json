@@ -50,7 +50,7 @@
                   "id": "hero-lede",
                   "type": "text",
                   "props": {
-                    "text": "Lease-maintained, pre-owned International Trucks are available for export from Miami, Florida, and South Carolina. Find a truck that’s ready for its next chapter, with guidance from Rechtien Truck Group, supporting your business success with comprehensive parts sourcing and over 40 years of export expertise.",
+                    "text": "Lease-maintained, pre-owned International Trucks are available for export from Miami, Florida, and South Carolina. Find a truck that’s ready for its next chapter, with guidance from Rechtien International Trucks and Carolina International Trucks, supporting your business success with comprehensive parts sourcing and over 40 years of export expertise.",
                     "align": "center",
                     "width": "full"
                   }
@@ -201,7 +201,7 @@
                   "id": "why-h",
                   "type": "heading",
                   "props": {
-                    "text": "Why source with Rechtien Truck Group?",
+                    "text": "Why source with Rechtien International Trucks and Carolina International Trucks?",
                     "headingLevel": 2,
                     "align": "center"
                   }
@@ -246,7 +246,7 @@
                       },
                       {
                         "label": "Export expertise",
-                        "desc": "With over 40 years of export experience, Rechtien Truck Group can help you navigate the purchasing and importation process for your destination."
+                        "desc": "With over 40 years of export experience, Rechtien International Trucks and Carolina International Trucks can help you navigate the purchasing and importation process for your destination."
                       }
                     ]
                   }
@@ -408,7 +408,7 @@
                   "id": "parts-t1",
                   "type": "text",
                   "props": {
-                    "text": "A dependable truck deserves dependable parts support. Through Rechtien Truck Group’s ecommerce platform, you can explore parts and sourcing support to help keep your operation moving.",
+                    "text": "A dependable truck deserves dependable parts support. Through Rechtien International Trucks and Carolina International Trucks’s ecommerce platform, you can explore parts and sourcing support to help keep your operation moving.",
                     "align": "left",
                     "width": "full"
                   }
@@ -463,7 +463,7 @@
                   "id": "parts-note",
                   "type": "text",
                   "props": {
-                    "text": "Parts availability, compatibility, pricing, and shipping options vary. Confirm details with the Rechtien Truck Group team.",
+                    "text": "Parts availability, compatibility, pricing, and shipping options vary. Confirm details with the Rechtien International Trucks and Carolina International Trucks team.",
                     "align": "left",
                     "width": "full"
                   }
