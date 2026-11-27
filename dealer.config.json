@@ -8,7 +8,7 @@
   "url": "https://dealer-rechtien-international-mw0v1nf4.vercel.app",
   "storefrontOrigin": "https://rechtien-international.ai4dealerships.com",
   "storefrontPrefix": "store",
-  "logo": "/logos/rechtien-truck-group-logo-black.png",
+  "logo": "https://vendure.ai4dealerships.com/assets/source/00/rechtien-international-lockup.png",
   "favicon": "/favicon.svg",
   "analytics": {
     "loaderUrl": null,
