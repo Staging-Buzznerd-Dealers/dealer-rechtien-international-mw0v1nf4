@@ -1137,7 +1137,7 @@
           "rooftop": [
             {
               "id": "18",
-              "name": "Miami",
+              "name": "Maimi",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -1382,7 +1382,7 @@
       },
       "hours-list": {
         "snapshot": {
-          "location": "Miami",
+          "location": "Maimi",
           "department": "Sales",
           "hours": [
             {
@@ -1672,7 +1672,7 @@
           "rooftop": [
             {
               "id": "18",
-              "name": "Miami",
+              "name": "Maimi",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -1921,7 +1921,7 @@
           "rooftop": [
             {
               "id": "18",
-              "name": "Miami",
+              "name": "Maimi",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -5456,7 +5456,7 @@
           "locations": [
             {
               "id": "18",
-              "name": "Miami",
+              "name": "Maimi",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -9045,7 +9045,7 @@
           "locations": [
             {
               "id": "18",
-              "name": "Miami",
+              "name": "Maimi",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -12570,7 +12570,7 @@
           "locations": [
             {
               "id": "18",
-              "name": "Miami",
+              "name": "Maimi",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -16095,7 +16095,7 @@
           "locations": [
             {
               "id": "18",
-              "name": "Miami",
+              "name": "Maimi",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -19381,7 +19381,7 @@
           "locations": [
             {
               "id": "18",
-              "name": "Miami",
+              "name": "Maimi",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -22731,7 +22731,7 @@
           "locations": [
             {
               "id": "18",
-              "name": "Miami",
+              "name": "Maimi",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -26559,7 +26559,7 @@
           "locations": [
             {
               "id": "18",
-              "name": "Miami",
+              "name": "Maimi",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -30020,7 +30020,7 @@
           "locations": [
             {
               "id": "18",
-              "name": "Miami",
+              "name": "Maimi",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -33784,7 +33784,7 @@
           "locations": [
             {
               "id": "18",
-              "name": "Miami",
+              "name": "Maimi",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -37006,7 +37006,7 @@
           "locations": [
             {
               "id": "18",
-              "name": "Miami",
+              "name": "Maimi",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -39373,7 +39373,7 @@
   "locations": [
     {
       "slug": "maimi",
-      "name": "Miami",
+      "name": "Maimi",
       "city": "Miami",
       "region": ",FL",
       "streetAddress": "7227 NW 74th Ave",
