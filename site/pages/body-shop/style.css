@@ -74,3 +74,15 @@ main .bz-section--bg-ink .bz-text p{color:rgba(255,255,255,.9)}
 /* ---- Closing call to action ---------------------------------------------------------------------------- */
 [data-bz-node="cta-btn"] .bz-btns{justify-content:center;margin-top:var(--space-4)}
 @media (max-width:640px){.bz-section[data-bz-node="hero"]{padding:88px 0 48px}}
+
+/* ---- Contact our Body Shops: a heading and two locations, ordinary blocks edited on the canvas ---- */
+.bz-section[data-bz-node="visit"]{padding-block:clamp(40px,5vw,64px)}
+[data-bz-node="visit"] .bz-block{padding-block:0}
+main [data-bz-node="visit-title"] .bz-text p{margin:0 0 var(--space-5);text-align:center;font:400 clamp(1.125rem,1.7vw,1.375rem)/1.3 var(--font-body);color:var(--ink)}
+[data-bz-node="visit-row"]{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:var(--space-6) clamp(32px,6vw,96px)}
+[data-bz-node="visit-row"]>.bz-col{grid-column:auto;flex:1 1 20rem;max-width:30rem;text-align:center;padding:0}
+[data-bz-node^="visit-"][data-bz-node$="-h"] h2{margin:0 0 var(--space-3)}
+[data-bz-node^="visit-"][data-bz-node$="-addr"]{margin-bottom:var(--space-4)}
+main [data-bz-node^="visit-"][data-bz-node$="-addr"] .bz-text p{margin:0;font-size:.9375rem;line-height:1.7;color:#3d3c39}
+[data-bz-node^="visit-"][data-bz-node$="-cta"] .bz-btns{justify-content:center;flex-wrap:wrap;gap:12px;margin:0}
+
