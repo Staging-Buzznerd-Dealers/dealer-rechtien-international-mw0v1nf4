@@ -34,7 +34,7 @@
 //
 // Zero dependencies, like the rest of the renderer.
 
-import { esc, href, image, rewriteAssetUrls } from './html.mjs';
+import { esc, href, image, newTabSuffix, openAttrs, rewriteAssetUrls } from './html.mjs';
 
 /** Prop editor types. Each maps to a JSON Schema type and an inspector control. */
 export const PROP_TYPES = [
@@ -109,6 +109,9 @@ export function stripUnsafeCss(css) {
 const INLINE_ALLOWED = /^<\/?(?:strong|b|em|i|br|a|small|span)(?:\s[^<>]*)?>$/i;
 
 function inlineHtml(text, ctx) {
+  // Same rule as the page blocks: a new-tab anchor's closing tag carries the hidden
+  // text, plus the icon only when the author ticked it. Nothing is stored in the text.
+  let pending = '';
   return String(text == null ? '' : text).replace(/<[^>]*>|[&<>]/g, (m) => {
     if (m === '&') return '&amp;';
     if (m === '<') return '&lt;';
@@ -116,7 +119,15 @@ function inlineHtml(text, ctx) {
     if (!INLINE_ALLOWED.test(m)) return '';
     if (/^<a\s/i.test(m)) {
       const url = (m.match(/href\s*=\s*["']([^"']*)["']/i) || [])[1] || '#';
-      return `<a href="${esc(href(url, ctx))}">`;
+      const newTab = /target\s*=\s*["']?_blank/i.test(m);
+      pending = newTabSuffix({ newTab, showIcon: /data-bz-icon\s*=\s*["']?(?:1|true)/i.test(m) }, ctx);
+      const o = openAttrs(newTab, url);
+      return `<a href="${esc(href(url, ctx))}"${o.rel ? ` rel="${o.rel}"` : ''}${o.target ? ` target="${o.target}"` : ''}>`;
+    }
+    if (/^<\/a/i.test(m)) {
+      const out = `${pending}</a>`;
+      pending = '';
+      return out;
     }
     return m.toLowerCase();
   });

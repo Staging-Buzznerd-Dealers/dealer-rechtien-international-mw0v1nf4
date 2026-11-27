@@ -14,7 +14,7 @@
 //  2. Blocks take `headingLevel` rather than hardcoding `<h1>`, so a page keeps
 //     exactly one h1 no matter which blocks it is assembled from.
 
-import { attrs, cls, esc, heading, href, image, isExternal, join, tagAttrs, video } from './html.mjs';
+import { attrs, cls, esc, heading, href, image, isExternal, join, newTabSuffix, openAttrs, tagAttrs, video } from './html.mjs';
 import { compileWidgets } from './custom-widgets.mjs';
 import { renderForm } from './forms.mjs';
 import { renderMenu } from './menus.mjs';
@@ -69,6 +69,12 @@ const VIDEO_SCHEMA = {
   required: ['src'],
 };
 
+/** The two per-link settings, on every block that draws a link. */
+const NEW_TAB_PROPS = {
+  newTab: { type: 'boolean', description: 'Open the link in a new tab.' },
+  showIcon: { type: 'boolean', description: 'Show the new-tab icon after the link. Only used when it opens in a new tab.' },
+};
+
 /**
  * A call to action. `ctaId` points at an entry in the dealer's Buttons library
  * (`site/buttons.json`), which is how a CTA stays consistent across pages and
@@ -81,6 +87,7 @@ const CTA_SCHEMA = {
     'A call to action. Prefer `ctaId` referencing the dealer\'s Buttons library over an inline label/url — a library CTA keeps its label, destination and tagging consistent everywhere it appears.',
   properties: {
     ctaId: str('Id of an entry in site/buttons.json.'),
+    ...NEW_TAB_PROPS,
     label: str('Inline label. Overrides the library label when both are set.'),
     url: str('Inline destination. Overrides the library destination.'),
     style: str('Visual variant.', { enum: ['primary', 'secondary', 'link'] }),
@@ -126,6 +133,12 @@ function formatPostDate(value) {
   return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
 }
 
+/** `target` / `rel` as an attribute string, for links drawn with template literals. */
+function openStr(link, url) {
+  const o = openAttrs(link && link.newTab, url);
+  return `${o.rel ? ` rel="${o.rel}"` : ''}${o.target ? ` target="${o.target}"` : ''}`;
+}
+
 /**
  * Resolve a CTA reference against the dealer's Buttons library. An unknown
  * `ctaId` degrades to whatever inline values exist rather than rendering a
@@ -147,7 +160,8 @@ export function resolveCta(ref, ctx) {
     url,
     style: ref.style || (base && base.style) || 'primary',
     intent: ref.intent || (base && base.intent) || 'cta',
-    newTab: base ? !!base.newTab : false,
+    newTab: ref.newTab !== undefined ? !!ref.newTab : base ? !!base.newTab : false,
+    showIcon: typeof ref.showIcon === 'boolean' ? ref.showIcon : base && typeof base.showIcon === 'boolean' ? base.showIcon : undefined,
     formId: (base && base.formId) || null,
   };
 }
@@ -155,19 +169,19 @@ export function resolveCta(ref, ctx) {
 function renderCta(ref, ctx, opts = {}) {
   const cta = resolveCta(ref, ctx);
   if (!cta) return '';
-  const external = isExternal(cta.url);
+  const open = openAttrs(cta.newTab, cta.url);
   // A CTA whose destination is a form opens that form rather than navigating,
   // so the Buttons library stays the single place a lead-capture entry point is
   // defined. The hydration client binds the dialog; without JS it still links.
   return `<a${attrs({
     class: cls('bz-btn', `bz-btn--${cta.style}`, opts.onDark && 'bz-btn--on-dark'),
     href: href(cta.url || (cta.formId ? `#form-${cta.formId}` : '#'), ctx),
-    target: cta.newTab ? '_blank' : null,
-    rel: external || cta.newTab ? 'noopener' : null,
+    target: open.target || null,
+    rel: open.rel || null,
     'data-bz-cta': cta.id,
     'data-bz-form': cta.formId,
     ...tagAttrs('cta', cta.intent),
-  })}>${esc(cta.label)}</a>`;
+  })}>${esc(cta.label)}${newTabSuffix(cta, ctx)}</a>`;
 }
 
 function renderCtas(refs, ctx, opts = {}) {
@@ -284,6 +298,7 @@ const BLOCKS = {
         caption: str('Optional caption shown under the image.'),
         width: str('How wide the image sits.', { enum: ['prose', 'full'], default: 'full' }),
         url: str('Optional: where clicking the image goes.'),
+        ...NEW_TAB_PROPS,
       },
       required: ['image'],
     },
@@ -294,7 +309,7 @@ const BLOCKS = {
       const picture = image(props.image);
       const fig = `<figure class="${cls('bz-figure', props.width === 'prose' && 'bz-prose')}">${
         props.url
-          ? `<a href="${esc(href(props.url, ctx))}"${attrs(tagAttrs('link', 'image'))}>${picture}</a>`
+          ? `<a href="${esc(href(props.url, ctx))}"${openStr(props, props.url)}${attrs(tagAttrs('link', 'image'))}>${picture}${newTabSuffix(props, ctx)}</a>`
           : picture
       }${props.caption ? `<figcaption>${esc(props.caption)}</figcaption>` : ''}</figure>`;
       return container(fig);
@@ -652,6 +667,7 @@ const BLOCKS = {
               label: str('Shortcut title.'),
               desc: str('One sentence.'),
               url: str('Destination.'),
+              ...NEW_TAB_PROPS,
             },
             required: ['label'],
           },
@@ -667,9 +683,9 @@ const BLOCKS = {
           levelOf(props) + 1
         }>${it.desc ? `<p class="bz-quick__d">${esc(it.desc)}</p>` : ''}`;
         return it.url
-          ? `<a class="bz-quick" href="${esc(href(it.url, ctx))}"${attrs(
+          ? `<a class="bz-quick" href="${esc(href(it.url, ctx))}"${openStr(it, it.url)}${attrs(
               tagAttrs('link', 'quick-link'),
-            )}>${inner}</a>`
+            )}>${inner}${newTabSuffix(it, ctx)}</a>`
           : `<div class="bz-quick">${inner}</div>`;
       });
       return container(
@@ -699,6 +715,7 @@ const BLOCKS = {
               label: str('Card title.'),
               meta: str('Second line, e.g. "New · $24,900".'),
               url: str('Destination.'),
+              ...NEW_TAB_PROPS,
               image: IMAGE_SCHEMA,
             },
             required: ['label'],
@@ -716,9 +733,9 @@ const BLOCKS = {
           it.label,
         )}</span>${it.meta ? `<span class="bz-card__m">${esc(it.meta)}</span>` : ''}</div>`;
         return it.url
-          ? `<a class="bz-card" href="${esc(href(it.url, ctx))}"${attrs(
+          ? `<a class="bz-card" href="${esc(href(it.url, ctx))}"${openStr(it, it.url)}${attrs(
               tagAttrs('link', 'view-listing'),
-            )}>${inner}</a>`
+            )}>${inner}${newTabSuffix(it, ctx)}</a>`
           : `<div class="bz-card">${inner}</div>`;
       });
       return container(
@@ -858,7 +875,7 @@ const BLOCKS = {
           type: 'array',
           items: {
             type: 'object',
-            properties: { name: str('Brand name.'), image: IMAGE_SCHEMA, url: str('Brand page.') },
+            properties: { name: str('Brand name.'), image: IMAGE_SCHEMA, url: str('Brand page.'), ...NEW_TAB_PROPS },
             required: ['name'],
           },
         },
@@ -874,9 +891,9 @@ const BLOCKS = {
             ? image({ ...l.image, alt: l.image.alt || l.name }, { width: 160, height: 48 })
             : `<span class="bz-logo__t">${esc(l.name)}</span>`;
         return l.url
-          ? `<a class="bz-logo" href="${esc(href(l.url, ctx))}"${attrs(
+          ? `<a class="bz-logo" href="${esc(href(l.url, ctx))}"${openStr(l, l.url)}${attrs(
               tagAttrs('link', 'brand'),
-            )}>${inner}</a>`
+            )}>${inner}${newTabSuffix(l, ctx)}</a>`
           : `<div class="bz-logo">${inner}</div>`;
       });
       return container(
@@ -979,6 +996,7 @@ const BLOCKS = {
               city: str('City and region.'),
               services: str('What the site offers, e.g. "Sales · Service · Parts".'),
               url: str('Location page.'),
+              ...NEW_TAB_PROPS,
             },
             required: ['city'],
           },
@@ -1014,9 +1032,9 @@ const BLOCKS = {
               (l) =>
                 `<li class="bz-loc">${
                   l.url
-                    ? `<a href="${esc(href(l.url, ctx))}"${attrs(
+                    ? `<a href="${esc(href(l.url, ctx))}"${openStr(l, l.url)}${attrs(
                         tagAttrs('link', 'location'),
-                      )}><span class="bz-loc__c">${esc(l.city)}</span></a>`
+                      )}><span class="bz-loc__c">${esc(l.city)}</span>${newTabSuffix(l, ctx)}</a>`
                     : `<span class="bz-loc__c">${esc(l.city)}</span>`
                 }${l.services ? `<span class="bz-loc__s">${esc(l.services)}</span>` : ''}</li>`,
             ),
@@ -1045,7 +1063,7 @@ const BLOCKS = {
                 type: 'array',
                 items: {
                   type: 'object',
-                  properties: { label: str('Link text.'), url: str('Destination.') },
+                  properties: { label: str('Link text.'), url: str('Destination.'), ...NEW_TAB_PROPS },
                   required: ['label', 'url'],
                 },
               },
@@ -1061,9 +1079,9 @@ const BLOCKS = {
           `<div class="bz-fcol"><p class="bz-fcol__h">${esc(c.heading)}</p><ul class="bz-bare">${join(
             (c.links || []).map(
               (l) =>
-                `<li><a href="${esc(href(l.url, ctx))}"${attrs(
+                `<li><a href="${esc(href(l.url, ctx))}"${openStr(l, l.url)}${attrs(
                   tagAttrs('link', 'footer-nav'),
-                )}>${esc(l.label)}</a></li>`,
+                )}>${esc(l.label)}${newTabSuffix(l, ctx, true)}</a></li>`,
             ),
             '',
           )}</ul></div>`,
@@ -1095,6 +1113,9 @@ function stars(rating) {
 const INLINE_ALLOWED = /^<\/?(?:strong|b|em|i|br|a|small)(?:\s[^<>]*)?>$/i;
 
 function inlineHtml(text, ctx) {
+  // A new-tab anchor owes its closing tag the hidden text (and the icon, when the
+  // author ticked it). Anchors do not nest, so one pending suffix is enough.
+  let pending = '';
   return String(text).replace(/<[^>]*>|[&<>]/g, (m) => {
     if (m === '&') return '&amp;';
     if (m === '<') return '&lt;';
@@ -1102,9 +1123,15 @@ function inlineHtml(text, ctx) {
     if (!INLINE_ALLOWED.test(m)) return '';
     if (/^<a\s/i.test(m)) {
       const url = (m.match(/href\s*=\s*["']([^"']*)["']/i) || [])[1] || '#';
-      return `<a href="${esc(href(url, ctx))}"${
-        isExternal(url) ? ' rel="noopener"' : ''
-      }${attrs(tagAttrs('link', 'body-link'))}>`;
+      const newTab = /target\s*=\s*["']?_blank/i.test(m);
+      // Text links show no icon unless the author asked for one.
+      pending = newTabSuffix({ newTab, showIcon: /data-bz-icon\s*=\s*["']?(?:1|true)/i.test(m) }, ctx);
+      return `<a href="${esc(href(url, ctx))}"${openStr({ newTab }, url)}${attrs(tagAttrs('link', 'body-link'))}>`;
+    }
+    if (/^<\/a/i.test(m)) {
+      const out = `${pending}</a>`;
+      pending = '';
+      return out;
     }
     return m.toLowerCase();
   });

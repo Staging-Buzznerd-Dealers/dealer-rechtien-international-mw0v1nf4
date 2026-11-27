@@ -17,6 +17,7 @@
 // in Vendure, because plugins register them. This module owns only the markup.
 
 import { attrs, cls, esc, href, image, join, tagAttrs } from './html.mjs';
+import { staffPath } from './location-pages.mjs';
 import { renderForm } from './forms.mjs';
 
 /** Widgets that install behaviour and render nothing a buyer sees. */
@@ -27,7 +28,10 @@ function shell(widget, config, inner, opts = {}) {
     'data-bz-widget': widget,
     'data-bz-config': JSON.stringify(config || {}),
     'data-bz-hydrate': opts.hydrate === false ? null : true,
+    'data-bz-behavior': opts.behaviour || null,
+    hidden: opts.hidden ? true : null,
     'data-bz-region': 'widget',
+    ...(opts.attrs || {}),
   })}>${inner}</div>`;
 }
 
@@ -406,26 +410,69 @@ function locationsPinmap(config, snapshot, ctx) {
   );
 }
 
-function staff(config, snapshot) {
+/**
+ * The department a phone number belongs to, as the dealer's own department code
+ * (`departmentCode` on the row, from the department record). The analytics
+ * runtime reads it off the link for a click-to-call; a provider with its own
+ * department words maps the code through the dealer's mapping, never here.
+ * Absent when the row does not say: a guess would put a made-up department on
+ * the wire.
+ */
+function departmentAttr(row) {
+  const code = row && typeof row.departmentCode === 'string' ? row.departmentCode.trim() : '';
+  return code ? { 'data-bz-department': code } : {};
+}
+
+function staff(config, snapshot, ctx) {
   const people = (snapshot && snapshot.staff) || [];
-  const cards = people.map(
-    (p) =>
-      `<li class="bz-person"${SLIDE}>${image(p.photo, { width: 128, height: 128, placeholder: '' })}<span class="bz-person__n">${esc(
+
+  // One person's own page: a profile, not a card in a grid.
+  if (config.staffSlug) {
+    const p = people.find((x) => x.slug === config.staffSlug) || people[0];
+    if (!p) return shell('staff', config, '<p class="bz-widget__empty">Team member loads here.</p>');
+    return shell(
+      'staff',
+      config,
+      `<div class="bz-profile">${image(p.photo, { width: 320, height: 320, placeholder: '', class: 'bz-profile__img' })}<div class="bz-profile__body"><h1 class="bz-profile__n">${esc(
         p.name,
-      )}</span>${p.title ? `<span class="bz-person__t">${esc(p.title)}</span>` : ''}${
+      )}</h1>${p.title ? `<p class="bz-profile__t">${esc(p.title)}</p>` : ''}${
+        p.locations ? `<p class="bz-profile__l">${esc(p.locations)}</p>` : ''
+      }${p.bio ? `<p class="bz-profile__b">${esc(p.bio)}</p>` : ''}${
+        p.servingSinceYear ? `<p class="bz-profile__s">Serving since ${esc(String(p.servingSinceYear))}</p>` : ''
+      }${
         p.phone
-          ? `<a class="bz-person__p" href="tel:${esc(p.phone.replace(/[^+\d]/g, ''))}"${attrs(
-              tagAttrs('phone', 'call-staff'),
-            )}>${esc(p.phone)}</a>`
+          ? `<a class="bz-person__p" href="tel:${esc(p.phone.replace(/[^+\d]/g, ''))}"${attrs({
+              ...tagAttrs('phone', 'call-staff'),
+              ...departmentAttr(p),
+            })}>${esc(p.phone)}</a>`
           : ''
-      }</li>`,
-  );
+      }</div></div>`,
+    );
+  }
+
+  const pattern = ctx && ctx.staffPagePath;
+  const cards = people.map((p) => {
+    const link = pattern && p.slug ? staffPath(pattern, p.slug) : null;
+    const name = link
+      ? `<a class="bz-person__n" href="${esc(link)}">${esc(p.name)}</a>`
+      : `<span class="bz-person__n">${esc(p.name)}</span>`;
+    return `<li class="bz-person"${SLIDE}>${image(p.photo, { width: 128, height: 128, placeholder: '' })}${name}${
+      p.title ? `<span class="bz-person__t">${esc(p.title)}</span>` : ''
+    }${p.locations ? `<span class="bz-person__l">${esc(p.locations)}</span>` : ''}${
+      p.phone
+        ? `<a class="bz-person__p" href="tel:${esc(p.phone.replace(/[^+\d]/g, ''))}"${attrs({
+            ...tagAttrs('phone', 'call-staff'),
+            ...departmentAttr(p),
+          })}>${esc(p.phone)}</a>`
+        : ''
+    }</li>`;
+  });
   return shell(
     'staff',
     config,
     `${config.heading ? `<p class="bz-widget__h">${esc(config.heading)}</p>` : ''}${
       cards.length
-        ? `<ul class="bz-people bz-bare"${TRACK}>${join(cards, '')}</ul>`
+        ? `<ul class="bz-people bz-bare"${TRACK}${attrs({ 'data-bz-staff-path': pattern || null })}>${join(cards, '')}</ul>`
         : '<p class="bz-widget__empty">Team members load here.</p>'
     }`,
   );
@@ -474,7 +521,9 @@ function phoneNumbers(config, snapshot) {
             (n) =>
               `<li class="bz-phone"><span class="bz-phone__l">${esc(n.label)}</span><a href="tel:${esc(
                 String(n.number).replace(/[^+\d]/g, ''),
-              )}"${attrs(tagAttrs('phone', 'call-department'))}>${esc(n.number)}</a></li>`,
+              )}"${attrs({ ...tagAttrs('phone', 'call-department'), ...departmentAttr(n) })}>${esc(
+                n.number,
+              )}</a></li>`,
           ),
           '',
         )}</ul>`
@@ -530,7 +579,7 @@ function listingCard(prefix, listing) {
       ? `<dl class="bz-card__facts">${join(
           facts.map(
             (f) =>
-              `<div><dt>${esc(f.label)}</dt><dd>${esc(f.value)}</dd></div>`,
+              `<div${String(f.value).length > 24 ? ' class="bz-fact--wide"' : ''}><dt>${esc(f.label)}</dt><dd>${esc(f.value)}</dd></div>`,
           ),
           '',
         )}</dl>`
@@ -541,19 +590,27 @@ function listingCard(prefix, listing) {
 function inventoryCarousel(config, snapshot, ctx) {
   const prefix = (ctx && ctx.storefrontPrefix) || 'store';
   const items = (snapshot && snapshot.listings) || [];
+  // `layout` is a block setting: "grid" (the default) or "carousel". A carousel is the
+  // platform's own behaviour — the same arrows, dots and keyboard support as any other rail —
+  // so the list stays in flow, and a plain row of cards, until widgets.js binds it.
+  const rail = config.layout === 'carousel';
+  const controls = rail
+    ? `<div class="bz-rail-controls"><button type="button" class="bz-rail-btn" data-bz-part="prev" aria-label="Previous units">&#8592;</button><div data-bz-part="dots"></div><button type="button" class="bz-rail-btn" data-bz-part="next" aria-label="Next units">&#8594;</button></div>`
+    : '';
   return shell(
     'inventory-carousel',
     config,
     `${config.heading ? `<p class="bz-widget__h">${esc(config.heading)}</p>` : ''}${
       items.length
-        ? `<ul class="bz-grid bz-grid--4 bz-bare"${TRACK}>${join(
+        ? `<ul class="${rail ? 'bz-rail bz-bare' : 'bz-grid bz-grid--4 bz-bare'}"${TRACK}>${join(
             items.map((l) => listingCard(prefix, l)),
             '',
-          )}</ul>`
+          )}</ul>${controls}`
         : '<p class="bz-widget__empty">Live inventory loads here.</p>'
     }<p><a class="bz-btn bz-btn--secondary" href="/${esc(prefix)}"${attrs(
       tagAttrs('cta', 'browse-inventory'),
     )}>Browse all inventory</a></p>`,
+    rail ? { class: 'bz-widget--rail', attrs: { 'data-bz-behavior': 'carousel' } } : {},
   );
 }
 
@@ -591,6 +648,112 @@ function inventorySearch(config, snapshot, ctx) {
   );
 }
 
+
+/* ---------------------------------------------------------------- post feed */
+
+function feedDay(value) {
+  if (!value) return '';
+  const d = new Date(`${value}T00:00:00Z`);
+  return Number.isNaN(d.getTime())
+    ? ''
+    : d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+}
+
+/**
+ * One snippet: featured image (or a neutral placeholder), up to two tags that link to
+ * their tag page, the title, the excerpt and the date. The card is an <article> with
+ * its own links rather than one big anchor, because a tag is itself a link.
+ */
+function feedCard(post, ctx) {
+  const url = esc(href(post.href || `/blog/${post.slug}`, ctx));
+  const tags = (post.tags || []).slice(0, 2);
+  return `<li${SLIDE}><article class="bz-card bz-feedpost">${
+    post.image && post.image.src
+      ? `<a class="bz-feedpost__img" href="${url}" tabindex="-1" aria-hidden="true">${image(post.image, { placeholder: 'Photo' })}</a>`
+      : `<a class="bz-feedpost__img bz-feedpost__img--none" href="${url}" tabindex="-1" aria-hidden="true"></a>`
+  }<div class="bz-card__body">${
+    tags.length
+      ? `<span class="bz-feedpost__tags">${join(
+          tags.map((t) => `<a class="bz-chip" href="${esc(href(t.href, ctx))}">${esc(t.label)}</a>`),
+          '',
+        )}</span>`
+      : ''
+  }<a class="bz-card__t" href="${url}"${attrs(tagAttrs('link', 'read-post'))}>${esc(post.title)}</a>${
+    post.excerpt ? `<span class="bz-post__d">${esc(post.excerpt)}</span>` : ''
+  }${post.date ? `<span class="bz-card__m">${esc(feedDay(post.date))}</span>` : ''}</div></article></li>`;
+}
+
+/** Previous/next for the Carousel layout; the carousel behaviour finds them by part. */
+const FEED_CONTROLS =
+  '<div class="bz-feedcar__ctl"><button type="button" class="bz-btn bz-btn--secondary" data-bz-part="prev" aria-label="Previous posts">‹</button><button type="button" class="bz-btn bz-btn--secondary" data-bz-part="next" aria-label="Next posts">›</button></div>';
+
+function feedPager(snapshot, ctx) {
+  if (!snapshot || !(snapshot.pageCount > 1)) return '';
+  const link = (page, label) =>
+    `<a class="bz-btn bz-btn--secondary" rel="${page < snapshot.page ? 'prev' : 'next'}" href="?page=${page}">${label}</a>`;
+  return `<nav class="bz-feedpager" aria-label="Posts pages">${
+    snapshot.page > 1 ? link(snapshot.page - 1, 'Previous') : ''
+  }<span class="bz-feedpager__n">Page ${snapshot.page} of ${snapshot.pageCount}</span>${
+    snapshot.page < snapshot.pageCount ? link(snapshot.page + 1, 'Next') : ''
+  }</nav>`;
+}
+
+/**
+ * The Post Feed. Saves its settings and never a list of posts: the snapshot is only
+ * what the page shows before the browser asks again, and the browser always asks, so a
+ * post published tomorrow appears without anyone editing the page.
+ *
+ * With nothing to show, the section is hidden — except where the config carries an
+ * `emptyMessage` (the Blog tag template), and in the editor, which explains itself.
+ */
+function postFeed(config, snapshot, ctx) {
+  const layout = ['cards', 'list', 'carousel'].includes(config.layout) ? config.layout : 'cards';
+  const posts = (snapshot && snapshot.posts) || [];
+  const heading = snapshot && snapshot.heading != null ? snapshot.heading : config.heading || '';
+  const empty = !posts.length;
+  const carousel = layout === 'carousel';
+  let inner = '';
+  if (empty && ctx && ctx.editing) {
+    inner = `${heading ? `<p class="bz-widget__h">${esc(heading)}</p>` : ''}<p class="bz-widget__empty">No live posts match these settings yet. This section is hidden on the live site until one does.</p>`;
+  } else if (empty && config.emptyMessage && snapshot) {
+    const named = String(config.emptyMessage).replace(/\{tag\}/gi, ((snapshot && snapshot.tagLabels) || []).join(', '));
+    inner = `<p class="bz-widget__empty">${esc(named)} <a href="${esc(href('/blog', ctx))}">All posts</a></p>`;
+  } else if (!empty) {
+    const viewAll = snapshot && snapshot.viewAllHref;
+    inner = `${heading ? `<p class="bz-widget__h">${esc(heading)}</p>` : ''}<ul class="bz-grid bz-grid--${
+      layout === 'list' ? 1 : 3
+    } bz-bare"${carousel ? TRACK : ''}>${join(
+      posts.map((p) => feedCard(p, ctx)),
+      '',
+    )}</ul>${carousel ? FEED_CONTROLS : ''}${feedPager(snapshot, ctx)}${
+      viewAll
+        ? `<p><a class="bz-btn bz-btn--secondary" href="${esc(href(viewAll, ctx))}"${attrs(
+            tagAttrs('cta', 'view-all-posts'),
+          )}>${esc(config.viewAllLabel || 'View all posts')}</a></p>`
+        : ''
+    }`;
+  }
+  // Without a snapshot there is nothing true to say yet (a tag page does not know its tag
+  // until the browser reads the address), so the shell stays hidden until it hydrates.
+  const hidden = empty && !(ctx && ctx.editing) && !(config.emptyMessage && snapshot);
+  return shell('post-feed', config, inner, { class: `bz-postfeed--${layout}`, hidden, behaviour: carousel ? 'carousel' : null });
+}
+
+/**
+ * The Post page's article. Static markup is only a shell: which post this is comes from
+ * the address, so it can only be known in the browser. `client/widgets.js` fills it from
+ * the live post — and says "not found" for a draft, an archived or a future-scheduled one.
+ */
+function postArticle(config, snapshot, ctx) {
+  return shell(
+    'post-article',
+    config,
+    ctx && ctx.editing
+      ? '<p class="bz-widget__empty">The post’s title, date, author, featured image, tags and content appear here.</p>'
+      : '<p class="bz-widget__empty" data-bz-loading>Loading…</p>',
+  );
+}
+
 const PLACEHOLDERS = {
   'locations-map': locationsMap,
   'locations-pinmap': locationsPinmap,
@@ -601,6 +764,8 @@ const PLACEHOLDERS = {
   hours,
   'inventory-carousel': inventoryCarousel,
   'inventory-search': inventorySearch,
+  'post-feed': postFeed,
+  'post-article': postArticle,
 };
 
 /**

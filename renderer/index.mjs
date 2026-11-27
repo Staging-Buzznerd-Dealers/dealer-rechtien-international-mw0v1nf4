@@ -77,6 +77,12 @@
 // 4.14.1 — locations-map draws the OpenStreetMap embed from the snapshot, so
 // the Design canvas and a no-JS first paint show the map. Until now the box
 // was empty until widgets.js ran, which the editor never does.
+// 4.26.0 — team pages. A manifest entry declaring `forEach: "staff"` with `:slug`
+// in its path builds one page per public team member, the way `forEach:
+// "locations"` does per rooftop; the `staff` widget gains `staffSlug` (one
+// person as a profile) and its rows gain `slug`, `bio`, `locations`. Add, edit
+// or remove someone in Admin and the next publish does the same to their page.
+//
 // 4.14.0 — a rooftop page emits its own LocalBusiness. A page naming a
 // `locationSlug` in site/pages.json builds its structured data from that page's
 // own widget snapshots — address, geo, phone, per-department
@@ -168,11 +174,40 @@
 // library the site loads, or onto an image, and the build publishes it in
 // `/partials/manifest.json` as `icons`. Unmapped slots keep the storefront's own
 // characters; a site with no file publishes no `icons` and nothing changes.
-export const RENDERER_VERSION = '4.25.0';
+// 4.26.0 — cookie consent, and every phone number and email address in rendered
+// text becomes a call or mail link. A site whose `platform/consent.json` is off, or
+// absent, holds back no tags and shows no banner. Contact links skip attributes,
+// scripts, styles and text already inside a link.
+// 4.26.0 — also Featured inventory: every listing card is one size (photo, title and facts line up
+// whatever a unit carries), a unit with no photo shows the "Photo" placeholder, and the block's
+// `layout` setting offers a Carousel with arrows and dots. Dealer sites pick this up on sync.
+// 4.26.1 — cookie consent holds back third-party embeds the register never named.
+// YouTube and Vimeo iframes (the `video` block's output included) wait for `marketing`
+// under opt-in, and the gate now also catches an iframe whose `src` is set from script or
+// `innerHTML`. A dealer's own register rule for the same host still wins. Sites without
+// consent are unchanged.
+// 4.26.2 — a form field interaction carries the field's own name as `fieldName`, not
+// `formFieldName`. That key is a provider's word for the field, which only the dealer
+// chooses (the field's annotations); a field they have not named is not reported to it.
+// 4.26.3 — `ICON_SLOTS` lists the slots the storefront already draws beyond the first
+// fourteen: location, user, account, settings, quote, orders, fleet, signout, caret-down,
+// print, sparkle, chevron-down, photo-prev, photo-next. Before this a renderer refused them in
+// `site/icons.json`, so the build dropped them from the manifest and /store kept its defaults.
+// 4.26.4 — posts: the `post-feed` widget (post snippets, paged, hidden when there are none) and
+// `post-article` (one post, for the Post template's live post page), with the blog pages and
+// post template that use them.
+export const RENDERER_VERSION = '4.26.4';
 
 export {
   LOCATION_SOURCE,
+  STAFF_SOURCE,
   SLUG_TOKEN,
+  applyStaffSlug,
+  isStaffPage,
+  staffIndex,
+  staffPageNodes,
+  staffPath,
+  staffSnapshots,
   applyLocationSlug,
   applyLocationSnapshots,
   fillTokens,
@@ -185,6 +220,7 @@ export {
 } from './location-pages.mjs';
 export { isValidPageType, pageTypeOptions } from './analytics-vocab.mjs';
 export { analyticsConfig, analyticsHead, missingIdentity } from './analytics.mjs';
+export { consentConfig, consentHead, consentGateScript, consentCategoryOf, gateMarkup, CONSENT_MODES } from './consent.mjs';
 
 export {
   BEHAVIOURS,
@@ -355,5 +391,6 @@ export {
 /* ----------------------------------------------------- shell, checks, edits */
 
 export { renderShell, businessJsonLd, analyticsTag } from './shell.mjs';
+export { linkifyContacts, contactRuns, telHref } from './contact-links.mjs';
 export { validateDocument, validateNode, validateTemplate, getDefinition } from './validate.mjs';
 export { applyOps } from './ops.mjs';

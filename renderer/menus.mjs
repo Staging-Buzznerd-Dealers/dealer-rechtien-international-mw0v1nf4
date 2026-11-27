@@ -19,8 +19,9 @@
 // Items resolve their destination at render time from what they point at, so a
 // page that changes slug does not leave a dead link behind.
 
-import { esc, href, isExternal, join } from './html.mjs';
+import { esc, href, isExternal, join, newTabSuffix, openAttrs } from './html.mjs';
 import { locationPath } from './location-pages.mjs';
+import { isIconClass, isIconImageUrl } from './icons.mjs';
 
 /** Where a menu item can point. */
 export const MENU_ITEM_TYPES = ['page', 'post', 'inventory', 'location', 'url', 'label'];
@@ -90,6 +91,14 @@ function normaliseMenu(raw) {
   };
 }
 
+/** An item's own icon, replacing the site's `external` mapping: the same two shapes `site/icons.json` takes. */
+function normaliseIcon(raw) {
+  if (!isObject(raw)) return null;
+  if (isIconClass(raw.class)) return { class: raw.class };
+  if (isIconImageUrl(raw.src)) return { src: raw.src, tint: raw.tint !== false };
+  return null;
+}
+
 function normaliseItems(raw, depth) {
   const out = [];
   for (const item of Array.isArray(raw) ? raw : []) {
@@ -102,6 +111,9 @@ function normaliseItems(raw, depth) {
       ref: item.ref != null ? String(item.ref) : null,
       url: item.url != null ? String(item.url) : null,
       newTab: !!item.newTab,
+      // Unset on links saved before the setting existed; the renderer then keeps their old look.
+      showIcon: typeof item.showIcon === 'boolean' ? item.showIcon : undefined,
+      icon: normaliseIcon(item.icon),
       // Depth is clamped on read rather than on write: a menu that arrived from
       // an import should still render, just flatter than it was drawn.
       children: depth + 1 < MAX_MENU_DEPTH ? normaliseItems(item.children, depth + 1) : [],
@@ -177,12 +189,13 @@ function renderItem(item, menuId, ctx, depth) {
   const url = destinationOf(item, ctx);
   const external = isExternal(url);
 
+  const open = openAttrs(item.newTab, url);
   const label = url
     ? `<a href="${esc(href(url, ctx))}" data-bz-el="link" data-bz-intent="nav-${esc(menuId)}"${
-        external ? ' rel="noopener"' : ''
-      }${item.newTab ? ' target="_blank"' : ''}${
+        open.rel ? ` rel="${open.rel}"` : ''
+      }${open.target ? ` target="${open.target}"` : ''}${
         ctx.currentPath && ctx.currentPath === url ? ' aria-current="page"' : ''
-      }>${esc(item.label)}</a>`
+      }>${esc(item.label)}${newTabSuffix(item, ctx, depth > 0)}</a>`
     : `<span class="bz-navlabel">${esc(item.label)}</span>`;
 
   if (!children.length) return `<li class="bz-navitem">${label}</li>`;

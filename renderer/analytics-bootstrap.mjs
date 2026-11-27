@@ -15,8 +15,9 @@
 // **Do not edit the vendored copy.** Edit this file and re-run the sync.
 //
 // Nothing here evaluates a string. Every value goes through `JSON.stringify`,
-// and the only thing interpolated into code is a global's name, which is
-// checked against a bare-identifier pattern first.
+// and the only things interpolated into code are a global's name, which is
+// checked against a bare-identifier pattern first, and the fixed visit-id
+// snippet below, which takes no input at all.
 
 /** `</` escaped so a value containing `</script>` cannot end the block early. */
 export function json(value) {
@@ -64,12 +65,22 @@ export function bootstrapCode(provider, facts) {
   for (const call of boot.calls ?? []) parts.push(emit(call));
 
   if (boot.pageCall?.length) {
+    // One object for a queue: what the vendor calls the event, with the page
+    // facts merged into it. That is the whole shape a data layer takes.
+    const page = isQueue
+      ? { ...(boot.pageCall[0] ?? {}), ...pagePayload(boot, provider, facts) }
+      : pagePayload(boot, provider, facts);
+    const send = (p) =>
+      isQueue ? `${g}.push(${p});` : `${g}(${boot.pageCall.map((a) => json(a)).join(',')},${p});`;
+    const sessionKey = runtimeKey(boot, 'sessionId');
     parts.push(
-      isQueue
-        ? // One object: what the vendor calls the event, with the page facts
-          // merged into it. That is the whole shape a data layer takes.
-          `${g}.push(${json({ ...(boot.pageCall[0] ?? {}), ...pagePayload(boot, provider, facts) })});`
-        : `${g}(${boot.pageCall.map((a) => json(a)).join(',')},${json(pagePayload(boot, provider, facts))});`,
+      sessionKey
+        ? // Only the browser knows the visit, so the page object is finished
+          // there: a fixed snippet, its one variable the vendor's key, which
+          // goes through `json()` like every other value. A cookie the browser
+          // refuses to read costs the visit id, never the page call.
+          `(function(){var p=${json(page)};try{${SESSION_ID}p[${json(sessionKey)}]=s}catch(e){}${send('p')}})();`
+        : send(json(page)),
     );
   }
 
@@ -79,22 +90,74 @@ export function bootstrapCode(provider, facts) {
 }
 
 /**
- * The page facts and this dealer's settings, named the way this vendor names
- * them.
+ * The platform's visit id, as fixed source: the `bz_sid` cookie, created when
+ * this is the visit's first page, with the brand-site runtime's semantics
+ * (`renderer/client/analytics.js` `sessionId()`) — thirty idle minutes, sliding,
+ * host-only, `path=/`, `SameSite=Lax`. Both surfaces therefore hand a vendor the
+ * same id for one visitor's one visit. Leaves it in `s`; runs inside an IIFE, so
+ * it defines no global.
+ */
+const SESSION_ID =
+  'var m=document.cookie.match(/(?:^|; )bz_sid=([^;]*)/),s=m?decodeURIComponent(m[1]):"";' +
+  'if(!s)s=window.crypto&&crypto.randomUUID?crypto.randomUUID():' +
+  '"id-"+Date.now().toString(36)+"-"+Math.random().toString(36).slice(2,10);' +
+  'document.cookie="bz_sid="+encodeURIComponent(s)+"; path=/; expires="+' +
+  'new Date(Date.now()+18e5).toUTCString()+"; SameSite=Lax";';
+
+/**
+ * The vendor's name for a value only the browser knows, or null.
  *
- * A platform fact with no entry in `pageKeys` is not sent at all, which is how
- * a provider opts out of one without this file knowing the fact exists.
+ * `sessionId` is the only one there is. Any other key is ignored rather than
+ * guessed at: the snippet that would produce it does not exist.
+ */
+function runtimeKey(boot, name) {
+  const key = boot.runtimeKeys?.[name];
+  return typeof key === 'string' && key ? key : null;
+}
+
+const isPlainObject = (value) =>
+  value !== null && typeof value === 'object' && !Array.isArray(value);
+
+/** Absent: null, undefined, an empty string, or an object with nothing in it. */
+const isAbsent = (value) =>
+  value === null ||
+  value === undefined ||
+  value === '' ||
+  (isPlainObject(value) && !Object.keys(value).length);
+
+/**
+ * The page object, named the way this vendor names it.
+ *
+ * Built from, in order:
+ *
+ * - `pageData`, when the provider sends one: static properties already in the
+ *   vendor's names. Its `settings` are then the adapter's alone and are not
+ *   copied here.
+ * - the page facts, through `pageKeys`, `pageValues` and `pageAllowed`. A
+ *   platform fact with no entry in `pageKeys` is not sent at all, which is how a
+ *   provider opts out of one without this file knowing the fact exists.
+ * - the provider's `settings`, when it sent no `pageData` — a provider whose
+ *   settings are all page data.
+ * - `facts.providers[provider.id]`: this provider's own payload for the page —
+ *   a detail page's listing, built server-side from the dealer's mapping. Read
+ *   as opaque and merged last; nothing here knows its keys.
  */
 function pagePayload(boot, provider, facts) {
   const payload = {};
+  const hasPageData = isPlainObject(boot.pageData);
+
+  if (hasPageData) {
+    for (const [key, value] of Object.entries(boot.pageData)) {
+      if (!isAbsent(value)) payload[key] = value;
+    }
+  }
 
   for (const [platformKey, vendorKey] of Object.entries(boot.pageKeys ?? {})) {
     const value = facts?.[platformKey];
-    if (value === null || value === undefined || value === '') continue;
     // An empty object is an absent fact, not a fact whose value is `{}`. A
     // vendor receiving `vehicleDetails: {}` reads it as a page that has a
     // vehicle with nothing known about it.
-    if (typeof value === 'object' && !Object.keys(value).length) continue;
+    if (isAbsent(value)) continue;
     // A value map, when the provider has one for this fact. Its keys are the
     // platform's own words for a page kind, which is what the storefront emits;
     // an authored value — a kind a human picked from this provider's own
@@ -102,16 +165,32 @@ function pagePayload(boot, provider, facts) {
     // because a non-string fact has no business indexing a map of words.
     const mapped =
       typeof value === 'string' ? boot.pageValues?.[platformKey]?.[value] : undefined;
+    if (mapped === undefined) {
+      // A value the map does not translate, checked against what the vendor
+      // accepts when the provider says: an unmapped platform kind is dropped
+      // here rather than by the vendor, silently, after reporting success.
+      const allowed = boot.pageAllowed?.[platformKey];
+      if (Array.isArray(allowed) && !allowed.includes(value)) continue;
+    }
     payload[vendorKey] = mapped ?? value;
   }
 
-  for (const [key, value] of Object.entries(provider?.settings ?? {})) {
-    if (value === null || value === undefined || value === '') continue;
-    if (Array.isArray(value)) {
-      if (value.length) payload[key] = value.join('|');
-      continue;
+  if (!hasPageData) {
+    for (const [key, value] of Object.entries(provider?.settings ?? {})) {
+      if (value === null || value === undefined || value === '') continue;
+      if (Array.isArray(value)) {
+        if (value.length) payload[key] = value.join('|');
+        continue;
+      }
+      payload[key] = value;
     }
-    payload[key] = value;
+  }
+
+  const own = isPlainObject(facts?.providers) ? facts.providers[provider?.id] : undefined;
+  if (isPlainObject(own)) {
+    for (const [key, value] of Object.entries(own)) {
+      if (!isAbsent(value)) payload[key] = value;
+    }
   }
 
   return payload;

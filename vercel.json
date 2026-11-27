@@ -19,6 +19,24 @@
     {
       "source": "/store/:path*",
       "destination": "https://rechtien-international.ai4dealerships.com/store/:path*"
+    },
+    {
+      "source": "/blog",
+      "has": [
+        {
+          "type": "query",
+          "key": "tags"
+        }
+      ],
+      "destination": "/blog/tag/index.html"
+    },
+    {
+      "source": "/blog/tag/:tag",
+      "destination": "/blog/tag/index.html"
+    },
+    {
+      "source": "/blog/:slug",
+      "destination": "/blog/_post/index.html"
     }
   ],
   "headers": [

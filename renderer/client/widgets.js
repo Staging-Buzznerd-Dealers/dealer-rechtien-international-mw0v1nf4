@@ -100,10 +100,21 @@
 
   function renderListings(node, listings) {
     var list = node.querySelector('ul');
-    if (!list || !listings || !listings.length) return;
+    if (!list || !listings) return;
+    if (!listings.length) {
+      // The server only answers with nothing when the dealer has no unit a buyer may see
+      // (it already falls back from Featured to the latest). Leaving the committed snapshot
+      // up would keep showing units that have since sold, so the section steps aside.
+      node.style.display = 'none';
+      return;
+    }
+    node.style.display = '';
     list.textContent = '';
     listings.forEach(function (l) {
       var li = document.createElement('li');
+      // The carousel behaviour finds its slides by this part. The first paint carries it;
+      // a redraw that drops it leaves a rail with nothing to move.
+      li.setAttribute('data-bz-part', 'slide');
       var a = el('a', 'bz-card');
       a.href = listingHref(l);
       a.setAttribute('data-bz-el', 'link');
@@ -113,9 +124,14 @@
         img.src = l.image.src;
         img.alt = l.image.alt || l.title || '';
         img.loading = 'lazy';
+        img.decoding = 'async';
         img.width = l.image.width || 600;
         img.height = l.image.height || 400;
         a.appendChild(img);
+      } else {
+        var blank = el('div', 'bz-photo bz-photo--empty', 'Photo');
+        blank.setAttribute('aria-hidden', 'true');
+        a.appendChild(blank);
       }
       var body = el('div', 'bz-card__body');
       body.appendChild(el('span', 'bz-card__t', l.title));
@@ -124,6 +140,8 @@
         var dl = el('dl', 'bz-card__facts');
         l.facts.slice(0, 3).forEach(function (f) {
           var wrap = document.createElement('div');
+          // A long value (an engine description) takes the whole row, as in the first paint.
+          if (String(f.value).length > 24) wrap.className = 'bz-fact--wide';
           wrap.appendChild(el('dt', '', f.label));
           wrap.appendChild(el('dd', '', f.value));
           dl.appendChild(wrap);
@@ -185,7 +203,10 @@
    * the site until a human reopened the page in the editor and saved it.
    */
   function renderStaff(node, staff) {
+    // A single profile is not a list; its snapshot is the whole page.
+    if (node.querySelector('.bz-profile')) return;
     var list = node.querySelector('ul.bz-people');
+    var pattern = list && list.getAttribute('data-bz-staff-path');
     if (!list) {
       list = el('ul', 'bz-people bz-bare');
       var empty = node.querySelector('.bz-widget__empty');
@@ -211,8 +232,15 @@
         blank.setAttribute('aria-hidden', 'true');
         li.appendChild(blank);
       }
-      li.appendChild(el('span', 'bz-person__n', p.name));
+      if (pattern && p.slug) {
+        var link = el('a', 'bz-person__n', p.name);
+        link.href = pattern.split(':slug').join(p.slug);
+        li.appendChild(link);
+      } else {
+        li.appendChild(el('span', 'bz-person__n', p.name));
+      }
       if (p.title) li.appendChild(el('span', 'bz-person__t', p.title));
+      if (p.locations) li.appendChild(el('span', 'bz-person__l', p.locations));
       if (p.phone) {
         var tel = el('a', 'bz-person__p', p.phone);
         tel.href = 'tel:' + String(p.phone).replace(/[^+\d]/g, '');
@@ -278,15 +306,265 @@
     });
   }
 
+
+  /* ------------------------------------------------------------ post feed */
+
+  function feedDay(value) {
+    if (!value) return '';
+    var d = new Date(value + 'T00:00:00Z');
+    return isNaN(d.getTime())
+      ? ''
+      : d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+  }
+
+  /* What a feed needs from the address and the page: tags from /blog/tag/x or ?tags=a,b,
+   * the page number from ?page=, and the post being viewed from <html data-bz-post-*>. */
+  function feedContext() {
+    var ctx = {};
+    var m = location.pathname.match(/\/blog\/tag\/([^/]+)\/?$/);
+    var tags = [];
+    if (m) tags.push(decodeURIComponent(m[1]));
+    var q = new URLSearchParams(location.search);
+    if (q.get('tags')) tags = tags.concat(q.get('tags').split(',').filter(Boolean));
+    ctx.urlTags = tags;
+    var page = parseInt(q.get('page') || '1', 10);
+    ctx.page = page > 0 ? page : 1;
+    var root = document.documentElement;
+    if (root.getAttribute('data-bz-post-slug')) ctx.postSlug = root.getAttribute('data-bz-post-slug');
+    if (root.getAttribute('data-bz-post-tags')) ctx.postTags = root.getAttribute('data-bz-post-tags').split('|').filter(Boolean);
+    return ctx;
+  }
+
+  function renderFeed(node, data, config) {
+    var posts = (data && data.posts) || [];
+    var layout = config.layout === 'list' || config.layout === 'carousel' ? config.layout : 'cards';
+    node.textContent = '';
+    if (!posts.length) {
+      if (config.emptyMessage) {
+        var p = el('p', 'bz-widget__empty', String(config.emptyMessage).replace(/\{tag\}/gi, (data.tagLabels || []).join(', ')) + ' ');
+        var all = el('a', '', 'All posts');
+        all.href = '/blog';
+        p.appendChild(all);
+        node.appendChild(p);
+        node.hidden = false;
+      } else {
+        node.hidden = true;
+      }
+      return;
+    }
+    node.hidden = false;
+    if (data.heading) node.appendChild(el('p', 'bz-widget__h', data.heading));
+    var ul = el('ul', 'bz-grid bz-grid--' + (layout === 'list' ? 1 : 3) + ' bz-bare');
+    if (layout === 'carousel') ul.setAttribute('data-bz-part', 'track');
+    posts.forEach(function (post) {
+      var li = document.createElement('li');
+      if (layout === 'carousel') li.setAttribute('data-bz-part', 'slide');
+      var art = el('article', 'bz-card bz-feedpost');
+      var imgLink = el('a', 'bz-feedpost__img' + (post.image && post.image.src ? '' : ' bz-feedpost__img--none'));
+      imgLink.href = post.href;
+      imgLink.tabIndex = -1;
+      imgLink.setAttribute('aria-hidden', 'true');
+      if (post.image && post.image.src) {
+        var img = document.createElement('img');
+        img.src = post.image.src;
+        img.alt = post.image.alt || post.title || '';
+        img.loading = 'lazy';
+        imgLink.appendChild(img);
+      }
+      art.appendChild(imgLink);
+      var body = el('div', 'bz-card__body');
+      if (post.tags && post.tags.length) {
+        var tags = el('span', 'bz-feedpost__tags');
+        post.tags.slice(0, 2).forEach(function (t) {
+          var a = el('a', 'bz-chip', t.label);
+          a.href = t.href;
+          tags.appendChild(a);
+        });
+        body.appendChild(tags);
+      }
+      var title = el('a', 'bz-card__t', post.title);
+      title.href = post.href;
+      title.setAttribute('data-bz-el', 'link');
+      title.setAttribute('data-bz-intent', 'read-post');
+      body.appendChild(title);
+      if (post.excerpt) body.appendChild(el('span', 'bz-post__d', post.excerpt));
+      if (post.date) body.appendChild(el('span', 'bz-card__m', feedDay(post.date)));
+      art.appendChild(body);
+      li.appendChild(art);
+      ul.appendChild(li);
+    });
+    node.appendChild(ul);
+    if (layout === 'carousel') {
+      var ctl = el('div', 'bz-feedcar__ctl');
+      ['prev', 'next'].forEach(function (which) {
+        var b = el('button', 'bz-btn bz-btn--secondary', which === 'prev' ? '‹' : '›');
+        b.type = 'button';
+        b.setAttribute('data-bz-part', which);
+        b.setAttribute('aria-label', (which === 'prev' ? 'Previous' : 'Next') + ' posts');
+        ctl.appendChild(b);
+      });
+      node.appendChild(ctl);
+      node.setAttribute('data-bz-behavior', 'carousel');
+    }
+    if (data.pageCount > 1) {
+      var nav = el('nav', 'bz-feedpager');
+      nav.setAttribute('aria-label', 'Posts pages');
+      var go = function (page, label, rel) {
+        var a = el('a', 'bz-btn bz-btn--secondary', label);
+        a.href = '?page=' + page;
+        a.rel = rel;
+        return a;
+      };
+      if (data.page > 1) nav.appendChild(go(data.page - 1, 'Previous', 'prev'));
+      nav.appendChild(el('span', 'bz-feedpager__n', 'Page ' + data.page + ' of ' + data.pageCount));
+      if (data.page < data.pageCount) nav.appendChild(go(data.page + 1, 'Next', 'next'));
+      node.appendChild(nav);
+    }
+    if (data.viewAllHref) {
+      var wrap = document.createElement('p');
+      var link = el('a', 'bz-btn bz-btn--secondary', config.viewAllLabel || 'View all posts');
+      link.href = data.viewAllHref;
+      wrap.appendChild(link);
+      node.appendChild(wrap);
+    }
+    // The rail was rebuilt, so a behaviour bound to the previous one is stale: bind afresh.
+    if (layout === 'carousel' && window.BuzzNerd && window.BuzzNerd.initBehaviours) {
+      node.removeAttribute('data-bz-bound');
+      node.removeAttribute('data-bz-carousel');
+      window.BuzzNerd.initBehaviours(node.parentNode || document);
+    }
+  }
+
+  /* ----------------------------------------------------------- post article */
+
+  var RENDERER_URL = '/partials/renderer/index.mjs';
+
+  function setMeta(attr, key, value) {
+    if (!value) return;
+    var node = document.head.querySelector('meta[' + attr + '="' + key + '"]');
+    if (!node) {
+      node = document.createElement('meta');
+      node.setAttribute(attr, key);
+      document.head.appendChild(node);
+    }
+    node.setAttribute('content', value);
+  }
+
+  function postSlugFromPath() {
+    var m = location.pathname.match(/\/blog\/([^/]+)\/?$/);
+    return m ? decodeURIComponent(m[1]) : '';
+  }
+
+  function notFound(node) {
+    node.textContent = '';
+    var wrap = el('div', 'bz-container bz-prose');
+    wrap.appendChild(el('h1', '', 'Post not found'));
+    wrap.appendChild(el('p', '', 'This post is not available.'));
+    var back = el('a', 'bz-btn bz-btn--secondary', 'All posts');
+    back.href = '/blog';
+    wrap.appendChild(back);
+    node.appendChild(wrap);
+    // The shell is one file for every post address, so the page itself must say it is not
+    // a page: keep it out of search, and let the feed below stay hidden.
+    setMeta('name', 'robots', 'noindex');
+    document.documentElement.setAttribute('data-bz-post-missing', '1');
+    document.dispatchEvent(new CustomEvent('bz:post-ready', { detail: { found: false } }));
+  }
+
+  function renderArticle(node, data, config) {
+    if (!data || !data.found) {
+      notFound(node);
+      return;
+    }
+    node.textContent = '';
+    var head = el('div', 'bz-container bz-prose bz-postmeta');
+    if (data.tags && data.tags.length) {
+      var chips = el('div', 'bz-feedpost__tags');
+      data.tags.forEach(function (t) {
+        var a = el('a', 'bz-chip', t.label);
+        a.href = t.href;
+        chips.appendChild(a);
+      });
+      head.appendChild(chips);
+    }
+    head.appendChild(el('h1', '', data.title));
+    var byline = [];
+    if (data.date) byline.push(feedDay(data.date));
+    if (data.author && config.showAuthor !== false) byline.push('By ' + data.author);
+    if (byline.length) head.appendChild(el('p', 'bz-eyebrow', byline.join(' · ')));
+    node.appendChild(head);
+    if (data.image && data.image.src && config.showImage !== false) {
+      var fig = el('div', 'bz-container');
+      var img = document.createElement('img');
+      img.src = data.image.src;
+      img.alt = data.image.alt || data.title;
+      img.loading = 'eager';
+      fig.appendChild(img);
+      node.appendChild(fig);
+    }
+    var body = el('div', 'bz-postbody');
+    node.appendChild(body);
+
+    document.title = data.title;
+    var desc = (data.seo && data.seo.description) || data.excerpt;
+    setMeta('name', 'description', desc);
+    setMeta('property', 'og:title', (data.seo && data.seo.title) || data.title);
+    setMeta('property', 'og:description', desc);
+    if (data.image && data.image.src) setMeta('property', 'og:image', data.image.src);
+    if (data.seo && data.seo.noindex) setMeta('name', 'robots', 'noindex');
+
+    var root = document.documentElement;
+    root.setAttribute('data-bz-post-slug', data.slug);
+    root.setAttribute('data-bz-post-tags', (data.tags || []).map(function (t) { return t.label; }).join('|'));
+    if (data.css) {
+      var style = document.createElement('style');
+      style.textContent = data.css;
+      document.head.appendChild(style);
+    }
+    document.dispatchEvent(new CustomEvent('bz:post-ready', { detail: { found: true } }));
+
+    // The post's content is a block tree, drawn by the same renderer the build and the
+    // editor use. It is loaded only here, so no other page pays for it.
+    var hasNodes = data.nodes && data.nodes.length;
+    if (hasNodes || (data.blocks && data.blocks.length)) {
+      import(RENDERER_URL)
+        .then(function (r) {
+          // A post moved in from an older site may still be authored as v1 blocks; the
+          // renderer's own reader migrates them, as the build does.
+          var doc = r.parseDocument(hasNodes ? { nodes: data.nodes } : { blocks: data.blocks });
+          body.innerHTML = r.renderDocument({ nodes: doc.nodes }, { storefrontPrefix: PREFIX, blogBasePath: '/blog', posts: [] });
+          hydrateWithin(body);
+        })
+        .catch(function () {
+          body.appendChild(el('p', 'bz-widget__empty', 'The post content could not be loaded.'));
+        });
+    }
+  }
+
   function hydrate(node) {
     var widget = node.getAttribute('data-bz-widget');
     var config = readConfig(node);
+    // A "from this post" feed cannot ask until the post it hangs off has loaded.
+    if (widget === 'post-feed' && config.tagSource === 'post' && !document.documentElement.getAttribute('data-bz-post-slug')) {
+      if (document.documentElement.getAttribute('data-bz-post-missing')) return;
+      document.addEventListener('bz:post-ready', function once(e) {
+        document.removeEventListener('bz:post-ready', once);
+        if (e.detail && e.detail.found) hydrate(node);
+      });
+      return;
+    }
+    var request =
+      widget === 'post-feed'
+        ? Object.assign({}, config, feedContext())
+        : widget === 'post-article'
+          ? Object.assign({}, config, { postSlug: postSlugFromPath() })
+          : config;
 
     fetch(API + '/widgets/' + encodeURIComponent(widget), {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
       credentials: 'same-origin',
-      body: JSON.stringify({ config: config }),
+      body: JSON.stringify({ config: request }),
     })
       .then(json)
       .then(function (data) {
@@ -299,6 +577,8 @@
         if (widget === 'hours') renderHours(node, data);
         if (widget === 'staff') renderStaff(node, data.staff);
         if (widget === 'inventory-carousel') renderListings(node, data.listings);
+        if (widget === 'post-feed') renderFeed(node, data, config);
+        if (widget === 'post-article') renderArticle(node, data, config);
         node.setAttribute('data-bz-hydrated', '1');
       })
       .catch(function () {
@@ -1249,6 +1529,13 @@
   }
 
   /* ---------------------------------------------------------------- init */
+
+  /** Bring markup injected after load (a post's content) to life the way `init` does the page. */
+  function hydrateWithin(scope) {
+    Array.prototype.forEach.call(scope.querySelectorAll('[data-bz-hydrate]'), hydrate);
+    Array.prototype.forEach.call(scope.querySelectorAll('form.bz-form'), bindForm);
+    initBehaviours(scope);
+  }
 
   function init() {
     Array.prototype.forEach.call(document.querySelectorAll('[data-bz-hydrate]'), hydrate);

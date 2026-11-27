@@ -29,6 +29,7 @@ import {
   fontFaceCss,
   fontPreloads,
   fontsHref,
+  linkifyContacts,
   parseDocument,
   parseIcons,
   iconsManifest,
@@ -42,11 +43,16 @@ import {
   documentStyles,
   rooftopFrom,
   isLocationPage,
+  isStaffPage,
+  staffIndex,
+  staffPageNodes,
+  staffPath,
   locationIndex,
   locationOut,
   locationPageNodes,
   locationPath,
   fillTokens,
+  consentGateScript,
 } from '../renderer/index.mjs';
 
 const ROOT = process.cwd();
@@ -67,8 +73,14 @@ const config = readJson(join(ROOT, 'dealer.config.json'));
  * the builder's writable path set, so a dealer cannot edit or delete what a
  * provider needs from the Design screen. */
 config.platformAnalytics = readJsonIf(join(ROOT, 'platform', 'analytics.json'), null);
+
+/* This dealer's cookie consent settings, baked the same way. Absent means
+ * consent is off and the build is exactly what it was before consent existed;
+ * see renderer/consent.mjs. */
+config.platformConsent = readJsonIf(join(ROOT, 'platform', 'consent.json'), null);
 const tokens = readJson(join(SITE, 'tokens.json'));
 const menus = readJson(join(SITE, 'menus.json'));
+const icons = parseIcons(readJsonIf(join(SITE, 'icons.json'), null)).value;
 const pages = readJson(join(SITE, 'pages.json'));
 const assignments = readJsonIf(join(SITE, 'assignments.json'), { defaults: {}, rules: [] });
 
@@ -215,6 +227,7 @@ const renderCtx = {
   forms,
   buttons,
   menus,
+  icons,
   sections,
   // Menu items point at a page by slug rather than by address, so the manifest
   // has to be in context for a link to resolve.
@@ -225,6 +238,8 @@ const renderCtx = {
   // yet, and making it depend on that turned every unbaked item into a plain
   // heading.
   locationPagePath: locationPagePattern(pages),
+  // Where a team member's own page lives, so a card can link to it.
+  staffPagePath: pages.find(isStaffPage)?.path ?? null,
   warn,
 };
 
@@ -331,8 +346,10 @@ function chromeFor(target) {
     }
     chromeCache.set(key, {
       id: key,
-      header: renderDocument({ nodes: before }, renderCtx),
-      footer: renderDocument({ nodes: after }, renderCtx),
+      // Linked here as well as in `renderShell`: the storefront fetches these as
+      // /partials/header.html and footer.html, which never pass through the shell.
+      header: linkifyContacts(renderDocument({ nodes: before }, renderCtx)),
+      footer: linkifyContacts(renderDocument({ nodes: after }, renderCtx)),
       // A template's own script is part of its chrome — a sticky header is the
       // usual case — so the storefront has to load it alongside the markup it
       // enhances, or inventory pages get the header without the behaviour.
@@ -378,6 +395,7 @@ const resetCss = readText(join(SITE, 'reset.css'));
 const blocksCss = readText(join(RENDERER, 'blocks.css')) + (customCss ? `\n${customCss}\n` : '');
 const widgetsJs = readText(join(RENDERER, 'client', 'widgets.js'));
 const analyticsJs = readText(join(RENDERER, 'client', 'analytics.js'));
+const consentJs = readText(join(RENDERER, 'client', 'consent.js'));
 
 /* ------------------------------------------------------------------ writing */
 
@@ -429,6 +447,7 @@ write('styles/chrome.css', chromeCss);
 write('scripts/chrome.js', chromeJs);
 write('scripts/widgets.js', widgetsJs);
 write('scripts/analytics.js', analyticsJs);
+write('scripts/consent.js', consentJs);
 
 /* -------------------------------------------------------------------- pages */
 // status: published -> emitted, indexed, in sitemap + llms.txt
@@ -504,6 +523,32 @@ function locationPagePattern(entries) {
 function expandLocationPages(entries) {
   const out = [];
   for (const p of entries) {
+    if (isStaffPage(p)) {
+      // Same rule as a location: the people come from the page's own baked
+      // index, never fetched, and an unpublished repo emits nothing.
+      const document = readJsonIf(join(SITE, 'pages', p.dir, 'page.json'), {});
+      const people = staffIndex(document);
+      if (!people.length) {
+        warn(
+          `page "${p.slug}" builds one page per team member, and no team members have been published yet — no team pages emitted`,
+        );
+        continue;
+      }
+      for (const person of people) {
+        const path = staffPath(p.path, person.slug);
+        out.push({
+          ...p,
+          document,
+          person,
+          slug: `${p.slug}--${person.slug}`,
+          path,
+          out: locationOut(path),
+          title: fillTokens(p.title, person),
+          description: fillTokens(p.description, person),
+        });
+      }
+      continue;
+    }
     if (!isLocationPage(p)) {
       out.push(p);
       continue;
@@ -542,7 +587,9 @@ for (const p of expandLocationPages(pages)) {
   const dir = join(SITE, 'pages', p.dir);
   const nodes = p.location
     ? locationPageNodes(pageNodes(dir, p.slug), p.document, p.location.slug)
-    : pageNodes(dir, p.slug);
+    : p.person
+      ? staffPageNodes(pageNodes(dir, p.slug), p.document, p.person.slug)
+      : pageNodes(dir, p.slug);
   const css = readText(join(dir, 'style.css'));
 
   let pageJs = null;
@@ -605,6 +652,12 @@ write('partials/widgets.js', widgetsJs);
 // route and only needs the runtime here — one script, two mount points, so the
 // brand site and /store/* share a session rather than measuring two visits.
 write('partials/analytics.js', analyticsJs);
+// The consent banner, for the storefront to mount under /store/* the same way.
+write('partials/consent.js', consentJs);
+// This dealer's consent gate (config + code), for the storefront to run first
+// in the <head> of every /store/* page. Empty with consent off, so a storefront
+// that finds it empty mounts nothing.
+write('partials/consent-gate.js', consentGateScript(config));
 write('partials/reset.css', resetCss);
 write('partials/tokens.css', tokensCss);
 write('partials/fonts.txt', FONTS_HREF);
@@ -665,7 +718,10 @@ if (blogSettings.enabled && posts.length) {
       );
     }
 
+    // A dealer's own page at the blog address (the default `/blog` page, with its Post Feed)
+    // is the index; the generated list below is only the fallback for a site without one.
     const indexChrome = chromeFor({ kind: 'blog' });
+    if (!emitted.some((p) => p.path === base))
     write(
       `${base.slice(1)}/index.html`,
       renderShell({
@@ -697,6 +753,45 @@ ${posts
         noindex: false,
       }),
     );
+  }
+}
+
+/* ---------------------------------------------------------------- post page
+
+   Posts live in the platform database and are read when the page is viewed, so a post
+   published tomorrow, or taken down today, needs no rebuild. One static shell serves every
+   address under the blog — `vercel.json` rewrites `/blog/:slug` to it — and
+   `client/widgets.js` fills it from the live post, drawing the post's blocks with the same
+   renderer the build uses (copied to /partials/renderer, loaded only on these pages).
+   Posts authored as files (`site/blog/posts`) are real files and win over the rewrite. */
+if (blogSettings.enabled) {
+  const shellNodes = parseDocument(readJsonIf(join(BLOG, 'post-page.json'), { version: 2, nodes: [] })).nodes;
+  if (shellNodes.length) {
+    const shell = renderWithTemplate({ kind: 'post', slug: '_post' }, shellNodes);
+    write(
+      `${blogBase.slice(1)}/_post/index.html`,
+      renderShell({
+        custom: CUSTOM,
+        config,
+        fontsHref: FONTS_HREF,
+        fontPreload: FONT_PRELOAD,
+        chrome: { header: shell.header, footer: shell.footer },
+        storefrontPrefix: PREFIX,
+        title: blogSettings.title || 'News',
+        description: config.seo.defaultDescription,
+        canonical: `${config.url}${blogBase}`,
+        bodyHtml: `<article>${shell.body}</article>`,
+        pageCss: [shell.styles, shell.nodeStyles].filter(Boolean).join('\n'),
+        pageJs: shell.scripts ?? [],
+        ogImage: null,
+        noindex: false,
+        analyticsPage: { pageType: POST_PAGE_TYPE },
+      }),
+    );
+    cpSync(RENDERER, join(DIST, 'partials', 'renderer'), {
+      recursive: true,
+      filter: (src) => !/\.spec\.mjs$/.test(src) && !/[\\/]client$/.test(src),
+    });
   }
 }
 

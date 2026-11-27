@@ -202,6 +202,62 @@ export function isExternal(url) {
   return /^https?:/i.test(String(url || ''));
 }
 
+/* ------------------------------------------------------------ new-tab links
+ *
+ * One definition of "opens in a new tab" for every link the renderer draws —
+ * menus, buttons, footer, cards, and the links inside text. Two independent
+ * settings sit on each link: `newTab` (target + rel) and `showIcon` (the globe).
+ * The icon is only ever drawn at render time; nothing is written into content.
+ */
+
+/** Visually hidden, still read by screen readers. Styled by `.bz-sr-only`. */
+export const NEW_TAB_SR = '<span class="bz-sr-only"> (opens in a new tab)</span>';
+
+const EXTERNAL_SVG =
+  '<svg class="bz-menu-icon__svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"/></svg>';
+
+/**
+ * The new-tab globe. Site-wide it is whatever `site/icons.json` maps onto the
+ * `external` slot; `own` (a per-item icon) overrides that. Same markup the
+ * storefront's `<SfIcon>` draws, so one mapping and one set of CSS rules serve both.
+ */
+export function externalIcon(ctx, own) {
+  const choice = own || (ctx && ctx.icons && ctx.icons.slots && ctx.icons.slots.external);
+  const base = 'bz-menu-icon sf-icon sf-icon--external';
+  if (choice && 'class' in choice) {
+    return `<i class="${base} sf-icon--class ${esc(choice.class)}" aria-hidden="true"></i>`;
+  }
+  if (choice && !choice.tint) {
+    return `<img class="${base} sf-icon--img" src="${esc(choice.src)}" alt="" aria-hidden="true" />`;
+  }
+  if (choice) {
+    return `<span class="${base} sf-icon--mask" style="--sf-icon-src:url(&quot;${esc(choice.src)}&quot;)" aria-hidden="true"></span>`;
+  }
+  return `<span class="${base}" aria-hidden="true">${EXTERNAL_SVG}</span>`;
+}
+
+/**
+ * `target` / `rel` for a link. A new-tab link always gets `noopener noreferrer`;
+ * an off-site link that stays in the tab keeps its existing `noopener`.
+ */
+export function openAttrs(newTab, url) {
+  if (newTab) return { target: '_blank', rel: 'noopener noreferrer' };
+  if (isExternal(url)) return { rel: 'noopener' };
+  return {};
+}
+
+/**
+ * What follows a new-tab link's label: the hidden screen-reader text always,
+ * then the icon when asked for. Nothing for a link that stays in the tab.
+ * `showIcon === undefined` falls back to `iconDefault`, which is how links
+ * saved before the setting existed keep looking the way they did.
+ */
+export function newTabSuffix({ newTab, showIcon, icon }, ctx, iconDefault = false) {
+  if (!newTab) return '';
+  const show = showIcon === undefined || showIcon === null ? iconDefault : !!showIcon;
+  return NEW_TAB_SR + (show ? externalIcon(ctx, icon) : '');
+}
+
 /**
  * A file the published site serves from `public/` — photos, icons, fonts.
  *

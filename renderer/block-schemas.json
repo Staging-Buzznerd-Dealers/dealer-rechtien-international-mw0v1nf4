@@ -1,5 +1,5 @@
 {
-  "rendererVersion": "4.25.0",
+  "rendererVersion": "4.26.4",
   "documentVersion": 2,
   "gridColumns": 12,
   "tokenGroups": {
@@ -312,6 +312,8 @@
     "hours",
     "inventory-carousel",
     "inventory-search",
+    "post-feed",
+    "post-article",
     "form"
   ],
   "customWidgetPropTypes": [
@@ -726,7 +728,8 @@
       "match": "name",
       "config": [
         "locationSlug",
-        "departmentCode"
+        "departmentCode",
+        "staffSlug"
       ],
       "fields": [
         {
@@ -753,6 +756,36 @@
           "key": "photo",
           "type": "image",
           "label": "Photo"
+        },
+        {
+          "key": "slug",
+          "type": "text",
+          "label": "Slug"
+        },
+        {
+          "key": "bio",
+          "type": "text",
+          "label": "Bio"
+        },
+        {
+          "key": "locations",
+          "type": "text",
+          "label": "Locations"
+        },
+        {
+          "key": "locationName",
+          "type": "text",
+          "label": "Primary location"
+        },
+        {
+          "key": "locationSlug",
+          "type": "text",
+          "label": "Primary location slug"
+        },
+        {
+          "key": "servingSinceYear",
+          "type": "text",
+          "label": "Serving since"
         }
       ]
     }
@@ -2034,6 +2067,14 @@
           "url": {
             "type": "string",
             "description": "Optional: where clicking the image goes."
+          },
+          "newTab": {
+            "type": "boolean",
+            "description": "Open the link in a new tab."
+          },
+          "showIcon": {
+            "type": "boolean",
+            "description": "Show the new-tab icon after the link. Only used when it opens in a new tab."
           }
         },
         "required": [
@@ -2121,6 +2162,14 @@
                 "ctaId": {
                   "type": "string",
                   "description": "Id of an entry in site/buttons.json."
+                },
+                "newTab": {
+                  "type": "boolean",
+                  "description": "Open the link in a new tab."
+                },
+                "showIcon": {
+                  "type": "boolean",
+                  "description": "Show the new-tab icon after the link. Only used when it opens in a new tab."
                 },
                 "label": {
                   "type": "string",
@@ -2430,6 +2479,14 @@
                   "type": "string",
                   "description": "Id of an entry in site/buttons.json."
                 },
+                "newTab": {
+                  "type": "boolean",
+                  "description": "Open the link in a new tab."
+                },
+                "showIcon": {
+                  "type": "boolean",
+                  "description": "Show the new-tab icon after the link. Only used when it opens in a new tab."
+                },
                 "label": {
                   "type": "string",
                   "description": "Inline label. Overrides the library label when both are set."
@@ -2529,6 +2586,14 @@
                 "ctaId": {
                   "type": "string",
                   "description": "Id of an entry in site/buttons.json."
+                },
+                "newTab": {
+                  "type": "boolean",
+                  "description": "Open the link in a new tab."
+                },
+                "showIcon": {
+                  "type": "boolean",
+                  "description": "Show the new-tab icon after the link. Only used when it opens in a new tab."
                 },
                 "label": {
                   "type": "string",
@@ -2653,6 +2718,14 @@
                 "url": {
                   "type": "string",
                   "description": "Destination."
+                },
+                "newTab": {
+                  "type": "boolean",
+                  "description": "Open the link in a new tab."
+                },
+                "showIcon": {
+                  "type": "boolean",
+                  "description": "Show the new-tab icon after the link. Only used when it opens in a new tab."
                 }
               },
               "required": [
@@ -2694,6 +2767,14 @@
                 "type": "string",
                 "description": "Id of an entry in site/buttons.json."
               },
+              "newTab": {
+                "type": "boolean",
+                "description": "Open the link in a new tab."
+              },
+              "showIcon": {
+                "type": "boolean",
+                "description": "Show the new-tab icon after the link. Only used when it opens in a new tab."
+              },
               "label": {
                 "type": "string",
                 "description": "Inline label. Overrides the library label when both are set."
@@ -2734,6 +2815,14 @@
                 "url": {
                   "type": "string",
                   "description": "Destination."
+                },
+                "newTab": {
+                  "type": "boolean",
+                  "description": "Open the link in a new tab."
+                },
+                "showIcon": {
+                  "type": "boolean",
+                  "description": "Show the new-tab icon after the link. Only used when it opens in a new tab."
                 },
                 "image": {
                   "type": "object",
@@ -2800,6 +2889,14 @@
                 "ctaId": {
                   "type": "string",
                   "description": "Id of an entry in site/buttons.json."
+                },
+                "newTab": {
+                  "type": "boolean",
+                  "description": "Open the link in a new tab."
+                },
+                "showIcon": {
+                  "type": "boolean",
+                  "description": "Show the new-tab icon after the link. Only used when it opens in a new tab."
                 },
                 "label": {
                   "type": "string",
@@ -2906,6 +3003,14 @@
                     "ctaId": {
                       "type": "string",
                       "description": "Id of an entry in site/buttons.json."
+                    },
+                    "newTab": {
+                      "type": "boolean",
+                      "description": "Open the link in a new tab."
+                    },
+                    "showIcon": {
+                      "type": "boolean",
+                      "description": "Show the new-tab icon after the link. Only used when it opens in a new tab."
                     },
                     "label": {
                       "type": "string",
@@ -3057,6 +3162,14 @@
                 "url": {
                   "type": "string",
                   "description": "Brand page."
+                },
+                "newTab": {
+                  "type": "boolean",
+                  "description": "Open the link in a new tab."
+                },
+                "showIcon": {
+                  "type": "boolean",
+                  "description": "Show the new-tab icon after the link. Only used when it opens in a new tab."
                 }
               },
               "required": [
@@ -3109,6 +3222,14 @@
               "ctaId": {
                 "type": "string",
                 "description": "Id of an entry in site/buttons.json."
+              },
+              "newTab": {
+                "type": "boolean",
+                "description": "Open the link in a new tab."
+              },
+              "showIcon": {
+                "type": "boolean",
+                "description": "Show the new-tab icon after the link. Only used when it opens in a new tab."
               },
               "label": {
                 "type": "string",
@@ -3181,6 +3302,14 @@
                 "url": {
                   "type": "string",
                   "description": "Location page."
+                },
+                "newTab": {
+                  "type": "boolean",
+                  "description": "Open the link in a new tab."
+                },
+                "showIcon": {
+                  "type": "boolean",
+                  "description": "Show the new-tab icon after the link. Only used when it opens in a new tab."
                 }
               },
               "required": [
@@ -3247,6 +3376,14 @@
                       "url": {
                         "type": "string",
                         "description": "Destination."
+                      },
+                      "newTab": {
+                        "type": "boolean",
+                        "description": "Open the link in a new tab."
+                      },
+                      "showIcon": {
+                        "type": "boolean",
+                        "description": "Show the new-tab icon after the link. Only used when it opens in a new tab."
                       }
                     },
                     "required": [
