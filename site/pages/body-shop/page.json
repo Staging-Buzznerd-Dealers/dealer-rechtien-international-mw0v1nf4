@@ -61,7 +61,8 @@
                     "items": [
                       {
                         "ctaId": "contact-us",
-                        "style": "secondary"
+                        "style": "secondary",
+                        "url": "#[data-bz-node=\"visit\"]"
                       }
                     ]
                   }
