@@ -241,7 +241,7 @@
               "lon": "-81.85"
             }
           ],
-          "scEyebrow": "Rechtien Truck Group - South Carolina",
+          "scEyebrow": "Rechtien International Trucks and Carolina International Trucks - South Carolina",
           "scHeading": "South Carolina",
           "carolina": [
             {
@@ -437,7 +437,7 @@
                   "props": {
                     "image": {
                       "src": "https://vendure.ai4dealerships.com/assets/source/94/mob_serv_1-1.jpg",
-                      "alt": "A white International truck at a Rechtien Truck Group location",
+                      "alt": "A white International truck at a Rechtien International Trucks and Carolina International Trucks location",
                       "width": 640,
                       "height": 480
                     },
@@ -558,7 +558,7 @@
                     "config": {
                       "items": [
                         {
-                          "q": "How many Rechtien Truck Group locations are there?",
+                          "q": "How many Rechtien International Trucks and Carolina International Trucks locations are there?",
                           "a": "Eleven. Five are in South Florida (Miami, Ft. Lauderdale, Riviera Beach, Fort Pierce and Fort Myers) and six are in South Carolina (Charleston, Columbia, Florence, Greer, Greenville and Conway)."
                         },
                         {
@@ -575,7 +575,7 @@
                         },
                         {
                           "q": "Do you offer service outside store hours?",
-                          "a": "Yes. Idealease Mobile Service is available through Rechtien Truck Group in South Florida and South Carolina. Technicians come to your location during off hours or on weekends, for fleets of five or more commercial trucks."
+                          "a": "Yes. Idealease Mobile Service is available through Rechtien International Trucks and Carolina International Trucks in South Florida and South Carolina. Technicians come to your location during off hours or on weekends, for fleets of five or more commercial trucks."
                         },
                         {
                           "q": "How do I get directions to a location?",

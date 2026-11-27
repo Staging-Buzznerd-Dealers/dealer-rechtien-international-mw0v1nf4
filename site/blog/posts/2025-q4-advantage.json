@@ -168,11 +168,11 @@
                       },
                       {
                         "label": "Year-End Inventory Opportunities",
-                        "desc": "Rechtien Truck Group offers aggressive pricing on new and used trucks, with immediate delivery available."
+                        "desc": "Rechtien International Trucks and Carolina International Trucks offers aggressive pricing on new and used trucks, with immediate delivery available."
                       },
                       {
                         "label": "Tariff-Free In-Stock Inventory",
-                        "desc": "2025 and older in-stock units are available tariff-free, with reduced tariffs on 2026 models. This limited time opportunity allows you to secure equipment at lower total acquisition costs while inventory lasts. Contact Rechtien Truck Group to confirm availability and take advantage of these savings before year-end."
+                        "desc": "2025 and older in-stock units are available tariff-free, with reduced tariffs on 2026 models. This limited time opportunity allows you to secure equipment at lower total acquisition costs while inventory lasts. Contact Rechtien International Trucks and Carolina International Trucks to confirm availability and take advantage of these savings before year-end."
                       }
                     ]
                   }
@@ -181,7 +181,7 @@
                   "id": "p-1-t2",
                   "type": "text",
                   "props": {
-                    "text": "<strong>Contact Rechtien Truck Group to confirm availability and take advantage of these savings before year-end.</strong>",
+                    "text": "<strong>Contact Rechtien International Trucks and Carolina International Trucks to confirm availability and take advantage of these savings before year-end.</strong>",
                     "width": "full"
                   }
                 },

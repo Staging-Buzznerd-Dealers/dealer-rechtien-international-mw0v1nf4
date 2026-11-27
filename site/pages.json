@@ -1,7 +1,7 @@
 [
   {
     "slug": "home",
-    "title": "Rechtien Truck Group",
+    "title": "Rechtien International Trucks and Carolina International Trucks",
     "description": "New and pre-owned International trucks, IC Bus, Hino and trailers from 11 locations serving South Florida and South Carolina. Parts, service, financing and lease & rental.",
     "path": "/",
     "out": "index.html",
@@ -77,7 +77,7 @@
   {
     "slug": "service",
     "title": "Commercial Truck Service & Repair in Florida & South Carolina",
-    "description": "Truck service and repair for all makes at Rechtien Truck Group in South Carolina and South Florida: preventive maintenance, diagnostics, warranty work, alignment, A/C and mobile service.",
+    "description": "Truck service and repair for all makes at Rechtien International Trucks and Carolina International Trucks in South Carolina and South Florida: preventive maintenance, diagnostics, warranty work, alignment, A/C and mobile service.",
     "path": "/service",
     "out": "service/index.html",
     "dir": "service",
@@ -94,8 +94,8 @@
   },
   {
     "slug": "about",
-    "title": "About Rechtien Truck Group",
-    "description": "Rechtien Truck Group: one commercial truck dealer network with 11 locations in South Florida and South Carolina.",
+    "title": "About Rechtien International Trucks and Carolina International Trucks",
+    "description": "Rechtien International Trucks and Carolina International Trucks: one commercial truck dealer network with 11 locations in South Florida and South Carolina.",
     "path": "/about",
     "out": "about/index.html",
     "dir": "about",
@@ -113,7 +113,7 @@
   {
     "slug": "financing",
     "title": "Commercial Semi-Truck Financing & Leasing",
-    "description": "Commercial semi-truck financing and leasing through International Financial at Rechtien Truck Group in South Florida and South Carolina.",
+    "description": "Commercial semi-truck financing and leasing through International Financial at Rechtien International Trucks and Carolina International Trucks in South Florida and South Carolina.",
     "path": "/financing",
     "out": "financing/index.html",
     "dir": "financing",
@@ -131,7 +131,7 @@
   {
     "slug": "lease-rental",
     "title": "Semi Truck Leasing & Rentals | Idealease",
-    "description": "Semi truck leasing and rentals with Idealease at Rechtien Truck Group in South Florida and South Carolina.",
+    "description": "Semi truck leasing and rentals with Idealease at Rechtien International Trucks and Carolina International Trucks in South Florida and South Carolina.",
     "path": "/lease-rental",
     "out": "lease-rental/index.html",
     "dir": "lease-rental",
@@ -148,8 +148,8 @@
   },
   {
     "slug": "truck-configurator",
-    "title": "Semi Truck Configurator | Rechtien Truck Group",
-    "description": "Build your International semi truck by series, cab, powertrain and equipment, then send Rechtien Truck Group the spec for pricing, lead time and upfit.",
+    "title": "Semi Truck Configurator | Rechtien International Trucks and Carolina International Trucks",
+    "description": "Build your International semi truck by series, cab, powertrain and equipment, then send Rechtien International Trucks and Carolina International Trucks the spec for pricing, lead time and upfit.",
     "path": "/truck-configurator",
     "out": "truck-configurator/index.html",
     "dir": "truck-configurator",
@@ -166,8 +166,8 @@
   },
   {
     "slug": "truck-alignments",
-    "title": "Truck Alignments | Rechtien Truck Group - South Carolina",
-    "description": "Computerized truck and trailer alignments at every Rechtien Truck Group location, with before and after print-outs from factory-trained technicians.",
+    "title": "Truck Alignments | Rechtien International Trucks and Carolina International Trucks - South Carolina",
+    "description": "Computerized truck and trailer alignments at every Rechtien International Trucks and Carolina International Trucks location, with before and after print-outs from factory-trained technicians.",
     "path": "/truck-alignments",
     "out": "truck-alignments/index.html",
     "dir": "truck-alignments",
@@ -185,7 +185,7 @@
   {
     "slug": "mobile-service",
     "title": "Mobile Truck Service | Idealease Mobile Service",
-    "description": "Idealease Mobile Service brings truck maintenance to your location, at Rechtien Truck Group in South Florida and South Carolina.",
+    "description": "Idealease Mobile Service brings truck maintenance to your location, at Rechtien International Trucks and Carolina International Trucks in South Florida and South Carolina.",
     "path": "/mobile-service",
     "out": "mobile-service/index.html",
     "dir": "mobile-service",
@@ -203,7 +203,7 @@
   {
     "slug": "international-360",
     "title": "International 360 (I360) Truck Fleet Management",
-    "description": "International 360 fleet management and repair communication at Rechtien Truck Group in South Florida and South Carolina.",
+    "description": "International 360 fleet management and repair communication at Rechtien International Trucks and Carolina International Trucks in South Florida and South Carolina.",
     "path": "/international-360",
     "out": "international-360/index.html",
     "dir": "international-360",
@@ -221,7 +221,7 @@
   {
     "slug": "team-david-milliken",
     "title": "David Milliken — General Manager, Greer & Greenville, SC",
-    "description": "Meet David Milliken, General Manager at Rechtien Truck Group in Greer and Greenville, SC. Contact David, and see his inventory.",
+    "description": "Meet David Milliken, General Manager at Rechtien International Trucks and Carolina International Trucks in Greer and Greenville, SC. Contact David, and see his inventory.",
     "path": "/team/david-milliken",
     "out": "team/david-milliken/index.html",
     "dir": "team-david-milliken",
@@ -240,7 +240,7 @@
   {
     "slug": "team",
     "title": "Meet the Team",
-    "description": "Meet Rechtien Truck Group team: executive staff and the people at every location in South Florida and South Carolina.",
+    "description": "Meet Rechtien International Trucks and Carolina International Trucks team: executive staff and the people at every location in South Florida and South Carolina.",
     "path": "/team",
     "out": "team/index.html",
     "dir": "team",
@@ -259,7 +259,7 @@
   {
     "slug": "team-raul-arellano",
     "title": "Raul Arellano — Account Manager, Miami, FL",
-    "description": "Meet Raul Arellano, Account Manager at Rechtien Truck Group in Miami, FL. Contact Raul and browse inventory.",
+    "description": "Meet Raul Arellano, Account Manager at Rechtien International Trucks and Carolina International Trucks in Miami, FL. Contact Raul and browse inventory.",
     "path": "/team/raul-arellano",
     "out": "team/raul-arellano/index.html",
     "dir": "team-raul-arellano",
@@ -278,7 +278,7 @@
   {
     "slug": "team-jose-sanchez",
     "title": "Jose Sanchez — Account Manager, Miami & Ft. Lauderdale, FL",
-    "description": "Meet Jose Sanchez, Account Manager at Rechtien Truck Group in Miami & Ft. Lauderdale, FL. Contact Jose and browse inventory.",
+    "description": "Meet Jose Sanchez, Account Manager at Rechtien International Trucks and Carolina International Trucks in Miami & Ft. Lauderdale, FL. Contact Jose and browse inventory.",
     "path": "/team/jose-sanchez",
     "out": "team/jose-sanchez/index.html",
     "dir": "team-jose-sanchez",
@@ -297,7 +297,7 @@
   {
     "slug": "team-abel-diaz",
     "title": "Abel Diaz — Account Manager, Miami, FL",
-    "description": "Meet Abel Diaz, Account Manager at Rechtien Truck Group in Miami, FL. Contact Abel and browse inventory.",
+    "description": "Meet Abel Diaz, Account Manager at Rechtien International Trucks and Carolina International Trucks in Miami, FL. Contact Abel and browse inventory.",
     "path": "/team/abel-diaz",
     "out": "team/abel-diaz/index.html",
     "dir": "team-abel-diaz",
@@ -316,7 +316,7 @@
   {
     "slug": "team-hiram-gordillo",
     "title": "Hiram Gordillo — Account Manager, Riviera Beach, FL",
-    "description": "Meet Hiram Gordillo, Account Manager at Rechtien Truck Group in Riviera Beach, FL. Contact Hiram and browse inventory.",
+    "description": "Meet Hiram Gordillo, Account Manager at Rechtien International Trucks and Carolina International Trucks in Riviera Beach, FL. Contact Hiram and browse inventory.",
     "path": "/team/hiram-gordillo",
     "out": "team/hiram-gordillo/index.html",
     "dir": "team-hiram-gordillo",
@@ -335,7 +335,7 @@
   {
     "slug": "team-carlos-correa",
     "title": "Carlos Correa — Account Manager, Riviera Beach, FL",
-    "description": "Meet Carlos Correa, Account Manager at Rechtien Truck Group in Riviera Beach, FL. Contact Carlos and browse inventory.",
+    "description": "Meet Carlos Correa, Account Manager at Rechtien International Trucks and Carolina International Trucks in Riviera Beach, FL. Contact Carlos and browse inventory.",
     "path": "/team/carlos-correa",
     "out": "team/carlos-correa/index.html",
     "dir": "team-carlos-correa",
@@ -354,7 +354,7 @@
   {
     "slug": "team-laddie-williams",
     "title": "Laddie Williams — Account Manager, Ft. Myers, FL",
-    "description": "Meet Laddie Williams, Account Manager at Rechtien Truck Group in Ft. Myers, FL. Contact Laddie and browse inventory.",
+    "description": "Meet Laddie Williams, Account Manager at Rechtien International Trucks and Carolina International Trucks in Ft. Myers, FL. Contact Laddie and browse inventory.",
     "path": "/team/laddie-williams",
     "out": "team/laddie-williams/index.html",
     "dir": "team-laddie-williams",
@@ -373,7 +373,7 @@
   {
     "slug": "team-randy-betten",
     "title": "Randy Betten — Account Manager, Ft. Myers, FL",
-    "description": "Meet Randy Betten, Account Manager at Rechtien Truck Group in Ft. Myers, FL. Contact Randy and browse inventory.",
+    "description": "Meet Randy Betten, Account Manager at Rechtien International Trucks and Carolina International Trucks in Ft. Myers, FL. Contact Randy and browse inventory.",
     "path": "/team/randy-betten",
     "out": "team/randy-betten/index.html",
     "dir": "team-randy-betten",
@@ -392,7 +392,7 @@
   {
     "slug": "team-brandon-bowen",
     "title": "Brandon Bowen — Account Manager, Columbia, SC",
-    "description": "Meet Brandon Bowen, Account Manager at Rechtien Truck Group in Columbia, SC. Contact Brandon and browse inventory.",
+    "description": "Meet Brandon Bowen, Account Manager at Rechtien International Trucks and Carolina International Trucks in Columbia, SC. Contact Brandon and browse inventory.",
     "path": "/team/brandon-bowen",
     "out": "team/brandon-bowen/index.html",
     "dir": "team-brandon-bowen",
@@ -411,7 +411,7 @@
   {
     "slug": "team-kevin-kure",
     "title": "Kevin Kure — Account Manager, Charleston, SC",
-    "description": "Meet Kevin Kure, Account Manager at Rechtien Truck Group in Charleston, SC. Contact Kevin and browse inventory.",
+    "description": "Meet Kevin Kure, Account Manager at Rechtien International Trucks and Carolina International Trucks in Charleston, SC. Contact Kevin and browse inventory.",
     "path": "/team/kevin-kure",
     "out": "team/kevin-kure/index.html",
     "dir": "team-kevin-kure",
@@ -430,7 +430,7 @@
   {
     "slug": "team-bill-faircloth",
     "title": "Bill Faircloth — Account Manager, Columbia, SC",
-    "description": "Meet Bill Faircloth, Account Manager at Rechtien Truck Group in Columbia, SC. Contact Bill and browse inventory.",
+    "description": "Meet Bill Faircloth, Account Manager at Rechtien International Trucks and Carolina International Trucks in Columbia, SC. Contact Bill and browse inventory.",
     "path": "/team/bill-faircloth",
     "out": "team/bill-faircloth/index.html",
     "dir": "team-bill-faircloth",
@@ -449,7 +449,7 @@
   {
     "slug": "team-steve-wiser",
     "title": "Steve Wiser — Account Manager, Columbia, SC",
-    "description": "Meet Steve Wiser, Account Manager at Rechtien Truck Group in Columbia, SC. Contact Steve and browse inventory.",
+    "description": "Meet Steve Wiser, Account Manager at Rechtien International Trucks and Carolina International Trucks in Columbia, SC. Contact Steve and browse inventory.",
     "path": "/team/steve-wiser",
     "out": "team/steve-wiser/index.html",
     "dir": "team-steve-wiser",
@@ -468,7 +468,7 @@
   {
     "slug": "team-steven-myers",
     "title": "Steven Myers — Account Manager, Greer, SC",
-    "description": "Meet Steven Myers, Account Manager at Rechtien Truck Group in Greer, SC. Contact Steven and browse inventory.",
+    "description": "Meet Steven Myers, Account Manager at Rechtien International Trucks and Carolina International Trucks in Greer, SC. Contact Steven and browse inventory.",
     "path": "/team/steven-myers",
     "out": "team/steven-myers/index.html",
     "dir": "team-steven-myers",
@@ -487,7 +487,7 @@
   {
     "slug": "team-charlie-howle",
     "title": "Charlie Howle — Account Manager, Charleston, SC",
-    "description": "Meet Charlie Howle, Account Manager at Rechtien Truck Group in Charleston, SC. Contact Charlie and browse inventory.",
+    "description": "Meet Charlie Howle, Account Manager at Rechtien International Trucks and Carolina International Trucks in Charleston, SC. Contact Charlie and browse inventory.",
     "path": "/team/charlie-howle",
     "out": "team/charlie-howle/index.html",
     "dir": "team-charlie-howle",
@@ -506,7 +506,7 @@
   {
     "slug": "team-charlie-champion",
     "title": "Charlie Champion — Account Manager, Greer, SC",
-    "description": "Meet Charlie Champion, Account Manager at Rechtien Truck Group in Greer, SC. Contact Charlie and browse inventory.",
+    "description": "Meet Charlie Champion, Account Manager at Rechtien International Trucks and Carolina International Trucks in Greer, SC. Contact Charlie and browse inventory.",
     "path": "/team/charlie-champion",
     "out": "team/charlie-champion/index.html",
     "dir": "team-charlie-champion",
@@ -525,7 +525,7 @@
   {
     "slug": "team-joe-allen",
     "title": "Joe Allen — Account Manager, Florence, SC",
-    "description": "Meet Joe Allen, Account Manager at Rechtien Truck Group in Florence, SC. Contact Joe and browse inventory.",
+    "description": "Meet Joe Allen, Account Manager at Rechtien International Trucks and Carolina International Trucks in Florence, SC. Contact Joe and browse inventory.",
     "path": "/team/joe-allen",
     "out": "team/joe-allen/index.html",
     "dir": "team-joe-allen",
@@ -544,7 +544,7 @@
   {
     "slug": "team-ricky-lee",
     "title": "Ricky Lee — Account Manager, Columbia, SC",
-    "description": "Meet Ricky Lee, Account Manager at Rechtien Truck Group in Columbia, SC. Contact Ricky and browse inventory.",
+    "description": "Meet Ricky Lee, Account Manager at Rechtien International Trucks and Carolina International Trucks in Columbia, SC. Contact Ricky and browse inventory.",
     "path": "/team/ricky-lee",
     "out": "team/ricky-lee/index.html",
     "dir": "team-ricky-lee",
@@ -563,7 +563,7 @@
   {
     "slug": "emv-series",
     "title": "International eMV Electric Truck Series",
-    "description": "The International eMV Series electric truck: 210 kWh battery, 135-mile range and a complete eMobility solution from Rechtien Truck Group.",
+    "description": "The International eMV Series electric truck: 210 kWh battery, 135-mile range and a complete eMobility solution from Rechtien International Trucks and Carolina International Trucks.",
     "path": "/emv-series",
     "out": "emv-series/index.html",
     "dir": "emv-series",
@@ -581,7 +581,7 @@
   {
     "slug": "zero-emissions",
     "title": "Zero-Emission Trucks & EV Roadmap",
-    "description": "Zero-emission International trucks and an EV roadmap from Rechtien Truck Group: consulting, charging and deployment for your fleet.",
+    "description": "Zero-emission International trucks and an EV roadmap from Rechtien International Trucks and Carolina International Trucks: consulting, charging and deployment for your fleet.",
     "path": "/zero-emissions",
     "out": "zero-emissions/index.html",
     "dir": "zero-emissions",
@@ -599,7 +599,7 @@
   {
     "slug": "service-specials",
     "title": "Truck Service Specials & Coupons",
-    "description": "Truck service specials from Rechtien Truck Group in South Florida: DPF cleaning, oil and filter, quick lube and B service pricing.",
+    "description": "Truck service specials from Rechtien International Trucks and Carolina International Trucks in South Florida: DPF cleaning, oil and filter, quick lube and B service pricing.",
     "path": "/service-specials",
     "out": "service-specials/index.html",
     "dir": "service-specials",
@@ -634,7 +634,7 @@
   },
   {
     "slug": "cit-university",
-    "title": "Rechtien University | Rechtien Truck Group",
+    "title": "Rechtien University | Rechtien International Trucks and Carolina International Trucks",
     "description": "This page has moved to Rechtien University.",
     "path": "/cit-university",
     "out": "cit-university/index.html",
@@ -653,7 +653,7 @@
   {
     "slug": "carolina-service-express",
     "title": "Carolina Service Express: Fast Truck Service in South Carolina",
-    "description": "Carolina Service Express (CSE) at Rechtien Truck Group: quick lube, express repairs, complete truck & trailer PM, menu pricing and factory-trained technicians across South Carolina.",
+    "description": "Carolina Service Express (CSE) at Rechtien International Trucks and Carolina International Trucks: quick lube, express repairs, complete truck & trailer PM, menu pricing and factory-trained technicians across South Carolina.",
     "path": "/carolina-service-express",
     "out": "carolina-service-express/index.html",
     "dir": "carolina-service-express",
@@ -670,8 +670,8 @@
   },
   {
     "slug": "dpf-cleaning",
-    "title": "DPF Cleaning in South Carolina | Rechtien Truck Group",
-    "description": "Diesel Particulate Filter (DPF) cleaning for all makes of trucks and heavy equipment at Rechtien Truck Group in Greer/Greenville, Columbia and Charleston, SC.",
+    "title": "DPF Cleaning in South Carolina | Rechtien International Trucks and Carolina International Trucks",
+    "description": "Diesel Particulate Filter (DPF) cleaning for all makes of trucks and heavy equipment at Rechtien International Trucks and Carolina International Trucks in Greer/Greenville, Columbia and Charleston, SC.",
     "path": "/dpf-cleaning",
     "out": "dpf-cleaning/index.html",
     "dir": "dpf-cleaning",
@@ -689,7 +689,7 @@
   {
     "slug": "q4-advantage",
     "title": "Q4 Advantage: Year-End Truck Financing & Section 179 Savings",
-    "description": "Year-end truck offers from Rechtien Truck Group: 90-day deferred payments, 100% bonus depreciation, 20% off planned maintenance, aggressive inventory pricing and Section 179 savings.",
+    "description": "Year-end truck offers from Rechtien International Trucks and Carolina International Trucks: 90-day deferred payments, 100% bonus depreciation, 20% off planned maintenance, aggressive inventory pricing and Section 179 savings.",
     "path": "/q4-advantage",
     "out": "q4-advantage/index.html",
     "dir": "q4-advantage",
@@ -707,7 +707,7 @@
   {
     "slug": "why-ic-bus",
     "title": "Why IC Bus: Safety, Comfort & Electric CE Series School Buses",
-    "description": "Why choose IC Bus school buses from Rechtien Truck Group: DriverFirst design, safety and electronic stability, diesel, propane and electric CE Series options.",
+    "description": "Why choose IC Bus school buses from Rechtien International Trucks and Carolina International Trucks: DriverFirst design, safety and electronic stability, diesel, propane and electric CE Series options.",
     "path": "/why-ic-bus",
     "out": "why-ic-bus/index.html",
     "dir": "why-ic-bus",
@@ -725,7 +725,7 @@
   {
     "slug": "locations",
     "title": "Locations & Hours: South Florida & South Carolina Truck Dealer",
-    "description": "Addresses, hours and phone numbers for all 11 Rechtien International Trucks and Rechtien Truck Group - South Carolina locations across South Florida and South Carolina.",
+    "description": "Addresses, hours and phone numbers for all 11 Rechtien International Trucks and Rechtien International Trucks and Carolina International Trucks - South Carolina locations across South Florida and South Carolina.",
     "path": "/locations",
     "out": "locations/index.html",
     "dir": "locations",
@@ -742,8 +742,8 @@
   },
   {
     "slug": "careers",
-    "title": "Careers: Rechtien International Trucks & Rechtien Truck Group - South Carolina",
-    "description": "Build a career with Rechtien International Trucks in South Florida or Rechtien Truck Group - South Carolina: open positions, benefits, employee stories and our talent community.",
+    "title": "Careers: Rechtien International Trucks & Rechtien International Trucks and Carolina International Trucks - South Carolina",
+    "description": "Build a career with Rechtien International Trucks in South Florida or Rechtien International Trucks and Carolina International Trucks - South Carolina: open positions, benefits, employee stories and our talent community.",
     "path": "/careers",
     "out": "careers/index.html",
     "dir": "careers",
@@ -760,8 +760,8 @@
   },
   {
     "slug": "contact",
-    "title": "Contact Us — Rechtien Truck Group",
-    "description": "Contact Rechtien Truck Group: send us a message or call any of our 11 locations in South Florida and South Carolina.",
+    "title": "Contact Us — Rechtien International Trucks and Carolina International Trucks",
+    "description": "Contact Rechtien International Trucks and Carolina International Trucks: send us a message or call any of our 11 locations in South Florida and South Carolina.",
     "path": "/contact",
     "out": "contact/index.html",
     "dir": "contact",
@@ -796,8 +796,8 @@
   },
   {
     "slug": "body-shop",
-    "title": "Truck Body Shop in Columbia, SC | Rechtien Truck Group - South Carolina",
-    "description": "Collision repair, paint and truck body work in Columbia, South Carolina: frame straightening, paint and body repair, ASE-certified technicians, PPG paint and free quotes at the Rechtien Truck Group - South Carolina body shop.",
+    "title": "Truck Body Shop in Columbia, SC | Rechtien International Trucks and Carolina International Trucks - South Carolina",
+    "description": "Collision repair, paint and truck body work in Columbia, South Carolina: frame straightening, paint and body repair, ASE-certified technicians, PPG paint and free quotes at the Rechtien International Trucks and Carolina International Trucks - South Carolina body shop.",
     "path": "/body-shop",
     "out": "body-shop/index.html",
     "dir": "body-shop",
@@ -814,7 +814,7 @@
   },
   {
     "slug": "used-trucks-for-export-latin-america-caribbean",
-    "title": "Used International Trucks for Export | Rechtien Truck Group",
+    "title": "Used International Trucks for Export | Rechtien International Trucks and Carolina International Trucks",
     "description": "Explore lease-maintained, pre-owned International Trucks available for export from Miami and South Carolina. We bring over 40 years of export expertise for your business success.",
     "path": "/used-trucks-for-export-latin-america-caribbean",
     "out": "used-trucks-for-export-latin-america-caribbean/index.html",
@@ -832,7 +832,7 @@
   },
   {
     "slug": "camiones-usados-exportacion-america-latina-caribe",
-    "title": "Camiones International Usados para Exportación | Rechtien Truck Group",
+    "title": "Camiones International Usados para Exportación | Rechtien International Trucks and Carolina International Trucks",
     "description": "Explore camiones International usados, mantenidos durante su arrendamiento y disponibles para exportación desde Miami y Carolina del Sur, EEUU. Más de 40 años de experiencia en exportación para el éxito de su negocio.",
     "path": "/camiones-usados-exportacion-america-latina-caribe",
     "out": "camiones-usados-exportacion-america-latina-caribe/index.html",

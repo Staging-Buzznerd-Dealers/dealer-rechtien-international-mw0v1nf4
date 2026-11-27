@@ -29,7 +29,7 @@
             "locations": [
               {
                 "id": "18",
-                "name": "Maimi",
+                "name": "Miami",
                 "subtitle": "",
                 "slug": "maimi",
                 "num": "01",
@@ -253,7 +253,7 @@
                     "widget": "hours",
                     "config": {},
                     "snapshot": {
-                      "location": "Maimi",
+                      "location": "Miami",
                       "department": "Sales",
                       "hours": [
                         {
@@ -524,7 +524,7 @@
         "values": {
           "eyebrow": "What's on site in",
           "heading": "Everything your fleet needs.",
-          "intro": "Departments vary by location. Here is what Rechtien Truck Group offers across South Florida and South Carolina.",
+          "intro": "Departments vary by location. Here is what Rechtien International Trucks and Carolina International Trucks offers across South Florida and South Carolina.",
           "cards": [
             {
               "title": "Truck sales",
@@ -784,7 +784,7 @@
         "sectionId": "location-others",
         "values": {
           "eyebrow": "Find a location",
-          "heading": "Other Rechtien Truck Group locations.",
+          "heading": "Other Rechtien International Trucks and Carolina International Trucks locations.",
           "intro": "Ready to find the right commercial truck for your business? Visit one of our other locations across South Florida and South Carolina.",
           "locations": {
             "source": "locations",
@@ -839,12 +839,12 @@
                     "config": {
                       "items": [
                         {
-                          "q": "What does Rechtien Truck Group sell?",
-                          "a": "Rechtien Truck Group sells new and pre-owned International trucks, IC Bus, Hino and trailers from 11 locations serving South Florida and South Carolina, with parts, service, financing and lease and rental support."
+                          "q": "What does Rechtien International Trucks and Carolina International Trucks sell?",
+                          "a": "Rechtien International Trucks and Carolina International Trucks sells new and pre-owned International trucks, IC Bus, Hino and trailers from 11 locations serving South Florida and South Carolina, with parts, service, financing and lease and rental support."
                         },
                         {
                           "q": "Do you finance commercial trucks?",
-                          "a": "Yes. Rechtien Truck Group provides financing through International Financial, with loan and lease options at terms from 12 to 72 months and an online credit application. Financing is available in South Florida and South Carolina."
+                          "a": "Yes. Rechtien International Trucks and Carolina International Trucks provides financing through International Financial, with loan and lease options at terms from 12 to 72 months and an online credit application. Financing is available in South Florida and South Carolina."
                         },
                         {
                           "q": "Can you service all makes and models of trucks?",
@@ -852,7 +852,7 @@
                         },
                         {
                           "q": "How do I schedule a service appointment?",
-                          "a": "Request an appointment online with the service appointment form on this website, or contact your nearest Rechtien Truck Group location directly. With every visit we provide transparent reporting, so you know what was done and what is recommended."
+                          "a": "Request an appointment online with the service appointment form on this website, or contact your nearest Rechtien International Trucks and Carolina International Trucks location directly. With every visit we provide transparent reporting, so you know what was done and what is recommended."
                         },
                         {
                           "q": "Do you sell genuine OEM and aftermarket truck parts?",
@@ -860,11 +860,11 @@
                         },
                         {
                           "q": "Do you offer truck leasing and rentals?",
-                          "a": "Yes. Idealease leasing and rentals are available through Rechtien Truck Group in South Florida and South Carolina, including semi truck leasing and rentals. Send a lease or rental inquiry, or contact us, to find the Idealease location nearest you."
+                          "a": "Yes. Idealease leasing and rentals are available through Rechtien International Trucks and Carolina International Trucks in South Florida and South Carolina, including semi truck leasing and rentals. Send a lease or rental inquiry, or contact us, to find the Idealease location nearest you."
                         },
                         {
                           "q": "Do you offer mobile truck service?",
-                          "a": "Yes. Idealease Mobile Service is available through Rechtien Truck Group in South Florida and South Carolina. Technicians come to your location during off hours or on weekends and can perform up to 80% of routine and preventive maintenance, for fleets of five or more commercial trucks."
+                          "a": "Yes. Idealease Mobile Service is available through Rechtien International Trucks and Carolina International Trucks in South Florida and South Carolina. Technicians come to your location during off hours or on weekends and can perform up to 80% of routine and preventive maintenance, for fleets of five or more commercial trucks."
                         }
                       ]
                     },
@@ -951,7 +951,7 @@
             "locations": [
               {
                 "id": "18",
-                "name": "Maimi",
+                "name": "Miami",
                 "subtitle": "",
                 "slug": "maimi",
                 "num": "01",
@@ -1137,7 +1137,7 @@
           "rooftop": [
             {
               "id": "18",
-              "name": "Maimi",
+              "name": "Miami",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -1318,7 +1318,7 @@
       },
       "hours-list": {
         "snapshot": {
-          "location": "Maimi",
+          "location": "Miami",
           "department": "Sales",
           "hours": [
             {
@@ -1561,7 +1561,7 @@
           "rooftop": [
             {
               "id": "18",
-              "name": "Maimi",
+              "name": "Miami",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -1746,7 +1746,7 @@
           "rooftop": [
             {
               "id": "18",
-              "name": "Maimi",
+              "name": "Miami",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -4237,7 +4237,7 @@
             "locations": [
               {
                 "id": "18",
-                "name": "Maimi",
+                "name": "Miami",
                 "subtitle": "",
                 "slug": "maimi",
                 "num": "01",
@@ -5217,7 +5217,7 @@
           "locations": [
             {
               "id": "18",
-              "name": "Maimi",
+              "name": "Miami",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -7523,7 +7523,7 @@
             "locations": [
               {
                 "id": "18",
-                "name": "Maimi",
+                "name": "Miami",
                 "subtitle": "",
                 "slug": "maimi",
                 "num": "01",
@@ -8742,7 +8742,7 @@
           "locations": [
             {
               "id": "18",
-              "name": "Maimi",
+              "name": "Miami",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -10984,7 +10984,7 @@
             "locations": [
               {
                 "id": "18",
-                "name": "Maimi",
+                "name": "Miami",
                 "subtitle": "",
                 "slug": "maimi",
                 "num": "01",
@@ -12203,7 +12203,7 @@
           "locations": [
             {
               "id": "18",
-              "name": "Maimi",
+              "name": "Miami",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -14445,7 +14445,7 @@
             "locations": [
               {
                 "id": "18",
-                "name": "Maimi",
+                "name": "Miami",
                 "subtitle": "",
                 "slug": "maimi",
                 "num": "01",
@@ -15664,7 +15664,7 @@
           "locations": [
             {
               "id": "18",
-              "name": "Maimi",
+              "name": "Miami",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -17906,7 +17906,7 @@
             "locations": [
               {
                 "id": "18",
-                "name": "Maimi",
+                "name": "Miami",
                 "subtitle": "",
                 "slug": "maimi",
                 "num": "01",
@@ -18886,7 +18886,7 @@
           "locations": [
             {
               "id": "18",
-              "name": "Maimi",
+              "name": "Miami",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -21192,7 +21192,7 @@
             "locations": [
               {
                 "id": "18",
-                "name": "Maimi",
+                "name": "Miami",
                 "subtitle": "",
                 "slug": "maimi",
                 "num": "01",
@@ -22172,7 +22172,7 @@
           "locations": [
             {
               "id": "18",
-              "name": "Maimi",
+              "name": "Miami",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -24478,7 +24478,7 @@
             "locations": [
               {
                 "id": "18",
-                "name": "Maimi",
+                "name": "Miami",
                 "subtitle": "",
                 "slug": "maimi",
                 "num": "01",
@@ -25936,7 +25936,7 @@
           "locations": [
             {
               "id": "18",
-              "name": "Maimi",
+              "name": "Miami",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -28114,7 +28114,7 @@
             "locations": [
               {
                 "id": "18",
-                "name": "Maimi",
+                "name": "Miami",
                 "subtitle": "",
                 "slug": "maimi",
                 "num": "01",
@@ -29333,7 +29333,7 @@
           "locations": [
             {
               "id": "18",
-              "name": "Maimi",
+              "name": "Miami",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -31575,7 +31575,7 @@
             "locations": [
               {
                 "id": "18",
-                "name": "Maimi",
+                "name": "Miami",
                 "subtitle": "",
                 "slug": "maimi",
                 "num": "01",
@@ -33033,7 +33033,7 @@
           "locations": [
             {
               "id": "18",
-              "name": "Maimi",
+              "name": "Miami",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -35211,7 +35211,7 @@
             "locations": [
               {
                 "id": "18",
-                "name": "Maimi",
+                "name": "Miami",
                 "subtitle": "",
                 "slug": "maimi",
                 "num": "01",
@@ -36191,7 +36191,7 @@
           "locations": [
             {
               "id": "18",
-              "name": "Maimi",
+              "name": "Miami",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -38494,7 +38494,7 @@
   "locations": [
     {
       "slug": "maimi",
-      "name": "Maimi",
+      "name": "Miami",
       "city": "Miami",
       "region": ",FL",
       "streetAddress": "7227 NW 74th Ave",

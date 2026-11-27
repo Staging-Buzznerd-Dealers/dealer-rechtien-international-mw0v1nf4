@@ -47,7 +47,7 @@
                   "id": "hero-lede",
                   "type": "text",
                   "props": {
-                    "text": "Los camiones International usados, mantenidos durante su período de arrendamiento, están disponibles para exportación desde Miami, Florida, y Carolina del Sur. Encuentre un camión listo para su próxima etapa con la asesoría de Rechtien Truck Group. Apoyamos el éxito de su negocio con un servicio integral de suministro de repuestos y más de 40 años de experiencia en exportación.",
+                    "text": "Los camiones International usados, mantenidos durante su período de arrendamiento, están disponibles para exportación desde Miami, Florida, y Carolina del Sur. Encuentre un camión listo para su próxima etapa con la asesoría de Rechtien International Trucks and Carolina International Trucks. Apoyamos el éxito de su negocio con un servicio integral de suministro de repuestos y más de 40 años de experiencia en exportación.",
                     "align": "center",
                     "width": "full"
                   }
@@ -200,7 +200,7 @@
                   "id": "why-h",
                   "type": "heading",
                   "props": {
-                    "text": "¿Por qué comprar con Rechtien Truck Group?",
+                    "text": "¿Por qué comprar con Rechtien International Trucks and Carolina International Trucks?",
                     "headingLevel": 2,
                     "align": "center"
                   }
@@ -245,7 +245,7 @@
                       },
                       {
                         "label": "Experiencia en exportación",
-                        "desc": "Con más de 40 años de experiencia en exportación, Rechtien Truck Group puede orientarle durante el proceso de compra e importación para su destino."
+                        "desc": "Con más de 40 años de experiencia en exportación, Rechtien International Trucks and Carolina International Trucks puede orientarle durante el proceso de compra e importación para su destino."
                       }
                     ]
                   }
@@ -407,7 +407,7 @@
                   "id": "parts-t1",
                   "type": "text",
                   "props": {
-                    "text": "Un camión confiable merece un respaldo confiable en repuestos. A través de la plataforma de comercio electrónico de Rechtien Truck Group, puede explorar repuestos y recibir apoyo para su suministro, ayudándole a mantener su operación en marcha.",
+                    "text": "Un camión confiable merece un respaldo confiable en repuestos. A través de la plataforma de comercio electrónico de Rechtien International Trucks and Carolina International Trucks, puede explorar repuestos y recibir apoyo para su suministro, ayudándole a mantener su operación en marcha.",
                     "align": "left",
                     "width": "full"
                   }
@@ -462,7 +462,7 @@
                   "id": "parts-note",
                   "type": "text",
                   "props": {
-                    "text": "La disponibilidad, compatibilidad, precios y opciones de envío de los repuestos pueden variar. Confirme los detalles con el equipo de Rechtien Truck Group.",
+                    "text": "La disponibilidad, compatibilidad, precios y opciones de envío de los repuestos pueden variar. Confirme los detalles con el equipo de Rechtien International Trucks and Carolina International Trucks.",
                     "align": "left",
                     "width": "full"
                   }

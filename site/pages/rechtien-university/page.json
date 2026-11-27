@@ -85,7 +85,7 @@
                   "id": "about-h",
                   "type": "heading",
                   "props": {
-                    "text": "Rechtien Truck Group University",
+                    "text": "Rechtien International Trucks and Carolina International Trucks University",
                     "headingLevel": 2,
                     "align": "center"
                   }
@@ -121,7 +121,7 @@
                   "id": "adv-t",
                   "type": "text",
                   "props": {
-                    "text": "Whether you’re more focused on fleet manager courses or <a href=\"/service\">semi truck service technician</a> classes, you’ll find it all at Rechtien Truck Group. In addition to our thorough curriculum, you’ll find plenty of other reasons to choose our advanced program. Just a few of our course advantages include:",
+                    "text": "Whether you’re more focused on fleet manager courses or <a href=\"/service\">semi truck service technician</a> classes, you’ll find it all at Rechtien International Trucks and Carolina International Trucks. In addition to our thorough curriculum, you’ll find plenty of other reasons to choose our advanced program. Just a few of our course advantages include:",
                     "align": "left",
                     "width": "full"
                   }
@@ -190,7 +190,7 @@
                   "id": "uni-h",
                   "type": "heading",
                   "props": {
-                    "text": "Rechtien Truck Group - South Carolina University",
+                    "text": "Rechtien International Trucks and Carolina International Trucks - South Carolina University",
                     "headingLevel": 2,
                     "align": "left"
                   }
@@ -232,7 +232,7 @@
                   "id": "uni-cap",
                   "type": "text",
                   "props": {
-                    "text": "Get the most from your fleet using the Rechtien Truck Group - South Carolina customized online training portal.",
+                    "text": "Get the most from your fleet using the Rechtien International Trucks and Carolina International Trucks - South Carolina customized online training portal.",
                     "align": "center",
                     "width": "full"
                   }
@@ -241,7 +241,7 @@
                   "id": "uni-brand",
                   "type": "heading",
                   "props": {
-                    "text": "Rechtien Truck Group - South Carolina",
+                    "text": "Rechtien International Trucks and Carolina International Trucks - South Carolina",
                     "headingLevel": 3,
                     "align": "center"
                   }
@@ -277,7 +277,7 @@
                   "id": "uni-t3",
                   "type": "text",
                   "props": {
-                    "text": "Contact us today to learn how the Rechtien University online training can help you increase up-time and reduce maintenance costs: Sam Scarborough, Rechtien Truck Group - South Carolina Training Manager <a href=\"mailto:SSscarborough@CarolinaInternational.com\">SSscarborough@CarolinaInternational.com</a>",
+                    "text": "Contact us today to learn how the Rechtien University online training can help you increase up-time and reduce maintenance costs: Sam Scarborough, Rechtien International Trucks and Carolina International Trucks - South Carolina Training Manager <a href=\"mailto:SSscarborough@CarolinaInternational.com\">SSscarborough@CarolinaInternational.com</a>",
                     "align": "left",
                     "width": "full"
                   }
@@ -365,7 +365,7 @@
                   "id": "cert-t",
                   "type": "text",
                   "props": {
-                    "text": "Do you have additional questions about semi truck service technician classes, fleet manager courses, and more? Feel free to <a href=\"/service#appointment\">reach out</a> to Rechtien Truck Group for more information! We’ll be happy to talk through the details and ensure your team has the education they need to keep moving your business forward!",
+                    "text": "Do you have additional questions about semi truck service technician classes, fleet manager courses, and more? Feel free to <a href=\"/service#appointment\">reach out</a> to Rechtien International Trucks and Carolina International Trucks for more information! We’ll be happy to talk through the details and ensure your team has the education they need to keep moving your business forward!",
                     "align": "left",
                     "width": "full"
                   }
@@ -484,10 +484,10 @@
         "sectionId": "parts-contacts",
         "values": {
           "eyebrow": "Questions? Call your nearest location",
-          "heading": "Rechtien Truck Group locations.",
+          "heading": "Rechtien International Trucks and Carolina International Trucks locations.",
           "groups": [
             {
-              "company": "Rechtien Truck Group",
+              "company": "Rechtien International Trucks and Carolina International Trucks",
               "region": "South Florida · 5 locations",
               "intro": "Five locations across South Florida. Se habla español at our Miami and Ft. Lauderdale locations.",
               "lineLabel": "",
@@ -547,9 +547,9 @@
               ]
             },
             {
-              "company": "Rechtien Truck Group",
+              "company": "Rechtien International Trucks and Carolina International Trucks",
               "region": "South Carolina · 6 locations",
-              "intro": "Rechtien Truck Group is conveniently located near Columbia, Charleston, Florence, Greenville, Greer and Conway, with a presence covering the entire state of South Carolina.",
+              "intro": "Rechtien International Trucks and Carolina International Trucks is conveniently located near Columbia, Charleston, Florence, Greenville, Greer and Conway, with a presence covering the entire state of South Carolina.",
               "lineLabel": "",
               "line": "",
               "lineUrl": "",

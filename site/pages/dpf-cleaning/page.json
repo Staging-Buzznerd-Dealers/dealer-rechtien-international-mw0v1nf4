@@ -39,7 +39,7 @@
                   "id": "hero-h",
                   "type": "heading",
                   "props": {
-                    "text": "Diesel Particulate Filter Cleaning at Rechtien Truck Group",
+                    "text": "Diesel Particulate Filter Cleaning at Rechtien International Trucks and Carolina International Trucks",
                     "headingLevel": 1,
                     "align": "center"
                   }
@@ -95,7 +95,7 @@
                   "id": "dpf-t1",
                   "type": "text",
                   "props": {
-                    "text": "Rechtien Truck Group offers Diesel Particulate Filter (DPF) cleaning for all makes of trucks and heavy equipment in Greenville, SC.",
+                    "text": "Rechtien International Trucks and Carolina International Trucks offers Diesel Particulate Filter (DPF) cleaning for all makes of trucks and heavy equipment in Greenville, SC.",
                     "align": "left",
                     "width": "full"
                   }
@@ -122,7 +122,7 @@
                   "id": "dpf-t4",
                   "type": "text",
                   "props": {
-                    "text": "The trained technicians at Rechtien Truck Group will thoroughly clean your DPF to restore the engine to full power and efficiency. Your DPF cleaning service can be provided conveniently while your vehicle is in for service.",
+                    "text": "The trained technicians at Rechtien International Trucks and Carolina International Trucks will thoroughly clean your DPF to restore the engine to full power and efficiency. Your DPF cleaning service can be provided conveniently while your vehicle is in for service.",
                     "align": "left",
                     "width": "full"
                   }
@@ -131,7 +131,7 @@
                   "id": "dpf-t5",
                   "type": "text",
                   "props": {
-                    "text": "Call our Service Department to schedule your DPF cleaning today! Or request more information from Rechtien Truck Group.",
+                    "text": "Call our Service Department to schedule your DPF cleaning today! Or request more information from Rechtien International Trucks and Carolina International Trucks.",
                     "align": "left",
                     "width": "full"
                   }
@@ -161,12 +161,12 @@
         "sectionId": "parts-contacts",
         "values": {
           "eyebrow": "DPF cleaning is available at",
-          "heading": "Rechtien Truck Group service locations.",
+          "heading": "Rechtien International Trucks and Carolina International Trucks service locations.",
           "groups": [
             {
-              "company": "Rechtien Truck Group",
+              "company": "Rechtien International Trucks and Carolina International Trucks",
               "region": "South Carolina · 3 locations",
-              "intro": "Schedule your DPF cleaning at the Rechtien Truck Group service department nearest you.",
+              "intro": "Schedule your DPF cleaning at the Rechtien International Trucks and Carolina International Trucks service department nearest you.",
               "lineLabel": "",
               "line": "",
               "lineUrl": "",

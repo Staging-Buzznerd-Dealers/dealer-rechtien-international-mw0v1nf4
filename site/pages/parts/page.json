@@ -57,7 +57,7 @@
                   "id": "hero-lede",
                   "type": "text",
                   "props": {
-                    "text": "Genuine OEM and quality aftermarket commercial truck parts from Rechtien Truck Group in South Carolina and South Florida. Order online, request a part, or visit a parts counter near you.",
+                    "text": "Genuine OEM and quality aftermarket commercial truck parts from Rechtien International Trucks and Carolina International Trucks in South Carolina and South Florida. Order online, request a part, or visit a parts counter near you.",
                     "align": "center",
                     "width": "full"
                   }
@@ -120,7 +120,7 @@
                   "id": "intro-t1",
                   "type": "text",
                   "props": {
-                    "text": "Every commercial truck needs new components at some point in its lifespan, and downtime while you wait is lost revenue. Rechtien Truck Group in South Carolina and South Florida stock heavy duty truck parts and accessories manufactured with high-grade materials, so the longevity and integrity of your fleet are in good hands.",
+                    "text": "Every commercial truck needs new components at some point in its lifespan, and downtime while you wait is lost revenue. Rechtien International Trucks and Carolina International Trucks in South Carolina and South Florida stock heavy duty truck parts and accessories manufactured with high-grade materials, so the longevity and integrity of your fleet are in good hands.",
                     "align": "left",
                     "width": "full"
                   }
@@ -313,7 +313,7 @@
                   "id": "fleet-note",
                   "type": "text",
                   "props": {
-                    "text": "Warranty: Rechtien Truck Group states that almost every product it sells comes with an unlimited-mile, one-year warranty. Warranty coverage varies by product and location, so ask the parts team about the specific part you need. Rechtien Truck Group is also International Diamond Edge Certified.",
+                    "text": "Warranty: Rechtien International Trucks and Carolina International Trucks states that almost every product it sells comes with an unlimited-mile, one-year warranty. Warranty coverage varies by product and location, so ask the parts team about the specific part you need. Rechtien International Trucks and Carolina International Trucks is also International Diamond Edge Certified.",
                     "align": "left",
                     "width": "full"
                   }
@@ -1086,7 +1086,7 @@
                   "id": "near-t1",
                   "type": "text",
                   "props": {
-                    "text": "Convenience matters when time is money. Rechtien Truck Group operates six parts locations across South Carolina and five in South Florida — so you are never far from the help you need.",
+                    "text": "Convenience matters when time is money. Rechtien International Trucks and Carolina International Trucks operates six parts locations across South Carolina and five in South Florida — so you are never far from the help you need.",
                     "align": "left",
                     "width": "full"
                   }
@@ -1095,7 +1095,7 @@
                   "id": "near-t2",
                   "type": "text",
                   "props": {
-                    "text": "We offer parts delivery to your location within each dealership's own service area: South Carolina for Rechtien Truck Group, and the South Florida counties listed below for Rechtien Truck Group.",
+                    "text": "We offer parts delivery to your location within each dealership's own service area: South Carolina for Rechtien International Trucks and Carolina International Trucks, and the South Florida counties listed below for Rechtien International Trucks and Carolina International Trucks.",
                     "align": "left",
                     "width": "full"
                   }
@@ -1191,7 +1191,7 @@
                   "id": "inv-a-h",
                   "type": "heading",
                   "props": {
-                    "text": "Rechtien Truck Group · South Carolina",
+                    "text": "Rechtien International Trucks and Carolina International Trucks · South Carolina",
                     "headingLevel": 3,
                     "align": "left"
                   }
@@ -1200,7 +1200,7 @@
                   "id": "inv-a-t",
                   "type": "text",
                   "props": {
-                    "text": "Our facility carries over 200 different product lines to help outfit your truck and trailer with high-quality components so you can upgrade and customize performance. Rechtien Truck Group describes this as the largest selection of commercial truck parts in South Carolina, with shelves stocked with premium heavy truck parts.",
+                    "text": "Our facility carries over 200 different product lines to help outfit your truck and trailer with high-quality components so you can upgrade and customize performance. Rechtien International Trucks and Carolina International Trucks describes this as the largest selection of commercial truck parts in South Carolina, with shelves stocked with premium heavy truck parts.",
                     "align": "left",
                     "width": "full"
                   }
@@ -1227,7 +1227,7 @@
                   "id": "inv-a-n",
                   "type": "text",
                   "props": {
-                    "text": "Rechtien Truck Group also runs quarterly parts promotions — ask your local parts counter what is available now.",
+                    "text": "Rechtien International Trucks and Carolina International Trucks also runs quarterly parts promotions — ask your local parts counter what is available now.",
                     "align": "left",
                     "width": "full"
                   }
@@ -1236,7 +1236,7 @@
                   "id": "inv-b-h",
                   "type": "heading",
                   "props": {
-                    "text": "Rechtien Truck Group · South Florida",
+                    "text": "Rechtien International Trucks and Carolina International Trucks · South Florida",
                     "headingLevel": 3,
                     "align": "left"
                   }
@@ -1370,7 +1370,7 @@
                   "id": "deliv-a-t",
                   "type": "text",
                   "props": {
-                    "text": "Besides keeping our shelves stocked with premium heavy truck parts, we can have them delivered right to your doorstep. Our delivery fleet of over 20 vehicles can cover more than 80% of the state, and most areas are serviced twice a day. Rechtien Truck Group describes its truck parts delivery service as free — call (800) 868-4923 and ask one of our friendly staff about delivery to your location.",
+                    "text": "Besides keeping our shelves stocked with premium heavy truck parts, we can have them delivered right to your doorstep. Our delivery fleet of over 20 vehicles can cover more than 80% of the state, and most areas are serviced twice a day. Rechtien International Trucks and Carolina International Trucks describes its truck parts delivery service as free — call (800) 868-4923 and ask one of our friendly staff about delivery to your location.",
                     "align": "left",
                     "width": "full"
                   }
@@ -1672,11 +1672,11 @@
                         },
                         {
                           "q": "Do you deliver truck parts?",
-                          "a": "Rechtien Truck Group delivers across South Carolina with a fleet of over 20 vehicles covering more than 80% of the state, and describes the service as free. Rechtien Truck Group delivers to Miami-Dade, Broward, Palm Beach, Indian River, St. Lucie, Martin and Okeechobee counties in South Florida."
+                          "a": "Rechtien International Trucks and Carolina International Trucks delivers across South Carolina with a fleet of over 20 vehicles covering more than 80% of the state, and describes the service as free. Rechtien International Trucks and Carolina International Trucks delivers to Miami-Dade, Broward, Palm Beach, Indian River, St. Lucie, Martin and Okeechobee counties in South Florida."
                         },
                         {
                           "q": "How do I request a part?",
-                          "a": "Fill out the parts request form on this page, or call the parts line at Rechtien Truck Group on (800) 868-4923, or contact your nearest Rechtien Truck Group location. A parts specialist will contact you."
+                          "a": "Fill out the parts request form on this page, or call the parts line at Rechtien International Trucks and Carolina International Trucks on (800) 868-4923, or contact your nearest Rechtien International Trucks and Carolina International Trucks location. A parts specialist will contact you."
                         },
                         {
                           "q": "Which truck brands do you supply parts for?",
@@ -1684,7 +1684,7 @@
                         },
                         {
                           "q": "Is there a warranty on parts?",
-                          "a": "Rechtien Truck Group states that almost every product it sells comes with an unlimited-mile, one-year warranty. Warranty coverage varies by product and location, so ask the parts team about your specific part."
+                          "a": "Rechtien International Trucks and Carolina International Trucks states that almost every product it sells comes with an unlimited-mile, one-year warranty. Warranty coverage varies by product and location, so ask the parts team about your specific part."
                         }
                       ]
                     },
@@ -1881,7 +1881,7 @@
           "heading": "Find your parts department.",
           "groups": [
             {
-              "company": "Rechtien Truck Group",
+              "company": "Rechtien International Trucks and Carolina International Trucks",
               "region": "South Carolina parts departments",
               "intro": "To inquire about the truck parts you need, call the parts line, then visit any of our six South Carolina locations. You can also fill out a parts request and one of our friendly staff will contact you.",
               "lineLabel": "Parts line",
@@ -1951,7 +1951,7 @@
               ]
             },
             {
-              "company": "Rechtien Truck Group",
+              "company": "Rechtien International Trucks and Carolina International Trucks",
               "region": "South Florida parts departments",
               "intro": "Order your parts online or stop by any of our South Florida locations to get the commercial parts you need today.",
               "lineLabel": "",

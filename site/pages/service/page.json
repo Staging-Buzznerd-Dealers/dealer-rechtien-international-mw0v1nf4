@@ -59,7 +59,7 @@
                   "id": "hero-lede",
                   "type": "text",
                   "props": {
-                    "text": "Factory-trained technicians, all makes and models, and service bays across our Rechtien Truck Group locations — built to get you back on the road.",
+                    "text": "Factory-trained technicians, all makes and models, and service bays across our Rechtien International Trucks and Carolina International Trucks locations — built to get you back on the road.",
                     "align": "center",
                     "width": "full"
                   }
@@ -149,7 +149,7 @@
                     "items": [
                       {
                         "label": "100+",
-                        "desc": "ASE-certified and factory-trained technicians at Rechtien Truck Group"
+                        "desc": "ASE-certified and factory-trained technicians at Rechtien International Trucks and Carolina International Trucks"
                       },
                       {
                         "label": "130",
@@ -375,7 +375,7 @@
           "locations": [
             {
               "id": "18",
-              "name": "Maimi",
+              "name": "Miami",
               "subtitle": "",
               "slug": "maimi",
               "num": "01",
@@ -3439,7 +3439,7 @@
                   "props": {
                     "items": [
                       {
-                        "quote": "“I have had most of my service department dealings with Renee. She always goes the extra mile to accommodate me. The demands of the business I work for are high at times, and she has always displayed a sense of urgency, and professionalism to resolve my issues. Great employee & asset to Rechtien Truck Group. Please keep up the good work.”",
+                        "quote": "“I have had most of my service department dealings with Renee. She always goes the extra mile to accommodate me. The demands of the business I work for are high at times, and she has always displayed a sense of urgency, and professionalism to resolve my issues. Great employee & asset to Rechtien International Trucks and Carolina International Trucks. Please keep up the good work.”",
                         "name": "Anonymous"
                       },
                       {

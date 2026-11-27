@@ -19,7 +19,7 @@
               "id": "header-brand",
               "type": "column",
               "props": { "span": 3, "align": "center" },
-              "children": [{ "id": "logo", "type": "logo", "props": { "image": { "src": "/logos/rechtien-truck-group-logo-black.png", "alt": "International Rechtien Truck Group", "width": 1200, "height": 199 }, "url": "/", "height": 40 } }]
+              "children": [{ "id": "logo", "type": "logo", "props": { "image": { "src": "/logos/rechtien-truck-group-logo-black.png", "alt": "International Rechtien International Trucks and Carolina International Trucks", "width": 1200, "height": 199 }, "url": "/", "height": 40 } }]
             },
             {
               "id": "header-nav",
@@ -64,7 +64,7 @@
               "id": "footer-brand",
               "type": "column",
               "props": { "span": 4 },
-              "children": [{ "id": "footer-logo", "type": "logo", "props": { "image": { "src": "/logos/rechtien-truck-group-logo-white.png", "alt": "International Rechtien Truck Group", "width": 1200, "height": 199 }, "url": "/", "height": 36 } }]
+              "children": [{ "id": "footer-logo", "type": "logo", "props": { "image": { "src": "/logos/rechtien-truck-group-logo-white.png", "alt": "International Rechtien International Trucks and Carolina International Trucks", "width": 1200, "height": 199 }, "url": "/", "height": 36 } }]
             },
             {
               "id": "footer-links",
