@@ -1011,10 +1011,10 @@
               "children": [
                 {
                   "id": "item-53",
-                  "label": "My International ",
-                  "type": "url",
-                  "ref": null,
-                  "url": "/international-360",
+                  "label": "My International",
+                  "type": "page",
+                  "ref": "my-international",
+                  "url": null,
                   "newTab": false,
                   "icon": null,
                   "children": []
