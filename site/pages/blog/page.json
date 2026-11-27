@@ -80,6 +80,20 @@
             "text": "Posts cover pre-auction trucks, the S13 Integrated Powertrain and the 2027 EPA transition, air conditioning and replacement parts, and financing for South Florida fleets. If something here applies to a unit you run, call <a href=\"tel:+18006663040\">(800) 666-3040</a> or visit one of our five South Florida locations.",
             "width": "full"
           }
+        },
+        {
+          "id": "widget",
+          "type": "widget",
+          "props": {
+            "widget": "post-article",
+            "snapshot": {
+              "found": false
+            },
+            "config": {
+              "showImage": true,
+              "showAuthor": true
+            }
+          }
         }
       ]
     },
