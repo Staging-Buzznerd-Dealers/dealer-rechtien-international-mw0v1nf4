@@ -179,10 +179,12 @@
                   "props": {
                     "items": [
                       {
-                        "ctaId": "mi-log-in"
+                        "ctaId": "mi-log-in",
+                        "url": "my.international.com"
                       },
                       {
-                        "ctaId": "mi-enroll"
+                        "ctaId": "mi-enroll",
+                        "url": "https://www.oncommandconnection.com/Enrollment/Register?_gl=1*118l91*_gcl_au*NTc0MDY5NTEzLjE3ODk0OTU2MDIuLS4tLjE3OTA2MjQzOTYuNTQ5MzQzMzY5LjE3OTA2MjQzOTcuMTc5MDYyNDM5Nw.."
                       }
                     ],
                     "align": "left"
@@ -314,7 +316,7 @@
               "title": "Advanced Remote Diagnostics",
               "text": "My International uses advanced analytics to transform vehicle data into clear, actionable insights. Easily monitor vehicle health and performance for greater uptime and efficiency.",
               "ctaLabel": "Explore",
-              "ctaUrl": "#",
+              "ctaUrl": "https://www.international.com/services/my-international/advanced-remote-diagnostics",
               "image": {
                 "src": "https://vendure.ai4dealerships.com/assets/source/60/int25-myinternational-desktop-office-1.avif",
                 "alt": "Advanced Remote Diagnostics photo placeholder"
@@ -324,7 +326,7 @@
               "title": "Remote Lock/Unlock",
               "text": "Eliminate lockout-related downtime and expense. My International allows fleets and owner-operators to remotely unlock compatible vehicles, keeping your drivers on the road.",
               "ctaLabel": "Explore",
-              "ctaUrl": "#",
+              "ctaUrl": "https://www.international.com/services/my-international/remote-lock-unlock",
               "image": {
                 "src": "https://vendure.ai4dealerships.com/assets/source/11/mobile-service-2000-x-1500-px.png",
                 "alt": "Remote Lock/Unlock photo placeholder",
@@ -336,7 +338,7 @@
               "title": "Fuel Analytics",
               "text": "My International® Fuel Analytics turns data into savings. Tracking engine speed, idle time and more, it helps lower your total cost of ownership.",
               "ctaLabel": "Explore",
-              "ctaUrl": "#",
+              "ctaUrl": "https://www.international.com/services/my-international/fuel-analytics",
               "image": {
                 "src": "https://vendure.ai4dealerships.com/assets/source/d0/int25-myinternational-fuel-analytics-1.avif",
                 "alt": "Fuel Analytics photo placeholder"
@@ -346,7 +348,7 @@
               "title": "Service Communications",
               "text": "Track your vehicle's status and review service estimates in real time. My International facilitates direct communication with your dealer and proactive scheduling to ensure faster turnaround.",
               "ctaLabel": "Explore",
-              "ctaUrl": "#",
+              "ctaUrl": "https://www.international.com/services/my-international/service-communications",
               "image": {
                 "src": "https://vendure.ai4dealerships.com/assets/source/99/int25-myinternational-mobile-in-cab-map-1.avif",
                 "alt": "Service Communications photo placeholder"
@@ -356,7 +358,7 @@
               "title": "Over-the-Air Programming",
               "text": "Keep your trucks on the road, not in the shop. My International lets you update engine software and parameters remotely. You can optimize performance without a service visit.",
               "ctaLabel": "Explore",
-              "ctaUrl": "#",
+              "ctaUrl": "https://www.international.com/services/my-international/over-the-air-programming",
               "image": {
                 "src": "https://vendure.ai4dealerships.com/assets/source/f3/international-person-computer-office-dealer-251017-13191.avif",
                 "alt": "Over-the-Air Programming photo placeholder"
@@ -366,7 +368,7 @@
               "title": "Gateway Integrations",
               "text": "Bring your entire fleet together. My International integrates with over 30 telematics providers, so you can manage all makes of vehicles in one place without extra hardware, gateway hubs, or installation visits.",
               "ctaLabel": "Explore",
-              "ctaUrl": "#",
+              "ctaUrl": "https://www.international.com/services/my-international/integrations",
               "image": {
                 "src": "https://vendure.ai4dealerships.com/assets/source/27/int25-myinternational-desktop-garage-1.avif",
                 "alt": "Gateway Integrations photo placeholder"
@@ -470,10 +472,12 @@
                   "props": {
                     "items": [
                       {
-                        "ctaId": "mi-google-play"
+                        "ctaId": "mi-google-play",
+                        "url": "https://play.google.com/store/apps/details?id=com.navistar.occgo&hl=en_US&gl=US"
                       },
                       {
-                        "ctaId": "mi-app-store"
+                        "ctaId": "mi-app-store",
+                        "url": "https://apps.apple.com/us/app/my-international/id6444777824"
                       }
                     ],
                     "align": "left"
